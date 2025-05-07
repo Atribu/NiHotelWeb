@@ -1,0 +1,13 @@
+{
+    "LocaleSwitcher": {
+      "label": "Изменить язык",
+      "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} other {Неизвестный}}"
+    },
+    "Header":{
+      "home":"Главная",
+      "nihotel":"Ni Hotel",
+      "rooms":"Наши номера",
+      "kitchen":"Наша кухня",
+      "booknow":"Забронировать"
+    }
+}

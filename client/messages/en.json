@@ -1,0 +1,13 @@
+{   "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} other {Unknown}}"
+  
+  },
+  "Header":{
+    "home":"HomePage",
+    "nihotel":"Ni Hotel",
+    "rooms":"Our Rooms",
+    "kitchen":"Our Kitchen",
+    "booknow":"Book Now"
+  }
+}

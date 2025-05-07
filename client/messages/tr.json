@@ -1,0 +1,13 @@
+{
+    "LocaleSwitcher": {
+      "label": "Dili Değiştir",
+      "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} other {Bilinmeyen}}"
+    },
+    "Header":{
+      "home":"AnaSayfa",
+      "nihotel":"Ni Hotel",
+      "rooms":"Odalarımız",
+      "kitchen":"Mutfağımız",
+      "booknow":"Rezarvasyon Yap"
+    }
+}
