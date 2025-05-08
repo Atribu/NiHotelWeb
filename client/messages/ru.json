@@ -8,6 +8,25 @@
       "nihotel":"Ni Hotel",
       "rooms":"Наши номера",
       "kitchen":"Наша кухня",
-      "booknow":"Забронировать"
+      "booknow":"Забронировать",
+      "letuscallyou": "Позвольте нам позвонить вам"
+    },
+
+    "Footer": {
+      "aboutus": "О нас",
+      "contactus": "Контакты",
+      "gallery": "Галерея",
+      "cookiePolicy": "Политика файлов cookie",
+      "privacyPolicy": "Политика конфиденциальности",
+      "factsheet": "Информационный лист"
+    },
+
+    "Reservation": {
+      "checkin": "Заезд",
+      "checkout": "Выезд",
+      "guests": "Гости",
+     "booknow": "ЗАБРОНИРОВАТЬ СЕЙЧАС",
+      "adult":"Взрослые",
+      "kid":"Дети"
     }
 }

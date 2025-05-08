@@ -8,6 +8,28 @@
       "nihotel":"Ni Hotel",
       "rooms":"Odalarımız",
       "kitchen":"Mutfağımız",
-      "booknow":"Rezarvasyon Yap"
-    }
+      "booknow":"Rezarvasyon Yap",
+      "letuscallyou":"Sizi Arayalım"
+    },
+
+    "Footer": {
+    "aboutus": "Hakkımızda",
+    "contactus": "İletişim",
+    "gallery": "Galeri",
+    "cookiePolicy": "Çerez Politikası",
+    "privacyPolicy": "Gizlilik Politikası",
+    "factsheet": "Bilgi Formu"
+  },
+
+"Reservation":{
+  "checkin":"Giriş",
+  "checkout":"Çıkış",
+  "guests":"Misafirler",
+   "search":"Ara",
+   "booknow": "REZERVASYON YAPIN",
+        "adult":"Yetişkin",
+      "kid":"Çocuk"
+
+}
+  
 }

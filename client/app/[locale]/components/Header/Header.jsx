@@ -10,6 +10,7 @@ import NiHotelLogo from "../../../../public/Header/NiHotel.svg"
 import { useState } from "react";
 import { routing } from "@/i18n/routing";
 import { FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/fa6";
+import PhoneSvg from "../generalComponents/PhoneSvg";
 
 export default function Header() {
 
@@ -65,7 +66,7 @@ export default function Header() {
 
         <div className="flex-1 text-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
         <Link href="/">
-            <Image src={NiHotelLogo} className="w-[120px] h-auto mx-auto"/>
+            <Image src={NiHotelLogo} alt="logo" className="w-auto h-[90px] mx-auto"/>
         </Link>
         </div>
 
@@ -93,7 +94,7 @@ export default function Header() {
 
 {/* Sidebar: Soldan gelen ve ekranın 1/3'ünü kaplayan */}
 <div
-  className={`fixed top-0 left-0 h-screen w-4/5 sm:w-2/3 md:w-1/3 min-w-[250px] max-w-sm bg-black text-white z-50 transform transition-transform duration-300 ease-in-out ${
+  className={`fixed top-0 left-0 h-screen w-4/5 sm:w-2/3 md:w-1/3 min-w-[250px] max-w-sm bg-white text-black z-50 transform transition-transform duration-300 ease-in-out items-center justify-center ${
     isMenuOpen ? "translate-x-0" : "-translate-x-full"
   }`}
 >
@@ -105,16 +106,30 @@ export default function Header() {
     ×
   </button>
 
+  <Link href="/">
+            <Image src={NiHotelLogo} alt="logo" className="w-auto h-[90px] mx-auto"/>
+        </Link>
+
   {/* Menü linkleri */}
-  <nav className="flex flex-col items-start gap-6 p-8 mt-20 text-lg uppercase tracking-widest">
+  <nav className="flex flex-col items-start gap-6 p-8 mt-0 text-lg uppercase tracking-widest">
     <Link href="/" onClick={() => setIsMenuOpen(false)}>{t("home")}</Link>
     <Link href="/rooms" onClick={() => setIsMenuOpen(false)}>{t("rooms")}</Link>
     <Link href="/beachpools" onClick={() => setIsMenuOpen(false)}>{t("nihotel")}</Link>
     <Link href="/contact" onClick={() => setIsMenuOpen(false)}>{t("kitchen")}</Link>
   </nav>
 
+<div className="flex w-full items-center justify-center mt-20 lg:mt-72">
+<div className="flex flex-col w-[80%] items-center justify-center">
+<div className="flex items-center justify-center gap-[10px] text-center  mb-[16px]">
+  <PhoneSvg className="flex" width={22} height={22} color="#D9D9D9"/>
+<Link className="text-[15px] text-black font-normal " href="/">+90 123 456 78 79</Link>
+</div>
+<button className="flex items-center justify-center text-center py-[10px] w-[274px] bg-gray-600 text-white text-[15px font-semibold] uppercase">{t("letuscallyou")}</button>
+</div>
+</div>
+
   {/* Sosyal ikonlar */}
-  <div className="absolute bottom-6 left-8 flex gap-5 text-white text-2xl">
+  <div className="absolute bottom-6 left-8 flex gap-5 text-black text-2xl">
     <a
       href="https://facebook.com"
       target="_blank"
