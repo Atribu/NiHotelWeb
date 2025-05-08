@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Cormorant_Garamond, Jost, Geist, Geist_Mono } from "next/font/google";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -47,6 +48,7 @@ export default async function RootLayout({ children, params }) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           {children}
+          <Footer/>
         </NextIntlClientProvider>
       </body>
     </html>

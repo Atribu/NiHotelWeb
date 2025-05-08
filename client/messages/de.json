@@ -8,6 +8,26 @@
       "nihotel":"Ni Hotel",
       "rooms":"Unsere Zimmer",
       "kitchen":"Unsere Küche",
-      "booknow":"Jetzt reservieren"
-    }
+      "booknow":"Jetzt reservieren",
+       "letuscallyou": "Lassen Sie uns Sie anrufen"
+    },
+
+
+    "Footer": {
+    "aboutus": "Über uns",
+    "contactus": "Kontakt",
+    "gallery": "Galerie",
+    "cookiePolicy": "Cookie-Richtlinie",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "factsheet": "Datenblatt"
+  },
+
+  "Reservation": {
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "guests": "Gäste",
+    "booknow": "JETZT BUCHEN",
+    "adult":"Erwachsene",
+    "kid":"Kind(er)"
+  }
 }
