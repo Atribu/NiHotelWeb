@@ -11,6 +11,7 @@ import { useState } from "react";
 import { routing } from "@/i18n/routing";
 import { FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/fa6";
 import PhoneSvg from "../generalComponents/PhoneSvg";
+import BellSvg from "../generalComponents/BellSvg";
 
 export default function Header() {
 
@@ -34,7 +35,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-md text-white">
+    <header className="fixed top-0 left-0 w-full z-50 bg-black/10 backdrop-blur-md text-white">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
         {/* Sol */}
@@ -71,8 +72,9 @@ export default function Header() {
         </div>
 
         {/* Sağ */}
-        <div className="hidden md:flex items-center gap-2 uppercase text-sm tracking-widest">
+        <div className="hidden md:flex items-center gap-2 uppercase text-sm -tracking-[0.55px] font-semibold lg:text-[16px] leading-[20px] font-jost">
         <span>{t("booknow")}</span>
+        <BellSvg className="flex" width={30} height={16} color="#fff"/>
         <Sun className="w-5 h-5" />
         </div>
       </div>
