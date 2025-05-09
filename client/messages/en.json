@@ -26,7 +26,53 @@
     "checkout":"Check Out",
     "guests":"Guests",
      "booknow":"BOOK NOW",
-          "adult":"Adult",
+    "adult":"Adult",
       "kid":"Kid"
+  },
+
+  "Rooms": {
+    "rooms": "Rooms",
+      "title": "Standard Room",
+      "description": "Our spacious 25 m² Standard Room features one double bed and one twin bed, thoughtfully appointed for comfort. Refresh in a private bathroom with modern amenities. Ideal for families or friends seeking a restful retreat.",
+      "buttonText": "Explore",
+ 
+      "title2": "Junior Room",
+      "description2": "Cozy 20 m² Junior Room appointed with one double bed and a private bathroom for your comfort. Designed for solo travelers or couples, it offers a welcoming and intimate atmosphere. Enjoy essential amenities for a seamless stay.",
+
+      "title3": "Veranda Room",
+      "description3": "The 25 m² Veranda Room features one double bed and one twin bed, along with a private veranda overlooking serene garden views. Perfect for enjoying morning coffee or evening relaxation. A well-equipped bathroom and thoughtful amenities enhance your stay.",
+
+      "title4": "Corner Room",
+      "description4": "Located in the corner for extra privacy and natural light, our 25 m² Corner Room includes one double bed and a private bathroom. Spaciously designed with comfortable seating and modern conveniences. Ideal for guests seeking a tranquil retreat."
+    
+  },
+
+  "RoomFeatures": {
+    "header": "ROOM FEATURES",
+    "conditioner": "Central Air Conditioning",
+    "tv": "LED TV",
+    "toilet": "Free Toiletries",
+    "wifi": "Wi-Fi",
+    "phone": "Phone",
+    "minibar": "Mini Bar",
+    "showerphone": "Shower Phone",
+    "safe": "Safe",
+    "towel": "Towel Set",
+    "makeuptable": "Desk",
+    "coffee": "Coffee/Tea Maker",
+    "hairdryer": "Hair Dryer",
+     "rulesHeader": "Room Rules:",
+    "rulesDetails": "Check-In: 02:00 PM Check-Out: 12:00 PM No Smoking Pets Allowed (Up to 10 kg)"
+  },
+
+  "CornerRoom": {
+    "bannerHeader": "Corner Room",
+    "bannerM2": "30 m²",
+    "bannerPerson": "2 Adults",
+    "bannerView": "Garden View",
+    "carouselTitle": "CORNER ROOM",
+    "carouselDesc1": "Our rooms, each 30 m², with a balcony and garden view, have been designed in a tasteful way, with your comfort in mind, featuring a large bed or two single beds, a desk and chairs.",
+    "carouselDesc2": "Inone Hotel makes your holiday amazing with bohemian style. This room was designed with care. Light and color will upgrade your mood for your dream holiday.",
+    "carouselButtonText": "EXPLORE"
   }
 }

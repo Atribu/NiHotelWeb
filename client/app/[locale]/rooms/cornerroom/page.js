@@ -12,16 +12,19 @@ import img7 from "../../../../public/images/rooms/cornerroom/NI-CORNER7.webp"
 import img8 from "../../../../public/images/rooms/cornerroom/NI-CORNER8.webp"
 import img9 from "../../../../public/images/rooms/cornerroom/NI-CORNER9.webp"
 import ReservationSection from '../../components/generalComponents/ReservationSection'
+import { useTranslations } from 'next-intl';
 
 const page = () => {
+  const t = useTranslations('CornerRoom');
+  
   return (
     <div>
-        <SubRoomBannner header="sub room" m2={30} person="2 Adults" view="Garden View" image={img2}/>
+        <SubRoomBannner header={t("bannerHeader")} m2={t("bannerM2")} person={t("bannerPerson")} view={t("bannerView")} image={img2}/>
        <RoomCarouselSection
-      title="DELUXE ROOM WITH BALCONY"
+      title={t("carouselTitle")}
       descriptions={[
-        "Our rooms, each 30 m², with a balcony and garden view, have been designed in a tasteful way, with your comfort in mind, featuring a large bed or two single beds, a desk and chairs.",
-        "Inone hotel makes your holiday amazing with bohemian style. This room was designed with care. Light and color will upgrade your mood for your dream holiday."
+       t("carouselDesc1"),
+       t("carouselDesc2")
       ]}
       images={[
        img1,
@@ -34,7 +37,7 @@ const page = () => {
        img8,
        img9
       ]}
-      buttonText="EXPLORE"
+      buttonText={t("carouselButtonText")}
      
     />
 

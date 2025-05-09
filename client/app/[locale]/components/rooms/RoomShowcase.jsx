@@ -8,12 +8,9 @@ export default function RoomShowcase({id,
   title,
   description,
   href,
-  buttonText = "Explore",
-  images = [
-    { src: "/images/room-left.jpg", alt: "Room Interior" },
-    { src: "/images/room-middle.jpg", alt: "Room Balcony View" },
-  ],
-  imagesOnRight = false, // false → solda, true → sağda
+  buttonText ,
+  images = [],
+  imagesOnRight, 
 }) {
   return (
     <section id={id} className="py-20 bg-white">
@@ -24,7 +21,7 @@ export default function RoomShowcase({id,
           {!imagesOnRight && (
             <>
               {images.map((img, i) => (
-                <div key={i} className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg">
+                <div key={i} className="relative w-full h-80 lg:h-[500px] overflow-hidden shadow-lg">
                   <Image
                     src={img.src}
                     alt={img.alt}
@@ -53,7 +50,7 @@ export default function RoomShowcase({id,
           {imagesOnRight && (
             <>
               {images.map((img, i) => (
-                <div key={i} className="relative w-full h-80 lg:h-[500px] rounded-lg overflow-hidden shadow-lg">
+                <div key={i} className="relative w-full h-80 lg:h-[500px] overflow-hidden shadow-lg">
                   <Image
                     src={img.src}
                     alt={img.alt}

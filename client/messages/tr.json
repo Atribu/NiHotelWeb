@@ -30,6 +30,52 @@
         "adult":"Yetişkin",
       "kid":"Çocuk"
 
-}
+},
+
+"Rooms": {
+  "rooms": "Odalar",
+      "title": "Standard Oda",
+      "description": "Geniş 25 m²’lik Standard Odamız konforunuz için özenle yerleştirilmiş bir çift kişilik ve bir tek kişilik yatak sunar. Modern olanaklarla donatılmış özel banyoda rahatlayın. Aileler veya arkadaş grupları için huzurlu bir konaklama deneyimi sağlar.",
+      "buttonText": "Keşfet",
+
+      "title2": "Junior Oda",
+      "description2": "20 m²’lik Junior Odamız bir çift kişilik yatak ve özel banyo ile donatılmıştır. Solo gezginler veya çiftler için tasarlanmış samimi bir atmosfere sahiptir. Sorunsuz bir konaklama için gerekli tüm olanakları sunar.",
+
+      "title3": "Veranda Oda",
+      "description3": "25 m²’lik Veranda Odamız bir çift ve bir tek kişilik yatak, ayrıca sakin bahçe manzaralı özel verandaya sahiptir. Sabah kahvenizi veya akşam dinlenmenizi keyifle yapabilirsiniz. İyi donanımlı banyo ve titizlikle seçilmiş diğer olanaklarla konforunuz düşünülmüştür.",
+
+      "title4": "Köşe Oda",
+      "description4": "Daha fazla mahremiyet ve doğal ışık sunan 25 m²’lik Köşe Odamız bir çift kişilik yatak ve özel banyo içerir. Rahat oturma alanı ve modern konfor öğeleriyle geniş tasarlanmıştır. Huzurlu bir konaklama arayanlar için idealdir."
+
+  },
+
+"RoomFeatures": {
+    "header": "ODA ÖZELLİKLERİ",
+    "conditioner": "Merkezi Klima",
+    "tv": "LED TV",
+    "toilet": "Ücretsiz Banyo Malzemeleri",
+    "wifi": "Wi-Fi",
+    "phone": "Telefon",
+    "minibar": "Mini Bar",
+    "showerphone": "Duş Telefonu",
+    "safe": "Kasa",
+    "towel": "Havlu Seti",
+    "makeuptable": "Çalışma Masası",
+    "coffee": "Kahve/Çay Makinesi",
+    "hairdryer": "Saç Kurutma Makinesi",
+      "rulesHeader": "Oda Kuralları:",
+    "rulesDetails": "Giriş: 14:00 Çıkış: 12:00 Sigara İçmek Yasaktır Evcil Hayvanlara İzin Verilir (10 kg’a kadar)"
+  },
+
+  "CornerRoom": {
+    "bannerHeader": "Köşe Oda",
+    "bannerM2": "30 m²",
+    "bannerPerson": "2 Yetişkin",
+    "bannerView": "Bahçe Manzaralı",
+    "carouselTitle": "KÖŞE ODA",
+    "carouselDesc1": "Her biri 30 m² olan odalarımız, balkon ve bahçe manzarasıyla konforunuz düşünülerek özenle tasarlanmış olup; geniş bir çift kişilik yatak veya iki tek kişilik yatak, bir çalışma masası ve sandalyeler içerir.",
+    "carouselDesc2": "Inone Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
+    "carouselButtonText": "KEŞFET"
+  }
   
 }
