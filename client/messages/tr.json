@@ -76,6 +76,17 @@
     "carouselDesc1": "Her biri 30 m² olan odalarımız, balkon ve bahçe manzarasıyla konforunuz düşünülerek özenle tasarlanmış olup; geniş bir çift kişilik yatak veya iki tek kişilik yatak, bir çalışma masası ve sandalyeler içerir.",
     "carouselDesc2": "Inone Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
     "carouselButtonText": "KEŞFET"
+  },
+
+  "StandardRoom": {
+    "bannerHeader": "Standard Oda",
+    "bannerM2": "25 m²",
+    "bannerPerson": "3 Yetişkin",
+    "bannerView": "Bahçe Manzaralı",
+    "carouselTitle": "STANDARD ODA",
+    "carouselDesc1": "Geniş 25 m²’lik Standard Odamız bir çift kişilik yatak ve bir tek kişilik yatakla konforunuz düşünülerek özenle tasarlanmıştır. Modern olanaklarla donatılmış özel banyoda rahatlayın. Aileler veya arkadaş grupları için ideal bir dinlenme deneyimi sunar.",
+    "carouselDesc2": "Inone Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
+    "carouselButtonText": "KEŞFET"
   }
   
 }

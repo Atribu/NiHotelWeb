@@ -75,5 +75,16 @@
     "carouselDesc1": "Unsere Zimmer mit jeweils 30 m², Balkon und Gartenblick sind geschmackvoll gestaltet und auf Ihren Komfort ausgerichtet. Sie verfügen über ein großes Doppelbett oder zwei Einzelbetten, einen Schreibtisch und Stühle.",
     "carouselDesc2": "Das Inone Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
     "carouselButtonText": "ENTDECKEN"
+  },
+  
+  "StandardRoom": {
+    "bannerHeader": "Standardzimmer",
+    "bannerM2": "25 m²",
+    "bannerPerson": "3 Erwachsene",
+    "bannerView": "Gartenblick",
+    "carouselTitle": "STANDARDZIMMER",
+    "carouselDesc1": "Unser geräumiges Standardzimmer (25 m²) verfügt über ein Doppelbett und ein Einzelbett, liebevoll für Ihren Komfort eingerichtet. Erfrischen Sie sich in einem modernen Privatbadezimmer. Ideal für Familien oder Freunde, die einen erholsamen Aufenthalt suchen.",
+    "carouselDesc2": "Das Inone Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
+    "carouselButtonText": "ENTDECKEN"
   }
 }

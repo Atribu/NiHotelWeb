@@ -74,5 +74,16 @@
     "carouselDesc1": "Our rooms, each 30 m², with a balcony and garden view, have been designed in a tasteful way, with your comfort in mind, featuring a large bed or two single beds, a desk and chairs.",
     "carouselDesc2": "Inone Hotel makes your holiday amazing with bohemian style. This room was designed with care. Light and color will upgrade your mood for your dream holiday.",
     "carouselButtonText": "EXPLORE"
+  },
+
+  "StandardRoom": {
+    "bannerHeader": "Standard Room",
+    "bannerM2": "25 m²",
+    "bannerPerson": "3 Adults",
+    "bannerView": "Garden View",
+    "carouselTitle": "STANDARD ROOM",
+    "carouselDesc1": "Our spacious 25 m² Standard Room features one double bed and one twin bed, thoughtfully appointed for comfort. Refresh in a private bathroom with modern amenities. Ideal for families or friends seeking a restful retreat.",
+    "carouselDesc2": "Inone Hotel makes your holiday amazing with bohemian style. This room was designed with care. Light and color will upgrade your mood for your dream holiday.",
+    "carouselButtonText": "EXPLORE"
   }
 }

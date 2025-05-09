@@ -35,7 +35,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-[9999] bg-black/10 backdrop-blur-md text-white">
+    <header className="fixed top-0 left-0 w-full max-w-screen z-[9999] bg-black/10 backdrop-blur-md text-white">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
         {/* Sol */}
@@ -124,7 +124,7 @@ export default function Header() {
 <div className="flex flex-col w-[80%] items-center justify-center">
 <div className="flex items-center justify-center gap-[10px] text-center  mb-[16px]">
   <PhoneSvg className="flex" width={22} height={22} color="#D9D9D9"/>
-<Link className="text-[15px] text-black font-normal " href="/">+90 123 456 78 79</Link>
+<Link className="text-[15px] text-black font-normal " href="tel:+902423243742">+90 242 324 37 42</Link>
 </div>
 <button className="flex items-center justify-center text-center py-[10px] w-[274px] bg-gray-600 text-white text-[15px font-semibold] uppercase">{t("letuscallyou")}</button>
 </div>
