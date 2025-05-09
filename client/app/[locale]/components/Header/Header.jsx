@@ -35,7 +35,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-black/10 backdrop-blur-md text-white">
+    <header className="fixed top-0 left-0 w-full z-[9999] bg-black/10 backdrop-blur-md text-white">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
         {/* Sol */}

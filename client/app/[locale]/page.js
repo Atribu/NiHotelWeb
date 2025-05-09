@@ -4,7 +4,7 @@ import ContactSection from './components/generalComponents/ContactSection'
 import SplitImageSection from './components/Homepage/SplitImageSection'
 import AmenitiesSection from './components/Homepage/AmenitiesSection'
 import RoomSlider from './components/Homepage/RoomSlider'
-import RoomFeatures from './components/generalComponents/RoomFeatures'
+import RoomFeatures from './components/subrooms/RoomFeatures'
 
 const page = () => {
   return (
@@ -16,7 +16,6 @@ const page = () => {
     <SplitImageSection/>
     <AmenitiesSection/>
     <RoomSlider/>
-    <RoomFeatures/>
     <ContactSection/>
     </div>
   )
