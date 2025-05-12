@@ -103,6 +103,17 @@
     "carouselButtonText": "KEŞFET"
   },
 
+  "JuniorRoom": {
+    "bannerHeader": "Junior Oda",
+    "bannerM2": "20 m²",
+    "bannerPerson": "2 Yetişkin",
+    "bannerView": "Bahçe Manzaralı",
+    "carouselTitle": "JUNIOR ODA",
+    "carouselDesc1": "20 m²’lik Junior Odamız bir çift kişilik yataktan oluşur ve ayrı tuvalet ile banyoya sahiptir.",
+    "carouselDesc2": "Inone Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
+    "carouselButtonText": "KEŞFET"
+  },
+
   "RoomsSlider": {
     "title": "Standard Oda",
     "description": "25 m², 1 Fransız yatak + 1 tek kişilik yatak, tuvalet ve banyodan oluşur.",

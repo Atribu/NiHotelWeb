@@ -19,7 +19,7 @@ export default function ContactSection() {
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* LEFT */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold font-cormorant">{t("header")}</h2>
+          <h2 className="text-3xl font-semibold font-cormorant">{t("header")}</h2>
           <p className="mt-4 text-gray-600">
           {t("description")}
           </p>

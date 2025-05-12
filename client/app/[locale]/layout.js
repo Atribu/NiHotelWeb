@@ -9,13 +9,13 @@ import Footer from "./components/Footer/Footer";
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
-  weight: ["400", "500", "700"],
+  weight: ["400", "500","600", "700"],
   variable: "--font-cormorant",
 });
 
 const jost = Jost({
   subsets: ['latin'],
-  weight: ["400", "500", "700"],
+  weight: ["400", "500","600", "700"],
   variable: "--font-jost",
 });
 

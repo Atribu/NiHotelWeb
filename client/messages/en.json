@@ -101,6 +101,17 @@
     "carouselButtonText": "EXPLORE"
   },
 
+  "JuniorRoom": {
+    "bannerHeader": "Junior Room",
+    "bannerM2": "20 m²",
+    "bannerPerson": "2 Adults",
+    "bannerView": "Garden View",
+    "carouselTitle": "JUNIOR ROOM",
+    "carouselDesc1": "Our 20 m² Junior Room consists of one double bed and features a separate toilet and bathroom.", 
+    "carouselDesc2": "Inone Hotel makes your holiday amazing with bohemian style. This room was designed with care. Light and color will upgrade your mood for your dream holiday.",
+    "carouselButtonText": "EXPLORE"
+  },
+
   "RoomsSlider": {
     "title": "Standard Room",
     "description": "25 m², 1 French bed + 1 Twin bed, consists of toilet and bathroom.",
@@ -132,4 +143,6 @@
     "emailPlaceholder": "callcenter@example.com",
     "buttonText": "LET US CALL YOU"
   }
+
+
 }
