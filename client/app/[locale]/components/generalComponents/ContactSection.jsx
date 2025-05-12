@@ -6,8 +6,11 @@ import Image from "next/image";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import MailSvg from "./MailSvg";
 import PhoneSvg from "./PhoneSvg";
+import { useTranslations } from 'next-intl';
 
 export default function ContactSection() {
+  const t = useTranslations('Contact');
+  
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
 
@@ -16,15 +19,15 @@ export default function ContactSection() {
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* LEFT */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold font-cormorant">CONTACT US</h2>
+          <h2 className="text-3xl font-bold font-cormorant">{t("header")}</h2>
           <p className="mt-4 text-gray-600">
-            Reach out via phone, email, or use the chat in the bottom right corner. Click <em>Let Us Call You</em> for a callback.
+          {t("description")}
           </p>
 
           <div className="mt-8 space-y-6">
             {/* Phone */}
             <div>
-              <p className="text-sm text-gray-800">Call Center</p>
+              <p className="text-sm text-gray-800"> {t("callCenterLabel")}</p>
               <div className="mt-2 flex items-center bg-white border border-gray-200  px-4 py-3 shadow-sm">
               <PhoneSvg width={28} height={20} className="flex" color="#00a1af"/>
                 <input
@@ -39,7 +42,7 @@ export default function ContactSection() {
 
             {/* Email */}
             <div>
-              <p className="text-sm text-gray-800">Call Center E-mail</p>
+              <p className="text-sm text-gray-800">  {t("emailLabel")}</p>
               <div className="mt-2 flex items-center bg-white border border-gray-200  px-4 py-3 shadow-sm">
                 <MailSvg width={28} height={20} className="flex" color="#00a1af"/>
                 <input
@@ -54,7 +57,7 @@ export default function ContactSection() {
 
             {/* Button */}
             <button className="w-full md:w-auto mt-4 bg-[#00a1af] hover:bg-[#00a1af] text-white font-medium py-3 px-6 ">
-              LET US CALL YOU
+            {t("buttonText")}
             </button>
           </div>
         </div>

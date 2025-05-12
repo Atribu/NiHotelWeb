@@ -7,35 +7,51 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { FaUserAlt } from "react-icons/fa";
 import { HiOutlineCalendar } from "react-icons/hi";
 import imgslider from "./images/imgslider.png"
+import { useTranslations } from 'next-intl';
+import corner from "../../../../public/images/rooms/cornerroom/NI-CORNER1.webp"
+import standard from "../../../../public/images/rooms/standardroom/NI-STANDART.webp"
+import junior from "../../../../public/images/rooms/cornerroom/NI-CORNER1.webp"
+import veranda from "../../../../public/images/rooms/veranda/NI-VERANDA.webp"
 
-const slides = [
+export default function RoomSlider() {
+  const t = useTranslations('RoomsSlider');
+
+  const slides = [
     {
       id: 1,
-      image: imgslider,
-      title: "Deluxe Sea Side View Room",
+      image: standard,
+      title: t("title"),
       description:
-        "Our rooms, each of which is 30 m2 with a balcony and partial sea view, are tastefully designed with a king-sized bed, tables, and chairs.",
-      details: { adults: 2, area: "30 m²" },
+      t("description"),
+      details: { adults: t("adults"), area:  t("area"),},
     },
     {
       id: 2,
-      image: imgslider,
-      title: "Corner Suite",
+      image: junior,
+      title: t("title2"),
       description:
-        "Experience luxury in our Corner Suite with panoramic views and all premium amenities to make your stay unforgettable.",
-      details: { adults: 2, area: "45 m²" },
+      t("description2"),
+      details: { adults: t("adults2"), area:  t("area2"),},
     },
     {
       id: 3,
-      image: imgslider,
-      title: "Jacuzzi Suite",
+      image: veranda,
+      title: t("title3"),
       description:
-        "Relax in style in our Jacuzzi Suite featuring a private hot tub on the balcony and bespoke furnishings.",
-      details: { adults: 2, area: "50 m²" },
+      t("description3"),
+      details: { adults: t("adults3"), area:  t("area3"),},
+    },
+
+    {
+      id: 4,
+      image: corner,
+      title: t("title4"),
+      description:
+      t("description4"),
+      details: { adults: t("adults4"), area:  t("area4"),},
     },
   ];
 
-export default function RoomSlider() {
   const [index, setIndex] = useState(0);
   const count = slides.length;
 

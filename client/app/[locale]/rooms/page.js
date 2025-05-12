@@ -28,10 +28,10 @@ const page = () => {
       />
        {/* Aynı component, bu kez resimler sağda */}
        <RoomShowcase
-       id="room2"
+      id="juniorroom"
         title={t("title2")}
         description={t("description2")}
-        href="/rooms/standardroom"
+        href="/rooms/juniorroom"
         buttonText={t("buttonText")}
         imagesOnRight={true}
         images={[
@@ -41,9 +41,10 @@ const page = () => {
       />
 
 <RoomShowcase
+ id="verandaroom"
         title={t("title3")}
         description={t("description3")}
-        href="/rooms/room3"
+        href="/rooms/verandaroom"
         buttonText={t("buttonText")}
         imagesOnRight={false}
         images={[

@@ -9,7 +9,8 @@
     "rooms":"Our Rooms",
     "kitchen":"Our Kitchen",
     "booknow":"Book Now",
-    "letuscallyou":"Let Us Call You"
+    "letuscallyou":"Let Us Call You",
+     "menu": "Menu"
   },
 
   "Footer":{
@@ -27,7 +28,9 @@
     "guests":"Guests",
      "booknow":"BOOK NOW",
     "adult":"Adult",
-      "kid":"Kid"
+      "kid":"Kid",
+      "children":"Children",
+      "childAge":"Child Age"
   },
 
   "Rooms": {
@@ -85,5 +88,48 @@
     "carouselDesc1": "Our spacious 25 m² Standard Room features one double bed and one twin bed, thoughtfully appointed for comfort. Refresh in a private bathroom with modern amenities. Ideal for families or friends seeking a restful retreat.",
     "carouselDesc2": "Inone Hotel makes your holiday amazing with bohemian style. This room was designed with care. Light and color will upgrade your mood for your dream holiday.",
     "carouselButtonText": "EXPLORE"
+  },
+
+  "VerandaRoom": {
+    "bannerHeader": "Veranda Room",
+    "bannerM2": "25 m²",
+    "bannerPerson": "3 Adults",
+    "bannerView": "Garden View",
+    "carouselTitle": "VERANDA ROOM",
+    "carouselDesc1": "The 25 m² Veranda Room features one double bed and one twin bed, along with a private veranda overlooking serene garden views. Perfect for enjoying morning coffee or evening relaxation. A well-equipped bathroom and thoughtful amenities enhance your stay.", 
+    "carouselDesc2": "Inone Hotel makes your holiday amazing with bohemian style. This room was designed with care. Light and color will upgrade your mood for your dream holiday.",
+    "carouselButtonText": "EXPLORE"
+  },
+
+  "RoomsSlider": {
+    "title": "Standard Room",
+    "description": "25 m², 1 French bed + 1 Twin bed, consists of toilet and bathroom.",
+    "adults": "3 Adults",
+    "area": "25 m²",
+
+    "title2": "Junior Room",
+    "description2": "20 m², consists of 1 French bed, toilet and bathroom.",
+    "adults2": "2 Adults",
+    "area2": "20 m²",
+
+    "title3": "Veranda Room",
+    "description3": "25 m², 1 French bed + 1 Twin bed, consists of toilet and bathroom.",
+    "adults3": "3 Adults",
+    "area3": "25 m²",
+
+    "title4": "Corner Room",
+    "description4": "25 m², 1 French bed, consists of toilet and bathroom.",
+    "adults4": "2 Adults",
+    "area4": "25 m²"
+  },
+
+  "Contact": {
+    "header": "CONTACT US",
+    "description": "Reach out via phone, email, or use the chat in the bottom right corner. Click “Let Us Call You” for a callback.",
+    "callCenterLabel": "Call Center",
+    "emailLabel": "Call Center E-mail",
+    "phonePlaceholder": "+90 555 123 45 67",
+    "emailPlaceholder": "callcenter@example.com",
+    "buttonText": "LET US CALL YOU"
   }
 }

@@ -9,7 +9,8 @@
       "rooms":"Odalarımız",
       "kitchen":"Mutfağımız",
       "booknow":"Rezarvasyon Yap",
-      "letuscallyou":"Sizi Arayalım"
+      "letuscallyou":"Sizi Arayalım",
+      "menu": "Menü"
     },
 
     "Footer": {
@@ -28,7 +29,9 @@
    "search":"Ara",
    "booknow": "REZERVASYON YAPIN",
         "adult":"Yetişkin",
-      "kid":"Çocuk"
+      "kid":"Çocuk",
+      "children": "Çocuklar",
+    "childAge": "Çocuk Yaşı"
 
 },
 
@@ -87,6 +90,49 @@
     "carouselDesc1": "Geniş 25 m²’lik Standard Odamız bir çift kişilik yatak ve bir tek kişilik yatakla konforunuz düşünülerek özenle tasarlanmıştır. Modern olanaklarla donatılmış özel banyoda rahatlayın. Aileler veya arkadaş grupları için ideal bir dinlenme deneyimi sunar.",
     "carouselDesc2": "Inone Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
     "carouselButtonText": "KEŞFET"
+  },
+
+  "VerandaRoom": {
+    "bannerHeader": "Veranda Oda",
+    "bannerM2": "25 m²",
+    "bannerPerson": "3 Yetişkin",
+    "bannerView": "Bahçe Manzaralı",
+    "carouselTitle": "VERANDA ODA",
+    "carouselDesc1": "25 m²’lik Veranda Odamız bir çift kişilik yatak ve bir tek kişilik yatak ile donatılmış olup, sakin bahçe manzaralı özel verandaya sahiptir. Sabah kahvenizi veya akşam dinlenmenizi keyifle yapabilirsiniz. İyi donanımlı banyo ve titizlikle seçilmiş diğer olanaklarla konforunuz düşünülmüştür.",
+    "carouselDesc2": "Inone Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
+    "carouselButtonText": "KEŞFET"
+  },
+
+  "RoomsSlider": {
+    "title": "Standard Oda",
+    "description": "25 m², 1 Fransız yatak + 1 tek kişilik yatak, tuvalet ve banyodan oluşur.",
+    "adults": "3 Yetişkin",
+    "area": "25 m²",
+
+    "title2": "Junior Oda",
+    "description2": "20 m², 1 Fransız yatak, tuvalet ve banyodan oluşur.",
+    "adults2": "2 Yetişkin",
+    "area2": "20 m²",
+
+    "title3": "Veranda Oda",
+    "description3": "25 m², 1 Fransız yatak + 1 tek kişilik yatak, tuvalet ve banyodan oluşur.",
+    "adults3": "3 Yetişkin",
+    "area3": "25 m²",
+
+    "title4": "Köşe Oda",
+    "description4": "25 m², 1 Fransız yatak, tuvalet ve banyodan oluşur.",
+    "adults4": "2 Yetişkin",
+    "area4": "25 m²"
+  },
+
+  "Contact": {
+    "header": "İLETİŞİM",
+    "description": "Telefon, e-posta veya sağ alt köşedeki sohbeti kullanarak bize ulaşın. Geri arama için “Bizi Arayın”a tıklayın.",
+    "callCenterLabel": "Çağrı Merkezi",
+    "emailLabel": "Çağrı Merkezi E-posta",
+    "phonePlaceholder": "+90 555 123 45 67",
+    "emailPlaceholder": "callcenter@example.com",
+    "buttonText": "BİZİ ARAYIN"
   }
   
 }

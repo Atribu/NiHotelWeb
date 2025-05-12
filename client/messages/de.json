@@ -9,7 +9,8 @@
       "rooms":"Unsere Zimmer",
       "kitchen":"Unsere Küche",
       "booknow":"Jetzt reservieren",
-       "letuscallyou": "Lassen Sie uns Sie anrufen"
+       "letuscallyou": "Lassen Sie uns Sie anrufen",
+       "menu": "Menü"
     },
 
 
@@ -28,7 +29,9 @@
     "guests": "Gäste",
     "booknow": "JETZT BUCHEN",
     "adult":"Erwachsene",
-    "kid":"Kind(er)"
+    "kid":"Kind(er)",
+    "children": "Kinder",
+    "childAge": "Kindesalter"
   },
 
   "Rooms": {
@@ -86,5 +89,48 @@
     "carouselDesc1": "Unser geräumiges Standardzimmer (25 m²) verfügt über ein Doppelbett und ein Einzelbett, liebevoll für Ihren Komfort eingerichtet. Erfrischen Sie sich in einem modernen Privatbadezimmer. Ideal für Familien oder Freunde, die einen erholsamen Aufenthalt suchen.",
     "carouselDesc2": "Das Inone Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
     "carouselButtonText": "ENTDECKEN"
+  },
+
+  "VerandaRoom": {
+    "bannerHeader": "Verandazimmer",
+    "bannerM2": "25 m²",
+    "bannerPerson": "3 Erwachsene",
+    "bannerView": "Gartenblick",
+    "carouselTitle": "VERANDAZIMMER",
+    "carouselDesc1": "Das 25 m² Verandazimmer verfügt über ein Doppelbett und ein Einzelbett sowie eine private Veranda mit ruhigem Gartenblick. Perfekt, um den Morgenkaffee oder die Abendentspannung zu genießen. Ein gut ausgestattetes Bad und durchdachte Annehmlichkeiten runden Ihren Aufenthalt ab.",
+    "carouselDesc2": "Das Inone Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
+    "carouselButtonText": "ENTDECKEN"
+  },
+
+  "RoomsSlider": {
+    "title": "Standardzimmer",
+    "description": "25 m², 1 französisches Bett + 1 Einzelbett, besteht aus Toilette und Badezimmer.",
+    "adults": "3 Erwachsene",
+    "area": "25 m²",
+
+    "title2": "Juniorzimmer",
+    "description2": "20 m², besteht aus 1 französischem Bett, Toilette und Badezimmer.",
+    "adults2": "2 Erwachsene",
+    "area2": "20 m²",
+
+    "title3": "Verandazimmer",
+    "description3": "25 m², 1 französisches Bett + 1 Einzelbett, besteht aus Toilette und Badezimmer.",
+    "adults3": "3 Erwachsene",
+    "area3": "25 m²",
+
+    "title4": "Eckzimmer",
+    "description4": "25 m², 1 französisches Bett, besteht aus Toilette und Badezimmer.",
+    "adults4": "2 Erwachsene",
+    "area4": "25 m²"
+  },
+
+  "Contact": {
+    "header": "KONTAKT",
+    "description": "Kontaktieren Sie uns per Telefon, E-Mail oder über den Chat unten rechts. Klicken Sie auf „Rückruf anfordern“ für einen Rückruf.",
+    "callCenterLabel": "Call Center",
+    "emailLabel": "Call Center E-Mail",
+    "phonePlaceholder": "+90 555 123 45 67",
+    "emailPlaceholder": "callcenter@example.com",
+    "buttonText": "RÜCKRUF ANFORDERN"
   }
 }

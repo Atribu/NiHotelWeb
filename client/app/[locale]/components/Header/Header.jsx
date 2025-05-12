@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, Sun } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useTranslations } from 'next-intl';
 import LangSwitcher from '@/LangSwitcher';
 import Image from "next/image";
@@ -35,18 +35,18 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full max-w-screen z-[9999] bg-black/10 backdrop-blur-md text-white">
+    <header className="fixed top-0 left-0 w-full max-w-screen z-[9999] bg-black/10 backdrop-blur-md text-white py-2">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
         {/* Sol */}
         <div className="flex items-center gap-4">
           <Menu className="w-6 h-6 cursor-pointer" onClick={() => setIsMenuOpen(true)} />
-          <span className="uppercase text-sm tracking-widest">Menu</span>
+          <span className="uppercase text-sm lg:text-[16px] tracking-widest font-medium mr-2">{t("menu")}</span>
 
           {/* Dil Menüsü */}
-          <div className="relative">
+          <div className="relative hidden lg:flex">
           <LangSwitcher className="uppercase" />
-
+{/* 
             {isLangOpen && (
               <ul className="absolute left-0 mt-2 w-24 bg-black/80 backdrop-blur-md text-white rounded-md shadow-lg text-center z-50">
                 {["EN", "TR", "DE", "RU"]
@@ -61,21 +61,24 @@ export default function Header() {
                     </li>
                 ))}
               </ul>
-            )}
+            )} */}
           </div>
         </div>
 
-        <div className="flex-1 text-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
+        <div className="flex-1 text-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <Link href="/">
             <Image src={NiHotelLogo} alt="logo" className="w-auto h-[90px] mx-auto"/>
         </Link>
         </div>
 
         {/* Sağ */}
-        <div className="hidden md:flex items-center gap-2 uppercase text-sm -tracking-[0.55px] font-semibold lg:text-[16px] leading-[20px] font-jost">
+        <div className="hidden lg:flex items-center gap-2 uppercase text-sm -tracking-[0.55px] font-medium lg:text-[16px] leading-[20px] font-jost">
         <span>{t("booknow")}</span>
         <BellSvg className="flex" width={30} height={16} color="#fff"/>
-        <Sun className="w-5 h-5" />
+        </div>
+
+        <div className="flex lg:hidden">
+          <LangSwitcher/>
         </div>
       </div>
       {/* Arka plan karartması */}
@@ -126,7 +129,7 @@ export default function Header() {
   <PhoneSvg className="flex" width={22} height={22} color="#D9D9D9"/>
 <Link className="text-[15px] text-black font-normal " href="tel:+902423243742">+90 242 324 37 42</Link>
 </div>
-<button className="flex items-center justify-center text-center py-[10px] w-[274px] bg-gray-600 text-white text-[15px font-semibold] uppercase">{t("letuscallyou")}</button>
+<button className="flex items-center justify-center text-center py-[10px] px-[10px] md:w-[274px] bg-gray-600 text-white text-[12px] md:text-[15px] font-semibold uppercase">{t("letuscallyou")}</button>
 </div>
 </div>
 
