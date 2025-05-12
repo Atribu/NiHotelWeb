@@ -9,7 +9,8 @@
       "rooms":"Unsere Zimmer",
       "kitchen":"Unsere Küche",
       "booknow":"Jetzt reservieren",
-       "letuscallyou": "Lassen Sie uns Sie anrufen"
+       "letuscallyou": "Lassen Sie uns Sie anrufen",
+       "menu": "Menü"
     },
 
 
@@ -28,6 +29,119 @@
     "guests": "Gäste",
     "booknow": "JETZT BUCHEN",
     "adult":"Erwachsene",
-    "kid":"Kind(er)"
+    "kid":"Kind(er)",
+    "children": "Kinder",
+    "childAge": "Kindesalter"
+  },
+
+  "Rooms": {
+    "rooms": "Zimmer",
+      "title": "Standardzimmer",
+      "description": "Unser geräumiges Standardzimmer (25 m²) verfügt über ein Doppel- und ein Einzelbett, liebevoll für Ihren Komfort eingerichtet. Erfrischen Sie sich in einem modernen Privatbadezimmer. Ideal für Familien oder Freunde, die einen erholsamen Aufenthalt suchen.",
+      "buttonText": "Entdecken",
+
+      "title2": "Juniorzimmer",
+      "description2": "Das 20 m² Juniorzimmer ist mit einem Doppelbett und eigenem Bad ausgestattet und bietet Solo­reisenden oder Paaren eine einladende, intime Atmosphäre. Genießen Sie alle wichtigen Annehmlichkeiten für einen angenehmen Aufenthalt.",
+
+      "title3": "Verandazimmer",
+      "description3": "Das 25 m² Verandazimmer verfügt über ein Doppel- und ein Einzelbett sowie eine private Veranda mit ruhigem Gartenblick. Perfekt für Morgenkaffee oder abendliche Entspannung. Ein gut ausgestattetes Bad und durchdachte Extras machen Ihren Aufenthalt komplett.",
+
+      "title4": "Eckzimmer",
+      "description4": "Unser 25 m² Eckzimmer bietet durch seine Lage in der Ecke zusätzliche Privatsphäre und viel Tageslicht. Es ist mit einem Doppelbett und eigenem Bad ausgestattet. Geräumig gestaltet mit bequemen Sitzmöglichkeiten und modernen Annehmlichkeiten."
+
+  },
+
+  "RoomFeatures": {
+    "header": "ZIMMERAUSSTATTUNG",
+    "conditioner": "Zentrale Klimaanlage",
+    "tv": "LED-Fernseher",
+    "toilet": "Kostenlose Toilettenartikel",
+    "wifi": "WLAN",
+    "phone": "Telefon",
+    "minibar": "Minibar",
+    "showerphone": "Duschtelefon",
+    "safe": "Safe",
+    "towel": "Handtuch-Set",
+    "makeuptable": "Schreibtisch",
+    "coffee": "Kaffee-/Teemaschine",
+    "hairdryer": "Haartrockner",
+     "rulesHeader": "Zimmerregeln:",
+    "rulesDetails": "Check-In: 14:00 Check-Out: 12:00 Kein Rauchen "
+  },
+
+  "CornerRoom": {
+    "bannerHeader": "Eckzimmer",
+    "bannerM2": "30 m²",
+    "bannerPerson": "2 Erwachsene",
+    "bannerView": "Gartenblick",
+    "carouselTitle": "ECKZIMMER",
+    "carouselDesc1": "Unsere Zimmer mit jeweils 30 m², Balkon und Gartenblick sind geschmackvoll gestaltet und auf Ihren Komfort ausgerichtet. Sie verfügen über ein großes Doppelbett oder zwei Einzelbetten, einen Schreibtisch und Stühle.",
+    "carouselDesc2": "Das Inone Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
+    "carouselButtonText": "ENTDECKEN"
+  },
+  
+  "StandardRoom": {
+    "bannerHeader": "Standardzimmer",
+    "bannerM2": "25 m²",
+    "bannerPerson": "3 Erwachsene",
+    "bannerView": "Gartenblick",
+    "carouselTitle": "STANDARDZIMMER",
+    "carouselDesc1": "Unser geräumiges Standardzimmer (25 m²) verfügt über ein Doppelbett und ein Einzelbett, liebevoll für Ihren Komfort eingerichtet. Erfrischen Sie sich in einem modernen Privatbadezimmer. Ideal für Familien oder Freunde, die einen erholsamen Aufenthalt suchen.",
+    "carouselDesc2": "Das Inone Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
+    "carouselButtonText": "ENTDECKEN"
+  },
+
+  "VerandaRoom": {
+    "bannerHeader": "Verandazimmer",
+    "bannerM2": "25 m²",
+    "bannerPerson": "3 Erwachsene",
+    "bannerView": "Gartenblick",
+    "carouselTitle": "VERANDAZIMMER",
+    "carouselDesc1": "Das 25 m² Verandazimmer verfügt über ein Doppelbett und ein Einzelbett sowie eine private Veranda mit ruhigem Gartenblick. Perfekt, um den Morgenkaffee oder die Abendentspannung zu genießen. Ein gut ausgestattetes Bad und durchdachte Annehmlichkeiten runden Ihren Aufenthalt ab.",
+    "carouselDesc2": "Das Inone Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
+    "carouselButtonText": "ENTDECKEN"
+  },
+
+  "JuniorRoom": {
+    "bannerHeader": "Juniorzimmer",
+    "bannerM2": "20 m²",
+    "bannerPerson": "2 Erwachsene",
+    "bannerView": "Gartenblick",
+    "carouselTitle": "JUNIORZIMMER",
+    "carouselDesc1": "Unser 20 m² Juniorzimmer verfügt über ein französisches Bett sowie separates WC und Badezimmer.",
+    "carouselDesc2": "Das Inone Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
+    "carouselButtonText": "ENTDECKEN"
+  },
+
+  "RoomsSlider": {
+    "title": "Standardzimmer",
+    "description": "25 m², 1 französisches Bett + 1 Einzelbett, besteht aus Toilette und Badezimmer.",
+    "adults": "3 Erwachsene",
+    "area": "25 m²",
+
+    "title2": "Juniorzimmer",
+    "description2": "20 m², besteht aus 1 französischem Bett, Toilette und Badezimmer.",
+    "adults2": "2 Erwachsene",
+    "area2": "20 m²",
+
+    "title3": "Verandazimmer",
+    "description3": "25 m², 1 französisches Bett + 1 Einzelbett, besteht aus Toilette und Badezimmer.",
+    "adults3": "3 Erwachsene",
+    "area3": "25 m²",
+
+    "title4": "Eckzimmer",
+    "description4": "25 m², 1 französisches Bett, besteht aus Toilette und Badezimmer.",
+    "adults4": "2 Erwachsene",
+    "area4": "25 m²"
+  },
+
+  "Contact": {
+    "header": "KONTAKT",
+    "description": "Kontaktieren Sie uns per Telefon, E-Mail oder über den Chat unten rechts. Klicken Sie auf „Rückruf anfordern“ für einen Rückruf.",
+    "callCenterLabel": "Call Center",
+    "emailLabel": "Call Center E-Mail",
+    "phonePlaceholder": "+90 555 123 45 67",
+    "emailPlaceholder": "callcenter@example.com",
+    "buttonText": "RÜCKRUF ANFORDERN"
   }
 }

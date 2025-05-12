@@ -6,3 +6,26 @@ input[type="date"]::-webkit-datetime-edit-month-field,
 input[type="date"]::-webkit-datetime-edit-day-field {
   color: transparent;
 }
+
+.font-cormorant {
+  font-family: 'Cormorant_Garamond', sans-serif;
+}
+
+.font-jost {
+  font-family: 'Jost', sans-serif;
+}
+
+.font-geistSans {
+  font-family: 'Geist', sans-serif;
+}
+
+
+
+.text-customBlack {
+  color:  rgb(36, 41, 44); 
+
+}
+
+.bg-customBlack {
+  background-color: rgb(36, 41, 44);
+}

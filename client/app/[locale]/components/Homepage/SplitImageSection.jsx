@@ -4,6 +4,8 @@ import img1 from "./images/img1.jpg";
 import img2 from "./images/img22.png";
 import imgup from "./images/imgup.png";
 import NiHotelLogo from "../../../../public/Header/NiHotel.svg"
+import img11 from "../../../../public/images/breakfast/DSCF8600.webp"
+import img12 from "../../../../public/images/breakfast/DSCF86022.webp"
 
 import Image from "next/image";
 import Link from "next/link";
@@ -50,11 +52,12 @@ export default function SplitImageSection() {
         <div className="flex flex-col md:flex-row items-start justify-start ">
           {/* Sol Kart */}
           <div className="relative w-full md:w-1/2 lg:w-[59%] overflow-hidden shadow-lg">
-            <Image src={img1} alt="Muco Hotel" width={img1.width} height={img1.height} className="object-cover" />
-            <div className="absolute inset-0 p-8 flex flex-col justify-end text-white">
-            <Image src={NiHotelLogo} alt="logo" className="w-[90px] h-[90px] flex"/>
-              <h3 className="text-sm uppercase">MUCHO SELECTION HOTEL</h3>
-              <p className="mt-2 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed w-[80%]">
+          <div className="absolute inset-0 bg-black/25 z-[1]"></div>
+            <Image src={img12} alt="Muco Hotel" width={img12.width} height={img12.height} className="object-cover" />
+            <div className="absolute inset-0 p-8 flex flex-col justify-end text-white z-[100]">
+            <Image src={NiHotelLogo} alt="logo" className="w-[100px] h-[100px] flex z-[100]"/>
+              <h3 className="text-sm lg:text-[16px] uppercase font-medium">MUCHO SELECTION HOTEL</h3>
+              <p className="mt-2 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed w-[80%] font-medium">
                 Mucho Selection Hotel is a hotel located in the Asarlık area, in
                 Bodrum, Turkey. This hotel offers a comfortable stay for
                 travelers who want to enjoy the beauty of Bodrum.
