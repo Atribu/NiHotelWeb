@@ -17,7 +17,7 @@ const page = () => {
   const t = useTranslations('VerandaRoom');
   
   return (
-    <div>
+    <div className='max-w-screen overflow-x-hidden'>
         <SubRoomBannner header={t("bannerHeader")} m2={t("bannerM2")} person={t("bannerPerson")} view={t("bannerView")} image={img1}/>
        <RoomCarouselSection
       title={t("carouselTitle")}
@@ -36,11 +36,8 @@ const page = () => {
        img8
       ]}
       buttonText={t("carouselButtonText")}
-     
     />
-
     <ReservationSection/>
-
     <RoomFeatures/>
     </div>
   )

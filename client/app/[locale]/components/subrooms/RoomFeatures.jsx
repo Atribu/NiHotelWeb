@@ -7,12 +7,12 @@ import showerphone from "../../../../public/images/rooms/showerphone.png"
 import towel from "../../../../public/images/rooms/towel.png"
 import conditioner from "../../../../public/images/rooms/conditioner.png"
 import minibar from "../../../../public/images/rooms/minibar.png"
-import tv from "../../../../public/images/rooms/tv.png"
+import tv from "../../../../public/images/rooms/tv2.png"
 import phone from "../../../../public/images/rooms/phone.png"
-import safe from "../../../../public/images/rooms/safe.png"
-import coffee from "../../../../public/images/rooms/coffee.png"
-import makeuptable from "../../../../public/images/rooms/makeuptable.png"
-import hairdryer from "../../../../public/images/rooms/hairdryer.png"
+import safe from "../../../../public/images/rooms/safe2.png"
+import coffee from "../../../../public/images/rooms/coffee2.png"
+import makeuptable from "../../../../public/images/rooms/table.png"
+import hairdryer from "../../../../public/images/rooms/hairdryer2.png"
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
 
@@ -38,14 +38,14 @@ export default function RoomFeatures() {
     <section className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-serif mb-8">{t("header")}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-10 lg:gap-x-16 items-center justify-start ml-[9%]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-10 lg:gap-x-20 items-center justify-start ml-[9%]">
           {features.map(({ src, label }, idx) => (
             <div key={idx} className="flex items-center justify-start space-x-3">
               <Image
                 src={src}
                 alt={label}
-                width={52}
-                height={52}
+                width={26}
+                height={26}
                 className="object-contain"
               />
               <span className="text-sm text-gray-700">{label}</span>

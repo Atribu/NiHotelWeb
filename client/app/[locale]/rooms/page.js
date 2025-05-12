@@ -12,7 +12,7 @@ const page = () => {
   const t = useTranslations('Rooms');
 
   return (
-  <div>
+  <div className='max-w-screen overflow-x-hidden'>
     <RoomsBanner/>
     <RoomShowcase
       id="standardroom"

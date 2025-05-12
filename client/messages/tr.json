@@ -67,7 +67,7 @@
     "coffee": "Kahve/Çay Makinesi",
     "hairdryer": "Saç Kurutma Makinesi",
       "rulesHeader": "Oda Kuralları:",
-    "rulesDetails": "Giriş: 14:00 Çıkış: 12:00 Sigara İçmek Yasaktır Evcil Hayvanlara İzin Verilir (10 kg’a kadar)"
+    "rulesDetails": "Giriş: 14:00 Çıkış: 12:00 Sigara İçmek Yasaktır "
   },
 
   "CornerRoom": {

@@ -18,7 +18,7 @@ const page = () => {
   const t = useTranslations('CornerRoom');
   
   return (
-    <div>
+    <div className='max-w-screen overflow-x-hidden'>
         <SubRoomBannner header={t("bannerHeader")} m2={t("bannerM2")} person={t("bannerPerson")} view={t("bannerView")} image={img2}/>
        <RoomCarouselSection
       title={t("carouselTitle")}
