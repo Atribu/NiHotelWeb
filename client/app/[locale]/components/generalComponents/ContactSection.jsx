@@ -18,9 +18,9 @@ export default function ContactSection() {
     <section className="bg-[#f5f5f5] py-16 px-4">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* LEFT */}
-        <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-semibold font-cormorant">{t("header")}</h2>
-          <p className="mt-4 text-gray-600">
+        <div className="w-[90%] sm:w-[80%] md:w-1/2 items-center justify-center text-center md:items-start md:justify-start md:text-start">
+          <h2 className="text-[24px] lg:text-3xl font-medium font-cormorant">{t("header")}</h2>
+          <p className="mt-4 text-gray-600 text-[12px] md:text-[14px] lg:text-[14px]">
           {t("description")}
           </p>
 
@@ -35,7 +35,7 @@ export default function ContactSection() {
                   placeholder="+90 555 123 45 67"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  className="ml-3 w-full text-gray-700 placeholder-gray-400 focus:outline-none"
+                  className="ml-3 w-full text-gray-700 placeholder-gray-400 focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px]"
                 />
               </div>
             </div>
@@ -50,13 +50,13 @@ export default function ContactSection() {
                   placeholder="callcenter@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="ml-3 w-full text-gray-700 placeholder-gray-400 focus:outline-none"
+                  className="ml-3 w-full text-gray-700 placeholder-gray-400 focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px]"
                 />
               </div>
             </div>
 
             {/* Button */}
-            <button className="w-full md:w-auto mt-4 bg-[#00a1af] hover:bg-[#00a1af] text-white font-medium py-3 px-6 ">
+            <button className="w-1/2 md:w-auto mt-4 bg-[#00a1af] hover:bg-[#00a1af] text-white font-medium py-2 px-6 text-[14px] lg:text-[16px] ">
             {t("buttonText")}
             </button>
           </div>

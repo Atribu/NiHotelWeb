@@ -31,7 +31,7 @@ export default function ReservationSection() {
   return (
     <div className="max-w-screen bg-[#fafafa] items-center justify-center">
       <section className="p-4 w-[95%] items-center justify-center">
-        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-6 space-y-4 md:space-y-0">
+        <div className="flex flex-col lg:flex-row items-center justify-center md:space-x-6 space-y-4 md:space-y-0">
           
           {/* Check-in */}
           <div className="flex items-center -space-x-10">
