@@ -79,14 +79,14 @@ export default function RoomSlider() {
         <AiOutlineRight className="w-6 h-6" />
       </button>
 
-      <div className="grid grid-cols-5 gap-4 items-center relative z-10">
+      <div className="flex flex-col lg:grid lg:grid-cols-5 gap-4 items-center relative z-10">
         {/* Soldaki Sabit Resim */}
-        <div className="relative h-[400px] lg:h-[500px] overflow-hidden shadow-md col-span-2">
-          <Image src={leftStatic} alt="Static Left" fill className="object-cover" />
+        <div className="hidden lg:flex relative h-[420px] lg:h-[500px] overflow-hidden shadow-md col-span-2">
+          <Image src={corner} alt="Static Left" fill className="object-cover" />
         </div>
 
         {/* Ortadaki Dönen Slider */}
-        <div className="overflow-hidden shadow-md h-[400px] lg:h-[500px] col-span-2">
+        <div className="overflow-hidden shadow-md w-[97%] sm:w-[80%] lg:w-[100%] h-[440px] lg:h-[500px] col-span-2">
           <div
             className="flex h-full transition-transform duration-500 ease-in-out"
             style={{
@@ -109,15 +109,15 @@ export default function RoomSlider() {
                   />
                 </div>
                 {/* İçerik */}
-                <div className="w-[100%] p-4 flex flex-col lg:flex-row justify-between">
+                <div className="w-[100%] p-4 flex flex-row lg:flex-col xl:flex-row justify-around items-start lg:justify-between">
                 <div className="flex flex-col w-[62%] gap-2">
                 <h3 className="text-lg font-semibold">{slide.title}</h3>
                 <p className="text-sm text-gray-600 flex-1">{slide.description}</p>
                 </div>
-                  <div className="flex items-center justify-center space-x-4 mt-2 w-[34%]">
+                  <div className="flex flex-col md:flex-row xl:flex-col gap-2 items-center justify-center space-x-4 mt-2 lg:w-[50%] xl:w-[34%] ">
                     <div className="flex items-center space-x-1">
                       <FaUserAlt />
-                      <span>{slide.details.adults} Adults</span>
+                      <span>{slide.details.adults}</span>
                     </div>
                     <div className="flex items-center space-x-1">
                       <HiOutlineCalendar />
@@ -131,8 +131,8 @@ export default function RoomSlider() {
         </div>
 
         {/* Sağdaki Sabit Resim */}
-        <div className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-md">
-          <Image src={rightStatic} alt="Static Right" fill className="object-cover" />
+        <div className="hidden lg:flex relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-md">
+          <Image src={standard} alt="Static Right" fill className="object-cover" />
         </div>
       </div>
     </div>

@@ -8,6 +8,12 @@ import cornerImage2 from "../../../public/images/rooms/cornerroom/NI-CORNER5.web
 import standardImage from "../../../public/images/rooms/standardroom/NI-STANDART2.webp"
 import standardImage2 from "../../../public/images/rooms/standardroom/NI-STANDART4.webp"
 
+import juniorImage from "../../../public/images/rooms/juniorroom/NI-JUNIOR1.webp"
+import juniorImage2 from "../../../public/images/rooms/juniorroom/NI-JUNIOR2.webp"
+
+import verandaImage from "../../../public/images/rooms/veranda/NI-VERANDA.webp"
+import verandaImage2 from "../../../public/images/rooms/veranda/NI-VERANDA2.webp"
+
 const page = () => {
   const t = useTranslations('Rooms');
 
@@ -22,8 +28,8 @@ const page = () => {
         buttonText={t("buttonText")}
         imagesOnRight={false}
         images={[
-          { src: standardImage, alt: "Corner " },
-          { src: standardImage2, alt: "Corner " },
+          { src: standardImage, alt: "standard " },
+          { src: standardImage2, alt: "standard " },
         ]}
       />
        {/* Aynı component, bu kez resimler sağda */}
@@ -35,8 +41,8 @@ const page = () => {
         buttonText={t("buttonText")}
         imagesOnRight={true}
         images={[
-          { src: "/images/corner1.jpg", alt: "  " },
-          { src: "/images/corner2.jpg", alt: "  " },
+          { src: juniorImage, alt: " junior room " },
+          { src: juniorImage2, alt: " junior room " },
         ]}
       />
 
@@ -48,8 +54,8 @@ const page = () => {
         buttonText={t("buttonText")}
         imagesOnRight={false}
         images={[
-          { src: "/images/room1.jpg", alt: "Room " },
-          { src: "/images/room2.jpg", alt: "Room  " },
+          { src: verandaImage, alt: "veranda " },
+          { src: verandaImage2, alt: "veranda  " },
         ]}
       />
        {/* Aynı component, bu kez resimler sağda */}
@@ -61,8 +67,8 @@ const page = () => {
         buttonText={t("buttonText")}
         imagesOnRight={true}
         images={[
-          { src: cornerImage, alt: "  " },
-          { src: cornerImage2, alt: "  " },
+          { src: cornerImage, alt: " corner " },
+          { src: cornerImage2, alt: "corner  " },
         ]}
       />
   </div>

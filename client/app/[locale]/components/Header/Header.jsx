@@ -67,7 +67,7 @@ export default function Header() {
 
         <div className="flex-1 text-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <Link href="/">
-            <Image src={NiHotelLogo} alt="logo" className="w-auto h-[90px] mx-auto"/>
+            <Image src={NiHotelLogo} alt="logo" className="w-auto h-[65px] lg:h-[90px] mx-auto"/>
         </Link>
         </div>
 
@@ -119,8 +119,8 @@ export default function Header() {
   <nav className="flex flex-col items-start gap-6 p-8 mt-0 text-lg uppercase tracking-widest">
     <Link href="/" onClick={() => setIsMenuOpen(false)}>{t("home")}</Link>
     <Link href="/rooms" onClick={() => setIsMenuOpen(false)}>{t("rooms")}</Link>
-    <Link href="/beachpools" onClick={() => setIsMenuOpen(false)}>{t("nihotel")}</Link>
-    <Link href="/contact" onClick={() => setIsMenuOpen(false)}>{t("kitchen")}</Link>
+    <Link href="/contact" onClick={() => setIsMenuOpen(false)}>{t("contact")}</Link>
+    <Link href="/about" onClick={() => setIsMenuOpen(false)}>{t("about")}</Link>
   </nav>
 
 <div className="flex w-full items-center justify-center mt-20 lg:mt-72">
