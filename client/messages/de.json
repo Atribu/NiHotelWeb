@@ -10,7 +10,9 @@
       "kitchen":"Unsere Küche",
       "booknow":"Jetzt reservieren",
        "letuscallyou": "Lassen Sie uns Sie anrufen",
-       "menu": "Menü"
+       "menu": "Menü",
+       "contact":"Kontakt",
+        "about":"Über uns"
     },
 
 
@@ -142,6 +144,15 @@
     "emailLabel": "Call Center E-Mail",
     "phonePlaceholder": "+90 555 123 45 67",
     "emailPlaceholder": "callcenter@example.com",
-    "buttonText": "RÜCKRUF ANFORDERN"
+    "buttonText": "RÜCKRUF ANFORDERN",
+    "getintouch":"Kontakt aufnehmen",
+    "text":"Das NiHotel liegt in Konyaaltı, nur wenige Schritte vom Mittelmeer entfernt. Unser Team steht Ihnen rund um die Uhr für Buchungen, Service-Informationen oder besondere Wünsche zur Verfügung."
+  },
+
+  "About":{
+    "header":"Über uns",
+    "text1":"Im Herzen von Antalya, dem „türkisfarbenen Paradies“ der Türkei, nur wenige Schritte von den ruhigen Straßen von Konyaaltı und seinen Blauen-Fahnen-Stränden entfernt, vereint das NiHotel modernen Komfort mit echter türkischer Gastfreundschaft. Unsere 12 Standard-, 3 Junior-, 4 Veranda- und 6 Corner-Zimmer sind mit einem 42″ LED-TV, Zentralklimatisierung, Safe, Minibar und kostenlosen Badezimmerartikeln ausgestattet.",
+    "text2":"Ein reichhaltiges Frühstücksbuffet ist im Aufenthalt inbegriffen, und unser rund um die Uhr besetztes Empfangsteam hilft Ihnen gern bei Reservierungen, Tourplanungen, Sonderwünschen oder Ausflügen zu den nahegelegenen Düden-Wasserfällen und der antiken Festung."
   }
+
 }

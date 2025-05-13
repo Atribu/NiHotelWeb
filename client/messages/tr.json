@@ -10,7 +10,9 @@
       "kitchen":"Mutfağımız",
       "booknow":"Rezarvasyon Yap",
       "letuscallyou":"Sizi Arayalım",
-      "menu": "Menü"
+      "menu": "Menü",
+      "contact":"İletişim",
+      "about":"Hakkımızda"
     },
 
     "Footer": {
@@ -143,7 +145,15 @@
     "emailLabel": "Çağrı Merkezi E-posta",
     "phonePlaceholder": "+90 555 123 45 67",
     "emailPlaceholder": "callcenter@example.com",
-    "buttonText": "BİZİ ARAYIN"
+    "buttonText": "BİZİ ARAYIN",
+    "getintouch":"İletişime Geçin",
+    "text":"NiHotel, Akdeniz’e sadece birkaç adım uzaklıktaki Konyaaltı’nda yer alıyor. Rezervasyon, hizmet bilgisi veya özel talepleriniz için ekibimiz 7/24 yanınızda."
+  },
+
+  "About":{
+    "header":"Hakkımızda",
+    "text1":"Türkiye’nin “turkuaz cenneti” Antalya’sının kalbinde, Konyaaltı’nın sakin sokaklarına ve mavi bayraklı plajlarına sadece birkaç adım mesafede konumlanan NiHotel, modern konforu ve Türk misafirperverliğini bir arada sunuyor. 12 Standard, 3 Junior, 4 Veranda ve 6 Corner odamız; 42″ LED TV, merkezi klima, kasa, mini bar ve ücretsiz banyo malzemeleriyle donatılmıştır.",
+    "text2":"Zengin açık büfe kahvaltı konaklamaya dahildir ve 7/24 resepsiyon ekibimiz; rezervasyon, tur planlama, özel istekleriniz veya yakınlardaki Düden Şelalesi ile Antik Kale gezileriniz için yanınızda."
   }
   
 }

@@ -50,7 +50,7 @@ export default function Footer() {
       </div>
           
           {/* İletişim Bilgileri */}
-          <div className="flex flex-col items-center lg:items-start space-y-3 lg:border-l lg:border-gray-200 lg:pl-8">
+          <div className="flex flex-col items-center lg:items-start space-y-3 lg:border-l lg:border-gray-200 lg:pl-8 text-center">
             <a href="tel:+905334734495" className="flex items-center text-gray-600 hover:text-gray-800">
               <FaPhone className="mr-2" />+90 533 473 44 95
             </a>
