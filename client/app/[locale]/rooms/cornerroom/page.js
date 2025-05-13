@@ -14,7 +14,7 @@ import img9 from "../../../../public/images/rooms/cornerroom/NI-CORNER9.webp"
 import ReservationSection from '../../components/generalComponents/ReservationSection'
 import { useTranslations } from 'next-intl';
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('CornerRoom');
   
   return (
@@ -48,4 +48,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

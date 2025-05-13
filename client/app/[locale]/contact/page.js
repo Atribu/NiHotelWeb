@@ -4,7 +4,7 @@ import ContactSection from './components/ContactSection'
 import img from "../../../public/images/lobi/DSCF8651.webp"
 import { useTranslations } from 'next-intl';
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('Contact');
   
   return (
@@ -15,4 +15,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

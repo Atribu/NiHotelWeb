@@ -1,6 +1,6 @@
 import React from 'react'
 
-const page = ({image,header}) => {
+const ContactBanner = ({image,header}) => {
 
   return (
     <div className='flex max-w-screen h-[70vh] md:items-center md:justify-center bg-center bg-cover justify-center items-center relative' style={{ backgroundImage: `url(${image.src})` }}>
@@ -15,4 +15,4 @@ const page = ({image,header}) => {
   )
 }
 
-export default page
+export default ContactBanner

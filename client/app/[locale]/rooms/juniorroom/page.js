@@ -17,7 +17,7 @@ import img12 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR13.webp"
 import ReservationSection from '../../components/generalComponents/ReservationSection'
 import { useTranslations } from 'next-intl';
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('JuniorRoom');
   
   return (
@@ -54,4 +54,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

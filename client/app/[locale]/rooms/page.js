@@ -14,7 +14,7 @@ import juniorImage2 from "../../../public/images/rooms/juniorroom/NI-JUNIOR2.web
 import verandaImage from "../../../public/images/rooms/veranda/NI-VERANDA.webp"
 import verandaImage2 from "../../../public/images/rooms/veranda/NI-VERANDA2.webp"
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('Rooms');
 
   return (
@@ -75,4 +75,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

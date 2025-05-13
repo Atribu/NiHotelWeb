@@ -13,7 +13,7 @@ import img8 from "../../../../public/images/rooms/veranda/NI-VERANDA8.webp"
 import ReservationSection from '../../components/generalComponents/ReservationSection'
 import { useTranslations } from 'next-intl';
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('VerandaRoom');
   
   return (
@@ -43,4 +43,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

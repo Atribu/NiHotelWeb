@@ -15,7 +15,7 @@ import img10 from "../../../../public/images/rooms/standardroom/NI-STANDART11.we
 import ReservationSection from '../../components/generalComponents/ReservationSection'
 import { useTranslations } from 'next-intl';
 
-const page = () => {
+const Page = () => {
   const t = useTranslations('StandardRoom');
   
   return (
@@ -50,4 +50,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
