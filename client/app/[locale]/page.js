@@ -13,8 +13,8 @@ const page = () => {
     <ReservationSection/>
     <SplitImageSection/>
     {/* <AmenitiesSection/> */}
-    <RoomSlider/>
-    <ContactSection/>
+    {/* <RoomSlider/> */}
+    {/* <ContactSection/> */}
     </div>
   )
 }
