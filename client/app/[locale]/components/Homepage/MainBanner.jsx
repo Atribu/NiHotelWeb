@@ -14,7 +14,7 @@ export default function HomePage() {
       playsInline
       className=" top-0 left-0 w-full h-full object-cover hidden lg:flex relative">
       <source 
-        src="/videoss/nidesktop.mp4"
+        src="/videoss/nihoteldesktop.mp4"
         type="video/mp4"
       />
       Tarayıcınız bu videoyu desteklemiyor.

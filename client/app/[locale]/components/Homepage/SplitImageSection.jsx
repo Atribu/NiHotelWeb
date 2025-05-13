@@ -19,7 +19,7 @@ export default function SplitImageSection() {
       <div className="flex flex-col max-w-[1200px] mx-auto px-4 gap-[35px] ">
         <div className="flex flex-col md:flex-row items-end justify-end relative md:mr-[6%] lg:mr-[6%]">
           <div className="relative w-full md:w-[68%]  overflow-hidden shadow-lg items-start justify-start flex">
-          <div className="absolute inset-0 bg-black/25 z-[50]"></div>
+          <div className="absolute inset-0 bg-black/30 z-[50]"></div>
           <Image
               src={ust}
               alt="Beach Bar & Restaurant"
@@ -50,7 +50,7 @@ export default function SplitImageSection() {
               height={sag.height}
               className="object-cover  z-[10] "
             />
-             <div className="absolute inset-0 bg-black/25  z-[10]"></div>
+             <div className="absolute inset-0 bg-black/30  z-[10]"></div>
           </div>
         </div>
 

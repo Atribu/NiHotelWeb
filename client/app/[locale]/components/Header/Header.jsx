@@ -119,7 +119,7 @@ export default function Header() {
   <nav className="flex flex-col items-start gap-6 p-8 mt-0 text-lg uppercase tracking-widest">
     <Link href="/" onClick={() => setIsMenuOpen(false)}>{t("home")}</Link>
     <Link href="/rooms" onClick={() => setIsMenuOpen(false)}>{t("rooms")}</Link>
-    <Link href="/beachpools" onClick={() => setIsMenuOpen(false)}>{t("nihotel")}</Link>
+    <Link href="/contact" onClick={() => setIsMenuOpen(false)}>{t("nihotel")}</Link>
     <Link href="/contact" onClick={() => setIsMenuOpen(false)}>{t("kitchen")}</Link>
   </nav>
 

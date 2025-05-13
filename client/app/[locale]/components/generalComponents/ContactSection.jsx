@@ -7,6 +7,7 @@ import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import MailSvg from "./MailSvg";
 import PhoneSvg from "./PhoneSvg";
 import { useTranslations } from 'next-intl';
+import img from "../../../../public/images/callcenter.webp"
 
 export default function ContactSection() {
   const t = useTranslations('Contact');
@@ -32,7 +33,7 @@ export default function ContactSection() {
               <PhoneSvg width={28} height={20} className="flex" color="#00a1af"/>
                 <input
                   type="tel"
-                  placeholder="+90 555 123 45 67"
+                  placeholder="+90 242 324 37 42"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   className="ml-3 w-full text-gray-700 placeholder-gray-400 focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px]"
@@ -47,7 +48,7 @@ export default function ContactSection() {
                 <MailSvg width={28} height={20} className="flex" color="#00a1af"/>
                 <input
                   type="email"
-                  placeholder="callcenter@example.com"
+                  placeholder="frontoffice@nihotellara.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="ml-3 w-full text-gray-700 placeholder-gray-400 focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px]"
@@ -65,7 +66,7 @@ export default function ContactSection() {
         {/* RIGHT (Illustration) */}
         <div className="hidden md:block w-full md:w-1/2">
           <Image
-            src="/contact-illustration.svg"
+            src={img}
             alt="Contact Illustration"
             width={500}
             height={500}
