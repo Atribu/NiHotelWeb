@@ -35,10 +35,10 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Metin bölümü */}
           <div className="space-y-6">
-            <p className="text-gray-700 text-[16px] md:text-lg lg::text-xl leading-relaxed">
+            <p className="text-gray-700 text-[14px] lg:text-[16px] md:text-lg lg::text-xl leading-relaxed">
               {t("text1")}
             </p>
-            <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
+            <p className="text-gray-700 text-[14px] lg:text-[16px] md:text-xl leading-relaxed">
               {t("text2")}
             </p>
           </div>

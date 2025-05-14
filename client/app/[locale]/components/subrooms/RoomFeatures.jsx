@@ -37,7 +37,7 @@ export default function RoomFeatures() {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-serif mb-8">{t("header")}</h2>
+        <h2 className="text-[24px] lg:text-3xl font-serif mb-8">{t("header")}</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-10 lg:gap-x-20 items-center justify-start ml-[9%]">
           {features.map(({ src, label }, idx) => (
             <div key={idx} className="flex items-center justify-start space-x-3">
@@ -48,7 +48,7 @@ export default function RoomFeatures() {
                 height={26}
                 className="object-contain"
               />
-              <span className="text-sm text-gray-700">{label}</span>
+              <span className="text-[12px] lg:text-sm text-gray-700">{label}</span>
             </div>
           ))}
         </div>

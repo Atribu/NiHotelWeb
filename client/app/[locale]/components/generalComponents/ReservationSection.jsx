@@ -100,12 +100,12 @@ export default function ReservationSection() {
           {/* Book Now */}
           <a
             href={bookingUrl}
-            className="mt-2 md:mt-0 text-black hover:text-white px-6 py-2 flex items-center space-x-2 hover:bg-gray-800 border border-gray-300"
+            className="mt-2 md:mt-0 text-[#00a1af] hover:text-white px-6 py-2 flex items-center space-x-2 hover:bg-gray-800 border border-gray-300"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span className="font-medium whitespace-nowrap">{t("booknow")}</span>
-            <BellSvg className="flex" width={30} height={18} color="#11131d" />
+            <BellSvg className="flex" width={30} height={18} color="#00a1af" />
           </a>
         </div>
       </section>

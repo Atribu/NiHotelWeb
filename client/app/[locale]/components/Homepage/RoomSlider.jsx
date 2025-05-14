@@ -131,7 +131,7 @@ export default function RoomSlider() {
         </div>
 
         {/* Sağdaki Sabit Resim */}
-        <div className="hidden lg:flex relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-md">
+        <div className="hidden lg:flex relative h-[400px] lg:h-[500px] overflow-hidden shadow-md">
           <Image src={standard} alt="Static Right" fill className="object-cover" />
         </div>
       </div>

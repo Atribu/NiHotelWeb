@@ -36,7 +36,7 @@ export default function RoomShowcase({id,
 
           {/* Ortadaki içerik */}
           <div className="flex flex-col items-center text-center justify-center space-y-6">
-            <h3 className="text-3xl font-serif text-gray-900">{title}</h3>
+            <h3 className="text-[26px] lg:text-[32px] font-serif text-gray-900">{title}</h3>
             <p className="text-base text-gray-700">{description}</p>
             <hr className="w-16 border-gray-300" />
             <Link href={href} className="inline-block">

@@ -129,7 +129,7 @@ export default function Header() {
   <PhoneSvg className="flex" width={22} height={22} color="#D9D9D9"/>
 <Link className="text-[15px] text-black font-normal " href="tel:+902423243742">+90 242 324 37 42</Link>
 </div>
-<button className="flex items-center justify-center text-center py-[10px] px-[10px] md:w-[274px] bg-gray-600 text-white text-[12px] md:text-[15px] font-semibold uppercase">{t("letuscallyou")}</button>
+<button className="flex items-center justify-center text-center py-[10px] px-[10px] lg:w-[274px] bg-[#00a1af] text-white text-[12px] md:text-[15px] font-semibold uppercase">{t("letuscallyou")}</button>
 </div>
 </div>
 

@@ -12,18 +12,10 @@ const toRoman = (n) => {
 };
 
 export default function RoomCarouselSection({
-  title = "DELUXE ROOM WITH BALCONY",
-  descriptions = [
-    "Our rooms, each 30 m², with a balcony and garden view, have been designed in a tasteful way, with your comfort in mind, featuring a large bed or two single beds, a desk and chairs.",
-    "Inone hotel makes your holiday amazing with bohemian style. This room was designed with care. Light and color will upgrade your mood for your dream holiday. Nature and beauty are mixing with bohemian style."
-  ],
-  images = [
-    "/images/room1.jpg",
-    "/images/room2.jpg",
-    "/images/room3.jpg",
-    "/images/room4.jpg"
-  ],
-  buttonText = "EXPLORE",
+  title ,
+  descriptions ,
+  images = [],
+  buttonText ,
   onButtonClick = () => {}
 }) {
   const [idx, setIdx] = useState(0);
@@ -43,9 +35,9 @@ export default function RoomCarouselSection({
         
         {/* Sol: Metin + Kontroller */}
         <div className="space-y-6">
-          <h3 className="text-3xl font-serif">{title}</h3>
+          <h3 className="text-[24px] lg:text-3xl font-serif">{title}</h3>
           {descriptions.map((p,i) => (
-            <p key={i} className="text-gray-700 text-sm">{p}</p>
+            <p key={i} className="text-gray-700 text-[12px] lg:text-sm">{p}</p>
           ))}
 
           <div className="flex items-center space-x-4 mt-4">
