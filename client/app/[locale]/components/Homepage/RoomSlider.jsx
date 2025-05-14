@@ -1,6 +1,6 @@
 // components/RoomSlider.jsx
 "use client";
-
+import Link from 'next/link';
 import { useState } from "react";
 import Image from "next/image";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -8,9 +8,9 @@ import { FaUserAlt } from "react-icons/fa";
 import { HiOutlineCalendar } from "react-icons/hi";
 import imgslider from "./images/imgslider.png"
 import { useTranslations } from 'next-intl';
-import corner from "../../../../public/images/rooms/cornerroom/NI-CORNER1.webp"
+import corner from "../../../../public/images/rooms/cornerroom/NI-CORNER3.webp"
 import standard from "../../../../public/images/rooms/standardroom/NI-STANDART.webp"
-import junior from "../../../../public/images/rooms/cornerroom/NI-CORNER1.webp"
+import junior from "../../../../public/images/rooms/juniorroom/NI-JUNIOR1.webp"
 import veranda from "../../../../public/images/rooms/veranda/NI-VERANDA.webp"
 
 export default function RoomSlider() {
@@ -82,9 +82,39 @@ export default function RoomSlider() {
       <div className="flex flex-col lg:grid lg:grid-cols-14 gap-4 items-center relative z-10">
         {/* Soldaki Sabit Resim */}
         <div className="hidden lg:flex relative h-[420px] lg:h-[500px] overflow-hidden shadow-md col-span-8">
-          <Image src={corner} alt="Static Left" fill className="object-cover" />
-        </div>
+  {/* Alttaki resim */}
+  <Image
+    src={junior}
+    alt="Static Left"
+    fill
+    className="object-cover"
+  />
+  {/* Beyaz geçiş overlay */}
+  <div
+    className="absolute inset-0 
+               bg-gradient-to-r 
+               from-white 
+               via-white/60 
+               to-transparent 
+               pointer-events-none"
+  />
 
+  {/* Başlık ve metin */}
+  <div className="absolute top-36 left-40 z-20 max-w-lg ">
+    <h2 className="text-[24px] lg:text-4xl font-marcellus uppercase text-black mb-6 font-serif">
+      Our Rooms &amp; Suites
+    </h2>
+    <p className="mt-2 text-[12px] lg:text-[14px] font-jost leading-[130%] text-black w-[60%]">
+      Discover thoughtfully designed spaces—from cozy Standard rooms to spacious Corner suites—each offering modern amenities and elegant comfort.
+    </p>
+    <Link
+      href="/rooms"
+      className="inline-block mt-6 border-[2px] border-black px-4 py-2 uppercase text-sm font-semibold hover:bg-black hover:text-white transition"
+    >
+      Explore
+    </Link>
+  </div>
+</div>
         {/* Ortadaki Dönen Slider */}
         <div className="overflow-hidden shadow-md w-[97%] sm:w-[80%] lg:w-[100%] h-[440px] lg:h-[500px] col-span-5">
           <div

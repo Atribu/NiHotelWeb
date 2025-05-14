@@ -16,6 +16,7 @@ import img11 from "../../../../public/images/rooms/cornerroom/NI-CORNER12.webp"
 import ReservationSection from '../../components/generalComponents/ReservationSection'
 import { useTranslations } from 'next-intl';
 import RoomTour from '../../components/rooms/RoomTour'
+import DiscoverRooms from '../../components/rooms/DiscoverRooms'
 
 const Page = () => {
   const t = useTranslations('CornerRoom');
@@ -49,6 +50,7 @@ const Page = () => {
     <ReservationSection/>
     <RoomFeatures/>
     <RoomTour link="https://kuula.co/share/n1/collection/71qzm"/>
+    <DiscoverRooms/>
     </div>
   )
 }

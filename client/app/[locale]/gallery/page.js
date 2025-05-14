@@ -7,13 +7,13 @@ import img4 from "./images/lobi/DSCF8673.webp"
 import img5 from "./images/lobi/DSCF8675.webp"
 import img6 from "./images/lobi/DSCF8676.webp"
 import img7 from "./images/lobi/DSCF8677.webp"
-import img8 from "./images/lobi/DSCF8651yakın.webp"
-import img9 from "./images/lobi/DSCF8656.webp"
-import img10 from "./images/lobi/DSCF8661.webp"
+import img8 from "./images/lobi/1.webp"
+import img9 from "./images/lobi/2.webp"
+import img10 from "./images/lobi/3.webp"
 import img11 from "./images/lobi/DSCF8695.webp"
 import img12 from "./images/lobi/DSCF8700.webp"
-import img13 from "./images/lobi/DSCF8702.webp"
-import img14 from "./images/lobi/DSCF8704.webp"
+import img13 from "./images/lobi/4.webp"
+import img14 from "./images/lobi/DSCF8656 .webp"
 
 import { useState } from "react";
 import Image from "next/image";

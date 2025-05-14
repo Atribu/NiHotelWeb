@@ -79,7 +79,7 @@
     "bannerView": "Bahçe Manzaralı",
     "carouselTitle": "KÖŞE ODA",
     "carouselDesc1": "Her biri 30 m² olan odalarımız, balkon ve bahçe manzarasıyla konforunuz düşünülerek özenle tasarlanmış olup; geniş bir çift kişilik yatak veya iki tek kişilik yatak, bir çalışma masası ve sandalyeler içerir.",
-    "carouselDesc2": "Inone Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
+    "carouselDesc2": "Ni Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
     "carouselButtonText": "KEŞFET"
   },
 
@@ -90,7 +90,7 @@
     "bannerView": "Bahçe Manzaralı",
     "carouselTitle": "STANDARD ODA",
     "carouselDesc1": "Geniş 25 m²’lik Standard Odamız bir çift kişilik yatak ve bir tek kişilik yatakla konforunuz düşünülerek özenle tasarlanmıştır. Modern olanaklarla donatılmış özel banyoda rahatlayın. Aileler veya arkadaş grupları için ideal bir dinlenme deneyimi sunar.",
-    "carouselDesc2": "Inone Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
+    "carouselDesc2": "Ni Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
     "carouselButtonText": "KEŞFET"
   },
 
@@ -101,7 +101,7 @@
     "bannerView": "Bahçe Manzaralı",
     "carouselTitle": "VERANDA ODA",
     "carouselDesc1": "25 m²’lik Veranda Odamız bir çift kişilik yatak ve bir tek kişilik yatak ile donatılmış olup, sakin bahçe manzaralı özel verandaya sahiptir. Sabah kahvenizi veya akşam dinlenmenizi keyifle yapabilirsiniz. İyi donanımlı banyo ve titizlikle seçilmiş diğer olanaklarla konforunuz düşünülmüştür.",
-    "carouselDesc2": "Inone Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
+    "carouselDesc2": "Ni Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
     "carouselButtonText": "KEŞFET"
   },
 
@@ -112,7 +112,7 @@
     "bannerView": "Bahçe Manzaralı",
     "carouselTitle": "JUNIOR ODA",
     "carouselDesc1": "20 m²’lik Junior Odamız bir çift kişilik yataktan oluşur ve ayrı tuvalet ile banyoya sahiptir.",
-    "carouselDesc2": "Inone Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
+    "carouselDesc2": "Ni Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
     "carouselButtonText": "KEŞFET"
   },
 
@@ -153,7 +153,8 @@
   "About":{
     "header":"Hakkımızda",
     "text1":"Türkiye’nin “turkuaz cenneti” Antalya’sının kalbinde, Konyaaltı’nın sakin sokaklarına ve mavi bayraklı plajlarına sadece birkaç adım mesafede konumlanan NiHotel, modern konforu ve Türk misafirperverliğini bir arada sunuyor. 12 Standard, 3 Junior, 4 Veranda ve 6 Corner odamız; 42″ LED TV, merkezi klima, kasa, mini bar ve ücretsiz banyo malzemeleriyle donatılmıştır.",
-    "text2":"Zengin açık büfe kahvaltı konaklamaya dahildir ve 7/24 resepsiyon ekibimiz; rezervasyon, tur planlama, özel istekleriniz veya yakınlardaki Düden Şelalesi ile Antik Kale gezileriniz için yanınızda."
+    "text2":"Zengin açık büfe kahvaltı konaklamaya dahildir ve 7/24 resepsiyon ekibimiz; rezervasyon, tur planlama, özel istekleriniz veya yakınlardaki Düden Şelalesi ile Antik Kale gezileriniz için yanınızda.",
+    "explore":"Detay"
   },
 
   "RoomTour": {
