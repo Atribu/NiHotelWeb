@@ -2,7 +2,7 @@ import React from 'react'
 // 
 import Link from "next/link";
 import { useTranslations } from 'next-intl';
-import imgbanner from "../.././../../public/images/rooms/cornerroom/NI-CORNER1.webp"
+import imgbanner from "../.././../../public/images/rooms/juniorroom/NI-JUNIOR1.webp"
 import Image from 'next/image';
 
 const RoomsBanner = () => {

@@ -13,6 +13,7 @@ import img8 from "../../../../public/images/rooms/veranda/NI-VERANDA8.webp"
 import ReservationSection from '../../components/generalComponents/ReservationSection'
 import { useTranslations } from 'next-intl';
 import RoomTour from '../../components/rooms/RoomTour'
+import DiscoverRooms from '../../components/rooms/DiscoverRooms'
 
 const Page = () => {
   const t = useTranslations('VerandaRoom');
@@ -41,6 +42,7 @@ const Page = () => {
     <ReservationSection/>
     <RoomFeatures/>
     <RoomTour link="https://kuula.co/share/n1/collection/71qXs"/>
+    <DiscoverRooms/>
     </div>
   )
 }
