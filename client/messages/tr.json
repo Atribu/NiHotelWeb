@@ -154,6 +154,12 @@
     "header":"Hakkımızda",
     "text1":"Türkiye’nin “turkuaz cenneti” Antalya’sının kalbinde, Konyaaltı’nın sakin sokaklarına ve mavi bayraklı plajlarına sadece birkaç adım mesafede konumlanan NiHotel, modern konforu ve Türk misafirperverliğini bir arada sunuyor. 12 Standard, 3 Junior, 4 Veranda ve 6 Corner odamız; 42″ LED TV, merkezi klima, kasa, mini bar ve ücretsiz banyo malzemeleriyle donatılmıştır.",
     "text2":"Zengin açık büfe kahvaltı konaklamaya dahildir ve 7/24 resepsiyon ekibimiz; rezervasyon, tur planlama, özel istekleriniz veya yakınlardaki Düden Şelalesi ile Antik Kale gezileriniz için yanınızda."
+  },
+
+  "RoomTour": {
+    "span": "360° SANAL TUR",
+    "header": "Odayı Sanal Tur ile Keşfedin",
+    "text": "Bu interaktif 360° turla odamızın her köşesini dilediğiniz açıdan görüntüleyin. Yatak, banyo, manzara ve tüm detayları gerçeğe yakın bir deneyimle yaşayın."
   }
   
 }

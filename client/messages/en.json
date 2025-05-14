@@ -152,6 +152,11 @@
     "header":"About",
     "text1":"Located in the heart of Antalya—Turkey’s “turquoise paradise”—just steps from the tranquil streets of Konyaaltı and its Blue Flag beaches, NiHotel combines modern comfort with genuine Turkish hospitality. Our 12 Standard, 3 Junior, 4 Veranda, and 6 Corner rooms are equipped with a 42″ LED TV, central air conditioning, in-room safe, mini-bar, and complimentary bathroom amenities.",
     "text2":"A rich buffet breakfast is included with every stay, and our 24/7 reception team is on hand to assist with reservations, tour planning, special requests, or visits to nearby Düden Waterfalls and the Ancient Castle."
+  },
+  "RoomTour": {
+    "span": "360° VIRTUAL TOUR",
+    "header": "Explore Our Room in 360°",
+    "text": "Take a fully interactive 360° tour of our room. View every detail—from the bed and bathroom to the stunning views—in lifelike clarity."
   }
 
 

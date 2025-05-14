@@ -14,12 +14,13 @@ import img9 from "../../../../public/images/rooms/standardroom/NI-STANDART10.web
 import img10 from "../../../../public/images/rooms/standardroom/NI-STANDART11.webp"
 import ReservationSection from '../../components/generalComponents/ReservationSection'
 import { useTranslations } from 'next-intl';
+import RoomTour from '../../components/rooms/RoomTour'
 
 const Page = () => {
   const t = useTranslations('StandardRoom');
   
   return (
-    <div className='max-w-screen overflow-x-hidden'>
+    <div className='max-w-screen overflow-x-hidden items-center justify-center flex flex-col'>
         <SubRoomBannner header={t("bannerHeader")} m2={t("bannerM2")} person={t("bannerPerson")} view={t("bannerView")} image={img2}/>
        <RoomCarouselSection
       title={t("carouselTitle")}
@@ -46,6 +47,7 @@ const Page = () => {
     <ReservationSection/>
 
     <RoomFeatures/>
+    <RoomTour link="https://kuula.co/share/n1/collection/71q9c"/>
     </div>
   )
 }
