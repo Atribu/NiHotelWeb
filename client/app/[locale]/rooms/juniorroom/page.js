@@ -50,7 +50,7 @@ const Page = () => {
 
     <ReservationSection/>
     <RoomFeatures/>
-    <RoomTour link="https://kuula.co/share/hZkQG/collection/71qlN"/>
+    <RoomTour link="https://kuula.co/share/n1/collection/71qyn"/>
     </div>
   )
 }
