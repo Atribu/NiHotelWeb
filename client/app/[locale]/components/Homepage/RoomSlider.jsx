@@ -79,14 +79,14 @@ export default function RoomSlider() {
         <AiOutlineRight className="w-6 h-6" />
       </button>
 
-      <div className="flex flex-col lg:grid lg:grid-cols-5 gap-4 items-center relative z-10">
+      <div className="flex flex-col lg:grid lg:grid-cols-14 gap-4 items-center relative z-10">
         {/* Soldaki Sabit Resim */}
-        <div className="hidden lg:flex relative h-[420px] lg:h-[500px] overflow-hidden shadow-md col-span-2">
+        <div className="hidden lg:flex relative h-[420px] lg:h-[500px] overflow-hidden shadow-md col-span-8">
           <Image src={corner} alt="Static Left" fill className="object-cover" />
         </div>
 
         {/* Ortadaki Dönen Slider */}
-        <div className="overflow-hidden shadow-md w-[97%] sm:w-[80%] lg:w-[100%] h-[440px] lg:h-[500px] col-span-2">
+        <div className="overflow-hidden shadow-md w-[97%] sm:w-[80%] lg:w-[100%] h-[440px] lg:h-[500px] col-span-5">
           <div
             className="flex h-full transition-transform duration-500 ease-in-out"
             style={{

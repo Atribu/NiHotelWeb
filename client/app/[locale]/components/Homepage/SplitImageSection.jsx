@@ -26,6 +26,7 @@ export default function SplitImageSection() {
               width={ust.width}
               height={ust.height}
               className="object-cover z-40 min-h-[300px] md:min-h-[200px]"
+              priority
             />
             <div className="absolute inset-0 px-8 flex flex-col justify-center text-white z-[60]">
             <Image src={NiHotelLogo} alt="logo" className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] flex z-[100] "/>
@@ -49,6 +50,7 @@ export default function SplitImageSection() {
               width={sag.width}
               height={sag.height}
               className="object-cover  z-[10] "
+              priority
             />
              <div className="absolute inset-0 bg-black/30  z-[10]"></div>
           </div>

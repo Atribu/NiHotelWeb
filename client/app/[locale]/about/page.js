@@ -1,8 +1,8 @@
 // app/hakkimizda/page.jsx
 import Image from "next/image";
-import aboutBanner from "../../../public/images/lobi/DSCF8663.webp";
+import aboutBanner from "../gallery/images/lobi/DSCF8663.webp";
 // Yanına ekleyeceğin resmi burada import et
-import aboutSide from "../../../public/images/lobi/DSCF8736.webp";
+import aboutSide from "../gallery/images/lobi/DSCF8736.webp";
 import { useTranslations } from "next-intl";
 
 export const metadata = {

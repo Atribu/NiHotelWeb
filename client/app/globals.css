@@ -104,3 +104,13 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 .black-scrollbar::-webkit-scrollbar-track {
   background: transparent; /* Arka plan rengi */
 }
+
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+.bounce-chatbox {
+  animation: bounce 0.8s ease infinite;
+}

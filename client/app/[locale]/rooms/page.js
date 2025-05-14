@@ -2,8 +2,8 @@ import React from 'react'
 import RoomsBanner from '../components/rooms/RoomsBanner'
 import RoomShowcase from '../components/rooms/RoomShowcase'
 import { useTranslations } from 'next-intl';
-import cornerImage from "../../../public/images/rooms/cornerroom/NI-CORNER2.webp"
-import cornerImage2 from "../../../public/images/rooms/cornerroom/NI-CORNER5.webp"
+import cornerImage from "../../../public/images/rooms/cornerroom/NI-CORNER1.webp"
+import cornerImage2 from "../../../public/images/rooms/cornerroom/NI-CORNER3.webp"
 
 import standardImage from "../../../public/images/rooms/standardroom/NI-STANDART2.webp"
 import standardImage2 from "../../../public/images/rooms/standardroom/NI-STANDART4.webp"
@@ -60,7 +60,7 @@ const Page = () => {
       />
        {/* Aynı component, bu kez resimler sağda */}
        <RoomShowcase
-        id="cornerorom"
+        id="cornerroom"
         title={t("title4")}
         description={t("description4")}
         href="/rooms/cornerroom"

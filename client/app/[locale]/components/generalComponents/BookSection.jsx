@@ -1,10 +1,12 @@
 "use client"
-import React from 'react';
+import React, {useEffect} from 'react';
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import Link from 'next/link';
 import Script from 'next/script';
 
 const BookSection = () => {
+
+
   return (
     <div className='fixed flex bottom-4 left-0 lg:left-4 md:bottom-6 lg:bottom-7 z-[980] w-full'>
       <div className='flex justify-between items-center w-full'>
@@ -23,17 +25,17 @@ const BookSection = () => {
         </a>
 
         <div className="flex">
-        {/* <Script
+        <Script
           src="https://cdn.livechat.connexease.com/embed.js"
           strategy="afterInteractive"
           onLoad={() => {
             if (window.ConnexeaseWebMessenger) {
-              window.ConnexeaseWebMessenger.Init('188913a5-5fcf-4de1-b6a5-711e8fd4ea8e');
+              window.ConnexeaseWebMessenger.Init('5f90e4a6-6481-4263-b814-ec81ca1d4cde');
             } else {
               console.warn('ConnexeaseWebMessenger yüklenemedi.');
             }
           }}
-        /> */}
+        />
         </div>
       </div>
     </div>
@@ -41,4 +43,3 @@ const BookSection = () => {
 };
 
 export default BookSection;
-

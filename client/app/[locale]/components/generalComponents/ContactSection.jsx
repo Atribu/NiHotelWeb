@@ -48,7 +48,7 @@ export default function ContactSection() {
                 <MailSvg width={28} height={20} className="flex" color="#00a1af"/>
                 <input
                   type="email"
-                  placeholder="frontoffice@nihotellara.com"
+                  placeholder="callcenter@nihotellara.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="ml-3 w-full text-gray-700 placeholder-gray-400 focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px]"

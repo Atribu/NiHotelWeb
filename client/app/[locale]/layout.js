@@ -7,6 +7,7 @@ import { Cormorant_Garamond, Jost, Geist, Geist_Mono } from "next/font/google";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import BookSection from "./components/generalComponents/BookSection";
+import CookiePopup from "./components/generalComponents/CookiePopup";
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -56,6 +57,7 @@ export default async function RootLayout({ children, params }) {
           <Header />
           <BookSection/>
           {children}
+          <CookiePopup/>
           <Footer/>
         </NextIntlClientProvider>
       </body>

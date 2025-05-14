@@ -57,8 +57,8 @@ export default function Footer() {
             <a href="tel:+902423243742" className="flex items-center text-gray-600 hover:text-gray-800">
               <FaPhone className="mr-2" />+90 242 324 37 42
             </a>
-            <a href="mailto:frontoffice@nihotellara.com" className="flex items-center text-gray-600 hover:text-gray-800">
-              <FaEnvelope className="mr-2" />frontoffice@nihotellara.com
+            <a href="mailto:callcenter@nihotellara.com" className="flex items-center text-gray-600 hover:text-gray-800">
+              <FaEnvelope className="mr-2" />callcenter@nihotellara.com
             </a>
             <div className="flex items-start text-gray-600">
               <FaMapMarkerAlt className="mt-1 mr-2" />

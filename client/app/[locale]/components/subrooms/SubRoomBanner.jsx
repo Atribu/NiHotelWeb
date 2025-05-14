@@ -5,10 +5,18 @@ import { GoPerson } from "react-icons/go";
 import { LuTreePine } from "react-icons/lu";
 import { FiSquare } from "react-icons/fi";
 import AreaSvg from './AreaSvg';
+import Image from 'next/image';
 
 const RoomsBanner = ({header,m2,person,view, image}) => {
   return (
-    <div className='flex w-screen h-screen lg:items-end md:items-center md:justify-center lg:justify-end bg-center bg-cover relative' style={{ backgroundImage: `url(${image.src})` }}>
+    <div className='flex w-screen h-screen lg:items-end md:items-center md:justify-center lg:justify-end bg-center bg-cover relative' >
+       <Image
+        src={image}
+        alt={header}
+        fill
+        className="object-cover object-center"
+        priority
+      />
         <div className='absolute inset-0 bg-black/20 z-[1]'></div>
     <div className='flex h-full w-full lg:w-[42%] justify-center items-end md:items-center bg-[linear-gradient(276deg,#FFF_10.54%,rgba(255,255,255,0)_85.74%)] z-[100]'>
     <div className="flex flex-col gap-[34px] 2xl:gap-[24px] md:gap-10 xl:w-[80%] h-auto text-[#11131d] text-center justify-center items-center mb-[20%] mt-[16%] md:mb-[20px] lg:mb-0 ">
