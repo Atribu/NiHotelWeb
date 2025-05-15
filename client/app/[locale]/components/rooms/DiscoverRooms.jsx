@@ -1,57 +1,62 @@
 // components/DiscoverRooms.jsx
 
-import Link from 'next/link';
-import Image from 'next/image';
-import corner from '../../../../public/images/rooms/cornerroom/NI-CORNER1.webp';
-import standard from '../../../../public/images/rooms/standardroom/NI-STANDART.webp';
-import junior from '../../../../public/images/rooms/juniorroom/NI-JUNIOR1.webp';
-import veranda from '../../../../public/images/rooms/veranda/NI-VERANDA.webp';
+import Link from "next/link";
+import Image from "next/image";
+import corner from "../../../../public/images/rooms/cornerroom/NI-CORNER1.webp";
+import standard from "../../../../public/images/rooms/standardroom/NI-STANDART.webp";
+import junior from "../../../../public/images/rooms/juniorroom/NI-JUNIOR1.webp";
+import veranda from "../../../../public/images/rooms/veranda/NI-VERANDA.webp";
+import { useTranslations } from "next-intl";
 
 // İçerik Ni_Hotel_Tanıtım_ENG.pdf dosyasına dayanır citeturn13file0
-const rooms = [
-  {
-    name: 'Standard Room',
-    description: '25 m², 1 French bed + 1 Twin bed, toilet & bathroom',
-    image: standard,
-    href: '/rooms/standard-unit',
-  },
-  {
-    name: 'Junior Room',
-    description: '20 m², 1 French bed, toilet & bathroom',
-    image: junior,
-    href: '/rooms/junior-unit',
-  },
-  {
-    name: 'Veranda Room',
-    description: '25 m², 1 French bed + 1 Twin bed, toilet & bathroom',
-    image: veranda,
-    href: '/rooms/veranda-unit',
-  },
-  {
-    name: 'Corner Room',
-    description: '25 m², 1 French bed, toilet & bathroom',
-    image: corner,
-    href: '/rooms/corner-unit',
-  },
-];
 
-export default function DiscoverRooms() {
-  // Corner Room hariç diğer odalar
-  const otherRooms = rooms.filter(room => room.name !== 'Corner Room');
+export default function DiscoverRooms({
+  header,
+  buttonText,
+  name1,
+  description1,
+  name2,
+  description2,
+  name3,
+  description3,
+  link1,
+  link2,
+  link3,
+}) {
+  const otherRooms = [
+    {
+      name: name1,
+      description: description1,
+      image: standard,
+      href: link1,
+    },
+    {
+      name: name2,
+      description: description2,
+      image: junior,
+      href: link2,
+    },
+    {
+      name: name3,
+      description: description3,
+      image: veranda,
+      href: link3,
+    },
+  ];
 
   return (
     <section className="flex flex-col py-16 bg-white w-screen items-center justify-center">
-      <div className="flex flex-col w-[92%] md:w-[75%] lg:w-[65%] lg:min-w-[900px]">
-        <h2 className="text-3xl md:text-4xl font-marcellus text-center mb-12">
-          Discover Other Rooms
+      <div className="flex flex-col w-[92%] md:w-[75%] lg:w-[85%] xl:w-[80%] lg:min-w-[900px] max-w-[1200px]">
+        <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">
+          {header}
         </h2>
         {/* 3 sütunlu grid: mobilde 1, sm:2, lg ve üstü 3 */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-7">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-7 ">
           {otherRooms.map(({ name, description, image, href }) => (
             <Link
               key={name}
               href={href}
-              className="relative block h-[300px] sm:h-[350px] lg:h-[450px] overflow-hidden shadow-lg group"
+              className="relative h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] overflow-hidden shadow-lg group items-end justify-center flex py-10"
               aria-label={name}
             >
               <Image
@@ -67,8 +72,18 @@ export default function DiscoverRooms() {
                 </h3>
                 <div className="h-px w-12 bg-white mx-auto mt-2" />
               </div>
-              <button className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-white text-black px-4 py-2 uppercase text-sm font-medium">
-                Explore
+              <button
+                className="
+    relative overflow-hidden
+    bg-white text-black
+    px-5 py-2 uppercase text-sm font-medium
+    transition-colors duration-500 ease-in-out
+    before:content-[''] before:absolute before:inset-0
+    before:bg-black before:origin-left before:scale-x-0
+    before:transition-transform before:duration-500 before:ease-in-out
+    hover:before:scale-x-100 hover:text-white"
+              >
+                <span className="relative z-10">{buttonText}</span>
               </button>
             </Link>
           ))}

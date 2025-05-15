@@ -79,7 +79,17 @@
     "carouselTitle": "ECKZIMMER",
     "carouselDesc1": "Unsere Zimmer mit jeweils 30 m², Balkon und Gartenblick sind geschmackvoll gestaltet und auf Ihren Komfort ausgerichtet. Sie verfügen über ein großes Doppelbett oder zwei Einzelbetten, einen Schreibtisch und Stühle.",
     "carouselDesc2": "Das Ni Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
-    "carouselButtonText": "ENTDECKEN"
+    "carouselButtonText": "ENTDECKEN",
+    "DiscooverRoom":{
+      "header":"Entdecken Sie andere Zimmer",
+      "buttonText": "Entdecken",
+      "name1": "Standardzimmer",
+      "description1": "25 m², 1 Französisches Bett + 1 Einzelbett, Toilette & Bad",
+      "name2": "Juniorzimmer",
+      "description2": "20 m², 1 Französisches Bett, Toilette & Bad",
+      "name3": "Verandazimmer",
+      "description3": "25 m², 1 Französisches Bett + 1 Einzelbett, Toilette & Bad"
+    }
   },
   
   "StandardRoom": {
@@ -90,7 +100,18 @@
     "carouselTitle": "STANDARDZIMMER",
     "carouselDesc1": "Unser geräumiges Standardzimmer (25 m²) verfügt über ein Doppelbett und ein Einzelbett, liebevoll für Ihren Komfort eingerichtet. Erfrischen Sie sich in einem modernen Privatbadezimmer. Ideal für Familien oder Freunde, die einen erholsamen Aufenthalt suchen.",
     "carouselDesc2": "Das Ni Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
-    "carouselButtonText": "ENTDECKEN"
+    "carouselButtonText": "ENTDECKEN",
+
+    "DiscooverRoom":{
+      "header":"Entdecken Sie andere Zimmer",
+      "buttonText": "Entdecken",
+      "name1": "Eckzimmer",
+      "description1":  "25 m², 1 Französisches Bett, Toilette & Bad",
+      "name2": "Juniorzimmer",
+      "description2": "20 m², 1 Französisches Bett, Toilette & Bad",
+      "name3": "Verandazimmer",
+      "description3": "25 m², 1 Französisches Bett + 1 Einzelbett, Toilette & Bad"
+    }
   },
 
   "VerandaRoom": {
@@ -101,7 +122,18 @@
     "carouselTitle": "VERANDAZIMMER",
     "carouselDesc1": "Das 25 m² Verandazimmer verfügt über ein Doppelbett und ein Einzelbett sowie eine private Veranda mit ruhigem Gartenblick. Perfekt, um den Morgenkaffee oder die Abendentspannung zu genießen. Ein gut ausgestattetes Bad und durchdachte Annehmlichkeiten runden Ihren Aufenthalt ab.",
     "carouselDesc2": "Das Ni Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
-    "carouselButtonText": "ENTDECKEN"
+    "carouselButtonText": "ENTDECKEN",
+
+    "DiscooverRoom":{
+      "header":"Entdecken Sie andere Zimmer",
+      "buttonText": "Entdecken",
+      "name1": "Standardzimmer",
+      "description1": "25 m², 1 Französisches Bett + 1 Einzelbett, Toilette & Bad",
+      "name2": "Juniorzimmer",
+      "description2": "20 m², 1 Französisches Bett, Toilette & Bad",
+      "name3": "Eckzimmer",
+      "description3": "25 m², 1 Französisches Bett, Toilette & Bad"
+    }
   },
 
   "JuniorRoom": {
@@ -112,7 +144,18 @@
     "carouselTitle": "JUNIORZIMMER",
     "carouselDesc1": "Unser 20 m² Juniorzimmer verfügt über ein französisches Bett sowie separates WC und Badezimmer.",
     "carouselDesc2": "Das Ni Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
-    "carouselButtonText": "ENTDECKEN"
+    "carouselButtonText": "ENTDECKEN",
+
+    "DiscooverRoom":{
+      "header":"Entdecken Sie andere Zimmer",
+      "buttonText": "Entdecken",
+      "name1": "Standardzimmer",
+      "description1": "25 m², 1 Französisches Bett + 1 Einzelbett, Toilette & Bad",
+      "name2":  "Eckzimmer",
+      "description2": "25 m², 1 Französisches Bett, Toilette & Bad",
+      "name3": "Verandazimmer",
+      "description3": "25 m², 1 Französisches Bett + 1 Einzelbett, Toilette & Bad"
+    }
   },
 
   "RoomsSlider": {
@@ -134,7 +177,11 @@
     "title4": "Eckzimmer",
     "description4": "25 m², 1 französisches Bett, besteht aus Toilette und Badezimmer.",
     "adults4": "2 Erwachsene",
-    "area4": "25 m²"
+    "area4": "25 m²",
+    "header": "Unsere Zimmer & Suiten",
+    "text": "Entdecken Sie durchdacht gestaltete Räume – von gemütlichen Standardzimmern bis zu geräumigen Eck-Suiten – die jeweils moderne Annehmlichkeiten und eleganten Komfort bieten.",
+    "buttonText": "Entdecken"
+    
   },
 
   "Contact": {
@@ -159,6 +206,17 @@
     "span": "360° VIRTUELLE TOUR",
     "header": "Entdecken Sie unser Zimmer in 360°",
     "text": "Machen Sie eine vollständig interaktive 360°-Tour durch unser Zimmer. Betrachten Sie jedes Detail – vom Bett und Bad bis zu den atemberaubenden Ausblicken – in lebensechter Klarheit."
+  },
+
+  "DiscooverRoom":{
+    "name1": "Standardzimmer",
+    "description1": "25 m², 1 Französisches Bett + 1 Einzelbett, Toilette & Bad",
+    "name2": "Juniorzimmer",
+    "description2": "20 m², 1 Französisches Bett, Toilette & Bad",
+    "name3": "Verandazimmer",
+    "description3": "25 m², 1 Französisches Bett + 1 Einzelbett, Toilette & Bad",
+    "name4": "Eckzimmer",
+    "description4": "25 m², 1 Französisches Bett, Toilette & Bad"
   }
 
 }

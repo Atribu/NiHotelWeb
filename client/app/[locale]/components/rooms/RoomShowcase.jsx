@@ -39,8 +39,15 @@ export default function RoomShowcase({id,
             <h3 className="text-[26px] lg:text-[32px] font-serif text-gray-900">{title}</h3>
             <p className="text-base text-gray-700">{description}</p>
             <hr className="w-16 border-gray-300" />
-            <Link href={href} className="inline-block">
-              <span className="border border-gray-800 px-6 py-2 text-sm font-semibold uppercase hover:bg-gray-900 hover:text-white transition">
+            <Link href={href} className="relative overflow-hidden
+    bg-white text-black border
+    px-5 py-2 uppercase text-sm font-medium
+    transition-colors duration-500 ease-in-out
+    before:content-[''] before:absolute before:inset-0
+    before:bg-black before:origin-left before:scale-x-0
+    before:transition-transform before:duration-500 before:ease-in-out
+    hover:before:scale-x-100 hover:text-white">
+              <span className="relative z-10">
                 {buttonText}
               </span>
             </Link>

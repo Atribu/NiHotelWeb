@@ -20,6 +20,7 @@ import DiscoverRooms from '../../components/rooms/DiscoverRooms'
 
 const Page = () => {
   const t = useTranslations('CornerRoom');
+  const t2 = useTranslations('CornerRoom.DiscoverRoom');
   
   return (
     <div className='max-w-screen overflow-x-hidden items-center justify-center flex flex-col'>
@@ -50,7 +51,7 @@ const Page = () => {
     <ReservationSection/>
     <RoomFeatures/>
     <RoomTour link="https://kuula.co/share/n1/collection/71qzm"/>
-    <DiscoverRooms/>
+    <DiscoverRooms header={t2("header")} buttonText={t2("buttonText")} name1={t2("name1")} description1={t2("description1")} name2={t2("name2")} description2={t2("description2")} name3={t2("name3")} description3={t2("description3")} link1="/rooms/standardroom" link2="/rooms/juniorroom" link3="/rooms/verandaroom"/>
     </div>
   )
 }

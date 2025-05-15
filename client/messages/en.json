@@ -78,7 +78,18 @@
     "carouselTitle": "CORNER ROOM",
     "carouselDesc1": "Our rooms, each 30 m², with a balcony and garden view, have been designed in a tasteful way, with your comfort in mind, featuring a large bed or two single beds, a desk and chairs.",
     "carouselDesc2": "Ni Hotel makes your holiday amazing with bohemian style. This room was designed with care. Light and color will upgrade your mood for your dream holiday.",
-    "carouselButtonText": "EXPLORE"
+    "carouselButtonText": "EXPLORE",
+
+    "DiscoverRoom":{
+      "header":"Discover Other Rooms",
+      "buttonText": "Explore",
+      "name1": "Standard Room",
+      "description1": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom",
+      "name2": "Junior Room",
+      "description2": "20 m², 1 French bed, toilet & bathroom",
+      "name3": "Veranda Room",
+      "description3": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom"
+    }
   },
 
   "StandardRoom": {
@@ -89,7 +100,18 @@
     "carouselTitle": "STANDARD ROOM",
     "carouselDesc1": "Our spacious 25 m² Standard Room features one double bed and one twin bed, thoughtfully appointed for comfort. Refresh in a private bathroom with modern amenities. Ideal for families or friends seeking a restful retreat.",
     "carouselDesc2": "Ni Hotel makes your holiday amazing with bohemian style. This room was designed with care. Light and color will upgrade your mood for your dream holiday.",
-    "carouselButtonText": "EXPLORE"
+    "carouselButtonText": "EXPLORE",
+
+    "DiscoverRoom":{
+      "header":"Discover Other Rooms",
+      "buttonText": "Explore",
+      "name1": "Corner Room",
+      "description1": "25 m², 1 French bed, toilet & bathroom",
+      "name2": "Junior Room",
+      "description2": "20 m², 1 French bed, toilet & bathroom",
+      "name3": "Veranda Room",
+      "description3": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom"
+    }
   },
 
   "VerandaRoom": {
@@ -100,7 +122,18 @@
     "carouselTitle": "VERANDA ROOM",
     "carouselDesc1": "The 25 m² Veranda Room features one double bed and one twin bed, along with a private veranda overlooking serene garden views. Perfect for enjoying morning coffee or evening relaxation. A well-equipped bathroom and thoughtful amenities enhance your stay.", 
     "carouselDesc2": "Ni Hotel makes your holiday amazing with bohemian style. This room was designed with care. Light and color will upgrade your mood for your dream holiday.",
-    "carouselButtonText": "EXPLORE"
+    "carouselButtonText": "EXPLORE",
+
+    "DiscoverRoom":{
+      "header":"Discover Other Rooms",
+      "buttonText": "Explore",
+      "name1": "Standard Room",
+      "description1": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom",
+      "name2": "Junior Room",
+      "description2": "20 m², 1 French bed, toilet & bathroom",
+      "name3": "Corner Room",
+      "description3": "25 m², 1 French bed, toilet & bathroom"
+    }
   },
 
   "JuniorRoom": {
@@ -111,7 +144,17 @@
     "carouselTitle": "JUNIOR ROOM",
     "carouselDesc1": "Our 20 m² Junior Room consists of one double bed and features a separate toilet and bathroom.", 
     "carouselDesc2": "Ni Hotel makes your holiday amazing with bohemian style. This room was designed with care. Light and color will upgrade your mood for your dream holiday.",
-    "carouselButtonText": "EXPLORE"
+    "carouselButtonText": "EXPLORE",
+    "DiscoverRoom":{
+      "header":"Discover Other Rooms",
+      "buttonText": "Explore",
+      "name1": "Standard Room",
+      "description1": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom",
+      "name2":  "Corner Room",
+      "description2":"25 m², 1 French bed, toilet & bathroom",
+      "name3": "Veranda Room",
+      "description3": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom"
+    }
   },
 
   "RoomsSlider": {
@@ -133,7 +176,11 @@
     "title4": "Corner Room",
     "description4": "25 m², 1 French bed, consists of toilet and bathroom.",
     "adults4": "2 Adults",
-    "area4": "25 m²"
+    "area4": "25 m²",
+
+    "header": "Our Rooms & Suites",
+    "text": "Discover thoughtfully designed spaces—from cozy Standard rooms to spacious Corner suites—each offering modern amenities and elegant comfort.",
+    "buttonText": "Explore"
   },
 
   "Contact": {
@@ -158,7 +205,19 @@
     "span": "360° VIRTUAL TOUR",
     "header": "Explore Our Room in 360°",
     "text": "Take a fully interactive 360° tour of our room. View every detail—from the bed and bathroom to the stunning views—in lifelike clarity."
+  },
+
+  "DiscoverRoom":{
+    "name1": "Standard Room",
+    "description1": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom",
+    "name2": "Junior Room",
+    "description2": "20 m², 1 French bed, toilet & bathroom",
+    "name3": "Veranda Room",
+    "description3": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom",
+    "name4": "Corner Room",
+    "description4": "25 m², 1 French bed, toilet & bathroom"
   }
+  
 
 
 }

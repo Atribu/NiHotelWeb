@@ -80,7 +80,17 @@
     "carouselTitle": "KÖŞE ODA",
     "carouselDesc1": "Her biri 30 m² olan odalarımız, balkon ve bahçe manzarasıyla konforunuz düşünülerek özenle tasarlanmış olup; geniş bir çift kişilik yatak veya iki tek kişilik yatak, bir çalışma masası ve sandalyeler içerir.",
     "carouselDesc2": "Ni Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
-    "carouselButtonText": "KEŞFET"
+    "carouselButtonText": "KEŞFET",
+    "DiscoverRoom":{
+      "header":"Diğer Odaları Keşfedin",
+      "buttonText": "Keşfet",
+      "name1": "Standart Oda",
+    "description1": "25 m², 1 Fransız yatağı + 1 Tek kişilik yatak, tuvalet ve banyo",
+    "name2": "Junior Oda",
+    "description2": "20 m², 1 Fransız yatağı, tuvalet ve banyo",
+    "name3": "Veranda Oda",
+    "description3": "25 m², 1 Fransız yatağı + 1 Tek kişilik yatak, tuvalet ve banyo"
+    }
   },
 
   "StandardRoom": {
@@ -91,7 +101,17 @@
     "carouselTitle": "STANDARD ODA",
     "carouselDesc1": "Geniş 25 m²’lik Standard Odamız bir çift kişilik yatak ve bir tek kişilik yatakla konforunuz düşünülerek özenle tasarlanmıştır. Modern olanaklarla donatılmış özel banyoda rahatlayın. Aileler veya arkadaş grupları için ideal bir dinlenme deneyimi sunar.",
     "carouselDesc2": "Ni Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
-    "carouselButtonText": "KEŞFET"
+    "carouselButtonText": "KEŞFET",
+    "DiscoverRoom":{
+      "header":"Diğer Odaları Keşfedin",
+      "buttonText": "Keşfet",
+    "name1": "Köşe Oda",
+    "description1": "25 m², 1 Fransız yatağı, tuvalet ve banyo",
+    "name2": "Junior Oda",
+    "description2": "20 m², 1 Fransız yatağı, tuvalet ve banyo",
+    "name3": "Veranda Oda",
+    "description3": "25 m², 1 Fransız yatağı + 1 Tek kişilik yatak, tuvalet ve banyo"
+    }
   },
 
   "VerandaRoom": {
@@ -102,7 +122,18 @@
     "carouselTitle": "VERANDA ODA",
     "carouselDesc1": "25 m²’lik Veranda Odamız bir çift kişilik yatak ve bir tek kişilik yatak ile donatılmış olup, sakin bahçe manzaralı özel verandaya sahiptir. Sabah kahvenizi veya akşam dinlenmenizi keyifle yapabilirsiniz. İyi donanımlı banyo ve titizlikle seçilmiş diğer olanaklarla konforunuz düşünülmüştür.",
     "carouselDesc2": "Ni Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
-    "carouselButtonText": "KEŞFET"
+    "carouselButtonText": "KEŞFET",
+
+    "DiscoverRoom":{
+      "header":"Diğer Odaları Keşfedin",
+      "buttonText": "Keşfet",
+    "name1": "Standart Oda",
+  "description1": "25 m², 1 Fransız yatağı + 1 Tek kişilik yatak, tuvalet ve banyo",
+  "name2": "Junior Oda",
+  "description2": "20 m², 1 Fransız yatağı, tuvalet ve banyo",
+  "name3": "Köşe Oda",
+  "description3": "25 m², 1 Fransız yatağı, tuvalet ve banyo"
+  }
   },
 
   "JuniorRoom": {
@@ -113,7 +144,17 @@
     "carouselTitle": "JUNIOR ODA",
     "carouselDesc1": "20 m²’lik Junior Odamız bir çift kişilik yataktan oluşur ve ayrı tuvalet ile banyoya sahiptir.",
     "carouselDesc2": "Ni Hotel, bohem tarzıyla tatilinizi unutulmaz kılar. Bu oda özenle tasarlanmıştır. Işık ve renkler, rüya gibi tatilinizde ruh halinizi yükseltecek.",
-    "carouselButtonText": "KEŞFET"
+    "carouselButtonText": "KEŞFET",
+    "DiscoverRoom":{
+      "header":"Diğer Odaları Keşfedin",
+      "buttonText": "Keşfet",
+      "name1": "Standart Oda",
+    "description1": "25 m², 1 Fransız yatağı + 1 Tek kişilik yatak, tuvalet ve banyo",
+    "name2":  "Köşe Oda",
+    "description2":"25 m², 1 Fransız yatağı, tuvalet ve banyo",
+    "name3": "Veranda Oda",
+    "description3": "25 m², 1 Fransız yatağı + 1 Tek kişilik yatak, tuvalet ve banyo"
+    }
   },
 
   "RoomsSlider": {
@@ -135,7 +176,11 @@
     "title4": "Köşe Oda",
     "description4": "25 m², 1 Fransız yatak, tuvalet ve banyodan oluşur.",
     "adults4": "2 Yetişkin",
-    "area4": "25 m²"
+    "area4": "25 m²",
+
+    "header": "Odalarımız ve Süitlerimiz",
+    "text": "Özenle tasarlanmış alanları keşfedin—samimi Standard odalardan geniş Köşe süitlerine kadar—her biri modern olanaklar ve zarif konfor sunar.",
+    "buttonText": "Keşfet"
   },
 
   "Contact": {
@@ -161,6 +206,17 @@
     "span": "360° SANAL TUR",
     "header": "Odayı Sanal Tur ile Keşfedin",
     "text": "Bu interaktif 360° turla odamızın her köşesini dilediğiniz açıdan görüntüleyin. Yatak, banyo, manzara ve tüm detayları gerçeğe yakın bir deneyimle yaşayın."
+  },
+
+  "DiscoverRoom":{
+    "name1": "Standart Oda",
+  "description1": "25 m², 1 Fransız yatağı + 1 Tek kişilik yatak, tuvalet ve banyo",
+  "name2": "Junior Oda",
+  "description2": "20 m², 1 Fransız yatağı, tuvalet ve banyo",
+  "name3": "Veranda Oda",
+  "description3": "25 m², 1 Fransız yatağı + 1 Tek kişilik yatak, tuvalet ve banyo",
+  "name4": "Köşe Oda",
+  "description4": "25 m², 1 Fransız yatağı, tuvalet ve banyo"
   }
   
 }
