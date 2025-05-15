@@ -36,7 +36,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full max-w-screen z-[9999] bg-black/10 backdrop-blur-md text-white py-2">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-[1400px] mx-auto px-4 py-4 flex items-center justify-between">
 
         {/* Sol */}
         <div className="flex items-center gap-4">
@@ -112,19 +112,21 @@ export default function Header() {
     ×
   </button>
 
+  <div className="w-full h-full items-center justify-between py-5 flex flex-col gap-4">
   <Link href="/">
             <Image src={NiHotelLogo} alt="logo" className="w-auto h-[90px] mx-auto"/>
         </Link>
 
   {/* Menü linkleri */}
-  <nav className="flex flex-col items-start gap-6 p-8 mt-0 text-lg uppercase tracking-widest">
+  <nav className="flex flex-col items-start gap-6 mt-0 text-[16px] uppercase tracking-widest w-[70%] justify-start">
     <Link href="/" onClick={() => setIsMenuOpen(false)}>{t("home")}</Link>
     <Link href="/rooms" onClick={() => setIsMenuOpen(false)}>{t("rooms")}</Link>
+    
     <Link href="/contact" onClick={() => setIsMenuOpen(false)}>{t("contact")}</Link>
     <Link href="/about" onClick={() => setIsMenuOpen(false)}>{t("about")}</Link>
   </nav>
 
-<div className="flex w-full items-center justify-center mt-20 lg:mt-72">
+<div className="flex w-full items-center justify-center ">
 <div className="flex flex-col w-[80%] items-center justify-center">
 <div className="flex items-center justify-center gap-[10px] text-center  mb-[16px]">
   <PhoneSvg className="flex" width={22} height={22} color="#D9D9D9"/>
@@ -135,7 +137,7 @@ export default function Header() {
 </div>
 
   {/* Sosyal ikonlar */}
-  <div className="absolute bottom-6 left-8 flex gap-5 text-black text-2xl">
+  <div className="flex gap-5 text-black text-2xl">
     <a
       href="https://facebook.com"
       target="_blank"
@@ -160,6 +162,7 @@ export default function Header() {
     >
       <FaXTwitter />
     </a>
+  </div>
   </div>
 </div>
     </header>

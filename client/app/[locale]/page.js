@@ -12,7 +12,7 @@ const page = () => {
      <MainBanner/>
     <ReservationSection/>
     <SplitImageSection/>
-    {/* <AmenitiesSection/> */}
+    <AmenitiesSection/>
     <RoomSlider/>
     <ContactSection/>
     </div>

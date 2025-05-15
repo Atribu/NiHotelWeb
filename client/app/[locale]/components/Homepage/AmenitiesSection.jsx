@@ -1,23 +1,23 @@
 // components/AmenitiesSection.jsx
 "use client";
 
-import { FaUserAlt, FaWifi, FaGift, FaPaw } from "react-icons/fa";
+import { FaWifi, FaGift, FaCoffee } from "react-icons/fa";
 import { GiPalmTree } from "react-icons/gi";
-import { MdCleaningServices } from "react-icons/md";
+import { MdCleaningServices, MdPool } from "react-icons/md";
 
 export default function AmenitiesSection() {
   const amenities = [
-    { Icon: FaUserAlt, label: "Adult Only" },
-    { Icon: FaWifi, label: "Strong Wi-Fi" },
-    { Icon: FaGift, label: "Welcome Treat" },
-    { Icon: FaPaw, label: "Pet Friendly" },
-    { Icon: GiPalmTree, label: "Next to Sea Shore" },
+    { Icon: MdPool,           label: "Outdoor Pool" },
+    { Icon: FaWifi,           label: "Strong Wi-Fi" },
+    { Icon: FaGift,           label: "Welcome Treat" },
+    { Icon: FaCoffee,         label: "Buffet Breakfast" },
+    { Icon: GiPalmTree,       label: "Next to Sea Shore" },
     { Icon: MdCleaningServices, label: "Daily Cleaning" },
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 text-center">
+    <section className="slats-section py-20">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 text-center  items-center justify-center">
         <h2 className="text-3xl font-serif mb-2">AMENITIES</h2>
         <p className="text-gray-600 mb-12">
           High-quality service and bohemian-style interlane with care in Ni Hotel

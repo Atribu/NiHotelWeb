@@ -115,4 +115,47 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   animation: bounce 0.8s ease infinite;
 }
 
+/* global.css */
+
+/* 1) Section wrapper */
+.slats-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #faf9f7;
+  padding-top: 4rem; /* gerektiğinde üst boşluk */
+}
+
+/* 2) Asimetrik çubuklar (üstü hizalı, altı farklı) */
+.slats-section::before {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+
+  /* zemin rengimiz */
+  background-color: #faf9f7;
+
+  /* çubuklar: width=20, her biri y=0’dan başlıyor, farklı height’lar */
+  background-image: url("data:image/svg+xml;charset=UTF-8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='240' height='200' viewBox='0 0 240 200'>\
+  <rect x='0'   y='0' width='20' height='200' fill='%23ffffff'/>\
+  <rect x='30'  y='0' width='20' height='140' fill='%23ffffff'/>\
+  <rect x='60'  y='0' width='20' height='180' fill='%23ffffff'/>\
+  <rect x='90'  y='0' width='20' height='120' fill='%23ffffff'/>\
+  <rect x='120' y='0' width='20' height='160' fill='%23ffffff'/>\
+  <rect x='150' y='0' width='20' height='200' fill='%23ffffff'/>\
+  <rect x='180' y='0' width='20' height='100' fill='%23ffffff'/>\
+  <rect x='210' y='0' width='20' height='170' fill='%23ffffff'/>\
+</svg>");
+  background-repeat: repeat-x;
+  background-size: 240px 100%; /* 240px genişlikte, yatayda tekrarla, dikeyde bölgenin tamamı */
+
+  z-index: 0;
+}
+
+/* 3) İçerik her zaman önde kalsın */
+.slats-section > .relative {
+  position: relative;
+  z-index: 1;
+}
+
 
