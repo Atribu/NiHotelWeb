@@ -73,7 +73,8 @@ export default function Header() {
 
         {/* Sağ */}
         <div className="hidden lg:flex items-center gap-2 uppercase text-sm -tracking-[0.55px] font-medium lg:text-[16px] leading-[20px] font-jost">
-        <Link href="https://nihotellara.rezervasyonal.com/en/?language=en">{t("booknow")}</Link>
+        <Link href="https://nihotellara.rezervasyonal.com/en/?language=en"  target="_blank"
+          rel="noopener noreferrer">{t("booknow")}</Link>
         <BellSvg className="flex" width={30} height={16} color="#fff"/>
         </div>
 

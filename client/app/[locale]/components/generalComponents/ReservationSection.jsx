@@ -26,7 +26,8 @@ export default function ReservationSection() {
     });
   }, [children]);
 
-  const bookingUrl = `https://nihotellara.rezervasyonal.com/${locale}/?currency=EUR&language=${locale}&hideLayout=1&Checkin=${checkIn}&Checkout=${checkOut}&Adult=${adults}&child=${children}&ChildAges=${childrenAges.join(",")}`;
+//${locale}/?currency=EUR&language=${locale}&hideLayout=1&Checkin=${checkIn}&Checkout=${checkOut}&Adult=${adults}&child=${children}&ChildAges=${childrenAges.join(",")}
+  const bookingUrl = `https://nihotellara.rezervasyonal.com/`;
 
   return (
     <div className="relative max-w-screen bg-[#fafafa] items-center justify-center hidden lg:flex">

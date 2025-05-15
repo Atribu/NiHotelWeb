@@ -32,12 +32,12 @@ export default function SplitImageSection() {
             />
             <div className="absolute inset-0 px-8 flex flex-col justify-center text-white z-[60]">
             <Image src={NiHotelLogo} alt="logo" className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] flex z-[100] "/>
-              <p className="mt-2 text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-relaxed w-[80%] z-[100]">
+              <p className="mt-2 text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-relaxed w-[95%] lg:w-[80%] z-[100]">
                {t("text1")}
               </p>
               <Link
                 href="#"
-                className="z-[100] mt-4 w-[110px] lg:w-[150px] font-jost font-medium items-center justify-center text-center text-sm lg:text-[16px] xl:text-[18px] uppercase border-[2px] border-white py-[5px] px-[2] lg:py-2 lg:px-4 hover:bg-white hover:text-[#8cbfc5] transition leading-[125%]"
+                className="z-[100] mt-2 lg:mt-4 w-[110px] lg:w-[150px] font-jost font-medium items-center justify-center text-center text-sm lg:text-[16px] xl:text-[18px] uppercase border-[2px] border-white py-[5px] px-[2] lg:py-2 lg:px-4 hover:bg-white hover:text-[#8cbfc5] transition leading-[125%]"
               >
                 {t("explore")}
               </Link>
@@ -64,12 +64,12 @@ export default function SplitImageSection() {
             <div className="absolute inset-0 p-8 flex flex-col justify-end text-white z-[100] ">
             <Image src={NiHotelLogo} alt="logo" className="w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] flex z-[100]"/>
               <h3 className="text-sm lg:text-[16px] uppercase font-medium">NI SELECTION HOTEL</h3>
-              <p className="mt-2 text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-relaxed w-[80%] font-medium">
+              <p className="mt-2 text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-relaxed w-[94%] lg:w-[80%] font-medium">
               {t("text2")}
               </p>
               <Link
                 href="#"
-                className="mt-4 w-[110px] lg:w-[150px] font-jost font-medium items-center justify-center text-center text-[14px] lg:text-[16px] xl:text-[18px] uppercase border-[2px] border-white py-[5px] px-[2] lg:py-2 lg:px-4 hover:bg-white hover:text-[#8cbfc5] transition leading-[125%]"
+                className=" mt-2 lg:mt-4 w-[110px] lg:w-[150px] font-jost font-medium items-center justify-center text-center text-[14px] lg:text-[16px] xl:text-[18px] uppercase border-[2px] border-white py-[5px] px-[2] lg:py-2 lg:px-4 hover:bg-white hover:text-[#8cbfc5] transition leading-[125%]"
               >
               {t("explore")}
               </Link>

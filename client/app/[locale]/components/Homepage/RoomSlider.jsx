@@ -52,7 +52,7 @@ export default function RoomSlider() {
   const next = () => setIndex(i => (i + 1) % count);
 
   return (
-    <div className="relative max-w-screen mx-auto px-4 py-10">
+    <div className="relative max-w-screen py-10">
       <div className="flex flex-col lg:grid lg:grid-cols-14 gap-4 items-center relative z-10">
         {/* Soldaki Sabit */}
         <div className="hidden lg:flex relative h-[420px] lg:h-[500px] overflow-hidden shadow-md col-span-8">
