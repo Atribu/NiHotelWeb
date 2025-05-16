@@ -1,6 +1,7 @@
 import { useTransition, useEffect, useRef } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import React, { useState } from "react";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 export default function LocaleSwitcherSelect({ children, defaultValue, label }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,18 +34,19 @@ export default function LocaleSwitcherSelect({ children, defaultValue, label }) 
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex flex-row items-center justify-center gap-2 rounded-md px-[10px] py-[10px] lg:py-4 font-medium mix-blend-difference bg-darkB uppercase w-full text-[16px]">
+        className="flex flex-row items-center justify-center gap-1 rounded-md ml-1 px-[2px] py-[10px] lg:py-4 font-medium mix-blend-difference bg-transparent text-white uppercase w-full text-[16px] text-center">
         {defaultValue}
+        <IoMdArrowDropdown />
       </button>
       {isOpen && (
-        <div className="absolute z-50 mt-0 rounded bg-darkB shadow-lg left-2 w-full ">
+        <div className="absolute z-50 mt-0 rounded bg-darkB shadow-lg  w-full ">
           <ul className="py-0">
             {React.Children.map(children, (child) => {
               if (child.props.value === defaultValue) return null;
               return (
                 <li
                   key={child.props.value}
-                  className="cursor-pointer px-[6px] bg-black uppercase py-[8px] mt-0 hover:bg-black hover:text-lagoBlack text-center items-center justify-center"
+                  className="cursor-pointer px-[1px] bg-white uppercase py-[6px] mt-0 hover:bg-black hover:text-white text-black text-center items-center justify-center"
                   onClick={() => handleLangChange(child.props.value)}
                 >
                   {child.props.value}

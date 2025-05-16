@@ -57,7 +57,7 @@ export default function ContactSection() {
             </div>
 
             {/* Button */}
-            <button className="w-1/2 md:w-auto mt-1 lg:mt-4 bg-[#00a1af] hover:bg-[#00a1af] text-white font-medium py-2 px-6 text-[14px] lg:text-[16px] whitespace-nowrap">
+            <button className="w-1/2 md:w-auto mt-1 lg:mt-4 bg-[#00a1af] hover:bg-white text-white hover:text-[#00a1af] border-[#00a1af] border font-medium py-2 px-6 text-[14px] lg:text-[16px] whitespace-nowrap">
             {t("buttonText")}
             </button>
           </div>
