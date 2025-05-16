@@ -126,60 +126,65 @@ export default function Header() {
 
           {/* --- Rooms akordeon başlığı */}
           <div className="w-full ">
-            <button
+         <div className="w-full flex items-center justify-between">
+         <Link href="/rooms" onClick={() => setIsMenuOpen(false)} >
+            {t("rooms")}
+          </Link>
+         <button
               type="button"
               onClick={() => setIsRoomsOpen(prev => !prev)}
-              className="flex w-full justify-between items-center uppercase"
+              className="flex w-auto justify-between items-center uppercase cursor-pointer"
             >
-              <span>{t("rooms")}</span>
               <ChevronDown
-                className={`w-4 h-4 transition-transform ${
+                className={`w-5 h-5 transition-transform ${
                   isRoomsOpen ? "rotate-180" : ""
                 }`}
               />
             </button>
+         </div>
 
-            {isRoomsOpen && (
-              <div className="mt-2 flex flex-col pl-4 space-y-2 ">
-                <Link
-                  href="/rooms/standardroom"
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    setIsRoomsOpen(false);
-                  }}
-                >
-                  {t("standardRoom")}
-                </Link>
-                <Link
-                  href="/rooms/juniorroom"
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    setIsRoomsOpen(false);
-                  }}
-                >
-                  {t("juniorRoom")}
-                </Link>
-                <Link
-                  href="/rooms/verandaroom"
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    setIsRoomsOpen(false);
-                  }}
-                >
-                  {t("verandaRoom")}
-                </Link>
-                <Link
-                  href="/rooms/cornerroom"
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    setIsRoomsOpen(false);
-                  }}
-                >
-                  {t("cornerRoom")}
-                </Link>
-                {/* Yeni oda tipleri eklemek istersen buraya… */}
-              </div>
-            )}
+            <div
+  className={`
+    mt-2
+    overflow-hidden
+    transition-all duration-700 ease-out
+    ${isRoomsOpen
+      ? "max-h-[200px]"
+      : "max-h-0"
+    }
+  `}
+>
+  <div className="flex flex-col pl-4 space-y-3 text-[15px]">
+    <Link href="/rooms/standardroom" onClick={() => {
+        setIsMenuOpen(false);
+        setIsRoomsOpen(false);
+      }}
+    >
+      {t("standardRoom")}
+    </Link>
+    <Link href="/rooms/juniorroom" onClick={() => {
+        setIsMenuOpen(false);
+        setIsRoomsOpen(false);
+      }}
+    >
+      {t("juniorRoom")}
+    </Link>
+    <Link href="/rooms/verandaroom" onClick={() => {
+        setIsMenuOpen(false);
+        setIsRoomsOpen(false);
+      }}
+    >
+      {t("verandaRoom")}
+    </Link>
+    <Link href="/rooms/cornerroom" onClick={() => {
+        setIsMenuOpen(false);
+        setIsRoomsOpen(false);
+      }}
+    >
+      {t("cornerRoom")}
+    </Link>
+  </div>
+</div>
           </div>
     <Link href="/contact" onClick={() => setIsMenuOpen(false)}>{t("contact")}</Link>
     <Link href="/about" onClick={() => setIsMenuOpen(false)}>{t("about")}</Link>
@@ -189,16 +194,16 @@ export default function Header() {
 <div className="flex flex-col w-[80%] items-center justify-center">
 <div className="flex items-center justify-center gap-[10px] text-center  mb-[16px]">
   <PhoneSvg className="flex" width={22} height={22} color="#D9D9D9"/>
-<Link className="text-[15px] text-black font-normal " href="tel:+902423243742">+90 242 324 37 42</Link>
+<Link className="text-[15px] text-black font-normal " href="tel:+902422121264">+90 242 212 12 64</Link>
 </div>
-<button className="flex items-center justify-center text-center py-[10px] px-[10px] lg:min-w-[274px] bg-[#00a1af] text-white text-[12px] md:text-[15px] font-semibold uppercase whitespace-nowrap">{t("letuscallyou")}</button>
+<Link href="tel:+902422121264" className="flex items-center justify-center text-center py-[10px] px-[10px] lg:min-w-[274px] bg-[#00a1af] text-white text-[12px] md:text-[15px] font-semibold uppercase whitespace-nowrap">{t("letuscallyou")}</Link>
 </div>
 </div>
 
   {/* Sosyal ikonlar */}
   <div className="flex gap-5 text-black text-2xl">
     <a
-      href="https://facebook.com"
+      href="https://www.facebook.com/p/Ni-Hotel-Lara-100075601707373/"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:text-lagoPink transition-transform hover:scale-110"
@@ -206,7 +211,7 @@ export default function Header() {
       <FaFacebookF />
     </a>
     <a
-      href="https://instagram.com"
+      href="https://www.instagram.com/nihotellara/"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:text-lagoPink transition-transform hover:scale-110"

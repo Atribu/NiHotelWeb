@@ -56,12 +56,12 @@ export default function RoomCarouselSection({
             </button>
           </div>
 
-          <button
+          {/* <button
             onClick={onButtonClick}
             className="mt-4 inline-block border border-gray-800 px-6 py-2 text-sm uppercase font-medium hover:bg-gray-900 hover:text-white transition"
           >
-            {buttonText}π
-          </button>
+            {buttonText}
+          </button> */}
         </div>
 
         {/* Sağ: Mobilde tek, md ve üstü için ikişer resim */}
