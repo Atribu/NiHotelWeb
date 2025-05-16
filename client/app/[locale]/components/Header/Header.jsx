@@ -52,8 +52,10 @@ export default function Header() {
 
         {/* Sol */}
         <div className="flex items-center gap-4">
-          <Menu className="w-6 h-6 cursor-pointer" onClick={() => setIsMenuOpen(true)} />
+          <div className="flex gap-2  cursor-pointer" onClick={() => setIsMenuOpen(true)}>
+          <Menu className="w-6 h-6"  />
           <span className="uppercase text-sm lg:text-[16px] tracking-widest font-medium mr-2">{t("menu")}</span>
+          </div>
 
           {/* Dil Menüsü */}
           <div className="relative hidden lg:flex">
