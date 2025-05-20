@@ -51,8 +51,8 @@ export default function Footer() {
           
           {/* İletişim Bilgileri */}
           <div className="flex flex-col items-center lg:items-start space-y-3 lg:border-l lg:border-gray-200 lg:pl-8 text-center">
-            <a href="tel:+905334734495" className="flex items-center text-gray-600 hover:text-gray-800">
-              <FaPhone className="mr-2" />+90 533 473 44 95
+            <a href="tel:++902422121264" className="flex items-center text-gray-600 hover:text-gray-800">
+              <FaPhone className="mr-2" />+90 242 212 12 64
             </a>
             <a href="tel:+902423243742" className="flex items-center text-gray-600 hover:text-gray-800">
               <FaPhone className="mr-2" />+90 242 324 37 42

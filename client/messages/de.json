@@ -12,7 +12,11 @@
        "letuscallyou": "Lassen Sie uns Sie anrufen",
        "menu": "Menü",
        "contact":"Kontakt",
-        "about":"Über uns"
+        "about":"Über uns",
+        "standardRoom": "Standardzimmer",
+    "juniorRoom": "Juniorzimmer",
+    "verandaRoom": "Verandazimmer",
+    "cornerRoom": "Eckzimmer"
     },
 
 
@@ -80,7 +84,7 @@
     "carouselDesc1": "Unsere Zimmer mit jeweils 30 m², Balkon und Gartenblick sind geschmackvoll gestaltet und auf Ihren Komfort ausgerichtet. Sie verfügen über ein großes Doppelbett oder zwei Einzelbetten, einen Schreibtisch und Stühle.",
     "carouselDesc2": "Das Ni Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
     "carouselButtonText": "ENTDECKEN",
-    "DiscooverRoom":{
+    "DiscoverRoom":{
       "header":"Entdecken Sie andere Zimmer",
       "buttonText": "Entdecken",
       "name1": "Standardzimmer",
@@ -102,7 +106,7 @@
     "carouselDesc2": "Das Ni Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
     "carouselButtonText": "ENTDECKEN",
 
-    "DiscooverRoom":{
+    "DiscoverRoom":{
       "header":"Entdecken Sie andere Zimmer",
       "buttonText": "Entdecken",
       "name1": "Eckzimmer",
@@ -124,7 +128,7 @@
     "carouselDesc2": "Das Ni Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
     "carouselButtonText": "ENTDECKEN",
 
-    "DiscooverRoom":{
+    "DiscoverRoom":{
       "header":"Entdecken Sie andere Zimmer",
       "buttonText": "Entdecken",
       "name1": "Standardzimmer",
@@ -146,7 +150,7 @@
     "carouselDesc2": "Das Ni Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
     "carouselButtonText": "ENTDECKEN",
 
-    "DiscooverRoom":{
+    "DiscoverRoom":{
       "header":"Entdecken Sie andere Zimmer",
       "buttonText": "Entdecken",
       "name1": "Standardzimmer",
@@ -199,7 +203,8 @@
   "About":{
     "header":"Über uns",
     "text1":"Im Herzen von Antalya, dem „türkisfarbenen Paradies“ der Türkei, nur wenige Schritte von den ruhigen Straßen von Konyaaltı und seinen Blauen-Fahnen-Stränden entfernt, vereint das NiHotel modernen Komfort mit echter türkischer Gastfreundschaft. Unsere 12 Standard-, 3 Junior-, 4 Veranda- und 6 Corner-Zimmer sind mit einem 42″ LED-TV, Zentralklimatisierung, Safe, Minibar und kostenlosen Badezimmerartikeln ausgestattet.",
-    "text2":"Ein reichhaltiges Frühstücksbuffet ist im Aufenthalt inbegriffen, und unser rund um die Uhr besetztes Empfangsteam hilft Ihnen gern bei Reservierungen, Tourplanungen, Sonderwünschen oder Ausflügen zu den nahegelegenen Düden-Wasserfällen und der antiken Festung."
+    "text2":"Ein reichhaltiges Frühstücksbuffet ist im Aufenthalt inbegriffen, und unser rund um die Uhr besetztes Empfangsteam hilft Ihnen gern bei Reservierungen, Tourplanungen, Sonderwünschen oder Ausflügen zu den nahegelegenen Düden-Wasserfällen und der antiken Festung.",
+     "explore": "Details"
   },
 
   "RoomTour": {
@@ -208,7 +213,7 @@
     "text": "Machen Sie eine vollständig interaktive 360°-Tour durch unser Zimmer. Betrachten Sie jedes Detail – vom Bett und Bad bis zu den atemberaubenden Ausblicken – in lebensechter Klarheit."
   },
 
-  "DiscooverRoom":{
+  "DiscoverRoom":{
     "name1": "Standardzimmer",
     "description1": "25 m², 1 Französisches Bett + 1 Einzelbett, Toilette & Bad",
     "name2": "Juniorzimmer",

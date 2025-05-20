@@ -12,7 +12,11 @@
     "letuscallyou":"Let Us Call You",
      "menu": "Menu",
      "contact":"Contact",
-      "about":"About"
+      "about":"About",
+      "standardRoom": "Standard Room",
+      "juniorRoom": "Junior Room",
+      "verandaRoom": "Veranda Room",
+      "cornerRoom": "Corner Room"
   },
 
   "Footer":{

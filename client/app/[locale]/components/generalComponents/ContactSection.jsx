@@ -8,6 +8,7 @@ import MailSvg from "./MailSvg";
 import PhoneSvg from "./PhoneSvg";
 import { useTranslations } from 'next-intl';
 import img from "../../../../public/images/callcenter.webp"
+import Link from "next/link";
 
 export default function ContactSection() {
   const t = useTranslations('Contact');
@@ -29,35 +30,35 @@ export default function ContactSection() {
             {/* Phone */}
             <div>
               <p className="text-sm text-gray-800"> {t("callCenterLabel")}</p>
-              <div className="mt-2 flex items-center bg-white border border-gray-200  px-4 py-3 shadow-sm">
+              <Link href="tel:+902422121264" className="mt-2 flex items-center bg-white border border-gray-200  px-4 py-3 shadow-sm">
               <PhoneSvg width={28} height={20} className="flex" color="#00a1af"/>
                 <input
                   type="tel"
-                  placeholder="+90 242 324 37 42"
+                  placeholder="+90 242 212 12 64"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  className="ml-3 w-full text-gray-700 placeholder-gray-400 focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px]"
+                  className="ml-3 w-full text-gray-700 placeholder-gray-400 focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] cursor-pointer"
                 />
-              </div>
+              </Link>
             </div>
 
             {/* Email */}
             <div>
               <p className="text-sm text-gray-800">  {t("emailLabel")}</p>
-              <div className="mt-2 flex items-center bg-white border border-gray-200  px-4 py-3 shadow-sm">
+              <Link href="mailto:callcenter@nihotellara.com" className="mt-2 flex items-center bg-white border border-gray-200  px-4 py-3 shadow-sm">
                 <MailSvg width={28} height={20} className="flex" color="#00a1af"/>
                 <input
                   type="email"
                   placeholder="callcenter@nihotellara.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="ml-3 w-full text-gray-700 placeholder-gray-400 focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px]"
+                  className="ml-3 w-full text-gray-700 placeholder-gray-400 focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px]  cursor-pointer"
                 />
-              </div>
+              </Link>
             </div>
 
             {/* Button */}
-            <button className="w-1/2 md:w-auto mt-1 lg:mt-4 bg-[#00a1af] hover:bg-[#00a1af] text-white font-medium py-2 px-6 text-[14px] lg:text-[16px] whitespace-nowrap">
+            <button className="w-1/2 md:w-auto mt-1 lg:mt-4 bg-[#00a1af] hover:bg-white text-white hover:text-[#00a1af] border-[#00a1af] border font-medium py-2 px-6 text-[14px] lg:text-[16px] whitespace-nowrap">
             {t("buttonText")}
             </button>
           </div>

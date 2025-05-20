@@ -12,7 +12,11 @@
       "letuscallyou":"Sizi Arayalım",
       "menu": "Menü",
       "contact":"İletişim",
-      "about":"Hakkımızda"
+      "about":"Hakkımızda",
+      "standardRoom": "Standart Oda",
+      "juniorRoom": "Junior Oda",
+      "verandaRoom": "Veranda Oda",
+      "cornerRoom": "Köşe Oda"
     },
 
     "Footer": {
