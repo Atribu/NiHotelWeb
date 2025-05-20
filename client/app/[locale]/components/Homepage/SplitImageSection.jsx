@@ -5,7 +5,8 @@ import img2 from "./images/img22.png";
 import imgup from "./images/imgup.png";
 import NiHotelLogo from "../../../../public/Header/NiHotel.svg"
 import img11 from "../../../../public/images/breakfast/DSCF8600.webp"
-import img12 from "../../../../public/images/breakfast/DSCF86022.webp"
+// import img12 from "../../../../public/images/breakfast/DSCF86022.webp"
+import img12 from "../../gallery/images/lobi/DSCF8705.webp"
 import sag from "../../../../public/images/sag.png"
 import right from "../../../../public/images/right.png"
 import ust from "../../../../public/images/ust.png"

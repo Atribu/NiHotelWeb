@@ -84,7 +84,7 @@
     "carouselDesc1": "Unsere Zimmer mit jeweils 30 m², Balkon und Gartenblick sind geschmackvoll gestaltet und auf Ihren Komfort ausgerichtet. Sie verfügen über ein großes Doppelbett oder zwei Einzelbetten, einen Schreibtisch und Stühle.",
     "carouselDesc2": "Das Ni Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
     "carouselButtonText": "ENTDECKEN",
-    "DiscooverRoom":{
+    "DiscoverRoom":{
       "header":"Entdecken Sie andere Zimmer",
       "buttonText": "Entdecken",
       "name1": "Standardzimmer",
@@ -106,7 +106,7 @@
     "carouselDesc2": "Das Ni Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
     "carouselButtonText": "ENTDECKEN",
 
-    "DiscooverRoom":{
+    "DiscoverRoom":{
       "header":"Entdecken Sie andere Zimmer",
       "buttonText": "Entdecken",
       "name1": "Eckzimmer",
@@ -128,7 +128,7 @@
     "carouselDesc2": "Das Ni Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
     "carouselButtonText": "ENTDECKEN",
 
-    "DiscooverRoom":{
+    "DiscoverRoom":{
       "header":"Entdecken Sie andere Zimmer",
       "buttonText": "Entdecken",
       "name1": "Standardzimmer",
@@ -150,7 +150,7 @@
     "carouselDesc2": "Das Ni Hotel macht Ihren Urlaub mit seinem bohemischen Stil unvergesslich. Dieses Zimmer wurde sorgfältig gestaltet. Licht und Farben heben Ihre Stimmung für Ihren Traumurlaub.",
     "carouselButtonText": "ENTDECKEN",
 
-    "DiscooverRoom":{
+    "DiscoverRoom":{
       "header":"Entdecken Sie andere Zimmer",
       "buttonText": "Entdecken",
       "name1": "Standardzimmer",
@@ -213,7 +213,7 @@
     "text": "Machen Sie eine vollständig interaktive 360°-Tour durch unser Zimmer. Betrachten Sie jedes Detail – vom Bett und Bad bis zu den atemberaubenden Ausblicken – in lebensechter Klarheit."
   },
 
-  "DiscooverRoom":{
+  "DiscoverRoom":{
     "name1": "Standardzimmer",
     "description1": "25 m², 1 Französisches Bett + 1 Einzelbett, Toilette & Bad",
     "name2": "Juniorzimmer",
