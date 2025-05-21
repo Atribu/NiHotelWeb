@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { Cormorant_Garamond, Jost, Geist, Geist_Mono } from "next/font/google";
+import { Jost, Geist, Geist_Mono, Cormorant_Garamond } from "next/font/google";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import BookSection from "./components/generalComponents/BookSection";
@@ -12,23 +12,26 @@ import CookiePopup from "./components/generalComponents/CookiePopup";
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ["400", "500","600", "700"],
-  variable: "--font-cormorant",
+  display: 'swap',
 });
 
 const jost = Jost({
   subsets: ['latin'],
   weight: ["400", "500","600", "700"],
   variable: "--font-jost",
+  display: 'swap',
 });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: 'swap',
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: 'swap',
 });
 
 export const metadata = {
@@ -51,8 +54,8 @@ export default async function RootLayout({ children, params }) {
 
   const messages = await getMessages();
   return (
-    <html lang={locale} className={`${cormorant.variable} ${jost.variable}`}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} ${jost.variable} antialiased`}>
+      <body >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <BookSection/>

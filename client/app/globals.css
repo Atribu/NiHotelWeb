@@ -136,15 +136,16 @@ input[type="date"]::-webkit-datetime-edit-day-field {
 
   /* çubuklar: width=20, her biri y=0’dan başlıyor, farklı height’lar */
   background-image: url("data:image/svg+xml;charset=UTF-8,\
-<svg xmlns='http://www.w3.org/2000/svg' width='240' height='200' viewBox='0 0 240 200'>\
-  <rect x='0'   y='0' width='20' height='200' fill='%23ffffff'/>\
-  <rect x='30'  y='0' width='20' height='140' fill='%23ffffff'/>\
-  <rect x='60'  y='0' width='20' height='180' fill='%23ffffff'/>\
-  <rect x='90'  y='0' width='20' height='120' fill='%23ffffff'/>\
-  <rect x='120' y='0' width='20' height='160' fill='%23ffffff'/>\
-  <rect x='150' y='0' width='20' height='200' fill='%23ffffff'/>\
-  <rect x='180' y='0' width='20' height='100' fill='%23ffffff'/>\
-  <rect x='210' y='0' width='20' height='170' fill='%23ffffff'/>\
+<svg xmlns='http://www.w3.org/2000/svg' width='240' height='500' viewBox='0 0 240 500'>\
+  <rect x='0'   y='0' width='20' height='190' fill='%23ffffff'/>\
+  <rect x='30'  y='0' width='20' height='290' fill='%23ffffff'/>\
+  <rect x='60'  y='0' width='20' height='350' fill='%23ffffff'/>\
+  <rect x='90'  y='0' width='20' height='430' fill='%23ffffff'/>\
+  <rect x='120' y='0' width='20' height='450' fill='%23ffffff'/>\
+  <rect x='150' y='0' width='20' height='430' fill='%23ffffff'/>\
+  <rect x='180' y='0' width='20' height='350' fill='%23ffffff'/>\
+  <rect x='210' y='0' width='20' height='290' fill='%23ffffff'/>\
+  <rect x='210' y='0' width='20' height='190' fill='%23ffffff'/>\
 </svg>");
   background-repeat: repeat-x;
   background-size: 240px 100%; /* 240px genişlikte, yatayda tekrarla, dikeyde bölgenin tamamı */

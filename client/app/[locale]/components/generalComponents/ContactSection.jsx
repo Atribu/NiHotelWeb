@@ -21,7 +21,7 @@ export default function ContactSection() {
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* LEFT */}
         <div className="w-[90%] sm:w-[80%] md:w-1/2 items-center justify-center text-center md:items-start md:justify-start md:text-start">
-          <h2 className="text-[24px] lg:text-3xl font-medium font-cormorant">{t("header")}</h2>
+          <h2 className="text-[24px] lg:text-3xl font-['Cormorant_Garamond'] font-bold">{t("header")}</h2>
           <p className="mt-4 text-gray-600 text-[12px] md:text-[14px] lg:text-[14px]">
           {t("description")}
           </p>

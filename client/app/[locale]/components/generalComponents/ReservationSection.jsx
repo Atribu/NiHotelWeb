@@ -30,7 +30,7 @@ export default function ReservationSection() {
   const bookingUrl = `https://nihotellara.rezervasyonal.com/`;
 
   return (
-    <div className="relative max-w-screen bg-[#fafafa] items-center justify-center hidden lg:flex">
+    <div className="relative max-w-screen bg-[#fafafa] items-center justify-center hidden lg:flex z-20">
       <section className="p-4 w-[95%] items-center justify-center">
         <div className="flex flex-col lg:flex-row items-center justify-center md:space-x-6 space-y-4 md:space-y-0">
           

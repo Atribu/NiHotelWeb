@@ -37,7 +37,7 @@ export default function RoomCarouselSection({
       <div className="max-w-[1440px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
         {/* Sol: Metin + Kontroller */}
         <div className="space-y-2 md:space-y-4 lg:space-y-6 text-center items-center justify-center flex flex-col lg:items-start lg:justify-start lg:text-start">
-          <h3 className="text-[24px] lg:text-3xl font-serif">{title}</h3>
+          <h3 className="text-[24px] lg:text-3xl font-['Cormorant_Garamond'] font-semibold">{title}</h3>
           {descriptions.map((p, i) => (
             <p key={i} className="text-gray-700 text-[12px] lg:text-sm">
               {p}

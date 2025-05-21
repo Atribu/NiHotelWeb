@@ -66,11 +66,12 @@ export default function DiscoverRooms({
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-              <div className="absolute top-6 w-full text-center px-4">
-                <h3 className="text-white text-lg font-serif uppercase">
+              <div className="absolute top-6 w-full text-center px-4 ">
+              <div className="absolute w-[688px] h-[493.32px] origin-top-left -rotate-90 opacity-80 bg-gradient-to-r from-black/0 to-black/50 " />
+                <h3 className="text-white text-lg font-['Cormorant_Garamond'] leading-tight uppercase font-bold">
                   {name}
                 </h3>
-                <div className="h-px w-12 bg-white mx-auto mt-2" />
+                <div className="absolute w-48 h-px opacity-50 outline  outline-offset-[-1.50px] outline-white left-1/2 -translate-x-1/2 mt-1" />
               </div>
               <button
                 className="
