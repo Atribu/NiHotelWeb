@@ -71,7 +71,7 @@ export default function RoomShowcase({
                         </div>
                       ))}
                     </div>
-                    <div className="flex lg:hidden absolute top-0 left-1/2 -translate-x-1/2 text-center bg-[linear-gradient(180deg,#FFF_23.88%,rgba(255,255,255,0)_100%)]
+                    <div className="flex lg:hidden absolute top-0 left-1/2 -translate-x-1/2 items-center justify-center text-center bg-[linear-gradient(180deg,#FFF_23.88%,rgba(255,255,255,0)_100%)]
   w-full
   h-[178px]
   flex-shrink-0">
@@ -122,7 +122,7 @@ export default function RoomShowcase({
 
                 {/* Center text on desktop, below carousel on mobile */}
           <div className="flex flex-col items-center text-center justify-center space-y-2 lg:space-y-6 lg:h-full shadow-xl lg:shadow-none px-5 pb-5 lg:px-0 lg:pb-0">
-            <h3 className=" text-[26px] lg:text-[32px] font-['Cormorant_Garamond'] text-gray-700 font-bold">
+            <h3 className="hidden lg:flex text-[26px] lg:text-[32px] font-['Cormorant_Garamond'] text-gray-700 font-bold">
               {title}
             </h3>
             <p className="text-[12px] lg:text-base text-gray-700">{description}</p>
