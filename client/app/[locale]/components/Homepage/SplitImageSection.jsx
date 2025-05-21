@@ -1,7 +1,6 @@
 // components/SplitImageSection.jsx
 "use client";
-import img1 from "./images/img1.jpg";
-import img2 from "./images/img22.png";
+import img1 from "../../gallery/images/lobi/1.webp";
 import imgup from "./images/imgup.png";
 import NiHotelLogo from "../../../../public/Header/NiHotel.svg"
 import img11 from "../../../../public/images/breakfast/DSCF8600.webp"
@@ -13,76 +12,56 @@ import ust from "../../../../public/images/ust.png"
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import Link from "next/link";
-import clock from "../../../../public/svg/nihotelclock.svg"
+import clock from "../../../../public/svg/SAATSON.svg"
+import CardwLogo from "./CardwLogo";
 
 export default function SplitImageSection() {
   const t = useTranslations('About');
 
   return (
-    <section className="py-20 bg-white">
-      <div className="flex flex-col max-w-[850px] mx-auto px-4 gap-[35px] font-geistMono">
-        <div className="flex flex-col md:flex-row items-end justify-end relative md:mr-[6%] lg:mr-[6%] z-20">
-          <div className="relative w-full md:w-[68%]  overflow-hidden shadow-lg items-start justify-start flex">
-          <div className="absolute inset-0 bg-black/30 z-[50]"></div>
-          <Image
-              src={ust}
-              alt="Beach Bar & Restaurant"
-              width={ust.width}
-              height={ust.height}
-              className="object-cover z-40 min-h-[300px] md:min-h-[200px]"
-              priority
-            />
-            <div className="absolute inset-0 px-8 flex flex-col justify-center text-white z-[60]">
-            <Image src={NiHotelLogo} alt="logo" className="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] flex z-[100] "/>
-              <p className="mt-2 text-[12px] md:text-[14px] lg:text-[14px] leading-normal w-[95%] lg:w-[100%] z-[100]">
-               {t("text1")}
-              </p>
-              <Link
-                href="#"
-                className="z-[100] mt-2 lg:mt-4 w-[110px] lg:w-[150px] font-jost font-medium items-center justify-center text-center text-[12px] lg:text-[14px] uppercase border border-white py-[5px] px-[2] lg:py-2 lg:px-4 hover:bg-white hover:text-[#8cbfc5] transition leading-[125%]"
-              >
-                {t("explore")}
-              </Link>
-            </div>
-          </div>
-          <div className="absolute right-0 top-[20px] md:max-w-[34.7%] lg:max-w-[34.6%]  overflow-hidden hidden md:flex">
-            <Image
-              src={sag}
-              alt="Beach Bar & Restaurant"
-              width={sag.width}
-              height={sag.height}
-              className="object-cover  z-[10] "
-              priority
-            />
-             <div className="absolute inset-0 bg-black/30  z-[10]"></div>
-          </div>
-          
+    <section className="mb-[100px] flex justify-center lg:mb-[50px] lg:mt-[30px] lg:px-4 xl:mb-[65px] xl:mt-[40px] 2xl:mb-[80px] 2xl:mt-[45px] 3xl:mb-[100px] 3xl:mt-[60px] 4xl:mb-[130px] 4xl:mt-[75px] 5xl:mb-[200px] 5xl:mt-[120px]">
+      <div className=" relative mt-[35px] w-[300px] xs:w-[390px] lg:mt-0 lg:w-[500px] xl:w-[620px] 2xl:w-[750px] 3xl:w-[920px] 4xl:w-[1250px] 5xl:w-[1850px]">
+        <div className=" absolute -top-36 -left-32">
+          <Image src={clock} alt="hotel" className="text-[210px] lg:text-[305px] xl:text-[800px] 2xl:text-[800px]" width={800} height={800} />
         </div>
 
-        <div className="flex flex-col md:flex-row items-start justify-start md:ml-[10%] lg:ml-[6%] z-20">
-          {/* Sol Kart */}
-          <div className="relative w-full md:w-[52%] lg:w-[55%] overflow-hidden shadow-lg">
-          <div className="absolute inset-0 bg-black/40 z-[1]"></div>
-            <Image src={img12} alt="Ni Hotel" width={img12.width} height={img12.height} className="object-cover min-h-[300px]" />
-            <div className="absolute inset-0 p-8 flex flex-col justify-end text-white z-[100] ">
-            <Image src={NiHotelLogo} alt="logo" className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] flex z-[100]"/>
-              <h3 className="text-sm lg:text-[16px] uppercase font-medium">NI SELECTION HOTEL</h3>
-              <p className="mt-2 text-[12px] md:text-[14px] lg:text-[14px] leading-normal w-[94%] lg:w-[97%] font-medium">
-              {t("text2")}
-              </p>
-              <Link
-                href="#"
-                className=" mt-2 lg:mt-4 w-[110px] lg:w-[150px] font-jost font-medium items-center justify-center text-center text-[12px] lg:text-[14px] uppercase border border-white py-[5px] px-2 lg:py-2 lg:px-3 hover:bg-white hover:text-[#8cbfc5] transition leading-[125%]"
-              >
-              {t("explore")}
-              </Link>
-            </div>
-          </div>
+        <div className=" flex w-full justify-end px-4 lg:mt-[30px] lg:px-0 xl:mt-[45px] 2xl:mt-[55px] 3xl:mt-[60px] 4xl:mt-[95px] 5xl:mt-[135px]">
+          <div className="cardClip h-[200px] w-[200px]  xs:h-[250px] xs:w-[230px] lg:h-[300px] lg:w-[275px] xl:h-[380px] xl:w-[340px] 2xl:h-[455px] 2xl:w-[405px] 3xl:h-[570px] 3xl:w-[485px] 4xl:h-[760px] 4xl:w-[675px] 5xl:h-[1140px] 5xl:w-[1015px]">
 
-          {/* Sağ Kart (sol alt köşe 40px kırpıldı) */}
+            <CardwLogo
+              width={230}
+              height={250}
+              img={img1}
+              text={" Hotel"}
+              classNames={"cardClip rounded-4 sm:rounded-none"}
+              btnText={"Explore"}
+              href={"/rooms"}
+              cliped={true}
+            >
+                {/* <InoneCardLogo className="text-xl xs:text-3xl md:text-3xl  lg:ml-[-9px] lg:text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl" /> */}
+            </CardwLogo>
+         
+          </div>
         </div>
-        <Image src={clock} alt="clock" width={800} height={800} className="absolute top-[70%] left-[15%]"/>
+        <div className="mx-4 -mt-[75px] h-[110px] w-[180px] bg-orange-500  xs:-mt-[97.5px] xs:h-[150px] xs:w-[190px] lg:mx-0 lg:-mt-[120px] lg:h-[180px] lg:w-[290px] xl:-mt-[155px] xl:h-[190px] xl:w-[362.5px] 2xl:-mt-[185px] 2xl:h-[245px] 2xl:w-[445px] 3xl:-mt-[235px] 3xl:h-[300px] 3xl:w-[555px] 4xl:-mt-[315px] 4xl:h-[405px] 4xl:w-[747.5px] 5xl:-mt-[462.5px] 5xl:h-[610px] 5xl:w-[1090px]">
+      
+          <CardwLogo
+            width={300}
+            href={"/beachandpool"}
+            height={200}
+            img={img12}
+            text={ " Beach"}
+            filter={"bg-orange-100/30"}
+            btnText={ "Explore"}
+            
+            cliped={false}
+          >
+                {/* <IconicCardLogo className="text-xl xs:text-3xl md:text-3xl  lg:ml-[-9px] lg:text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl" /> */}
+          </CardwLogo>
+        
+        </div>
       </div>
+   
     </section>
   );
 }

@@ -35,6 +35,8 @@ const Page = () => {
         href="/rooms/standardroom"
         buttonText={t("buttonText")}
         imagesOnRight={false}
+        m2="25 m²"
+        person={t("person1")}
         images={[
           { src: standardImage, alt: "standard " },
           { src: standardImage2, alt: "standard " },
@@ -43,13 +45,15 @@ const Page = () => {
         ]}
       />
        {/* Aynı component, bu kez resimler sağda */}
-       <RoomShowcase
+    <div className='hidden lg:flex'>
+    <RoomShowcase
       id="juniorroom"
         title={t("title2")}
         description={t("description2")}
         href="/rooms/juniorroom"
         buttonText={t("buttonText")}
         imagesOnRight={true}
+       
         images={[
           { src: juniorImage, alt: " junior room " },
           { src: juniorImage2, alt: " junior room " },
@@ -57,6 +61,26 @@ const Page = () => {
           { src: juniorImage4, alt: " junior room " },
         ]}
       />
+    </div>
+
+      <div className='flex lg:hidden'>
+      <RoomShowcase
+      id="juniorroom"
+        title={t("title2")}
+        description={t("description2")}
+        href="/rooms/juniorroom"
+        buttonText={t("buttonText")}
+        imagesOnRight={false}
+         m2="20 m²"
+         person={t("person2")}
+        images={[
+          { src: juniorImage, alt: " junior room " },
+          { src: juniorImage2, alt: " junior room " },
+          { src: juniorImage3, alt: " junior room " },
+          { src: juniorImage4, alt: " junior room " },
+        ]}
+      />
+      </div>
 
 <RoomShowcase
  id="verandaroom"
@@ -65,6 +89,8 @@ const Page = () => {
         href="/rooms/verandaroom"
         buttonText={t("buttonText")}
         imagesOnRight={false}
+         m2="25 m²"
+         person={t("person3")}
         images={[
           { src: verandaImage, alt: "veranda " },
           { src: verandaImage2, alt: "veranda  " },
@@ -73,7 +99,8 @@ const Page = () => {
         ]}
       />
        {/* Aynı component, bu kez resimler sağda */}
-       <RoomShowcase
+    <div className='hidden lg:flex'>
+    <RoomShowcase
         id="cornerroom"
         title={t("title4")}
         description={t("description4")}
@@ -87,6 +114,26 @@ const Page = () => {
           { src: cornerImage4, alt: "corner  " },
         ]}
       />
+    </div>
+
+    <div className='flex lg:hidden'>
+    <RoomShowcase
+        id="cornerroom"
+        title={t("title4")}
+        description={t("description4")}
+        href="/rooms/cornerroom"
+        buttonText={t("buttonText")}
+        imagesOnRight={false}
+         m2="25 m²"
+         person={t("person4")}
+        images={[
+          { src: cornerImage, alt: " corner " },
+          { src: cornerImage2, alt: "corner  " },
+          { src: cornerImage3, alt: " corner " },
+          { src: cornerImage4, alt: "corner  " },
+        ]}
+      />
+    </div>
   </div>
   )
 }
