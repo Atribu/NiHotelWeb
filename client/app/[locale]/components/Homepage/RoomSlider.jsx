@@ -59,7 +59,7 @@ export default function RoomSlider() {
           <Image src={junior} alt="Static Left" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent pointer-events-none" />
           <div className="absolute top-36 left-40 z-20 max-w-lg">
-            <h2 className="text-[24px] lg:text-4xl font-marcellus uppercase text-black mb-6 font-serif">
+            <h2 className="text-[24px] lg:text-4xl font-['Cormorant_Garamond'] uppercase text-black mb-6 font-serif">
               {t("header")}
             </h2>
             <p className="mt-2 text-[12px] lg:text-[14px] font-jost leading-[130%] text-black w-[60%]">

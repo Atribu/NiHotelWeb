@@ -6,21 +6,22 @@ import imgup from "./images/imgup.png";
 import NiHotelLogo from "../../../../public/Header/NiHotel.svg"
 import img11 from "../../../../public/images/breakfast/DSCF8600.webp"
 // import img12 from "../../../../public/images/breakfast/DSCF86022.webp"
-import img12 from "../../gallery/images/lobi/DSCF8705.webp"
+// import img12 from "../../gallery/images/lobi/DSCF8705.webp"
+import img12 from "../../gallery/images/lobi/DSCF8725.webp"
 import sag from "../../../../public/images/sag.png"
-import right from "../../../../public/images/right.png"
 import ust from "../../../../public/images/ust.png"
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import Link from "next/link";
+import clock from "../../../../public/svg/nihotelclock.svg"
 
 export default function SplitImageSection() {
   const t = useTranslations('About');
 
   return (
     <section className="py-20 bg-white">
-      <div className="flex flex-col max-w-[1000px] mx-auto px-4 gap-[35px] ">
-        <div className="flex flex-col md:flex-row items-end justify-end relative md:mr-[6%] lg:mr-[6%]">
+      <div className="flex flex-col max-w-[850px] mx-auto px-4 gap-[35px] font-geistMono">
+        <div className="flex flex-col md:flex-row items-end justify-end relative md:mr-[6%] lg:mr-[6%] z-20">
           <div className="relative w-full md:w-[68%]  overflow-hidden shadow-lg items-start justify-start flex">
           <div className="absolute inset-0 bg-black/30 z-[50]"></div>
           <Image
@@ -32,8 +33,8 @@ export default function SplitImageSection() {
               priority
             />
             <div className="absolute inset-0 px-8 flex flex-col justify-center text-white z-[60]">
-            <Image src={NiHotelLogo} alt="logo" className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] flex z-[100] "/>
-              <p className="mt-2 text-[12px] md:text-[14px] lg:text-[16px] leading-normal w-[95%] lg:w-[98%] z-[100]">
+            <Image src={NiHotelLogo} alt="logo" className="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] flex z-[100] "/>
+              <p className="mt-2 text-[12px] md:text-[14px] lg:text-[14px] leading-normal w-[95%] lg:w-[100%] z-[100]">
                {t("text1")}
               </p>
               <Link
@@ -55,17 +56,18 @@ export default function SplitImageSection() {
             />
              <div className="absolute inset-0 bg-black/30  z-[10]"></div>
           </div>
+          
         </div>
 
-        <div className="flex flex-col md:flex-row items-start justify-start md:ml-[10%] lg:ml-[6%]">
+        <div className="flex flex-col md:flex-row items-start justify-start md:ml-[10%] lg:ml-[6%] z-20">
           {/* Sol Kart */}
           <div className="relative w-full md:w-[52%] lg:w-[55%] overflow-hidden shadow-lg">
-          <div className="absolute inset-0 bg-black/30 z-[1]"></div>
+          <div className="absolute inset-0 bg-black/40 z-[1]"></div>
             <Image src={img12} alt="Ni Hotel" width={img12.width} height={img12.height} className="object-cover min-h-[300px]" />
             <div className="absolute inset-0 p-8 flex flex-col justify-end text-white z-[100] ">
             <Image src={NiHotelLogo} alt="logo" className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] flex z-[100]"/>
               <h3 className="text-sm lg:text-[16px] uppercase font-medium">NI SELECTION HOTEL</h3>
-              <p className="mt-2 text-[12px] md:text-[14px] lg:text-[16px] leading-normal w-[94%] lg:w-[97%] font-medium">
+              <p className="mt-2 text-[12px] md:text-[14px] lg:text-[14px] leading-normal w-[94%] lg:w-[97%] font-medium">
               {t("text2")}
               </p>
               <Link
@@ -79,6 +81,7 @@ export default function SplitImageSection() {
 
           {/* Sağ Kart (sol alt köşe 40px kırpıldı) */}
         </div>
+        <Image src={clock} alt="clock" width={800} height={800} className="absolute top-[70%] left-[15%]"/>
       </div>
     </section>
   );

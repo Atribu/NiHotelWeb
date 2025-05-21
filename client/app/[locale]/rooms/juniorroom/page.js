@@ -6,14 +6,10 @@ import img1 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR1.webp"
 import img2 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR2.webp"
 import img3 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR3.webp"
 import img4 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR4.webp"
-import img5 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR6.webp"
-import img6 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR7.webp"
-import img7 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR8.webp"
-import img8 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR9.webp"
-import img9 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR10.webp"
-import img10 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR11.webp"
-import img11 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR12.webp"
-import img12 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR13.webp"
+import img5 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR5.webp"
+import img6 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR6.webp"
+import img7 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR7.webp"
+
 import ReservationSection from '../../components/generalComponents/ReservationSection'
 import { useTranslations } from 'next-intl';
 import RoomTour from '../../components/rooms/RoomTour'
@@ -39,12 +35,7 @@ const Page = () => {
        img4,
        img5,
        img6,
-       img7,
-       img8,
-       img9,
-       img10,
-       img11,
-       img12
+       img7
       ]}
       buttonText={t("carouselButtonText")}
      

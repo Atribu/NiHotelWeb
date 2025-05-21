@@ -24,7 +24,7 @@ export default function AboutPage() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-4xl md:text-6xl font-marcellus text-white">
+          <h1 className="text-4xl md:text-6xl font-['Cormorant_Garamond'] text-white">
             {t("header")}
           </h1>
         </div>

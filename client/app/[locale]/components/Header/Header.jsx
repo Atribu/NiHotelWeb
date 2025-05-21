@@ -192,18 +192,16 @@ export default function Header() {
     <Link href="/about" onClick={() => setIsMenuOpen(false)}>{t("about")}</Link>
   </nav>
 
-<div className="flex w-full items-center justify-center ">
+<div className="flex flex-col w-full items-center justify-center mb-4 gap-4">
 <div className="flex flex-col w-[80%] items-center justify-center">
-<div className="flex items-center justify-center gap-[10px] text-center  mb-[16px]">
+<div className="flex items-center justify-center gap-[10px] text-center mb-[16px]">
   <PhoneSvg className="flex" width={22} height={22} color="#D9D9D9"/>
 <Link className="text-[15px] text-black font-normal " href="tel:+902422121264">+90 242 212 12 64</Link>
 </div>
 <Link href="tel:+902422121264" className="flex items-center justify-center text-center py-[10px] px-[10px] lg:min-w-[274px] bg-[#00a1af] text-white text-[12px] md:text-[15px] font-semibold uppercase whitespace-nowrap">{t("letuscallyou")}</Link>
 </div>
-</div>
-
-  {/* Sosyal ikonlar */}
-  <div className="flex gap-5 text-black text-2xl">
+ {/* Sosyal ikonlar */}
+ <div className="flex gap-5 text-black text-2xl">
     <a
       href="https://www.facebook.com/p/Ni-Hotel-Lara-100075601707373/"
       target="_blank"
@@ -229,6 +227,9 @@ export default function Header() {
       <FaXTwitter />
     </a>
   </div>
+</div>
+
+ 
   </div>
 </div>
     </header>

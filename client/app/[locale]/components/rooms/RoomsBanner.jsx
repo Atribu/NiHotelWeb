@@ -8,7 +8,7 @@ import Image from 'next/image';
 const RoomsBanner = () => {
   const t = useTranslations('Rooms');
   return (
-    <div className='flex w-screen h-screen lg:items-end md:items-center md:justify-center lg:justify-end bg-center bg-cover justify-center items-center relative' >
+    <div className='flex h-[90vh] w-screen lg:h-screen lg:items-end md:items-center md:justify-center lg:justify-end bg-center bg-cover justify-center items-center relative' >
        <Image
         src={imgbanner}
         alt="rooms"
@@ -17,25 +17,25 @@ const RoomsBanner = () => {
         priority
       />
        <div className='absolute inset-0 bg-black/20 z-[1]'></div>
-    <div className='flex h-full w-full lg:w-[52%] justify-center items-end md:justify-end md:items-center bg-[linear-gradient(268deg,rgba(255,255,255,0.9)_31.52%,rgba(255,255,255,0)_93.61%)] z-[100]'>
-    <div className="flex flex-col gap-[34px] 2xl:gap-[15px] md:gap-10 w-[80%] h-auto text-[#11131d] text-center justify-center items-center mt-[16%] mb-[20px] lg:mb-0">
-      <h2 className='font-marcellus text-[28px] md:text-[30px] lg:text-[36px] leading-[20px] -tracking-[0.88px] font-normal 2xl:mb-4 font-serif'>{t("rooms")}</h2>
-      <Link href="/rooms#standardroom" className='relative flex py-[4px] px-[34px] border-[2px] border-[#11131d] justify-center items-center shadow-buttonCustom gap-[65px] font-jost uppercase text-[13px] lg:text-[15px] font-medium leading-[30px] text-center bg-transparent w-[90%] md:w-[50%] xl:w-[45%] lg:min-w-[300px] transition-colors duration-500 ease-in-out hover:text-white
+    <div className='flex h-full w-full lg:w-[52%] justify-center items-end md:justify-end md:items-center lg:bg-[linear-gradient(268deg,rgba(255,255,255,0.9)_31.52%,rgba(255,255,255,0)_93.61%)] z-[100]'>
+    <div className="flex flex-col gap-3 lg:gap-2 md:gap-10 w-[80%] h-auto text-[#11131d] text-center justify-center items-center mt-[16%] mb-[40px] lg:mb-0">
+      <h2 className="font-['Cormorant_Garamond'] text-[48px] lg:text-[36px] uppercase lg:capitalize leading-[20px] -tracking-[0.88px] mb-[82%] 2xl:mb-4 font-bold">{t("rooms")}</h2>
+      <Link href="/rooms#standardroom" className="relative flex w-60 py-[4px] border-transparent bg-stone-50/80 rounded shadow-[0px_0px_50px_0px_rgba(20,12,41,0.07)] backdrop-blur-[2px] lg:rounded-none lg:backdrop-blur-none lg:shadow-none lg:py-[2px] lg:px-[34px] lg:border-[2px] lg:border-[#11131d] justify-center items-center shadow-buttonCustom gap-[65px] font-['Jost'] capitalize text-[15px] font-medium leading-[30px] text-center lg:bg-transparent md:w-[50%] xl:w-[45%] lg:min-w-[300px] transition-colors duration-500 ease-in-out hover:text-white
     before:absolute before:inset-0
     before:bg-black before:origin-left before:scale-x-0
     before:transition-transform before:duration-500 before:ease-in-out
-    hover:before:scale-x-100'><span className='z-10'>{t("title")}</span></Link>
-      <Link href="/rooms#juniorroom" className='flex relative py-[4px] px-[34px] border-[2px] border-[#11131d] justify-center items-center shadow-buttonCustom gap-[65px] font-jost uppercase text-[13px] lg:text-[15px] font-jost font-medium leading-[30px] text-center bg-transparent w-[90%] md:w-[50%] xl:w-[45%] lg:min-w-[300px]  transition-colors duration-500 ease-in-out hover:text-white
+    hover:before:scale-x-100"><span className='z-10'>{t("title")}</span></Link>
+      <Link href="/rooms#juniorroom" className='relative flex w-60 py-[4px] border-transparent bg-stone-50/80 rounded shadow-[0px_0px_50px_0px_rgba(20,12,41,0.07)] backdrop-blur-[2px] lg:rounded-none lg:backdrop-blur-none lg:shadow-none lg:py-[2px] lg:px-[34px] lg:border-[2px] lg:border-[#11131d] justify-center items-center shadow-buttonCustom gap-[65px] font-jost capitalize text-[15px] font-medium leading-[30px] text-center lg:bg-transparent md:w-[50%] xl:w-[45%] lg:min-w-[300px]  transition-colors duration-500 ease-in-out hover:text-white
     before:absolute before:inset-0
     before:bg-black before:origin-left before:scale-x-0
     before:transition-transform before:duration-500 before:ease-in-out
     hover:before:scale-x-100'><span className='z-10'>{t("title2")}</span></Link>
-      <Link href="/rooms#verandaroom" className='relative flex py-[4px] px-[34px] border-2 border-[#11131d] justify-center items-center shadow-buttonCustom gap-[65px] font-jost uppercase text-[13px] lg:text-[15px] font-medium leading-[30px] text-center bg-transparent w-[90%] md:w-[50%] xl:w-[45%] lg:min-w-[300px] transition-colors duration-500 ease-in-out hover:text-white
+      <Link href="/rooms#verandaroom" className='relative flex w-60 py-[4px] border-transparent bg-stone-50/80 rounded shadow-[0px_0px_50px_0px_rgba(20,12,41,0.07)] backdrop-blur-[2px] lg:rounded-none lg:backdrop-blur-none lg:shadow-none lg:py-[2px] lg:px-[34px] lg:border-[2px] lg:border-[#11131d] justify-center items-center shadow-buttonCustom gap-[65px] font-jost capitalize text-[15px] font-medium leading-[30px] text-center lg:bg-transparent md:w-[50%] xl:w-[45%] lg:min-w-[300px] transition-colors duration-500 ease-in-out hover:text-white
     before:absolute before:inset-0
     before:bg-black before:origin-left before:scale-x-0
     before:transition-transform before:duration-500 before:ease-in-out
     hover:before:scale-x-100'><span className='z-10'>{t("title3")}</span></Link>
-      <Link href="/rooms#cornerroom" className='relative flex py-[4px] px-[34px] border-[2px] border-[#11131d] justify-center items-center shadow-buttonCustom gap-[65px] font-jost uppercase text-[13px] lg:text-[15px] font-medium leading-[30px] text-center bg-transparent w-[90%] md:w-[50%] xl:w-[45%] lg:min-w-[300px] transition-colors duration-500 ease-in-out hover:text-white
+      <Link href="/rooms#cornerroom" className='relative flex w-60 py-[4px] border-transparent bg-stone-50/80 rounded shadow-[0px_0px_50px_0px_rgba(20,12,41,0.07)] backdrop-blur-[2px] lg:rounded-none lg:backdrop-blur-none lg:shadow-none lg:py-[2px] lg:px-[34px] lg:border-[2px] lg:border-[#11131d] justify-center items-center shadow-buttonCustom gap-[65px] font-jost capitalize text-[15px] font-medium leading-[30px] text-center lg:bg-transparent md:w-[50%] xl:w-[45%] lg:min-w-[300px] transition-colors duration-500 ease-in-out hover:text-white
     before:absolute before:inset-0
     before:bg-black before:origin-left before:scale-x-0
     before:transition-transform before:duration-500 before:ease-in-out

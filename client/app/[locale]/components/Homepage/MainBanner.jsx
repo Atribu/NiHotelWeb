@@ -5,7 +5,7 @@ import React from "react";
 
 export default function HomePage() {
   return (
-    <div className='flex items-center justify-center w-screen h-[100vh] relative bg-cover bg-center '  >
+    <div className='flex items-center justify-center w-screen h-[100vh] relative bg-cover bg-center z-20'  >
     <div className='absolute inset-0 bg-black/10 z-[1]'></div>
     <video
       autoPlay
