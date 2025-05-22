@@ -46,7 +46,7 @@ function CardwLogo({
           )}
         >
           {children}
-          <Image src={NiHotelLogo} alt="logo" className="w-[50px] h-[50px] lg:w-[65px] lg:h-[65px] flex z-50 "/>
+          <Image src={NiHotelLogo} alt="logo" className="w-[70px] h-[70px] lg:w-[65px] lg:h-[65px] flex z-50 "/>
           <p
             className={clsx(
               "hidden text-[8px] font-light lg:flex 2xl:text-xs  3xl:text-sm 4xl:text-lg",

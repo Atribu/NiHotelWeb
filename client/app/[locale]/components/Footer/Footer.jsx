@@ -12,12 +12,13 @@ import {
 } from 'react-icons/fa';
 import DgtlfaceSvg from "../generalComponents/DgtlfaceSvg";
 import { useTranslations } from 'next-intl';
+import img from "../../../../public/images/nihotelLeaf.png"
 
 export default function Footer() {
     const t = useTranslations('Footer');
 
   return (
-    <footer className="bg-white">
+    <footer className="bg-white relative ">
       <div className="max-w-7xl mx-auto px-4 pt-10 lg:pt-20">
         {/* columns */}
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start lg:space-x-8 space-y-8 lg:space-y-0">
@@ -88,6 +89,7 @@ export default function Footer() {
          <span className="flex mt-10 items-center justify-center"> Powered by © <DgtlfaceSvg className="flex" width={104} height={27}/></span>
         </div>
       </div>
+      <Image src={img} alt='leaf' width={800} height={1500} className='absolute bottom-0 -right-[260px] z-[9999] transform rotate-[20deg]'/>
     </footer>
   );
 }

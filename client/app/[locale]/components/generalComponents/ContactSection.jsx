@@ -9,7 +9,7 @@ import PhoneSvg from "./PhoneSvg";
 import { useTranslations } from 'next-intl';
 import img from "../../../../public/images/callcenter.webp"
 import Link from "next/link";
-import callcenter from "../../../../public/images/callcenter.png"
+import callcenter from "../../../../public/images/callcenter2.png"
 
 export default function ContactSection() {
   const t = useTranslations('Contact');
@@ -66,13 +66,13 @@ export default function ContactSection() {
         </div>
 
         {/* RIGHT (Illustration) */}
-        <div className="hidden md:block w-full md:w-[70%]">
+        <div className="hidden md:flex w-full md:w-[50%] items-center justify-center">
           <Image
             src={callcenter}
             alt="Contact Illustration"
-            width={700}
-            height={500}
-            className="object-contain"
+            width={200}
+            height={200}
+            className="object-cover w-[60%]"
           />
         </div>
       </div>

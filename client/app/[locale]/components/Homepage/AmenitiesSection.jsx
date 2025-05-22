@@ -16,19 +16,19 @@ export default function AmenitiesSection() {
   ];
 
   return (
-    <section className="slats-section py-56">
+    <section className="slats-section py-20 lg:py-56">
       <div className="relative z-10 max-w-6xl mx-auto px-4 text-center  items-center justify-center">
-        <h2 className="text-3xl font-['Cormorant_Garamond'] font-bold mb-2">AMENITIES</h2>
-        <p className="text-gray-600 mb-12">
+        <h2 className="text-[24px] md:text-[27px] lg:text-3xl font-['Cormorant_Garamond'] font-bold mb-2">AMENITIES</h2>
+        <p className="hidden lg:flex text-gray-600 mb-12">
           High-quality service and bohemian-style interlane with care in Ni Hotel
         </p>
         <div className="flex flex-wrap justify-center gap-6">
           {amenities.map(({ Icon, label }) => (
             <div
               key={label}
-              className="w-24 h-24 bg-white border border-gray-200 flex flex-col items-center justify-center space-y-2 shadow-sm font-jost"
+              className="w-20 h-20 lg:w-24 lg:h-24 bg-white border border-gray-200 flex flex-col items-center justify-center space-y-2 shadow-sm font-jost"
             >
-              <Icon className="text-gray-400 w-6 h-6" />
+              <Icon className="text-gray-400 w-5 h-5 lg:w-6 lg:h-6" />
               <span className="text-xs text-gray-700">{label}</span>
             </div>
           ))}

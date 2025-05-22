@@ -8,8 +8,6 @@ import junior from "../../../../public/images/rooms/juniorroom/NI-JUNIOR1.webp";
 import veranda from "../../../../public/images/rooms/veranda/NI-VERANDA.webp";
 import { useTranslations } from "next-intl";
 
-// İçerik Ni_Hotel_Tanıtım_ENG.pdf dosyasına dayanır citeturn13file0
-
 export default function DiscoverRooms({
   header,
   buttonText,
@@ -51,7 +49,7 @@ export default function DiscoverRooms({
           {header}
         </h2>
         {/* 3 sütunlu grid: mobilde 1, sm:2, lg ve üstü 3 */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-7 ">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-7 z-50">
           {otherRooms.map(({ name, description, image, href }) => (
             <Link
               key={name}

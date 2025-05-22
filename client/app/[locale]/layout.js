@@ -55,7 +55,7 @@ export default async function RootLayout({ children, params }) {
   const messages = await getMessages();
   return (
     <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} ${jost.variable} antialiased`}>
-      <body >
+      <body className="overflow-x-hidden">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <BookSection/>

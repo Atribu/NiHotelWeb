@@ -13,7 +13,8 @@ const RoomTour = ({link}) => {
        <p className='text-[14px] lg:text-[16px] leading-[130%] lg:leading-[24px] font-normal w-full lg:w-[70%]'>{t("text")}</p>
        </div>
        <div className='flex w-full items-center justify-center py-[20px] lg:px-[20px]'>
-       <iframe width="100%" height="640" allow="xr-spatial-tracking; gyroscope; accelerometer" allowFullScreen scrolling="no" src={link}></iframe>
+       <iframe width="100%" height="640" className='hidden lg:flex ' allow="xr-spatial-tracking; gyroscope; accelerometer" allowFullScreen scrolling="no" src={link}></iframe>
+       <iframe width="100%" height="440" className='flex lg:hidden ' allow="xr-spatial-tracking; gyroscope; accelerometer" allowFullScreen scrolling="no" src={link}></iframe>
        </div>
       </div>
     </div>

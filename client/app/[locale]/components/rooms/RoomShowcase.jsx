@@ -8,7 +8,6 @@ import { MdStraighten } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { FaShower } from "react-icons/fa";
 import AreaSvg from "../subrooms/AreaSvg";
-import PersonSvg from "../subrooms/PersonSvg";
 import { GoPerson } from "react-icons/go";
 import {  GiSofa } from "react-icons/gi";
 import { useTranslations } from 'next-intl';
@@ -101,21 +100,25 @@ export default function RoomShowcase({
               )}
 
                 {/* Mobile features row */}
-                <div className="flex lg:hidden justify-center items-center space-x-6 py-1">
-                <div className="flex items-center gap-1 text-[12px] text-gray-700">
-                <AreaSvg className="flex" width={15} height={15} />
+                <div className="flex lg:hidden justify-center items-center space-x-3 lg:space-x-6 py-1">
+                <div className="flex items-center gap-1 text-[12px] text-gray-700 whitespace-nowrap">
+                <AreaSvg className="hidden lg:flex" width={15} height={15} />
+                <AreaSvg className="flex lg:hidden" width={13} height={13} />
                   <span>{m2}</span>
                 </div>
                 <div className="flex items-center gap-1 text-[12px] text-gray-700">
-                <GoPerson className="w-5 h-5" />
+                <GoPerson className="hidden lg:flex w-5 h-5" />
+                <GoPerson className="flex lg:hidden w-4 h-4" />
                   <span>{person}</span>
                 </div>
                 <div className="flex items-center gap-1 text-[12px] text-gray-700">
-                  <FaShower className="w-5 h-5" />
+                  <FaShower className="hidden lg:flex w-5 h-5" />
+                  <FaShower className="flex lg:hidden w-4 h-4" />
                   <span>{t("bathroom")}</span>
                 </div>
                 <div className="flex items-center gap-1 text-[12px] text-gray-700">
-                  <GiSofa className="w-5 h-5" />
+                  <GiSofa className="hidden lg:flex w-5 h-5" />
+                  <GiSofa className="flex lg:hidden w-4 h-4" />
                   <span>{t("puff")}</span>
                 </div>
               </div>

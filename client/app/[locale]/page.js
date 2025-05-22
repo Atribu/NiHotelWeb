@@ -7,10 +7,12 @@ import RoomSlider from './components/Homepage/RoomSlider'
 import MainBanner from './components/Homepage/MainBanner'
 import NibeautySection from './components/Homepage/NibeautySection'
 import BackgroundImage from './components/Homepage/BackgroundImage'
+import img from "../../public/images/nihotelLeaf.png"
+import Image from 'next/image'
 
 const page = () => {
   return (
-    <div className='flex flex-col  max-w-screen overflow-x-hidden'>
+    <div className='flex flex-col  max-w-screen overflow-x-hidden relative'>
      <MainBanner/>
     <ReservationSection/>
     <SplitImageSection/>
@@ -19,6 +21,7 @@ const page = () => {
     <NibeautySection/>
     <ContactSection/>
     <BackgroundImage/>
+   
     </div>
   )
 }
