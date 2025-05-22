@@ -88,7 +88,7 @@ export default function RoomFeatures() {
           </div>
         </div>
 
-        <p className="mt-12 text-sm text-gray-600">
+        <p className="hidden lg:flex mt-12 text-sm text-gray-600">
           <strong>{t("rulesHeader")}</strong> {t("rulesDetails")}
         </p>
       </div>

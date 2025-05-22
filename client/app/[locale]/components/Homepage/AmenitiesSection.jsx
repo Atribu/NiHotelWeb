@@ -19,7 +19,7 @@ export default function AmenitiesSection() {
     <section className="slats-section py-20 lg:py-56">
       <div className="relative z-10 max-w-6xl mx-auto px-4 text-center  items-center justify-center">
         <h2 className="text-[24px] md:text-[27px] lg:text-3xl font-['Cormorant_Garamond'] font-bold mb-2">AMENITIES</h2>
-        <p className="hidden lg:flex text-gray-600 mb-12">
+        <p className="hidden lg:flex text-gray-600 mb-12 w-full items-center justify-center">
           High-quality service and bohemian-style interlane with care in Ni Hotel
         </p>
         <div className="flex flex-wrap justify-center gap-6">

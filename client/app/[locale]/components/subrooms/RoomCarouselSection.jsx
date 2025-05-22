@@ -44,35 +44,37 @@ export default function RoomCarouselSection({
     <section className="py-4 lg:py-20 bg-white z-50">
       <div className="max-w-[1440px] mx-auto px-4 grid-cols-1 lg:grid lg:grid-cols-3 gap-6 items-center shadow-lg w-[96%] pb-5 lg:w-[100%]">
         {/* Sol: Metin + Kontroller */}
+           {/* Mobile features row */}
+           <div className="flex lg:hidden justify-between items-center space-x-none lg:space-x-6 py-1 mb-4 w-full">
+                <div className="flex items-center gap-1 text-[12px] text-gray-700 whitespace-nowrap">
+                <AreaSvg className="hidden lg:flex" width={15} height={15} />
+                <AreaSvg className="flex lg:hidden" width={15} height={15} />
+                  <span>{m2}</span>
+                </div>
+                <div className="flex items-center gap-1 text-[12px] text-gray-700">
+                <GoPerson className="hidden lg:flex w-5 h-5" />
+                <GoPerson className="flex lg:hidden w-5 h-5" />
+                  <span>{person}</span>
+                </div>
+                <div className="flex items-center gap-1 text-[12px] text-gray-700">
+                  <FaShower className="hidden lg:flex w-5 h-5" />
+                  <FaShower className="flex lg:hidden w-5 h-5" />
+                  <span>{t("bathroom")}</span>
+                </div>
+                <div className="flex items-center gap-1 text-[12px] text-gray-700">
+                  <GiSofa className="hidden lg:flex w-5 h-5" />
+                  <GiSofa className="flex lg:hidden w-5 h-5" />
+                  <span>{t("puff")}</span>
+                </div>
+              </div>
+
         {descriptions.map((p, i) => (
             <p key={i} className="flex lg:hidden  text-gray-700 text-[12px] lg:text-sm mb-6 line-clamp-3">
               {p}
             </p>
           ))}
 
-               {/* Mobile features row */}
-               <div className="flex lg:hidden justify-between items-center space-x-none lg:space-x-6 py-1 mb-4 w-full">
-                <div className="flex items-center gap-1 text-[12px] text-gray-700 whitespace-nowrap">
-                <AreaSvg className="hidden lg:flex" width={15} height={15} />
-                <AreaSvg className="flex lg:hidden" width={13} height={13} />
-                  <span>{m2}</span>
-                </div>
-                <div className="flex items-center gap-1 text-[12px] text-gray-700">
-                <GoPerson className="hidden lg:flex w-5 h-5" />
-                <GoPerson className="flex lg:hidden w-4 h-4" />
-                  <span>{person}</span>
-                </div>
-                <div className="flex items-center gap-1 text-[12px] text-gray-700">
-                  <FaShower className="hidden lg:flex w-5 h-5" />
-                  <FaShower className="flex lg:hidden w-4 h-4" />
-                  <span>{t("bathroom")}</span>
-                </div>
-                <div className="flex items-center gap-1 text-[12px] text-gray-700">
-                  <GiSofa className="hidden lg:flex w-5 h-5" />
-                  <GiSofa className="flex lg:hidden w-4 h-4" />
-                  <span>{t("puff")}</span>
-                </div>
-              </div>
+            
 
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:col-span-2 lg:hidden ">

@@ -8,7 +8,7 @@ import img from '../../../../public/images/antalyaview2.jpg';
 
 export default function BackgroundImage() {
   return (
-    <div className="flex flex-col lg:max-h-[90vh] w-screen bg-center bg-cover justify-center items-center relative gap-8 my-5">
+    <div className="flex flex-col lg:max-h-[90vh] w-screen bg-center bg-cover justify-center items-center relative gap-8 mt-5 ">
       {/* Text overlay */}
       <div className="z-10 flex flex-col w-[65%] lg:w-[40%] max-w-[400px] gap-2 lg:gap-4 items-center justify-center text-center">
         <h2 className="text-[26px] lg:text-[32px] font-['Cormorant_Garamond'] font-bold">

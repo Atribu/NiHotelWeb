@@ -120,7 +120,7 @@ export default function FoodPage() {
   return (
     <main className="scroll-smooth">
       {/* HEADER */}
-      <section className="relative h-[320px] lg:h-[500px] overflow-hidden">
+      <section className="relative h-[400px] lg:h-[500px] overflow-hidden">
         <Image
           src={banner}
           alt="Food & Beverage"
@@ -172,6 +172,7 @@ export default function FoodPage() {
           })}
         </div>
       </div>
+      
     </main>
   );
 }
