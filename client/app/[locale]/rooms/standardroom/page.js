@@ -18,7 +18,7 @@ import RoomTour from '../../components/rooms/RoomTour'
 import DiscoverRooms from '../../components/rooms/DiscoverRooms'
 import img from "../../../../public/svg/PORTRESON.svg"
 import Image from 'next/image'
-import sandalye from "../../../../public/images/sandalye.png"
+import sandalye from "../../../../public/images/sandalyegri.png"
 
 const Page = () => {
   const t3 = useTranslations('Rooms');
@@ -58,7 +58,7 @@ const Page = () => {
     <RoomTour link="https://kuula.co/share/n1/collection/71c7G"/>
     <DiscoverRooms header={t2("header")} buttonText={t2("buttonText")} name1={t2("name1")} description1={t2("description1")} name2={t2("name2")} description2={t2("description2")} name3={t2("name3")} description3={t2("description3")} link1="/rooms/cornerroom" link2="/rooms/juniorroom" link3="/rooms/verandaroom"/>
     <Image src={img} alt='portre' width={800} height={1400} className='hidden lg:flex absolute top-[1200px] left-0 z-[1]  '/>
-    <Image src={sandalye} alt='portre' width={500} height={1000} className='hidden lg:flex absolute top-[2700px] -left-16 z-[1] transform -rotate-[10deg]'/>
+    <Image src={sandalye} alt='portre' width={500} height={1000} className='hidden lg:flex absolute top-[2700px] -left-16 z-[1] transform -rotate-[10deg] opacity-80'/>
     </div>
   )
 }
