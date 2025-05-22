@@ -51,11 +51,11 @@ export default function Footer() {
           
           {/* İletişim Bilgileri */}
           <div className="flex flex-col items-center lg:items-start space-y-3 lg:border-l lg:border-gray-200 lg:pl-8 text-center">
-            <a href="tel:++902422121264" className="flex items-center text-gray-600 hover:text-gray-800">
+            <a href="tel:+902422121264" className="flex items-center text-gray-600 hover:text-gray-800">
               <FaPhone className="mr-2" />+90 242 212 12 64
             </a>
-            <a href="tel:+902423243742" className="flex items-center text-gray-600 hover:text-gray-800">
-              <FaPhone className="mr-2" />+90 242 324 37 42
+            <a href="tel:+905317148252 " className="flex items-center text-gray-600 hover:text-gray-800">
+              <FaPhone className="mr-2" />+90 531 714 82 52 
             </a>
             <a href="mailto:callcenter@nihotellara.com" className="flex items-center text-gray-600 hover:text-gray-800">
               <FaEnvelope className="mr-2" />callcenter@nihotellara.com
