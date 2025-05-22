@@ -12,6 +12,7 @@ import { routing } from "@/i18n/routing";
 import { FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/fa6";
 import PhoneSvg from "../generalComponents/PhoneSvg";
 import BellSvg from "../generalComponents/BellSvg";
+import img from "../../../../public/images/headerImg.png"
 
 export default function Header() {
 
@@ -47,7 +48,7 @@ export default function Header() {
   `;
 
   return (
-    <header className="fixed top-0 left-0 w-full max-w-screen z-[9999] bg-black/10 backdrop-blur-md text-white py-2">
+    <header className="fixed top-0 left-0 w-full max-w-screen z-[9999] bg-transparent black-mask text-white py-2 bg-center bg-cover" >
       <div className="max-w-[1400px] mx-auto px-4 py-4 flex items-center justify-between">
 
         {/* Sol */}

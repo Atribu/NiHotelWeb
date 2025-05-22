@@ -1,5 +1,6 @@
 // components/Footer.jsx
 "use client";
+import React, { useState } from "react";
 import NiHotelLogo from "../../../../public/Header/NiHotel.svg"
 import Image from 'next/image';
 import {
@@ -8,14 +9,19 @@ import {
   FaMapMarkerAlt,
   FaFacebookF,
   FaYoutube,
-  FaInstagram
+  FaInstagram,
+  FaTripadvisor,
+  FaFacebook
 } from 'react-icons/fa';
+import { IoIosArrowDown } from "react-icons/io";
 import DgtlfaceSvg from "../generalComponents/DgtlfaceSvg";
 import { useTranslations } from 'next-intl';
 import img from "../../../../public/images/nihotelLeaf.png"
+import Link from "next/link";
 
 export default function Footer() {
     const t = useTranslations('Footer');
+    const [isRoomsOpen, setIsRoomsOpen] = useState(false);
 
   return (
     <footer className="bg-white relative overflow-hidden">
@@ -33,17 +39,151 @@ export default function Footer() {
               className="object-contain"
             />
           </div>
+
+          {/* Mobile İletişim Bilgileri */}
+          <div className="grid grid-cols-2 lg:hidden gap-3 flex-col items-center lg:items-start space-y-2 lg:space-y-3 lg:border-l lg:border-gray-200 lg:pl-8 text-center text-[12px]">
+            <div className="flex gap-1 items-center justify-start">
+              <div className="flex items-center justify-center text-center h-[36px] w-[36px] rounded golge">
+              <FaPhone className="transform scale-x-[-1]" />
+              </div>
+            <div className="flex flex-col gap-1 items-start justify-start">
+              <p>Hotel Fixed Line</p>
+            <a href="tel:+902422121264" className="flex items-center text-gray-600 hover:text-gray-800">
+            +90 242 212 12 64
+            </a>
+            </div>
+            </div>
+
+            <div className="flex gap-1 items-center justify-start">
+              <div className="flex items-center justify-center text-center h-[36px] w-[36px] rounded golge">
+              <FaPhone className="transform scale-x-[-1]" />
+              </div>
+            <div className="flex flex-col gap-1 items-start justify-start">
+              <p>Call Center Line</p>
+            <a href="tel:+905317148252 " className="flex items-center text-gray-600 hover:text-gray-800">
+            +90 531 714 82 52 
+            </a>
+            </div>
+            </div>
+
+
+            <div className="flex gap-1 items-center justify-start">
+              <div className="flex items-center justify-center text-center h-[36px] w-[36px] rounded golge">
+              <FaEnvelope className="transform scale-x-[-1]" />
+              </div>
+            <div className="flex flex-col gap-1 items-start justify-start">
+              <p>Call Center Email</p>
+            <a href="mailto:callcenter@nihotellara.com"className="flex items-center text-gray-600 hover:text-gray-800 leading-[110%] text-[11px]">
+            callcenter@nihotellara.com
+            </a>
+            </div>
+            </div>
+
+
+            <div className="flex gap-1 items-center justify-start">
+              <div className="flex items-center justify-center text-center h-[36px] w-[36px] rounded golge">
+              <FaMapMarkerAlt className="transform scale-x-[-1]" />
+              </div>
+            <div className="flex flex-col gap-1 items-start justify-start">
+              <p>Address</p>
+            <a href="mailto:callcenter@nihotellara.com"className="flex items-center text-gray-600 hover:text-gray-800">
+          Muratpaşa/Antalya
+            </a>
+            </div>
+            </div>
+    
+          </div>
           
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+          <div className="flex golge md:hidden flex-col w-full items-center justify-center font-jost font-medium text-[16px]">
+            <div
+              onClick={() => setIsRoomsOpen(!isRoomsOpen)}
+              className="flex w-[98%] p-[10px] md:max-w-[306px] items-center justify-between border border-white leading-[26.667px] uppercase"
+            >
+              accommodation <IoIosArrowDown className="flex" width={25} height={25} />
+            </div>
+            <div
+              className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                isRoomsOpen ? "max-h-[200px] opacity-100 w-[90%]" : "max-h-0 opacity-0 w-[90%]"
+              }`}
+            >
+              <div className="mt-2 space-y-2 pl-4 border-l border-white/30 font-jost">
+              <Link
+                  href="/rooms/"
+                  className="block text-[14px]  leading-[29.639px] uppercase"
+                >
+                  All Rooms
+                </Link>
+                <Link
+                  href="/rooms/standardroom"
+                  className="block text-[14px]  leading-[29.639px] uppercase"
+                >
+                  Standard Room
+                </Link>
+                <Link
+                  href="/rooms/juniorroom"
+                  className="block text-[14px]  leading-[29.639px] uppercase"
+                >
+                  Junıor Room
+                </Link>
+                <Link
+                  href="/rooms/verandaroom"
+                  className="block text-[14px]  leading-[29.639px] uppercase"
+                >
+                  Veranda Room
+                </Link>
+                <Link
+                  href="/rooms/cornerroom"
+                  className="block text-[14px]  leading-[29.639px] uppercase"
+                >
+                 Corner Room
+                </Link>
+
+              </div>
+            </div>
+
+            <Link
+              href="/connect"
+              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px]"
+            >
+              CONTACT US{" "}
+            </Link>
+
+            <Link
+              href="/gallery"
+              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px]"
+            >
+              GALLERY{" "}
+            </Link>
+
+            <Link
+              href="/cerezpolıtıkası"
+              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px] uppercase"
+            >
+             Çerez pOLİTİKASi
+            </Link>
+           
+          </div>
+
+          <div className="flex w-full items-center justify-center gap-[10px]">
+            <Link href="https://www.tripadvisor.com.tr/Hotel_Review-g1192102-d545626-Reviews-Lago_Hotel-Sorgun_Manavgat_Turkish_Mediterranean_Coast.html" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center ]"><FaTripadvisor className="w-6 h-6" color="#A7ABAD"/></Link>
+            <Link rel="norefferer nofollower"
+                  target="_blank" href="https://www.facebook.com/lagohotels" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center ]"> <FaFacebook className="w-6 h-6" color='#A7ABAD'/></Link>
+            <Link rel="norefferer nofollower"
+                  target="_blank" href="https://www.youtube.com/channel/UCjbL19l36uYQEdy2EEw1nLQ" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center "> <FaYoutube className="w-6 h-6" color='#A7ABAD'/></Link>
+            <Link rel="norefferer nofollower"
+                  target="_blank" href="https://www.instagram.com/lagohotels/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center"><FaInstagram className="w-6 h-6" color='#A7ABAD'/></Link>
+          </div>
+
+      <div className="md:flex flex-row items-center justify-center gap-10">
             {/* Hızlı Linkler */}
-            <div className="flex flex-col items-center lg:items-start space-y-2">
+            <div className="flex flex-col items-center lg:items-start space-y-1 lg:space-y-2">
             <a href="/about" className="text-gray-600 hover:text-gray-800">{t("aboutus")}</a>
             <a href="/contact" className="text-gray-600 hover:text-gray-800">{t("contactus")}</a>
             <a href="/gallery" className="text-gray-600 hover:text-gray-800">{t("gallery")}</a>
           </div>
           
           {/* Politikalar */}
-          <div className="flex flex-col items-center lg:items-start space-y-2 lg:border-l lg:border-gray-200 lg:pl-8">
+          <div className="flex flex-col items-center lg:items-start space-y-1 lg:space-y-2 lg:border-l lg:border-gray-200 lg:pl-8">
             <a href="/cookie-policy" className="text-gray-600 hover:text-gray-800">{t("cookiePolicy")}</a>
             <a href="/privacy-policy" className="text-gray-600 hover:text-gray-800">{t("privacyPolicy")}</a>
             <a href="/fact-sheet" className="text-gray-600 hover:text-gray-800">{t("factsheet")}</a>
@@ -51,7 +191,7 @@ export default function Footer() {
       </div>
           
           {/* İletişim Bilgileri */}
-          <div className="flex flex-col items-center lg:items-start space-y-3 lg:border-l lg:border-gray-200 lg:pl-8 text-center">
+          <div className="hidden lg:flex flex-col items-center lg:items-start space-y-2 lg:space-y-3 lg:border-l lg:border-gray-200 lg:pl-8 text-center">
             <a href="tel:+902422121264" className="flex items-center text-gray-600 hover:text-gray-800">
               <FaPhone className="mr-2" />+90 242 212 12 64
             </a>
@@ -85,11 +225,11 @@ export default function Footer() {
         </div>
 
         {/* Alt Powered By */}
-        <div className="flex items-center justify-center my-10  border-t border-gray-200 pt-4 text-center text-gray-500 text-sm">
-         <span className="flex mt-10 items-center justify-center"> Powered by © <DgtlfaceSvg className="flex" width={104} height={27}/></span>
+        <div className="flex items-center justify-center my-5 lg:my-10  border-t border-gray-200 lg:pt-4 text-center text-gray-500 text-sm">
+         <span className="flex mt-5 lg:mt-10 items-center justify-center"> Powered by © <DgtlfaceSvg className="flex" width={104} height={27}/></span>
         </div>
       </div>
-      <Image src={img} alt='leaf' width={700} height={1300} className='absolute bottom-48 lg:-bottom-[50px]  lg:-right-[220px] z-[9999] transform rotate-[20deg] opacity-60'/>
+      <Image src={img} alt='leaf' width={700} height={1300} className='absolute bottom-48 lg:-bottom-[50px] -right-[120px]  lg:-right-[220px] z-[9999] transform rotate-[35deg] lg:rotate-[20deg] opacity-60'/>
     </footer>
   );
 }

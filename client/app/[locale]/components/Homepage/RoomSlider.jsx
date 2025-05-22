@@ -55,14 +55,23 @@ export default function RoomSlider() {
     <div className="relative max-w-screen py-10">
       <div className="flex flex-col lg:grid lg:grid-cols-14 gap-4 items-center relative z-10">
         {/* Soldaki Sabit */}
+        <div className="flex flex-col lg:hidden w-full ml-[10%]">
+            <h2 className="text-[16px] font-semibold font-['Cormorant_Garamond'] uppercase text-black">
+              {t("header")}
+            </h2>
+            <p className="mt-1 text-[12px] font-jost leading-normal text-black w-[90%]">
+              {t("text")}
+            </p>
+          </div> 
+
         <div className="hidden lg:flex relative h-[420px] lg:h-[500px] overflow-hidden shadow-md col-span-8">
           <Image src={junior} alt="Static Left" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent pointer-events-none" />
-          <div className="absolute top-36 left-40 z-20 max-w-lg">
-            <h2 className="text-[24px] lg:text-4xl font-['Cormorant_Garamond'] uppercase text-black mb-6 ">
+          <div className="absolute top-36 left-20 xl:left-40 z-20 max-w-lg">
+            <h2 className="text-[24px] lg:text-[32px] xl:text-4xl font-['Cormorant_Garamond'] uppercase text-black mb-6 font-semibold">
               {t("header")}
             </h2>
-            <p className="mt-2 text-[12px] lg:text-[14px] font-jost leading-[130%] text-black w-[60%]">
+            <p className="mt-2 text-[12px] lg:text-[14px] font-jost leading-[130%] text-black w-[70%]">
               {t("text")}
             </p>
             <Link
