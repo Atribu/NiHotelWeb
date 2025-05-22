@@ -31,7 +31,7 @@ export default function RoomShowcase({
   const t = useTranslations('Rooms');
 
   return (
-    <section id={id} className="py-8 lg:py-20 bg-white flex items-center justify-center w-full">
+    <section id={id} className="py-8 lg:py-20 bg-white flex items-center justify-center w-full ">
       <div className="max-w-7xl mx-auto w-[93%] items-center justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 lg:gap-6 items-start ">
 
@@ -40,7 +40,7 @@ export default function RoomShowcase({
             <>
               {/* Static image hidden on mobile */}
               {firstImage && (
-                <div className="relative w-full h-64 sm:h-80 lg:h-[500px] overflow-hidden shadow-lg hidden lg:block">
+                <div className="relative w-full h-64 sm:h-80 lg:h-[500px] overflow-hidden shadow-lg hidden lg:block z-50">
                   <Image
                     src={firstImage.src}
                     alt={firstImage.alt}
@@ -54,7 +54,7 @@ export default function RoomShowcase({
               {/* Carousel full width on mobile */}
               {carouselImages.length > 0 && (
                 <>
-                  <div ref={emblaRef} className="overflow-hidden w-full relative">
+                  <div ref={emblaRef} className="overflow-hidden w-full relative z-50">
                     <div className="flex">
                       {carouselImages.map((img, i) => (
                         <div
@@ -156,7 +156,7 @@ export default function RoomShowcase({
               {/* Carousel full width on mobile */}
               {carouselImages.length > 0 && (
                 <>
-                  <div ref={emblaRef} className="overflow-hidden w-full">
+                  <div ref={emblaRef} className="overflow-hidden w-full z-50">
                     <div className="flex">
                       {carouselImages.map((img, i) => (
                         <div
@@ -194,7 +194,7 @@ export default function RoomShowcase({
 
               {/* Static image hidden on mobile */}
               {firstImage && (
-                <div className="relative w-full h-64 sm:h-80 lg:h-[500px] overflow-hidden shadow-lg hidden lg:block">
+                <div className="relative w-full h-64 sm:h-80 lg:h-[500px] overflow-hidden shadow-lg hidden lg:block z-50">
                   <Image
                     src={firstImage.src}
                     alt={firstImage.alt}

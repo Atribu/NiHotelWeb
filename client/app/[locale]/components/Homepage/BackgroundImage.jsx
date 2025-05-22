@@ -3,11 +3,12 @@
 
 import React from 'react';
 import Image from 'next/image';
-import img2 from '../../../../public/images/waterfallnew.jpg';
+import img2 from '../../../../public/images//antalyakaleiçi.png';
+import img from '../../../../public/images/antalyaview2.jpg';
 
 export default function BackgroundImage() {
   return (
-    <div className="flex flex-col h-[90vh] w-screen bg-center bg-cover justify-center items-center relative gap-8">
+    <div className="flex flex-col lg:h-[90vh] w-screen bg-center bg-cover justify-center items-center relative gap-8 my-5">
       {/* Text overlay */}
       <div className="z-10 flex flex-col w-[65%] lg:w-[40%] max-w-[400px] gap-2 lg:gap-4 items-center justify-center text-center">
         <h2 className="text-[26px] lg:text-[32px] font-['Cormorant_Garamond'] font-bold">
@@ -20,18 +21,18 @@ export default function BackgroundImage() {
       </div>
 
       {/* Image with top gradient overlay */}
-      <div className="relative w-screen max-h-[65vh] overflow-hidden">
+      <div className="relative w-screen max-h-[68vh] overflow-hidden">
         <Image
           src={img2}
           alt="waterfall"
           width={img2.width}
           height={img2.height}
-          className="object-cover object-center"
+          className="object-cover object-center w-screen"
           priority
         />
         {/* Top white-to-transparent gradient */}
         <div
-          className="absolute top-0 left-0 w-full h-[30%] 
+          className="absolute top-0 left-0 w-full h-[15%] 
                      bg-[linear-gradient(180deg,rgba(255,255,255,0.9)_0%,rgba(255,255,255,0)_100%)] 
                      pointer-events-none"
         />

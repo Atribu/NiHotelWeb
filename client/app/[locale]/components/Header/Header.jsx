@@ -200,7 +200,7 @@ export default function Header() {
   <PhoneSvg className="flex" width={22} height={22} color="#D9D9D9"/>
 <Link className="text-[15px] text-black font-normal " href="tel:+902422121264">+90 242 212 12 64</Link>
 </div>
-<Link href="tel:+902422121264" className="flex items-center justify-center text-center py-[10px] px-[10px] lg:min-w-[274px] bg-[#00a1af] text-white text-[12px] md:text-[15px] font-semibold uppercase whitespace-nowrap">{t("letuscallyou")}</Link>
+<Link href="tel:+902422121264" className="flex items-center justify-center text-center py-[10px] px-[10px] lg:min-w-[274px] bg-[#dec7a6] text-white text-[12px] md:text-[15px] font-semibold uppercase whitespace-nowrap">{t("letuscallyou")}</Link>
 </div>
  {/* Sosyal ikonlar */}
  <div className="flex gap-5 text-black text-2xl">

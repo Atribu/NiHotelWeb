@@ -21,14 +21,17 @@ import verandaImage from "../../../public/images/rooms/veranda/NI-VERANDA.webp"
 import verandaImage2 from "../../../public/images/rooms/veranda/NI-VERANDA2.webp"
 import verandaImage3 from "../../../public/images/rooms/veranda/NI-VERANDA3.webp"
 import verandaImage4 from "../../../public/images/rooms/veranda/NI-VERANDA4.webp"
+import Image from 'next/image';
+import img from "../../../public/svg/PORTRESON.svg"
 
 const Page = () => {
   const t = useTranslations('Rooms');
 
   return (
-  <div className='max-w-screen overflow-x-hidden'>
+  <div className='max-w-screen overflow-x-hidden relative'>
     <RoomsBanner/>
-    <RoomShowcase
+   <div className='flex flex-col z-[990]'>
+   <RoomShowcase
       id="standardroom"
         title={t("title")}
         description={t("description")}
@@ -134,6 +137,8 @@ const Page = () => {
         ]}
       />
     </div>
+   </div>
+    <Image src={img} alt='portre' width={1000} height={1600} className='absolute top-[1800px] right-0 z-[1]  flex'/>
   </div>
   )
 }

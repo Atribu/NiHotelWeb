@@ -196,7 +196,7 @@ const CookiePopup = () => {
           </h4>
         </div>
         <div
-          className={`w-[36px] h-[22px] flex items-center cursor-pointer rounded-full transition-colors duration-300 bg-[#00a1af] `}
+          className={`w-[36px] h-[22px] flex items-center cursor-pointer rounded-full transition-colors duration-300 bg-[#dec7a6] `}
           onClick={() => handleToggle("necessary")}
         >
           <div
@@ -237,7 +237,7 @@ const CookiePopup = () => {
         </div>
         <div
           className={`w-[36px] h-[22px] flex items-center cursor-pointer rounded-full transition-colors duration-300 ${
-            cookies.performance ? "bg-[#00a1af]" : "bg-[#676766]"
+            cookies.performance ? "bg-[#dec7a6]" : "bg-[#676766]"
           }`}
           onClick={() => handleToggle("performance")}>
           <div
@@ -278,7 +278,7 @@ const CookiePopup = () => {
         </div>
         <div
           className={`w-[36px] h-[22px] flex items-center cursor-pointer rounded-full transition-colors duration-300 ${
-            cookies.functional ? "bg-[#00a1af]" : "bg-[#676766]"
+            cookies.functional ? "bg-[#dec7a6]" : "bg-[#676766]"
           }`}
           onClick={() => handleToggle("functional")}
         >
@@ -321,7 +321,7 @@ const CookiePopup = () => {
         </div>
         <div
           className={`w-[36px] h-[22px] flex items-center cursor-pointer rounded-full transition-colors duration-300 ${
-            cookies.targeting ? "bg-[#00a1af]" : "bg-[#676766]"
+            cookies.targeting ? "bg-[#dec7a6]" : "bg-[#676766]"
           }`}
           onClick={() => handleToggle("targeting")}
         >

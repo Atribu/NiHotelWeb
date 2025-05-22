@@ -7,6 +7,7 @@ import "../../../globals.css";
 import CustomImage from "./CustomImage";
 import Link from 'next/link';
 import NiHotelLogo from "../../../../public/Header/NiHotel.svg"
+import { MdArrowForwardIos } from "react-icons/md";
 
 const fontJost = Jost({
   weights: [400, 500, 600, 700],
@@ -48,7 +49,7 @@ function CardwLogo({
           <Image src={NiHotelLogo} alt="logo" className="w-[50px] h-[50px] lg:w-[65px] lg:h-[65px] flex z-50 "/>
           <p
             className={clsx(
-              "hidden text-[9px] font-normal lg:flex 2xl:text-[12px]  3xl:text-sm 4xl:text-lg",
+              "hidden text-[8px] font-light lg:flex 2xl:text-xs  3xl:text-sm 4xl:text-lg",
               fontJost.className,
               cliped ? "" : "xl:w-[250px] 2xl:w-[300px] 3xl:w-full 4xl:w-[450px]",
             )}
@@ -70,7 +71,7 @@ function CardwLogo({
 
           </Link>
           <div className="rounded-4 border-2 border-white p-1 lg:hidden">
-         
+         <MdArrowForwardIos className="w-4 h-4 flex text-white lg:ml-[-9px]"/>
           </div>
         </div>
       </div>
