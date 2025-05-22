@@ -226,8 +226,13 @@
     "description3": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom",
     "name4": "Corner Room",
     "description4": "25 m², 1 French bed, toilet & bathroom"
+  },
+
+  "Nibeauty":{
+    "title": "The Path to Health and Beauty",
+    "text": "We offer services such as skin care, localized slimming, spa treatments, hand and foot care, laser hair removal, permanent makeup, and mesotherapy—combining the latest methods and technology to help you achieve a healthier, higher-quality life.",
+    "buttonText": "Learn More"
   }
-  
 
 
 }

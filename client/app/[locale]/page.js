@@ -5,6 +5,8 @@ import SplitImageSection from './components/Homepage/SplitImageSection'
 import AmenitiesSection from './components/Homepage/AmenitiesSection'
 import RoomSlider from './components/Homepage/RoomSlider'
 import MainBanner from './components/Homepage/MainBanner'
+import NibeautySection from './components/Homepage/NibeautySection'
+import BackgroundImage from './components/Homepage/BackgroundImage'
 
 const page = () => {
   return (
@@ -14,7 +16,9 @@ const page = () => {
     <SplitImageSection/>
     <AmenitiesSection/>
     <RoomSlider/>
+    <NibeautySection/>
     <ContactSection/>
+    <BackgroundImage/>
     </div>
   )
 }

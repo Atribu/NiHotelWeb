@@ -9,6 +9,7 @@ import PhoneSvg from "./PhoneSvg";
 import { useTranslations } from 'next-intl';
 import img from "../../../../public/images/callcenter.webp"
 import Link from "next/link";
+import callcenter from "../../../../public/images/callcenter.png"
 
 export default function ContactSection() {
   const t = useTranslations('Contact');
@@ -17,7 +18,7 @@ export default function ContactSection() {
   const [email, setEmail] = useState("");
 
   return (
-    <section className="bg-[#f5f5f5] py-16 px-4">
+    <section className="bg-[#fefdfc] py-16 px-4">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* LEFT */}
         <div className="w-[90%] sm:w-[80%] md:w-1/2 items-center justify-center text-center md:items-start md:justify-start md:text-start">
@@ -31,7 +32,7 @@ export default function ContactSection() {
             <div>
               <p className="text-sm text-gray-800"> {t("callCenterLabel")}</p>
               <Link href="tel:+902422121264" className="mt-2 flex items-center bg-white border border-gray-200  px-4 py-3 shadow-sm">
-              <PhoneSvg width={28} height={20} className="flex" color="#00a1af"/>
+              <PhoneSvg width={28} height={20} className="flex" color="#dec7a6"/>
                 <input
                   type="tel"
                   placeholder="+90 242 212 12 64"
@@ -46,7 +47,7 @@ export default function ContactSection() {
             <div>
               <p className="text-sm text-gray-800">  {t("emailLabel")}</p>
               <Link href="mailto:callcenter@nihotellara.com" className="mt-2 flex items-center bg-white border border-gray-200  px-4 py-3 shadow-sm">
-                <MailSvg width={28} height={20} className="flex" color="#00a1af"/>
+                <MailSvg width={28} height={20} className="flex" color="#dec7a6"/>
                 <input
                   type="email"
                   placeholder="callcenter@nihotellara.com"
@@ -58,18 +59,18 @@ export default function ContactSection() {
             </div>
 
             {/* Button */}
-            <button className="w-1/2 md:w-auto mt-1 lg:mt-4 bg-[#00a1af] hover:bg-white text-white hover:text-[#00a1af] border-[#00a1af] border font-medium py-2 px-6 text-[14px] lg:text-[16px] whitespace-nowrap">
+            <button className="w-1/2 md:w-auto mt-1 lg:mt-4 bg-[#dec7a6] hover:bg-white text-white hover:text-[#dec7a6] border-[#dec7a6] border font-medium py-2 px-6 text-[14px] lg:text-[16px] whitespace-nowrap">
             {t("buttonText")}
             </button>
           </div>
         </div>
 
         {/* RIGHT (Illustration) */}
-        <div className="hidden md:block w-full md:w-1/2">
+        <div className="hidden md:block w-full md:w-[70%]">
           <Image
-            src={img}
+            src={callcenter}
             alt="Contact Illustration"
-            width={500}
+            width={700}
             height={500}
             className="object-contain"
           />

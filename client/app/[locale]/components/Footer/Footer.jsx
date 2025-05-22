@@ -18,7 +18,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 py-10">
+      <div className="max-w-7xl mx-auto px-4 pt-10 lg:pt-20">
         {/* columns */}
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start lg:space-x-8 space-y-8 lg:space-y-0">
           
@@ -84,8 +84,8 @@ export default function Footer() {
         </div>
 
         {/* Alt Powered By */}
-        <div className="flex items-center justify-center mt-10 border-t border-gray-200 pt-4 text-center text-gray-500 text-sm">
-          Powered by © <DgtlfaceSvg className="flex" width={104} height={27}/>
+        <div className="flex items-center justify-center my-10  border-t border-gray-200 pt-4 text-center text-gray-500 text-sm">
+         <span className="flex mt-10 items-center justify-center"> Powered by © <DgtlfaceSvg className="flex" width={104} height={27}/></span>
         </div>
       </div>
     </footer>

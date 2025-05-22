@@ -229,6 +229,13 @@
     "description3": "25 m², 1 Französisches Bett + 1 Einzelbett, Toilette & Bad",
     "name4": "Eckzimmer",
     "description4": "25 m², 1 Französisches Bett, Toilette & Bad"
+  },
+
+  "Nibeauty":{
+    "title": "Der Weg zu Gesundheit und Schönheit",
+    "text": "Wir bieten Ihnen Behandlungen wie Hautpflege, gezielte Gewichtsreduktion, Spa-Anwendungen, Hand- und Fußpflege, Laser-Haarentfernung, Permanent-Make-up und Mesotherapie an und setzen dabei moderne Methoden und Technologien ein, um Ihnen ein gesünderes und qualitativ hochwertigeres Leben zu ermöglichen.",
+    "buttonText": "Mehr erfahren"
   }
+
 
 }

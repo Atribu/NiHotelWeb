@@ -32,9 +32,10 @@ export default function SplitImageSection() {
               width={230}
               height={250}
               img={img1}
-              text={" Hotel"}
+              text= {t("text1")}
               classNames={"cardClip rounded-4 sm:rounded-none"}
-              btnText={"Explore"}
+              btnText= {t("explore")}
+              filter={"bg-black/30"}
               href={"/rooms"}
               cliped={true}
             >
@@ -45,14 +46,14 @@ export default function SplitImageSection() {
         </div>
         <div className="mx-4 -mt-[75px] h-[110px] w-[180px] bg-orange-500  xs:-mt-[97.5px] xs:h-[150px] xs:w-[190px] lg:mx-0 lg:-mt-[120px] lg:h-[180px] lg:w-[290px] xl:-mt-[155px] xl:h-[190px] xl:w-[362.5px] 2xl:-mt-[185px] 2xl:h-[245px] 2xl:w-[445px] 3xl:-mt-[235px] 3xl:h-[300px] 3xl:w-[555px] 4xl:-mt-[315px] 4xl:h-[405px] 4xl:w-[747.5px] 5xl:-mt-[462.5px] 5xl:h-[610px] 5xl:w-[1090px]">
       
-          <CardwLogo
+        <CardwLogo
             width={300}
-            href={"/beachandpool"}
+            href={"/rooms"}
             height={200}
             img={img12}
-            text={ " Beach"}
-            filter={"bg-orange-100/30"}
-            btnText={ "Explore"}
+            text=  {t("text2")}
+            filter={"bg-black/30"}
+            btnText={t("explore")}
             
             cliped={false}
           >

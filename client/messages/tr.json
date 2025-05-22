@@ -228,6 +228,12 @@
   "description3": "25 m², 1 Fransız yatağı + 1 Tek kişilik yatak, tuvalet ve banyo",
   "name4": "Köşe Oda",
   "description4": "25 m², 1 Fransız yatağı, tuvalet ve banyo"
+  },
+
+  "Nibeauty":{
+    "title":"Sağlık ve Güzelliğe Giden Yol",
+"text":"Cilt bakımları, bölgesel zayıflama, spa hizmetleri, el ve ayak bakımları, lazer epilasyon, kalıcı makyaj, mezoterapi gibi hizmetleri daha sağlıklı ve kaliteli bir yaşama sahip olabilmeniz için güncel metot ve teknolojiyle buluşturarak sizlere sunmaktayız.",
+"buttonText":"İncele"
   }
   
 }

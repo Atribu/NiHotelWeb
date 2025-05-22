@@ -6,6 +6,7 @@ import clsx from "clsx";
 import "../../../globals.css";
 import CustomImage from "./CustomImage";
 import Link from 'next/link';
+import NiHotelLogo from "../../../../public/Header/NiHotel.svg"
 
 const fontJost = Jost({
   weights: [400, 500, 600, 700],
@@ -39,15 +40,15 @@ function CardwLogo({
       <div className=" absolute inset-0 flex flex-col items-center justify-between lg:items-start">
         <div
           className={clsx(
-            "flex w-full items-center justify-between p-4  text-white  lg:flex-col lg:items-start lg:gap-2 xl:gap-3 3xl:gap-4 3xl:p-8 ",
+            "flex w-full items-center justify-between p-2 xl:p-3  text-white  lg:flex-col lg:items-start lg:gap-1 xl:gap-2 3xl:gap-3 3xl:p-8 z-50",
             cliped ? "" : "lg:h-full",
           )}
         >
           {children}
-
+          <Image src={NiHotelLogo} alt="logo" className="w-[50px] h-[50px] lg:w-[65px] lg:h-[65px] flex z-50 "/>
           <p
             className={clsx(
-              "hidden text-[8px] font-light lg:flex 2xl:text-xs  3xl:text-sm 4xl:text-lg",
+              "hidden text-[9px] font-normal lg:flex 2xl:text-[12px]  3xl:text-sm 4xl:text-lg",
               fontJost.className,
               cliped ? "" : "xl:w-[250px] 2xl:w-[300px] 3xl:w-full 4xl:w-[450px]",
             )}
