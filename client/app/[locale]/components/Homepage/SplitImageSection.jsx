@@ -18,8 +18,8 @@ export default function SplitImageSection() {
 
   return (
     <section className="mb-[100px] flex justify-center lg:mb-[50px] lg:mt-[30px] lg:px-4 xl:mb-[65px] xl:mt-[40px] 2xl:mb-[80px] 2xl:mt-[45px] 3xl:mb-[100px] 3xl:mt-[60px] 4xl:mb-[130px] 4xl:mt-[75px] 5xl:mb-[200px] 5xl:mt-[120px]">
-      <div className=" relative mt-[35px] w-[300px] xs:w-[390px] lg:mt-0 lg:w-[540px] xl:w-[620px] 2xl:w-[820px] 3xl:w-[920px] 4xl:w-[1250px] 5xl:w-[1850px]">
-        <div className=" absolute -top-24 2xl:-top-36 xl:-left-24 2xl:-left-44">
+      <div className=" relative mt-[35px] w-[300px] xs:w-[390px] lg:mt-10 lg:w-[540px] xl:w-[620px] 2xl:w-[820px] 3xl:w-[920px] 4xl:w-[1250px] 5xl:w-[1850px]">
+        <div className=" absolute -top-40 xl:top-20 2xl:-top-36 lg:-left-36 2xl:-left-44">
           <Image src={clock} alt="hotel" className="text-[210px] lg:text-[305px] xl:text-[700px] hidden 2xl:flex 2xl:text-[800px]" width={900} height={900} />
           <Image src={clock} alt="hotel" className="text-[210px] lg:text-[305px] xl:text-[700px] 2xl:hidden" width={600} height={600} />
         </div>

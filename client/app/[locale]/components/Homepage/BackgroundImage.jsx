@@ -3,7 +3,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import img2 from '../../../../public/images//antalyakaleiçi.png';
+import img2 from '../../../../public/images//antalyakaleici.png';
 import img from '../../../../public/images/antalyaview2.jpg';
 
 export default function BackgroundImage() {
