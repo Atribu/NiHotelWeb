@@ -72,7 +72,7 @@ export default function DiscoverRooms({
               <button
                 className="relative overflow-hidden bg-white text-black px-5 py-2 uppercase text-sm font-medium transition-colors duration-500 ease-in-out before:content-[''] before:absolute before:inset-0 before:bg-black before:origin-left before:scale-x-0 before:transition-transform before:duration-500 before:ease-in-out hover:before:scale-x-100 hover:text-white"
               >
-                <span className="relative z-10">{buttonText}</span>
+                <span className="relative z-10 cursor-pointer">{buttonText}</span>
               </button>
             </Link>
           ))}
@@ -105,7 +105,7 @@ export default function DiscoverRooms({
                   <button
                     className="relative overflow-hidden bg-white text-black w-[80%] py-2 rounded uppercase text-sm font-medium transition-colors duration-500 ease-in-out before:content-[''] before:absolute before:inset-0 before:bg-black before:origin-left before:scale-x-0 before:transition-transform before:duration-500 before:ease-in-out hover:before:scale-x-100 hover:text-white"
                   >
-                    <span className="relative z-10 text-[12px]">{buttonText}</span>
+                    <span className="relative z-10 text-[12px] cursor-pointer">{buttonText}</span>
                   </button>
                 </Link>
               ))}

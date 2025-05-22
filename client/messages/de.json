@@ -26,7 +26,28 @@
     "gallery": "Galerie",
     "cookiePolicy": "Cookie-Richtlinie",
     "privacyPolicy": "Datenschutzrichtlinie",
-    "factsheet": "Datenblatt"
+    "factsheet": "Datenblatt",
+    "standardRoom": "Standardzimmer",
+    "juniorRoom": "Juniorzimmer",
+    "verandaRoom": "Verandazimmer",
+    "cornerRoom": "Eckzimmer",
+    "rooms":"Unsere Zimmer",
+    "hotelline": "Hotel-Festnetz",
+    "callcenterline": "Callcenter-Hotline",
+    "callcenteremail": "Callcenter-E-Mail",
+    "address": "Adresse",
+    "accommodation": "Unterkunft",
+    "text": "Entdecken Sie die einzigartige Schönheit Antalyas, der Perle des Mittelmeers, mit ihren makellosen Stränden, geheimnisvollen antiken Ruinen und üppigem Grün."
+  },
+
+  "Amenities":{
+    "amenities": "AUSSTATTUNG",
+    "text": "Hochwertiger Service und liebevoll gestaltetes Bohemian-Ambiente im Ni Hotel",
+    "label1": "Starkes WLAN",
+    "label2": "Willkommensgruß",
+    "label3": "Frühstücksbuffet",
+    "label4": "Direkt am Meer",
+    "label5": "Tägliche Reinigung"
   },
 
   "Reservation": {

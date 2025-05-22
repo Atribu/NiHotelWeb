@@ -3,7 +3,6 @@ import React from 'react'
 import Link from "next/link";
 import { GoPerson } from "react-icons/go";
 import { LuTreePine } from "react-icons/lu";
-import { FiSquare } from "react-icons/fi";
 import AreaSvg from './AreaSvg';
 import Image from 'next/image';
 
@@ -25,7 +24,7 @@ const RoomsBanner = ({header,m2,person,view, image}) => {
       <div className='hidden lg:flex gap-[18px] items-center justify-center text-[14px] lg:text-[16px] '>
         <div className='flex items-center gap-2'>
         <AreaSvg width={14} height={15} className="flex"/>
-            <p>{m2} m2</p>
+            <p>{m2}</p>
         </div>
         <div className='flex gap-1 items-center'>
             <GoPerson size={20}/>

@@ -4,22 +4,25 @@
 import { FaWifi, FaGift, FaCoffee } from "react-icons/fa";
 import { GiPalmTree } from "react-icons/gi";
 import { MdCleaningServices, MdPool } from "react-icons/md";
+import { useTranslations } from 'next-intl';
 
 export default function AmenitiesSection() {
+  const t = useTranslations('Amenities');
+
   const amenities = [
-    { Icon: FaWifi,           label: "Strong Wi-Fi" },
-    { Icon: FaGift,           label: "Welcome Treat" },
-    { Icon: FaCoffee,         label: "Buffet Breakfast" },
-    { Icon: GiPalmTree,       label: "Next to Sea Shore" },
-    { Icon: MdCleaningServices, label: "Daily Cleaning" },
+    { Icon: FaWifi,           label: t("label1") },
+    { Icon: FaGift,           label: t("label2") },
+    { Icon: FaCoffee,         label: t("label3") },
+    { Icon: GiPalmTree,       label: t("label4") },
+    { Icon: MdCleaningServices, label: t("label5") },
   ];
 
   return (
     <section className="slats-section py-20 lg:py-56">
       <div className="relative z-10 max-w-6xl mx-auto px-4 text-center  items-center justify-center">
-        <h2 className="text-[24px] md:text-[27px] lg:text-3xl font-['Cormorant_Garamond'] font-bold mb-6">AMENITIES</h2>
+        <h2 className="text-[24px] md:text-[27px] lg:text-3xl font-['Cormorant_Garamond'] font-bold mb-6">{t("amenities")}</h2>
         <p className="hidden lg:flex text-gray-600 mb-12 w-full items-center justify-center">
-          High-quality service and bohemian-style interlane with care in Ni Hotel
+        {t("text")}
         </p>
         <div className="flex flex-wrap justify-center gap-6">
           {amenities.map(({ Icon, label }) => (

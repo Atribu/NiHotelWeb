@@ -5,8 +5,11 @@ import React from 'react';
 import Image from 'next/image';
 import img2 from '../../../../public/images//antalyakaleici.png';
 import img from '../../../../public/images/antalyaview2.jpg';
+import { useTranslations } from 'next-intl';
 
 export default function BackgroundImage() {
+  const t = useTranslations('Footer');
+
   return (
     <div className="flex flex-col lg:max-h-[90vh] w-screen bg-center bg-cover justify-center items-center relative gap-8 mt-5 ">
       {/* Text overlay */}
@@ -15,8 +18,7 @@ export default function BackgroundImage() {
           LARA / ANTALYA
         </h2>
         <p className="text-[14px] lg:text-[16px] font-jost">
-          Tertemiz kumsalları, gizemli antik kalıntıları ve yemyeşil doğasıyla
-          Akdeniz’in incisi Antalya’nın eşsiz güzelliklerini keşfedin.
+         {t("text")}
         </p>
       </div>
 

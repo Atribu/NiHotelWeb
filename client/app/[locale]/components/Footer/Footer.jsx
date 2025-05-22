@@ -41,13 +41,13 @@ export default function Footer() {
           </div>
 
           {/* Mobile İletişim Bilgileri */}
-          <div className="grid grid-cols-2 lg:hidden gap-3 flex-col items-center lg:items-start space-y-2 lg:space-y-3 lg:border-l lg:border-gray-200 lg:pl-8 text-center text-[12px]">
+          <div className="grid grid-cols-2 lg:hidden gap-3 flex-col items-center lg:items-start space-y-2 lg:space-y-3 lg:border-l lg:border-gray-200 lg:pl-8 text-center text-[11px]">
             <div className="flex gap-1 items-center justify-start">
               <div className="flex items-center justify-center text-center h-[36px] w-[36px] rounded golge">
               <FaPhone className="transform scale-x-[-1]" />
               </div>
             <div className="flex flex-col gap-1 items-start justify-start">
-              <p>Hotel Fixed Line</p>
+              <p> {t("hotelline")}</p>
             <a href="tel:+902422121264" className="flex items-center text-gray-600 hover:text-gray-800">
             +90 242 212 12 64
             </a>
@@ -59,7 +59,7 @@ export default function Footer() {
               <FaPhone className="transform scale-x-[-1]" />
               </div>
             <div className="flex flex-col gap-1 items-start justify-start">
-              <p>Call Center Line</p>
+              <p> {t("callcenterline")}</p>
             <a href="tel:+905317148252 " className="flex items-center text-gray-600 hover:text-gray-800">
             +90 531 714 82 52 
             </a>
@@ -72,7 +72,7 @@ export default function Footer() {
               <FaEnvelope className="transform scale-x-[-1]" />
               </div>
             <div className="flex flex-col gap-1 items-start justify-start">
-              <p>Call Center Email</p>
+              <p> {t("callcenteremail")}</p>
             <a href="mailto:callcenter@nihotellara.com"className="flex items-center text-gray-600 hover:text-gray-800 leading-[110%] text-[11px]">
             callcenter@nihotellara.com
             </a>
@@ -85,7 +85,7 @@ export default function Footer() {
               <FaMapMarkerAlt className="transform scale-x-[-1]" />
               </div>
             <div className="flex flex-col gap-1 items-start justify-start">
-              <p>Address</p>
+              <p> {t("address")}</p>
             <a href="mailto:callcenter@nihotellara.com"className="flex items-center text-gray-600 hover:text-gray-800">
           Muratpaşa/Antalya
             </a>
@@ -99,7 +99,7 @@ export default function Footer() {
               onClick={() => setIsRoomsOpen(!isRoomsOpen)}
               className="flex w-[98%] p-[10px] md:max-w-[306px] items-center justify-between border border-white leading-[26.667px] uppercase"
             >
-              accommodation <IoIosArrowDown className="flex" width={25} height={25} />
+              {t("accommodation")} <IoIosArrowDown className="flex" width={25} height={25} />
             </div>
             <div
               className={`overflow-hidden transition-all duration-500 ease-in-out ${
@@ -111,31 +111,31 @@ export default function Footer() {
                   href="/rooms/"
                   className="block text-[14px]  leading-[29.639px] uppercase"
                 >
-                  All Rooms
+                 {t("rooms")}
                 </Link>
                 <Link
                   href="/rooms/standardroom"
                   className="block text-[14px]  leading-[29.639px] uppercase"
                 >
-                  Standard Room
+                  {t("standardRoom")}
                 </Link>
                 <Link
                   href="/rooms/juniorroom"
                   className="block text-[14px]  leading-[29.639px] uppercase"
                 >
-                  Junıor Room
+                   {t("juniorRoom")}
                 </Link>
                 <Link
                   href="/rooms/verandaroom"
                   className="block text-[14px]  leading-[29.639px] uppercase"
                 >
-                  Veranda Room
+                  {t("verandaRoom")}
                 </Link>
                 <Link
                   href="/rooms/cornerroom"
                   className="block text-[14px]  leading-[29.639px] uppercase"
                 >
-                 Corner Room
+                  {t("cornerRoom")}
                 </Link>
 
               </div>
@@ -145,33 +145,33 @@ export default function Footer() {
               href="/connect"
               className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px]"
             >
-              CONTACT US{" "}
+              {t("contactus")}{" "}
             </Link>
 
             <Link
               href="/gallery"
               className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px]"
             >
-              GALLERY{" "}
+              {t("gallery")}{" "}
             </Link>
 
             <Link
               href="/cerezpolıtıkası"
               className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px] uppercase"
             >
-             Çerez pOLİTİKASi
+             {t("cookiePolicy")}
             </Link>
            
           </div>
 
-          <div className="flex w-full items-center justify-center gap-[10px]">
-            <Link href="https://www.tripadvisor.com.tr/Hotel_Review-g1192102-d545626-Reviews-Lago_Hotel-Sorgun_Manavgat_Turkish_Mediterranean_Coast.html" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center ]"><FaTripadvisor className="w-6 h-6" color="#A7ABAD"/></Link>
+          <div className="flex md:hidden w-full items-center justify-center gap-[10px]">
+            <Link href="https://www.tripadvisor.com.tr/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center ]"><FaTripadvisor className="w-6 h-6" color="#A7ABAD"/></Link>
             <Link rel="norefferer nofollower"
-                  target="_blank" href="https://www.facebook.com/lagohotels" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center ]"> <FaFacebook className="w-6 h-6" color='#A7ABAD'/></Link>
+                  target="_blank" href="https://www.facebook.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center ]"> <FaFacebook className="w-6 h-6" color='#A7ABAD'/></Link>
             <Link rel="norefferer nofollower"
-                  target="_blank" href="https://www.youtube.com/channel/UCjbL19l36uYQEdy2EEw1nLQ" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center "> <FaYoutube className="w-6 h-6" color='#A7ABAD'/></Link>
+                  target="_blank" href="https://www.youtube.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center "> <FaYoutube className="w-6 h-6" color='#A7ABAD'/></Link>
             <Link rel="norefferer nofollower"
-                  target="_blank" href="https://www.instagram.com/lagohotels/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center"><FaInstagram className="w-6 h-6" color='#A7ABAD'/></Link>
+                  target="_blank" href="https://www.instagram.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center"><FaInstagram className="w-6 h-6" color='#A7ABAD'/></Link>
           </div>
 
       <div className="md:flex flex-row items-center justify-center gap-10">

@@ -25,7 +25,28 @@
     "gallery": "Galeri",
     "cookiePolicy": "Çerez Politikası",
     "privacyPolicy": "Gizlilik Politikası",
-    "factsheet": "Bilgi Formu"
+    "factsheet": "Bilgi Formu",
+    "standardRoom": "Standart Oda",
+      "juniorRoom": "Junior Oda",
+      "verandaRoom": "Veranda Oda",
+      "cornerRoom": "Köşe Oda",
+      "rooms":"Odalarımız",
+      "hotelline": "Otel Sabit Hattı",
+      "callcenterline": "Çağrı Merkezi Hattı",
+      "callcenteremail": "Çağrı Merkezi E-posta",
+      "address": "Adres",
+      "accommodation": "Konaklama",
+       "text": "Tertemiz kumsalları, gizemli antik kalıntıları ve yemyeşil doğasıyla Akdeniz’in incisi Antalya’nın eşsiz güzelliklerini keşfedin."
+  },
+  
+  "Amenities":{
+    "amenities": "OLANAKLAR",
+  "text": "Ni Hotel’de özenle sunulan yüksek kaliteli hizmet ve bohem tarzda dekorasyon",
+  "label1": "Güçlü Wi-Fi",
+  "label2": "Hoş Geldin İkramı",
+  "label3": "Açık Büfe Kahvaltı",
+  "label4": "Denize Sıfır",
+  "label5": "Günlük Temizlik"
   },
 
 "Reservation":{

@@ -25,7 +25,28 @@
     "gallery":"Gallery",
     "cookiePolicy":"Cookie Policy",
     "privacyPolicy":"Privacy Policy",
-    "factsheet":"Fact Sheet"
+    "factsheet":"Fact Sheet",
+    "standardRoom": "Standard Room",
+      "juniorRoom": "Junior Room",
+      "verandaRoom": "Veranda Room",
+      "cornerRoom": "Corner Room",
+      "rooms":"Our Rooms",
+      "hotelline":"Hotel Fixed Line",
+"callcenterline":"Call Center Line",
+"callcenteremail":"Call Center Email",
+"address":"Address",
+"accommodation":"Accommodation",
+ "text": "Discover the unique beauty of Antalya, the gem of the Mediterranean, with its pristine beaches, mysterious ancient ruins, and lush greenery."
+  },
+
+  "Amenities":{
+   "amenities":"AMENITIES",
+"text":" High-quality service and bohemian-style interlane with care in Ni Hotel",
+ "label1": "Strong Wi-Fi",
+ "label2": "Welcome Treat" ,
+   "label3": "Buffet Breakfast" ,
+  "label4": "Next to Sea Shore" ,
+"label5": "Daily Cleaning" 
   },
 
   "Reservation":{
