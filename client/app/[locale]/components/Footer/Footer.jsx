@@ -143,14 +143,14 @@ export default function Footer() {
 
             <Link
               href="/connect"
-              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px]"
+              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px] uppercase"
             >
               {t("contactus")}{" "}
             </Link>
 
             <Link
               href="/gallery"
-              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px]"
+              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px] uppercase"
             >
               {t("gallery")}{" "}
             </Link>
@@ -164,14 +164,14 @@ export default function Footer() {
            
           </div>
 
-          <div className="flex md:hidden w-full items-center justify-center gap-[10px]">
-            <Link href="https://www.tripadvisor.com.tr/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center ]"><FaTripadvisor className="w-6 h-6" color="#A7ABAD"/></Link>
+          <div className="flex md:hidden w-full items-center justify-center gap-[10px] z-[990]">
+            <Link href="https://www.tripadvisor.com.tr/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center z-50"><FaTripadvisor className="w-6 h-6" color="#A7ABAD"/></Link>
             <Link rel="norefferer nofollower"
-                  target="_blank" href="https://www.facebook.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center ]"> <FaFacebook className="w-6 h-6" color='#A7ABAD'/></Link>
+                  target="_blank" href="https://www.facebook.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center z-[999]"> <FaFacebook className="w-6 h-6" color='#A7ABAD'/></Link>
             <Link rel="norefferer nofollower"
-                  target="_blank" href="https://www.youtube.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center "> <FaYoutube className="w-6 h-6" color='#A7ABAD'/></Link>
+                  target="_blank" href="https://www.youtube.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center z-50"> <FaYoutube className="w-6 h-6" color='#A7ABAD'/></Link>
             <Link rel="norefferer nofollower"
-                  target="_blank" href="https://www.instagram.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center"><FaInstagram className="w-6 h-6" color='#A7ABAD'/></Link>
+                  target="_blank" href="https://www.instagram.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center z-50"><FaInstagram className="w-6 h-6" color='#A7ABAD'/></Link>
           </div>
 
       <div className="md:flex flex-row items-center justify-center gap-10">
@@ -208,7 +208,7 @@ export default function Footer() {
           </div>
           
           {/* Sosyal Medya */}
-          <div className="flex justify-center lg:justify-start items-center space-x-4 lg:border-l lg:border-gray-200 lg:pl-8">
+          <div className="hidden md:flex justify-center lg:justify-start items-center space-x-4 lg:border-l lg:border-gray-200 lg:pl-8">
             <a href="https://www.facebook.com/p/Ni-Hotel-Lara-100075601707373/" rel="norefferer nofollower"
                   target="_blank" className="p-2 bg-gray-100 rounded hover:bg-gray-200">
               <FaFacebookF />
@@ -229,7 +229,7 @@ export default function Footer() {
          <span className="flex mt-5 lg:mt-10 items-center justify-center"> Powered by © <DgtlfaceSvg className="flex" width={104} height={27}/></span>
         </div>
       </div>
-      <Image src={img} alt='leaf' width={700} height={1300} className='absolute bottom-48 lg:-bottom-[50px] -right-[120px]  lg:-right-[220px] z-[9999] transform rotate-[35deg] lg:rotate-[20deg] opacity-60'/>
+      <Image src={img} alt='leaf' width={700} height={1300} className='absolute bottom-48 lg:-bottom-[50px] -right-[120px]  lg:-right-[220px] z-[99] transform rotate-[35deg] lg:rotate-[20deg] opacity-60'/>
     </footer>
   );
 }
