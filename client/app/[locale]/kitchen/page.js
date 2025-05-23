@@ -4,102 +4,165 @@
 import Image from "next/image";
 import Link from "next/link";
 import banner from "../../../public/images/breakfast/DSCF8600.webp"
+import { useTranslations } from 'next-intl';
+import img1 from "../../../public/images/menu/breakfast/kahvaltiTabak.webp"
+import img2 from "../../../public/images/menu/breakfast/serpme.webp"
+import img3 from "../../../public/images/menu/breakfast/tost.webp"
+import img4 from "../../../public/images/menu/breakfast/salcaTost.webp"
+import img5 from "../../../public/images/menu/breakfast/otlutost.webp"
+import img6 from "../../../public/images/menu/breakfast/sucuklutost.webp"
+import img7 from "../../../public/images/menu/breakfast/pancarli.webp"
+import img8 from "../../../public/images/menu/breakfast/mantarli.webp"
+import img9 from "../../../public/images/menu/breakfast/otlu.webp"
+import img10 from "../../../public/images/menu/breakfast/omlet.webp"
+import img11 from "../../../public/images/menu/breakfast/otluomlet.webp"
+import img12 from "../../../public/images/menu/breakfast/mantarliomlet.webp"
+import img13 from "../../../public/images/menu/breakfast/kasarliomlet.webp"
+import img14 from "../../../public/images/menu/breakfast/jambonlu.webp"
+import img15 from "../../../public/images/menu/breakfast/lapa.webp"
+import img16 from "../../../public/images/menu/breakfast/yumurta.webp"
 
-// Menu kategorileri
+import main1 from "../../../public/images/menu/maincourse/pizza.webp"
+import main2 from "../../../public/images/menu/maincourse/pizza2.webp"
+import main3 from "../../../public/images/menu/maincourse/pizza3.webp"
+import main4 from "../../../public/images/menu/maincourse/burger1.webp"
+import main5 from "../../../public/images/menu/maincourse/kidsburger.webp"
+import main6 from "../../../public/images/menu/maincourse/burger2.webp"
+import main7 from "../../../public/images/menu/maincourse/veganwrap.webp"
+import main8 from "../../../public/images/menu/maincourse/veganwrap2.webp"
+import main9 from "../../../public/images/menu/maincourse/makarna1.webp"
+import main10 from "../../../public/images/menu/maincourse/makarna2.webp"
+import main11 from "../../../public/images/menu/maincourse/makarna3.webp"
+import main12 from "../../../public/images/menu/maincourse/makarna4.webp"
+import main13 from "../../../public/images/menu/maincourse/fittavuk.webp"
+import main14 from "../../../public/images/menu/maincourse/fitet.webp"
+import main15 from "../../../public/images/menu/maincourse/manti.webp"
+import main16 from "../../../public/images/menu/maincourse/italymeatball.webp"
+import main17 from "../../../public/images/menu/maincourse/tavukbonfile.webp"
+import main18 from "../../../public/images/menu/maincourse/tavukfajita.webp"
+import main19 from "../../../public/images/menu/maincourse/sinitzel.webp"
+import main20 from "../../../public/images/menu/maincourse/tavukturn.webp"
+
+import snack1 from "../../../public/images/menu/snacks/biratabak.webp"
+import snack2 from "../../../public/images/menu/snacks/citirtavuk.webp"
+import snack3 from "../../../public/images/menu/snacks/patates.webp"
+import snack4 from "../../../public/images/menu/snacks/kuruyemis.webp"
+import snack5 from "../../../public/images/menu/snacks/cheese.webp"
+import snack6 from "../../../public/images/menu/snacks/cips.webp"
+
+export default function FoodPage() {
+  const t = useTranslations('Kitchen');
+  const t2 = useTranslations('Kitchen.Breakfast');
+  const t3 = useTranslations('Kitchen.MainCourse');
+  const t4 = useTranslations('Kitchen.DailyMenu');
+  const t5 = useTranslations('Kitchen.Snack');
+  const t6 = useTranslations('Kitchen.Salads');
+  const t7 = useTranslations('Kitchen.CoffeeTea');
+  const t8 = useTranslations('Kitchen.MainCourse');
+
+  // Menu kategorileri
 const sections = [
-  { id: "kahvalti",       label: "Kahvaltı" },
-  { id: "gunun-menu",     label: "Günün Çorbası ve Günün Yemek Menüsü" },
-  { id: "ana-yemek",      label: "Ana Yemek" },
-  { id: "atistirmalik",   label: "Atıştırmalık" },
-  { id: "salatalar",      label: "Salatalar" },
-  { id: "alkollu-icecek", label: "Alkollü İçecekler" },
-  { id: "kokteyller",     label: "Alkollü ve Alkolsüz Kokteyller" },
-  { id: "kahve-cay",      label: "Kahveler ve Çaylar (Sıcak & Soğuk)" },
-  { id: "soft-icecek",    label: "Soft İçecekler" },
+  { id: "kahvalti",       label: t("breakfast") },
+  { id: "gunun-menu",     label: t("dailySoupAndMealMenu") },
+  { id: "ana-yemek",      label: t("mainCourse") },
+  { id: "atistirmalik",   label: t("snack") },
+  { id: "salatalar",      label: t("salads") },
+  { id: "alkollu-icecek", label: t("alcoholicDrinks") },
+  { id: "kokteyller",     label: t("cocktails") },
+  { id: "kahve-cay",      label: t("coffeeTea") },
+  { id: "soft-icecek",    label: t("softDrinks") },
 ];
 
 // Menü verileri
 const kahvaltiMenu = [
-  { title: "Kahvaltı Tabağı", text: "Bal, Reçel, Çikolata, 2 Çeşit Peynir, Haşlanmış Yumurta, Tereyağı, Domates, Zeytin ve Yeşillik", image: "/images/menu/kahvalti/kahvalti-tabagi.jpg" },
-  { title: "Serpme Türk Kahvaltısı", text: "Bal, Reçel, Çikolata, Tahin, Pekmez, 3 Çeşit Peynir, Salam, Patates Kızartması, Sosis, Göz Yumurta, Tereyağı, Domates, Salatalık, Zeytin ve Yeşillik", image: "/images/menu/kahvalti/serpme-turk-kahvaltisi.jpg" },
-  { title: "Kaşarlı Tost", text: "Tost Ekmeği ve Kaşar Peyniri", image: "/images/menu/kahvalti/kasarli-tost.jpg" },
-  { title: "Salçalı Tost", text: "Salçalı ekmek ve beyaz peynir", image: "/images/menu/kahvalti/salcali-tost.jpg" },
-  { title: "Otlu ve Peynirli Tost", text: "Dil peyniri ve taze otlar", image: "/images/menu/kahvalti/otlu-peynirli-tost.jpg" },
-  { title: "Sucuklu Tost", text: "Sucuk ve kaşar peynirli tost", image: "/images/menu/kahvalti/sucuklu-tost.jpg" },
-  { title: "Pancarlı Ekmek Üstü", text: "Pancarlı labne üzerine ızgara sebzeler, dilimlenmiş avokado, 1 adet göz yumurta, badem ve çeri domates", image: "/images/menu/kahvalti/pancarli-ekmek-ustu.jpg" },
-  { title: "Mantarlı Ekmek Üstü", text: "El yapımı guacamole, fırınlanmış mantar, 1 adet göz yumurta, ceviz, susam ve çeri domates", image: "/images/menu/kahvalti/mantarli-ekmek-ustu.jpg" },
-  { title: "Otlu Ekmek Üstü", text: "Otlu labne, dilimlenmiş avokado, 1 adet göz yumurta, susam ve çeri domates", image: "/images/menu/kahvalti/otlu-ekmek-ustu.jpg" },
-  { title: "Omlet", text: "Çeri domates, avokado ve zeytin", image: "/images/menu/kahvalti/omlet.jpg" },
-  { title: "Otlu Peynirli Omlet", text: "Dil peyniri, taze otlar, dilimlenmiş avokado ve çeri domates", image: "/images/menu/kahvalti/otlu-peynirli-omlet.jpg" },
-  { title: "Mantarlı Omlet", text: "Fırınlanmış mantar, taze baharatlar, dilimlenmiş avokado ve çeri domates", image: "/images/menu/kahvalti/mantarli-omlet.jpg" },
-  { title: "Kaşar Peynirli Omlet", text: "Dil peyniri ve kaşar peyniri", image: "/images/menu/kahvalti/kasar-peynirli-omlet.jpg" },
-  { title: "Jambonlu Omlet", text: "Dana jambon, kaşar peyniri ve taze otlar", image: "/images/menu/kahvalti/jambonlu-omlet.jpg" },
-  { title: "Meyveli Yulaf Lapası", text: "Süt ile kaynatılmış yulaf ve meyve", image: "/images/menu/kahvalti/meyveli-yulaf-lapasi.jpg" },
-  { title: "Karıştırılmış Yumurta", text: "Scrambled egg, guacamole, dana cotto, parmesan, kurutulmuş domates, çeri domates", image: "/images/menu/kahvalti/karistirilmis-yumurta.jpg" },
+  { title: t2("title1"), text: t2("text1"), image: img1 },
+  { title: t2("title2"), text: t2("text2"), image: img2 },
+  { title: t2("title3"), text: t2("text3"), image: img3 },
+  { title: t2("title4"), text: t2("text4"), image: img4 },
+  { title: t2("title5"), text: t2("text5"), image: img5 },
+  { title: t2("title6"), text: t2("text6"), image: img6},
+  { title: t2("title7"), text: t2("text7"), image: img7 },
+  { title: t2("title8"), text: t2("text8"), image: img8 },
+  { title: t2("title9"), text: t2("text9"), image: img9 },
+  { title: t2("title10"), text: t2("text10"), image: img10 },
+  { title: t2("title11"), text: t2("text11"), image: img11 },
+  { title: t2("title12"), text: t2("text12"), image: img12 },
+  { title: t2("title13"), text: t2("text13"), image: img13 },
+  { title: t2("title14"), text: t2("text14"), image: img14 },
+  { title: t2("title15"), text: t2("text15"), image: img15 },
+  { title: t2("title16"), text: t2("text16"), image: img16 },
 ];
 
 const gununMenu = [
-  { title: "Günün Çorbası", text: "Kıtır ekmek ile", image: "/images/menu/gunun-menu/gunun-corbasi.jpg" },
-  { title: "Günün Yemek Menüsü", text: "", image: "/images/menu/gunun-menu/gunun-yemek-menusu.jpg" },
+  { title: t4("title1"), text: t4("text1"), image: "/images/menu/gunun-menu/gunun-corbasi.jpg" },
+  { title: t4("title2"), text: t4("text2"), image: "/images/menu/gunun-menu/gunun-yemek-menusu.jpg" },
 ];
 
 // Ana Yemek altındaki tüm alt kategoriler tek bir dizide toplanıyor
 const anaYemekMenu = [
+  { title: t3("title15"), text: t3("text15"), image: main15 },
+  { title: t3("title16"), text: t3("text16"), image: main16},
+  { title: t3("title17"), text: t3("text17"), image: main17 },
+  // Tavuk
+  { title: t3("title18"), text: t3("text18"), image: main18 },
+  { title: t3("title19"), text: t3("text19"), image: main19},
+  { title: t3("title20"), text: t3("text20"), image: main20},
+
   // Pizzalar
-  { title: "Margarita Pizza", text: "Mozzarella Peyniri, Domates, Fesleğen", image: "/images/menu/ana-yemek/margarita-pizza.jpg" },
-  { title: "4 Peynirli Pizza", text: "Mozzarella, Kaşar, Peyniri Cheddar, Parmesan", image: "/images/menu/ana-yemek/4-peynirli-pizza.jpg" },
-  { title: "Karışık Pizza", text: "Mozzarella, Sucuk, Sosis, Biber, Mantar, Zeytin", image: "/images/menu/ana-yemek/karisik-pizza.jpg" },
+  { title: t3("title1"), text: t3("text1"), image: main1 },
+  { title: t3("title2"), text: t3("text2"), image: main2},
+  { title: t3("title3"), text: t3("text3"), image: main3 },
   // Hamburgerler
-  { title: "Special Burger", text: "240 gr Burger Köftesi, Karamelize Soğan, Dana Cotto Dilimi, Cheddar, Mantar, Guacamole, Trüflü Mayonez, Parmesanlı Fries", image: "/images/menu/ana-yemek/special-burger.jpg" },
-  { title: "Çocuk Burger Menüsü", text: "120 gr Burger Köftesi, Marul, Domates, Turşu, Sos ve Patates Kızartması", image: "/images/menu/ana-yemek/cocuk-burger-menu.jpg" },
-  { title: "Cheese Burger", text: "120 gr Burger Köftesi, Çift Cheddar, Guacamole, Trüflü Mayonez, Parmesanlı Fries", image: "/images/menu/ana-yemek/cheese-burger.jpg" },
+  { title: t3("title4"), text: t3("text4"), image: main4 },
+  { title: t3("title5"), text: t3("text5"), image: main5},
+  { title: t3("title6"), text: t3("text6"), image: main6 },
   // Vejeteryan
-  { title: "Vegan Tofulu Wrap", text: "Tofu Köfte, Avokado, Havuç, Salatalık, Humus, Zeytinyağı", image: "/images/menu/ana-yemek/vegan-tofulu-wrap.jpg" },
-  { title: "Vegan Wrap", text: "Avokado, Salatalık, Havuç, Yeşil Soğan, Humus", image: "/images/menu/ana-yemek/vegan-wrap.jpg" },
+  { title: t3("title7"), text: t3("text7"), image: main7 },
+  { title: t3("title8"), text: t3("text8"), image: main8 },
   // Makarnalar
-  { title: "Füme Kaburga Spaghetti", text: "Füme Kaburga, Parmesan, Krema, Maydanoz", image: "/images/menu/ana-yemek/fume-kaburga-spaghetti.jpg" },
-  { title: "Mantarlı Alfredo", text: "Fırınlanmış Mantar, Parmesanlı Sos", image: "/images/menu/ana-yemek/mantarli-alfredo.jpg" },
-  { title: "Penne Arrabbiata", text: "Acı Domates Sos, Fesleğen, Parmesan", image: "/images/menu/ana-yemek/penne-arrabbiata.jpg" },
-  { title: "Spaghetti Bolonez", text: "Dana Kıyma Sos, Parmesan", image: "/images/menu/ana-yemek/spaghetti-bolonez.jpg" },
+  { title: t3("title9"), text: t3("text9"), image: main9},
+  { title: t3("title10"), text: t3("text10"), image: main10 },
+  { title: t3("title11"), text: t3("text11"), image: main11 },
+  { title: t3("title12"), text: t3("text12"), image: main12},
   // Ni Fit
-  { title: "Ni Fit Tavuk", text: "200 gr Tavuk Göğsü, Lapa Pirinç, Haşlanmış Sebze", image: "/images/menu/ana-yemek/ni-fit-tavuk.jpg" },
-  { title: "Ni Fit Et", text: "200 gr Dana Bonfile, Lapa Pirinç, Haşlanmış Sebze", image: "/images/menu/ana-yemek/ni-fit-et.jpg" },
+  { title: t3("title13"), text: t3("text13"), image: main13 },
+  { title: t3("title14"), text: t3("text14"), image: main14 },
 ];
 
 const atistirmalikMenu = [
-  { title: "Bira Tabağı", text: "4 adet soğan halkası, 1 mozzarella stick, 2 kızarmış sosis ve ev yapımı patates cips", image: "/images/menu/atistirmalik/bira-tabagi.jpg" },
-  { title: "Çıtır Tavuk", text: "6 adet çıtır tavuk ve dip sos ile", image: "/images/menu/atistirmalik/citir-tavuk.jpg" },
-  { title: "Parmak Patates", text: "Ev yapımı parmaktan patates kızartması", image: "/images/menu/atistirmalik/parmak-patates.jpg" },
-  { title: "Karışık Kuruyemiş", text: "Karışık kuruyemiş çeşitleri", image: "/images/menu/atistirmalik/karisik-kuruyemis.jpg" },
-  { title: "Peynir Tabağı", text: "Gouda peyniri, rokfor peyniri, kaş graviyeri, parmesan peyniri, kuru üzüm, kuru kayısı, ceviz, badem, pastırma, siyah zeytin ve grissini ile", image: "/images/menu/atistirmalik/peynir-tabagi.jpg" },
-  { title: "Cips", text: "Doritos, Lay's, Ruffles", image: "/images/menu/atistirmalik/cips.jpg" },
+  { title: t5("title1"), text: t5("text1"), image: snack1 },
+  { title: t5("title2"), text: t5("text2"), image: snack2 },
+  { title: t5("title3"), text: t5("text3"), image: snack3 },
+  { title: t5("title4"), text: t5("text4"), image: snack4 },
+  { title: t5("title5"), text: t5("text5"), image: snack5 },
+  { title: t5("title6"), text: t5("text6"), image: snack6 },
 ];
 
 const salatalarMenu = [
-  { title: "Izgara Tavuk Salata", text: "Maskolin, ızgara Yedikule marul, 130 gr ızgara tavuk göğsü, Çanakkale çeri, baby turp dilimleri, naneli yoğurtlu sos ile", image: "/images/menu/salatalar/izgara-tavuk-salata.jpg" },
-  { title: "Tahıl Salata", text: "Karabuğday, siyez bulguru, maş fasulyesi, maskolin, çeri, susam, fesleğenli fit salata sosu", image: "/images/menu/salatalar/tahil-salata.jpg" },
-  { title: "Lor ve Pancar Salata", text: "Maskolin, roast edilmiş pancar, lor peyniri, avokado, çörek otu ile", image: "/images/menu/salatalar/lor-pancar-salata.jpg" },
-  { title: "Sezar Salata", text: "Romaine marul, tavuk göğsü, parmesan, kruton, Caesar sos ile", image: "/images/menu/salatalar/sezar-salata.jpg" },
+  { title:t6("title1"), text: t6("text1"), image: "/images/menu/salatalar/izgara-tavuk-salata.jpg" },
+  { title: t6("title2"), text: t6("text2"), image: "/images/menu/salatalar/tahil-salata.jpg" },
+  { title: t6("title3"), text: t6("text3"), image: "/images/menu/salatalar/lor-pancar-salata.jpg" },
+  { title: t6("title4"), text: t6("text4"), image: "/images/menu/salatalar/sezar-salata.jpg" },
 ];
 
 const kahveCayMenu = [
-  { title: "Espresso", text: "", image: "/images/menu/kahve/espresso.jpg" },
-  { title: "Espresso Doppio", text: "", image: "/images/menu/kahve/espresso-doppio.jpg" },
-  { title: "Ristretto Doppio", text: "", image: "/images/menu/kahve/ristretto-doppio.jpg" },
-  { title: "Kaffee Creme", text: "", image: "/images/menu/kahve/kaffee-creme.jpg" },
-  { title: "Long Black", text: "", image: "/images/menu/kahve/long-black.jpg" },
-  { title: "Americano", text: "", image: "/images/menu/kahve/americano.jpg" },
-  { title: "Cappuccino", text: "", image: "/images/menu/kahve/cappuccino.jpg" },
-  { title: "Latte Macchiato", text: "", image: "/images/menu/kahve/latte-macchiato.jpg" },
-  { title: "Espresso Macchiato", text: "", image: "/images/menu/kahve/espresso-macchiato.jpg" },
-  { title: "Kaffee Latte", text: "", image: "/images/menu/kahve/kaffee-latte.jpg" },
-  { title: "White Chocolate Mocha", text: "", image: "/images/menu/kahve/white-chocolate-mocha.jpg" },
-  { title: "Flat White", text: "", image: "/images/menu/kahve/flat-white.jpg" },
-  { title: "Kaffee Mocha", text: "", image: "/images/menu/kahve/kaffee-mocha.jpg" },
-  { title: "Türk Kahvesi", text: "", image: "/images/menu/kahve/turk-kahvesi.jpg" },
-  { title: "Elma Çayı", text: "", image: "/images/menu/kahve/elma-cayi.jpg" },
-  { title: "Yeşil Çay", text: "", image: "/images/menu/kahve/yesil-cay.jpg" },
-  { title: "Çay", text: "", image: "/images/menu/kahve/cay.jpg" },
+  { title: t7("title1"), text: t7("text1"), image: "/images/menu/kahve/espresso.jpg" },
+  { title:  t7("title2"), text: t7("text1"), image: "/images/menu/kahve/espresso-doppio.jpg" },
+  { title:  t7("title3"), text: t7("text1"), image: "/images/menu/kahve/ristretto-doppio.jpg" },
+  { title:  t7("title4"), text: t7("text1"), image: "/images/menu/kahve/kaffee-creme.jpg" },
+  { title:  t7("title5"), text: t7("text1"), image: "/images/menu/kahve/long-black.jpg" },
+  { title:  t7("title6"), text: t7("text1"), image: "/images/menu/kahve/americano.jpg" },
+  { title:  t7("title7"), text: t7("text1"), image: "/images/menu/kahve/cappuccino.jpg" },
+  { title:  t7("title8"), text: t7("text1"), image: "/images/menu/kahve/latte-macchiato.jpg" },
+  { title:  t7("title9"), text: t7("text1"), image: "/images/menu/kahve/espresso-macchiato.jpg" },
+  { title:  t7("title10"), text: t7("text1"), image: "/images/menu/kahve/kaffee-latte.jpg" },
+  { title:  t7("title11"), text: t7("text1"), text: "", image: "/images/menu/kahve/white-chocolate-mocha.jpg" },
+  { title:  t7("title12"), text: t7("text1"), image: "/images/menu/kahve/flat-white.jpg" },
+  { title:  t7("title13"), text: t7("text1"), image: "/images/menu/kahve/kaffee-mocha.jpg" },
+  { title:  t7("title14"), text: t7("text1"), image: "/images/menu/kahve/turk-kahvesi.jpg" },
+  { title:  t7("title15"), text: t7("text1"), image: "/images/menu/kahve/elma-cayi.jpg" },
+  { title:  t7("title16"), text: t7("text1"), image: "/images/menu/kahve/yesil-cay.jpg" },
+  { title:  t7("title17"), text: t7("text1"), image: "/images/menu/kahve/cay.jpg" },
 ];
 
 const softIcecekMenu = []; // eklenecek
@@ -116,7 +179,6 @@ const menuData = {
   "soft-icecek":  softIcecekMenu,
 };
 
-export default function FoodPage() {
   return (
     <main className="scroll-smooth">
       {/* HEADER */}
@@ -129,8 +191,8 @@ export default function FoodPage() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 mt-8 lg:mt-16">
-          <h1 className="text-3xl md:text-5xl font-marcellus text-white">Food & Beverage</h1>
-          <p className="mt-2 text-sm md:text-base text-white">Kafe — Bar — Restaurant</p>
+          <h2 className="text-3xl md:text-5xl font-['Cormorant_Garamond'] font-bold text-white">Food & Beverage</h2>
+          <p className="mt-2 text-sm md:text-[15px] text-white">Kafe — Bar — Restaurant</p>
           <p className="mt-4 max-w-2xl text-xs md:text-sm text-white">
             Özenle seçilmiş kahve çekirdeklerinin muhteşem kokusu günün her saati enerjinizi yenilerken,
             farklı damak tadlarına özel seçkin alkollü-alkolsüz içecekler barımızda keyifli sohbetler için hazır bekliyor.
@@ -142,23 +204,24 @@ export default function FoodPage() {
       </section>
 
       {/* CONTENT */}
-      <div className="container mx-auto px-4 lg:px-8 py-16 grid grid-cols-1 lg:grid-cols-4 gap-12">
+      <div className="container mx-auto px-4 lg:px-6 py-16 grid grid-cols-1 lg:grid-cols-4 gap-12">
         <nav className="hidden lg:block sticky top-32 space-y-4">
           {sections.map(sec => (
-            <Link key={sec.id} href={`#${sec.id}`} className="block px-4 py-2 text-gray-700 hover:text-black hover:underline">{sec.label}</Link>
+            <Link key={sec.id} href={`#${sec.id}`} className="block px-4 py-2 text-gray-700 hover:text-black text-[14px] lg:text-[18px] font-jost font-semibold golge ">{sec.label}</Link>
           ))}
         </nav>
+        <div className="absolute left-[28%] w-[1px] h-[600px] bg-gray-400"></div>
         <div className="lg:col-span-3 space-y-24">
           {sections.map(sec => {
             const items = menuData[sec.id] || [];
             return (
               <section key={sec.id} id={sec.id} className="scroll-mt-24">
-                <h2 className="text-2xl font-marcellus font-bold mb-6">{sec.label}</h2>
+                <h2 className="text-2xl font-jost font-bold mb-6">{sec.label}</h2>
                 {items.length > 0 && (
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {items.map(item => (
                       <div key={item.title} className="flex items-start space-x-4 transform transition-transform duration-200 hover:scale-105 hover:shadow-lg p-2 rounded-lg">
-                        <Image src={item.image} alt={item.title} width={80} height={80} className="rounded-full object-cover" />
+                        <Image src={item.image} alt={item.title} width={80} height={80} className="rounded-full object-cover w-[80px] h-[80px]" />
                         <div className="flex flex-col">
                           <h3 className="font-medium">{item.title}</h3>
                           <p className="text-sm text-gray-600">{item.text}</p>

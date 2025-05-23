@@ -6,8 +6,8 @@ import { routing } from '@/i18n/routing';
 import { Jost, Geist, Geist_Mono, Cormorant_Garamond } from "next/font/google";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import BookSection from "./components/generalComponents/BookSection";
 import CookiePopup from "./components/generalComponents/CookiePopup";
+import BookSection from './components/generalComponents/BookSection'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -45,6 +45,8 @@ export const metadata = {
   }
 };
 
+
+
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
 
@@ -58,7 +60,7 @@ export default async function RootLayout({ children, params }) {
       <body className="overflow-x-hidden">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
-          <BookSection/>
+          <BookSection key={locale} />
           {children}
           <CookiePopup/>
           <Footer/>

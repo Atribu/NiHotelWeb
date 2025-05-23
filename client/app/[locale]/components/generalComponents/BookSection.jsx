@@ -1,11 +1,24 @@
 "use client"
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import Link from 'next/link';
 import Script from 'next/script';
+import { useLocale } from 'next-intl'
+import { usePathname } from 'next/navigation'
+import { useTranslations } from 'next-intl';
 
 const BookSection = () => {
+  const t = useTranslations('Header');
 
+  const locale = useLocale()
+  const [showChat, setShowChat] = useState(true)
+
+  // locale değiştiğinde chat’i önce kaldırıp sonra yeniden ekle
+  useEffect(() => {
+    setShowChat(false)
+    const t = setTimeout(() => setShowChat(true), 0)
+    return () => clearTimeout(t)
+  }, [locale])
 
   return (
     <div className='fixed flex bottom-10 left-0 lg:left-4 md:bottom-6 lg:bottom-7 z-[980] w-full'>
@@ -21,25 +34,31 @@ const BookSection = () => {
           rel="noopener noreferrer"
           className='flex md:hidden whitespace-nowrap text-white bg-black py-[8px] px-[24px] absolute left-1/2 -translate-x-1/2 cursor-pointer'
         >
-          Book Now
+          {t("booknow")}
         </a>
-
-        <div className="absolute bottom-5 right-10">
-        <Script
-          src="https://cdn.livechat.connexease.com/embed.js"
-          strategy="afterInteractive"
-          onLoad={() => {
-            if (window.ConnexeaseWebMessenger) {
-              window.ConnexeaseWebMessenger.Init('5f90e4a6-6481-4263-b814-ec81ca1d4cde');
-            } else {
-              console.warn('ConnexeaseWebMessenger yüklenemedi.');
-            }
-          }}
-        />
-        </div>
+        <div className="fixed bottom-5 right-10 z-[9999]">
+        {showChat && (
+          <Script
+            src="https://cdn.livechat.connexease.com/embed.js"
+            strategy="afterInteractive"
+            onLoad={() => {
+              window.ConnexeaseWebMessenger?.Init('5f90e4a6-6481-4263-b814-ec81ca1d4cde', {
+                  position: 'bottom-right'
+              })
+              
+            }}
+            // key locale değiğiğinde Script’i unmount ↔ mount etmek için
+            key={locale + String(showChat)}
+          />
+        )}
+      </div>
       </div>
     </div>
   );
 };
 
 export default BookSection;
+
+
+//5f90e4a6-6481-4263-b814-ec81ca1d4cde
+// href="https://nihotellara.rezervasyonal.com/en/?currency=EUR&language=en&hideLayout=1&Checkin=2025-05-14&Checkout=2025-05-15&Adult=3&child=0&ChildAges="

@@ -214,3 +214,12 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   -ms-overflow-style: none; /* Edge ve IE için */
 }
 
+.connexease-web-messenger-container {
+  position: fixed !important;
+  bottom: 1rem !important;
+  right: 1rem !important;
+  left: auto  !important;
+  top:  auto  !important;
+  z-index: 9999  !important;
+}
+

@@ -127,7 +127,7 @@ useEffect(() => {
       <div className="flex w-screen items-center justify-center mt-[50px] max-w-[1400px] mx-auto">
       <div className="flex flex-col items-center justify-around w-[87.79%] md:w-[91.4%] lg:w-[76.8%] gap-[40px]">
         {/* Butonlar */}
-        <div className="grid grid-cols-3 xl:flex items-center justify-center xl:justify-around gap-[10px] w-full max-w-[1400px]">
+        <div className="grid grid-cols-3 xl:flex items-center justify-center xl:justify-center gap-[10px] lg:gap-[35px] w-full max-w-[1400px]">
           {Object.keys(imageCategories).map((category) => (
             <button
               key={category}
