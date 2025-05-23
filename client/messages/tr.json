@@ -17,7 +17,8 @@
       "juniorRoom": "Junior Oda",
       "verandaRoom": "Veranda Oda",
       "cornerRoom": "Köşe Oda",
-      "gallery": "GALERİ"
+      "gallery": "GALERİ",
+        "lobby": "Lobi"
     },
 
     "Footer": {
@@ -32,7 +33,7 @@
       "verandaRoom": "Veranda Oda",
       "cornerRoom": "Köşe Oda",
       "rooms":"Odalarımız",
-      "hotelline": "Otel Sabit Hattı",
+     "hotelline":"Whatsapp Hattı",
       "callcenterline": "Çağrı Merkezi Hattı",
       "callcenteremail": "Çağrı Merkezi E-posta",
       "address": "Adres",

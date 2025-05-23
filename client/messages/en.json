@@ -17,7 +17,8 @@
       "juniorRoom": "Junior Room",
       "verandaRoom": "Veranda Room",
       "cornerRoom": "Corner Room",
-      "gallery":"GALLERY"
+      "gallery":"GALLERY",
+       "lobby": "Lobby"
   },
 
   "Footer":{
@@ -32,7 +33,7 @@
       "verandaRoom": "Veranda Room",
       "cornerRoom": "Corner Room",
       "rooms":"Our Rooms",
-      "hotelline":"Hotel Fixed Line",
+      "hotelline":"Whatsapp Line",
 "callcenterline":"Call Center Line",
 "callcenteremail":"Call Center Email",
 "address":"Address",

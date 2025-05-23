@@ -17,7 +17,8 @@
     "juniorRoom": "Juniorzimmer",
     "verandaRoom": "Verandazimmer",
     "cornerRoom": "Eckzimmer",
-    "gallery": "GALERIE"
+    "gallery": "GALERIE",
+     "lobby": "Lobby"
     },
 
 
@@ -33,7 +34,7 @@
     "verandaRoom": "Verandazimmer",
     "cornerRoom": "Eckzimmer",
     "rooms":"Unsere Zimmer",
-    "hotelline": "Hotel-Festnetz",
+    "hotelline": "WhatsApp-Hotline",
     "callcenterline": "Callcenter-Hotline",
     "callcenteremail": "Callcenter-E-Mail",
     "address": "Adresse",

@@ -47,7 +47,7 @@ export default function Footer() {
               <FaPhone className="transform scale-x-[-1]" />
               </div>
             <div className="flex flex-col gap-1 items-start justify-start">
-              <p> {t("hotelline")}</p>
+              <p> {t("callcenterline")}</p>
             <a href="tel:+902422121264" className="flex items-center text-gray-600 hover:text-gray-800">
             +90 242 212 12 64
             </a>
@@ -59,7 +59,7 @@ export default function Footer() {
               <FaPhone className="transform scale-x-[-1]" />
               </div>
             <div className="flex flex-col gap-1 items-start justify-start">
-              <p> {t("callcenterline")}</p>
+              <p> {t("hotelline")}</p>
             <a href="tel:+905317148252 " className="flex items-center text-gray-600 hover:text-gray-800">
             +90 531 714 82 52 
             </a>

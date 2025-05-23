@@ -23,8 +23,8 @@ const page = () => {
     <NibeautySection/>
     <ContactSection/>
     <BackgroundImage/>
-    <Image src={fil} alt='portre' width={400} height={1000} className='hidden lg:flex absolute top-[1300px] -right-16 z-[1] transform -rotate-[10deg] opacity-20'/>
-    <Image src={heykel} alt='portre' width={1000} height={1000} className='hidden lg:flex absolute top-[3200px] left-[30%] z-[1] transform  opacity-20'/>
+    <Image src={fil} alt='portre' width={400} height={1000} className='hidden lg:flex absolute top-[1275px] -right-16 z-[1] transform -rotate-[10deg] opacity-20'/>
+    <Image src={heykel} alt='portre' width={1000} height={1000} className='hidden lg:flex absolute top-[3200px] left-[35%] z-[1] transform  opacity-20'/>
     </div>
   )
 }

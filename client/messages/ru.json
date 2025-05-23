@@ -17,7 +17,8 @@
       "juniorRoom": "Младший номер",
       "verandaRoom": "Номер с верандой",
       "cornerRoom": "Угловой номер",
-      "gallery": "ГАЛЕРЕЯ"
+      "gallery": "ГАЛЕРЕЯ",
+       "lobby": "Лобби"
     },
 
     "Footer": {
@@ -32,7 +33,7 @@
       "verandaRoom": "Номер с верандой",
       "cornerRoom": "Угловой номер",
       "rooms":"Наши номера",
-      "hotelline": "Телефон отеля",
+       "hotelline": "Линия WhatsApp",
       "callcenterline": "Колл-центр",
       "callcenteremail": "E-mail колл-центра",
   "address": "Адрес",

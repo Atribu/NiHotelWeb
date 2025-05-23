@@ -5,7 +5,7 @@ const RoomTour = ({link}) => {
     const t = useTranslations('RoomTour');
 
   return (
-    <div className='flex w-screen h-auto items-center justify-center max-w-[1400px] my-[10px] lg:my-[25px]'>
+    <div className='flex w-screen h-auto items-center justify-center max-w-[1400px] my-[10px] lg:my-[25px] z-50'>
       <div className='flex flex-col w-[94%] md:w-[92%] lg:w-[78%] items-center justify-center gap-[10px] lg:gap-[20px] max-w-[1106px] font-jost'>
        <div className='flex flex-col items-center lg:items-start justify-center gap-[10px] md:gap-[15px] lg:gap-[20px] text-black text-center lg:text-start w-full pl-[20px]'>
        <span className='text-[12px]  font-medium leading-[14px] uppercase tracking-[0.48px]'>{t("span")}</span>

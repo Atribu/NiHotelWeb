@@ -9,7 +9,7 @@ import { usePathname, useRouter } from "next/navigation";
 import NiHotelLogo from "../../../../public/Header/NiHotel.svg"
 import { useState } from "react";
 import { routing } from "@/i18n/routing";
-import { FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaFacebookF, FaXTwitter, FaPhone } from "react-icons/fa6";
 import PhoneSvg from "../generalComponents/PhoneSvg";
 import BellSvg from "../generalComponents/BellSvg";
 import img from "../../../../public/images/headerImg.png"
@@ -70,6 +70,14 @@ export default function Header() {
         </Link>
         </div>
 
+     <div className="flex gap-8 items-center justify-center">
+     <div className={linkClasses}>
+        <FaPhone className="flex w-4 h-4" />
+        <Link href="tel:+902422121264"  target="_blank"
+          rel="noopener noreferrer">+90 242 212 12 64
+          </Link>
+        </div>
+
         {/* Sağ */}
         <div className={linkClasses}>
         <Link href="https://nihotellara.rezervasyonal.com/en/?language=en"  target="_blank"
@@ -77,6 +85,7 @@ export default function Header() {
           </Link>
         <BellSvg className="flex" width={30} height={16} color="#fff"/>
         </div>
+     </div>
 
         <div className="flex lg:hidden">
           <LangSwitcher/>
