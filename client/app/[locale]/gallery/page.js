@@ -12,13 +12,12 @@ import img9 from "./images/lobi/2.webp"
 import img10 from "./images/lobi/3.webp"
 import img11 from "./images/lobi/DSCF8695.webp"
 import img12 from "./images/lobi/DSCF8700.webp"
-import img13 from "./images/lobi/4.webp"
-import img14 from "./images/lobi/DSCF8656 .webp"
+import img13 from "./images/lobi/DSCF8754.webp"
+import img14 from "./images/lobi/DSCF8745.webp"
+import { useTranslations } from 'next-intl';
 
 import { useState } from "react";
 import Image from "next/image";
-
-
 
 // Galeri görüntülerini public/images/galeri klasörüne yerleştirin
 const images = [
@@ -26,6 +25,7 @@ const images = [
 ];
 
 export default function GalleryPage() {
+  const t = useTranslations('Header');
   const [selectedImg, setSelectedImg] = useState(null);
 
   return (
@@ -40,14 +40,14 @@ export default function GalleryPage() {
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <h1 className="text-3xl md:text-5xl font-semibold text-white">
-            Galeri
+            {t("gallery")}
           </h1>
         </div>
       </section>
 
       {/* Galeri Grid */}
       <section className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {images.map((src, idx) => (
             <div
               key={idx}
@@ -59,7 +59,7 @@ export default function GalleryPage() {
                 alt={`Galeri ${idx + 1}`}
                 width={400}
                 height={300}
-                className="object-cover w-full h-60 transition-transform duration-300 group-hover:scale-105"
+                className="object-cover w-full h-40 md:h-60 transition-transform duration-300 group-hover:scale-105"
               />
             </div>
           ))}

@@ -16,7 +16,8 @@
       "standardRoom": "Standard Room",
       "juniorRoom": "Junior Room",
       "verandaRoom": "Veranda Room",
-      "cornerRoom": "Corner Room"
+      "cornerRoom": "Corner Room",
+      "gallery":"GALLERY"
   },
 
   "Footer":{

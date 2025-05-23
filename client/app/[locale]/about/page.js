@@ -16,7 +16,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* BANNER */}
-      <section className="relative h-[60vh]">
+      <section className="relative h-[50vh] lg:h-[60vh]">
         <Image
           src={aboutBanner}
           alt="NiHotel Hakkımızda Banner"
@@ -24,14 +24,14 @@ export default function AboutPage() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-4xl md:text-6xl font-['Cormorant_Garamond'] text-white">
+          <h1 className="text-4xl md:text-6xl font-['Cormorant_Garamond'] text-white font-bold">
             {t("header")}
           </h1>
         </div>
       </section>
 
       {/* İÇERİK + GÖRSEL */}
-      <section className="container mx-auto px-4 py-12 md:px-8">
+      <section className="container mx-auto px-4 py-7 lg:py-12 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Metin bölümü */}
           <div className="space-y-6">

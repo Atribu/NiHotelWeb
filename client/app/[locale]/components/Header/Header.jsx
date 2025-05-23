@@ -191,8 +191,8 @@ export default function Header() {
           </div>
     <Link href="/contact" onClick={() => setIsMenuOpen(false)}>{t("contact")}</Link>
     <Link href="/about" onClick={() => setIsMenuOpen(false)}>{t("about")}</Link>
-    <Link href="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</Link>
-    <Link href="/kitchen" onClick={() => setIsMenuOpen(false)}>Kıtchen</Link>
+    <Link href="/gallery" onClick={() => setIsMenuOpen(false)}>{t("gallery")}</Link>
+    <Link href="/kitchen" onClick={() => setIsMenuOpen(false)}>{t("kitchen")}</Link>
   </nav>
 
 <div className="flex flex-col w-full items-center justify-center mb-4 gap-4">
