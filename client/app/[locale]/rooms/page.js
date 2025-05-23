@@ -138,7 +138,8 @@ const Page = () => {
       />
     </div>
    </div>
-    <Image src={img} alt='portre' width={1000} height={1600} className='absolute top-[1800px] right-0 z-[1]  flex'/>
+    <Image src={img} alt='portre' width={1000} height={1600} className='absolute top-[1800px] right-0 z-[1] hidden xl:flex'/>
+    <Image src={img} alt='portre' width={700} height={1100} className='absolute top-[1800px] left-[1%] z-[1] hidden md:flex xl:hidden transform -rotate-[10deg]'/>
   </div>
   )
 }

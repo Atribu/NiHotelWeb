@@ -261,6 +261,10 @@
   },
 
   "Kitchen":{
+    "header": "Speisen & Getränke",
+    "span": "Café — Bar — Restaurant",
+    "text1": "Das herrliche Aroma unserer sorgfältig ausgewählten Kaffeebohnen erfrischt Ihre Energie zu jeder Tageszeit, während unsere Bar mit einer Auswahl alkoholischer und alkoholfreier Getränke für genussvolle Gespräche bereitsteht.",
+    "text2": "Die einzigartigen Kreationen unseres Küchenchefs, die nationale und internationale Küche vereinen, heben Ihr Aufenthaltserlebnis im Ni Hotel Lara auf ein neues Niveau.",
   "breakfast": "Frühstück",
   "dailySoupAndMealMenu": "Tages-Suppe & Tagesgericht",
   "mainCourse": "Hauptgang",

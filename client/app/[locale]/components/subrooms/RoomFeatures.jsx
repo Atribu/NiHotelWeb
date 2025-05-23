@@ -67,7 +67,7 @@ export default function RoomFeatures() {
                 <div key={idx} className="min-w-full px-4">
                   <div className="grid grid-cols-2 gap-x-6 gap-y-6 justify-center items-center ">
                     {slide.map(({ src, label }, j) => (
-                      <div key={j} className="flex items-center space-y-2 justify-start ml-[10%] gap-2">
+                      <div key={j} className="flex items-center space-y-2 justify-start md:justify-center ml-[10%] gap-2">
                         <Image src={src} alt={label} width={32} height={32} className="hidden lg:flex object-contain" />
                         <Image src={src} alt={label} width={24} height={24} className="flex lg:hidden object-contain w-[24px] h-[24px]" />
                         <span className="text-xs lg:text-sm text-gray-700 whitespace-nowrap">{label}</span>

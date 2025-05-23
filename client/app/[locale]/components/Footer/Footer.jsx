@@ -27,10 +27,10 @@ export default function Footer() {
     <footer className="bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 pt-10 lg:pt-20">
         {/* columns */}
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start lg:space-x-8 space-y-8 lg:space-y-0">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start lg:space-x-6 space-y-8 lg:space-y-0">
           
           {/* Logo */}
-          <div className="flex-shrink-0 flex justify-center lg:justify-start">
+          <div className="flex-shrink-0 flex justify-center lg:justify-start lg:mr-16">
             <Image
               src={NiHotelLogo}
               alt="Logo"
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
 
           {/* Mobile İletişim Bilgileri */}
-          <div className="grid grid-cols-2 lg:hidden gap-3 flex-col items-center lg:items-start space-y-2 lg:space-y-3 lg:border-l lg:border-gray-200 lg:pl-8 text-center text-[11px]">
+          <div className="grid grid-cols-2 lg:hidden gap-3 flex-col items-center md:items-center space-y-2 lg:space-y-3 lg:border-l lg:border-gray-200 md:pl-[20%] text-center text-[11px]">
             <div className="flex gap-1 items-center justify-start">
               <div className="flex items-center justify-center text-center h-[36px] w-[36px] rounded golge">
               <FaPhone className="transform scale-x-[-1]" />
@@ -176,14 +176,14 @@ export default function Footer() {
 
       <div className="md:flex flex-row items-center justify-center gap-10">
             {/* Hızlı Linkler */}
-            <div className="flex flex-col items-center lg:items-start space-y-1 lg:space-y-2">
+            <div className="flex flex-col items-center lg:items-start space-y-1 lg:space-y-2 min-w-[80px]">
             <a href="/about" className="text-gray-600 hover:text-gray-800">{t("aboutus")}</a>
             <a href="/contact" className="text-gray-600 hover:text-gray-800">{t("contactus")}</a>
             <a href="/gallery" className="text-gray-600 hover:text-gray-800">{t("gallery")}</a>
           </div>
           
           {/* Politikalar */}
-          <div className="flex flex-col items-center lg:items-start space-y-1 lg:space-y-2 lg:border-l lg:border-gray-200 lg:pl-8">
+          <div className="flex flex-col items-center lg:items-start space-y-1 lg:space-y-2 lg:border-l lg:border-gray-200 lg:pl-4 min-w-[160px]">
             <a href="/cookie-policy" className="text-gray-600 hover:text-gray-800">{t("cookiePolicy")}</a>
             <a href="/privacy-policy" className="text-gray-600 hover:text-gray-800">{t("privacyPolicy")}</a>
             <a href="/fact-sheet" className="text-gray-600 hover:text-gray-800">{t("factsheet")}</a>
@@ -192,7 +192,7 @@ export default function Footer() {
           
           {/* İletişim Bilgileri */}
           <div className="hidden lg:flex flex-col items-center lg:items-start space-y-2 lg:space-y-3 lg:border-l lg:border-gray-200 lg:pl-8 text-center">
-            <a href="tel:+902422121264" className="flex items-center text-gray-600 hover:text-gray-800">
+            <a href="tel:+902422121264" className="flex items-center text-gray-600 hover:text-gray-800 ">
               <FaPhone className="mr-2" />+90 242 212 12 64
             </a>
             <a href="tel:+905317148252 " className="flex items-center text-gray-600 hover:text-gray-800">
@@ -208,17 +208,17 @@ export default function Footer() {
           </div>
           
           {/* Sosyal Medya */}
-          <div className="hidden md:flex justify-center lg:justify-start items-center space-x-4 lg:border-l lg:border-gray-200 lg:pl-8">
+          <div className="hidden md:flex justify-center lg:justify-start items-center space-x-4 lg:border-l lg:border-gray-200 lg:pl-8 z-[990]">
             <a href="https://www.facebook.com/p/Ni-Hotel-Lara-100075601707373/" rel="norefferer nofollower"
-                  target="_blank" className="p-2 bg-gray-100 rounded hover:bg-gray-200">
+                  target="_blank" className="p-2 bg-gray-100 rounded hover:bg-gray-200 z-50 cursor-pointer">
               <FaFacebookF />
             </a>
             <a href="#" rel="norefferer nofollower"
-                  target="_blank" className="p-2 bg-gray-100 rounded hover:bg-gray-200">
+                  target="_blank" className="p-2 bg-gray-100 rounded hover:bg-gray-200 z-50 cursor-pointer">
               <FaYoutube />
             </a>
             <a href="https://www.instagram.com/nihotellara/" rel="norefferer nofollower"
-                  target="_blank" className="p-2 bg-gray-100 rounded hover:bg-gray-200">
+                  target="_blank" className="p-2 bg-gray-100 rounded hover:bg-gray-200 z-50 cursor-pointer">
               <FaInstagram />
             </a>
           </div>
@@ -229,7 +229,8 @@ export default function Footer() {
          <span className="flex mt-5 lg:mt-10 items-center justify-center"> Powered by © <DgtlfaceSvg className="flex" width={104} height={27}/></span>
         </div>
       </div>
-      <Image src={img} alt='leaf' width={700} height={1300} className='absolute bottom-48 lg:-bottom-[50px] -right-[120px]  lg:-right-[220px] z-[99] transform rotate-[35deg] lg:rotate-[20deg] opacity-60'/>
+      <Image src={img} alt='leaf' width={600} height={1100} className='absolute bottom-48 hidden xl:flex xl:-bottom-[50px] -right-[120px]  lg:-right-[8%] z-[99] transform rotate-[35deg] lg:rotate-[20deg] opacity-60'/>
+      <Image src={img} alt='leaf' width={400} height={800} className='absolute bottom-48 xl:hidden lg:bottom-[30%] -right-[120px]  lg:-right-[8%] z-[99] transform rotate-[35deg] lg:rotate-[20deg] opacity-60'/>
     </footer>
   );
 }

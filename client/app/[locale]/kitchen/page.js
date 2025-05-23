@@ -43,12 +43,38 @@ import main18 from "../../../public/images/menu/maincourse/tavukfajita.webp"
 import main19 from "../../../public/images/menu/maincourse/sinitzel.webp"
 import main20 from "../../../public/images/menu/maincourse/tavukturn.webp"
 
+import main21 from "../../../public/images/menu/maincourse/corba.webp"
+import main22 from "../../../public/images/menu/maincourse/corba2.webp"
+
 import snack1 from "../../../public/images/menu/snacks/biratabak.webp"
 import snack2 from "../../../public/images/menu/snacks/citirtavuk.webp"
 import snack3 from "../../../public/images/menu/snacks/patates.webp"
 import snack4 from "../../../public/images/menu/snacks/kuruyemis.webp"
 import snack5 from "../../../public/images/menu/snacks/cheese.webp"
 import snack6 from "../../../public/images/menu/snacks/cips.webp"
+
+import salad1 from "../../../public/images/menu/salad/salata.webp"
+import salad2 from "../../../public/images/menu/salad/salata2.webp"
+import salad3 from "../../../public/images/menu/salad/salata3.webp"
+import salad4 from "../../../public/images/menu/salad/salata4.webp"
+
+import drink1 from "../../../public/images/menu/drinks/espresso.webp"
+import drink2 from "../../../public/images/menu/drinks/espresso2.webp"
+import drink3 from "../../../public/images/menu/drinks/ristretto.webp"
+import drink4 from "../../../public/images/menu/drinks/coffeecreme.webp"
+import drink5 from "../../../public/images/menu/drinks/longblack.webp"
+import drink6 from "../../../public/images/menu/drinks/americano.webp"
+import drink7 from "../../../public/images/menu/drinks/cappuccino.webp"
+import drink8 from "../../../public/images/menu/drinks/lattemachiato.webp"
+import drink9 from "../../../public/images/menu/drinks/espressomachiato.webp"
+import drink10 from "../../../public/images/menu/drinks/coffeelatte.webp"
+import drink11 from "../../../public/images/menu/drinks/whitemocha.webp"
+import drink12 from "../../../public/images/menu/drinks/flatwhite.webp"
+import drink13 from "../../../public/images/menu/drinks/cafemocha.webp"
+import drink14 from "../../../public/images/menu/drinks/turkcafe.webp"
+import drink15 from "../../../public/images/menu/drinks/elmatea.webp"
+import drink16 from "../../../public/images/menu/drinks/greetea.webp"
+import drink17 from "../../../public/images/menu/drinks/tea.webp"
 
 export default function FoodPage() {
   const t = useTranslations('Kitchen');
@@ -94,8 +120,8 @@ const kahvaltiMenu = [
 ];
 
 const gununMenu = [
-  { title: t4("title1"), text: t4("text1"), image: "/images/menu/gunun-menu/gunun-corbasi.jpg" },
-  { title: t4("title2"), text: t4("text2"), image: "/images/menu/gunun-menu/gunun-yemek-menusu.jpg" },
+  { title: t4("title1"), text: t4("text1"), image: main21 },
+  { title: t4("title2"), text: t4("text2"), image: main22 },
 ];
 
 // Ana Yemek altındaki tüm alt kategoriler tek bir dizide toplanıyor
@@ -139,30 +165,30 @@ const atistirmalikMenu = [
 ];
 
 const salatalarMenu = [
-  { title:t6("title1"), text: t6("text1"), image: "/images/menu/salatalar/izgara-tavuk-salata.jpg" },
-  { title: t6("title2"), text: t6("text2"), image: "/images/menu/salatalar/tahil-salata.jpg" },
-  { title: t6("title3"), text: t6("text3"), image: "/images/menu/salatalar/lor-pancar-salata.jpg" },
-  { title: t6("title4"), text: t6("text4"), image: "/images/menu/salatalar/sezar-salata.jpg" },
+  { title:t6("title1"), text: t6("text1"), image: salad1 },
+  { title: t6("title2"), text: t6("text2"), image:salad2},
+  { title: t6("title3"), text: t6("text3"), image: salad3 },
+  { title: t6("title4"), text: t6("text4"), image:salad4},
 ];
 
 const kahveCayMenu = [
-  { title: t7("title1"), text: t7("text1"), image: "/images/menu/kahve/espresso.jpg" },
-  { title:  t7("title2"), text: t7("text1"), image: "/images/menu/kahve/espresso-doppio.jpg" },
-  { title:  t7("title3"), text: t7("text1"), image: "/images/menu/kahve/ristretto-doppio.jpg" },
-  { title:  t7("title4"), text: t7("text1"), image: "/images/menu/kahve/kaffee-creme.jpg" },
-  { title:  t7("title5"), text: t7("text1"), image: "/images/menu/kahve/long-black.jpg" },
-  { title:  t7("title6"), text: t7("text1"), image: "/images/menu/kahve/americano.jpg" },
-  { title:  t7("title7"), text: t7("text1"), image: "/images/menu/kahve/cappuccino.jpg" },
-  { title:  t7("title8"), text: t7("text1"), image: "/images/menu/kahve/latte-macchiato.jpg" },
-  { title:  t7("title9"), text: t7("text1"), image: "/images/menu/kahve/espresso-macchiato.jpg" },
-  { title:  t7("title10"), text: t7("text1"), image: "/images/menu/kahve/kaffee-latte.jpg" },
-  { title:  t7("title11"), text: t7("text1"), text: "", image: "/images/menu/kahve/white-chocolate-mocha.jpg" },
-  { title:  t7("title12"), text: t7("text1"), image: "/images/menu/kahve/flat-white.jpg" },
-  { title:  t7("title13"), text: t7("text1"), image: "/images/menu/kahve/kaffee-mocha.jpg" },
-  { title:  t7("title14"), text: t7("text1"), image: "/images/menu/kahve/turk-kahvesi.jpg" },
-  { title:  t7("title15"), text: t7("text1"), image: "/images/menu/kahve/elma-cayi.jpg" },
-  { title:  t7("title16"), text: t7("text1"), image: "/images/menu/kahve/yesil-cay.jpg" },
-  { title:  t7("title17"), text: t7("text1"), image: "/images/menu/kahve/cay.jpg" },
+  { title: t7("title1"), text: t7("text1"), image: drink1 },
+  { title:  t7("title2"), text: t7("text1"), image: drink2 },
+  { title:  t7("title3"), text: t7("text1"), image: drink3 },
+  { title:  t7("title4"), text: t7("text1"), image: drink4 },
+  { title:  t7("title5"), text: t7("text1"), image: drink5 },
+  { title:  t7("title6"), text: t7("text1"), image: drink6 },
+  { title:  t7("title7"), text: t7("text1"), image: drink7 },
+  { title:  t7("title8"), text: t7("text1"), image: drink8},
+  { title:  t7("title9"), text: t7("text1"), image: drink9 },
+  { title:  t7("title10"), text: t7("text1"), image: drink10 },
+  { title:  t7("title11"), text: t7("text1"), image: drink11 },
+  { title:  t7("title12"), text: t7("text1"), image: drink12 },
+  { title:  t7("title13"), text: t7("text1"), image: drink13 },
+  { title:  t7("title14"), text: t7("text1"), image: drink14 },
+  { title:  t7("title15"), text: t7("text1"), image:drink15 },
+  { title:  t7("title16"), text: t7("text1"), image: drink16 },
+  { title:  t7("title17"), text: t7("text1"), image: drink17 },
 ];
 
 const softIcecekMenu = []; // eklenecek
@@ -191,14 +217,13 @@ const menuData = {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 mt-8 lg:mt-16">
-          <h2 className="text-3xl md:text-5xl font-['Cormorant_Garamond'] font-bold text-white">Food & Beverage</h2>
-          <p className="mt-2 text-sm md:text-[15px] text-white">Kafe — Bar — Restaurant</p>
+          <h2 className="text-3xl md:text-5xl font-['Cormorant_Garamond'] font-bold text-white">{t("header")}</h2>
+          <p className="mt-2 text-sm md:text-[15px] text-white">{t("span")}</p>
           <p className="mt-4 max-w-2xl text-xs md:text-sm text-white">
-            Özenle seçilmiş kahve çekirdeklerinin muhteşem kokusu günün her saati enerjinizi yenilerken,
-            farklı damak tadlarına özel seçkin alkollü-alkolsüz içecekler barımızda keyifli sohbetler için hazır bekliyor.
+          {t("text1")}
           </p>
           <p className="mt-2 max-w-2xl text-xs md:text-sm text-white">
-            Şefimizin ülke ve dünya mutfağını harmanladığı eşsiz lezzetler ise Ni Hotel Lara’da konaklama deneyiminizi üst seviyeye taşıyor.
+          {t("text2")}
           </p>
         </div>
       </section>

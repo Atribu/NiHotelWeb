@@ -260,6 +260,10 @@
   },
 
   "Kitchen":{
+    "header": "Yiyecek & İçecek",
+    "span": "Kafe — Bar — Restaurant",
+    "text1": "Özenle seçilmiş kahve çekirdeklerinin muhteşem kokusu günün her saati enerjinizi yenilerken, farklı damak tadlarına özel seçkin alkollü-alkolsüz içecekler barımızda keyifli sohbetler için hazır bekliyor.",
+    "text2": "Şefimizin ülke ve dünya mutfağını harmanladığı eşsiz lezzetler ise Ni Hotel Lara’da konaklama deneyiminizi üst seviyeye taşıyor.",
   "breakfast": "Kahvaltı",
   "dailySoupAndMealMenu": "Günün Çorbası ve Günün Yemek Menüsü",
   "mainCourse": "Ana Yemek",

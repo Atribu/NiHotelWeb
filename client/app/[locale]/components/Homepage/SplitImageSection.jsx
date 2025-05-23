@@ -46,7 +46,7 @@ export default function SplitImageSection() {
          
           </div>
         </div>
-        <div className="mx-4 -mt-[95px]  bg-orange-500  md:-mt-[97.5px] h-[150px] w-[190px] md:h-[150px] md:w-[210px] lg:mx-0 lg:-mt-[120px] lg:h-[200px] lg:w-[310px] xl:-mt-[155px] xl:h-[190px] xl:w-[362.5px] 2xl:-mt-[185px] 2xl:h-[265px] 2xl:w-[485px] 3xl:-mt-[235px] 3xl:h-[300px] 3xl:w-[555px] 4xl:-mt-[315px] 4xl:h-[405px] 4xl:w-[747.5px] 5xl:-mt-[462.5px] 5xl:h-[610px] 5xl:w-[1090px]">
+        <div className="mx-4 -mt-[95px]  bg-orange-500  md:-mt-[97.5px] h-[150px] w-[190px] md:h-[150px] md:w-[210px] lg:mx-0 lg:-mt-[118px] lg:h-[200px] lg:w-[310px] xl:-mt-[155px] xl:h-[190px] xl:w-[362.5px] 2xl:-mt-[200px] 2xl:h-[265px] 2xl:w-[485px] 3xl:-mt-[235px] 3xl:h-[300px] 3xl:w-[555px] 4xl:-mt-[315px] 4xl:h-[405px] 4xl:w-[747.5px] 5xl:-mt-[462.5px] 5xl:h-[610px] 5xl:w-[1090px]">
       
         <CardwLogo
             width={300}

@@ -258,6 +258,10 @@
   },
 
   "Kitchen":{
+    "header": "Food & Beverage",
+    "span": "Cafe — Bar — Restaurant",
+    "text1": "Hand-picked coffee beans release their wonderful aroma to refresh your energy at any hour, while our bar is ready for pleasant conversations with a selection of alcoholic and non-alcoholic drinks tailored to diverse palates.",
+    "text2": "The unique flavors crafted by our chef, blending national and international cuisines, take your stay at Ni Hotel Lara to the next level.",
     "breakfast": "Breakfast",
     "dailySoupAndMealMenu": "Daily Soup & Meal Menu",
     "mainCourse": "Main Course",

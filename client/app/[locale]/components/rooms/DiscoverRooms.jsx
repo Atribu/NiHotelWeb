@@ -42,7 +42,7 @@ export default function DiscoverRooms({
 
   return (
     <section className="flex flex-col py-8 lg:py-16 bg-white w-screen items-center justify-center">
-      <div className="flex flex-col w-[100%] md:w-[75%] lg:w-[85%] xl:w-[80%] lg:min-w-[900px] max-w-[1200px]">
+      <div className="flex flex-col w-[100%] md:w-[90%] lg:w-[85%] xl:w-[80%] lg:min-w-[900px] max-w-[1200px]">
         <h2 className="text-[24px] md:text-4xl font-serif text-center mb-12">
           {header}
         </h2>
