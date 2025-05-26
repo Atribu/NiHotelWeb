@@ -30,7 +30,7 @@ export default function RoomShowcase({
   const t = useTranslations('Rooms');
 
   return (
-    <section id={id} className="py-1 md:py-4 lg:py-20 bg-white flex items-center justify-center w-full ">
+    <section id={id} className="py-1 md:py-3 lg:pb-0 lg:py-20 bg-white flex items-center justify-center w-full ">
       <div className="max-w-7xl mx-auto w-[93%] items-center justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 lg:gap-6 items-start ">
 
@@ -39,7 +39,7 @@ export default function RoomShowcase({
             <>
               {/* Static image hidden on mobile */}
               {firstImage && (
-                <div className="relative w-full h-64 sm:h-80 lg:h-[500px] overflow-hidden shadow-lg hidden lg:block z-50">
+                <div className="relative w-full h-64 sm:h-80 lg:h-[450px] xl:h-[500px] overflow-hidden shadow-lg hidden lg:block z-50">
                   <Image
                     src={firstImage.src}
                     alt={firstImage.alt}
@@ -58,7 +58,7 @@ export default function RoomShowcase({
                       {carouselImages.map((img, i) => (
                         <div
                           key={i}
-                          className="relative flex-shrink-0 basis-full w-full h-72 sm:h-80 lg:h-[500px] overflow-hidden shadow-lg"
+                          className="relative flex-shrink-0 basis-full w-full h-72 sm:h-80 lg:h-[450px] xl:h-[500px] overflow-hidden shadow-lg"
                         >
                           <Image
                             src={img.src}
@@ -70,12 +70,12 @@ export default function RoomShowcase({
                         </div>
                       ))}
                     </div>
-                    <div className="flex lg:hidden absolute top-0 left-1/2 -translate-x-1/2 items-center justify-center text-center bg-[linear-gradient(180deg,#FFF_23.88%,rgba(255,255,255,0)_100%)]
+                    <div className="flex lg:hidden absolute top-0 left-1/2 -translate-x-1/2 items-center md:items-start justify-center text-center bg-[linear-gradient(180deg,#FFF_23.88%,rgba(255,255,255,0)_100%)]
   w-full
   h-[178px]
   flex-shrink-0">
-                    <h3 className="text-[26px] lg:text-[32px] font-['Cormorant_Garamond'] text-gray-700 font-bold">
-              {title}
+                    <h3 className="text-[26px] md:text-[28px] lg:text-[32px] font-['Cormorant_Garamond'] text-black font-bold">
+                    {title}
             </h3>
                     </div>
                   </div>
@@ -126,9 +126,9 @@ export default function RoomShowcase({
                 {/* Center text on desktop, below carousel on mobile */}
           <div className="flex flex-col items-center text-center justify-center space-y-2 lg:space-y-6 lg:h-full shadow-xl lg:shadow-none px-5 pb-5 lg:px-0 lg:pb-0">
             <h3 className="hidden lg:flex text-[26px] lg:text-[32px] font-['Cormorant_Garamond'] text-gray-700 font-bold">
-              {title}
+            {title}
             </h3>
-            <p className="text-[12px] lg:text-base text-gray-700">{description}</p>
+            <p className="text-[12px] lg:text-[14px] xl:text-base text-gray-700">{description}</p>
             <hr className="hidden lg:flex w-16 border-gray-300" />
             <Link
               href={href}
@@ -154,7 +154,7 @@ export default function RoomShowcase({
             <h3 className="text-[26px] lg:text-[32px] font-['Cormorant_Garamond'] text-gray-700 font-bold">
               {title}
             </h3>
-            <p className="text-base text-gray-700">{description}</p>
+            <p className="text-[12px] lg:text-[14px] xl:text-base text-gray-700">{description}</p>
             <hr className="w-16 border-gray-300" />
             <Link
               href={href}
@@ -171,7 +171,7 @@ export default function RoomShowcase({
                       {carouselImages.map((img, i) => (
                         <div
                           key={i}
-                          className="relative flex-shrink-0 basis-full w-full h-64 sm:h-80 lg:h-[500px] overflow-hidden shadow-lg"
+                          className="relative flex-shrink-0 basis-full w-full h-64 sm:h-80 lg:h-[450px] xl:h-[500px] overflow-hidden shadow-lg"
                         >
                           <Image
                             src={img.src}
@@ -204,7 +204,7 @@ export default function RoomShowcase({
 
               {/* Static image hidden on mobile */}
               {firstImage && (
-                <div className="relative w-full h-64 sm:h-80 lg:h-[500px] overflow-hidden shadow-lg hidden lg:block z-50">
+                <div className="relative w-full h-64 sm:h-80 lg:h-[450px] xl:h-[500px] overflow-hidden shadow-lg hidden lg:block z-50">
                   <Image
                     src={firstImage.src}
                     alt={firstImage.alt}

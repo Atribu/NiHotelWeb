@@ -48,7 +48,7 @@ export default function Header() {
   `;
 
   return (
-    <header className="fixed top-0 left-0 w-full max-w-screen z-[9999] bg-transparent black-mask text-white py-2 bg-center bg-cover" >
+    <header className="fixed top-0 left-0 w-full max-w-screen z-[9998] bg-transparent black-mask text-white py-2 bg-center bg-cover" >
       <div className="max-w-[1400px] mx-auto px-4 py-4 flex items-center justify-between">
 
         {/* Sol */}
@@ -66,7 +66,7 @@ export default function Header() {
 
         <div className="flex-1 text-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <Link href="/">
-            <Image src={NiHotelLogo} alt="logo" className="w-auto h-[65px] lg:h-[90px] mx-auto"/>
+            <Image src={NiHotelLogo} alt="logo" className="w-auto h-[65px] md:h-[78px] lg:h-[90px] mx-auto"/>
         </Link>
         </div>
 

@@ -161,23 +161,23 @@ export default function RoomCarouselSection({
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-[9999]">
           <button
             onClick={() => setSelectedIndex(null)}
-            className="absolute top-4 right-4 text-white text-3xl"
+            className="absolute top-[16%] right-[26%] xl:top-[13%] xl:right-[23.5%] text-white text-3xl xl:text-[40px] z-[9999] cursor-pointer hover:text-gray-800"
           >
             &times;
           </button>
           <button
             onClick={prevInModal}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-2xl p-2 bg-black/30 rounded-full hover:bg-black/50 cursor-pointer"
+            className="absolute left-[14%] top-1/2 transform -translate-y-1/2 text-white text-2xl p-2 bg-black/30 rounded-full hover:bg-black/50 cursor-pointer"
           >
             <AiOutlineLeft />
           </button>
           <button
             onClick={nextInModal}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-2xl p-2 bg-black/30 rounded-full hover:bg-black/50 cursor-pointer"
+            className="absolute right-[14%] top-1/2 transform -translate-y-1/2 text-white text-2xl p-2 bg-black/30 rounded-full hover:bg-black/50 cursor-pointer"
           >
             <AiOutlineRight />
           </button>
-          <div className="relative max-w-3xl w-full">
+          <div className="relative max-w-3xl xl:max-w-5xl w-full">
             <Image
               src={images[selectedIndex]}
               alt="Büyütülmüş Görsel"

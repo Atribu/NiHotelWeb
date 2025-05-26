@@ -61,33 +61,52 @@ export default function RoomFeatures() {
         </div>
 
         {/* mobile carousel */}
-        <div className="lg:hidden ">
-          <div className="overflow-hidden border border-gray-200 py-5" ref={emblaRef}>
-            <div className="flex">
-              {pages.map((slide, idx) => (
-                <div key={idx} className="min-w-full px-4">
-                  <div className="grid grid-cols-2 gap-x-6 gap-y-6 justify-center items-center ">
-                    {slide.map(({ src, label }, j) => (
-                      <div key={j} className="flex items-center space-y-2 justify-start md:justify-center ml-[10%] gap-2">
-                        <Image src={src} alt={label} width={32} height={32} className="hidden lg:flex object-contain" />
-                        <Image src={src} alt={label} width={24} height={24} className="flex lg:hidden object-contain w-[24px] h-[24px]" />
-                        <span className="text-xs lg:text-sm text-gray-700 whitespace-nowrap">{label}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="flex justify-center items-center space-x-6 mt-3 lg:mt-6 z-50">
-            <button onClick={() => emblaApi && emblaApi.scrollPrev()} className="p-2">
-              <AiOutlineLeft className="w-6 h-6 text-gray-700" />
-            </button>
-            <button onClick={() => emblaApi && emblaApi.scrollNext()} className="p-2">
-              <AiOutlineRight className="w-6 h-6 text-gray-700" />
-            </button>
-          </div>
-        </div>
+       <div className="lg:hidden">
+   {/* dıştaki border container */}
+   <div className="border-l border-r border-t border-gray-200 rounded-lg overflow-hidden">
+     {/* slider */}
+     <div className="overflow-hidden py-5" ref={emblaRef}>
+       <div className="flex">
+         {pages.map((slide, idx) => (
+           <div key={idx} className="min-w-full px-4">
+             {/* iki sütun arası divide-x */}
+             <div className="grid grid-cols-2 gap-y-6">
+               {slide.map(({ src, label }, j) => (
+                 <div
+                   key={j}
+                   className="flex flex-col items-center justify-center gap-2"
+                 >
+                   <Image
+                     src={src}
+                     alt={label}
+                     width={24}
+                     height={24}
+                     className="object-contain"
+                   />
+                  <span className="text-xs text-gray-700 whitespace-nowrap">
+                     {label}
+                   </span>
+                 </div>
+               ))}
+             </div>
+           </div>
+         ))}
+       </div>
+     </div>
+
+     {/* oklar, border-top eklendi */}
+     <div className="flex justify-center items-center space-x-6 py-1">
+      <div className='h-[1px] w-[20%] bg-gray-200'></div>
+       <button onClick={() => emblaApi && emblaApi.scrollPrev()} className="p-2">
+         <AiOutlineLeft className="w-6 h-6 text-gray-700" />
+       </button>
+      <button onClick={() => emblaApi && emblaApi.scrollNext()} className="p-2">
+         <AiOutlineRight className="w-6 h-6 text-gray-700" />
+       </button>
+       <div className='h-[1px] w-[20%] bg-gray-200'></div>
+     </div>
+   </div>
+ </div>
 
         <p className="hidden lg:flex mt-12 text-sm text-gray-600 text-cenyter justify-center items-center w-full">
           <strong>{t("rulesHeader")}</strong> {t("rulesDetails")}
