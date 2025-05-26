@@ -22,7 +22,7 @@ export default function ContactSection() {
           <ul className="grid grid-cols-1 sm:grid-cols-2 space-y-4 lg:w-[50%] items-center justify-center text-center">
             <li className="flex items-center gap-3 justify-center text-center">
               <FiPhone className="h-6 w-6 text-irenicBlack2" />
-              <span className="text-gray-700">+90 123 456 78 90</span>
+              <span className="text-gray-700">+90 242 212 12 64</span>
             </li>
             <li className="flex items-center gap-3 justify-center text-center">
               <FiMail className="h-6 w-6 text-irenicBlack2" />

@@ -132,7 +132,14 @@ export default function RoomShowcase({
             <hr className="hidden lg:flex w-16 border-gray-300" />
             <Link
               href={href}
-              className="relative w-[95%] lg:w-auto overflow-hidden  font-['Cormorant_Garamond'] font-bold bg-white text-black border px-5 py-1 uppercase text-[18px] transition-colors duration-500 ease-in-out before:content-[''] before:absolute before:inset-0 before:bg-black before:origin-left before:scale-x-0 before:transition-transform before:duration-500 before:ease-in-out hover:before:scale-x-100 hover:text-white"
+              className="hidden lg:flex relative w-[95%] lg:w-auto overflow-hidden  font-['Cormorant_Garamond'] font-bold bg-white text-black border px-5 py-1 uppercase text-[18px] transition-colors duration-500 ease-in-out before:content-[''] before:absolute before:inset-0 before:bg-black before:origin-left before:scale-x-0 before:transition-transform before:duration-500 before:ease-in-out hover:before:scale-x-100 hover:text-white"
+            >
+              <span className="relative z-10">{buttonText}</span>
+            </Link>
+
+            <Link
+              href={href}
+              className="flex lg:hidden relative w-[95%] lg:w-auto overflow-hidden golge border-white items-center justify-center text-center font-['Cormorant_Garamond'] font-bold bg-white text-black border px-5 py-1 uppercase text-[18px] transition-colors duration-500 ease-in-out before:content-[''] before:absolute before:inset-0 before:bg-black before:origin-left before:scale-x-0 before:transition-transform before:duration-500 before:ease-in-out hover:before:scale-x-100 hover:text-white"
             >
               <span className="relative z-10">{buttonText}</span>
             </Link>
