@@ -273,6 +273,16 @@
   "cocktails": "Alkollü ve Alkolsüz Kokteyller",
   "coffeeTea": "Kahveler ve Çaylar (Sıcak & Soğuk)",
   "softDrinks": "Soft İçecekler",
+  "beers": "Biralar",
+  "whiskys": "Viskiler",
+  "vodkas": "Vodkalar",
+  "tequilas": "Tekilalar",
+  "gins": "Cinler",
+  "wines": "Şaraplar",
+  "champagnes": "Şampanyalar",
+  "rakis": "Rakılar",
+  "liqueurs": "Likörler",
+    "frozen": "Frozenlar",
 
   "Breakfast": {
     "title1": "Kahvaltı Tabağı",
@@ -417,6 +427,59 @@
     "text3": "Roast edilmiş pancar, lor peyniri, avokado ve çörek otu",
     "title4": "Sezar Salata",
     "text4": "Romaine marul, tavuk göğsü, parmesan, kruton ve Caesar sosu"
+  },
+
+  "CocktailMenu": {
+    "title1": "Gin Tonik",
+    "text1": "Cin ve tonik suyu",
+    "title2": "Sex on the Beach",
+    "text2": "Vodka, şeftali aromalı Schnapps, portakal ve kızılcık suyu",
+    "title3": "Mojito",
+    "text3": "Esmer şeker, misket limon, taze nane, kırılmış buz, beyaz rom ve soda",
+    "title4": "Margarita",
+    "text4": "Tekila, Triple Sec (portakal likörü), limon suyu ve buz",
+    "title5": "Piña Colada",
+    "text5": "Ananas, muz, hindistancevizi sütü, hindistancevizi likörü, agave şurubu ve buz",
+    "title6": "Bloody Mary",
+    "text6": "Vodka, domates suyu ve çeşitli baharatlar",
+    "title7": "Daiquiri",
+    "text7": "Rom, lime suyu, meyve suyu ve kırık buz",
+    "title8": "Dry Martini",
+    "text8": "Dry vermut ve cin",
+    "title9": "Alkolsüz Mojito",
+    "text9": "Maden sodası, lime, esmer şeker ve taze nane",
+    "title10": "Churchill",
+    "text10": "Soda, limon suyu ve tuz",
+    "redwine": "Kırmızı Şarap",
+    "whitewine": "Beyaz Şarap",
+    "blush": "Gül Şarabı"  
+  },
+  "IcedCoffees": {
+    "title1": "Francoccino",            "text1": "",
+    "title2": "Iced Kaffee Mocha",      "text2": "",
+    "title3": "Iced Kaffee Americano",  "text3": "",
+    "title4": "Iced Kaffee",            "text4": "",
+    "title5": "Iced Kaffee Latte",      "text5": ""
+  },
+
+  "Frozen": {
+    "title1": "Strawberry Frozen",      "text1": "",
+    "title2": "Banana Frozen",          "text2": ""
+  },
+
+  "SoftDrinks": {
+    "title1": "Soda",                   "text1": "",
+    "title2": "Coca-Cola 330 ml",       "text2": "",
+    "title3": "Coca-Cola 200 ml",       "text3": "",
+    "title4": "Fanta 330 ml",           "text4": "",
+    "title5": "Yedigün 200 ml",         "text5": "",
+    "title6": "Sprite 200 ml",          "text6": "",
+    "title7": "Redbull",                "text7": "",
+    "title8": "Burn Enerji İçeceği",    "text8": "",
+    "title9": "Schweppes Tonik",        "text9": "",
+    "title10": "Juss Kayısı Suyu",      "text10": "",
+    "title11": "Juss Vişne Suyu",       "text11": "",
+    "title12": "Sıkma Portakal Suyu",   "text12": ""
   }
  }
   

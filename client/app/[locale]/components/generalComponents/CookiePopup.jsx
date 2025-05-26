@@ -385,7 +385,7 @@ const CookiePopup = () => {
           </div>
           <div className="grid grid-cols-2 lg:flex lg:flex-row md:gap-[20px] xl:gap-[30px] w-full items-center justify-center gap-[13px] lg:gap-[1vw] mr-[2%]  ">
             <button
-              className="text-[13px] lg:text-[14px] leading-normal font-medium uppercase items-center justify-center text-center border-[#FBFBFB] border-[0.867px] whitespace-nowrap py-[10px] px-[20px] cursor-pointer  "
+              className="text-[13px] lg:text-[14px] leading-normal font-medium uppercase items-center justify-center text-center border-[#FBFBFB] border-[0.867px] whitespace-nowrap py-[10px] lg:px-[20px] cursor-pointer  "
               onClick={handleDenyAll}>
             Tüm Çerezleri Reddet
             </button>
@@ -467,10 +467,10 @@ const CookiePopup = () => {
                         </button>
                       </div>
                       <div className="absolute bottom-[14vh] sm:bottom-[12%] flex lg:hidden items-center justify-center w-[100%] gap-[13px] font-heeboo">
-                        <button onClick={handleDenyAll} className="text-[12px] uppercase font-medium leading-normal text-[#FBFBFB] px-[20px] py-[10px] border border-[#FBFBFB] whitespace-nowrap min-w-[170px] w-[44vw]">
+                        <button onClick={handleDenyAll} className="text-[12px] uppercase font-medium leading-normal text-[#FBFBFB] lg:px-[20px] py-[10px] border border-[#FBFBFB] whitespace-nowrap min-w-[170px] w-[44vw]">
                         Tüm Çerezleri Reddet
                         </button>
-                        <button onClick={handleAcceptAll} className="text-[12px] uppercase font-medium leading-normal text-[#FBFBFB] px-[20px] py-[10px] border border-[#FBFBFB] whitespace-nowrap min-w-[184px] w-[44vw]">
+                        <button onClick={handleAcceptAll} className="text-[12px] uppercase font-medium leading-normal text-[#FBFBFB] lg:px-[20px] py-[10px] border border-[#FBFBFB] whitespace-nowrap min-w-[184px] w-[44vw]">
                         Tüm Çerezleri Kabul Et
                         </button>
                       </div>

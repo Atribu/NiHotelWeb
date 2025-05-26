@@ -271,6 +271,16 @@
     "cocktails": "Cocktails (Alcoholic & Non-Alcoholic)",
     "coffeeTea": "Coffee & Tea (Hot & Cold)",
     "softDrinks": "Soft Drinks",
+    "beers": "Beers",
+    "whiskys": "Whiskies",
+    "vodkas": "Vodkas",
+    "tequilas": "Tequilas",
+    "gins": "Gins",
+    "wines": "Wines",
+    "champagnes": "Champagnes",
+    "rakis": "Rakıs",
+    "liqueurs": "Liqueurs",
+      "frozen": "Frozen",
 
     "Breakfast": {
     "title1": "Breakfast Plate",
@@ -415,6 +425,59 @@
     "text3": "Roasted beetroot, curd cheese, avocado and black cumin",
     "title4": "Caesar Salad",
     "text4": "Romaine lettuce, chicken breast, parmesan, croutons and Caesar dressing"
+  },
+
+  "CocktailMenu": {
+    "title1": "Gin Tonic",
+    "text1": "Gin and tonic water",
+    "title2": "Sex on the Beach",
+    "text2": "Vodka, peach-flavored schnapps, orange and cranberry juice",
+    "title3": "Mojito",
+    "text3": "Brown sugar, lime, fresh mint, crushed ice, white rum and soda",
+    "title4": "Margarita",
+    "text4": "Tequila, Triple Sec (orange liqueur), lime juice and ice",
+    "title5": "Piña Colada",
+    "text5": "Pineapple, banana, coconut milk, coconut liqueur, agave syrup and ice",
+    "title6": "Bloody Mary",
+    "text6": "Vodka, tomato juice and various spices",
+    "title7": "Daiquiri",
+    "text7": "Rum, lime juice, fruit juice and crushed ice",
+    "title8": "Dry Martini",
+    "text8": "Dry vermouth and gin",
+    "title9": "Virgin Mojito",
+    "text9": "Sparkling water, lime, brown sugar and fresh mint",
+    "title10": "Churchill",
+    "text10": "Soda, lemon juice and salt",
+    "redwine": "Red Wine",
+    "whitewine": "White Wine",
+    "blush": "Blush"
+  },
+  "IcedCoffees": {
+    "title1": "Francoccino",            "text1": "",
+    "title2": "Iced Kaffee Mocha",      "text2": "",
+    "title3": "Iced Kaffee Americano",  "text3": "",
+    "title4": "Iced Kaffee",            "text4": "",
+    "title5": "Iced Kaffee Latte",      "text5": ""
+  },
+
+  "Frozen": {
+    "title1": "Strawberry Frozen",      "text1": "",
+    "title2": "Banana Frozen",          "text2": ""
+  },
+
+  "SoftDrinks": {
+    "title1": "Soda",                   "text1": "",
+    "title2": "Coca-Cola 330 ml",       "text2": "",
+    "title3": "Coca-Cola 200 ml",       "text3": "",
+    "title4": "Fanta 330 ml",           "text4": "",
+    "title5": "Yedigün 200 ml",         "text5": "",
+    "title6": "Sprite 200 ml",          "text6": "",
+    "title7": "Redbull",                "text7": "",
+    "title8": "Burn Energy Drink",      "text8": "",
+    "title9": "Schweppes Tonic",        "text9": "",
+    "title10": "Juss Apricot Juice",    "text10": "",
+    "title11": "Juss Cherry Juice",     "text11": "",
+    "title12": "Fresh Orange Juice",    "text12": ""
   }
   }
 
