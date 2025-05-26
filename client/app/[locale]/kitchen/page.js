@@ -91,25 +91,32 @@ import beer12 from "../../../public/images/menu/drinks/beers/weihen.webp"
 import beer13 from "../../../public/images/menu/drinks/beers/guinness.webp"
 import beer14 from "../../../public/images/menu/drinks/beers/corona.webp"
 
-import whiskey1 from "../../../public/images/menu/drinks/whiskeys/regal35.webp"
-import whiskey2 from "../../../public/images/menu/drinks/whiskeys/chivas12.webp"
-import whiskey3 from "../../../public/images/menu/drinks/whiskeys/chivas75.webp"
-import whiskey4 from "../../../public/images/menu/drinks/whiskeys/chivas121000.webp"
-import whiskey5 from "../../../public/images/menu/drinks/whiskeys/regal1875.webp"
-import whiskey6 from "../../../public/images/menu/drinks/whiskeys/jack35.webp"
-import whiskey7 from "../../../public/images/menu/drinks/whiskeys/glenfiddic.webp"
-import whiskey8 from "../../../public/images/menu/drinks/whiskeys/glenfiddich1570.webp"
-import whiskey9 from "../../../public/images/menu/drinks/whiskeys/glenfiddich1870.webp"
-import whiskey10 from "../../../public/images/menu/drinks/whiskeys/glenmorangie.webp"
-import whiskey11 from "../../../public/images/menu/drinks/whiskeys/walker1235.webp"
-import whiskey12 from "../../../public/images/menu/drinks/whiskeys/walker1270.webp"
-import whiskey13 from "../../../public/images/menu/drinks/whiskeys/walker1870.webp"
-import whiskey14 from "../../../public/images/menu/drinks/whiskeys/walkerred.webp"
-import whiskey15 from "../../../public/images/menu/drinks/whiskeys/daniel35.webp"
-import whiskey16 from "../../../public/images/menu/drinks/whiskeys/daniel50.webp"
-import whiskey17 from "../../../public/images/menu/drinks/whiskeys/daniels70.webp"
-import whiskey18 from "../../../public/images/menu/drinks/whiskeys/glenlivet12.webp"
-import whiskey19 from "../../../public/images/menu/drinks/whiskeys/glenlivet15.webp"
+import whisky1 from "../../../public/images/menu/drinks/whiskeys/regal35.webp"
+import whisky2 from "../../../public/images/menu/drinks/whiskeys/chivas12.webp"
+import whisky3 from "../../../public/images/menu/drinks/whiskeys/chivas75.webp"
+import whisky4 from "../../../public/images/menu/drinks/whiskeys/chivas121000.webp"
+import whisky5 from "../../../public/images/menu/drinks/whiskeys/regal1875.webp"
+import whisky6 from "../../../public/images/menu/drinks/whiskeys/jack35.webp"
+import whisky7 from "../../../public/images/menu/drinks/whiskeys/glenfiddic.webp"
+import whisky8 from "../../../public/images/menu/drinks/whiskeys/glenfiddich1570.webp"
+import whisky9 from "../../../public/images/menu/drinks/whiskeys/glenfiddich1870.webp"
+import whisky10 from "../../../public/images/menu/drinks/whiskeys/glenmorangie.webp"
+import whisky11 from "../../../public/images/menu/drinks/whiskeys/walker1235.webp"
+import whisky12 from "../../../public/images/menu/drinks/whiskeys/walker1270.webp"
+import whisky13 from "../../../public/images/menu/drinks/whiskeys/walker1870.webp"
+import whisky14 from "../../../public/images/menu/drinks/whiskeys/walkerred.webp"
+import whisky15 from "../../../public/images/menu/drinks/whiskeys/daniel35.webp"
+import whisky16 from "../../../public/images/menu/drinks/whiskeys/daniel50.webp"
+import whisky17 from "../../../public/images/menu/drinks/whiskeys/daniels70.webp"
+import whisky18 from "../../../public/images/menu/drinks/whiskeys/glenlivet12.webp"
+import whisky19 from "../../../public/images/menu/drinks/whiskeys/glenlivet15.webp"
+
+import vodka1 from "../../../public/images/menu/drinks/vodkas/absolut.webp"
+import vodka2 from "../../../public/images/menu/drinks/vodkas/pears.webp"
+import vodka3 from "../../../public/images/menu/drinks/vodkas/raspberry.webp"
+import vodka4 from "../../../public/images/menu/drinks/vodkas/smirnof35.webp"
+import vodka5 from "../../../public/images/menu/drinks/vodkas/smirnoff100.webp"
+import vodka6 from "../../../public/images/menu/drinks/vodkas/gilbeys.webp"
 
 import tequila1 from "../../../public/images/menu/drinks/tequila/sierra.webp"
 import tequila2 from "../../../public/images/menu/drinks/tequila/olmeca.webp"
@@ -152,8 +159,27 @@ import cocktail8 from "../../../public/images/menu/drinks/cocktails/drymartini.w
 import cocktail9 from "../../../public/images/menu/drinks/cocktails/alkolsuzmojito.webp"
 import cocktail10 from "../../../public/images/menu/drinks/cocktails/churchill.webp"
 
+import icedcoffee1 from "../../../public/images/menu/drinks/icedcoffees/francoccino.webp"
+import icedcoffee2 from "../../../public/images/menu/drinks/icedcoffees/icedcoffeemocha.webp"
+import icedcoffee3 from "../../../public/images/menu/drinks/icedcoffees/icedamericano.webp"
+import icedcoffee4 from "../../../public/images/menu/drinks/icedcoffees/icedcoffee.webp"
+import icedcoffee5 from "../../../public/images/menu/drinks/icedcoffees/icedlatte.webp"
+
 import frozen1 from "../../../public/images/menu/drinks/frozen/strawberry.webp"
 import frozen2 from "../../../public/images/menu/drinks/frozen/banana.webp"
+
+import soft1 from "../../../public/images/menu/drinks/soft/soda.webp"
+import soft2 from "../../../public/images/menu/drinks/soft/cola2.webp"
+import soft3 from "../../../public/images/menu/drinks/soft/cola3.webp"
+import soft4 from "../../../public/images/menu/drinks/soft/fanta.webp"
+import soft5 from "../../../public/images/menu/drinks/soft/yedigün.webp"
+import soft6 from "../../../public/images/menu/drinks/soft/sprite.webp"
+import soft7 from "../../../public/images/menu/drinks/soft/redbull.webp"
+import soft8 from "../../../public/images/menu/drinks/soft/burn.webp"
+import soft9 from "../../../public/images/menu/drinks/soft/schweppes.webp"
+import soft10 from "../../../public/images/menu/drinks/soft/juss.webp"
+import soft11 from "../../../public/images/menu/drinks/soft/juss2.webp"
+import soft12 from "../../../public/images/menu/drinks/soft/portakalsuyu.webp"
 
 export default function FoodPage() {
   const t = useTranslations('Kitchen');
@@ -173,8 +199,12 @@ const sections = [
   { id: "atistirmalik",   label: t("snack") },
   { id: "salatalar",      label: t("salads") },
   { id: "alkollu-icecek", label: t("alcoholicDrinks") },
-  { id: "kokteyller",     label: t("cocktails") },
+  { id: "beers", label: "Biralar"},
+  { id: "whisky",     label:"whisky",},
+  { id: "vodka",     label:"vodkas",},
+  { id: "tequila",     label:"tequilas",},
   { id: "kahve-cay",      label: t("coffeeTea") },
+  { id: "iced-coffee",      label: "iced coffees",},
   { id: "soft-icecek",    label: t("softDrinks") },
 ];
 
@@ -270,7 +300,7 @@ const kahveCayMenu = [
   { title:  t7("title17"), text: t7("text1"), image: drink17 },
 ];
 
-const alkolluIcecekler = [
+const beerMenu = [
   { title: "Efes Malt",          text: "25 cl", image: beer1 },
   { title: "Miller",             text: "25 cl", image: beer2 },
   { title: "Tuborg Wave",        text: "50 cl", image: beer3 },
@@ -287,7 +317,173 @@ const alkolluIcecekler = [
   { title: "Corona",             text: "35 cl", image: beer14 },
 ];
 
-const softIcecekMenu = []; // eklenecek
+const whiskys = [
+  { title: "Chivas Regal",                    text: "35 cl",              image: whisky1 },
+  { title: "Chivas Regal 12 yo",              text: "50 cl",              image: whisky2 },
+  { title: "Chivas Regal 12 yo 50",              text: "75 cl",              image: whisky3 },
+  { title: "Chivas Regal 12 yo 100",              text: "100 cl",             image: whisky4 },
+  { title: "Chivas Regal 18 yo",              text: "70 cl",              image: whisky5 },
+  { title: "Gentleman Jack",                  text: "35 cl",              image: whisky6 },
+  { title: "Glenfiddich 12 yo",               text: "70 cl",              image: whisky7 },
+  { title: "Glenfiddich 15 yo",               text: "70 cl",              image: whisky8 },
+  { title: "Glenfiddich 18 yo",               text: "70 cl",              image: whisky9 },
+  { title: "Glenmorangie 10 yo",              text: "35 cl",              image: whisky10 },
+  { title: "Johnnie Walker Black Label 12 yo 35",text: "35 cl",              image: whisky11 },
+  { title: "Johnnie Walker Black Label 12 yo 70",text: "70 cl",              image: whisky12 },
+  { title: "Johnnie Walker Black Label 18 yo",text: "70 cl",              image: whisky13 },
+  { title: "Johnnie Walker Red Label",        text: "70 cl",              image: whisky14 },
+  { title: "Jack Daniels 35",                    text: "35 cl",              image: whisky15 },
+  { title: "Jack Daniels 50",                    text: "50 cl",              image: whisky16 },
+  { title: "Jack Daniels",                    text: "70 cl",              image: whisky17 },
+  { title: "The Glenlivet 12 yo",             text: "70 cl",              image: whisky18 },
+  { title: "The Glenlivet 15 yo",             text: "70 cl",              image: whisky19 },
+];
+
+ const vodkas = [
+  { title: "Absolut",            text: "50 cl",  image: vodka1 },
+  { title: "Absolut Pears",      text: "70 cl",  image: vodka2 },
+  { title: "Absolut Raspberri",  text: "70 cl",  image: vodka3 },
+  { title: "Smirnoff Vodka 35",     text: "35 cl",  image: vodka4 },
+  { title: "Smirnoff Vodka",     text: "100 cl", image: vodka5 },
+  { title: "Gilbey’s",           text: "70 cl",  image: vodka6 },
+]
+
+ const tekilalar = [
+  { title: "Sierra Tequila", text: "50 cl", image: tequila1 },
+  { title: "Olmeca Tequila", text: "70 cl", image: tequila2 },
+]
+
+ const cinler = [
+  { title: "Gilbey’s Gin", text: "70 cl",  image: gin1 },
+  { title: "Gordon’s",     text: "100 cl", image: gin2 },
+]
+
+ const saraplar = [
+  { title: "Kabatepe Blush",           text: "37.5 cl",  image: wine1 },
+  { title: "Beronia Rose",             text: "75 cl",    image: wine2 },
+  { title: "Casal Mendes Rose",        text: "75 cl",    image: wine3 },
+
+  { title: "Angora Beyaz Şarap",       text: "75 cl",    image: wine4 },
+  { title: "Villa Doluca Beyaz Şarap", text: "18 cl",    image: wine5 },
+  { title: "Villa Doluca Beyaz Şarap", text: "37.5 cl",  image: wine5 },
+
+  { title: "Villa Doluca Beyaz Şarap", text: "75 cl",    image: wine5 },
+  { title: "Selection Beyaz Şarap",    text: "50 cl",    image: wine6 },
+  { title: "Selection Beyaz Şarap",    text: "75 cl",    image: wine6 },
+
+  { title: "Villa Doluca Kırmızı Şarap", text: "37.5 cl", image: wine7 },
+  { title: "Selection Kırmızı Şarap",   text: "50 cl",   image: wine8 },
+  { title: "Selection Kırmızı Şarap",   text: "75 cl",   image: wine8 },
+
+  { title: "İdol Kırmızı Şarap",        text: "75 cl",   image: wine9 },
+  { title: "Diren Collection Red Wine", text: "35 cl",   image: wine9 },
+  { title: "Diren Collection White Wine", text: "35 cl", image: wine9 },
+
+  { title: "Diren Collection Blush",    text: "25 cl",   image: wine9 },
+];
+
+ const sampanyalar = [
+  { title: "Prosecco",           text: "75 cl", image: champagne },
+  { title: "Bella La Mousse",    text: "75 cl", image: champagne },
+]
+
+ const rakilar = [
+  { title: "Tekirdağ",           text: "50 cl", image: raki1 },
+  { title: "Efe Gold",           text: "50 cl", image: raki2 },
+  { title: "Yeni Rakı",          text: "50 cl", image: raki2 },
+]
+
+ const likorler = [
+  { title: "Jägermeister",                       text: "",     image: liqueur1 },
+  { title: "Captain Morgan White Rum",           text: "70 cl", image: liqueur2 },
+  { title: "Archers Schnapps",                   text: "70 cl", image: liqueur3 },
+  { title: "Cardinal Melon",                     text: "70 cl", image: liqueur4 },
+  { title: "Baileys",                             text: "70 cl", image: liqueur5 },
+  { title: "Martini Bianco",                     text: "75 cl", image: liqueur6 },
+  { title: "Hurricane Cocorum",                  text: "100 cl",image: liqueur7 },
+]
+
+ const kokteyller = [
+  {
+    title: "Gin Tonik",
+    text: "Cin ve tonik suyu",
+    image: cocktail1
+  },
+  {
+    title: "Sex on the Beach",
+    text: "Vodka, şeftali aromalı Schnapps, portakal ve kızılcık suyu",
+    image: cocktail2
+  },
+  {
+    title: "Mojito",
+    text: "Esmer şeker, misket limon, taze nane, kırılmış buz, beyaz rom ve soda",
+    image: cocktail3
+  },
+  {
+    title: "Margarita",
+    text: "Tekila, Triple Sec (portakal likörü), limon suyu ve buz",
+    image: cocktail4
+  },
+  {
+    title: "Piña Colada",
+    text: "Ananas, muz, hindistancevizi sütü, hindistancevizi likörü, agave şurubu ve buz",
+    image: cocktail5
+  },
+  {
+    title: "Bloody Mary",
+    text: "Vodka, domates suyu ve çeşitli baharatlar",
+    image: cocktail6
+  },
+  {
+    title: "Daiquiri",
+    text: "Rom, lime suyu, meyve suyu ve kırık buz",
+    image: cocktail7
+  },
+  {
+    title: "Dry Martini",
+    text: "Dry vermut ve cin",
+    image: cocktail8
+  },
+
+  {
+    title: "Alkolsüz Mojito",
+    text: "Maden sodası, lime, esmer şeker ve taze nane",
+    image: cocktail9
+  },
+  {
+    title: "Churchill",
+    text: "Soda, limon suyu ve tuz",
+    image: cocktail10
+  }
+];
+
+ const icedCoffees = [
+  { title: "Francoccino",          text: "", image: icedcoffee1 },
+  { title: "Iced Kaffee Mocha",    text: "", image: icedcoffee2 },
+  { title: "Iced Kaffee Americano",text: "", image: icedcoffee3 },
+  { title: "Iced Kaffee",          text: "", image: icedcoffee4 },
+  { title: "Iced Kaffee Latte",    text: "", image: icedcoffee5 },
+];
+
+ const frozenlar = [
+  { title: "Strawberry Frozen",    text: "", image: frozen1 },
+  { title: "Banana Frozen",        text: "", image: frozen2 },
+];
+
+ const softIcecekMenu = [
+  { title: "Soda",                 text: "", image: soft1 },
+  { title: "Coca-Cola 330 ml",     text: "", image: soft2 },
+  { title: "Coca-Cola 200 ml",     text: "", image: soft3 },
+  { title: "Fanta 330 ml",         text: "", image: soft4 },
+  { title: "Yedigün 200 ml",       text: "", image: soft5 },
+  { title: "Sprite 200 ml",        text: "", image: soft6 },
+  { title: "Redbull",              text: "", image: soft7 },
+  { title: "Burn Enerji İçeceği",  text: "", image: soft8 },
+  { title: "Schweppes Tonik",      text: "", image: soft9 },
+  { title: "Juss Kayısı Meyvesuyu",text: "", image: soft10 },
+  { title: "Juss Vişne Suyu",      text: "", image: soft11 },
+  { title: "Sıkma Portakal Suyu",  text: "", image: soft12 },
+];
 
 const menuData = {
   kahvalti:       kahvaltiMenu,
@@ -295,9 +491,14 @@ const menuData = {
   "ana-yemek":    anaYemekMenu,
   atistirmalik:   atistirmalikMenu,
   salatalar:      salatalarMenu,
-  "alkollu-icecek": [],
-  kokteyller:     [],
+  "alkollu-icecek": beerMenu,
+  "beers":beerMenu,
+  "whisky":whiskys,
+  "vodka":vodkas,
+  "tequila":tekilalar,
+  kokteyller:     kokteyller,
   "kahve-cay":    kahveCayMenu,
+  "iced-coffee":icedCoffees,
   "soft-icecek":  softIcecekMenu,
 };
 
