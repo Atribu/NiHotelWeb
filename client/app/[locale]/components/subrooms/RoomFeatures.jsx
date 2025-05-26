@@ -65,12 +65,12 @@ export default function RoomFeatures() {
    {/* dıştaki border container */}
    <div className="border-l border-r border-t border-gray-200 rounded-lg overflow-hidden">
      {/* slider */}
-     <div className="overflow-hidden py-5" ref={emblaRef}>
+     <div className="overflow-hidden py-6" ref={emblaRef}>
        <div className="flex">
          {pages.map((slide, idx) => (
            <div key={idx} className="min-w-full px-4">
              {/* iki sütun arası divide-x */}
-             <div className="grid grid-cols-2 gap-y-6">
+             <div className="grid grid-cols-2 gap-y-4 lg:gap-y-6">
                {slide.map(({ src, label }, j) => (
                  <div
                    key={j}
@@ -81,7 +81,15 @@ export default function RoomFeatures() {
                      alt={label}
                      width={24}
                      height={24}
-                     className="object-contain"
+                     className="object-contain hidden lg:flex"
+                   />
+
+                 <Image
+                     src={src}
+                     alt={label}
+                     width={20}
+                     height={20}
+                     className="object-contain flex lg:hidden"
                    />
                   <span className="text-xs text-gray-700 whitespace-nowrap">
                      {label}

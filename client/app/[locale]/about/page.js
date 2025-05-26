@@ -16,7 +16,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* BANNER */}
-      <section className="relative h-[50vh] lg:h-[60vh]">
+      <section className="relative h-[50vh] lg:h-[60vh] ">
         <Image
           src={aboutBanner}
           alt="NiHotel Hakkımızda Banner"
@@ -31,14 +31,15 @@ export default function AboutPage() {
       </section>
 
       {/* İÇERİK + GÖRSEL */}
-      <section className="container mx-auto px-4 py-7 lg:py-12 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="container mx-auto px-4 py-10 lg:py-12 md:px-8 font-['Cormorant_Garamond'] font-bold">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-center lg:text-start justify-center">
           {/* Metin bölümü */}
-          <div className="space-y-6">
-            <p className="text-gray-700 text-[14px] lg:text-[16px] md:text-lg lg::text-xl leading-relaxed">
+          <div className="space-y-9">
+            <p className="text-gray-700 text-[16px] lg:text-[18px] md:text-lg lg::text-xl leading-relaxed">
               {t("text1")}
             </p>
-            <p className="text-gray-700 text-[14px] lg:text-[16px] md:text-xl leading-relaxed">
+            <div className="flex h-[1px] w-[80%] bg-gray-200 mx-auto"></div>
+            <p className="text-gray-700 text-[16px] lg:text-[18px] md:text-xl leading-relaxed">
               {t("text2")}
             </p>
           </div>

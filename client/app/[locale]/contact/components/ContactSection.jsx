@@ -19,17 +19,17 @@ export default function ContactSection() {
           <p className="text-gray-600 w-[88%] lg:w-[70%]"> {t("text")}   
           </p>
 
-          <ul className="grid grid-cols-1 sm:grid-cols-2 space-y-4 lg:w-[50%] items-center justify-center text-center">
-            <li className="flex items-center gap-3 justify-center text-center">
-              <FiPhone className="h-6 w-6 text-irenicBlack2" />
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-0 lg:space-y-4 lg:w-[50%] items-center justify-center text-center my-6">
+            <li className="flex items-center gap-1 lg:gap-3 justify-center text-center">
+              <FiPhone className="h-6 w-6 text-black" />
               <span className="text-gray-700">+90 242 212 12 64</span>
             </li>
-            <li className="flex items-center gap-3 justify-center text-center">
-              <FiMail className="h-6 w-6 text-irenicBlack2" />
+            <li className="flex items-center gap-1 lg:gap-3 justify-center text-center">
+              <FiMail className="h-6 w-6 text-black" />
               <span className="text-gray-700">callcenter@nihotel.com</span>
             </li>
-            <li className="flex items-center gap-3 justify-center text-center col-span-2">
-              <FiMapPin className="h-6 w-6 text-irenicBlack2" />
+            <li className="flex items-center gap-1 lg:gap-3 justify-center text-center col-span-2">
+              <FiMapPin className="h-6 w-6 text-black" />
               <span className="text-gray-700">
                 Çağlayan Mah. 1005 Sk. No:30 Muratpaşa/Antalya
               </span>
@@ -38,16 +38,16 @@ export default function ContactSection() {
 
           <div className="flex space-x-4 mt-4  ">
             <a href="https://www.facebook.com/" aria-label="Facebook">
-              <FaFacebookF className="h-5 w-5 text-gray-500 hover:text-irenicBlack" />
+              <FaFacebookF className="h-5 w-5 text-gray-500 hover:text-black" />
             </a>
             <a href="https://x.com/" aria-label="Twitter">
-              <FaTwitter className="h-5 w-5 text-gray-500 hover:text-irenicBlack" />
+              <FaTwitter className="h-5 w-5 text-gray-500 hover:text-black" />
             </a>
             <a href="https://www.instagram.com/" aria-label="Instagram">
-              <FaInstagram className="h-5 w-5 text-gray-500 hover:text-irenicBlack" />
+              <FaInstagram className="h-5 w-5 text-gray-500 hover:text-black" />
             </a>
             <a href="https://www.youtube.com/" aria-label="YouTube">
-              <FaYoutube className="h-5 w-5 text-gray-500 hover:text-irenicBlack" />
+              <FaYoutube className="h-5 w-5 text-gray-500 hover:text-black" />
             </a>
           </div>
         </div>

@@ -132,7 +132,7 @@ useEffect(() => {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`flex cursor-pointer border border-lagoGray items-center justify-center whitespace-nowrap py-[12px] px-[16px] lg:py-[16px] lg:px-[20px] lg:w-[140px] text-[12px] lg:text-[14px] font-medium uppercase leading-[125%] -tracking-[0.33px] font-jost ${
+              className={`flex cursor-pointer border border-gray-800 items-center justify-center whitespace-nowrap py-[12px] px-[16px] lg:py-[16px] lg:px-[20px] lg:w-[140px] text-[12px] lg:text-[14px] font-medium uppercase leading-[125%] -tracking-[0.33px] font-jost ${
                 selectedCategory === category ? "bg-gray-800 text-white" : "text-gray-800"
               }`}
             >

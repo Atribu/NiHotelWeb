@@ -218,7 +218,7 @@ export default function Header() {
       href="https://www.facebook.com/p/Ni-Hotel-Lara-100075601707373/"
       target="_blank"
       rel="noopener noreferrer"
-      className="hover:text-lagoPink transition-transform hover:scale-110"
+      className="hover:text-yellow-200 transition-transform hover:scale-110"
     >
       <FaFacebookF />
     </a>
@@ -226,7 +226,7 @@ export default function Header() {
       href="https://www.instagram.com/nihotellara/"
       target="_blank"
       rel="noopener noreferrer"
-      className="hover:text-lagoPink transition-transform hover:scale-110"
+      className="hover:text-yellow-200 transition-transform hover:scale-110"
     >
       <FaInstagram />
     </a>
@@ -234,7 +234,7 @@ export default function Header() {
       href="https://twitter.com"
       target="_blank"
       rel="noopener noreferrer"
-      className="hover:text-lagoPink transition-transform hover:scale-110"
+      className="hover:text-yellow-200 transition-transform hover:scale-110"
     >
       <FaXTwitter />
     </a>
