@@ -12,12 +12,14 @@ import Image from "next/image";
 import Link from "next/link";
 import clock from "../../../../public/svg/SAATSON.svg"
 import CardwLogo from "./CardwLogo";
+import fil from "../../../..//public/images/fil.png"
+import heykel from "../../../../public/images/heykel.png"
 
 export default function SplitImageSection() {
   const t = useTranslations('About');
 
   return (
-    <section className="mb-[70px] md:mb-[85px] flex justify-center lg:mb-[50px] lg:mt-[30px] lg:px-4 xl:mb-[65px] xl:mt-[40px] 2xl:mb-[80px] 2xl:mt-[45px] 3xl:mb-[100px] 3xl:mt-[60px] 4xl:mb-[130px] 4xl:mt-[75px] 5xl:mb-[200px] 5xl:mt-[120px]">
+    <section className="relative mb-[70px] md:mb-[85px] flex justify-center lg:mb-[50px] lg:mt-[30px] lg:px-4 xl:mb-[65px] xl:mt-[40px] 2xl:mb-[80px] 2xl:mt-[45px] 3xl:mb-[100px] 3xl:mt-[60px] 4xl:mb-[130px] 4xl:mt-[75px] 5xl:mb-[200px] 5xl:mt-[120px]">
       <div className=" relative mt-[75px] md:mt-[85px] w-[390px] md:w-[410px] lg:mt-10 lg:w-[540px] xl:w-[620px] 2xl:w-[820px] 3xl:w-[920px] 4xl:w-[1250px] 5xl:w-[1850px]">
         <div className=" absolute -top-20 -left-20 md:-top-24 md:-left-28 xl:top-20 2xl:-top-36 lg:-left-36 2xl:-left-44">
           <Image src={clock} alt="hotel" className="text-[210px] lg:text-[305px] xl:text-[700px] hidden 2xl:flex 2xl:text-[800px]" width={900} height={900} />
@@ -38,10 +40,7 @@ export default function SplitImageSection() {
               btnText= {t("explore")}
               filter={"bg-black/30"}
               href={"/rooms"}
-              cliped={true}
-            >
-              
-                {/* <InoneCardLogo className="text-xl sm:text-3xl md:text-3xl  lg:ml-[-9px] lg:text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl" /> */}
+              cliped={true}>
             </CardwLogo>
          
           </div>
@@ -56,15 +55,13 @@ export default function SplitImageSection() {
             text=  {t("text2")}
             filter={"bg-black/30"}
             btnText={t("explore")}
-            
-            cliped={false}
-          >
-                {/* <IconicCardLogo className="text-xl sm:text-3xl md:text-3xl  lg:ml-[-9px] lg:text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl" /> */}
+            cliped={false}>
           </CardwLogo>
         
         </div>
       </div>
-   
+      <Image src={fil} alt='portre' width={300} height={800} className='hidden lg:flex xl:hidden absolute top-[125px] -right-[1%] z-[1] transform -rotate-[10deg] opacity-20'/>
+      <Image src={fil} alt='portre' width={400} height={1000} className='hidden xl:flex absolute top-[230px] -right-[2%] z-[1] transform -rotate-[10deg] opacity-20'/>
     </section>
   );
 }

@@ -13,8 +13,6 @@ import ReservationSection from '../../components/generalComponents/ReservationSe
 import { useTranslations } from 'next-intl';
 import RoomTour from '../../components/rooms/RoomTour'
 import DiscoverRooms from '../../components/rooms/DiscoverRooms'
-import img from "../../../../public/svg/PORTRESON.svg"
-import Image from 'next/image'
 
 const Page = () => {
   const t = useTranslations('JuniorRoom');
@@ -49,7 +47,7 @@ const Page = () => {
     <RoomFeatures/>
     <RoomTour link="https://kuula.co/share/n1/collection/71cN8"/>
     <DiscoverRooms header={t2("header")} buttonText={t2("buttonText")} name1={t2("name1")} description1={t2("description1")} name2={t2("name2")} description2={t2("description2")} name3={t2("name3")} description3={t2("description3")} link1="/rooms/standardroom" link2="/rooms/cornerroom" link3="/rooms/verandaroom"/>
-    <Image src={img} alt='portre' width={800} height={1400} className='hidden lg:flex absolute top-[1180px] left-0 z-[1]'/>
+
     </div>
   )
 }

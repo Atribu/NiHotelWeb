@@ -4,16 +4,16 @@
 import React from 'react';
 import Image from 'next/image';
 import img2 from '../../../../public/images//antalyakaleici.png';
-import img from '../../../../public/images/antalyaview2.jpg';
 import { useTranslations } from 'next-intl';
+import heykel from "../../../../public/images/heykel.png"
 
 export default function BackgroundImage() {
   const t = useTranslations('Footer');
 
   return (
-    <div className="flex flex-col lg:max-h-[90vh] w-screen bg-center bg-cover justify-center items-center relative gap-8 mt-5 ">
+    <div className="flex flex-col lg:max-h-[90vh] w-screen bg-center bg-cover justify-center items-center relative gap-8 mt-5 z-[50]">
       {/* Text overlay */}
-      <div className="z-10 flex flex-col w-[65%] lg:w-[40%] max-w-[400px] gap-2 lg:gap-4 items-center justify-center text-center">
+      <div className="z-[10] flex flex-col w-[65%] lg:w-[40%] max-w-[400px] gap-2 lg:gap-4 items-center justify-center text-center">
         <h2 className="text-[26px] lg:text-[32px] font-['Cormorant_Garamond'] font-bold">
           LARA / ANTALYA
         </h2>
@@ -38,7 +38,11 @@ export default function BackgroundImage() {
                      bg-[linear-gradient(180deg,rgba(255,255,255,0.9)_0%,rgba(255,255,255,0)_100%)] 
                      pointer-events-none"
         />
+       
       </div>
+      <Image src={heykel} alt='heykel' width={900} height={900} className='hidden xl:flex absolute -top-[400px] left-[40%] z-[100] transform opacity-20'/>
+      <Image src={heykel} alt='heykel' width={600} height={600} className='hidden lg:flex xl:hidden absolute -top-[260px] left-[42%] z-[1] transform  opacity-20'/>
+     
     </div>
   );
 }

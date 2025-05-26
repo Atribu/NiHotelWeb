@@ -26,13 +26,9 @@ export default function ContactSection() {
             </li>
             <li className="flex items-center gap-3 justify-center text-center">
               <FiMail className="h-6 w-6 text-irenicBlack2" />
-              <span className="text-gray-700">info@nihotel.com</span>
-            </li>
-            <li className="flex items-center gap-3 justify-center text-center">
-              <FiMail className="h-6 w-6 text-irenicBlack2" />
               <span className="text-gray-700">callcenter@nihotel.com</span>
             </li>
-            <li className="flex items-center gap-3 justify-center text-center">
+            <li className="flex items-center gap-3 justify-center text-center col-span-2">
               <FiMapPin className="h-6 w-6 text-irenicBlack2" />
               <span className="text-gray-700">
                 Çağlayan Mah. 1005 Sk. No:30 Muratpaşa/Antalya

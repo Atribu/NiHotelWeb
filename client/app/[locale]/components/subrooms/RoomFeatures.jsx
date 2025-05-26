@@ -19,6 +19,7 @@ import safe from "../../../../public/images/rooms/safe2.png";
 import coffee from "../../../../public/images/rooms/coffee2.png";
 import makeuptable from "../../../../public/images/rooms/table.png";
 import hairdryer from "../../../../public/images/rooms/hairdryer2.png";
+import img from "../../../../public/svg/PORTRESON.svg"
 
 export default function RoomFeatures() {
   const t = useTranslations('RoomFeatures');
@@ -43,7 +44,7 @@ export default function RoomFeatures() {
   const pages = Array.from({ length: pageCount }, (_, i) => features.slice(i * 6, i * 6 + 6));
 
   return (
-    <section className="py-10 lg:py-16 bg-white">
+    <section className="py-10 lg:py-16 bg-white relative">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-[24px] lg:text-3xl font-['Cormorant_Garamond'] font-bold mb-2 lg:mb-8">
           {t("header")}
@@ -92,6 +93,7 @@ export default function RoomFeatures() {
           <strong>{t("rulesHeader")}</strong> {t("rulesDetails")}
         </p>
       </div>
+      <Image src={img} alt='portre' width={800} height={1400} className='hidden lg:flex absolute -top-[250px] -left-[65%] z-[1]'/>
     </section>
   );
 }
