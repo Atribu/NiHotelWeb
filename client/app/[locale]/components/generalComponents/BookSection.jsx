@@ -32,7 +32,7 @@ const BookSection = () => {
           href="https://nihotellara.rezervasyonal.com/en/?currency=EUR&language=en&hideLayout=1&Checkin=2025-05-14&Checkout=2025-05-15&Adult=3&child=0&ChildAges="
           target="_blank"
           rel="noopener noreferrer"
-          className='flex md:hidden whitespace-nowrap text-white bg-black py-[8px] px-[24px] absolute left-1/2 -translate-x-1/2 cursor-pointer'
+          className='flex md:hidden whitespace-nowrap text-white bg-[#dec7a6] py-[8px] px-[24px] min-w-[200px] text-center items-center justify-center rounded-sm absolute left-1/2 -translate-x-1/2 cursor-pointer'
         >
           {t("booknow")}
         </a>

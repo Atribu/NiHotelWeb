@@ -70,8 +70,8 @@ export default function ContactSection() {
           <Image
             src={callcenter}
             alt="Contact Illustration"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
             className="object-cover"
           />
         </div>
