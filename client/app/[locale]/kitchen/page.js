@@ -76,6 +76,85 @@ import drink15 from "../../../public/images/menu/drinks/elmatea.webp"
 import drink16 from "../../../public/images/menu/drinks/greetea.webp"
 import drink17 from "../../../public/images/menu/drinks/tea.webp"
 
+import beer1 from "../../../public/images/menu/drinks/beers/efes.webp"
+import beer2 from "../../../public/images/menu/drinks/beers/miller.webp"
+import beer3 from "../../../public/images/menu/drinks/beers/wave.webp"
+import beer4 from "../../../public/images/menu/drinks/beers/tuborgfiltresiz.webp"
+import beer5 from "../../../public/images/menu/drinks/beers/malt.webp"
+import beer6 from "../../../public/images/menu/drinks/beers/amber.webp"
+import beer7 from "../../../public/images/menu/drinks/beers/luna.webp"
+import beer8 from "../../../public/images/menu/drinks/beers/carlsberg.webp"
+import beer9 from "../../../public/images/menu/drinks/beers/blanc.webp"
+import beer10 from "../../../public/images/menu/drinks/beers/solbia.webp"
+import beer11 from "../../../public/images/menu/drinks/beers/desperados.webp"
+import beer12 from "../../../public/images/menu/drinks/beers/weihen.webp"
+import beer13 from "../../../public/images/menu/drinks/beers/guinness.webp"
+import beer14 from "../../../public/images/menu/drinks/beers/corona.webp"
+
+import whiskey1 from "../../../public/images/menu/drinks/whiskeys/regal35.webp"
+import whiskey2 from "../../../public/images/menu/drinks/whiskeys/chivas12.webp"
+import whiskey3 from "../../../public/images/menu/drinks/whiskeys/chivas75.webp"
+import whiskey4 from "../../../public/images/menu/drinks/whiskeys/chivas121000.webp"
+import whiskey5 from "../../../public/images/menu/drinks/whiskeys/regal1875.webp"
+import whiskey6 from "../../../public/images/menu/drinks/whiskeys/jack35.webp"
+import whiskey7 from "../../../public/images/menu/drinks/whiskeys/glenfiddic.webp"
+import whiskey8 from "../../../public/images/menu/drinks/whiskeys/glenfiddich1570.webp"
+import whiskey9 from "../../../public/images/menu/drinks/whiskeys/glenfiddich1870.webp"
+import whiskey10 from "../../../public/images/menu/drinks/whiskeys/glenmorangie.webp"
+import whiskey11 from "../../../public/images/menu/drinks/whiskeys/walker1235.webp"
+import whiskey12 from "../../../public/images/menu/drinks/whiskeys/walker1270.webp"
+import whiskey13 from "../../../public/images/menu/drinks/whiskeys/walker1870.webp"
+import whiskey14 from "../../../public/images/menu/drinks/whiskeys/walkerred.webp"
+import whiskey15 from "../../../public/images/menu/drinks/whiskeys/daniel35.webp"
+import whiskey16 from "../../../public/images/menu/drinks/whiskeys/daniel50.webp"
+import whiskey17 from "../../../public/images/menu/drinks/whiskeys/daniels70.webp"
+import whiskey18 from "../../../public/images/menu/drinks/whiskeys/glenlivet12.webp"
+import whiskey19 from "../../../public/images/menu/drinks/whiskeys/glenlivet15.webp"
+
+import tequila1 from "../../../public/images/menu/drinks/tequila/sierra.webp"
+import tequila2 from "../../../public/images/menu/drinks/tequila/olmeca.webp"
+
+import gin1 from "../../../public/images/menu/drinks/gins/gilbeysgin.webp"
+import gin2 from "../../../public/images/menu/drinks/gins/gordons.webp"
+
+import wine1 from "../../../public/images/menu/drinks/wines/kabatepe.webp"
+import wine2 from "../../../public/images/menu/drinks/wines/beroniarose.webp"
+import wine3 from "../../../public/images/menu/drinks/wines/casalmendesrose.webp"
+import wine4 from "../../../public/images/menu/drinks/wines/angorabeyaz.webp"
+import wine5 from "../../../public/images/menu/drinks/wines/dolucabeyaz18.webp"
+import wine6 from "../../../public/images/menu/drinks/wines/selectionbeyaz.webp"
+import wine7 from "../../../public/images/menu/drinks/wines/dolucared37.webp"
+import wine8 from "../../../public/images/menu/drinks/wines/selectonred.webp"
+import wine9 from "../../../public/images/menu/drinks/wines/idolred.webp"
+
+import champagne from "../../../public/images/menu/drinks/champagnes/prosecco.webp"
+
+import raki1 from "../../../public/images/menu/drinks/raki/tekirdag.webp"
+import raki2 from "../../../public/images/menu/drinks/raki/efesgold.webp"
+import raki3 from "../../../public/images/menu/drinks/raki/yeniraki.webp"
+
+import liqueur1 from "../../../public/images/menu/drinks/liqueurs/jager.webp"
+import liqueur2 from "../../../public/images/menu/drinks/liqueurs/whiterum.webp"
+import liqueur3 from "../../../public/images/menu/drinks/liqueurs/archers.webp"
+import liqueur4 from "../../../public/images/menu/drinks/liqueurs/cardinal.webp"
+import liqueur5 from "../../../public/images/menu/drinks/liqueurs/baileys.webp"
+import liqueur6 from "../../../public/images/menu/drinks/liqueurs/martini.webp"
+import liqueur7 from "../../../public/images/menu/drinks/liqueurs/hurricane.webp"
+
+import cocktail1 from "../../../public/images/menu/drinks/cocktails/cintonik.webp"
+import cocktail2 from "../../../public/images/menu/drinks/cocktails/beach.webp"
+import cocktail3 from "../../../public/images/menu/drinks/cocktails/mojito.webp"
+import cocktail4 from "../../../public/images/menu/drinks/cocktails/margarita.webp"
+import cocktail5 from "../../../public/images/menu/drinks/cocktails/pinacolada.webp"
+import cocktail6 from "../../../public/images/menu/drinks/cocktails/bloodymary.webp"
+import cocktail7 from "../../../public/images/menu/drinks/cocktails/daiquiri.webp"
+import cocktail8 from "../../../public/images/menu/drinks/cocktails/drymartini.webp"
+import cocktail9 from "../../../public/images/menu/drinks/cocktails/alkolsuzmojito.webp"
+import cocktail10 from "../../../public/images/menu/drinks/cocktails/churchill.webp"
+
+import frozen1 from "../../../public/images/menu/drinks/frozen/strawberry.webp"
+import frozen2 from "../../../public/images/menu/drinks/frozen/banana.webp"
+
 export default function FoodPage() {
   const t = useTranslations('Kitchen');
   const t2 = useTranslations('Kitchen.Breakfast');
@@ -191,6 +270,23 @@ const kahveCayMenu = [
   { title:  t7("title17"), text: t7("text1"), image: drink17 },
 ];
 
+const alkolluIcecekler = [
+  { title: "Efes Malt",          text: "25 cl", image: beer1 },
+  { title: "Miller",             text: "25 cl", image: beer2 },
+  { title: "Tuborg Wave",        text: "50 cl", image: beer3 },
+  { title: "Tuborg Filtresiz",   text: "50 cl", image: beer4 },
+  { title: "Tuborg Malt",        text: "50 cl", image: beer5 },
+  { title: "Tuborg Amber",       text: "50 cl", image: beer6 },
+  { title: "Carlsberg Luna",     text: "50 cl", image: beer7 },
+  { title: "Carlsberg",          text: "50 cl", image: beer8 },
+  { title: "Blanc",              text: "33 cl", image: beer9 },
+  { title: "Sol Bia",            text: "33 cl", image: beer10 },
+  { title: "Desperados",         text: "33 cl", image: beer11 },
+  { title: "Weihenstephaner",    text: "33 cl", image: beer12 },
+  { title: "Guinness",           text: "44 cl", image: beer13 },
+  { title: "Corona",             text: "35 cl", image: beer14 },
+];
+
 const softIcecekMenu = []; // eklenecek
 
 const menuData = {
@@ -246,7 +342,7 @@ const menuData = {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {items.map(item => (
                       <div key={item.title} className="flex items-start space-x-4 transform transition-transform duration-200 hover:scale-105 hover:shadow-lg p-2 rounded-lg">
-                        <Image src={item.image} alt={item.title} width={80} height={80} className="rounded-full object-cover w-[80px] h-[80px]" />
+                        <Image src={item.image} alt={item.title} width={80} height={80} className="flex rounded-full object-cover w-[80px] h-[80px]" />
                         <div className="flex flex-col">
                           <h3 className="font-medium">{item.title}</h3>
                           <p className="text-sm text-gray-600">{item.text}</p>
