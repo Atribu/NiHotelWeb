@@ -200,11 +200,18 @@ const sections = [
   { id: "salatalar",      label: t("salads") },
   { id: "alkollu-icecek", label: t("alcoholicDrinks") },
   { id: "beers", label: "Biralar"},
-  { id: "whisky",     label:"whisky",},
-  { id: "vodka",     label:"vodkas",},
-  { id: "tequila",     label:"tequilas",},
+  { id: "whiskys",     label:"whisky",},
+  { id: "vodkas",     label:"vodkas",},
+  { id: "tequilas",     label:"tequilas",},
+  { id: "gins",     label:"gins",},
+  { id: "wines",     label:"wines",},
+  { id: "champagnes",     label:"champagnes",},
+  { id: "rakis",     label:"rakis",},
+  { id: "liqueurs",     label:"liqueurs",},
+  { id: "cocktails",     label:"cocktails",},
   { id: "kahve-cay",      label: t("coffeeTea") },
   { id: "iced-coffee",      label: "iced coffees",},
+  { id: "frozen",      label: "frozen",},
   { id: "soft-icecek",    label: t("softDrinks") },
 ];
 
@@ -348,31 +355,31 @@ const whiskys = [
   { title: "Gilbey’s",           text: "70 cl",  image: vodka6 },
 ]
 
- const tekilalar = [
+ const tequilaMenu = [
   { title: "Sierra Tequila", text: "50 cl", image: tequila1 },
   { title: "Olmeca Tequila", text: "70 cl", image: tequila2 },
 ]
 
- const cinler = [
+ const ginMenu = [
   { title: "Gilbey’s Gin", text: "70 cl",  image: gin1 },
   { title: "Gordon’s",     text: "100 cl", image: gin2 },
 ]
 
- const saraplar = [
+ const wineMenu = [
   { title: "Kabatepe Blush",           text: "37.5 cl",  image: wine1 },
   { title: "Beronia Rose",             text: "75 cl",    image: wine2 },
   { title: "Casal Mendes Rose",        text: "75 cl",    image: wine3 },
 
   { title: "Angora Beyaz Şarap",       text: "75 cl",    image: wine4 },
-  { title: "Villa Doluca Beyaz Şarap", text: "18 cl",    image: wine5 },
-  { title: "Villa Doluca Beyaz Şarap", text: "37.5 cl",  image: wine5 },
+  { title: "Villa Doluca Beyaz Şarap 18cl", text: "18 cl",    image: wine5 },
+  { title: "Villa Doluca Beyaz Şarap 37.5cl", text: "37.5 cl",  image: wine5 },
 
   { title: "Villa Doluca Beyaz Şarap", text: "75 cl",    image: wine5 },
-  { title: "Selection Beyaz Şarap",    text: "50 cl",    image: wine6 },
+  { title: "Selection Beyaz Şarap 50cl",    text: "50 cl",    image: wine6 },
   { title: "Selection Beyaz Şarap",    text: "75 cl",    image: wine6 },
 
   { title: "Villa Doluca Kırmızı Şarap", text: "37.5 cl", image: wine7 },
-  { title: "Selection Kırmızı Şarap",   text: "50 cl",   image: wine8 },
+  { title: "Selection Kırmızı Şarap 50cl",   text: "50 cl",   image: wine8 },
   { title: "Selection Kırmızı Şarap",   text: "75 cl",   image: wine8 },
 
   { title: "İdol Kırmızı Şarap",        text: "75 cl",   image: wine9 },
@@ -382,18 +389,18 @@ const whiskys = [
   { title: "Diren Collection Blush",    text: "25 cl",   image: wine9 },
 ];
 
- const sampanyalar = [
+ const champagneMenu = [
   { title: "Prosecco",           text: "75 cl", image: champagne },
   { title: "Bella La Mousse",    text: "75 cl", image: champagne },
 ]
 
- const rakilar = [
+ const rakiMenu = [
   { title: "Tekirdağ",           text: "50 cl", image: raki1 },
   { title: "Efe Gold",           text: "50 cl", image: raki2 },
   { title: "Yeni Rakı",          text: "50 cl", image: raki2 },
 ]
 
- const likorler = [
+ const liqueurMenu = [
   { title: "Jägermeister",                       text: "",     image: liqueur1 },
   { title: "Captain Morgan White Rum",           text: "70 cl", image: liqueur2 },
   { title: "Archers Schnapps",                   text: "70 cl", image: liqueur3 },
@@ -403,7 +410,7 @@ const whiskys = [
   { title: "Hurricane Cocorum",                  text: "100 cl",image: liqueur7 },
 ]
 
- const kokteyller = [
+ const cocktailMenu = [
   {
     title: "Gin Tonik",
     text: "Cin ve tonik suyu",
@@ -465,7 +472,7 @@ const whiskys = [
   { title: "Iced Kaffee Latte",    text: "", image: icedcoffee5 },
 ];
 
- const frozenlar = [
+ const frozenMenu = [
   { title: "Strawberry Frozen",    text: "", image: frozen1 },
   { title: "Banana Frozen",        text: "", image: frozen2 },
 ];
@@ -491,14 +498,20 @@ const menuData = {
   "ana-yemek":    anaYemekMenu,
   atistirmalik:   atistirmalikMenu,
   salatalar:      salatalarMenu,
-  "alkollu-icecek": beerMenu,
+  // "alkollu-icecek": beerMenu,
   "beers":beerMenu,
-  "whisky":whiskys,
-  "vodka":vodkas,
-  "tequila":tekilalar,
-  kokteyller:     kokteyller,
+  "whiskys":whiskys,
+  "vodkas":vodkas,
+  "tequilas":tequilaMenu,
+  "gins":ginMenu,
+  "wines":wineMenu,
+  "champagnes":champagneMenu,
+  "rakis":rakiMenu,
+  "liqueurs":liqueurMenu,
+  kokteyller:     cocktailMenu,
   "kahve-cay":    kahveCayMenu,
   "iced-coffee":icedCoffees,
+  "frozen":frozenMenu,
   "soft-icecek":  softIcecekMenu,
 };
 
@@ -532,7 +545,7 @@ const menuData = {
             <Link key={sec.id} href={`#${sec.id}`} className="block px-4 py-2 text-gray-700 hover:text-black text-[14px] lg:text-[18px] font-jost font-semibold golge ">{sec.label}</Link>
           ))}
         </nav>
-        <div className="absolute left-[28%] w-[1px] h-[600px] bg-gray-400"></div>
+        {/* <div className="absolute left-[30%] w-[1px] h-[600px] bg-gray-300"></div> */}
         <div className="lg:col-span-3 space-y-24">
           {sections.map(sec => {
             const items = menuData[sec.id] || [];
@@ -540,7 +553,7 @@ const menuData = {
               <section key={sec.id} id={sec.id} className="scroll-mt-24">
                 <h2 className="text-2xl font-jost font-bold mb-6">{sec.label}</h2>
                 {items.length > 0 && (
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {items.map(item => (
                       <div key={item.title} className="flex items-start space-x-4 transform transition-transform duration-200 hover:scale-105 hover:shadow-lg p-2 rounded-lg">
                         <Image src={item.image} alt={item.title} width={80} height={80} className="flex rounded-full object-cover w-[80px] h-[80px]" />
