@@ -8,6 +8,9 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import CookiePopup from "./components/generalComponents/CookiePopup";
 import BookSection from './components/generalComponents/BookSection'
+import ConnexeaseLoader from "./components/generalComponents/ConnexeaseLoader";
+import Script from 'next/script';
+import ChatWidget from "./components/generalComponents/ChatWidget";
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -57,13 +60,20 @@ export default async function RootLayout({ children, params }) {
   const messages = await getMessages();
   return (
     <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} ${jost.variable} antialiased`}>
-      <body className="overflow-x-hidden">
-        <NextIntlClientProvider locale={locale} messages={messages}>
+      <head>
+        <Script
+          strategy="lazyOnload" 
+          src="https://cdn.livechat.connexease.com/embed.js"
+        />
+      </head>
+      <body className="overflow-x-hidden ">
+      <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
-          <BookSection key={locale} />
+          <BookSection/>
+         {/* <ChatWidget/> */}
           {children}
-          <CookiePopup/>
-          <Footer/>
+          <CookiePopup />
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

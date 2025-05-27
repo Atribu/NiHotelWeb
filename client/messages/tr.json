@@ -18,7 +18,8 @@
       "verandaRoom": "Veranda Oda",
       "cornerRoom": "Köşe Oda",
       "gallery": "GALERİ",
-        "lobby": "Lobi"
+        "lobby": "Lobi",
+        "chat": "Sohbet"
     },
 
     "Footer": {
@@ -47,7 +48,7 @@
   "label1": "Güçlü Wi-Fi",
   "label2": "Hoş Geldin İkramı",
   "label3": "Açık Büfe Kahvaltı",
-  "label4": "Denize Sıfır",
+  "label4": "Merkezi Konum",
   "label5": "Günlük Temizlik"
   },
 

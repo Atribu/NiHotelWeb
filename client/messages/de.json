@@ -18,7 +18,8 @@
     "verandaRoom": "Verandazimmer",
     "cornerRoom": "Eckzimmer",
     "gallery": "GALERIE",
-     "lobby": "Lobby"
+     "lobby": "Lobby",
+      "chat": "Chat"
     },
 
 
@@ -48,7 +49,7 @@
     "label1": "Starkes WLAN",
     "label2": "Willkommensgruß",
     "label3": "Frühstücksbuffet",
-    "label4": "Direkt am Meer",
+     "label4": "Zentrale Lage",
     "label5": "Tägliche Reinigung"
   },
 

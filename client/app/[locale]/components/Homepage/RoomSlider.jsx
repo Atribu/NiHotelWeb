@@ -51,15 +51,17 @@ export default function RoomSlider() {
   const prev = () => setIndex(i => (i - 1 + count) % count);
   const next = () => setIndex(i => (i + 1) % count);
 
+  const slideWidth = 80; // mobilde her slide %80 genişlik
+
   return (
     <div className="relative max-w-screen py-10">
       <div className="flex flex-col lg:grid lg:grid-cols-14 gap-4 items-center relative z-10">
         {/* Soldaki Sabit */}
         <div className="flex flex-col lg:hidden w-full ml-[10%]">
-            <h2 className="text-[16px] font-semibold font-['Cormorant_Garamond'] uppercase text-black">
+            <h2 className="text-[18px] font-semibold font-['Cormorant_Garamond'] uppercase text-black">
               {t("header")}
             </h2>
-            <p className="mt-1 text-[12px] font-jost leading-normal text-black w-[90%]">
+            <p className="mt-1 text-[13px] font-jost leading-tight text-black w-[90%]">
               {t("text")}
             </p>
           </div> 
@@ -84,20 +86,20 @@ export default function RoomSlider() {
         </div>
 
         {/* Ortadaki Slider */}
-        <div className="relative col-span-5 overflow-hidden shadow-md w-[97%] sm:w-[80%] lg:w-full h-[440px] lg:h-[500px]">
+        <div className="relative col-span-5 overflow-hidden lg:shadow-md w-[97%] sm:w-[80%] lg:w-full h-[330px] md:h-[400px] lg:h-[500px]">
           {/* Prev */}
           <button
             onClick={prev}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 z-30 bg-white p-1 shadow-lg"
+            className="hidden lg:flex absolute left-2 top-1/2 transform -translate-y-1/2 z-30 bg-white p-1 shadow-lg"
           >
             <AiOutlineLeft className="w-5 h-5" />
           </button>
 
           {/* Slides */}
           <div
-            className="flex h-full transition-transform duration-500 ease-in-out"
+            className="flex lg:hidden h-full transition-transform duration-500 ease-in-out gap-3"
             style={{
-              width: `${count * 100}%`,
+              width: `${count * 80}%`,
               transform: `translateX(-${index * (100 / count)}%)`,
             }}
           >
@@ -106,12 +108,12 @@ export default function RoomSlider() {
                 <div className="relative w-full h-full">
                   <Image src={slide.image} alt={slide.title} fill className="object-cover" />
                 </div>
-                <div className="w-full p-4 flex flex-row lg:flex-col xl:flex-row justify-around items-start lg:justify-between">
+                <div className="w-full p-4 flex flex-row lg:flex-col xl:flex-row justify-center items-center lg:justify-between">
                   <div className="flex flex-col w-[62%] gap-2">
-                    <h3 className="text-lg font-semibold">{slide.title}</h3>
-                    <p className="text-sm text-gray-600 flex-1">{slide.description}</p>
+                    <h3 className="text-lg uppercase lg:text-[22px] font-semibold font-['Cormorant_Garamond']">{slide.title}</h3>
+                    <p className="text-xs font-jost text-gray-600 flex-1 leading-[16px] hidden lg:flex">{slide.description}</p>
                   </div>
-                  <div className="flex flex-col md:flex-row xl:flex-col gap-2 items-center justify-center space-x-4 mt-2 lg:w-[50%] xl:w-[34%]">
+                  <div className=" hidden lg:flex flex-col md:flex-row xl:flex-col text-[12px] lg:text-[14px] gap-2 items-center justify-center space-x-4 mt-2 lg:w-[50%] xl:w-[34%]">
                     <div className="flex items-center space-x-1">
                       <FaUserAlt />
                       <span>{slide.details.adults}</span>
@@ -126,10 +128,43 @@ export default function RoomSlider() {
             ))}
           </div>
 
+            {/* Slides desktop */}
+            <div
+            className="hidden lg:flex h-full transition-transform duration-500 ease-in-out gap-3"
+            style={{
+              width: `${count * 100}%`,
+              transform: `translateX(-${index * (100 / count)}%)`,
+            }}
+          >
+            {slides.map(slide => (
+              <div key={slide.id} className="w-full flex flex-col h-full">
+                <div className="relative w-full h-full">
+                  <Image src={slide.image} alt={slide.title} fill className="object-cover" />
+                </div>
+                <div className="w-full p-4 flex flex-row lg:flex-col xl:flex-row justify-around items-start lg:justify-between">
+                  <div className="flex flex-col w-[62%] gap-2">
+                    <h3 className="text-lg lg:text-[22px] font-bold font-['Cormorant_Garamond']">{slide.title}</h3>
+                    <p className="text-xs lg:text-sm font-jost text-gray-600 flex-1">{slide.description}</p>
+                  </div>
+                  <div className="flex flex-col md:flex-row xl:flex-col text-[12px] lg:text-[14px] gap-2 items-center justify-center space-x-4 mt-2 lg:w-[50%] xl:w-[34%]">
+                    <div className="flex items-center space-x-1">
+                      <FaUserAlt />
+                      <span>{slide.details.adults}</span> 
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      <HiOutlineCalendar />
+                      <span>{slide.details.area}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
           {/* Next */}
           <button
             onClick={next}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 z-30 bg-white p-1 shadow-lg"
+            className="hidden lg:flex absolute right-2 top-1/2 transform -translate-y-1/2 z-30 bg-white p-1 shadow-lg"
           >
             <AiOutlineRight className="w-5 h-5" />
           </button>
@@ -140,6 +175,22 @@ export default function RoomSlider() {
           <Image src={standard} alt="Static Right" fill className="object-cover" />
         </div>
       </div>
+
+
+      <button
+            onClick={prev}
+            className="flex lg:hidden absolute left-2 bottom-0 transform z-30  p-1"
+          >
+            <AiOutlineLeft className="w-5 h-5" />
+          </button>
+
+
+      <button
+            onClick={next}
+            className="flex lg:hidden absolute right-2 bottom-0 transform  z-30  p-1"
+          >
+            <AiOutlineRight className="w-5 h-5" />
+          </button>
     </div>
   );
 }
