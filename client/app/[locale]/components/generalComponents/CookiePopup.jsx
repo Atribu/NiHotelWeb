@@ -79,6 +79,7 @@ const CookiePopup = () => {
           };
           setCookies(allAccepted);
           savePreferences(allAccepted);
+          localStorage.setItem("cookiePreferences", JSON.stringify(allAccepted));
           console.log("Tüm Çerezler Kabul Edildi:", allAccepted);
           setIsVisible(false);
         };
@@ -93,6 +94,8 @@ const CookiePopup = () => {
           };
           setCookies(allDenied);
           savePreferences(allDenied);
+          localStorage.setItem("cookiePreferences", JSON.stringify(allDenied));
+          window.dispatchEvent(new Event("cookiePrefsChanged"));
           console.log("Tüm Çerezler Reddedildi:", allDenied);
           setIsVisible(false);
         }
