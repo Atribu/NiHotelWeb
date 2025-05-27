@@ -18,7 +18,8 @@
       "verandaRoom": "Veranda Room",
       "cornerRoom": "Corner Room",
       "gallery":"GALLERY",
-       "lobby": "Lobby"
+       "lobby": "Lobby",
+       "chat": "Chat"
   },
 
   "Footer":{
@@ -47,7 +48,7 @@
  "label1": "Strong Wi-Fi",
  "label2": "Welcome Treat" ,
    "label3": "Buffet Breakfast" ,
-  "label4": "Next to Sea Shore" ,
+  "label4": "Central Location",
 "label5": "Daily Cleaning" 
   },
 

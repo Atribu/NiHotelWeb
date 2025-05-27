@@ -223,3 +223,20 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   z-index: 9999  !important;
 }
 
+/* global.css */
+.connexease-container {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 1000 !important;
+  transition: none !important;
+}
+
+/* Mobile için ekstra güvenlik */
+@media (max-width: 768px) {
+  .connexease-container {
+    bottom: 10px !important;
+    right: 10px !important;
+  }
+}
+

@@ -3,8 +3,9 @@
 
 import { FaWifi, FaGift, FaCoffee } from "react-icons/fa";
 import { GiPalmTree } from "react-icons/gi";
-import { MdCleaningServices, MdPool } from "react-icons/md";
+import { MdCleaningServices, MdPool, MdLocationOn, MdOutlineLocationCity } from "react-icons/md";
 import { useTranslations } from 'next-intl';
+import { FaCity } from 'react-icons/fa';
 
 export default function AmenitiesSection() {
   const t = useTranslations('Amenities');
@@ -13,7 +14,7 @@ export default function AmenitiesSection() {
     { Icon: FaWifi,           label: t("label1") },
     { Icon: FaGift,           label: t("label2") },
     { Icon: FaCoffee,         label: t("label3") },
-    { Icon: GiPalmTree,       label: t("label4") },
+    { Icon: FaCity,       label: t("label4") },
     { Icon: MdCleaningServices, label: t("label5") },
   ];
 
