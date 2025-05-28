@@ -22,7 +22,7 @@ const InfoComponent = () => {
         <div className="h-[1px] w-full bg-[#D9D9D9]"></div>
       </div>
       <div className="mt-2">
-        <a className="flex items-center gap-2" target="_blank" rel="noopenner norefferrer" href="/">
+        <a className="flex items-center gap-2" target="_blank" rel="noopenner norefferrer" href="https://maps.app.goo.gl/sHN7271qz4wNRYyd9">
         <Image src={adresmark} width={10} height={10} alt="mail" />
         <p className={clsx("text-[18px] text-black xl:text-2xl font-jost",fontJost.className)}>
            Antalya / Türkiye
@@ -44,8 +44,8 @@ const InfoComponent = () => {
         <div className="col-span-1"></div>
         <div className="col-span-6 flex w-full flex-col items-start gap-5 ">
           <div className="flex  justify-center gap-10 lg:ml-[-10px] lg:justify-start">
-        <Image src={logo} alt="logo" width={200} height={200}/>
-        <Image src={logo} alt="logo" width={200} height={200}/>
+        <Image src={logo} alt="logo" width={150} height={150} className="hidden lg:flex"/>
+        <Image src={logo} alt="logo" width={100} height={100} className="flex lg:hidden"/>
           </div>
           <div className="flex flex-col w-full lg:max-w-[500px] 2xl:max-w-[550px] ">
             <p
@@ -73,3 +73,4 @@ const InfoComponent = () => {
 };
 
 export default InfoComponent;
+//https://maps.app.goo.gl/sHN7271qz4wNRYyd9

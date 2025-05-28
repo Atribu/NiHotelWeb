@@ -10,7 +10,7 @@ import { RxCross2 } from "react-icons/rx";
 const ModalPortal = ({ children, onClose }) => {
   return ReactDOM.createPortal(
     <div
-      className="fixed top-0 left-0 h-screen w-screen z-[9999] flex items-center justify-center "
+      className="fixed top-0 left-0 h-screen w-screen z-[99999] flex items-center justify-center "
       onClick={onClose}
     >
       <div
@@ -346,7 +346,7 @@ const CookiePopup = () => {
         </p>
       </div>
     </div>,
-    <div className="flex flex-col h-full w-[96%] ml-[2%] sm:w-[95%] lg:w-[99%] text-start text-[#FBFBFB] overflow-y-scroll overflow-x-hidden z-[9999] font-heeboo thin-scrollbar pr-[2.5%] lg:pr-[5%]">
+    <div className="flex flex-col h-full w-[96%] ml-[2%] sm:w-[95%] lg:w-[99%] text-start text-[#FBFBFB] overflow-y-scroll overflow-x-hidden z-[99999] font-heeboo thin-scrollbar pr-[2.5%] lg:pr-[5%]">
       
       
     </div>,
@@ -369,7 +369,7 @@ const CookiePopup = () => {
     }
   return (
     isVisible && (
-      <div className="fixed flex z-[9999] bottom-0 bg-[rgba(29,29,27,0.70)] backdrop-blur-[10px] right-0 left-0 w-screen items-center justify-center">
+      <div className="fixed flex z-[99999] bottom-0 bg-[rgba(29,29,27,0.70)] backdrop-blur-[10px] right-0 left-0 w-screen items-center justify-center">
         <div className="flex flex-col md:flex-row w-[94%] md:w-[99%] lg:w-[94%] xl:w-[80%] xl:max-w-[1270px] py-[25px] gap-[20px] font-montserrat text-center items-center justify-center text-[#FBFBFB] font-heeboo">
           <p className="md:hidden text-[13px] lg:text-[14px] leading-[130%] text-[#FBFBFB] font-normal font-heeboo text-center md:min-w-[39%] lg:w-[]">
             <span className="font-medium underline">Çerez Kullanıyoruz: </span>  İçeriği kişiselleştirmek ve web trafiğini analiz etmek için kendi ve üçüncü taraf çerezlerini kullanıyoruz.<br />

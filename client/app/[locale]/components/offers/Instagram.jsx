@@ -113,20 +113,20 @@ async function Instagram() {
 
   const defaultInoneHotelInstagramDetail = {
     name: "NiHotel",
-    username: "nihotel",
-    media_count: 114,
-    followers_count: 3468,
+    username: "nihotellara",
+    media_count: 51,
+    followers_count: 447,
   };
 
   const defaultIonicBeachClubInstagramDetail = {
     name: "NiHotel",
-    username: "NiHotel",
-    media_count: 67,
-    followers_count: 1713,
+    username: "NiHotellara",
+    media_count: 51,
+    followers_count: 447,
   };
 
   return (
-    <div className="relative -mt-8 mb-16 overflow-hidden">
+    <div className="relative mt-7 lg:-mt-8 mb-16 overflow-hidden">
       <div className=" mx-4 flex flex-col rounded-4  bg-white pb-4 shadow-[0_11px_49px_0px_rgba(0,0,0,0.07)] md:bg-transparent">
         {inoneHotelInstagramDetail && ionicBeachClubInstagramDetail ? (
           <div className="flex flex-col justify-evenly md:flex-row md:gap-4">

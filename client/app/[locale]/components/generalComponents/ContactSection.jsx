@@ -18,7 +18,7 @@ export default function ContactSection() {
   const [email, setEmail] = useState("");
 
   return (
-    <section className="bg-[#fefdfc] py-16 px-4">
+    <section className="bg-[#fefdfc] py-8 lg:py-16 px-4">
       <div className="md:max-w-[800px] lg:max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 relative">
         {/* LEFT */}
         <div className="w-[90%] sm:w-[80%] md:w-[60%] items-start justify-start text-start md:items-start md:justify-start md:text-start">

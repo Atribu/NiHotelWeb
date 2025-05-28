@@ -126,7 +126,7 @@ function DialogComponenet({ open, onClose, slides, selectedCategory }) {
             >
               <Dialog.Panel
                 className={clsx(
-                  "relative flex h-screen w-screen max-w-screen-2xl transform flex-col justify-between overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all md:h-full md:w-full",
+                  "relative flex h-screen w-screen 2xl:max-w-screen-2xl transform flex-col justify-between overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all md:h-full md:w-full",
                   fontJost.className,
                 )}
               >
@@ -146,7 +146,7 @@ function DialogComponenet({ open, onClose, slides, selectedCategory }) {
                             src={image.src}
                             alt={image.alt}
                             fill={true}
-                            className=" h-full w-full object-cover"
+                            className=" h-full w-full object-cover "
                           />
                         </div>
                       ))}

@@ -17,6 +17,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import DgtlfaceSvg from "../generalComponents/DgtlfaceSvg";
 import { useTranslations } from 'next-intl';
 import img from "../../../../public/images/nihotelLeaf.png"
+import img2 from "../../../../public/images/leaf2.png"
 import Link from "next/link";
 
 export default function Footer() {
@@ -24,7 +25,7 @@ export default function Footer() {
     const [isRoomsOpen, setIsRoomsOpen] = useState(false);
 
   return (
-    <footer className="bg-white relative overflow-hidden">
+    <footer className="bg-white relative overflow-hidden overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 pt-10 lg:pt-20">
         {/* columns */}
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start lg:space-x-6 space-y-8 lg:space-y-0">
@@ -231,6 +232,7 @@ export default function Footer() {
       </div>
       <Image src={img} alt='leaf' width={600} height={1100} className='absolute bottom-48 hidden xl:flex xl:-bottom-[50px] -right-[120px]  lg:-right-[8%] z-[99] transform rotate-[35deg] lg:rotate-[20deg] opacity-60'/>
       <Image src={img} alt='leaf' width={400} height={800} className='absolute bottom-48 xl:hidden lg:bottom-[30%] -right-[120px]  lg:-right-[8%] z-[99] transform rotate-[35deg] lg:rotate-[20deg] opacity-60'/>
+      
     </footer>
   );
 }

@@ -88,14 +88,14 @@ export default async function RootLayout({ children, params }) {
           }}
         />
       </head>
-      <body className="overflow-x-hidden h-screen w-screen">
+      <body className="overflow-x-hidden">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <BookSection/>
           {children}
           <CookiePopup />
           <Footer />
-          <ChatManager/>
+          {/* <ChatManager/> */}
         </NextIntlClientProvider>
       </body>
     </html>

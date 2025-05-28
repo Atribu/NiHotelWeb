@@ -407,17 +407,22 @@ const GalleryComponent = () => {
                   catindex >= 4 ? "lg:hidden xl:hidden 2xl:flex" : "",
                 )}
               >
-                <div className="category-thumbnail cursor-pointer relative h-40 w-full grow ">
-                  {/* <Image
-                    src={
-                      imageData.find((image) => image.category === category)
-                    }
-                    alt={category}
-                    fill={true}
-                    className="  cursor-pointer  object-cover"
-                  /> */}
-                  <div className="absolute inset-0 bg-black/50 "></div>
-                </div>
+                 <div className="category-thumbnail cursor-pointer relative h-40 w-full grow ">
+     {(() => {
+       const thumb = imageData.find((img) => img.category === category);
+       return thumb ? (
+        // alt kısımdaki resimler grid
+         <Image
+           src={thumb.src}
+           alt={thumb.alt}
+           fill
+           className="object-cover"
+         />
+       ) : (
+         <div className="absolute inset-0 bg-black/50" />
+       );
+     })()}
+   </div>
                 <div
                   className={clsx(
                     "left-center text-nowrap top-[50%] pointer-events-none z-[999] flex w-full  -translate-y-[50%]  flex-col items-center justify-center text-center text-sm font-light text-white",
@@ -444,7 +449,7 @@ const GalleryComponent = () => {
     <div key={index} className="relative flex h-1/3 flex-col items-center justify-between gap-4 md:flex-row">
       <div className="flex w-full flex-col items-center justify-between">
         <a target="_blank" rel="noopener noreferrer" href="/">
-          
+          {/* yan kısımdaki 3 resim */}
             <div className="z-[-1] w-full">
               <Image
                 src={offer.image}
