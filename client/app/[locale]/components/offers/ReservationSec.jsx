@@ -4,23 +4,26 @@ import { useState } from "react";
 import { HiOutlineCalendar } from "react-icons/hi";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { BsFillSunriseFill } from "react-icons/bs";
+import BellSvg from "../generalComponents/BellSvg";
+import img1 from "../../gallery/images/lobi/DSCF8705.webp"
+import img2 from "../../gallery/images/lobi/DSCF8663.webp"
 
 export default function ReservationSec() {
   const [adults, setAdults] = useState(2);
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center justify-center">
         {/* soldaki iki resim */}
         <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             {
-              src: "/images/room1.jpg",
+              src: img1,
               title: "NI HOTEL",
               text: " HOTEL",
             },
             {
-              src: "/images/room2.jpg",
+              src: img2,
               title: "NI HOTEL",
               text: "lorem lore lorem lorem",
             },
@@ -49,38 +52,38 @@ export default function ReservationSec() {
         </div>
 
         {/* sağdaki reservation bölümü */}
-        <div className="w-[240px] mx-auto bg-white h-[320px]">
+        <div className="w-[250px] mx-auto  h-[320px] ">
       <h2 className="text-xl font-serif text-center mb-6">BOOK YOUR TRIP</h2>
-<div className="flex flex-col border border-gray-200 px-8 py-4 shadow-sm">
+<div className="flex flex-col border border-gray-200 px-7 py-4 shadow-sm gap-8">
 
       {/* CHECK IN */}
-      <div className="relative mb-4">
-        <label className="block text-xs font-medium mb-1">CHECK IN</label>
+      <div className="flex items-center relative justify-between">
+        <label className="block text-xs font-medium mb-1 whitespace-nowrap">CHECK IN</label>
         <input
-          type="date"
-          className="w-full border-b border-gray-300 pb-1 text-sm appearance-none bg-transparent focus:outline-none"
+       
+          className="pb-1 text-sm appearance-none bg-transparent focus:outline-none"
         />
         <HiOutlineCalendar className="absolute right-0 top-1/2 transform -translate-y-1/2 text-gray-500" />
       </div>
 
       {/* CHECK OUT */}
-      <div className="relative mb-4">
-        <label className="block text-xs font-medium mb-1">CHECK OUT</label>
+      <div className="flex items-center relative justify-between">
+        <label className="block text-xs font-medium mb-1 whitespace-nowrap">CHECK OUT</label>
         <input
-          type="date"
-          className="w-full border-b border-gray-300 pb-1 text-sm appearance-none bg-transparent focus:outline-none"
+          
+          className="pb-1 text-sm appearance-none bg-transparent focus:outline-none"
         />
         <HiOutlineCalendar className="absolute right-0 top-1/2 transform -translate-y-1/2 text-gray-500" />
       </div>
 
       {/* ADULT */}
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between ">
         <span className="text-xs font-medium">ADULT</span>
         <div className="flex items-center space-x-2">
           <button
             type="button"
             onClick={() => setAdults(a => Math.max(1, a - 1))}
-            className="p-1 border border-gray-300 rounded text-gray-600 hover:text-black"
+            className="p-[2px] border border-gray-300 rounded text-gray-600 hover:text-black"
           >
             <AiOutlineMinus size={14} />
           </button>
@@ -88,7 +91,7 @@ export default function ReservationSec() {
           <button
             type="button"
             onClick={() => setAdults(a => a + 1)}
-            className="p-1 border border-gray-300 rounded text-gray-600 hover:text-black"
+            className="p-[2px] border border-gray-300 rounded text-gray-600 hover:text-black"
           >
             <AiOutlinePlus size={14} />
           </button>
@@ -98,10 +101,10 @@ export default function ReservationSec() {
       {/* BOOK NOW */}
       <button
         type="submit"
-        className="w-full flex items-center justify-center gap-2 py-2 border border-gray-800 uppercase text-sm font-medium hover:bg-gray-100 transition"
+        className="w-full flex items-center justify-center gap-2 py-2 border border-gray-300 uppercase text-sm font-medium hover:bg-gray-100 transition"
       >
         <span>Book Now</span>
-        <BsFillSunriseFill />
+        <BellSvg className="flex" width={26} height={16} color="#000"/>
       </button>
 </div>
     </div>
