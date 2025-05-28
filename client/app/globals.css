@@ -523,3 +523,60 @@ offers carousel */
   width: 65%;
   height: 65%;
 }
+
+
+/*********** takvim ********/
+
+/* DatePicker Custom Styles - globals.css dosyasının sonuna ekleyin */
+
+.react-datepicker {
+  font-family: inherit;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.react-datepicker__header {
+  background-color: #f9fafb;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.react-datepicker__current-month {
+  font-weight: 600;
+  color: #374151;
+}
+
+.react-datepicker__day {
+  color: #374151;
+  border-radius: 0.25rem;
+}
+
+.react-datepicker__day:hover {
+  background-color: #f3f4f6;
+}
+
+.react-datepicker__day--selected {
+  background-color: #1f2937;
+  color: white;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #374151;
+}
+
+.react-datepicker__day--disabled {
+  color: #d1d5db;
+  cursor: not-allowed;
+}
+
+.react-datepicker__navigation {
+  top: 13px;
+}
+
+.react-datepicker__navigation--previous {
+  left: 10px;
+}
+
+.react-datepicker__navigation--next {
+  right: 10px;
+}
