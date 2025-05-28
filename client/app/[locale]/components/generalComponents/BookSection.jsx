@@ -8,7 +8,7 @@ const BookSection = () => {
   const t = useTranslations('Header');
 
   return (
-    <div className='fixed flex bottom-10 left-0 lg:left-4 md:bottom-6 lg:bottom-7 z-[980] w-full'>
+    <div className='fixed flex bottom-4 -left-1 lg:left-2 md:bottom-4 lg:bottom-5 z-[998] w-full'>
       <div className='flex justify-between items-center '>
         <Link href="tel:+02422121264" className='flex w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] relative rounded-full border-white border ml-6 lg:ml-7 text-white bg-black/70 hover:bg-white hover:border-black hover:text-[#dec7a6] items-center justify-center animate-zoom cursor-pointer'>
             <LiaPhoneVolumeSolid className="z-[9999] wiggle-phone" size={36} />

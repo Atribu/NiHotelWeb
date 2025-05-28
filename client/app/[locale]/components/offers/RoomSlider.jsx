@@ -104,11 +104,11 @@ export default function RoomSlider() {
           <div className="hidden lg:flex relative h-[420px] lg:h-[500px] overflow-hidden shadow-md col-span-7">
           <Image src={junior} alt="Static Left" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent pointer-events-none" />
-          <div className="absolute top-36 left-20 xl:left-40 z-20 max-w-lg hidden lg:grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-5 lg:gap-x-3 items-center justify-start ml-[9%]">
+          <div className="absolute top-36 left-20 xl:left-40 z-20 max-w-lg hidden lg:grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-4 lg:gap-x-3 items-center justify-start ml-[1%] xl:ml-[9%]">
           {features.map(({ src, label }, idx) => (
             <div key={idx} className="flex items-center space-x-1">
-              <Image src={src} alt={label} width={26} height={26} className="object-contain" />
-              <span className="text-[12px] lg:text-sm text-gray-700">{label}</span>
+              <Image src={src} alt={label} width={23} height={23} className="object-contain" />
+              <span className="text-[12px] xl:text-sm text-gray-700">{label}</span>
             </div>
           ))}
           </div>
@@ -190,7 +190,7 @@ export default function RoomSlider() {
       </div>
 
       {/* desktop button */}
-      <div className='hidden lg:flex absolute w-[99%] items-center justify-around -bottom-1 mx-auto'>
+      <div className='hidden lg:flex absolute w-[99%] items-center justify-around -bottom-1 mx-auto '>
         <div className='flex w-[30%] h-[2px] bg-[#dec7a6]'></div>
       <button
             onClick={prev}

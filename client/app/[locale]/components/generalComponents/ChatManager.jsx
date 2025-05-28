@@ -288,6 +288,67 @@ const ChatManager = () => {
           bottom: 15px !important;
           right: 15px !important;
         }
+        
+        /* Chat açık olduğunda tam ekran yap */
+        #web-messenger-container[style*="width"],
+        iframe#web-messenger-container[style*="width"],
+        iframe[src*="connexease"][style*="width"],
+        iframe[src*="livechat"][style*="width"] {
+          width: 100vw !important;
+          height: 100vh !important;
+          top: 0 !important;
+          left: 0 !important;
+          bottom: 0 !important;
+          right: 0 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+        
+        /* Chat widget'ı genişletildiğinde */
+        #web-messenger-container.expanded,
+        iframe#web-messenger-container.expanded,
+        #web-messenger-container[data-expanded="true"],
+        iframe#web-messenger-container[data-expanded="true"] {
+          width: 100vw !important;
+          height: 100vh !important;
+          top: 0 !important;
+          left: 0 !important;
+          bottom: 0 !important;
+          right: 0 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+        
+        /* Iframe içeriğinin tam ekranı kaplaması için */
+        #web-messenger-container iframe,
+        iframe#web-messenger-container iframe {
+          width: 100% !important;
+          height: 100% !important;
+          border: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        /* Küçük ekranlarda da tam ekran */
+        #web-messenger-container[style*="width"],
+        iframe#web-messenger-container[style*="width"],
+        iframe[src*="connexease"][style*="width"],
+        iframe[src*="livechat"][style*="width"],
+        #web-messenger-container.expanded,
+        iframe#web-messenger-container.expanded,
+        #web-messenger-container[data-expanded="true"],
+        iframe#web-messenger-container[data-expanded="true"] {
+          width: 100vw !important;
+          height: 100vh !important;
+          top: 0 !important;
+          left: 0 !important;
+          bottom: 0 !important;
+          right: 0 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
       }
     `}</style>
   );
