@@ -8,9 +8,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import CookiePopup from "./components/generalComponents/CookiePopup";
 import BookSection from './components/generalComponents/BookSection'
-import ConnexeaseLoader from "./components/generalComponents/ConnexeaseLoader";
-import Script from 'next/script';
-import ChatWidget from "./components/generalComponents/ChatWidget";
+import ChatManager from "./components/generalComponents/ChatManager";
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -48,8 +46,6 @@ export const metadata = {
   }
 };
 
-
-
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
 
@@ -61,19 +57,45 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} ${jost.variable} antialiased`}>
       <head>
-        <Script
-          strategy="lazyOnload" 
-          src="https://cdn.livechat.connexease.com/embed.js"
+        {/* Chat script'i sabit olarak layout'ta bırakıyoruz */}
+        <script 
+          src="https://cdn.livechat.connexease.com/embed.js" 
+          async 
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Chat'i ilk yüklemede başlat
+              document.addEventListener('DOMContentLoaded', function() {
+                function initChat() {
+                  if (window.ConnexeaseWebMessenger && window.ConnexeaseWebMessenger.Init) {
+                    try {
+                      window.ConnexeaseWebMessenger.Init('5f90e4a6-6481-4263-b814-ec81ca1d4cde', {
+                        position: 'bottom-right'
+                      });
+                      console.log('Initial chat loaded');
+                    } catch (error) {
+                      console.error('Initial chat load error:', error);
+                    }
+                  } else {
+                    setTimeout(initChat, 500);
+                  }
+                }
+                
+                setTimeout(initChat, 1000);
+              });
+            `
+          }}
         />
       </head>
-      <body className="overflow-x-hidden ">
-      <NextIntlClientProvider locale={locale} messages={messages}>
+      <body className="overflow-x-hidden h-screen w-screen">
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <BookSection/>
-         {/* <ChatWidget/> */}
           {children}
           <CookiePopup />
           <Footer />
+          <ChatManager/>
         </NextIntlClientProvider>
       </body>
     </html>

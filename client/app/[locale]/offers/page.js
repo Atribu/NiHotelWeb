@@ -4,6 +4,7 @@ import ContactSection from '../components/generalComponents/ContactSection'
 import InfoComponent from '../components/offers/InfoSection'
 import RoomSlider from '../components/offers/RoomSlider'
 import ReservationSec from '../components/offers/ReservationSec'
+import Instagram from '../components/offers/Instagram'
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <RoomSlider/>
       <ReservationSec/>
       <ContactSection/>
+      <Instagram/>
     </div>
   )
 }

@@ -240,3 +240,136 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   }
 }
 
+
+
+
+/* globals.css - Connexease Chat Widget Sabit Pozisyon */
+
+/* Ana iframe container - En yüksek öncelik */
+#web-messenger-container {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  z-index: 999999 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* Iframe kendisi için ayrı kural */
+iframe#web-messenger-container,
+iframe[id="web-messenger-container"] {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  z-index: 999999 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+}
+
+/* Src ile eşleşen iframe'ler */
+iframe[src*="connexease"],
+iframe[src*="livechat"] {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  z-index: 999999 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+}
+
+/* CSS spesifitesi artırma */
+body #web-messenger-container,
+body iframe#web-messenger-container {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  z-index: 999999 !important;
+}
+
+/* HTML ve body için genel ayarlar */
+html #web-messenger-container,
+html iframe#web-messenger-container {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+}
+
+/* Inline style'ları override et */
+iframe[style*="position"],
+iframe[style*="top"],
+iframe[style*="left"],
+iframe[style*="transform"] {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+/* Class tabanlı override */
+.chat-fixed-position {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  z-index: 999999 !important;
+  transform: none !important;
+  translate: none !important;
+}
+
+/* Connexease'in kendi CSS'ini override et */
+[class*="connexease"] iframe,
+[id*="connexease"] iframe {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+  #web-messenger-container,
+  iframe#web-messenger-container,
+  iframe[src*="connexease"],
+  iframe[src*="livechat"] {
+    bottom: 15px !important;
+    right: 15px !important;
+  }
+}
+
+/* Tablet responsive */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  #web-messenger-container,
+  iframe#web-messenger-container {
+    bottom: 18px !important;
+    right: 18px !important;
+  }
+}
+
+/* Çok küçük ekranlar */
+@media screen and (max-width: 480px) {
+  #web-messenger-container,
+  iframe#web-messenger-container {
+    bottom: 10px !important;
+    right: 10px !important;
+  }
+}
+
