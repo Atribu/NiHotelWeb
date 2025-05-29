@@ -378,27 +378,27 @@ export default function FoodPage() {
   ];
 
   const wineMenu = [
-    { title: "Kabatepe Blush", text: "37.5 cl", image: wine1 },
+    { title: `Kabatepe ${t8("blush")}`, text: "37.5 cl", image: wine1 },
     { title: "Beronia Rose", text: "75 cl", image: wine2 },
     { title: "Casal Mendes Rose", text: "75 cl", image: wine3 },
 
-    { title: "Angora Beyaz Şarap", text: "75 cl", image: wine4 },
-    { title: "Villa Doluca Beyaz Şarap 18cl", text: "18 cl", image: wine5 },
-    { title: "Villa Doluca Beyaz Şarap 37.5cl", text: "37.5 cl", image: wine5 },
+    { title: `Angora ${t8("whitewine")}`, text: "75 cl", image: wine4 },
+    { title: `Villa Doluca ${t8("whitewine")} 18cl`, text: "18 cl", image: wine5 },
+    { title: `Villa Doluca ${t8("whitewine")} 37.5cl`, text: "37.5 cl", image: wine5 },
 
-    { title: "Villa Doluca Beyaz Şarap", text: "75 cl", image: wine5 },
-    { title: "Selection Beyaz Şarap 50cl", text: "50 cl", image: wine6 },
-    { title: "Selection Beyaz Şarap", text: "75 cl", image: wine6 },
+    { title: `Villa Doluca ${t8("whitewine")}`, text: "75 cl", image: wine5 },
+    { title: `Selection ${t8("whitewine")} 50cl`, text: "50 cl", image: wine6 },
+    { title: `Selection ${t8("whitewine")}`, text: "75 cl", image: wine6 },
 
-    { title: "Villa Doluca Kırmızı Şarap", text: "37.5 cl", image: wine7 },
-    { title: "Selection Kırmızı Şarap 50cl", text: "50 cl", image: wine8 },
-    { title: "Selection Kırmızı Şarap", text: "75 cl", image: wine8 },
+    { title: `Villa Doluca ${t8("redwine")}`, text: "37.5 cl", image: wine7 },
+    { title: `Selection ${t8("redwine")} 50cl`, text: "50 cl", image: wine8 },
+    { title: `Selection ${t8("redwine")}`, text: "75 cl", image: wine8 },
 
-    { title: "İdol Kırmızı Şarap", text: "75 cl", image: wine9 },
-    { title: "Diren Collection Red Wine", text: "35 cl", image: wine9 },
-    { title: "Diren Collection White Wine", text: "35 cl", image: wine9 },
+    { title: `İdol ${t8("redwine")}`, text: "75 cl", image: wine9 },
+    { title: `Diren Collection ${t8("redwine")}`, text: "35 cl", image: wine9 },
+    { title: `Diren Collection ${t8("whitewine")}`, text: "35 cl", image: wine9 },
 
-    { title: "Diren Collection Blush", text: "25 cl", image: wine9 },
+    { title: `Diren Collection ${t8("blush")}`, text: "25 cl", image: wine9 },
   ];
 
   const champagneMenu = [
@@ -424,54 +424,54 @@ export default function FoodPage() {
 
   const cocktailMenu = [
     {
-      title: "Gin Tonik",
-      text: "Cin ve tonik suyu",
+      title: t8("title1"),
+      text: t8("text1"),
       image: cocktail1,
     },
     {
-      title: "Sex on the Beach",
-      text: "Vodka, şeftali aromalı Schnapps, portakal ve kızılcık suyu",
+      title: t8("title2"),
+      text: t8("text2"),
       image: cocktail2,
     },
     {
-      title: "Mojito",
-      text: "Esmer şeker, misket limon, taze nane, kırılmış buz, beyaz rom ve soda",
+      title: t8("title3"),
+      text: t8("text3"),
       image: cocktail3,
     },
     {
-      title: "Margarita",
-      text: "Tekila, Triple Sec (portakal likörü), limon suyu ve buz",
+      title: t8("title4"),
+      text: t8("text4"),
       image: cocktail4,
     },
     {
-      title: "Piña Colada",
-      text: "Ananas, muz, hindistancevizi sütü, hindistancevizi likörü, agave şurubu ve buz",
+      title: t8("title5"),
+      text: t8("text5"),
       image: cocktail5,
     },
     {
-      title: "Bloody Mary",
-      text: "Vodka, domates suyu ve çeşitli baharatlar",
+      title: t8("title6"),
+      text: t8("text6"),
       image: cocktail6,
     },
     {
-      title: "Daiquiri",
-      text: "Rom, lime suyu, meyve suyu ve kırık buz",
+      title: t8("title7"),
+      text: t8("text7"),
       image: cocktail7,
     },
     {
-      title: "Dry Martini",
-      text: "Dry vermut ve cin",
+      title: t8("title8"),
+      text: t8("text8"),
       image: cocktail8,
     },
 
     {
-      title: "Alkolsüz Mojito",
-      text: "Maden sodası, lime, esmer şeker ve taze nane",
+      title: t8("title9"),
+      text: t8("text9"),
       image: cocktail9,
     },
     {
-      title: "Churchill",
-      text: "Soda, limon suyu ve tuz",
+      title: t8("title10"),
+      text: t8("text10"),
       image: cocktail10,
     },
   ];

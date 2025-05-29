@@ -5,6 +5,8 @@ import InfoComponent from '../components/offers/InfoSection'
 import RoomSlider from '../components/offers/RoomSlider'
 import ReservationSec from '../components/offers/ReservationSec'
 import Instagram from '../components/offers/Instagram'
+import TicketSection from '../components/offers/TicketSection'
+import TransferSection from '../components/offers/TransferSection'
 
 const page = () => {
   return (
@@ -13,6 +15,8 @@ const page = () => {
       <InfoComponent/>
       <RoomSlider/>
       <ReservationSec/>
+      <TicketSection/>
+      <TransferSection/>
       <ContactSection/>
       <Instagram/>
     </div>
