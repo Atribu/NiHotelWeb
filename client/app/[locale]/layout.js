@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 import CookiePopup from "./components/generalComponents/CookiePopup";
 import BookSection from './components/generalComponents/BookSection'
 import ChatManager from "./components/generalComponents/ChatManager";
+import Script from 'next/script';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -57,6 +58,24 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} ${jost.variable} antialiased`}>
       <head>
+          {/* 1) gtag.js kütüphanesini yükleyin */}
+          <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+        />
+
+        {/* 2) Google Tag yapılandırmasını yapın */}
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config','${process.env.NEXT_PUBLIC_GA_ID}',{
+              page_path: window.location.pathname
+            });
+          `}
+        </Script>
+
         {/* Chat script'i sabit olarak layout'ta bırakıyoruz */}
         <script 
           src="https://cdn.livechat.connexease.com/embed.js" 
