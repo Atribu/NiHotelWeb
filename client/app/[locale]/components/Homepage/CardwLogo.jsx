@@ -5,7 +5,7 @@ import { Jost } from "next/font/google";
 import clsx from "clsx";
 import "../../../globals.css";
 import CustomImage from "./CustomImage";
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import NiHotelLogo from "../../../../public/Header/NiHotel.svg"
 import { MdArrowForwardIos } from "react-icons/md";
 

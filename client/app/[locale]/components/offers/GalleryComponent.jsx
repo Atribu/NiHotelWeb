@@ -5,7 +5,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import clsx from "clsx";
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import DialogComponent from "./DialogComponent";
 import LocationPinIcon from "./icons/LocationPinIcon";
 import { Jost } from "next/font/google";
