@@ -19,7 +19,8 @@
       "cornerRoom": "Corner Room",
       "gallery":"GALLERY",
       "lobby": "Lobby",
-      "chat": "Chat"
+      "chat": "Chat",
+      "offers": "Offers"
   },
 
   "Footer":{
@@ -357,7 +358,11 @@
     "title19": "Schnitzel",
     "text19": "220 g schnitzel with mashed potatoes and dressed greens",
     "title20": "Chicken Turn",
-    "text20": "Hummus, red quinoa, purslane, grilled chicken breast and cherry tomatoes"
+    "text20": "Hummus, red quinoa, purslane, grilled chicken breast and cherry tomatoes",
+    "pizzas": "Pizzas",
+    "hamburgers": "Hamburgers",
+    "pastas": "Pastas",
+    "vegetarian": "Vegetarian"
   },
 
   "CoffeeTea": {

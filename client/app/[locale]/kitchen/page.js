@@ -190,12 +190,19 @@ export default function FoodPage() {
   const t6 = useTranslations("Kitchen.Salads");
   const t7 = useTranslations("Kitchen.CoffeeTea");
   const t8 = useTranslations("Kitchen.CocktailMenu");
+  const t9 = useTranslations("Kitchen.IcedCoffees");
+  const t10 = useTranslations("Kitchen.Frozen");
+  const t11 = useTranslations("Kitchen.SoftDrinks");
 
   // Menu kategorileri
   const sections = [
     { id: "kahvalti", label: t("breakfast") },
     { id: "gunun-menu", label: t("dailySoupAndMealMenu") },
     { id: "ana-yemek", label: t("mainCourse") },
+    { id: "pizzas", label: t3("pizzas") },
+    { id: "hamburger", label: t3("hamburgers") },
+    { id: "pastas", label: t3("pastas") },
+    { id: "vegetarian", label: t3("vegetarian") },
     { id: "atistirmalik", label: t("snack") },
     { id: "salatalar", label: t("salads") },
     { id: "alkollu-icecek", label: t("alcoholicDrinks") },
@@ -250,26 +257,38 @@ export default function FoodPage() {
     { title: t3("title19"), text: t3("text19"), image: main19 },
     { title: t3("title20"), text: t3("text20"), image: main20 },
 
+    // Ni Fit
+    { title: t3("title13"), text: t3("text13"), image: main13 },
+    { title: t3("title14"), text: t3("text14"), image: main14 },
+  ];
+
+  const pizzas=[
     // Pizzalar
     { title: t3("title1"), text: t3("text1"), image: main1 },
     { title: t3("title2"), text: t3("text2"), image: main2 },
     { title: t3("title3"), text: t3("text3"), image: main3 },
-    // Hamburgerler
-    { title: t3("title4"), text: t3("text4"), image: main4 },
-    { title: t3("title5"), text: t3("text5"), image: main5 },
-    { title: t3("title6"), text: t3("text6"), image: main6 },
-    // Vejeteryan
-    { title: t3("title7"), text: t3("text7"), image: main7 },
-    { title: t3("title8"), text: t3("text8"), image: main8 },
+  ];
+
+  const hamburger =[
+       // Hamburgerler
+       { title: t3("title4"), text: t3("text4"), image: main4 },
+       { title: t3("title5"), text: t3("text5"), image: main5 },
+       { title: t3("title6"), text: t3("text6"), image: main6 },
+  ];
+
+  const pastas=[
     // Makarnalar
     { title: t3("title9"), text: t3("text9"), image: main9 },
     { title: t3("title10"), text: t3("text10"), image: main10 },
     { title: t3("title11"), text: t3("text11"), image: main11 },
     { title: t3("title12"), text: t3("text12"), image: main12 },
-    // Ni Fit
-    { title: t3("title13"), text: t3("text13"), image: main13 },
-    { title: t3("title14"), text: t3("text14"), image: main14 },
   ];
+
+  const vegetarian =[
+     // Vejeteryan
+     { title: t3("title7"), text: t3("text7"), image: main7 },
+     { title: t3("title8"), text: t3("text8"), image: main8 },
+]
 
   const atistirmalikMenu = [
     { title: t5("title1"), text: t5("text1"), image: snack1 },
@@ -477,37 +496,41 @@ export default function FoodPage() {
   ];
 
   const icedCoffees = [
-    { title: "Francoccino", text: "", image: icedcoffee1 },
-    { title: "Iced Kaffee Mocha", text: "", image: icedcoffee2 },
-    { title: "Iced Kaffee Americano", text: "", image: icedcoffee3 },
-    { title: "Iced Kaffee", text: "", image: icedcoffee4 },
-    { title: "Iced Kaffee Latte", text: "", image: icedcoffee5 },
+    { title: t9("title1"), text: "", image: icedcoffee1 },
+    { title: t9("title2"), text: "", image: icedcoffee2 },
+    { title: t9("title3"), text: "", image: icedcoffee3 },
+    { title:t9("title4"), text: "", image: icedcoffee4 },
+    { title: t9("title5"), text: "", image: icedcoffee5 },
   ];
 
   const frozenMenu = [
-    { title: "Strawberry Frozen", text: "", image: frozen1 },
-    { title: "Banana Frozen", text: "", image: frozen2 },
+    { title: t10("title1"), text: "", image: frozen1 },
+    { title: t10("title2"), text: "", image: frozen2 },
   ];
 
   const softIcecekMenu = [
-    { title: "Soda", text: "", image: soft1 },
-    { title: "Coca-Cola 330 ml", text: "", image: soft2 },
-    { title: "Coca-Cola 200 ml", text: "", image: soft3 },
-    { title: "Fanta 330 ml", text: "", image: soft4 },
-    { title: "Yedigün 200 ml", text: "", image: soft5 },
-    { title: "Sprite 200 ml", text: "", image: soft6 },
-    { title: "Redbull", text: "", image: soft7 },
-    { title: "Burn Enerji İçeceği", text: "", image: soft8 },
-    { title: "Schweppes Tonik", text: "", image: soft9 },
-    { title: "Juss Kayısı Meyvesuyu", text: "", image: soft10 },
-    { title: "Juss Vişne Suyu", text: "", image: soft11 },
-    { title: "Sıkma Portakal Suyu", text: "", image: soft12 },
+    { title: t11("title1"), text: "", image: soft1 },
+    { title:  t11("title2"), text: "", image: soft2 },
+    { title:  t11("title3"), text: "", image: soft3 },
+    { title: t11("title4"), text: "", image: soft4 },
+    { title:  t11("title5"), text: "", image: soft5 },
+    { title:  t11("title6"), text: "", image: soft6 },
+    { title:  t11("title7"), text: "", image: soft7 },
+    { title:  t11("title8"), text: "", image: soft8 },
+    { title:  t11("title9"), text: "", image: soft9 },
+    { title:  t11("title10"), text: "", image: soft10 },
+    { title:  t11("title11"), text: "", image: soft11 },
+    { title:  t11("title12"), text: "", image: soft12 },
   ];
 
   const menuData = {
     kahvalti: kahvaltiMenu,
     "gunun-menu": gununMenu,
     "ana-yemek": anaYemekMenu,
+    pizzas:pizzas,
+    hamburger:hamburger,
+    pastas:pastas,
+    vegetarian:vegetarian,
     atistirmalik: atistirmalikMenu,
     salatalar: salatalarMenu,
     // "alkollu-icecek": beerMenu,

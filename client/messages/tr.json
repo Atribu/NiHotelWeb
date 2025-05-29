@@ -19,7 +19,8 @@
       "cornerRoom": "Köşe Oda",
       "gallery": "GALERİ",
         "lobby": "Lobi",
-        "chat": "Sohbet"
+        "chat": "Sohbet",
+         "offers": "Teklifler"
     },
 
     "Footer": {
@@ -359,7 +360,11 @@
     "title19": "Şinitzel",
     "text19": "220 g şinitzel, patates püresi ve vinegretlenmiş semiz otu ile",
     "title20": "Tavuk Turn",
-    "text20": "Humus, kırmızı kinoa, semizotu, ızgara tavuk göğsü ve çeri domates"
+    "text20": "Humus, kırmızı kinoa, semizotu, ızgara tavuk göğsü ve çeri domates",
+    "pizzas": "Pizzalar",
+    "hamburgers": "Hamburgerler",
+    "pastas": "Makarnalar",
+    "vegetarian": "Vejeteryan"
   },
 
   "CoffeeTea": {

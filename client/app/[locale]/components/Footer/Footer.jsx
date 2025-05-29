@@ -17,7 +17,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import DgtlfaceSvg from "../generalComponents/DgtlfaceSvg";
 import { useTranslations } from 'next-intl';
 import img from "../../../../public/images/nihotelLeaf.png"
-import img2 from "../../../../public/images/leaf2.png"
+import img2 from "../../../../public/images/zeytindali.png"
 import Link from "next/link";
 
 export default function Footer() {
@@ -28,7 +28,7 @@ export default function Footer() {
     <footer className="bg-white relative overflow-hidden overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 pt-10 lg:pt-20">
         {/* columns */}
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start lg:space-x-6 space-y-8 lg:space-y-0">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start lg:space-x-6 space-y-6 md:space-y-8 lg:space-y-0">
           
           {/* Logo */}
           <div className="flex-shrink-0 flex justify-center lg:justify-start lg:mr-16">
@@ -98,7 +98,7 @@ export default function Footer() {
           <div className="flex golge md:hidden flex-col w-full items-center justify-center font-jost font-medium text-[16px]">
             <div
               onClick={() => setIsRoomsOpen(!isRoomsOpen)}
-              className="flex w-[98%] p-[10px] md:max-w-[306px] items-center justify-between border border-white leading-[26.667px] uppercase"
+              className="flex w-[98%] p-[10px] md:max-w-[306px] items-center justify-between leading-[26.667px] uppercase z-[980]"
             >
               {t("accommodation")} <IoIosArrowDown className="flex" width={25} height={25} />
             </div>
@@ -143,39 +143,39 @@ export default function Footer() {
             </div>
 
             <Link
-              href="/connect"
-              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px] uppercase"
+              href="/contact"
+              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between  leading-[26.667px] uppercase z-[980]"
             >
               {t("contactus")}{" "}
             </Link>
 
             <Link
               href="/gallery"
-              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px] uppercase"
+              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between leading-[26.667px] uppercase z-[980]"
             >
               {t("gallery")}{" "}
             </Link>
 
             <Link
               href="/cerezpolıtıkası"
-              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between border border-white leading-[26.667px] uppercase"
+              className="flex w-[98%] p-[10px] md:max-w-[306px] mt-[15px] items-center justify-between  leading-[26.667px] uppercase z-[980]"
             >
              {t("cookiePolicy")}
             </Link>
            
           </div>
 
-          <div className="flex md:hidden w-full items-center justify-center gap-[10px] z-[990]">
-            <Link href="https://www.tripadvisor.com.tr/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center z-50"><FaTripadvisor className="w-6 h-6" color="#A7ABAD"/></Link>
+          <div className="flex mt-2 md:hidden w-full items-center justify-center gap-[10px] z-[990]">
+            <Link href="https://www.tripadvisor.com.tr/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center z-50 golge"><FaTripadvisor className="w-6 h-6" color="#A7ABAD"/></Link>
             <Link rel="norefferer nofollower"
-                  target="_blank" href="https://www.facebook.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center z-[999]"> <FaFacebook className="w-6 h-6" color='#A7ABAD'/></Link>
+                  target="_blank" href="https://www.facebook.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center z-[999] golge"> <FaFacebook className="w-6 h-6" color='#A7ABAD'/></Link>
             <Link rel="norefferer nofollower"
-                  target="_blank" href="https://www.youtube.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center z-50"> <FaYoutube className="w-6 h-6" color='#A7ABAD'/></Link>
+                  target="_blank" href="https://www.youtube.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center z-50 golge"> <FaYoutube className="w-6 h-6" color='#A7ABAD'/></Link>
             <Link rel="norefferer nofollower"
-                  target="_blank" href="https://www.instagram.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center z-50"><FaInstagram className="w-6 h-6" color='#A7ABAD'/></Link>
+                  target="_blank" href="https://www.instagram.com/" className="flex bg-white rounded-[4px] shadow-divCustom w-[42.412px] h-[42.412px] items-center justify-center z-50 golge"><FaInstagram className="w-6 h-6" color='#A7ABAD'/></Link>
           </div>
 
-      <div className="md:flex flex-row items-center justify-center gap-10">
+      <div className="hidden md:flex flex-row items-center justify-center gap-10">
             {/* Hızlı Linkler */}
             <div className="flex flex-col items-center lg:items-start space-y-1 lg:space-y-2 min-w-[80px]">
             <a href="/about" className="text-gray-600 hover:text-gray-800">{t("aboutus")}</a>
@@ -211,7 +211,7 @@ export default function Footer() {
           {/* Sosyal Medya */}
           <div className="hidden md:flex justify-center lg:justify-start items-center space-x-4 lg:border-l lg:border-gray-200 lg:pl-8 z-[990]">
             <a href="https://www.facebook.com/p/Ni-Hotel-Lara-100075601707373/" rel="norefferer nofollower"
-                  target="_blank" className="p-2 bg-gray-100 rounded hover:bg-gray-200 z-50 cursor-pointer">
+                  target="_blank" className="p-2 bg-gray-100 rounded hover:bg-gray-200 z-50 cursor-pointer ">
               <FaFacebookF />
             </a>
             <a href="#" rel="norefferer nofollower"
@@ -226,13 +226,13 @@ export default function Footer() {
         </div>
 
         {/* Alt Powered By */}
-        <div className="flex items-center justify-center my-5 lg:my-10  border-t border-gray-200 lg:pt-4 text-center text-gray-500 text-sm">
+        <div className="flex items-center justify-center my-0 mb-20 mt-3 md:my-5 lg:my-10  border-t border-gray-200 lg:pt-4 text-center text-gray-500 text-sm">
          <span className="flex mt-5 lg:mt-10 items-center justify-center"> Powered by © <DgtlfaceSvg className="flex" width={104} height={27}/></span>
         </div>
       </div>
-      <Image src={img} alt='leaf' width={600} height={1100} className='absolute bottom-48 hidden xl:flex xl:-bottom-[50px] -right-[120px]  lg:-right-[8%] z-[99] transform rotate-[35deg] lg:rotate-[20deg] opacity-60'/>
-      <Image src={img} alt='leaf' width={400} height={800} className='absolute bottom-48 xl:hidden lg:bottom-[30%] -right-[120px]  lg:-right-[8%] z-[99] transform rotate-[35deg] lg:rotate-[20deg] opacity-60'/>
-      
+      <Image src={img2} alt='leaf' width={400} height={760} className='absolute bottom-48 hidden xl:flex xl:bottom-[1%] -right-[120px]  lg:-right-[1%] z-[99] transform rotate-[35deg] lg:-rotate-[2deg] opacity-60'/>
+      <Image src={img2} alt='leaf' width={300} height={650} className='absolute md:flex md:bottom-[6%] xl:hidden lg:bottom-[1%] -right-[1px]  lg:-right-[1%] z-[99] transform -rotate-[30deg] lg:-rotate-[20deg] opacity-60'/>
+      <Image src={img2} alt='leaf' width={250} height={570} className='absolute bottom-[30%] flex md:hidden md:bottom-[6%] xl:hidden lg:bottom-[1%] -right-[1px]  lg:-right-[1%] z-[99] transform -rotate-[30deg] lg:-rotate-[20deg] opacity-60'/>
     </footer>
   );
 }

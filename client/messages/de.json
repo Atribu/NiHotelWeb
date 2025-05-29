@@ -19,7 +19,8 @@
     "cornerRoom": "Eckzimmer",
     "gallery": "GALERIE",
      "lobby": "Lobby",
-      "chat": "Chat"
+      "chat": "Chat",
+       "offers": "Angebote"
     },
 
 
@@ -157,6 +158,7 @@
     "carouselTitle": "VERANDAZIMMER",
     "carouselDesc1": "Das 25 m² Verandazimmer verfügt über ein Doppelbett und ein Einzelbett sowie eine private Veranda mit ruhigem Gartenblick. Perfekt, um den Morgenkaffee oder die Abendentspannung zu genießen. Ein gut ausgestattetes Bad und durchdachte Annehmlichkeiten runden Ihren Aufenthalt ab.",
     "carouselDesc2": "Der moderne Stil des Ni Hotel macht Ihren Urlaub unvergesslich. Dieses Zimmer wurde liebevoll geplant. Licht und Farben steigern Ihre Stimmung während Ihres traumhaften Aufenthalts.",
+    "carouselButtonText": "ENTDECKEN",
 
     "DiscoverRoom":{
       "header":"Entdecken Sie andere Zimmer",
@@ -360,7 +362,11 @@
     "title19": "Schnitzel",
     "text19": "220 g Schnitzel mit Kartoffelpüree und mariniertem Gemüse",
     "title20": "Chicken Turn",
-    "text20": "Hummus, rote Quinoa, Portulak, gegrillte Hähnchenbrust und Kirschtomaten"
+    "text20": "Hummus, rote Quinoa, Portulak, gegrillte Hähnchenbrust und Kirschtomaten",
+    "pizzas": "Pizzen",
+  "hamburgers": "Hamburger",
+  "pastas": "Nudelgerichte",
+  "vegetarian": "Vegetarisch"
   },
 
   "CoffeeTea": {
