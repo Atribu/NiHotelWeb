@@ -2,16 +2,14 @@ import React from 'react'
 import RoomCarouselSection from '../../components/subrooms/RoomCarouselSection'
 import SubRoomBannner from "../../components/subrooms/SubRoomBanner"
 import RoomFeatures from '../../components/subrooms/RoomFeatures'
-import img1 from "../../../../public/images/rooms/standardroom/NI-STANDART.webp"
-import img2 from "../../../../public/images/rooms/standardroom/NI-STANDART2.webp"
-import img3 from "../../../../public/images/rooms/standardroom/NI-STANDART3.webp"
-import img4 from "../../../../public/images/rooms/standardroom/NI-STANDART4.webp"
-import img5 from "../../../../public/images/rooms/standardroom/NI-STANDART6.webp"
-import img6 from "../../../../public/images/rooms/standardroom/NI-STANDART7.webp"
-import img7 from "../../../../public/images/rooms/standardroom/NI-STANDART8.webp"
-import img8 from "../../../../public/images/rooms/standardroom/NI-STANDART9.webp"
-import img9 from "../../../../public/images/rooms/standardroom/NI-STANDART10.webp"
-import img10 from "../../../../public/images/rooms/standardroom/NI-STANDART11.webp"
+import img1 from "../../../../public/images/rooms/standardroom/ODA1.webp"
+import img2 from "../../../../public/images/rooms/standardroom/ODA2.webp"
+import img3 from "../../../../public/images/rooms/standardroom/ODA3.webp"
+import img4 from "../../../../public/images/rooms/standardroom/ODA4.webp"
+import img5 from "../../../../public/images/rooms/standardroom/ODA5.webp"
+import img6 from "../../../../public/images/rooms/standardroom/ODA6.webp"
+import img7 from "../../../../public/images/rooms/standardroom/ODA7.webp"
+import img8 from "../../../../public/images/rooms/standardroom/ODA8.webp"
 import ReservationSection from '../../components/generalComponents/ReservationSection'
 import { useTranslations } from 'next-intl';
 import RoomTour from '../../components/rooms/RoomTour'
@@ -41,9 +39,7 @@ const Page = () => {
        img5,
        img6,
        img7,
-       img8,
-       img9,
-       img10
+       img8
       ]}
       buttonText={t("carouselButtonText")}
      

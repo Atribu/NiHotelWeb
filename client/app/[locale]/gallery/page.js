@@ -30,29 +30,29 @@ import kitchen10 from "../../../public/images/breakfast/DSCF8619.webp"
 import kitchen11 from "../../../public/images/breakfast/DSCF8620.webp"
 import kitchen13 from "../../../public/images/breakfast/DSCF8627.webp"
 
-import room1 from "../../../public/images/rooms/standardroom/NI-STANDART.webp"
-import room2 from "../../../public/images/rooms/standardroom/NI-STANDART2.webp"
-import room3 from "../../../public/images/rooms/juniorroom/NI-JUNIOR1.webp"
-import room4 from "../../../public/images/rooms/juniorroom/NI-JUNIOR2.webp"
-import room5 from "../../../public/images/rooms/veranda/NI-VERANDA.webp"
-import room6 from "../../../public/images/rooms/veranda/NI-VERANDA2.webp"
-import room7 from "../../../public/images/rooms/cornerroom/NI-CORNER1.webp"
-import room8 from "../../../public/images/rooms/cornerroom/NI-CORNER2.webp"
+import room1 from "../../../public/images/rooms/standardroom/ODA1.webp"
+import room2 from "../../../public/images/rooms/standardroom/ODA2.webp"
+import room3 from "../../../public/images/rooms/juniorroom/ODA1.webp"
+import room4 from "../../../public/images/rooms/juniorroom/ODA2.webp"
+import room5 from "../../../public/images/rooms/veranda/ODA1.webp"
+import room6 from "../../../public/images/rooms/veranda/ODA2.webp"
+import room7 from "../../../public/images/rooms/cornerroom/oda1.webp"
+import room8 from "../../../public/images/rooms/cornerroom/ODA2.webp"
 
-import room9 from "../../../public/images/rooms/cornerroom/NI-CORNER4.webp"
-import room10 from "../../../public/images/rooms/cornerroom/NI-CORNER5.webp"
+import room9 from "../../../public/images/rooms/cornerroom/ODA4.webp"
+import room10 from "../../../public/images/rooms/cornerroom/ODA5.webp"
 
-import room11 from "../../../public/images/rooms/standardroom/NI-STANDART3.webp"
-import room12 from "../../../public/images/rooms/standardroom/NI-STANDART4.webp"
+import room11 from "../../../public/images/rooms/standardroom/ODA3.webp"
+import room12 from "../../../public/images/rooms/standardroom/ODA4.webp"
 
-import room13 from "../../../public/images/rooms/juniorroom/NI-JUNIOR3.webp"
-import room14 from "../../../public/images/rooms/juniorroom/NI-JUNIOR4.webp"
+import room13 from "../../../public/images/rooms/juniorroom/ODA3.webp"
+import room14 from "../../../public/images/rooms/juniorroom/ODA4.webp"
 
-import room15 from "../../../public/images/rooms/veranda/NI-VERANDA3.webp"
-import room16 from "../../../public/images/rooms/veranda/NI-VERANDA4.webp"
+import room15 from "../../../public/images/rooms/veranda/ODA3.webp"
+import room16 from "../../../public/images/rooms/veranda/ODA4.webp"
 
-import room17 from "../../../public/images/rooms/veranda/NI-VERANDA5.webp"
-import room18 from "../../../public/images/rooms/veranda/NI-VERANDA6.webp"
+import room17 from "../../../public/images/rooms/veranda/ODA5.webp"
+import room18 from "../../../public/images/rooms/veranda/ODA6.webp"
 
 import { useTranslations } from 'next-intl';
 
