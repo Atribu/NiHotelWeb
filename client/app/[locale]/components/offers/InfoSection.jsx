@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import adresmark from "./adressmark.svg";
-import inoneinfopic from "../../gallery/images/lobi/2.webp"
+import inoneinfopic from "../../gallery/images/lobi/LOBI6.webp"
 import logo from "../../../../public/NiHotel.svg";
 import { Jost } from "next/font/google";
 import clsx from "clsx";

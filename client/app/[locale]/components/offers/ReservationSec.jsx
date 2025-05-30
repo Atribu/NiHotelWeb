@@ -7,8 +7,8 @@ import { BsFillSunriseFill } from "react-icons/bs";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import BellSvg from "../generalComponents/BellSvg";
-import img1 from "../../gallery/images/lobi/DSCF8705.webp"
-import img2 from "../../gallery/images/lobi/DSCF8663.webp"
+import img1 from "../../gallery/images/lobi/LOBI1.webp"
+import img2 from "../../gallery/images/lobi/LOBI5.webp"
 
 export default function ReservationSec() {
   const [adults, setAdults] = useState(2);

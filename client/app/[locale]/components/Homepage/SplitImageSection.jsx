@@ -1,19 +1,12 @@
 // components/SplitImageSection.jsx
 "use client";
-import img1 from "../../gallery/images/lobi/1.webp";
-import imgup from "./images/imgup.png";
-import NiHotelLogo from "../../../../public/Header/NiHotel.svg"
-import img11 from "../../../../public/images/breakfast/DSCF8600.webp"
-import img12 from "../../gallery/images/lobi/DSCF8725.webp"
-import sag from "../../../../public/images/sag.png"
-import ust from "../../../../public/images/ust.png"
+import img1 from "../../gallery/images/lobi/LOBI2.webp";
+import img12 from "../../gallery/images/lobi/LOBI4.webp"
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
-import Link from "next/link";
 import clock from "../../../../public/svg/SAATSON.svg"
 import CardwLogo from "./CardwLogo";
 import fil from "../../../..//public/images/fil.png"
-import heykel from "../../../../public/images/heykel.png"
 
 export default function SplitImageSection() {
   const t = useTranslations('About');

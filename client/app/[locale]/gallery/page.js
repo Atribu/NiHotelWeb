@@ -2,20 +2,20 @@
 "use client";
 import React, { useState, useEffect } from "react"
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
-import img1 from "./images/lobi/DSCF8651.webp"
-import img2 from "./images/lobi/DSCF8658.webp"
-import img3 from "./images/lobi/DSCF8663.webp"
-import img4 from "./images/lobi/DSCF8673.webp"
-import img5 from "./images/lobi/DSCF8675.webp"
-import img6 from "./images/lobi/DSCF8676.webp"
-import img7 from "./images/lobi/DSCF8677.webp"
-import img8 from "./images/lobi/1.webp"
-import img9 from "./images/lobi/2.webp"
-import img10 from "./images/lobi/3.webp"
-import img11 from "./images/lobi/DSCF8695.webp"
-import img12 from "./images/lobi/DSCF8700.webp"
-import img13 from "./images/lobi/DSCF8754.webp"
-import img14 from "./images/lobi/DSCF8745.webp"
+import img1 from "./images/lobi/LOBI1.webp"
+import img2 from "./images/lobi/LOBI2.webp"
+import img3 from "./images/lobi/LOBI3.webp"
+import img4 from "./images/lobi/LOBI4.webp"
+import img5 from "./images/lobi/LOBI5.webp"
+import img6 from "./images/lobi/LOBI6.webp"
+import img7 from "./images/lobi/LOBI7.webp"
+// import img8 from "./images/lobi/1.webp"
+// import img9 from "./images/lobi/2.webp"
+// import img10 from "./images/lobi/3.webp"
+// import img11 from "./images/lobi/DSCF8695.webp"
+// import img12 from "./images/lobi/DSCF8700.webp"
+// import img13 from "./images/lobi/DSCF8754.webp"
+// import img14 from "./images/lobi/DSCF8745.webp"
 
 import kitchen1 from "../../../public/images/breakfast/DSCF8599.webp"
 import kitchen2 from "../../../public/images/breakfast/DSCF8600.webp"
@@ -59,10 +59,6 @@ import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import GalleryBanner from "./components/GalleryBanner";
 
-// Galeri görüntülerini public/images/galeri klasörüne yerleştirin
-const images = [
-    img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14
-];
 
 export default function GalleryPage() {
   const [modalIndex, setModalIndex] = useState(null);
@@ -70,7 +66,7 @@ export default function GalleryPage() {
   const [selectedImg, setSelectedImg] = useState(null);
 
   const imageCategories = {
-    [t("lobby")]: [img1,img2, img3,img4,img5,img6, img7, img8, img9, img10, img11, img12, img13,img14],
+    [t("lobby")]: [img1,img2, img3,img4,img5,img6,img7],
     [t("rooms")]: [room1, room2, room3, room4, room5,room6,room7,room8,room9,room10,room11,room12,room13,room14,room15,room16,room17,room18],
     [t("kitchen")]: [kitchen1,kitchen2,kitchen3,kitchen4,kitchen5,kitchen6,kitchen7,kitchen8,kitchen9,kitchen10,kitchen11,kitchen13]
 

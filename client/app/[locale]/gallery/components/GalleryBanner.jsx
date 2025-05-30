@@ -1,5 +1,5 @@
 import React from 'react'
-import img2 from "../images/lobi/DSCF8658.webp"
+import img2 from "../images/lobi/LOBI1.webp"
 import Image from 'next/image'
 import { useTranslations } from 'next-intl';
 
