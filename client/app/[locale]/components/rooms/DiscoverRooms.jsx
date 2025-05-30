@@ -7,10 +7,10 @@ import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
-import corner from "../../../../public/images/rooms/cornerroom/NI-CORNER1.webp";
-import standard from "../../../../public/images/rooms/standardroom/NI-STANDART.webp";
-import junior from "../../../../public/images/rooms/juniorroom/NI-JUNIOR1.webp";
-import veranda from "../../../../public/images/rooms/veranda/NI-VERANDA4.webp";
+import corner from "../../../../public/images/rooms/cornerroom/oda1.webp";
+import standard from "../../../../public/images/rooms/standardroom/ODA1.webp";
+import junior from "../../../../public/images/rooms/juniorroom/ODA1.webp";
+import veranda from "../../../../public/images/rooms/veranda/ODA1.webp";
 import { useTranslations } from "next-intl";
 
 export default function DiscoverRooms({

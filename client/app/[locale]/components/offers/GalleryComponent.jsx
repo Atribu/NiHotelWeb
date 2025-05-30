@@ -46,14 +46,14 @@ import banner3en from "../../gallery/images/lobi/DSCF8661 .webp";
 import banner3ru from "../../gallery/images/lobi/DSCF8661 .webp";
 import banner3de from "../../gallery/images/lobi/DSCF8661 .webp";
 
-import room1 from "../../../../public/images/rooms/standardroom/NI-STANDART.webp"
-import room2 from "../../../../public/images/rooms/standardroom/NI-STANDART2.webp"
-import room3 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR1.webp"
-import room4 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR2.webp"
-import room5 from "../../../../public/images/rooms/veranda/NI-VERANDA.webp"
-import room6 from "../../../../public/images/rooms/veranda/NI-VERANDA2.webp"
-import room7 from "../../../../public/images/rooms/cornerroom/NI-CORNER1.webp"
-import room8 from "../../../../public/images/rooms/cornerroom/NI-CORNER2.webp"
+import room1 from "../../../../public/images/rooms/standardroom/ODA1.webp"
+import room2 from "../../../../public/images/rooms/standardroom/ODA2.webp"
+import room3 from "../../../../public/images/rooms/juniorroom/ODA1.webp"
+import room4 from "../../../../public/images/rooms/juniorroom/ODA2.webp"
+import room5 from "../../../../public/images/rooms/veranda/ODA1.webp"
+import room6 from "../../../../public/images/rooms/veranda/ODA2.webp"
+import room7 from "../../../../public/images/rooms/cornerroom/oda1.webp"
+import room8 from "../../../../public/images/rooms/cornerroom/ODA2.webp"
 
 const fontJost = Jost({
   weights: [300, 400, 500, 600, 700],

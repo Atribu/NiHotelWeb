@@ -2,25 +2,25 @@ import React from 'react'
 import RoomsBanner from '../components/rooms/RoomsBanner'
 import RoomShowcase from '../components/rooms/RoomShowcase'
 import { useTranslations } from 'next-intl';
-import cornerImage from "../../../public/images/rooms/cornerroom/NI-CORNER1.webp"
-import cornerImage2 from "../../../public/images/rooms/cornerroom/NI-CORNER2.webp"
-import cornerImage3 from "../../../public/images/rooms/cornerroom/NI-CORNER3.jpg"
-import cornerImage4 from "../../../public/images/rooms/cornerroom/NI-CORNER4.webp"
+import cornerImage from "../../../public/images/rooms/cornerroom/oda1.webp"
+import cornerImage2 from "../../../public/images/rooms/cornerroom/ODA2.webp"
+import cornerImage3 from "../../../public/images/rooms/cornerroom/ODA3.webp"
+import cornerImage4 from "../../../public/images/rooms/cornerroom/ODA4.webp"
 
-import standardImage from "../../../public/images/rooms/standardroom/NI-STANDART.webp"
-import standardImage2 from "../../../public/images/rooms/standardroom/NI-STANDART2.webp"
-import standardImage3 from "../../../public/images/rooms/standardroom/NI-STANDART3.webp"
-import standardImage4 from "../../../public/images/rooms/standardroom/NI-STANDART4.webp"
+import standardImage from "../../../public/images/rooms/standardroom/ODA1.webp"
+import standardImage2 from "../../../public/images/rooms/standardroom/ODA2.webp"
+import standardImage3 from "../../../public/images/rooms/standardroom/ODA3.webp"
+import standardImage4 from "../../../public/images/rooms/standardroom/ODA4.webp"
 
-import juniorImage from "../../../public/images/rooms/juniorroom/NI-JUNIOR1.webp"
-import juniorImage2 from "../../../public/images/rooms/juniorroom/NI-JUNIOR2.webp"
-import juniorImage3 from "../../../public/images/rooms/juniorroom/NI-JUNIOR3.webp"
-import juniorImage4 from "../../../public/images/rooms/juniorroom/NI-JUNIOR4.webp"
+import juniorImage from "../../../public/images/rooms/juniorroom/ODA1.webp"
+import juniorImage2 from "../../../public/images/rooms/juniorroom/ODA2.webp"
+import juniorImage3 from "../../../public/images/rooms/juniorroom/ODA3.webp"
+import juniorImage4 from "../../../public/images/rooms/juniorroom/ODA4.webp"
 
-import verandaImage from "../../../public/images/rooms/veranda/NI-VERANDA.webp"
-import verandaImage2 from "../../../public/images/rooms/veranda/NI-VERANDA2.webp"
-import verandaImage3 from "../../../public/images/rooms/veranda/NI-VERANDA3.webp"
-import verandaImage4 from "../../../public/images/rooms/veranda/NI-VERANDA4.webp"
+import verandaImage from "../../../public/images/rooms/veranda/ODA1.webp"
+import verandaImage2 from "../../../public/images/rooms/veranda/ODA2.webp"
+import verandaImage3 from "../../../public/images/rooms/veranda/ODA3.webp"
+import verandaImage4 from "../../../public/images/rooms/veranda/ODA4.webp"
 import Image from 'next/image';
 import img from "../../../public/svg/PORTRESON.svg"
 

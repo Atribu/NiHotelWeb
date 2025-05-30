@@ -2,13 +2,11 @@ import React from 'react'
 import RoomCarouselSection from '../../components/subrooms/RoomCarouselSection'
 import SubRoomBannner from "../../components/subrooms/SubRoomBanner"
 import RoomFeatures from '../../components/subrooms/RoomFeatures'
-import img1 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR1.webp"
-import img2 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR2.webp"
-import img3 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR3.webp"
-import img4 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR4.webp"
-import img5 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR5.webp"
-import img6 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR6.webp"
-import img7 from "../../../../public/images/rooms/juniorroom/NI-JUNIOR7.webp"
+import img1 from "../../../../public/images/rooms/juniorroom/ODA1.webp"
+import img2 from "../../../../public/images/rooms/juniorroom/ODA2.webp"
+import img3 from "../../../../public/images/rooms/juniorroom/ODA3.webp"
+import img4 from "../../../../public/images/rooms/juniorroom/ODA4.webp"
+import img5 from "../../../../public/images/rooms/juniorroom/ODA5.webp"
 import ReservationSection from '../../components/generalComponents/ReservationSection'
 import { useTranslations } from 'next-intl';
 import RoomTour from '../../components/rooms/RoomTour'
@@ -21,7 +19,7 @@ const Page = () => {
   
   return (
     <div className='max-w-screen overflow-x-hidden items-center justify-center flex flex-col relative'>
-        <SubRoomBannner header={t("bannerHeader")} m2={t("bannerM2")} person={t("bannerPerson")} view={t("bannerView")} image={img2}/>
+        <SubRoomBannner header={t("bannerHeader")} m2={t("bannerM2")} person={t("bannerPerson")} view={t("bannerView")} image={img1}/>
        <RoomCarouselSection
         m2="20 m²"
         person={t3("person2")}
@@ -36,8 +34,6 @@ const Page = () => {
        img3,
        img4,
        img5,
-       img6,
-       img7
       ]}
       buttonText={t("carouselButtonText")}
      
