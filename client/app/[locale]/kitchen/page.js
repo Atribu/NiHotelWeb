@@ -168,7 +168,7 @@ import icedcoffee5 from "../../../public/images/menu/drinks/icedcoffees/icedlatt
 import frozen1 from "../../../public/images/menu/drinks/frozen/strawberry.webp";
 import frozen2 from "../../../public/images/menu/drinks/frozen/banana.webp";
 
-import soft1 from "../../../public/images/menu/drinks/soft/sODA1.webp";
+import soft1 from "../../../public/images/menu/drinks/soft/soda.webp";
 import soft2 from "../../../public/images/menu/drinks/soft/cola2.webp";
 import soft3 from "../../../public/images/menu/drinks/soft/cola3.webp";
 import soft4 from "../../../public/images/menu/drinks/soft/fanta.webp";
