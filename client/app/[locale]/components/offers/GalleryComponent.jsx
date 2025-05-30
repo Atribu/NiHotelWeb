@@ -15,8 +15,8 @@ import BookingIcon from "./icons/BookingIcon";
 import PhotoIcon from "./icons/PhotoIcon";
 import RoomsIcons from "./icons/RoomsIcons";
 
-import general1 from "../../gallery/images/lobi/LOBI1.WEBP";
-import general3 from "../../gallery/images/lobi/LOBI2.WEBP";
+import general1 from "../../gallery/images/lobi/LOBI1.webp";
+import general3 from "../../gallery/images/lobi/LOBI2.webp";
 
 import restaurant1 from "../../../../public/images/breakfast/DSCF8599.webp";
 import restaurant2 from "../../../../public/images/breakfast/DSCF8600.webp"
@@ -31,19 +31,19 @@ import restaurant10 from "../../../../public/images/breakfast/DSCF8619.webp"
 import restaurant11 from "../../../../public/images/breakfast/DSCF8620.webp"
 import restaurant12 from "../../../../public/images/breakfast/DSCF8627.webp"
 
-import experiencesthumb from "../../gallery/images/lobi/LOBI1.WEBP";
-import banneren from "../../gallery/images/lobi/LOBI2.WEBP";
-import bannerru from "../../gallery/images/lobi/LOBI2.WEBP";
-import bannertr from "../../gallery/images/lobi/LOBI2.WEBP";
-import bannerde from "../../gallery/images/lobi/LOBI2.WEBP";
-import banner2tr from "../../gallery/images/lobi/LOBI3.WEBP";
-import banner2en from "../../gallery/images/lobi/LOBI3.WEBP";
-import banner2ru from "../../gallery/images/lobi/LOBI3.WEBP";
-import banner2de from "../../gallery/images/lobi/LOBI3.WEBP";
-import banner3tr from "../../gallery/images/lobi/LOBI4.WEBP";
-import banner3en from "../../gallery/images/lobi/LOBI4.WEBP";
-import banner3ru from "../../gallery/images/lobi/LOBI4.WEBP";
-import banner3de from "../../gallery/images/lobi/LOBI4.WEBP";
+import experiencesthumb from "../../gallery/images/lobi/LOBI1.webp";
+import banneren from "../../gallery/images/lobi/LOBI2.webp";
+import bannerru from "../../gallery/images/lobi/LOBI2.webp";
+import bannertr from "../../gallery/images/lobi/LOBI2.webp";
+import bannerde from "../../gallery/images/lobi/LOBI2.webp";
+import banner2tr from "../../gallery/images/lobi/LOBI3.webp";
+import banner2en from "../../gallery/images/lobi/LOBI3.webp";
+import banner2ru from "../../gallery/images/lobi/LOBI3.webp";
+import banner2de from "../../gallery/images/lobi/LOBI3.webp";
+import banner3tr from "../../gallery/images/lobi/LOBI4.webp";
+import banner3en from "../../gallery/images/lobi/LOBI4.webp";
+import banner3ru from "../../gallery/images/lobi/LOBI4.webp";
+import banner3de from "../../gallery/images/lobi/LOBI4.webp";
 
 import room1 from "../../../../public/images/rooms/standardroom/ODA1.webp"
 import room2 from "../../../../public/images/rooms/standardroom/ODA2.webp"
