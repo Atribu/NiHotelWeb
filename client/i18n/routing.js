@@ -61,7 +61,7 @@ export const config = {
     ru: '/nomera/standartnaya-komnata',
   },
   '/rooms/juniorroom': {
-    tr: '/odalar/kucukoda',
+    tr: '/odalar/junioroda',
     en: '/rooms/juniorroom',
     de: '/zimmer/juniorzimmer',
     ru: '/nomera/juniornaya-komnata',
