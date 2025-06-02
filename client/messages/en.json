@@ -485,6 +485,24 @@
     "title11": "Juss Cherry Juice",     "text11": "",
     "title12": "Fresh Orange Juice",    "text12": ""
   }
+  },
+
+  "ContactForm": {
+    "contactUs": "CONTACT US",
+    "labelName": "Name / Surname",
+    "placeholderName": "John Doe",
+    "labelEmail": "E-Mail",
+    "labelPhone": "Phone Number",
+    "placeholderEmail": "johndoe@example.com",
+    "labelMessage": "Message",
+    "placeholderMessage": "Your message...",
+    "labelPolicy": "Contact Form Policy",
+    "sendButton": "SEND",
+    "sending": "SENDING...",
+    "successMessage": "Your message was sent successfully!",
+    "errorAcceptPolicy": "Please accept the privacy policy.",
+    "errorSendFailed": "Send failed. Please try again.",
+    "errorGeneric": "An error occurred. Please try again."
   }
 
 

@@ -488,6 +488,24 @@
     "title11": "Juss Вишнёвый Сок",     "text11": "",
     "title12": "Свежевыжатый Апельсиновый Сок","text12": ""
   }
+  },
+
+  "ContactForm": {
+    "contactUs": "КОНТАКТЫ",
+    "labelName": "Имя / Фамилия",
+    "placeholderName": "John Doe",
+     "labelPhone": "Номер телефона",
+    "labelEmail": "E-Mail",
+    "placeholderEmail": "johndoe@example.com",
+    "labelMessage": "Сообщение",
+    "placeholderMessage": "Ваше сообщение...",
+    "labelPolicy": "Политика формы контакта",
+    "sendButton": "ОТПРАВИТЬ",
+    "sending": "ОТПРАВКА...",
+    "successMessage": "Ваше сообщение успешно отправлено!",
+    "errorAcceptPolicy": "Пожалуйста, примите политику конфиденциальности.",
+    "errorSendFailed": "Не удалось отправить. Попробуйте снова.",
+    "errorGeneric": "Произошла ошибка. Пожалуйста, попробуйте снова."
   }
   
 }

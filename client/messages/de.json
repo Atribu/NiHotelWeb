@@ -489,7 +489,25 @@
     "title11": "Juss Kirschsaft",       "text11": "",
     "title12": "Frisch gepresster Orangensaft", "text12": ""
   }
-}
+},
+
+  "ContactForm": {
+    "contactUs": "KONTAKT",
+    "labelName": "Name / Nachname",
+    "placeholderName": "John Doe",
+      "labelPhone": "Telefonnummer",
+    "labelEmail": "E-Mail",
+    "placeholderEmail": "johndoe@example.com",
+    "labelMessage": "Nachricht",
+    "placeholderMessage": "Ihre Nachricht...",
+    "labelPolicy": "Kontaktformular-Richtlinie",
+    "sendButton": "SENDEN",
+    "sending": "SENDE...",
+    "successMessage": "Ihre Nachricht wurde erfolgreich gesendet!",
+    "errorAcceptPolicy": "Bitte akzeptieren Sie die Datenschutzrichtlinie.",
+    "errorSendFailed": "Senden fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "errorGeneric": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  }
 
 
 

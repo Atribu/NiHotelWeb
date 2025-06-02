@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <!--
+    Aşağıda, her bir sayfa için 4 farklı dil bağlantısı (hreflang) tanımlanmıştır.
+    <loc> etiketi varsayılan olarak her zaman İngilizce (/en) versiyonunu işaret ediyor.
+    Siz dilerseniz <loc> etiketini ana dil olarak (ör. "tr") da kullanabilirsiniz.
+    Önemli olan, her URL bloğunda o sayfanın dörtlü dil karşılıklarının yer almasıdır.
+  -->
+
+
+  <url>
+    <loc>https://www.nihotellara.com/tr/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.nihotellara.com/en/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="tr"
+      href="https://www.nihotellara.com/tr/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://www.nihotellara.com/de/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://www.nihotellara.com/ru/"
+    />
+    <priority>1.00</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+
+  <url>
+    <loc>https://www.nihotellara.com/tr/about</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.nihotellara.com/en/about"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="tr"
+      href="https://www.nihotellara.com/tr/about"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://www.nihotellara.com/de/about"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://www.nihotellara.com/ru/about"
+    />
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+
+  <url>
+    <loc>https://www.nihotellara.com/tr/contact</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.nihotellara.com/en/contact"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="tr"
+      href="https://www.nihotellara.com/tr/contact"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://www.nihotellara.com/de/contact"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://www.nihotellara.com/ru/contact"
+    />
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.nihotellara.com/tr/gallery</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.nihotellara.com/en/gallery"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="tr"
+      href="https://www.nihotellara.com/tr/gallery"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://www.nihotellara.com/de/gallery"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://www.nihotellara.com/ru/gallery"
+    />
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+
+  <url>
+    <loc>https://www.nihotellara.com/tr/kitchen</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.nihotellara.com/en/kitchen"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="tr"
+      href="https://www.nihotellara.com/tr/kitchen"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://www.nihotellara.com/de/kitchen"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://www.nihotellara.com/ru/kitchen"
+    />
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+
+  <url>
+    <loc>https://www.nihotellara.com/tr/offers</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.nihotellara.com/en/offers"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="tr"
+      href="https://www.nihotellara.com/tr/offers"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://www.nihotellara.com/de/offers"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://www.nihotellara.com/ru/offers"
+    />
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.nihotellara.com/tr/rooms</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.nihotellara.com/en/rooms"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="tr"
+      href="https://www.nihotellara.com/tr/rooms"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://www.nihotellara.com/de/rooms"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://www.nihotellara.com/ru/rooms"
+    />
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sizinalanadınız.com/tr/rooms/cornerroom</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sizinalanadınız.com/en/rooms/cornerroom" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.sizinalanadınız.com/tr/rooms/cornerroom" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sizinalanadınız.com/de/rooms/cornerroom" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.sizinalanadınız.com/ru/rooms/cornerroom" />
+    <priority>0.65</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- 7.2) Junior Room -->
+  <url>
+    <loc>https://www.sizinalanadınız.com/tr/rooms/juniorroom</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sizinalanadınız.com/en/rooms/juniorroom" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.sizinalanadınız.com/tr/rooms/juniorroom" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sizinalanadınız.com/de/rooms/juniorroom" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.sizinalanadınız.com/ru/rooms/juniorroom" />
+    <priority>0.65</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- 7.3) Standard Room -->
+  <url>
+    <loc>https://www.sizinalanadınız.com/tr/rooms/standardroom</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sizinalanadınız.com/en/rooms/standardroom" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.sizinalanadınız.com/tr/rooms/standardroom" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sizinalanadınız.com/de/rooms/standardroom" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.sizinalanadınız.com/ru/rooms/standardroom" />
+    <priority>0.65</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- 7.4) Veranda Room -->
+  <url>
+    <loc>https://www.sizinalanadınız.com/tr/rooms/verandaroom</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sizinalanadınız.com/en/rooms/verandaroom" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.sizinalanadınız.com/tr/rooms/verandaroom" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sizinalanadınız.com/de/rooms/verandaroom" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.sizinalanadınız.com/ru/rooms/verandaroom" />
+    <priority>0.65</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>

@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { FaTimes } from "react-icons/fa";
 
 const ContactFormModal = ({ modalOpen, setModalOpen }) => {
-  const t = useTranslations("Contact"); 
+  const t = useTranslations("ContactForm"); 
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -45,7 +45,7 @@ const ContactFormModal = ({ modalOpen, setModalOpen }) => {
 
     try {
       if (!formData.policyAccepted) {
-        throw new Error("Lütfen gizlilik politikasını kabul edin");
+        throw new Error(t("errorAcceptPolicy"));
       }
 
       const messageContent = `
@@ -70,7 +70,7 @@ We thank you.
       });
 
       if (!response.ok) {
-        throw new Error("Gönderim başarısız oldu");
+        throw new Error(t("errorSendFailed"));
       }
 
       setSuccess(true);
@@ -82,7 +82,7 @@ We thank you.
         policyAccepted: false,
       });
     } catch (err) {
-      setError(err.message || "Bir hata oluştu, lütfen tekrar deneyin");
+      setError(err.message || t("errorGeneric"));
     } finally {
       setLoading(false);
     }
@@ -103,7 +103,7 @@ We thank you.
         {/* Header ve Close Butonu */}
         <div className="flex justify-between items-center px-6 py-4">
           <h3 className="text-2xl lg:text-[36px] font-['Cormorant_Garamond'] font-bold text-[#242424]">
-            CONTACT US
+            {t("contactUs")}
           </h3>
           <button
             onClick={() => setModalOpen(false)}
@@ -122,7 +122,7 @@ We thank you.
               htmlFor="name"
               className="block text-sm font-medium text-gray-800 mb-1"
             >
-              Name / Surname ;
+               {t("labelName")}
             </label>
             <input
               type="text"
@@ -142,7 +142,7 @@ We thank you.
               htmlFor="phone"
               className="block text-sm font-medium text-gray-800 mb-1"
             >
-              Phone Number ;
+            {t("labelPhone")}
             </label>
             <input
               type="tel"
@@ -163,7 +163,7 @@ We thank you.
               htmlFor="email"
               className="block text-sm font-medium text-gray-800 mb-1"
             >
-              E-Mail ;
+               {t("labelEmail")}
             </label>
             <input
               type="email"
@@ -183,12 +183,12 @@ We thank you.
               htmlFor="message"
               className="block text-sm font-medium text-gray-800 mb-1"
             >
-              Message ;
+               {t("labelMessage")}
             </label>
             <textarea
               name="message"
               id="message"
-              placeholder="Your message..."
+              placeholder={t("placeholderMessage")}
               value={formData.message}
               onChange={handleChange}
               rows={4}
@@ -203,7 +203,7 @@ We thank you.
           )}
           {success && (
             <p className="text-sm text-green-600 font-medium">
-              Mesajınız başarıyla gönderildi!
+         {t("successMessage")}
             </p>
           )}
 
@@ -216,7 +216,7 @@ We thank you.
                 loading ? "opacity-50 cursor-not-allowed" : "hover:bg-[#e0b990]"
               }`}
             >
-              {loading ? "SENDING..." : "SEND"}
+              {loading ? t("sending") : t("sendButton")}
             </button>
             <label className="ml-4 flex items-center text-sm text-gray-800">
               <input
@@ -227,7 +227,7 @@ We thank you.
                 className="h-4 w-4 text-[#dec7a6] border-gray-300 rounded focus:ring-[#dec7a6] focus:ring-opacity-50"
               />
               <span className="ml-2 whitespace-nowrap">
-                Contact Form Policy
+                 {t("labelPolicy")}
               </span>
             </label>
           </div>

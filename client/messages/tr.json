@@ -487,6 +487,24 @@
     "title11": "Juss Vişne Suyu",       "text11": "",
     "title12": "Sıkma Portakal Suyu",   "text12": ""
   }
- }
+ },
+
+ "ContactForm": {
+    "contactUs": "İLETİŞİM",
+    "labelName": "Adı / Soyadı",
+    "placeholderName": "John Doe",
+      "labelPhone": "Telefon Numarası",
+    "labelEmail": "E-Posta",
+    "placeholderEmail": "johndoe@example.com",
+    "labelMessage": "Mesaj",
+    "placeholderMessage": "Mesajınız...",
+    "labelPolicy": "İletişim Formu Politikası",
+    "sendButton": "GÖNDER",
+    "sending": "GÖNDERİLİYOR...",
+    "successMessage": "Mesajınız başarıyla gönderildi!",
+    "errorAcceptPolicy": "Lütfen gizlilik politikasını kabul edin.",
+    "errorSendFailed": "Gönderim başarısız oldu. Tekrar deneyin.",
+    "errorGeneric": "Bir hata oluştu. Lütfen tekrar deneyin."
+  }
   
 }
