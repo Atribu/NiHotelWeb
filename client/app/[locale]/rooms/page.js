@@ -41,10 +41,10 @@ const Page = () => {
         m2="25 m²"
         person={t("person1")}
         images={[
-          { src: standardImage, alt: "standard " },
-          { src: standardImage2, alt: "standard " },
-          { src: standardImage3, alt: "standard " },
-          { src: standardImage4, alt: "standard " }
+          { src: standardImage, alt: "standard room 1" },
+          { src: standardImage2, alt: "standard room 2" },
+          { src: standardImage3, alt: "standard room 3" },
+          { src: standardImage4, alt: "standard room 4" }
         ]}
       />
        {/* Aynı component, bu kez resimler sağda */}
@@ -58,10 +58,10 @@ const Page = () => {
         imagesOnRight={true}
        
         images={[
-          { src: juniorImage, alt: " junior room " },
-          { src: juniorImage2, alt: " junior room " },
-          { src: juniorImage3, alt: " junior room " },
-          { src: juniorImage4, alt: " junior room " },
+          { src: juniorImage, alt: " junior room 1" },
+          { src: juniorImage2, alt: " junior room 2" },
+          { src: juniorImage3, alt: " junior room 3" },
+          { src: juniorImage4, alt: " junior room 4" },
         ]}
       />
     </div>
@@ -77,10 +77,10 @@ const Page = () => {
          m2="20 m²"
          person={t("person2")}
         images={[
-          { src: juniorImage, alt: " junior room " },
-          { src: juniorImage2, alt: " junior room " },
-          { src: juniorImage3, alt: " junior room " },
-          { src: juniorImage4, alt: " junior room " },
+          { src: juniorImage, alt: " junior room 1" },
+          { src: juniorImage2, alt: " junior room 2" },
+          { src: juniorImage3, alt: " junior room 3" },
+          { src: juniorImage4, alt: " junior room 4" },
         ]}
       />
       </div>
@@ -95,10 +95,10 @@ const Page = () => {
          m2="25 m²"
          person={t("person3")}
         images={[
-          { src: verandaImage, alt: "veranda " },
-          { src: verandaImage2, alt: "veranda  " },
-          { src: verandaImage3, alt: "veranda " },
-          { src: verandaImage4, alt: "veranda  " },
+          { src: verandaImage, alt: "veranda room" },
+          { src: verandaImage2, alt: "veranda room" },
+          { src: verandaImage3, alt: "veranda room" },
+          { src: verandaImage4, alt: "veranda  room" },
         ]}
       />
        {/* Aynı component, bu kez resimler sağda */}
@@ -111,10 +111,10 @@ const Page = () => {
         buttonText={t("buttonText")}
         imagesOnRight={true}
         images={[
-          { src: cornerImage, alt: " corner " },
-          { src: cornerImage2, alt: "corner  " },
-          { src: cornerImage3, alt: " corner " },
-          { src: cornerImage4, alt: "corner  " },
+          { src: cornerImage, alt: " corner room" },
+          { src: cornerImage2, alt: "corner  room 2" },
+          { src: cornerImage3, alt: " corner room 3" },
+          { src: cornerImage4, alt: "corner  room 4" },
         ]}
       />
     </div>
@@ -130,10 +130,10 @@ const Page = () => {
          m2="25 m²"
          person={t("person4")}
         images={[
-          { src: cornerImage, alt: " corner " },
-          { src: cornerImage2, alt: "corner  " },
-          { src: cornerImage3, alt: " corner " },
-          { src: cornerImage4, alt: "corner  " },
+          { src: cornerImage, alt: " corner room " },
+          { src: cornerImage2, alt: "corner  room 2" },
+          { src: cornerImage3, alt: " corner room 3" },
+          { src: cornerImage4, alt: "corner  room 4" },
         ]}
       />
     </div>
