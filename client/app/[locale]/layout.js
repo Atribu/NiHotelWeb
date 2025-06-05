@@ -10,6 +10,7 @@ import CookiePopup from "./components/generalComponents/CookiePopup";
 import BookSection from './components/generalComponents/BookSection'
 import ChatManager from "./components/generalComponents/ChatManager";
 import Script from 'next/script';
+import { GoogleTagManager,GoogleAnalytics } from '@next/third-parties/google'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -55,6 +56,7 @@ export function generateStaticParams() {
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
   const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
   if (!routing.locales.includes(locale)) {
     notFound();
@@ -131,6 +133,8 @@ export default async function RootLayout({ children, params }) {
           }}
         />
       </head>
+       <GoogleTagManager gtmId={`${GTM_ID}`}/>
+       <GoogleAnalytics gaId={`${GA_ID}`} />
       <body className="overflow-x-hidden">
          {/* ② Body açıldıktan hemen sonra noscript iframe */}
          <noscript>
