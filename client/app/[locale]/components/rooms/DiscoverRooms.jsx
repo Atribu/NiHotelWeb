@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';;
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";

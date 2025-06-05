@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import clsx from "clsx";
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';;
 import { Jost } from "next/font/google";
 import "../../../globals.css";
 import CustomImage from "./CustomImage";

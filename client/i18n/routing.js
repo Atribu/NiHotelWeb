@@ -8,9 +8,9 @@ export const config = {
   pathnames : {
   '/': {
     tr: '/',
-    en: '/',
-    de: '/',
-    ru: '/',
+    en: '/homepage',
+    de: '/startseite',
+    ru: '/glavnaya',
   },
   '/rooms': {
     tr: '/odalar',

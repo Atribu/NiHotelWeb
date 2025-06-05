@@ -2,7 +2,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';;
 import banner from "../../../public/images/breakfast/DSCF8600.webp";
 import { useTranslations } from "next-intl";
 import img1 from "../../../public/images/menu/breakfast/kahvaltiTabak.webp";

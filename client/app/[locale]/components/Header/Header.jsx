@@ -4,7 +4,7 @@ import { Menu,ChevronDown } from "lucide-react";
 import { useTranslations } from 'next-intl';
 import LangSwitcher from '@/LangSwitcher';
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';;
 import { usePathname, useRouter } from "next/navigation";
 import NiHotelLogo from "../../../../public/Header/NiHotel.svg"
 import { useState } from "react";

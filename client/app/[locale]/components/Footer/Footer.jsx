@@ -18,7 +18,7 @@ import DgtlfaceSvg from "../generalComponents/DgtlfaceSvg";
 import { useTranslations } from 'next-intl';
 import img from "../../../../public/images/nihotelLeaf.png"
 import img2 from "../../../../public/images/zeytindali.png"
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';;
 
 export default function Footer() {
     const t = useTranslations('Footer');

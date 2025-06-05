@@ -2,7 +2,7 @@
 
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';;
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { MdStraighten } from "react-icons/md";
 import { FaUser } from "react-icons/fa";

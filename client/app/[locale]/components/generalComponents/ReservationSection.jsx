@@ -2,7 +2,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';;
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import BellSvg from "./BellSvg";
 import { useTranslations, useLocale } from "next-intl";

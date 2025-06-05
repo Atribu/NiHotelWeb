@@ -1,6 +1,6 @@
 import React from 'react'
 // 
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';;
 import { useTranslations } from 'next-intl';
 import imgbanner from "../.././../../public/images/rooms/juniorroom/ODA1.webp"
 import Image from 'next/image';

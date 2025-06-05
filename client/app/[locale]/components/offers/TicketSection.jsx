@@ -9,7 +9,7 @@ import CustomImage from "./CustomImage";
 import Image from "next/image";
 import { Jost } from "next/font/google";
 import clsx from "clsx";
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';;
 import "../../../globals.css"
 import { useTranslations } from "next-intl";
 const fontJost = Jost({

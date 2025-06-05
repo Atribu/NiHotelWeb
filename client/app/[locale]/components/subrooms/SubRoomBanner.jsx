@@ -1,6 +1,6 @@
 import React from 'react'
 // 
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';;
 import { GoPerson } from "react-icons/go";
 import { LuTreePine } from "react-icons/lu";
 import AreaSvg from './AreaSvg';

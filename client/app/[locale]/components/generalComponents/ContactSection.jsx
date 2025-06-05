@@ -9,7 +9,7 @@ import PhoneSvg from "./PhoneSvg";
 import { useTranslations } from 'next-intl';
 import callcenter from "../../../../public/images/callcenter2.png";
 import ContactFormModal from "./ContactFormModal"; // İsimlendirmeye dikkat!
-import Link from "next/link";
+import { Link } from '@/i18n/navigation';;
 
 export default function ContactSection() {
   const t = useTranslations('Contact');
