@@ -39,21 +39,21 @@ const TicketSection = () => {
           <div className="flex absolute top-[50px] flex-col items-start justify-center">
             <p className="text-[20px] font-medium uppercase">book Your Flight</p>
             <div className="grid grid-cols-3  items-center justify-center gap-10 ">
-            <a target="_blank" rel="noreferrer noopener" href="https://www.flypgs.com/en/cities">
+            <a target="_blank" rel="noreferrer noopener" href="https://www.flypgs.com/en/cities/flights-to-antalya">
               <CommercialImage image={pegasus} alt="Pegasus" />
             </a>
-            <a target="_blank" rel="noreferrer noopener" href="https://www.turkishairlines.com/en-int/flights/">
+            <a target="_blank" rel="noreferrer noopener" href="https://www.turkishairlines.com/en-int/flights/flights-to-antalya/">
               <CommercialImage image={thy} alt="Turkish Airlines" />
               </a>
-              <a target="_blank" rel="noreferrer noopener" href="https://www.corendonairlines.com/turkey/">
+              <a target="_blank" rel="noreferrer noopener" href="https://www.corendonairlines.com/turkey/flights-to-antalya">
               <CommercialImage image={corendon} alt="Corendon" />
               </a>
             </div>
             <div className="mr-[60px] grid grid-cols-2 items-center justify-center gap-10">
-            <a target="_blank" rel="noreferrer noopener" href="https://www.skyscanner.net/">
+            <a target="_blank" rel="noreferrer noopener" href="https://www.skyscanner.com.tr/ucak-bileti">
               <CommercialImage image={skyscanner} alt="Skyscanner" />
             </a>
-            <a target="_blank" rel="noreferrer noopener" href="https://www.aviasales.ru/cities/">
+            <a target="_blank" rel="noreferrer noopener" href="https://www.aviasales.ru/cities/antaliya-ayt">
               <CommercialImage image={aviasales} alt="Aviasales" />
             </a>
             </div>

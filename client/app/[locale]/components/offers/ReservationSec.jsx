@@ -5,22 +5,69 @@ import { HiOutlineCalendar } from "react-icons/hi";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { BsFillSunriseFill } from "react-icons/bs";
 import DatePicker from "react-datepicker";
+import { useLocale } from "next-intl";
 import "react-datepicker/dist/react-datepicker.css";
 import BellSvg from "../generalComponents/BellSvg";
 import img1 from "../../gallery/images/lobi/LOBI1.webp"
 import img2 from "../../gallery/images/lobi/LOBI5.webp"
+import Link from "next/link";
 
 export default function ReservationSec() {
+    const locale = useLocale(); 
   const [adults, setAdults] = useState(2);
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
 
-  // Bugünden önce tarih seçimini engelle
-  const today = new Date();
+  // // Bugünden önce tarih seçimini engelle
+  // const today = new Date();
 
-  // Check-out için minimum tarih (check-in + 1 gün)
-  const minCheckOutDate = checkInDate ? new Date(checkInDate.getTime() + 24 * 60 * 60 * 1000) : today;
+  // // Check-out için minimum tarih (check-in + 1 gün)
+  // const minCheckOutDate = checkInDate ? new Date(checkInDate.getTime() + 24 * 60 * 60 * 1000) : today;
+  
 
+      const today = new Date();
+  const minCheckOutDate = checkInDate
+    ? new Date(checkInDate.getTime() + 24 * 60 * 60 * 1000)
+    : today;
+
+  function formatDate(d) {
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, "0");
+    const dd = String(d.getDate()).padStart(2, "0");
+    return `${y}-${m}-${dd}`;
+  }
+
+  const handleBookNow = () => {
+    if (!checkInDate || !checkOutDate) return;
+
+    const ci = formatDate(checkInDate);
+    const co = formatDate(checkOutDate);
+    const base = "https://nihotellara.rezervasyonal.com";
+
+    let url = "";
+
+  if (locale === "en" || locale === "de") {
+      // İngilizce: language başta, sonra diğer parametreler
+      url = `${base}/en/?language=en`   // burada her iki durumda da 'en'
+        + `&Checkin=${ci}`
+        + `&Checkout=${co}`
+        + `&Adult=${adults}`
+        + `&child=0`
+        + `&ChildAges=`;
+    } else {
+      // Diğer diller: prefix tr yok, prefix diğer diller var → parametreler Checkin ile başlayıp en sonda language
+      const prefix = locale === "tr" ? "" : `/${locale}`;
+     url = `${base}${prefix}/?`
+        + `Checkin=${ci}`
+        + `&Checkout=${co}`
+        + `&Adult=${adults}`
+        + `&child=0`
+        + `&ChildAges=`
+        + `&language=${locale}`;
+    }
+
+    window.location.href = url;
+  };
   return (
     <main className="flex flex-col items-center justify-center pt-6 xl:pt-0 xl:min-h-[85vh]">
       <div className="container mx-auto lg:px-4 py-16 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 items-center justify-center max-w-[1400px] w-[96%] lg:w-[90%]">
@@ -86,7 +133,11 @@ export default function ReservationSec() {
                   showPopperArrow={false}
                   popperPlacement="bottom-end"
                 />
-                <HiOutlineCalendar className="absolute right-0 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none" />
+                { !checkInDate && (
+                 <HiOutlineCalendar
+                   className="absolute right-0 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none"
+                 />
+               ) }
               </div>
             </div>
 
@@ -105,7 +156,11 @@ export default function ReservationSec() {
                   popperPlacement="bottom-end"
                   disabled={!checkInDate}
                 />
-                <HiOutlineCalendar className="absolute right-0 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none" />
+               { !checkOutDate && (
+                 <HiOutlineCalendar
+                   className="absolute right-0 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none"
+                 />
+               ) }
               </div>
             </div>
 
@@ -133,13 +188,16 @@ export default function ReservationSec() {
 
             {/* BOOK NOW */}
             <button
-              type="submit"
-              className="w-full flex items-center justify-center gap-2 py-2 border border-gray-300 uppercase text-[13px] font-jost font-medium hover:bg-gray-100 transition disabled:opacity-50 disabled:cursor-not-allowed"
-              disabled={!checkInDate || !checkOutDate}
-            >
-              <span>Book Now</span>
-              <BellSvg className="flex" width={26} height={16} color="#000"/>
-            </button>
+        type="button"
+        onClick={handleBookNow}
+        disabled={!checkInDate || !checkOutDate}
+        className="w-full flex items-center justify-center gap-2 py-2
+                   border border-gray-300 uppercase text-[13px] font-jost font-medium
+                   hover:bg-gray-100 transition disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        <span>Book Now</span>
+        <BellSvg className="flex" width={26} height={16} color="#000" />
+      </button>
           </div>
         </div>
       </div>

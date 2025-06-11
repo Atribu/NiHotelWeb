@@ -172,7 +172,7 @@ function DialogComponenet({ open, onClose, slides, selectedCategory }) {
                             className={clsx(
                               "  whitespace-nowrap px-4 py-2 text-2xs font-normal uppercase md:text-base",
                               category == cat.name
-                                ? "bg-iblack text-white"
+                                ? "bg-black text-white"
                                 : "border border-isf",
                             )}
                             key={index}

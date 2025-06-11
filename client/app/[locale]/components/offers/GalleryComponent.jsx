@@ -17,6 +17,11 @@ import RoomsIcons from "./icons/RoomsIcons";
 
 import general1 from "../../gallery/images/lobi/LOBI1.webp";
 import general3 from "../../gallery/images/lobi/LOBI2.webp";
+import general2 from "../../gallery/images/lobi/LOBI3.webp";
+import general4 from "../../gallery/images/lobi/LOBI4.webp";
+import general5 from "../../gallery/images/lobi/LOBI5.webp";
+import general6 from "../../gallery/images/lobi/LOBI6.webp";
+import general7 from "../../gallery/images/lobi/LOBI7.webp";
 
 import restaurant1 from "../../../../public/images/breakfast/DSCF8599.webp";
 import restaurant2 from "../../../../public/images/breakfast/DSCF8600.webp"
@@ -53,6 +58,8 @@ import room5 from "../../../../public/images/rooms/veranda/ODA1.webp"
 import room6 from "../../../../public/images/rooms/veranda/ODA2.webp"
 import room7 from "../../../../public/images/rooms/cornerroom/oda1.webp"
 import room8 from "../../../../public/images/rooms/cornerroom/ODA2.webp"
+import room9 from "../../../../public/images/rooms/cornerroom/ODA3.webp"
+import room10 from "../../../../public/images/rooms/cornerroom/ODA4.webp"
 
 const fontJost = Jost({
   weights: [300, 400, 500, 600, 700],
@@ -65,14 +72,46 @@ const imageData = [
 
   {
     src: general3,
-    alt: "Pool side",
-    category: "beach-pool",
+    alt: "lobby",
+    category: "lobby",
   },
   {
     src: general1,
-    alt: "Pool side",
-    category: "beach-pool",
+    alt: "lobby",
+    category: "lobby",
   },
+  
+
+   {
+    src: general2,
+    alt: "lobby",
+    category: "lobby",
+  },
+  {
+    src: general4,
+    alt: "lobby",
+    category: "lobby",
+  },
+  
+
+   {
+    src: general5,
+    alt: "lobby",
+    category: "lobby",
+  },
+  {
+    src: general6,
+    alt: "lobby",
+    category: "lobby",
+  },
+  
+
+   {
+    src: general7,
+    alt: "lobby",
+    category: "lobby",
+  },
+
   
 
   // Restaurant & Bar images
@@ -147,7 +186,7 @@ const imageData = [
     category: "restaurant-bar",
   },
 
-
+  // Rooms images
   {
     src: room1,
     alt: "room",
@@ -189,14 +228,25 @@ const imageData = [
     category: "rooms",
   },
 
+    {
+    src: room9,
+    alt: "room",
+    category: "rooms",
+  },
+  {
+    src: room10,
+    alt: "room",
+    category: "rooms",
+  },
+
   // Entertainment images
   {
     src: experiencesthumb,
-    alt: "Live show",
-    category: "experiences",
+    alt: "lobby",
+    category: "lobby",
   },
 
-  // Rooms images
+
   
 ];
 
@@ -265,9 +315,8 @@ const GalleryComponent = () => {
 
   const categories = [
     "rooms",
-    "beach-pool",
     "restaurant-bar",
-    "experiences",
+    "lobby",
   ];
 
 
@@ -313,7 +362,7 @@ const GalleryComponent = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="wrapper mx-auto grid  grid-cols-3 justify-between gap-4 lg:overflow-hidden lg:h-[calc(100vh-85px)] pb-12 lg:pb-8 w-[96%]">
+    <div className="wrapper mx-auto grid  grid-cols-3 justify-between gap-4 lg:overflow-hidden lg:h-[calc(102vh-85px)] pb-12 lg:pb-8 w-[96%]">
       <div className="relative col-span-3 flex h-full flex-col lg:col-span-2">
         <div
           className="relative overflow-hidden lg:h-full h-[360px] sm:h-[500px]"
@@ -372,7 +421,7 @@ const GalleryComponent = () => {
                 href="https://maps.app.goo.gl/o68dvArdeXgLQQQh8"
               >
                 <span className="text-[#F5F5F5]">
-                 infooo
+                 information
                 </span>
               </a>
             </div>
@@ -380,7 +429,7 @@ const GalleryComponent = () => {
         </div>
         <div
           className={clsx(
-            "left-center -bottom-6 flex gap-4 text-iblack md:hidden",
+            "left-center -bottom-6 flex gap-4 text-black md:hidden",
             fontJost.className,
           )}
         >
@@ -391,7 +440,7 @@ const GalleryComponent = () => {
             <BookingIcon className={"text-xs"} />
           </FeedBackBar>
         </div>
-        <div className="mt-4  hidden justify-between gap-4   lg:grid lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
+        <div className="mt-4  hidden justify-between gap-4 lg:grid lg:grid-cols-3 ">
           {categories.map((category, catindex) => {
             return (
               <div
@@ -405,17 +454,20 @@ const GalleryComponent = () => {
                   catindex >= 4 ? "lg:hidden xl:hidden 2xl:flex" : "",
                 )}
               >
-                 <div className="category-thumbnail cursor-pointer relative h-40 w-full grow ">
+                 <div className="category-thumbnail cursor-pointer relative h-40 xl:h-52 w-full grow ">
      {(() => {
        const thumb = imageData.find((img) => img.category === category);
        return thumb ? (
         // alt kısımdaki resimler grid
-         <Image
+        <div >
+           <Image
            src={thumb.src}
            alt={thumb.alt}
            fill
            className="object-cover"
          />
+         <div className="absolute inset-0 bg-black/30"></div>
+        </div>
        ) : (
          <div className="absolute inset-0 bg-black/50" />
        );
@@ -423,19 +475,18 @@ const GalleryComponent = () => {
    </div>
                 <div
                   className={clsx(
-                    "left-center text-nowrap top-[50%] pointer-events-none z-[999] flex w-full  -translate-y-[50%]  flex-col items-center justify-center text-center text-sm font-light text-white",
+                    "left-center text-nowrap top-[50%] pointer-events-none z-[999] flex w-full  -translate-y-[50%]  flex-col items-center justify-center text-center text-sm xl:text-[16px] font-normal text-white",
                     fontJost.className,
                   )}
                 >
                   {category === "rooms" ? (
-                    <RoomsIcons className="text-sm" />
+                    <RoomsIcons className="text-sm xl:text-[16px]" />
                   ) : (
-                    <PhotoIcon className="text-sm" />
+                    <PhotoIcon className="text-sm xl:text-[16px]" />
                   )}
 
-                  {/* {category.replace("-", " & ").toUpperCase()} */}
+                  {category.replace("-", " & ").toUpperCase()}
 
-                category
                 </div>
               </div>
             );
