@@ -1,8 +1,6 @@
-// components/ReservationSection.jsx
-"use client";
+"use client"
 
 import { useState, useEffect } from "react";
-import { Link } from '@/i18n/navigation';;
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import BellSvg from "./BellSvg";
 import { useTranslations, useLocale } from "next-intl";
@@ -26,14 +24,45 @@ export default function ReservationSection() {
     });
   }, [children]);
 
-//${locale}/?currency=EUR&language=${locale}&hideLayout=1&Checkin=${checkIn}&Checkout=${checkOut}&Adult=${adults}&child=${children}&ChildAges=${childrenAges.join(",")}
-  const bookingUrl = `https://nihotellara.rezervasyonal.com/`;
+  // Default and format dates
+  const today = new Date();
+  const ciDate = checkIn ? new Date(checkIn) : today;
+  const coDate = checkOut
+    ? new Date(checkOut)
+    : new Date(ciDate.getTime() + 4 * 24 * 60 * 60 * 1000);
+
+  function formatDate(d) {
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, "0");
+    const dd = String(d.getDate()).padStart(2, "0");
+    return `${y}-${m}-${dd}`;
+  }
+
+  const buildBookingUrl = () => {
+    const ci = formatDate(ciDate);
+    const co = formatDate(coDate);
+    const base = "https://nihotellara.rezervasyonal.com";
+    const prefix = locale === "en" || locale === "de" ? "/en" : locale === "tr" ? "" : `/${locale}`;
+
+    // encode childrenAges as 'age1%2Bage2'
+    const agesParam = childrenAges.filter(a => a).join("+");
+    const encodedAges = encodeURIComponent(agesParam);
+
+    let url = `${base}${prefix}/?` +
+      `Checkin=${ci}` +
+      `&Checkout=${co}` +
+      `&Adult=${adults}` +
+      `&child=${children}` +
+      `&ChildAges=${encodedAges}` +
+      `&language=${locale}`;
+
+    return url;
+  };
 
   return (
     <div className="relative max-w-screen bg-[#fafafa] items-center justify-center hidden lg:flex z-20">
-      <section className="p-4 w-[95%] items-center justify-center">
+      <section className="p-4 w-[95%] items-center justify-center max-w-[1200px]">
         <div className="flex flex-col lg:flex-row items-center justify-center md:space-x-6 space-y-4 md:space-y-0">
-          
           {/* Check-in */}
           <div className="flex items-center -space-x-10">
             <label htmlFor="checkin" className="text-sm font-medium whitespace-nowrap cursor-pointer uppercase">
@@ -68,14 +97,14 @@ export default function ReservationSection() {
           <div className="flex items-center space-x-3">
             <span className="text-sm font-medium">{t("adult")}</span>
             <button
-              onClick={() => setAdults((a) => Math.max(1, a - 1))}
+              onClick={() => setAdults(a => Math.max(1, a - 1))}
               disabled={adults <= 1}
               className="p-1 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <AiOutlineMinus className="w-4 h-4 text-gray-600" />
             </button>
             <span className="w-6 text-center font-medium">{adults}</span>
-            <button onClick={() => setAdults((a) => a + 1)} className="p-1">
+            <button onClick={() => setAdults(a => a + 1)} className="p-1">
               <AiOutlinePlus className="w-4 h-4 text-gray-600" />
             </button>
           </div>
@@ -85,47 +114,44 @@ export default function ReservationSection() {
           <div className="relative flex items-center space-x-3">
             <span className="text-sm font-medium">{t("children")}</span>
             <button
-              onClick={() => setChildren((c) => Math.max(0, c - 1))}
+              onClick={() => setChildren(c => Math.max(0, c - 1))}
               disabled={children <= 0}
               className="p-1 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <AiOutlineMinus className="w-4 h-4 text-gray-600" />
             </button>
             <span className="w-6 text-center font-medium">{children}</span>
-            <button onClick={() => setChildren((c) => c + 1)} className="p-1">
+            <button onClick={() => setChildren(c => c + 1)} className="p-1">
               <AiOutlinePlus className="w-4 h-4 text-gray-600" />
             </button>
-                            {/* Children Ages Inputs */}
-      {children > 0 && (
-        <section className="p-4 max-w-4xl mx-auto space-y-4">
-          {childrenAges.map((age, idx) => (
-            <div key={idx} className="flex items-center space-x-3">
-              <label htmlFor={`child-age-${idx}`} className="text-sm font-medium whitespace-nowrap uppercase">
-                {t("childAge", { number: idx + 1 })}
-              </label>
-              <input
-                id={`child-age-${idx}`}
-                type="number"
-                min="0"
-                value={age}
-                onChange={(e) =>
-                  setChildrenAges((ages) =>
-                    ages.map((a, i) => (i === idx ? e.target.value : a))
-                  )
-                }
-                className="w-16 text-sm text-gray-700 border border-gray-300 rounded px-2 py-1 focus:outline-none"
-              />
-            </div>
-          ))}
-        </section>
-      )}
           </div>
 
+          {/* Children Ages Inputs */}
+          {children > 0 && (
+            <section className="p-4 max-w-4xl mx-auto space-y-4">
+              {childrenAges.map((age, idx) => (
+                <div key={idx} className="flex items-center space-x-3">
+                  <label htmlFor={`child-age-${idx}`} className="text-sm font-medium whitespace-nowrap uppercase">
+                    {t("childAge", { number: idx + 1 })}
+                  </label>
+                  <input
+                    id={`child-age-${idx}`}
+                    type="number"
+                    min="0"
+                    value={age}
+                    onChange={(e) => setChildrenAges(ages => ages.map((a,i) => i===idx ? e.target.value : a))}
+                    className="w-16 text-sm text-gray-700 border border-gray-300 rounded px-2 py-1 focus:outline-none"
+                  />
+                </div>
+              ))}
+            </section>
+          )}
           <div className="hidden md:block h-6 border-l border-gray-300" />
 
           {/* Book Now */}
           <a
-            href={bookingUrl}
+            href={buildBookingUrl()}
+            onClick={e => { e.preventDefault(); window.location.href = buildBookingUrl(); }}
             className="mt-2 md:mt-0 text-[#dec7a6] hover:text-white px-6 py-2 flex items-center space-x-2 hover:bg-gray-800 border border-gray-300"
             target="_blank"
             rel="noopener noreferrer"
@@ -135,8 +161,6 @@ export default function ReservationSection() {
           </a>
         </div>
       </section>
-
-
     </div>
   );
 }

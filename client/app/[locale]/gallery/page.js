@@ -33,11 +33,16 @@ import room1 from "../../../public/images/rooms/standardroom/ODA1.webp";
 import room2 from "../../../public/images/rooms/standardroom/ODA2.webp";
 import room11 from "../../../public/images/rooms/standardroom/ODA3.webp";
 import room12 from "../../../public/images/rooms/standardroom/ODA4.webp";
+import room19 from "../../../public/images/rooms/standardroom/ODA5.webp";
+import room20 from "../../../public/images/rooms/standardroom/ODA6.webp";
+import room21 from "../../../public/images/rooms/standardroom/ODA7.webp";
+import room22 from "../../../public/images/rooms/standardroom/ODA8.webp";
 
 import room3 from "../../../public/images/rooms/juniorroom/ODA1.webp";
 import room4 from "../../../public/images/rooms/juniorroom/ODA2.webp";
 import room13 from "../../../public/images/rooms/juniorroom/ODA3.webp";
 import room14 from "../../../public/images/rooms/juniorroom/ODA4.webp";
+import room23 from "../../../public/images/rooms/juniorroom/ODA5.webp";
 
 import room5 from "../../../public/images/rooms/veranda/ODA1.webp";
 import room6 from "../../../public/images/rooms/veranda/ODA2.webp";
@@ -50,6 +55,8 @@ import room7 from "../../../public/images/rooms/cornerroom/oda1.webp";
 import room8 from "../../../public/images/rooms/cornerroom/ODA2.webp";
 import room9 from "../../../public/images/rooms/cornerroom/ODA4.webp";
 import room10 from "../../../public/images/rooms/cornerroom/ODA5.webp";
+import room24 from "../../../public/images/rooms/cornerroom/ODA6.webp";
+import room25 from "../../../public/images/rooms/cornerroom/ODA7.webp";
 
 export default function GalleryPage() {
   const t = useTranslations('Header');
@@ -59,10 +66,10 @@ export default function GalleryPage() {
     [t("lobby")]: [img1, img2, img3, img4, img5, img6, img7],
     [t("rooms")]: [
       // all room images concatenated
-      room1, room2, room11, room12,
-      room3, room4, room13, room14,
+      room1, room2, room11, room12,room19,room20,room21,room22,
+      room3, room4, room13, room14,room23,
       room5, room6, room15, room16, room17, room18,
-      room7, room8, room9, room10
+      room7, room8, room9, room10, room24, room25
     ],
     [t("kitchen")]: [kitchen1, kitchen2, kitchen3, kitchen4, kitchen5, kitchen6, kitchen7, kitchen8, kitchen9, kitchen10, kitchen11, kitchen13]
   };
@@ -72,10 +79,10 @@ export default function GalleryPage() {
 
   // Sub-categories for rooms only
   const subRoomCategories = {
-    Standard: [room1, room2, room11, room12],
+    Standard: [room1, room2, room11, room12, room19, room20, room21, room22],
     Veranda: [room5, room6, room15, room16, room17, room18],
-    Corner: [room7, room8, room9, room10],
-    Junior: [room3, room4, room13, room14]
+    Corner: [room7, room8, room9, room10, room24, room25],
+    Junior: [room3, room4, room13, room14, room23]
   };
   const subCategoryKeys = ['All', ...Object.keys(subRoomCategories)];
   const [selectedSubCategory, setSelectedSubCategory] = useState('All');

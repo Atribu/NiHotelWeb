@@ -23,6 +23,7 @@ import verandaImage3 from "../../../public/images/rooms/veranda/ODA3.webp"
 import verandaImage4 from "../../../public/images/rooms/veranda/ODA4.webp"
 import Image from 'next/image';
 import img from "../../../public/svg/PORTRESON.svg"
+import ReservationSection from '../components/generalComponents/ReservationSection';
 
 const Page = () => {
   const t = useTranslations('Rooms');
@@ -102,7 +103,7 @@ const Page = () => {
         ]}
       />
        {/* Aynı component, bu kez resimler sağda */}
-    <div className='hidden lg:flex'>
+    <div className='hidden lg:flex mb-16'>
     <RoomShowcase
         id="cornerroom"
         title={t("title4")}
@@ -137,6 +138,7 @@ const Page = () => {
         ]}
       />
     </div>
+    <ReservationSection/>
    </div>
     <Image src={img} alt='portre' width={1000} height={1600} className='absolute top-[1800px] right-0 z-[1] hidden xl:flex'/>
     <Image src={img} alt='portre' width={700} height={1100} className='absolute top-[1800px] left-[1%] z-[1] hidden lg:flex xl:hidden transform -rotate-[10deg]'/>
