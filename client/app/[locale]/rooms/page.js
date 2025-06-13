@@ -24,6 +24,7 @@ import verandaImage4 from "../../../public/images/rooms/veranda/ODA4.webp"
 import Image from 'next/image';
 import img from "../../../public/svg/PORTRESON.svg"
 import ReservationSection from '../components/generalComponents/ReservationSection';
+import BookingPlatforms from '../components/generalComponents/BookingPlatforms';
 
 const Page = () => {
   const t = useTranslations('Rooms');
@@ -138,7 +139,9 @@ const Page = () => {
         ]}
       />
     </div>
+     <BookingPlatforms/>
     <ReservationSection/>
+   
    </div>
     <Image src={img} alt='portre' width={1000} height={1600} className='absolute top-[1800px] right-0 z-[1] hidden xl:flex'/>
     <Image src={img} alt='portre' width={700} height={1100} className='absolute top-[1800px] left-[1%] z-[1] hidden lg:flex xl:hidden transform -rotate-[10deg]'/>

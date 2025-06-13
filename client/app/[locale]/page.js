@@ -9,6 +9,7 @@ import NibeautySection from './components/Homepage/NibeautySection'
 import BackgroundImage from './components/Homepage/BackgroundImage'
 import img from "../../public/images/nihotelLeaf.png"
 import Image from 'next/image'
+import BookingPlatforms from './components/generalComponents/BookingPlatforms'
 
 const page = () => {
   return (
@@ -20,6 +21,7 @@ const page = () => {
     <RoomSlider/>
     <NibeautySection/>
     <ContactSection/>
+    <BookingPlatforms/>
     <BackgroundImage/>
   
     </div>

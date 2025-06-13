@@ -62,7 +62,8 @@
         "adult":"Yetişkin",
       "kid":"Çocuk",
       "children": "Çocuklar",
-    "childAge": "Çocuk Yaşı"
+    "childAge": "Çocuk Yaşı",
+        "bookingPlatforms":"Rezervasyon Platformları"
 
 },
 
