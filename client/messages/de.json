@@ -62,7 +62,8 @@
     "adult":"Erwachsene",
     "kid":"Kind(er)",
     "children": "Kinder",
-    "childAge": "Kindesalter"
+    "childAge": "Kindesalter",
+     "bookingPlatforms":"Buchungsplattformen"
   },
 
   "Rooms": {

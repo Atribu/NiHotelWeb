@@ -61,7 +61,8 @@
       "adult":"Взрослые",
       "kid":"Дети",
       "children": "Дети",
-    "childAge": "Возраст ребёнка"
+    "childAge": "Возраст ребёнка",
+     "bookingPlatforms":"Платформы бронирования"
     },
 
     "Rooms": {
