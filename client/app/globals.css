@@ -256,9 +256,8 @@ input[type="date"]::-webkit-datetime-edit-day-field {
   transform: none !important;
   translate: none !important;
   margin: 0 !important;
-  max-width: auto !important;
-  max-height: 70px !important;
-  
+  max-width: none !important;
+  max-height: none !important;
 }
 
 /* Iframe kendisi için ayrı kural */
@@ -273,7 +272,6 @@ iframe[id="web-messenger-container"] {
   transform: none !important;
   translate: none !important;
   margin: 0 !important;
-  
 }
 
 /* Src ile eşleşen iframe'ler */
@@ -374,7 +372,6 @@ iframe[style*="transform"] {
     right: 0px !important;
   }
 }
-
 
 
 
