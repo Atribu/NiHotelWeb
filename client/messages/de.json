@@ -31,6 +31,7 @@
     "cookiePolicy": "Cookie-Richtlinie",
     "privacyPolicy": "Datenschutzrichtlinie",
     "factsheet": "Datenblatt",
+    "securitycam": "Hinweis Videoüberwachung",
     "standardRoom": "Standardzimmer",
     "juniorRoom": "Juniorzimmer",
     "verandaRoom": "Verandazimmer",
@@ -508,6 +509,61 @@
     "errorAcceptPolicy": "Bitte akzeptieren Sie die Datenschutzrichtlinie.",
     "errorSendFailed": "Senden fehlgeschlagen. Bitte versuchen Sie es erneut.",
     "errorGeneric": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  },
+
+   "CameraPage": {
+    "bannerTitle": "Datenschutzhinweis Videoüberwachung",
+    "responsibleTitle": "Identität des Verantwortlichen:",
+    "responsibleText": "Dieser Hinweistext wurde gemäß dem Gesetz Nr. 6698 zum Schutz personenbezogener Daten (\"KVKK\") und den einschlägigen Vorschriften von Nİ GÜZELLİK MERKEZİ KUAFÖRLÜK MAL. LTD. ŞTİ. erstellt, um die betroffenen Personen über die im Ni Beauty Lab durchgeführten Videoüberwachungsmaßnahmen zu informieren.",
+    "address": "Adresse:",
+    "addressText": "Fener Mah. Lara Cad. M.Tere Apt Nr.211 A MURATPAŞA/ANTALYA",
+    "phone": "Telefon:",
+    "phoneText": "+90 539 777 77 64",
+    "email": "E-Mail:",
+    "emailText": "kvkk@nibeauty.com",
+
+    "section1Title": "1. Verarbeitung personenbezogener Daten",
+    "section1Text": "In unserer Einrichtung werden gemäß dem Gesetz Nr. 5188 über private Sicherheitsdienste, den einschlägigen Vorschriften und den Bestimmungen des KVKK Sicherheitskameras eingesetzt, um die Sicherheit der Einrichtung zu gewährleisten, Ein- und Ausgänge zu überwachen und die Servicequalität zu verbessern. Die Kamerasysteme zeichnen ausschließlich Bildmaterial auf; es erfolgt keine Tonaufnahme. Die erfassten personenbezogenen Daten werden automatisch erhoben und auf Grundlage des berechtigten Interesses des Verantwortlichen verarbeitet.",
+
+    "section2Title": "2. Zwecke der Überwachung",
+    "section2Intro": "Die Hauptzwecke der Videoüberwachung sind:",
+    "section2List": [
+      "Sicherung der Sicherheit von Kunden, Mitarbeitern und Dritten,",
+      "Überwachung der Eingänge, Ausgänge und Gemeinschaftsbereiche,",
+      "Verhinderung und gegebenenfalls Aufklärung strafbarer Handlungen,",
+      "Gewährleistung von Servicequalität und Geschäftskontinuität."
+    ],
+
+    "section3Title": "3. Anzahl der Kameras und überwachte Bereiche",
+    "section3Text": "Im gesamten Gebäude sind 12 Sicherheitskameras installiert. Die Kameras erfassen die allgemeinen Bereiche und Gemeinschaftsflächen des Schönheitszentrums. In Bereichen, die die Privatsphäre verletzen könnten (z. B. Toiletten, Behandlungsräume), werden keine Aufnahmen gemacht.",
+
+    "section4Title": "4. Zugriffsrechte und Datensicherheit",
+    "section4Text": "Auf die Kameraaufnahmen dürfen nur autorisierte Mitarbeiter zugreifen, die eine Vertraulichkeitserklärung unterzeichnet haben. Gemäß Artikel 12 des KVKK werden die erforderlichen technischen und administrativen Maßnahmen ergriffen, um die Sicherheit personenbezogener Daten zu gewährleisten.",
+
+    "section5Title": "5. Aufbewahrungsdauer",
+    "section5Text": "Die Kameraaufnahmen werden für maximal 7 Tage zu den oben genannten Zwecken gespeichert und anschließend automatisch vom System gelöscht.",
+
+    "section6Title": "6. Information und Aufklärung",
+    "section6Intro": "Über die Videoüberwachung wird informiert durch:",
+    "section6List": [
+      "Hinweisschilder an den Eingängen,",
+      "Informationsunterlagen für das Personal,",
+      "Aushänge in den Gemeinschaftsbereichen."
+    ],
+
+    "section7Title": "7. Rechte der betroffenen Personen",
+    "section7Intro": "Gemäß Artikel 11 des KVKK haben betroffene Personen das Recht:",
+    "section7List": [
+      "Zu erfahren, ob ihre personenbezogenen Daten verarbeitet werden,",
+      "Auskunft zu verlangen, wenn ihre Daten verarbeitet wurden,",
+      "Den Zweck der Verarbeitung zu erfahren und ob die Daten zweckmäßig verwendet werden,",
+      "Zu erfahren, ob ihre Daten an Dritte im Inland oder Ausland übermittelt wurden,",
+      "Die Berichtigung unvollständiger oder falscher Daten zu verlangen,",
+      "Unter den gesetzlichen Voraussetzungen die Löschung oder Vernichtung der Daten zu verlangen,",
+      "Der ausschließlichen Verarbeitung durch automatisierte Systeme zu widersprechen, wenn sie nachteilig ist,",
+      "Schadensersatz zu verlangen, wenn sie aufgrund einer rechtswidrigen Verarbeitung einen Schaden erleiden."
+    ],
+    "section7Footer": "Ihre Anfragen können Sie an kvkk@nibeauty.com richten."
   }
 
 

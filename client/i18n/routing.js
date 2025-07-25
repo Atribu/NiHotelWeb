@@ -72,6 +72,13 @@ export const config = {
     de: '/zimmer/verandazimmer',
     ru: '/nomera/veranda-komnata',
   },
+
+  '/kurumsal/securitycam':{
+     tr: '/kurumsal/güvenlik-kameraları',
+    en: '/corporate/cctv-notice',
+    de: '/unternehmen/videoüberwachung',
+    ru: '/o-компании/bидеонаблюдение',
+  }
 }
 
 };

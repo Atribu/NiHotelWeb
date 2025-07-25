@@ -61,11 +61,10 @@ export default async function RootLayout({ children, params }) {
   if (!routing.locales.includes(locale)) {
     notFound();
   }
-
      // 1) Gelen locale bilgisini Next Intl’in store’una yazıyoruz
      setRequestLocale(locale)
-
   const messages = await getMessages();
+
   return (
     <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} ${jost.variable} antialiased`}>
       <head>

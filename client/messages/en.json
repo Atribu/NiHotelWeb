@@ -30,6 +30,7 @@
     "cookiePolicy":"Cookie Policy",
     "privacyPolicy":"Privacy Policy",
     "factsheet":"Fact Sheet",
+     "securitycam": "CCTV Privacy Notice",
     "standardRoom": "Standard Room",
       "juniorRoom": "Junior Room",
       "verandaRoom": "Veranda Room",
@@ -504,6 +505,61 @@
     "errorAcceptPolicy": "Please accept the privacy policy.",
     "errorSendFailed": "Send failed. Please try again.",
     "errorGeneric": "An error occurred. Please try again."
+  },
+
+  "CameraPage": {
+    "bannerTitle": "CCTV Privacy Notice",
+    "responsibleTitle": "Identity of the Data Controller:",
+    "responsibleText": "This information notice has been prepared in accordance with the Law on the Protection of Personal Data No. 6698 (\"KVKK\") and relevant legislation by Nİ GÜZELLİK MERKEZİ KUAFÖRLÜK MAL. LTD. ŞTİ. to inform data subjects regarding the camera surveillance activities carried out within Ni Beauty Lab.",
+    "address": "Address:",
+    "addressText": "Fener Mah. Lara Cad. M.Tere Apt No:211 A MURATPAŞA/ANTALYA",
+    "phone": "Phone:",
+    "phoneText": "+90 539 777 77 64",
+    "email": "E-mail:",
+    "emailText": "kvkk@nibeauty.com",
+
+    "section1Title": "1. Personal Data Processing Activity",
+    "section1Text": "In our facility; in accordance with Law No. 5188 on Private Security Services, related regulations, and the provisions of KVKK, security cameras are used to ensure the security of the hotel, to monitor entrances and exits, and to improve service quality. The camera systems only record video; no audio recording is made. The personal data obtained are collected automatically and processed based on the legal ground of the legitimate interest of the data controller.",
+
+    "section2Title": "2. Purposes of Monitoring",
+    "section2Intro": "The main purposes of camera surveillance are:",
+    "section2List": [
+      "Ensuring the safety of customers, staff, and third parties,",
+      "Monitoring the entrances, exits, and common areas of the facility,",
+      "Preventing criminal incidents and detecting them when necessary,",
+      "Ensuring service quality and business continuity."
+    ],
+
+    "section3Title": "3. Number of Cameras and Monitored Areas",
+    "section3Text": "There are 12 security cameras throughout the facility. Cameras cover general areas and common use areas of the beauty center. No cameras are placed in areas that may violate personal privacy (such as restrooms, treatment rooms, etc.).",
+
+    "section4Title": "4. Access Authorization and Data Security",
+    "section4Text": "Access to camera recordings is restricted to a limited number of authorized personnel who have signed a confidentiality undertaking. In accordance with Article 12 of KVKK, necessary technical and administrative measures are taken to ensure the security of personal data.",
+
+    "section5Title": "5. Retention Period",
+    "section5Text": "Camera recordings are retained for a maximum of 7 days for the purposes stated above and are automatically deleted by the system thereafter.",
+
+    "section6Title": "6. Information and Notification",
+    "section6Intro": "Regarding camera surveillance activities:",
+    "section6List": [
+      "Warning signs placed at entrances,",
+      "Personnel information documents,",
+      "Information texts published in common areas."
+    ],
+
+    "section7Title": "7. Rights of Data Subjects",
+    "section7Intro": "According to Article 11 of KVKK, data subjects have the right to:",
+    "section7List": [
+      "Learn whether their data are being processed,",
+      "Request information if their data have been processed,",
+      "Learn the purpose of data processing and whether it is used appropriately,",
+      "Learn whether their data are transferred to domestic or international third parties,",
+      "Request correction if their data are incomplete or incorrectly processed,",
+      "Request deletion or destruction of data under the conditions prescribed by law,",
+      "Object to any negative consequences arising from automated data analysis,",
+      "Claim compensation if they suffer damage due to unlawful processing."
+    ],
+    "section7Footer": "You can send your requests to kvkk@nibeauty.com."
   }
 
 

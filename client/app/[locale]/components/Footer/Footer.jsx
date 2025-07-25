@@ -82,14 +82,14 @@ export default function Footer() {
 
 
             <div className="flex gap-1 items-center justify-start">
-              <div className="flex items-center justify-center text-center h-[36px] w-[36px] rounded golge">
+              <div className="flex items-start justify-center text-center h-[36px] w-[36px] rounded golge">
               <FaMapMarkerAlt className="transform scale-x-[-1]" />
               </div>
             <div className="flex flex-col gap-1 items-start justify-start">
-              <p> {t("address")}</p>
-            <a href="mailto:callcenter@nihotellara.com"className="flex items-center text-gray-600 hover:text-gray-800">
+              <p > {t("address")}</p>
+            <p className="flex items-center text-gray-600 hover:text-gray-800">
           Muratpaşa/Antalya
-            </a>
+            </p>
             </div>
             </div>
     
@@ -187,7 +187,7 @@ export default function Footer() {
           <div className="flex flex-col items-center lg:items-start space-y-1 lg:space-y-2 lg:border-l lg:border-gray-200 lg:pl-4 min-w-[160px]">
             <a href="/cookie-policy" className="text-gray-600 hover:text-gray-800">{t("cookiePolicy")}</a>
             <a href="/privacy-policy" className="text-gray-600 hover:text-gray-800">{t("privacyPolicy")}</a>
-            <a href="/fact-sheet" className="text-gray-600 hover:text-gray-800">{t("factsheet")}</a>
+            <a href="/kurumsal/securitycam" className="text-gray-600 hover:text-gray-800">{t("securitycam")}</a>
           </div>
       </div>
           
@@ -200,7 +200,7 @@ export default function Footer() {
             <a href="mailto:callcenter@nihotellara.com" className="flex items-center text-gray-600 hover:text-gray-800">
               <FaEnvelope className="mr-2" />callcenter@nihotellara.com
             </a>
-            <div className="flex items-start text-gray-600">
+            <div className="flex items-start text-gray-600 w-full text-start justify-start">
               <FaMapMarkerAlt className="mt-1 mr-2" />
               Çağlayan Mah. 2005 Sk. No: 30 PK - 7230 Muratpaşa/Antalya
             </div>

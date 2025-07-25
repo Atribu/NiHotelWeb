@@ -30,6 +30,7 @@
     "cookiePolicy": "Çerez Politikası",
     "privacyPolicy": "Gizlilik Politikası",
     "factsheet": "Bilgi Formu",
+     "securitycam": "Güvenlik Kameraları Aydınlatma Metni",
     "standardRoom": "Standart Oda",
       "juniorRoom": "Junior Oda",
       "verandaRoom": "Veranda Oda",
@@ -506,6 +507,62 @@
     "errorAcceptPolicy": "Lütfen gizlilik politikasını kabul edin.",
     "errorSendFailed": "Gönderim başarısız oldu. Tekrar deneyin.",
     "errorGeneric": "Bir hata oluştu. Lütfen tekrar deneyin."
+  },
+
+
+   "CameraPage": {
+    "bannerTitle": "Güvenlik Kameraları Aydınlatma Metni",
+    "responsibleTitle": "Veri sorumlusunun kimliği:",
+    "responsibleText": "Bu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) ve ilgili mevzuat kapsamında, Nİ GÜZELLİK MERKEZİ KUAFÖRLÜK MAL. LTD. ŞTİ. tarafından, Ni Beauty Lab bünyesinde yürütülen kamera ile izleme faaliyetlerine ilişkin veri sahiplerini bilgilendirmek amacıyla hazırlanmıştır.",
+    "address": "Adres:",
+    "addressText": "Fener Mah. Lara Cad. M.Tere Apt No:211 A MURATPAŞA/ANTALYA",
+    "phone": "Telefon:",
+    "phoneText": "0 539 777 77 64",
+    "email": "E-posta:",
+    "emailText": "kvkk@nibeauty.com",
+
+    "section1Title": "1. Kişisel Veri İşleme Faaliyeti",
+    "section1Text": "Tesisimizde; 5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun, ilgili yönetmelikler ve KVKK hükümleri uyarınca, otel güvenliğinin sağlanması, giriş-çıkışların denetlenmesi ve hizmet kalitesinin artırılması amaçlarıyla güvenlik kameraları kullanılmaktadır.Kamera sistemleri yalnızca görüntü kaydı yapmaktadır; ses kaydı yapılmamaktadır. Elde edilen kişisel veriler, otomatik yollarla toplanmakta olup, veri sorumlusunun meşru menfaati hukuki sebebine dayanılarak işlenmektedir.",
+
+    "section2Title": "2. İzleme Amaçları",
+    "section2Intro": "Kamera ile izleme faaliyetinin başlıca amaçları:",
+    "section2List": [
+      "Müşteri, personel ve üçüncü kişilerin güvenliğinin sağlanması,",
+      "Güzellik giriş-çıkışlarının ve ortak alanların denetlenmesi,",
+      "Suç teşkil eden olayların önlenmesi ve gerektiğinde tespiti,",
+      "Hizmet kalitesi ve iş sürekliliğinin sağlanmasıdır."
+    ],
+
+    "section3Title": "3. Kamera Sayısı ve İzleme Alanları",
+    "section3Text": "Tesis genelinde 12 adet güvenlik kamerası bulunmaktadır.Kameralar; güzellik merkezi genel alanları ve ortak kullanım alanları gibi bölgeleri kapsamaktadır.Özel hayatın gizliliğini ihlal edecek nitelikteki alanlarda (tuvaletler, işlem  odaları vb.) kamera kaydı yapılmamaktadır.",
+
+    "section4Title": "4. Erişim Yetkisi ve Veri Güvenliği",
+    "section4Text": "Kamera kayıtlarına yalnızca erişim yetkisi bulunan, gizlilik taahhütnamesi imzalamış sınırlı sayıda personel tarafından erişilmektedir. KVKK’nın 12. maddesi doğrultusunda, kişisel verilerin güvenliğini sağlamak amacıyla gerekli teknik ve idari tedbirler alınmaktadır.",
+
+    "section5Title": "5. Saklama Süresi",
+    "section5Text": "Kamera kayıtları, yukarıda belirtilen amaçlar doğrultusunda azami 7 gün süreyle saklanmakta, sonrasında sistem tarafından otomatik olarak silinmektedir.",
+
+    "section6Title": "6. Aydınlatma ve Bilgilendirme",
+    "section6Intro": "Kamera ile izleme faaliyeti hakkında;",
+    "section6List": [
+      "Giriş alanlarına yerleştirilen uyarı levhaları,",
+      "Personel bilgilendirme dökümanları,",
+      "Genel alanlarda yayınlanan metinlerle aydınlatma yapılmaktadır."
+    ],
+
+    "section7Title": "7. Kişisel Veri Sahiplerinin Hakları",
+    "section7Intro": "KVKK’nın 11. maddesi uyarınca, kişisel veri sahipleri;",
+    "section7List": [
+      "Verilerinin işlenip işlenmediğini öğrenme,",
+      "İşlenmişse bilgi talep etme,",
+      "İşleme amacını ve uygun kullanılıp kullanılmadığını öğrenme,",
+      "Yurt içi veya dışı üçüncü kişilere aktarılıp aktarılmadığını öğrenme,",
+      "Verilerin eksik ya da yanlış işlenmiş olması hâlinde düzeltilmesini isteme,",
+      "Kanunda öngörülen hallerde silinmesini veya yok edilmesini isteme,",
+      "Münhasıran otomatik sistemler ile analiz sonucu aleyhe sonuç doğmasına itiraz etme,",
+      "Kanuna aykırı işleme nedeniyle zarara uğranması hâlinde tazminat talep etme haklarına sahiptir."
+    ],
+    "section7Footer": "Taleplerinizi, kvkk@nibeauty.com adresine iletebilirsiniz."
   }
   
 }
