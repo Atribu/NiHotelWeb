@@ -74,9 +74,9 @@ export const config = {
   },
 
   '/kurumsal/securitycam':{
-     tr: '/kurumsal/güvenlik-kameraları',
+     tr: '/kurumsal/guvenlik-kameralari',
     en: '/corporate/cctv-notice',
-    de: '/unternehmen/videoüberwachung',
+    de: '/unternehmen/videouberwachung',
     ru: '/o-компании/bидеонаблюдение',
   }
 }
