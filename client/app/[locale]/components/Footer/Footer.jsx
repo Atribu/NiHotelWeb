@@ -187,7 +187,7 @@ export default function Footer() {
           <div className="flex flex-col items-center lg:items-start space-y-1 lg:space-y-2 lg:border-l lg:border-gray-200 lg:pl-4 min-w-[160px]">
             <a href="/cookie-policy" className="text-gray-600 hover:text-gray-800">{t("cookiePolicy")}</a>
             <a href="/privacy-policy" className="text-gray-600 hover:text-gray-800">{t("privacyPolicy")}</a>
-            <a href="/kurumsal/securitycam" className="text-gray-600 hover:text-gray-800">{t("securitycam")}</a>
+            <a href="/factsheet" className="text-gray-600 hover:text-gray-800">{t("factsheet")}</a>
           </div>
       </div>
           
