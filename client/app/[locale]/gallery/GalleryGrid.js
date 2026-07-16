@@ -55,7 +55,7 @@ export default function GalleryGrid({ categories, items, modalLabels }) {
 
   return (
     <>
-      <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-5">
+      <div className="-mx-5 flex items-center gap-3 overflow-x-auto px-5 pb-3 sm:mx-0 sm:flex-wrap sm:justify-center sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0">
         {categories.map((category) => {
           const isActive = category.id === activeCategory;
 
@@ -65,7 +65,7 @@ export default function GalleryGrid({ categories, items, modalLabels }) {
               type="button"
               onClick={() => selectCategory(category.id)}
               aria-pressed={isActive}
-              className={`min-h-11 border px-5 py-3 text-xs font-semibold uppercase tracking-[0.15em] transition-colors ${
+              className={`min-h-11 shrink-0 border px-5 py-3 text-xs font-semibold uppercase tracking-[0.15em] transition-colors ${
                 isActive
                   ? "border-[#19334F] bg-[#19334F] text-white"
                   : "border-[#19334F]/55 bg-white text-[#19334F] hover:border-[#19334F] hover:bg-[#F7F5F1]"

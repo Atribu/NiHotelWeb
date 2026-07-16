@@ -32,14 +32,16 @@ export default async function RoomsPage({ params }) {
       title: t("standardTitle"),
       meta: t("standardMeta"),
       body: t("standardBody"),
-      image: site.images.comfort,
+      image: site.images.roomTwin,
+      href: "/rooms/standard-room",
     },
     {
       id: "suite-room",
       title: t("suiteTitle"),
       meta: t("suiteMeta"),
       body: t("suiteBody"),
-      image: site.images.hospitality,
+      image: site.images.roomDouble,
+      href: "/rooms/suite-room",
     },
   ];
 
@@ -55,7 +57,7 @@ export default async function RoomsPage({ params }) {
     <main id="main-content" className="overflow-hidden bg-white text-[#30343A]">
       <section className="relative isolate flex min-h-[62vh] items-center justify-center overflow-hidden px-5 pb-14 pt-32 text-center sm:min-h-[68vh] sm:px-8 lg:min-h-[72vh] lg:px-12">
         <Image
-          src={site.images.hero}
+          src={site.images.roomMultiple}
           alt=""
           fill
           priority
@@ -63,25 +65,28 @@ export default async function RoomsPage({ params }) {
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative mx-auto max-w-4xl text-white">
+        <div className="relative mx-auto w-full min-w-0 max-w-4xl text-white">
           <p className="text-xs font-medium uppercase tracking-[0.32em] text-white/80">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-5 font-display text-5xl font-semibold leading-none sm:text-6xl lg:text-7xl">
+          <h1 className="mx-auto mt-5 max-w-[19rem] break-words font-display text-[2.35rem] font-semibold leading-tight sm:max-w-none sm:text-6xl sm:leading-none lg:text-7xl">
             {t("title")}
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/85 sm:text-base">
+          <p className="mx-auto mt-6 max-w-[18rem] break-words text-sm leading-7 text-white/85 sm:max-w-2xl sm:text-base">
             {t("intro")}
+          </p>
+          <p className="mx-auto mt-3 max-w-[18rem] break-words text-xs leading-6 text-white/70 sm:max-w-2xl">
+            {t("photoNote")}
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             {rooms.map((room) => (
-              <a
+              <Link
                 key={room.id}
-                href={`#${room.id}`}
+                href={room.href}
                 className="inline-flex min-h-11 min-w-56 items-center justify-center border border-white/80 bg-white/10 px-6 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-white backdrop-blur-[2px] transition-colors hover:bg-white hover:text-[#19334F]"
               >
                 {room.title}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -125,10 +130,10 @@ export default async function RoomsPage({ params }) {
                   {room.body}
                 </p>
                 <Link
-                  href="/contact"
+                  href={room.href}
                   className="mt-8 inline-flex min-h-11 items-center justify-center border border-[#19334F] px-8 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#19334F] transition-colors hover:bg-[#19334F] hover:text-white"
                 >
-                  {t("cta")}
+                  {t("detailsCta")}
                 </Link>
               </div>
             </article>

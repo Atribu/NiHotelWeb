@@ -11,6 +11,18 @@ export const localizedPaths = {
     de: "/de/zimmer",
     ru: "/ru/nomera",
   },
+  standardRoom: {
+    tr: "/tr/odalar/standart-oda",
+    en: "/en/rooms/standard-room",
+    de: "/de/zimmer/standardzimmer",
+    ru: "/ru/nomera/standartnyy-nomer",
+  },
+  suiteRoom: {
+    tr: "/tr/odalar/suit-oda",
+    en: "/en/rooms/suite-room",
+    de: "/de/zimmer/suite",
+    ru: "/ru/nomera/lyuks",
+  },
   about: {
     tr: "/tr/hakkimizda",
     en: "/en/about",

@@ -31,14 +31,14 @@ export default async function RestaurantPage({ params }) {
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/45" />
-        <div className="relative mx-auto max-w-4xl text-white">
-          <p className="text-xs font-medium uppercase tracking-[0.32em] text-white/80">
+        <div className="relative mx-auto w-full min-w-0 max-w-4xl text-white">
+          <p className="mx-auto max-w-[17rem] break-words text-xs font-medium uppercase leading-5 tracking-[0.22em] text-white/80 sm:max-w-none sm:tracking-[0.32em]">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-5 font-display text-5xl font-semibold leading-none sm:text-6xl lg:text-7xl">
+          <h1 className="mx-auto mt-5 max-w-[19rem] break-words font-display text-[2.35rem] font-semibold leading-tight sm:max-w-none sm:text-6xl sm:leading-none lg:text-7xl">
             {t("title")}
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/85 sm:text-base">
+          <p className="mx-auto mt-6 max-w-[18rem] break-words text-sm leading-7 text-white/85 sm:max-w-2xl sm:text-base">
             {t("lead")}
           </p>
         </div>
@@ -46,10 +46,10 @@ export default async function RestaurantPage({ params }) {
 
       <section className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-10 lg:py-24">
         <div className="text-center lg:text-left">
-          <p className="text-xs font-medium uppercase tracking-[0.28em] text-[#72809A]">
+          <p className="mx-auto max-w-[17rem] break-words text-xs font-medium uppercase leading-5 tracking-[0.2em] text-[#72809A] sm:max-w-none sm:tracking-[0.28em]">
             {t("eyebrow")}
           </p>
-          <h2 className="mt-5 font-display text-4xl font-semibold leading-tight text-[#19334F] sm:text-5xl lg:text-6xl">
+          <h2 className="mx-auto mt-5 max-w-[18rem] break-words font-display text-3xl font-semibold leading-tight text-[#19334F] sm:max-w-none sm:text-5xl lg:text-6xl">
             {site.restaurant.name}
           </h2>
           <span className="mx-auto my-8 block h-px w-20 bg-[#19334F]/20 lg:mx-0" aria-hidden="true" />
@@ -57,18 +57,18 @@ export default async function RestaurantPage({ params }) {
           <div className="space-y-7">
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start lg:items-start">
               <Music2 className="mt-1 h-6 w-6 shrink-0 text-[#19334F]" strokeWidth={1.35} aria-hidden="true" />
-              <p className="text-sm leading-8 text-[#59616C] sm:text-base">{t("body1")}</p>
+              <p className="max-w-[18rem] break-words text-sm leading-8 text-[#59616C] sm:max-w-none sm:text-base">{t("body1")}</p>
             </div>
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start lg:items-start">
               <UsersRound className="mt-1 h-6 w-6 shrink-0 text-[#19334F]" strokeWidth={1.35} aria-hidden="true" />
-              <p className="text-sm leading-8 text-[#59616C] sm:text-base">{t("body2")}</p>
+              <p className="max-w-[18rem] break-words text-sm leading-8 text-[#59616C] sm:max-w-none sm:text-base">{t("body2")}</p>
             </div>
           </div>
         </div>
 
         <div className="relative min-h-[520px] overflow-hidden bg-[#ECEBE8] shadow-[0_16px_42px_rgba(0,0,0,0.12)] sm:min-h-[640px]">
           <Image
-            src={site.images.hospitality}
+            src={site.images.restaurant}
             alt=""
             fill
             sizes="(min-width: 1024px) 48vw, 100vw"

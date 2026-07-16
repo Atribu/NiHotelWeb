@@ -18,6 +18,18 @@ export const config = {
       de: '/zimmer',
       ru: '/nomera',
     },
+    '/rooms/standard-room': {
+      tr: '/odalar/standart-oda',
+      en: '/rooms/standard-room',
+      de: '/zimmer/standardzimmer',
+      ru: '/nomera/standartnyy-nomer',
+    },
+    '/rooms/suite-room': {
+      tr: '/odalar/suit-oda',
+      en: '/rooms/suite-room',
+      de: '/zimmer/suite',
+      ru: '/nomera/lyuks',
+    },
     '/about': {
       tr: '/hakkimizda',
       en: '/about',

@@ -42,6 +42,7 @@
     "suiteTitle": "Suite",
     "suiteMeta": "2 suites · 25 m²",
     "suiteBody": "Two 25 m² suites for guests who prefer a larger space.",
+    "roomDetailCta": "View details",
     "amenitiesEyebrow": "Facilities",
     "amenitiesTitle": "Services to support your stay",
     "amenitiesBody": "Wi-Fi, parking, satellite TV, a fitness centre, a sauna and a meeting room with flexible seating arrangements are available at the hotel.",
@@ -66,6 +67,7 @@
     "eyebrow": "Rooms",
     "title": "Two ways to stay across 44 rooms",
     "intro": "Teona Hotel offers 42 standard rooms and 2 suites in central İzmit.",
+    "photoNote": "Room interiors may vary according to room type and bed configuration.",
     "standardTitle": "Standard Room",
     "standardMeta": "42 rooms · 15–20 m²",
     "standardBody": "The 42 standard rooms, measuring between 15 and 20 m², make up most of the hotel's room collection.",
@@ -74,7 +76,46 @@
     "suiteBody": "The two 25 m² suites offer an alternative for guests who prefer more space.",
     "sharedTitle": "Hotel facilities",
     "sharedBody": "Guests can use Wi-Fi, parking, satellite TV, the fitness centre and sauna. The meeting room accommodates 40 people in a U-shape and 80 in a classroom layout.",
-    "cta": "Plan your stay"
+    "cta": "Plan your stay",
+    "detailsCta": "View room details"
+  },
+  "roomDetails": {
+    "shared": {
+      "backToRooms": "Back to rooms",
+      "eyebrow": "Room detail",
+      "detailsEyebrow": "Stay information",
+      "size": "Room size",
+      "capacity": "Room count",
+      "wifiValue": "Hotel-wide Wi-Fi",
+      "satelliteValue": "Satellite TV",
+      "photoNote": "Room interiors may vary according to room type and bed configuration.",
+      "facilitiesEyebrow": "Facilities",
+      "facilitiesTitle": "Services that support your stay",
+      "facilitiesBody": "At Teona Hotel, Wi-Fi, parking, satellite TV, the fitness centre and sauna are available to guests during their stay.",
+      "ctaTitle": "Let us help plan your stay",
+      "ctaBody": "Contact Teona Hotel directly for availability, bed configuration and reservation details.",
+      "contactCta": "Contact us"
+    },
+    "standard": {
+      "title": "Standard Room",
+      "meta": "42 rooms · 15–20 m²",
+      "intro": "Standard rooms are a simple and practical option for a city stay in central İzmit.",
+      "detailTitle": "A practical room for city plans",
+      "body1": "Standard rooms make up most of Teona Hotel's room capacity and range from 15 to 20 m².",
+      "body2": "During your stay, you can use Wi-Fi, satellite TV and the hotel's shared facilities.",
+      "size": "15–20 m²",
+      "capacity": "42 standard rooms"
+    },
+    "suite": {
+      "title": "Suite Room",
+      "meta": "2 suites · 25 m²",
+      "intro": "Suite rooms offer 25 m² of space for guests who prefer a larger stay area.",
+      "detailTitle": "A more spacious stay area",
+      "body1": "Teona Hotel has 2 suites, each measuring 25 m².",
+      "body2": "The suite option is suitable for guests who want more space during their time in the city.",
+      "size": "25 m²",
+      "capacity": "2 suites"
+    }
   },
   "about": {
     "eyebrow": "About",
@@ -101,13 +142,22 @@
     "eyebrow": "Gallery",
     "title": "A look inside Teona Hotel",
     "intro": "Take a closer look at the hotel's rooms, shared spaces and facilities.",
-    "note": "The images have been compiled from the promotional materials provided and are representative.",
+    "note": "This gallery uses current photographs of Teona Hotel supplied to us.",
     "items": {
       "hero": "Teona Hotel",
       "welcome": "Hotel shared spaces",
-      "comfort": "Standard rooms and suites",
-      "service": "Hotel facilities",
-      "location": "Central İzmit location"
+      "comfort": "Room interiors",
+      "service": "Shared spaces and facilities",
+      "location": "Central İzmit location",
+      "exterior": "Teona Hotel exterior",
+      "city": "The hotel's city location",
+      "corridor": "Hotel corridor",
+      "terrace": "Terrace area",
+      "bathroom": "Bathroom detail",
+      "shower": "Shower area",
+      "roomDouble": "Double-bed room view",
+      "roomTwin": "Twin-bed room view",
+      "roomMultiple": "Room view with separate beds"
     }
   },
   "contact": {
