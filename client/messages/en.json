@@ -1,566 +1,151 @@
-{   "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} other {Unknown}}"
-  
+{
+  "meta": {
+    "title": "Teona Hotel | A City Stay in Central İzmit",
+    "description": "Teona Hotel in central İzmit offers 42 standard rooms, 2 suites, Payidar Restaurant, a meeting room, fitness facilities and a sauna."
   },
-  "Header":{
-    "home":"HomePage",
-    "nihotel":"Ni Hotel",
-    "rooms":"Our Rooms",
-    "kitchen":"Our Kitchen",
-    "booknow":"Book Now",
-    "letuscallyou":"Let Us Call You",
-     "menu": "Menu",
-     "contact":"Contact",
-      "about":"About",
-      "standardRoom": "Standard Room",
-      "juniorRoom": "Junior Room",
-      "verandaRoom": "Veranda Room",
-      "cornerRoom": "Corner Room",
-      "gallery":"GALLERY",
-      "lobby": "Lobby",
-      "chat": "Chat",
-      "offers": "Offers"
-  },
-
-  "Footer":{
-    "aboutus":"About Us",
-    "contactus":"Contact Us",
-    "gallery":"Gallery",
-    "cookiePolicy":"Cookie Policy",
-    "privacyPolicy":"Privacy Policy",
-    "factsheet":"Fact Sheet",
-     "securitycam": "CCTV Privacy Notice",
-    "standardRoom": "Standard Room",
-      "juniorRoom": "Junior Room",
-      "verandaRoom": "Veranda Room",
-      "cornerRoom": "Corner Room",
-      "rooms":"Our Rooms",
-      "hotelline":"Whatsapp Line",
-"callcenterline":"Call Center Line",
-"callcenteremail":"Call Center Email",
-"address":"Address",
-"accommodation":"Accommodation",
- "text": "Discover the unique beauty of Antalya, the gem of the Mediterranean, with its pristine beaches, mysterious ancient ruins, and lush greenery."
-  },
-
-  "Amenities":{
-   "amenities":"AMENITIES",
-"text": "High-quality service and modern-style décor thoughtfully presented at Ni Hotel",
- "label1": "Strong Wi-Fi",
- "label2": "Welcome Treat" ,
-   "label3": "Buffet Breakfast" ,
-  "label4": "Central Location",
-"label5": "Daily Cleaning" 
-  },
-
-  "Reservation":{
-    "checkin":"Check In",
-    "checkout":"Check Out",
-    "guests":"Guests",
-     "booknow":"BOOK NOW",
-    "adult":"Adult",
-      "kid":"Kid",
-      "children":"Children",
-      "childAge":"Child Age",
-       "bookingPlatforms":"Booking Platforms"
-  },
-
-  "Rooms": {
+  "navigation": {
+    "home": "Home",
     "rooms": "Rooms",
-      "title": "Standard Room",
-      "description": "Our spacious 25 m² Standard Room features one double bed and one twin bed, thoughtfully appointed for comfort. Refresh in a private bathroom with modern amenities. Ideal for families or friends seeking a restful retreat.",
-      "buttonText": "Explore",
-      "person1":"1 French + 1 Twin",
-      "person2":"1 French",
-      "person3":"1 French + 1 Twin",
-      "person4":"1 French",
-      "bathroom":"Bathroom",
-      "puff":"Puff",
- 
-      "title2": "Junior Room",
-      "description2": "Cozy 20 m² Junior Room appointed with one double bed and a private bathroom for your comfort. Designed for solo travelers or couples, it offers a welcoming and intimate atmosphere. Enjoy essential amenities for a seamless stay.",
-
-      "title3": "Veranda Room",
-      "description3": "The 25 m² Veranda Room features one double bed and one twin bed, along with a private veranda overlooking serene garden views. Perfect for enjoying morning coffee or evening relaxation. A well-equipped bathroom and thoughtful amenities enhance your stay.",
-
-      "title4": "Corner Room",
-      "description4": "Located in the corner for extra privacy and natural light, our 25 m² Corner Room includes one double bed and a private bathroom. Spaciously designed with comfortable seating and modern conveniences. Ideal for guests seeking a tranquil retreat."
-    
+    "about": "About",
+    "restaurant": "Restaurant",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "book": "Book",
+    "menu": "Menu",
+    "close": "Close"
   },
-
-  "RoomFeatures": {
-    "header": "ROOM FEATURES",
-    "conditioner": "Central Air Conditioning",
-    "tv": "LED TV",
-    "toilet": "Free Toiletries",
+  "home": {
+    "eyebrow": "In central İzmit",
+    "title": "Close to the rhythm of the city, with time to unwind",
+    "subtitle": "Since 2010, Teona Hotel has welcomed guests with 44 rooms and a range of facilities for a practical city stay.",
+    "primaryCta": "Explore the rooms",
+    "secondaryCta": "Contact us",
+    "stats": {
+      "sinceValue": "2010",
+      "sinceLabel": "Serving guests since",
+      "roomsValue": "44",
+      "roomsLabel": "Rooms in total",
+      "guestsValue": "~120,000",
+      "guestsLabel": "Guests, according to the brochure",
+      "meetingValue": "80",
+      "meetingLabel": "Classroom-style capacity"
+    },
+    "introEyebrow": "Teona Hotel",
+    "introTitle": "A practical stay in central İzmit",
+    "introBody": "With 42 standard rooms and 2 suites, Teona Hotel brings Wi-Fi, parking, satellite TV, a fitness centre and a sauna together under one roof.",
+    "roomsEyebrow": "Rooms",
+    "roomsTitle": "Two room types to suit your stay",
+    "roomsBody": "The hotel has 44 rooms in total: standard rooms range from 15 to 20 m², while the suites measure 25 m².",
+    "standardTitle": "Standard Room",
+    "standardMeta": "42 rooms · 15–20 m²",
+    "standardBody": "A simple, practical option for your time in the city.",
+    "suiteTitle": "Suite",
+    "suiteMeta": "2 suites · 25 m²",
+    "suiteBody": "Two 25 m² suites for guests who prefer a larger space.",
+    "amenitiesEyebrow": "Facilities",
+    "amenitiesTitle": "Services to support your stay",
+    "amenitiesBody": "Wi-Fi, parking, satellite TV, a fitness centre, a sauna and a meeting room with flexible seating arrangements are available at the hotel.",
+    "restaurantEyebrow": "Payidar Traditional Restaurant",
+    "restaurantTitle": "A place to meet within the hotel",
+    "restaurantBody": "Payidar Traditional Restaurant hosts live music programmes and group events.",
+    "restaurantCta": "Explore the restaurant",
+    "locationEyebrow": "Location",
+    "locationTitle": "In central İzmit",
+    "locationBody": "Teona Hotel's central İzmit location offers a practical starting point for your time in the city.",
+    "locationCta": "Get directions"
+  },
+  "amenities": {
     "wifi": "Wi-Fi",
+    "parking": "Parking",
+    "satellite": "Satellite TV",
+    "fitness": "Fitness centre",
+    "sauna": "Sauna",
+    "meeting": "Meeting room"
+  },
+  "rooms": {
+    "eyebrow": "Rooms",
+    "title": "Two ways to stay across 44 rooms",
+    "intro": "Teona Hotel offers 42 standard rooms and 2 suites in central İzmit.",
+    "standardTitle": "Standard Room",
+    "standardMeta": "42 rooms · 15–20 m²",
+    "standardBody": "The 42 standard rooms, measuring between 15 and 20 m², make up most of the hotel's room collection.",
+    "suiteTitle": "Suite",
+    "suiteMeta": "2 suites · 25 m²",
+    "suiteBody": "The two 25 m² suites offer an alternative for guests who prefer more space.",
+    "sharedTitle": "Hotel facilities",
+    "sharedBody": "Guests can use Wi-Fi, parking, satellite TV, the fitness centre and sauna. The meeting room accommodates 40 people in a U-shape and 80 in a classroom layout.",
+    "cta": "Plan your stay"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "In İzmit since 2010",
+    "lead": "Teona Hotel serves guests in central İzmit with 44 rooms and a range of on-site facilities.",
+    "body1": "The hotel's room collection comprises 42 standard rooms measuring 15–20 m² and 2 suites measuring 25 m².",
+    "body2": "According to the hotel's promotional material, approximately 120,000 guests have stayed here to date. Teona Hotel also houses Payidar Traditional Restaurant and a meeting room that can be arranged in different layouts.",
+    "principleTitle": "A practical approach to city stays",
+    "principleBody": "Wi-Fi, parking, satellite TV, a fitness centre and a sauna bring together the core facilities guests may need during their stay.",
+    "cityTitle": "At the heart of İzmit",
+    "cityBody": "Its central location makes Teona Hotel a practical accommodation option for business and city plans in İzmit."
+  },
+  "restaurant": {
+    "eyebrow": "Payidar Traditional Restaurant",
+    "title": "A setting made for gathering around the table",
+    "lead": "Located within Teona Hotel, Payidar Traditional Restaurant provides a dedicated setting for dining and gatherings.",
+    "body1": "The restaurant hosts live music programmes for evening gatherings.",
+    "body2": "For information and planning enquiries regarding group events, please contact the hotel directly.",
+    "phoneLabel": "Phone",
+    "instagramLabel": "Instagram",
+    "cta": "Contact us"
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "A look inside Teona Hotel",
+    "intro": "Take a closer look at the hotel's rooms, shared spaces and facilities.",
+    "note": "The images have been compiled from the promotional materials provided and are representative.",
+    "items": {
+      "hero": "Teona Hotel",
+      "welcome": "Hotel shared spaces",
+      "comfort": "Standard rooms and suites",
+      "service": "Hotel facilities",
+      "location": "Central İzmit location"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Get in touch with Teona Hotel",
+    "lead": "Contact us by phone or email for information about stays, the restaurant and group events.",
     "phone": "Phone",
-    "minibar": "Mini Bar",
-    "showerphone": "Shower Phone",
-    "safe": "Safe",
-    "towel": "Towel Set",
-    "makeuptable": "Desk",
-    "coffee": "Coffee/Tea Maker",
-    "hairdryer": "Hair Dryer",
-     "rulesHeader": "Room Rules:",
-    "rulesDetails": "Check-In: 02:00 PM Check-Out: 12:00 PM No Smoking"
+    "email": "Email",
+    "address": "Address",
+    "formTitle": "Send us a message",
+    "name": "Full name",
+    "emailField": "Email address",
+    "message": "Your message",
+    "send": "Send message",
+    "sending": "Sending…",
+    "success": "We have received your message and will contact you as soon as possible.",
+    "error": "Your message could not be sent. Please try again or contact us directly.",
+    "mapTitle": "Teona Hotel on the map",
+    "call": "Call now",
+    "write": "Send an email"
   },
-
-  "CornerRoom": {
-    "bannerHeader": "Corner Room",
-    "bannerM2": "30 m²",
-    "bannerPerson": "2 Adults",
-    "bannerView": "Garden View",
-    "carouselTitle": "CORNER ROOM",
-    "carouselDesc1": "Our rooms, each 30 m², with a balcony and garden view, have been designed in a tasteful way, with your comfort in mind, featuring a large bed or two single beds, a desk and chairs.",
-    "carouselDesc2": "Ni Hotel’s modern flair makes your holiday unforgettable. This room has been meticulously designed. The light and colors will lift your spirits during your dream-like stay.",
-    "carouselButtonText": "EXPLORE",
-
-    "DiscoverRoom":{
-      "header":"Discover Other Rooms",
-      "buttonText": "Explore",
-      "name1": "Standard Room",
-      "description1": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom",
-      "name2": "Junior Room",
-      "description2": "20 m², 1 French bed, toilet & bathroom",
-      "name3": "Veranda Room",
-      "description3": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom"
-    }
+  "booking": {
+    "title": "Reservation details",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "adults": "Adults",
+    "children": "Children",
+    "bookNow": "Book now"
   },
-
-  "StandardRoom": {
-    "bannerHeader": "Standard Room",
-    "bannerM2": "25 m²",
-    "bannerPerson": "3 Adults",
-    "bannerView": "Garden View",
-    "carouselTitle": "STANDARD ROOM",
-    "carouselDesc1": "Our spacious 25 m² Standard Room features one double bed and one twin bed, thoughtfully appointed for comfort. Refresh in a private bathroom with modern amenities. Ideal for families or friends seeking a restful retreat.",
-    "carouselDesc2": "Ni Hotel’s modern flair makes your holiday unforgettable. This room has been meticulously designed. The light and colors will lift your spirits during your dream-like stay.",
-    "carouselButtonText": "EXPLORE",
-
-    "DiscoverRoom":{
-      "header":"Discover Other Rooms",
-      "buttonText": "Explore",
-      "name1": "Corner Room",
-      "description1": "25 m², 1 French bed, toilet & bathroom",
-      "name2": "Junior Room",
-      "description2": "20 m², 1 French bed, toilet & bathroom",
-      "name3": "Veranda Room",
-      "description3": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom"
-    }
+  "footer": {
+    "tagline": "A city stay in central İzmit since 2010.",
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "materialNote": "Hotel information is based on Teona Hotel's promotional material."
   },
-
-  "VerandaRoom": {
-    "bannerHeader": "Veranda Room",
-    "bannerM2": "25 m²",
-    "bannerPerson": "3 Adults",
-    "bannerView": "Garden View",
-    "carouselTitle": "VERANDA ROOM",
-    "carouselDesc1": "The 25 m² Veranda Room features one double bed and one twin bed, along with a private veranda overlooking serene garden views. Perfect for enjoying morning coffee or evening relaxation. A well-equipped bathroom and thoughtful amenities enhance your stay.", 
-   "carouselDesc2": "Ni Hotel’s modern flair makes your holiday unforgettable. This room has been meticulously designed. The light and colors will lift your spirits during your dream-like stay.",
-    "carouselButtonText": "EXPLORE",
-
-    "DiscoverRoom":{
-      "header":"Discover Other Rooms",
-      "buttonText": "Explore",
-      "name1": "Standard Room",
-      "description1": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom",
-      "name2": "Junior Room",
-      "description2": "20 m², 1 French bed, toilet & bathroom",
-      "name3": "Corner Room",
-      "description3": "25 m², 1 French bed, toilet & bathroom"
-    }
-  },
-
-  "JuniorRoom": {
-    "bannerHeader": "Junior Room",
-    "bannerM2": "20 m²",
-    "bannerPerson": "2 Adults",
-    "bannerView": "Garden View",
-    "carouselTitle": "JUNIOR ROOM",
-    "carouselDesc1": "Our 20 m² Junior Room consists of one double bed and features a separate toilet and bathroom.", 
-     "carouselDesc2": "Ni Hotel’s modern flair makes your holiday unforgettable. This room has been meticulously designed. The light and colors will lift your spirits during your dream-like stay.",
-    "carouselButtonText": "EXPLORE",
-    "DiscoverRoom":{
-      "header":"Discover Other Rooms",
-      "buttonText": "Explore",
-      "name1": "Standard Room",
-      "description1": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom",
-      "name2":  "Corner Room",
-      "description2":"25 m², 1 French bed, toilet & bathroom",
-      "name3": "Veranda Room",
-      "description3": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom"
-    }
-  },
-
-  "RoomsSlider": {
-    "title": "Standard Room",
-    "description": "25 m², 1 French bed + 1 Twin bed, consists of toilet and bathroom.",
-    "adults": "3 Adults",
-    "area": "25 m²",
-
-    "title2": "Junior Room",
-    "description2": "20 m², consists of 1 French bed, toilet and bathroom.",
-    "adults2": "2 Adults",
-    "area2": "20 m²",
-
-    "title3": "Veranda Room",
-    "description3": "25 m², 1 French bed + 1 Twin bed, consists of toilet and bathroom.",
-    "adults3": "3 Adults",
-    "area3": "25 m²",
-
-    "title4": "Corner Room",
-    "description4": "25 m², 1 French bed, consists of toilet and bathroom.",
-    "adults4": "2 Adults",
-    "area4": "25 m²",
-
-    "header": "Our Rooms & Suites",
-    "text": "Discover thoughtfully designed spaces—from cozy Standard rooms to spacious Corner suites—each offering modern amenities and elegant comfort.",
-    "buttonText": "Explore"
-  },
-
-  "Contact": {
-    "header": "CONTACT US",
-    "description": "Reach out via phone, email, or use the chat in the bottom right corner. Click “Let Us Call You” for a callback.",
-    "callCenterLabel": "Call Center",
-    "emailLabel": "Call Center E-mail",
-    "phonePlaceholder": "+90 555 123 45 67",
-    "emailPlaceholder": "callcenter@example.com",
-    "buttonText": "LET US CALL YOU",
-    "getintouch":"Get in Touch",
-    "text":"NiHotel is in Lara, just steps from the Mediterranean. Our team is available 24/7 for bookings, service info, or any special request."
-  },
-
-  "About":{
-    "header":"About",
-    "text1":"Located in the heart of Antalya—Turkey’s “turquoise paradise”—just steps from the tranquil streets of Lara and its Blue Flag beaches, NiHotel combines modern comfort with genuine Turkish hospitality. Our 12 Standard, 3 Junior, 4 Veranda, and 6 Corner rooms are equipped with a 42″ LED TV, central air conditioning, in-room safe, mini-bar, and complimentary bathroom amenities.",
-    "text2":"A rich buffet breakfast is included with every stay, and our 24/7 reception team is on hand to assist with reservations, tour planning, special requests, or visits to nearby Düden Waterfalls and the Ancient Castle.",
-    "explore":"Explore"
-  },
-  "RoomTour": {
-    "span": "360° VIRTUAL TOUR",
-    "header": "Explore Our Room in 360°",
-    "text": "Take a fully interactive 360° tour of our room. View every detail—from the bed and bathroom to the stunning views—in lifelike clarity."
-  },
-
-  "DiscoverRoom":{
-    "name1": "Standard Room",
-    "description1": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom",
-    "name2": "Junior Room",
-    "description2": "20 m², 1 French bed, toilet & bathroom",
-    "name3": "Veranda Room",
-    "description3": "25 m², 1 French bed + 1 Twin bed, toilet & bathroom",
-    "name4": "Corner Room",
-    "description4": "25 m², 1 French bed, toilet & bathroom"
-  },
-
-  "Nibeauty":{
-    "title": "The Path to Health and Beauty",
-    "text": "We offer services such as skin care, localized slimming, spa treatments, hand and foot care, laser hair removal, permanent makeup, and mesotherapy—combining the latest methods and technology to help you achieve a healthier, higher-quality life.",
-    "buttonText": "Learn More"
-  },
-
-  "Kitchen":{
-    "header": "Food & Beverage",
-    "span": "Cafe — Bar — Restaurant",
-    "text1": "Hand-picked coffee beans release their wonderful aroma to refresh your energy at any hour, while our bar is ready for pleasant conversations with a selection of alcoholic and non-alcoholic drinks tailored to diverse palates.",
-    "text2": "The unique flavors crafted by our chef, blending national and international cuisines, take your stay at Ni Hotel Lara to the next level.",
-    "breakfast": "Breakfast",
-    "dailySoupAndMealMenu": "Daily Soup & Meal Menu",
-    "mainCourse": "Main Course",
-    "snack": "Snack",
-    "salads": "Salads",
-    "alcoholicDrinks": "Alcoholic Beverages",
-    "cocktails": "Cocktails (Alcoholic & Non-Alcoholic)",
-    "coffeeTea": "Coffee & Tea (Hot & Cold)",
-    "softDrinks": "Soft Drinks",
-    "beers": "Beers",
-    "whiskys": "Whiskies",
-    "vodkas": "Vodkas",
-    "tequilas": "Tequilas",
-    "gins": "Gins",
-    "wines": "Wines",
-    "champagnes": "Champagnes",
-    "rakis": "Rakıs",
-    "liqueurs": "Liqueurs",
-      "frozen": "Frozen",
-
-    "Breakfast": {
-    "title1": "Breakfast Plate",
-    "text1": "Honey, jam, chocolate, 2 types of cheese, boiled egg, butter, tomato, olives and greens",
-    "title2": "Turkish Spread Breakfast",
-    "text2": "Honey, jam, chocolate, tahini, molasses, 3 types of cheese, salami, fries, sausage, fried egg, butter, tomato, cucumber, olives and greens",
-    "title3": "Cheese Toast",
-    "text3": "Toast bread with kashar cheese",
-    "title4": "Tomato Paste Toast",
-    "text4": "Bread with tomato paste and white cheese",
-    "title5": "Herb & Cheese Toast",
-    "text5": "Dil cheese and fresh herbs",
-    "title6": "Sucuk Toast",
-    "text6": "Toast with sucuk and kashar cheese",
-    "title7": "Beetroot Labneh Toast",
-    "text7": "Grilled vegetables, sliced avocado, a sunny-side-up egg, almonds and cherry tomatoes on beetroot labneh",
-    "title8": "Mushroom Toast",
-    "text8": "Homemade guacamole, roasted mushrooms, a fried egg, walnuts, sesame seeds and cherry tomatoes",
-    "title9": "Herb Labneh Toast",
-    "text9": "Herb labneh, sliced avocado, a fried egg, sesame seeds and cherry tomatoes",
-    "title10": "Omelette",
-    "text10": "Cherry tomatoes, avocado and olives",
-    "title11": "Herb Cheese Omelette",
-    "text11": "Dil cheese, fresh herbs, sliced avocado and cherry tomatoes",
-    "title12": "Mushroom Omelette",
-    "text12": "Roasted mushrooms, fresh herbs, sliced avocado and cherry tomatoes",
-    "title13": "Kashar Cheese Omelette",
-    "text13": "Dil cheese and kashar cheese",
-    "title14": "Ham Omelette",
-    "text14": "Beef ham, kashar cheese and fresh herbs",
-    "title15": "Fruit Oatmeal",
-    "text15": "Oats cooked with milk and fruit",
-    "title16": "Scrambled Eggs",
-    "text16": "Scrambled egg, guacamole, cotto ham, parmesan, sun-dried tomatoes and cherry tomatoes"
-  },
-  "MainCourse": {
-    "title1": "Margarita Pizza",
-    "text1": "Mozzarella cheese, tomato and basil",
-    "title2": "Four Cheese Pizza",
-    "text2": "Mozzarella, Kashar, Cheddar and Parmesan",
-    "title3": "Mixed Pizza",
-    "text3": "Mozzarella, sucuk, sausage, peppers, mushrooms and olives",
-    "title4": "Special Burger",
-    "text4": "240 g beef patty, caramelized onions, cotto ham slice, cheddar, mushrooms, guacamole, truffle mayo and parmesan fries",
-    "title5": "Kids’ Burger Menu",
-    "text5": "120 g beef patty, lettuce, tomato, pickles, sauce and fries",
-    "title6": "Cheeseburger",
-    "text6": "120 g beef patty, double cheddar, guacamole, truffle mayo and parmesan fries",
-    "title7": "Vegan Tofu Wrap",
-    "text7": "Tofu patty, avocado, carrot, cucumber, hummus and olive oil",
-    "title8": "Vegan Wrap",
-    "text8": "Avocado, cucumber, carrot, green onion and hummus",
-    "title9": "Smoked Rib Spaghetti",
-    "text9": "Smoked rib, parmesan, cream and parsley",
-    "title10": "Mushroom Alfredo",
-    "text10": "Roasted mushrooms in parmesan sauce",
-    "title11": "Penne Arrabbiata",
-    "text11": "Spicy tomato sauce, basil and parmesan",
-    "title12": "Spaghetti Bolognese",
-    "text12": "Beef mince sauce and parmesan",
-    "title13": "Ni Fit Chicken",
-    "text13": "200 g chicken breast, rice and steamed vegetables",
-    "title14": "Ni Fit Beef",
-    "text14": "200 g beef sirloin, rice and steamed vegetables",
-    "title15": "Turkish Manti",
-    "text15": "Yogurt and butter",
-    "title16": "Italian Meatballs",
-    "text16": "Potato puree, basil tomato sauce and mini Italian meatballs",
-    "title17": "Grilled Chicken Fillet",
-    "text17": "200 g chicken fillet with dressed greens",
-    "title18": "Chicken Fajita",
-    "text18": "Salsa sauce, guacamole sauce and cream sauce",
-    "title19": "Schnitzel",
-    "text19": "220 g schnitzel with mashed potatoes and dressed greens",
-    "title20": "Chicken Turn",
-    "text20": "Hummus, red quinoa, purslane, grilled chicken breast and cherry tomatoes",
-    "pizzas": "Pizzas",
-    "hamburgers": "Hamburgers",
-    "pastas": "Pastas",
-    "vegetarian": "Vegetarian"
-  },
-
-  "CoffeeTea": {
-    "title1": "Espresso",
-    "text1": "",
-    "title2": "Espresso Doppio",
-    "text2": "",
-    "title3": "Ristretto Doppio",
-    "text3": "",
-    "title4": "Kaffee Creme",
-    "text4": "",
-    "title5": "Long Black",
-    "text5": "",
-    "title6": "Americano",
-    "text6": "",
-    "title7": "Cappuccino",
-    "text7": "",
-    "title8": "Latte Macchiato",
-    "text8": "",
-    "title9": "Espresso Macchiato",
-    "text9": "",
-    "title10": "Kaffee Latte",
-    "text10": "",
-    "title11": "White Chocolate Mocha",
-    "text11": "",
-    "title12": "Flat White",
-    "text12": "",
-    "title13": "Kaffee Mocha",
-    "text13": "",
-    "title14": "Turkish Coffee",
-    "text14": "",
-    "title15": "Apple Tea",
-    "text15": "",
-    "title16": "Green Tea",
-    "text16": "",
-    "title17": "Tea",
-    "text17": ""
-  },
-
-  "DailyMenu": {
-    "title1": "Soup of the Day",
-    "text1": "Served with croutons",
-    "title2": "Daily Special Menu",
-    "text2": ""
-  },
-  "Snack": {
-    "title1": "Beer Plate",
-    "text1": "4 onion rings, 1 mozzarella stick, 2 fried sausages and homemade potato chips",
-    "title2": "Crispy Chicken",
-    "text2": "6 pieces of crispy chicken with dip sauce",
-    "title3": "Finger Fries",
-    "text3": "Homemade finger-cut fries",
-    "title4": "Mixed Nuts",
-    "text4": "Assorted nuts",
-    "title5": "Cheese Plate",
-    "text5": "Gouda, Roquefort, Graviera, Parmesan, dried grapes, dried apricot, walnuts, almonds, pastrami, black olives and grissini",
-    "title6": "Chips",
-    "text6": "Doritos, Lay’s, Ruffles"
-  },
-  "Salads": {
-    "title1": "Grilled Chicken Salad",
-    "text1": "Mixed greens, 130 g grilled chicken breast, cherry tomatoes, baby radish slices and mint yogurt dressing",
-    "title2": "Grain Salad",
-    "text2": "Buckwheat, spelt bulgur, mung beans, greens, cherry tomatoes, sesame and basil dressing",
-    "title3": "Curd & Beetroot Salad",
-    "text3": "Roasted beetroot, curd cheese, avocado and black cumin",
-    "title4": "Caesar Salad",
-    "text4": "Romaine lettuce, chicken breast, parmesan, croutons and Caesar dressing"
-  },
-
-  "CocktailMenu": {
-    "title1": "Gin Tonic",
-    "text1": "Gin and tonic water",
-    "title2": "Sex on the Beach",
-    "text2": "Vodka, peach-flavored schnapps, orange and cranberry juice",
-    "title3": "Mojito",
-    "text3": "Brown sugar, lime, fresh mint, crushed ice, white rum and soda",
-    "title4": "Margarita",
-    "text4": "Tequila, Triple Sec (orange liqueur), lime juice and ice",
-    "title5": "Piña Colada",
-    "text5": "Pineapple, banana, coconut milk, coconut liqueur, agave syrup and ice",
-    "title6": "Bloody Mary",
-    "text6": "Vodka, tomato juice and various spices",
-    "title7": "Daiquiri",
-    "text7": "Rum, lime juice, fruit juice and crushed ice",
-    "title8": "Dry Martini",
-    "text8": "Dry vermouth and gin",
-    "title9": "Virgin Mojito",
-    "text9": "Sparkling water, lime, brown sugar and fresh mint",
-    "title10": "Churchill",
-    "text10": "Soda, lemon juice and salt",
-    "redwine": "Red Wine",
-    "whitewine": "White Wine",
-    "blush": "Blush"
-  },
-  "IcedCoffees": {
-    "title1": "Francoccino",            "text1": "",
-    "title2": "Iced Kaffee Mocha",      "text2": "",
-    "title3": "Iced Kaffee Americano",  "text3": "",
-    "title4": "Iced Kaffee",            "text4": "",
-    "title5": "Iced Kaffee Latte",      "text5": ""
-  },
-
-  "Frozen": {
-    "title1": "Strawberry Frozen",      "text1": "",
-    "title2": "Banana Frozen",          "text2": ""
-  },
-
-  "SoftDrinks": {
-    "title1": "Soda",                   "text1": "",
-    "title2": "Coca-Cola 330 ml",       "text2": "",
-    "title3": "Coca-Cola 200 ml",       "text3": "",
-    "title4": "Fanta 330 ml",           "text4": "",
-    "title5": "Yedigün 200 ml",         "text5": "",
-    "title6": "Sprite 200 ml",          "text6": "",
-    "title7": "Redbull",                "text7": "",
-    "title8": "Burn Energy Drink",      "text8": "",
-    "title9": "Schweppes Tonic",        "text9": "",
-    "title10": "Juss Apricot Juice",    "text10": "",
-    "title11": "Juss Cherry Juice",     "text11": "",
-    "title12": "Fresh Orange Juice",    "text12": ""
+  "common": {
+    "learnMore": "Learn more",
+    "backHome": "Back to home"
   }
-  },
-
-  "ContactForm": {
-    "contactUs": "CONTACT US",
-    "labelName": "Name / Surname",
-    "placeholderName": "John Doe",
-    "labelEmail": "E-Mail",
-    "labelPhone": "Phone Number",
-    "placeholderEmail": "johndoe@example.com",
-    "labelMessage": "Message",
-    "placeholderMessage": "Your message...",
-    "labelPolicy": "Contact Form Policy",
-    "sendButton": "SEND",
-    "sending": "SENDING...",
-    "successMessage": "Your message was sent successfully!",
-    "errorAcceptPolicy": "Please accept the privacy policy.",
-    "errorSendFailed": "Send failed. Please try again.",
-    "errorGeneric": "An error occurred. Please try again."
-  },
-
-  "CameraPage": {
-    "bannerTitle": "CCTV Privacy Notice",
-    "responsibleTitle": "Identity of the Data Controller:",
-    "responsibleText": "This information notice has been prepared in accordance with the Law on the Protection of Personal Data No. 6698 (\"KVKK\") and relevant legislation by Nİ GÜZELLİK MERKEZİ KUAFÖRLÜK MAL. LTD. ŞTİ. to inform data subjects regarding the camera surveillance activities carried out within Ni Beauty Lab.",
-    "address": "Address:",
-    "addressText": "Fener Mah. Lara Cad. M.Tere Apt No:211 A MURATPAŞA/ANTALYA",
-    "phone": "Phone:",
-    "phoneText": "+90 539 777 77 64",
-    "email": "E-mail:",
-    "emailText": "kvkk@nibeauty.com",
-
-    "section1Title": "1. Personal Data Processing Activity",
-    "section1Text": "In our facility; in accordance with Law No. 5188 on Private Security Services, related regulations, and the provisions of KVKK, security cameras are used to ensure the security of the hotel, to monitor entrances and exits, and to improve service quality. The camera systems only record video; no audio recording is made. The personal data obtained are collected automatically and processed based on the legal ground of the legitimate interest of the data controller.",
-
-    "section2Title": "2. Purposes of Monitoring",
-    "section2Intro": "The main purposes of camera surveillance are:",
-    "section2List": [
-      "Ensuring the safety of customers, staff, and third parties,",
-      "Monitoring the entrances, exits, and common areas of the facility,",
-      "Preventing criminal incidents and detecting them when necessary,",
-      "Ensuring service quality and business continuity."
-    ],
-
-    "section3Title": "3. Number of Cameras and Monitored Areas",
-    "section3Text": "There are 12 security cameras throughout the facility. Cameras cover general areas and common use areas of the beauty center. No cameras are placed in areas that may violate personal privacy (such as restrooms, treatment rooms, etc.).",
-
-    "section4Title": "4. Access Authorization and Data Security",
-    "section4Text": "Access to camera recordings is restricted to a limited number of authorized personnel who have signed a confidentiality undertaking. In accordance with Article 12 of KVKK, necessary technical and administrative measures are taken to ensure the security of personal data.",
-
-    "section5Title": "5. Retention Period",
-    "section5Text": "Camera recordings are retained for a maximum of 7 days for the purposes stated above and are automatically deleted by the system thereafter.",
-
-    "section6Title": "6. Information and Notification",
-    "section6Intro": "Regarding camera surveillance activities:",
-    "section6List": [
-      "Warning signs placed at entrances,",
-      "Personnel information documents,",
-      "Information texts published in common areas."
-    ],
-
-    "section7Title": "7. Rights of Data Subjects",
-    "section7Intro": "According to Article 11 of KVKK, data subjects have the right to:",
-    "section7List": [
-      "Learn whether their data are being processed,",
-      "Request information if their data have been processed,",
-      "Learn the purpose of data processing and whether it is used appropriately,",
-      "Learn whether their data are transferred to domestic or international third parties,",
-      "Request correction if their data are incomplete or incorrectly processed,",
-      "Request deletion or destruction of data under the conditions prescribed by law,",
-      "Object to any negative consequences arising from automated data analysis,",
-      "Claim compensation if they suffer damage due to unlawful processing."
-    ],
-    "section7Footer": "You can send your requests to kvkk@nibeauty.com."
-  }
-
-
 }
