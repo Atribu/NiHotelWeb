@@ -1,152 +1,161 @@
-import React from 'react'
-import RoomsBanner from '../components/rooms/RoomsBanner'
-import RoomShowcase from '../components/rooms/RoomShowcase'
-import { useTranslations } from 'next-intl';
-import cornerImage from "../../../public/images/rooms/cornerroom/oda1.webp"
-import cornerImage2 from "../../../public/images/rooms/cornerroom/ODA2.webp"
-import cornerImage3 from "../../../public/images/rooms/cornerroom/ODA3.webp"
-import cornerImage4 from "../../../public/images/rooms/cornerroom/ODA4.webp"
+import Image from "next/image";
+import {
+  CarFront,
+  Dumbbell,
+  Flame,
+  Satellite,
+  Wifi,
+} from "lucide-react";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import { site } from "@/lib/site";
+import { pageAlternates } from "@/lib/routes";
 
-import standardImage from "../../../public/images/rooms/standardroom/ODA1.webp"
-import standardImage2 from "../../../public/images/rooms/standardroom/ODA2.webp"
-import standardImage3 from "../../../public/images/rooms/standardroom/ODA3.webp"
-import standardImage4 from "../../../public/images/rooms/standardroom/ODA4.webp"
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "rooms" });
 
-import juniorImage from "../../../public/images/rooms/juniorroom/ODA1.webp"
-import juniorImage2 from "../../../public/images/rooms/juniorroom/ODA2.webp"
-import juniorImage3 from "../../../public/images/rooms/juniorroom/ODA3.webp"
-import juniorImage4 from "../../../public/images/rooms/juniorroom/ODA4.webp"
-
-import verandaImage from "../../../public/images/rooms/veranda/ODA1.webp"
-import verandaImage2 from "../../../public/images/rooms/veranda/ODA2.webp"
-import verandaImage3 from "../../../public/images/rooms/veranda/ODA3.webp"
-import verandaImage4 from "../../../public/images/rooms/veranda/ODA4.webp"
-import Image from 'next/image';
-import img from "../../../public/svg/PORTRESON.svg"
-import ReservationSection from '../components/generalComponents/ReservationSection';
-import BookingPlatforms from '../components/generalComponents/BookingPlatforms';
-
-const Page = () => {
-  const t = useTranslations('Rooms');
-
-  return (
-  <div className='max-w-screen overflow-x-hidden relative'>
-    <RoomsBanner/>
-   <div className='flex flex-col z-[990]'>
-   <RoomShowcase
-      id="standardroom"
-        title={t("title")}
-        description={t("description")}
-        href="/rooms/standardroom"
-        buttonText={t("buttonText")}
-        imagesOnRight={false}
-        m2="25 m²"
-        person={t("person1")}
-        images={[
-          { src: standardImage, alt: "standard room 1" },
-          { src: standardImage2, alt: "standard room 2" },
-          { src: standardImage3, alt: "standard room 3" },
-          { src: standardImage4, alt: "standard room 4" }
-        ]}
-      />
-       {/* Aynı component, bu kez resimler sağda */}
-    <div className='hidden lg:flex'>
-    <RoomShowcase
-      id="juniorroom"
-        title={t("title2")}
-        description={t("description2")}
-        href="/rooms/juniorroom"
-        buttonText={t("buttonText")}
-        imagesOnRight={true}
-       
-        images={[
-          { src: juniorImage, alt: " junior room 1" },
-          { src: juniorImage2, alt: " junior room 2" },
-          { src: juniorImage3, alt: " junior room 3" },
-          { src: juniorImage4, alt: " junior room 4" },
-        ]}
-      />
-    </div>
-
-      <div className='flex lg:hidden'>
-      <RoomShowcase
-      id="juniorroom"
-        title={t("title2")}
-        description={t("description2")}
-        href="/rooms/juniorroom"
-        buttonText={t("buttonText")}
-        imagesOnRight={false}
-         m2="20 m²"
-         person={t("person2")}
-        images={[
-          { src: juniorImage, alt: " junior room 1" },
-          { src: juniorImage2, alt: " junior room 2" },
-          { src: juniorImage3, alt: " junior room 3" },
-          { src: juniorImage4, alt: " junior room 4" },
-        ]}
-      />
-      </div>
-
-<RoomShowcase
- id="verandaroom"
-        title={t("title3")}
-        description={t("description3")}
-        href="/rooms/verandaroom"
-        buttonText={t("buttonText")}
-        imagesOnRight={false}
-         m2="25 m²"
-         person={t("person3")}
-        images={[
-          { src: verandaImage, alt: "veranda room" },
-          { src: verandaImage2, alt: "veranda room" },
-          { src: verandaImage3, alt: "veranda room" },
-          { src: verandaImage4, alt: "veranda  room" },
-        ]}
-      />
-       {/* Aynı component, bu kez resimler sağda */}
-    <div className='hidden lg:flex mb-16'>
-    <RoomShowcase
-        id="cornerroom"
-        title={t("title4")}
-        description={t("description4")}
-        href="/rooms/cornerroom"
-        buttonText={t("buttonText")}
-        imagesOnRight={true}
-        images={[
-          { src: cornerImage, alt: " corner room" },
-          { src: cornerImage2, alt: "corner  room 2" },
-          { src: cornerImage3, alt: " corner room 3" },
-          { src: cornerImage4, alt: "corner  room 4" },
-        ]}
-      />
-    </div>
-
-    <div className='flex lg:hidden'>
-    <RoomShowcase
-        id="cornerroom"
-        title={t("title4")}
-        description={t("description4")}
-        href="/rooms/cornerroom"
-        buttonText={t("buttonText")}
-        imagesOnRight={false}
-         m2="25 m²"
-         person={t("person4")}
-        images={[
-          { src: cornerImage, alt: " corner room " },
-          { src: cornerImage2, alt: "corner  room 2" },
-          { src: cornerImage3, alt: " corner room 3" },
-          { src: cornerImage4, alt: "corner  room 4" },
-        ]}
-      />
-    </div>
-     <BookingPlatforms/>
-    <ReservationSection/>
-   
-   </div>
-    <Image src={img} alt='portre' width={1000} height={1600} className='absolute top-[1800px] right-0 z-[1] hidden xl:flex'/>
-    <Image src={img} alt='portre' width={700} height={1100} className='absolute top-[1800px] left-[1%] z-[1] hidden lg:flex xl:hidden transform -rotate-[10deg]'/>
-  </div>
-  )
+  return {
+    title: `${t("title")} | ${site.name}`,
+    description: t("intro"),
+    alternates: pageAlternates("rooms", locale),
+  };
 }
 
-export default Page
+export default async function RoomsPage({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "rooms" });
+
+  const rooms = [
+    {
+      id: "standard-room",
+      title: t("standardTitle"),
+      meta: t("standardMeta"),
+      body: t("standardBody"),
+      image: site.images.comfort,
+    },
+    {
+      id: "suite-room",
+      title: t("suiteTitle"),
+      meta: t("suiteMeta"),
+      body: t("suiteBody"),
+      image: site.images.hospitality,
+    },
+  ];
+
+  const amenities = [
+    { Icon: Wifi, key: "wifi" },
+    { Icon: CarFront, key: "parking" },
+    { Icon: Dumbbell, key: "fitness" },
+    { Icon: Flame, key: "sauna" },
+    { Icon: Satellite, key: "satellite" },
+  ];
+
+  return (
+    <main id="main-content" className="overflow-hidden bg-white text-[#30343A]">
+      <section className="relative isolate flex min-h-[62vh] items-center justify-center overflow-hidden px-5 pb-14 pt-32 text-center sm:min-h-[68vh] sm:px-8 lg:min-h-[72vh] lg:px-12">
+        <Image
+          src={site.images.hero}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative mx-auto max-w-4xl text-white">
+          <p className="text-xs font-medium uppercase tracking-[0.32em] text-white/80">
+            {t("eyebrow")}
+          </p>
+          <h1 className="mt-5 font-display text-5xl font-semibold leading-none sm:text-6xl lg:text-7xl">
+            {t("title")}
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/85 sm:text-base">
+            {t("intro")}
+          </p>
+          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            {rooms.map((room) => (
+              <a
+                key={room.id}
+                href={`#${room.id}`}
+                className="inline-flex min-h-11 min-w-56 items-center justify-center border border-white/80 bg-white/10 px-6 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-white backdrop-blur-[2px] transition-colors hover:bg-white hover:text-[#19334F]"
+              >
+                {room.title}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#F7F5F1] py-14 sm:py-20 lg:py-24">
+        <div className="mx-auto max-w-7xl space-y-14 px-5 sm:px-8 lg:space-y-20 lg:px-10">
+          {rooms.map((room, index) => (
+            <article
+              id={room.id}
+              key={room.id}
+              className="scroll-mt-28 bg-white lg:grid lg:grid-cols-2 lg:items-stretch"
+            >
+              <div
+                className={`relative min-h-[340px] overflow-hidden sm:min-h-[430px] lg:min-h-[510px] ${
+                  index % 2 === 1 ? "lg:order-2" : ""
+                }`}
+              >
+                <Image
+                  src={room.image}
+                  alt=""
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/25 to-transparent lg:hidden" />
+                <h2 className="absolute inset-x-5 top-7 text-center font-display text-3xl font-semibold text-white drop-shadow lg:hidden">
+                  {room.title}
+                </h2>
+              </div>
+
+              <div className="flex flex-col items-center justify-center px-7 py-12 text-center sm:px-12 lg:min-h-[510px] lg:px-16">
+                <h2 className="hidden font-display text-4xl font-semibold text-[#19334F] sm:text-5xl lg:block">
+                  {room.title}
+                </h2>
+                <p className="mt-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#72809A]">
+                  {room.meta}
+                </p>
+                <span className="my-7 block h-px w-20 bg-[#19334F]/20" aria-hidden="true" />
+                <p className="max-w-lg text-sm leading-8 text-[#59616C] sm:text-base">
+                  {room.body}
+                </p>
+                <Link
+                  href="/contact"
+                  className="mt-8 inline-flex min-h-11 items-center justify-center border border-[#19334F] px-8 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#19334F] transition-colors hover:bg-[#19334F] hover:text-white"
+                >
+                  {t("cta")}
+                </Link>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-t border-black/10 bg-white px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
+        <div className="mx-auto max-w-6xl text-center">
+          <h2 className="font-display text-4xl font-semibold text-[#19334F] sm:text-5xl">
+            {t("sharedTitle")}
+          </h2>
+          <p className="mx-auto mt-5 max-w-3xl text-sm leading-8 text-[#59616C] sm:text-base">
+            {t("sharedBody")}
+          </p>
+          <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 border-l border-t border-[#19334F]/15 sm:grid-cols-5">
+            {amenities.map(({ Icon, key }) => (
+              <div
+                key={key}
+                className="flex min-h-28 items-center justify-center border-b border-r border-[#19334F]/15"
+              >
+                <Icon className="h-6 w-6 text-[#19334F]" strokeWidth={1.35} aria-hidden="true" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

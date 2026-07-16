@@ -1,577 +1,278 @@
 @import "tailwindcss";
 
-input[type="date"]::-webkit-datetime-edit-text,
-input[type="date"]::-webkit-datetime-edit-year-field,
-input[type="date"]::-webkit-datetime-edit-month-field,
-input[type="date"]::-webkit-datetime-edit-day-field {
-  color: transparent;
+:root {
+  --teona-navy: #19334f;
+  --teona-navy-deep: #10273d;
+  --teona-slate: #72809a;
+  --teona-ice: #e8edf2;
+  --teona-ivory: #f7f5f0;
+  --teona-ink: #17202a;
+  --teona-white: #ffffff;
+  --teona-sand: #dec7a6;
+  --teona-green: #588a62;
 }
 
-.font-cormorant {
-  font-family: 'Cormorant_Garamond', sans-serif;
+* {
+  box-sizing: border-box;
 }
 
-.font-jost {
-  font-family: 'Jost', sans-serif;
+html {
+  scroll-behavior: smooth;
+  background: var(--teona-white);
 }
 
-.font-geistSans {
-  font-family: 'Geist', sans-serif;
+body {
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--teona-white);
+  color: var(--teona-ink);
+  font-family: var(--font-jost), Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-
-
-.text-customBlack {
-  color:  rgb(36, 41, 44); 
-
+button,
+input,
+textarea {
+  font: inherit;
 }
 
-.bg-customBlack {
-  background-color: rgb(36, 41, 44);
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
-@keyframes pulseRing {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.4);
-    opacity: 0;
-  }
+img {
+  max-width: 100%;
 }
 
-.pulse-ring {
-  animation: pulseRing 1.5s ease-in-out infinite;
+::selection {
+  background: var(--teona-slate);
+  color: var(--teona-white);
 }
 
-@keyframes fadeinSlide {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.font-display {
+  font-family: var(--font-cormorant), Georgia, serif;
 }
 
-.fade-in-slide {
-  animation: fadeinSlide 1s ease-in-out infinite;
+.font-body {
+  font-family: var(--font-jost), Arial, sans-serif;
 }
 
-
-
-
-@keyframes wigglePhone {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(30deg);
-  }
+.page-shell {
+  width: min(100% - 2rem, 1280px);
+  margin-inline: auto;
 }
 
-.wiggle-phone{
-  animation: wigglePhone 1.2s ease-in-out infinite;
+.section-kicker {
+  color: var(--teona-slate);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
-
-.thin-scrollbar::-webkit-scrollbar {
-  width: 1px; /* Scrollbar genişliği */
-  
+.section-title {
+  margin-top: 0.7rem;
+  color: var(--teona-navy);
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(2.35rem, 5vw, 4.75rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 0.96;
 }
 
-.thin-scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 1); /* Scroll çubuğu rengi */
-  border-radius: 10px;
+.button-primary,
+.button-secondary,
+.button-light {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.3rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: 0.77rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease,
+    transform 180ms ease;
 }
 
-.thin-scrollbar::-webkit-scrollbar-track {
-  background: transparent; /* Arka plan rengi */
+.button-primary {
+  background: var(--teona-sand);
+  color: var(--teona-white);
 }
 
-.black-scrollbar::-webkit-scrollbar {
-  width: 1px; /* Scrollbar genişliği */
-  
+.button-primary:hover {
+  background: var(--teona-navy);
+  transform: translateY(-2px);
 }
 
-.black-scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 0, 0); /* Scroll çubuğu rengi */
-  border-radius: 10px;
+.button-secondary {
+  border-color: color-mix(in srgb, var(--teona-navy) 60%, transparent);
+  background: transparent;
+  color: var(--teona-navy);
 }
 
-.black-scrollbar::-webkit-scrollbar-track {
-  background: transparent; /* Arka plan rengi */
+.button-secondary:hover {
+  border-color: var(--teona-navy);
+  background: var(--teona-navy);
+  color: var(--teona-white);
 }
 
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-10px); }
+.button-light {
+  border-color: color-mix(in srgb, white 55%, transparent);
+  background: color-mix(in srgb, white 10%, transparent);
+  color: var(--teona-white);
+  backdrop-filter: blur(10px);
 }
-
-.bounce-chatbox {
-  animation: bounce 0.8s ease infinite;
-}
-
-/* global.css */
-
-/* 1) Section wrapper */
-.slats-section {
-  position: relative;
-  overflow: hidden;
-  background-color: #faf9f7;
-  padding-top: 4rem; /* gerektiğinde üst boşluk */
-}
-
-/* 2) Asimetrik çubuklar (üstü hizalı, altı farklı) */
-.slats-section::before {
-  content: "";
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-
-  /* zemin rengimiz */
-  background-color: #faf9f7;
-
-  /* çubuklar: width=20, her biri y=0’dan başlıyor, farklı height’lar */
-  background-image: url("data:image/svg+xml;charset=UTF-8,\
-<svg xmlns='http://www.w3.org/2000/svg' width='240' height='500' viewBox='0 0 240 500'>\
-  <rect x='0'   y='0' width='20' height='190' fill='%23ffffff'/>\
-  <rect x='30'  y='0' width='20' height='290' fill='%23ffffff'/>\
-  <rect x='60'  y='0' width='20' height='350' fill='%23ffffff'/>\
-  <rect x='90'  y='0' width='20' height='430' fill='%23ffffff'/>\
-  <rect x='120' y='0' width='20' height='450' fill='%23ffffff'/>\
-  <rect x='150' y='0' width='20' height='430' fill='%23ffffff'/>\
-  <rect x='180' y='0' width='20' height='350' fill='%23ffffff'/>\
-  <rect x='210' y='0' width='20' height='290' fill='%23ffffff'/>\
-  <rect x='210' y='0' width='20' height='190' fill='%23ffffff'/>\
-</svg>");
-  background-repeat: repeat-x;
-  background-size: 240px 100%; /* 240px genişlikte, yatayda tekrarla, dikeyde bölgenin tamamı */
-
-  z-index: 0;
-}
-
-/* 3) İçerik her zaman önde kalsın */
-.slats-section > .relative {
-  position: relative;
-  z-index: 1;
-}
-
-
-
-.cardClip {
-  clip-path: polygon(0 0, 0 55%, 50% 55%, 50% 100%, 100% 100%, 100% 0);
-  /* add animation to changing clip */
-  transition: clip-path 0.5s ease-in-out;
-}
-
-@media screen and (min-width: 389px) {
-  .cardClip {
-    clip-path: polygon(0 0, 0 55%, 35% 55%, 35% 100%, 100% 100%, 100% 0);
-    /* add animation to changing clip */
-    transition: clip-path 0.5s ease-in-out;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .cardClip {
-    clip-path: polygon(0 0, 0 55%, 30% 55%, 30% 100%, 100% 100%, 100% 0);
-    /* add animation to changing clip */
-    transition: clip-path 0.5s ease-in-out;
-  }
-}
-
-
 
 .black-mask {
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.76) 0%,
+    rgba(0, 0, 0, 0.36) 48%,
     rgba(0, 0, 0, 0) 100%
   );
 }
 
-.mask-bottom {
-  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-}
-
 .golge {
-  box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.1);
-}
-
-.custom-scroll::-webkit-scrollbar {
-  width: 0px; /* Scroll bar tamamen gizlendi */
-  height: 0px;
-  display: none;
+  box-shadow: 0 2px 13px rgba(0, 0, 0, 0.1);
 }
 
 .custom-scroll {
-  scrollbar-width: none; /* Firefox için */
-  -ms-overflow-style: none; /* Edge ve IE için */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-
-
-.connexease-web-messenger-container {
-  position: fixed !important;
-  bottom: 1rem !important;
-  right: 1rem !important;
-  left: auto  !important;
-  top:  auto  !important;
-  z-index: 9999  !important;
+.custom-scroll::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
-/* global.css */
-.connexease-container {
-  position: fixed !important;
-  bottom: 20px !important;
-  right: 20px !important;
-  z-index: 1000 !important;
-  transition: none !important;
+.cardClip {
+  clip-path: polygon(0 0, 0 56%, 36% 56%, 36% 100%, 100% 100%, 100% 0);
 }
 
-/* Mobile için ekstra güvenlik */
-@media (max-width: 768px) {
-  .connexease-container {
-    bottom: 10px !important;
-    right: 10px !important;
-  }
-}
-
-
-/***************** globals.css - Connexease Chat Widget Sabit Pozisyon ****************************/
-
-/* Ana iframe container - En yüksek öncelik */
-#web-messenger-container {
-  position: fixed !important;
-  bottom: 0px !important;
-  right: 0px !important;
-  top: auto !important;
-  left: auto !important;
-  z-index: 999999 !important;
-  transform: none !important;
-  translate: none !important;
-  margin: 0 !important;
-  max-width: none !important;
-  max-height: none !important;
-}
-
-/* Iframe kendisi için ayrı kural */
-iframe#web-messenger-container,
-iframe[id="web-messenger-container"] {
-  position: fixed !important;
-  bottom: 0px !important;
-  right: 0px !important;
-  top: auto !important;
-  left: auto !important;
-  z-index: 999999 !important;
-  transform: none !important;
-  translate: none !important;
-  margin: 0 !important;
-}
-
-/* Src ile eşleşen iframe'ler */
-iframe[src*="connexease"],
-iframe[src*="livechat"] {
-  position: fixed !important;
-  bottom: 0px !important;
-  right: 0px !important;
-  top: auto !important;
-  left: auto !important;
-  z-index: 999999 !important;
-  transform: none !important;
-  translate: none !important;
-  margin: 0 !important;
-}
-
-/* CSS spesifitesi artırma */
-body #web-messenger-container,
-body iframe#web-messenger-container {
-  position: fixed !important;
-  bottom: 0px !important;
-  right: 0px !important;
-  top: auto !important;
-  left: auto !important;
-  z-index: 999999 !important;
-}
-
-/* HTML ve body için genel ayarlar */
-html #web-messenger-container,
-html iframe#web-messenger-container {
-  position: fixed !important;
-  bottom: 0px !important;
-  right: 0px !important;
-  top: auto !important;
-  left: auto !important;
-}
-
-/* Inline style'ları override et buuu */
-iframe[style*="position"],
-iframe[style*="top"],
-iframe[style*="left"],
-iframe[style*="transform"] {
-  position: fixed !important;
-  bottom: 0px !important;
-  right: 0px !important;
-  top: auto !important;
-  left: auto !important;
-  transform: none !important;
-}
-
-/* Class tabanlı override */
-.chat-fixed-position {
-  position: fixed !important;
-  bottom: 0px !important;
-  right: 0px !important;
-  top: auto !important;
-  left: auto !important;
-  z-index: 999999 !important;
-  transform: none !important;
-  translate: none !important;
-}
-
-/* Connexease'in kendi CSS'ini override et */
-[class*="connexease"] iframe,
-[id*="connexease"] iframe {
-  position: fixed !important;
-  bottom: 0px !important;
-  right: 0px !important;
-  top: auto !important;
-  left: auto !important;
-}
-
-/* Mobile responsive */
-@media screen and (max-width: 768px) {
-  #web-messenger-container,
-  iframe#web-messenger-container,
-  iframe[src*="connexease"],
-  iframe[src*="livechat"] {
-    bottom: 0px !important;
-    right: 0px !important;
-  }
-}
-
-/* Tablet responsive */
-@media screen and (max-width: 1024px) and (min-width: 769px) {
-  #web-messenger-container,
-  iframe#web-messenger-container {
-    bottom: 0px !important;
-    right: 0px !important;
-  }
-}
-
-/* Çok küçük ekranlar */
-@media screen and (max-width: 480px) {
-  #web-messenger-container,
-  iframe#web-messenger-container {
-    bottom: 0px !important;
-    right: 0px !important;
-  }
-}
-
-
-
-
-/* 
-offers carousel */
-
-.embla {
-  @apply relative overflow-hidden;
-}
-
-.embla__slide {
-  @apply flex min-w-0 shrink-0  grow-0;
-}
-
-.embla__container {
-  @apply flex;
-}
-
-.left-center {
-  @apply absolute left-1/2 -translate-x-[50%];
-}
-
-/* left to center animation */
-
-.embla {
-  --slide-spacing: 1rem;
-  --slide-height: 220px;
+.slats-section {
   position: relative;
   overflow: hidden;
+  background-color: #faf9f7;
 }
 
-.ismask {
-  mask: linear-gradient(
-    267deg,
-    rgba(255, 255, 255, 0.9) 31.7%,
-    rgba(255, 255, 255, 0) 114.6%
-  );
-}
-
-.embla::before {
+.slats-section::before {
+  position: absolute;
+  inset: 0;
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px; /* Width of the fade effect */
-  height: 100%;
-  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  z-index: 2;
+  background-color: #faf9f7;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='500' viewBox='0 0 240 500'%3E%3Crect x='0' y='0' width='20' height='190' fill='%23ffffff'/%3E%3Crect x='30' y='0' width='20' height='290' fill='%23ffffff'/%3E%3Crect x='60' y='0' width='20' height='350' fill='%23ffffff'/%3E%3Crect x='90' y='0' width='20' height='430' fill='%23ffffff'/%3E%3Crect x='120' y='0' width='20' height='450' fill='%23ffffff'/%3E%3Crect x='150' y='0' width='20' height='430' fill='%23ffffff'/%3E%3Crect x='180' y='0' width='20' height='350' fill='%23ffffff'/%3E%3Crect x='210' y='0' width='20' height='290' fill='%23ffffff'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 240px 100%;
 }
 
-.emblaoffermobile::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px; /* Width of the fade effect */
-  height: 100%;
-  background: none !important;
-  z-index: 2;
+@keyframes heroPan {
+  0% {
+    transform: scale(1.035);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 
-.embla__viewport {
-  overflow: hidden;
-}
-.embla__container {
-  backface-visibility: hidden;
-  display: flex;
-  touch-action: pan-y;
-  /* margin-left: calc(var(--slide-spacing) * -1); */
-}
-.embla__slide {
-  min-width: 0;
-  /* margin-left: var(--slide-spacing); */
-  position: relative;
-}
-.embla__slide__img {
-  display: block;
-  height: var(--slide-height);
-  width: 100%;
-  object-fit: cover;
-}
-.embla__slide__number {
-  width: 4.6rem;
-  height: 4.6rem;
-  z-index: 1;
-  position: absolute;
-  top: 0.6rem;
-  right: 0.6rem;
-  border-radius: 50%;
-  background-color: rgba(var(--background-site-rgb-value), 0.85);
-  line-height: 4.6rem;
-  font-weight: 900;
-  text-align: center;
-  pointer-events: none;
-}
-.embla__slide__number > span {
-  color: var(--brand-primary);
-  background-image: linear-gradient(
-    45deg,
-    var(--brand-primary),
-    var(--brand-secondary)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.6rem;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.embla__button {
-  -webkit-appearance: none;
-  background-color: transparent;
-  touch-action: manipulation;
-  display: inline-flex;
-  text-decoration: none;
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-.embla__buttons {
-  display: flex;
-  align-items: center;
-}
-.embla__button {
-  z-index: 1;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  width: 4rem;
-  height: 4rem;
-}
-.embla__button:disabled {
-  opacity: 0.3;
-}
-.embla__button__svg {
-  width: 65%;
-  height: 65%;
+.hero-pan {
+  animation: heroPan 18s ease-in-out alternate infinite;
 }
 
-
-/*********** takvim ********/
-
-/* DatePicker Custom Styles - globals.css dosyasının sonuna ekleyin */
-
-.react-datepicker {
-  font-family: inherit;
-  border: 1px solid #d1d5db;
-  border-radius: 0.375rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+@keyframes pulseRing {
+  0% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.42);
+  }
 }
 
-.react-datepicker__header {
-  background-color: #f9fafb;
-  border-bottom: 1px solid #d1d5db;
+.pulse-ring {
+  animation: pulseRing 1.7s ease-out infinite;
 }
 
-.react-datepicker__current-month {
-  font-weight: 600;
-  color: #374151;
+@keyframes wigglePhone {
+  0%,
+  45%,
+  100% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(16deg);
+  }
+  30% {
+    transform: rotate(-12deg);
+  }
 }
 
-.react-datepicker__day {
-  color: #374151;
-  border-radius: 0.25rem;
+.floating-phone > svg {
+  animation: wigglePhone 2.4s ease-in-out infinite;
 }
 
-.react-datepicker__day:hover {
-  background-color: #f3f4f6;
+.button-light:hover {
+  background: var(--teona-white);
+  color: var(--teona-navy);
 }
 
-.react-datepicker__day--selected {
-  background-color: #1f2937;
-  color: white;
+.hero-vignette {
+  background:
+    linear-gradient(90deg, rgba(10, 26, 42, 0.82) 0%, rgba(10, 26, 42, 0.5) 48%, rgba(10, 26, 42, 0.18) 100%),
+    linear-gradient(0deg, rgba(10, 26, 42, 0.38), transparent 45%);
 }
 
-.react-datepicker__day--keyboard-selected {
-  background-color: #374151;
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(25, 51, 79, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(25, 51, 79, 0.055) 1px, transparent 1px);
+  background-size: 42px 42px;
 }
 
-.react-datepicker__day--disabled {
-  color: #d1d5db;
-  cursor: not-allowed;
+.focus-ring:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--teona-slate) 75%, white);
+  outline-offset: 3px;
 }
 
-.react-datepicker__navigation {
-  top: 13px;
+@media (min-width: 768px) {
+  .page-shell {
+    width: min(100% - 4rem, 1280px);
+  }
 }
 
-.react-datepicker__navigation--previous {
-  left: 10px;
+@media (min-width: 1024px) {
+  .cardClip {
+    clip-path: polygon(0 0, 0 56%, 30% 56%, 30% 100%, 100% 100%, 100% 0);
+  }
 }
 
-.react-datepicker__navigation--next {
-  right: 10px;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
