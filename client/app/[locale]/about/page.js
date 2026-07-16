@@ -34,14 +34,14 @@ export default async function AboutPage({ params }) {
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/45" />
-        <div className="relative mx-auto max-w-4xl text-white">
+        <div className="relative mx-auto w-full min-w-0 max-w-4xl text-white">
           <p className="text-xs font-medium uppercase tracking-[0.32em] text-white/80">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-5 font-display text-5xl font-semibold leading-none sm:text-6xl lg:text-7xl">
+          <h1 className="mx-auto mt-5 max-w-[19rem] break-words font-display text-[2.35rem] font-semibold leading-tight sm:max-w-none sm:text-6xl sm:leading-none lg:text-7xl">
             {t("title")}
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/85 sm:text-base">
+          <p className="mx-auto mt-6 max-w-[18rem] break-words text-sm leading-7 text-white/85 sm:max-w-2xl sm:text-base">
             {t("lead")}
           </p>
         </div>
@@ -58,13 +58,13 @@ export default async function AboutPage({ params }) {
           </p>
         </div>
 
-        <div className="relative order-1 aspect-[4/3] min-h-[320px] overflow-hidden bg-[#ECEBE8] shadow-[0_16px_42px_rgba(0,0,0,0.12)] lg:order-2">
+        <div className="relative order-1 aspect-[4/3] min-h-[320px] w-full overflow-hidden bg-[#ECEBE8] shadow-[0_16px_42px_rgba(0,0,0,0.12)] lg:order-2">
           <Image
-            src={site.images.welcome}
+            src={site.images.exteriorAngle}
             alt=""
             fill
             sizes="(min-width: 1024px) 48vw, 100vw"
-            className="object-cover"
+            className="object-cover object-[60%_center]"
           />
         </div>
       </section>

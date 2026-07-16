@@ -62,7 +62,7 @@ export default async function HomePage() {
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#24292c]">
         <Image
           alt=""
-          className="hero-pan object-cover object-[64%_center]"
+          className="hero-pan object-cover object-[60%_center]"
           fill
           priority
           sizes="100vw"
@@ -93,8 +93,9 @@ export default async function HomePage() {
               alt=""
               className="object-cover object-top"
               fill
+              priority
               sizes="(max-width: 1024px) 75vw, 46vw"
-              src={site.images.hospitality}
+              src={site.images.corridor}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 z-10 hidden p-6 text-white sm:block sm:p-9 lg:p-11">
@@ -120,7 +121,7 @@ export default async function HomePage() {
               className="object-cover"
               fill
               sizes="(max-width: 1024px) 65vw, 45vw"
-              src={site.images.comfort}
+              src={site.images.roomDouble}
             />
             <div className="absolute inset-0 bg-black/38" />
             <div className="absolute inset-x-0 bottom-0 z-10 p-5 text-white sm:p-8 lg:p-10">
@@ -189,7 +190,7 @@ export default async function HomePage() {
               className="object-cover object-bottom"
               fill
               sizes="300px"
-              src={site.images.hospitality}
+              src={site.images.restaurant}
             />
             <div className="absolute inset-0 bg-[#315b3a]/38" />
             <div className="absolute inset-5 flex items-center justify-center border border-white/55 text-center">

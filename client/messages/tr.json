@@ -42,6 +42,7 @@
     "suiteTitle": "Süit Oda",
     "suiteMeta": "2 süit · 25 m²",
     "suiteBody": "Daha geniş bir alan tercih eden misafirler için 25 m² büyüklüğünde iki süit oda.",
+    "roomDetailCta": "Detayları inceleyin",
     "amenitiesEyebrow": "Olanaklar",
     "amenitiesTitle": "Konaklamanıza eşlik eden hizmetler",
     "amenitiesBody": "Wi-Fi, otopark, uydu yayını, fitness merkezi, sauna ve farklı oturma düzenlerine uygun toplantı salonu otel bünyesinde sunulur.",
@@ -66,6 +67,7 @@
     "eyebrow": "Odalar",
     "title": "44 odada iki konaklama seçeneği",
     "intro": "Teona Hotel, 42 standart oda ve 2 süit oda ile İzmit merkezinde hizmet verir.",
+    "photoNote": "Oda görselleri yatak düzeni ve oda tipine göre farklılık gösterebilir.",
     "standardTitle": "Standart Oda",
     "standardMeta": "42 oda · 15–20 m²",
     "standardBody": "15–20 m² aralığındaki standart odalar, otelin toplam oda kapasitesinin 42'sini oluşturur.",
@@ -74,7 +76,46 @@
     "suiteBody": "25 m² büyüklüğündeki iki süit oda, daha geniş bir konaklama alanı tercih eden misafirler için sunulur.",
     "sharedTitle": "Otel olanakları",
     "sharedBody": "Misafirler Wi-Fi, otopark, uydu yayını, fitness merkezi ve saunadan yararlanabilir. Toplantı salonu U düzeninde 40, sınıf düzeninde 80 kişilik kapasiteye sahiptir.",
-    "cta": "Konaklamanızı planlayın"
+    "cta": "Konaklamanızı planlayın",
+    "detailsCta": "Oda detaylarını inceleyin"
+  },
+  "roomDetails": {
+    "shared": {
+      "backToRooms": "Odalar sayfasına dön",
+      "eyebrow": "Oda detayı",
+      "detailsEyebrow": "Konaklama bilgisi",
+      "size": "Oda büyüklüğü",
+      "capacity": "Oda adedi",
+      "wifiValue": "Otel genelinde Wi-Fi",
+      "satelliteValue": "Uydu yayını",
+      "photoNote": "Oda görselleri yatak düzeni ve oda tipine göre farklılık gösterebilir.",
+      "facilitiesEyebrow": "Olanaklar",
+      "facilitiesTitle": "Konaklamaya eşlik eden hizmetler",
+      "facilitiesBody": "Teona Hotel'de Wi-Fi, otopark, uydu yayını, fitness merkezi ve sauna olanakları konaklama süresince misafirlerin kullanımına sunulur.",
+      "ctaTitle": "Konaklamanızı birlikte planlayalım",
+      "ctaBody": "Oda uygunluğu, yatak düzeni ve rezervasyon bilgileri için Teona Hotel ile doğrudan iletişime geçebilirsiniz.",
+      "contactCta": "İletişime geçin"
+    },
+    "standard": {
+      "title": "Standart Oda",
+      "meta": "42 oda · 15–20 m²",
+      "intro": "Standart odalar, İzmit merkezinde sade ve işlevsel bir şehir konaklaması için tasarlanmış oda seçeneğidir.",
+      "detailTitle": "Şehir programları için pratik bir oda",
+      "body1": "Teona Hotel'in oda kapasitesinin büyük bölümünü oluşturan standart odalar 15–20 m² aralığındadır.",
+      "body2": "Konaklama süresince Wi-Fi, uydu yayını ve otelin ortak olanaklarından yararlanabilirsiniz.",
+      "size": "15–20 m²",
+      "capacity": "42 standart oda"
+    },
+    "suite": {
+      "title": "Süit Oda",
+      "meta": "2 süit · 25 m²",
+      "intro": "Süit odalar, daha geniş bir konaklama alanı tercih eden misafirler için 25 m² büyüklüğünde sunulur.",
+      "detailTitle": "Daha ferah bir konaklama alanı",
+      "body1": "Teona Hotel'de 25 m² büyüklüğünde 2 süit oda bulunur.",
+      "body2": "Süit oda seçeneği, şehirdeki programı sırasında daha geniş bir alan isteyen misafirler için uygundur.",
+      "size": "25 m²",
+      "capacity": "2 süit oda"
+    }
   },
   "about": {
     "eyebrow": "Hakkımızda",
@@ -101,13 +142,22 @@
     "eyebrow": "Galeri",
     "title": "Teona Hotel'den kareler",
     "intro": "Otelin odalarını, ortak alanlarını ve sunduğu olanakları yakından inceleyin.",
-    "note": "Görseller sağlanan tanıtım materyallerinden derlenmiştir ve temsilidir.",
+    "note": "Bu galeride Teona Hotel'e ait, tarafımıza sağlanan güncel fotoğraflar kullanılmıştır.",
     "items": {
       "hero": "Teona Hotel",
       "welcome": "Otel ortak alanları",
-      "comfort": "Standart ve süit odalar",
-      "service": "Otel olanakları",
-      "location": "İzmit merkezindeki konum"
+      "comfort": "Oda görünümleri",
+      "service": "Ortak alanlar ve olanaklar",
+      "location": "İzmit merkezindeki konum",
+      "exterior": "Teona Hotel dış cephe",
+      "city": "Otelin şehir içindeki konumu",
+      "corridor": "Otel koridoru",
+      "terrace": "Teras alanı",
+      "bathroom": "Banyo detayı",
+      "shower": "Duş alanı",
+      "roomDouble": "Çift yataklı oda görünümü",
+      "roomTwin": "İki ayrı yataklı oda görünümü",
+      "roomMultiple": "Ayrı yataklı oda görünümü"
     }
   },
   "contact": {

@@ -12,6 +12,7 @@ import { site } from "@/lib/site";
 import SiteFooter from "./components/teona/SiteFooter";
 import SiteHeader from "./components/teona/SiteHeader";
 import FloatingActions from "./components/teona/FloatingActions";
+import ConnexeaseLiveChat from "./components/teona/ConnexeaseLiveChat";
 
 const jost = Jost({
   subsets: ["latin", "latin-ext", "cyrillic"],
@@ -64,8 +65,8 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url: site.images.hero,
-          width: 1000,
-          height: 667,
+          width: 2048,
+          height: 1363,
           alt: site.name,
         },
       ],
@@ -99,6 +100,7 @@ export default async function LocaleLayout({ children, params }) {
           >
             {skipLabels[locale]}
           </a>
+          <ConnexeaseLiveChat />
           <SiteHeader />
           <FloatingActions />
           {children}

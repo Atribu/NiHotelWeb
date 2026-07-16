@@ -49,14 +49,14 @@ export default async function ContactPage({ params }) {
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/45" />
-        <div className="relative mx-auto max-w-4xl text-white">
+        <div className="relative mx-auto w-full min-w-0 max-w-4xl text-white">
           <p className="text-xs font-medium uppercase tracking-[0.32em] text-white/80">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-5 font-display text-5xl font-semibold leading-none sm:text-6xl lg:text-7xl">
+          <h1 className="mx-auto mt-5 max-w-[19rem] break-words font-display text-[2.35rem] font-semibold leading-tight sm:max-w-none sm:text-6xl sm:leading-none lg:text-7xl">
             {t("title")}
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/85 sm:text-base">
+          <p className="mx-auto mt-6 max-w-[18rem] break-words text-sm leading-7 text-white/85 sm:max-w-2xl sm:text-base">
             {t("lead")}
           </p>
         </div>

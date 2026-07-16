@@ -12,16 +12,18 @@ export default function RoomSlider() {
   const [index, setIndex] = useState(0);
   const rooms = [
     {
-      image: site.images.comfort,
+      image: site.images.roomTwin,
       title: t("standardTitle"),
       meta: t("standardMeta"),
       body: t("standardBody"),
+      href: "/rooms/standard-room",
     },
     {
-      image: site.images.welcome,
+      image: site.images.roomDouble,
       title: t("suiteTitle"),
       meta: t("suiteMeta"),
       body: t("suiteBody"),
+      href: "/rooms/suite-room",
     },
   ];
   const room = rooms[index];
@@ -51,7 +53,7 @@ export default function RoomSlider() {
               className="object-cover"
               fill
               sizes="58vw"
-              src={site.images.hospitality}
+              src={site.images.roomMultiple}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
             <div className="absolute left-[10%] top-1/2 z-10 max-w-md -translate-y-1/2 xl:left-[16%]">
@@ -86,6 +88,12 @@ export default function RoomSlider() {
               <div>
                 <h3 className="font-display text-2xl font-semibold text-[#24292c]">{room.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-[#696f73]">{room.body}</p>
+                <Link
+                  className="mt-4 inline-flex border-b border-[#24292c] pb-1 text-xs font-semibold uppercase tracking-[0.13em] text-[#24292c] transition-colors hover:text-[#a78b63]"
+                  href={room.href}
+                >
+                  {t("roomDetailCta")}
+                </Link>
               </div>
               <p className="flex items-center gap-2 self-start whitespace-nowrap text-xs uppercase tracking-[0.08em] text-[#50565a]">
                 <Maximize2 aria-hidden="true" className="h-4 w-4" />

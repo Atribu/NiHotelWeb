@@ -42,6 +42,7 @@
     "suiteTitle": "Suite",
     "suiteMeta": "2 Suiten · 25 m²",
     "suiteBody": "Zwei 25 m² große Suiten für Gäste, die mehr Raum bevorzugen.",
+    "roomDetailCta": "Details ansehen",
     "amenitiesEyebrow": "Ausstattung",
     "amenitiesTitle": "Angebote, die Ihren Aufenthalt ergänzen",
     "amenitiesBody": "WLAN, Parkplätze, Satellitenfernsehen, ein Fitnessbereich, eine Sauna und ein Tagungsraum mit flexiblen Bestuhlungsvarianten stehen im Hotel zur Verfügung.",
@@ -66,6 +67,7 @@
     "eyebrow": "Zimmer",
     "title": "Zwei Kategorien in insgesamt 44 Zimmern",
     "intro": "Das Teona Hotel bietet im Zentrum von İzmit 42 Standardzimmer und 2 Suiten.",
+    "photoNote": "Zimmeransichten können je nach Zimmertyp und Bettenkonfiguration variieren.",
     "standardTitle": "Standardzimmer",
     "standardMeta": "42 Zimmer · 15–20 m²",
     "standardBody": "Die 42 Standardzimmer mit einer Größe von 15 bis 20 m² bilden den größten Teil des Zimmerangebots.",
@@ -74,7 +76,46 @@
     "suiteBody": "Die beiden 25 m² großen Suiten sind eine Alternative für Gäste, die mehr Raum bevorzugen.",
     "sharedTitle": "Hotelausstattung",
     "sharedBody": "Gäste können WLAN, Parkplätze, Satellitenfernsehen, den Fitnessbereich und die Sauna nutzen. Der Tagungsraum bietet Platz für 40 Personen in U-Form und 80 Personen bei Schulbestuhlung.",
-    "cta": "Aufenthalt planen"
+    "cta": "Aufenthalt planen",
+    "detailsCta": "Zimmerdetails ansehen"
+  },
+  "roomDetails": {
+    "shared": {
+      "backToRooms": "Zur Zimmerübersicht",
+      "eyebrow": "Zimmerdetail",
+      "detailsEyebrow": "Informationen zum Aufenthalt",
+      "size": "Zimmergröße",
+      "capacity": "Zimmeranzahl",
+      "wifiValue": "WLAN im Hotel",
+      "satelliteValue": "Satellitenfernsehen",
+      "photoNote": "Zimmeransichten können je nach Zimmertyp und Bettenkonfiguration variieren.",
+      "facilitiesEyebrow": "Ausstattung",
+      "facilitiesTitle": "Angebote für Ihren Aufenthalt",
+      "facilitiesBody": "Im Teona Hotel stehen Gästen WLAN, Parkplätze, Satellitenfernsehen, der Fitnessbereich und die Sauna während des Aufenthalts zur Verfügung.",
+      "ctaTitle": "Planen wir Ihren Aufenthalt",
+      "ctaBody": "Kontaktieren Sie das Teona Hotel direkt für Verfügbarkeit, Bettenkonfiguration und Reservierungsdetails.",
+      "contactCta": "Kontakt aufnehmen"
+    },
+    "standard": {
+      "title": "Standardzimmer",
+      "meta": "42 Zimmer · 15–20 m²",
+      "intro": "Die Standardzimmer sind eine schlichte und praktische Wahl für einen Aufenthalt im Zentrum von İzmit.",
+      "detailTitle": "Ein praktisches Zimmer für Stadtpläne",
+      "body1": "Die Standardzimmer bilden den größten Teil der Zimmerkapazität des Teona Hotels und sind 15–20 m² groß.",
+      "body2": "Während Ihres Aufenthalts können Sie WLAN, Satellitenfernsehen und die gemeinsamen Hoteleinrichtungen nutzen.",
+      "size": "15–20 m²",
+      "capacity": "42 Standardzimmer"
+    },
+    "suite": {
+      "title": "Suite",
+      "meta": "2 Suiten · 25 m²",
+      "intro": "Die Suiten bieten 25 m² Raum für Gäste, die einen größeren Aufenthaltsbereich bevorzugen.",
+      "detailTitle": "Ein großzügigerer Aufenthaltsbereich",
+      "body1": "Das Teona Hotel verfügt über 2 Suiten mit jeweils 25 m².",
+      "body2": "Die Suite eignet sich für Gäste, die während ihrer Zeit in der Stadt mehr Raum wünschen.",
+      "size": "25 m²",
+      "capacity": "2 Suiten"
+    }
   },
   "about": {
     "eyebrow": "Über uns",
@@ -101,13 +142,22 @@
     "eyebrow": "Galerie",
     "title": "Einblicke in das Teona Hotel",
     "intro": "Entdecken Sie die Zimmer, Gemeinschaftsbereiche und Einrichtungen des Hotels.",
-    "note": "Die Bilder wurden aus den bereitgestellten Werbematerialien zusammengestellt und dienen der Veranschaulichung.",
+    "note": "Diese Galerie zeigt aktuelle, uns zur Verfügung gestellte Fotografien des Teona Hotels.",
     "items": {
       "hero": "Teona Hotel",
       "welcome": "Gemeinschaftsbereiche des Hotels",
-      "comfort": "Standardzimmer und Suiten",
-      "service": "Hotelausstattung",
-      "location": "Zentrale Lage in İzmit"
+      "comfort": "Zimmeransichten",
+      "service": "Gemeinschaftsbereiche und Ausstattung",
+      "location": "Zentrale Lage in İzmit",
+      "exterior": "Außenansicht des Teona Hotels",
+      "city": "Stadtlage des Hotels",
+      "corridor": "Hotelkorridor",
+      "terrace": "Terrassenbereich",
+      "bathroom": "Badezimmerdetail",
+      "shower": "Duschbereich",
+      "roomDouble": "Zimmeransicht mit Doppelbett",
+      "roomTwin": "Zimmeransicht mit zwei Einzelbetten",
+      "roomMultiple": "Zimmeransicht mit Einzelbetten"
     }
   },
   "contact": {

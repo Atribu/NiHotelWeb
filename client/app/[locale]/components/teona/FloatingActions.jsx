@@ -12,7 +12,7 @@ export default function FloatingActions() {
     <div className="pointer-events-none fixed inset-x-0 bottom-4 z-40 flex items-center justify-center px-5 lg:justify-start lg:px-7">
       <a
         aria-label={site.phone.display}
-        className="floating-phone pointer-events-auto absolute left-5 inline-flex h-13 w-13 items-center justify-center rounded-full border border-white bg-black/70 text-white shadow-lg transition-colors hover:border-black hover:bg-white hover:text-[#b99b6c] lg:left-7 lg:h-15 lg:w-15"
+        className="floating-phone pointer-events-auto absolute bottom-0 left-5 inline-flex h-13 w-13 items-center justify-center rounded-full border border-white bg-black/70 text-white shadow-lg transition-colors hover:border-black hover:bg-white hover:text-[#b99b6c] lg:left-7 lg:h-15 lg:w-15"
         href={site.phone.href}
       >
         <PhoneCall aria-hidden="true" className="h-6 w-6" />
