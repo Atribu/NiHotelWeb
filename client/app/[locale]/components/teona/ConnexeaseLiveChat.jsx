@@ -105,6 +105,8 @@ const liveChatBootstrapScript = `
 
 export default function ConnexeaseLiveChat() {
   useEffect(() => {
+    const trackedIframes = new WeakSet();
+
     function openLiveChat() {
       if (window.Connexease && typeof window.Connexease.open === "function") {
         window.Connexease.open();
@@ -118,12 +120,43 @@ export default function ConnexeaseLiveChat() {
       const iframe = document.getElementById("web-messenger-container");
       const launcher = document.getElementById("teona-livechat-launcher");
 
-      if (launcher) {
-        const isReady = iframe instanceof HTMLElement;
+      if (iframe instanceof HTMLIFrameElement && !trackedIframes.has(iframe)) {
+        trackedIframes.add(iframe);
+        iframe.addEventListener(
+          "load",
+          () => {
+            iframe.dataset.teonaWidgetReady = "true";
+            syncLiveChatLayout();
+          },
+          { once: true },
+        );
+      }
 
-        launcher.style.opacity = isReady ? "0" : "1";
-        launcher.style.pointerEvents = isReady ? "none" : "auto";
-        launcher.setAttribute("aria-hidden", isReady ? "true" : "false");
+      const iframeRect =
+        iframe instanceof HTMLElement ? iframe.getBoundingClientRect() : null;
+      const isChatWindowOpen =
+        iframeRect !== null && iframeRect.width >= 280 && iframeRect.height >= 260;
+      const shouldShowNativeWidget =
+        iframe instanceof HTMLElement &&
+        iframe.dataset.teonaWidgetReady === "true" &&
+        isChatWindowOpen;
+
+      if (launcher) {
+        const nextOpacity = shouldShowNativeWidget ? "0" : "1";
+        const nextPointerEvents = shouldShowNativeWidget ? "none" : "auto";
+        const nextAriaHidden = shouldShowNativeWidget ? "true" : "false";
+
+        if (launcher.style.opacity !== nextOpacity) {
+          launcher.style.opacity = nextOpacity;
+        }
+
+        if (launcher.style.pointerEvents !== nextPointerEvents) {
+          launcher.style.pointerEvents = nextPointerEvents;
+        }
+
+        if (launcher.getAttribute("aria-hidden") !== nextAriaHidden) {
+          launcher.setAttribute("aria-hidden", nextAriaHidden);
+        }
       }
 
       if (window.__teonaConnexeaseOpenWhenReady && window.Connexease && typeof window.Connexease.open === "function") {
@@ -135,26 +168,58 @@ export default function ConnexeaseLiveChat() {
         return;
       }
 
-      const rect = iframe.getBoundingClientRect();
+      const nativeOpacity = shouldShowNativeWidget ? "1" : "0";
+      const nativePointerEvents = shouldShowNativeWidget ? "auto" : "none";
+
+      if (iframe.style.opacity !== nativeOpacity) {
+        iframe.style.opacity = nativeOpacity;
+      }
+
+      if (iframe.style.pointerEvents !== nativePointerEvents) {
+        iframe.style.pointerEvents = nativePointerEvents;
+      }
+
+      const nativeAriaHidden = shouldShowNativeWidget ? "false" : "true";
+
+      if (iframe.getAttribute("aria-hidden") !== nativeAriaHidden) {
+        iframe.setAttribute("aria-hidden", nativeAriaHidden);
+      }
+
+      const rect = iframeRect ?? iframe.getBoundingClientRect();
       const isMobile = window.innerWidth < 768;
       const isCompactGreeting = rect.width > 100 && rect.height <= 200;
 
       if (isMobile && isCompactGreeting) {
-        iframe.style.bottom = "5.75rem";
-        iframe.dataset.teonaAdjusted = "true";
+        if (iframe.style.bottom !== "5.75rem") {
+          iframe.style.bottom = "5.75rem";
+        }
+
+        if (iframe.dataset.teonaAdjusted !== "true") {
+          iframe.dataset.teonaAdjusted = "true";
+        }
+      } else if (!isMobile) {
+        if (iframe.style.bottom !== "1rem") {
+          iframe.style.bottom = "1rem";
+        }
+
+        if (iframe.dataset.teonaAdjusted !== "desktop") {
+          iframe.dataset.teonaAdjusted = "desktop";
+        }
       } else if (iframe.dataset.teonaAdjusted === "true") {
+        iframe.style.removeProperty("bottom");
+        delete iframe.dataset.teonaAdjusted;
+      } else if (iframe.dataset.teonaAdjusted === "desktop") {
         iframe.style.removeProperty("bottom");
         delete iframe.dataset.teonaAdjusted;
       }
     }
 
     const launcher = document.getElementById("teona-livechat-launcher");
-    const interval = window.setInterval(syncLiveChatLayout, 250);
+    const interval = window.setInterval(syncLiveChatLayout, 200);
     const observer = new MutationObserver(syncLiveChatLayout);
 
     launcher?.addEventListener("click", openLiveChat);
     observer.observe(document.body, {
-      attributes: true,
       childList: true,
       subtree: true,
     });

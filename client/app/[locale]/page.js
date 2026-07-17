@@ -18,6 +18,13 @@ import { pageAlternates } from "@/lib/routes";
 import BookingBar from "./components/teona/BookingBar";
 import RoomSlider from "./components/teona/RoomSlider";
 
+const introCardEyebrowClassName =
+  "text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-white/75";
+const introCardBodyClassName =
+  "mt-3 max-w-md font-display text-xl font-medium leading-snug sm:text-2xl lg:text-[1.4rem]";
+const introCardLinkClassName =
+  "mt-5 inline-flex items-center gap-2 border-b border-white pb-1 text-xs font-semibold uppercase tracking-[0.14em]";
+
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
@@ -59,7 +66,7 @@ export default async function HomePage() {
 
   return (
     <main className="overflow-hidden bg-white" id="main-content">
-      <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#24292c]">
+      <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#24292c] lg:min-h-[calc(100svh-6rem)]">
         <Image
           alt=""
           className="hero-pan object-cover object-[60%_center]"
@@ -98,15 +105,15 @@ export default async function HomePage() {
               src={site.images.corridor}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 z-10 hidden p-6 text-white sm:block sm:p-9 lg:p-11">
-              <p className="text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-white/75">
+            <div className="absolute inset-x-0 bottom-0 z-10 hidden p-6 text-white sm:block sm:p-9 lg:py-11 lg:pl-52 lg:pr-8">
+              <p className={introCardEyebrowClassName}>
                 {t("introEyebrow")}
               </p>
-              <p className="mt-3 max-w-md font-display text-2xl font-medium leading-tight sm:text-3xl">
+              <p className={introCardBodyClassName}>
                 {t("introBody")}
               </p>
               <Link
-                className="mt-5 hidden items-center gap-2 border-b border-white pb-1 text-xs font-semibold uppercase tracking-[0.14em] sm:inline-flex"
+                className={introCardLinkClassName}
                 href="/about"
               >
                 {navigation("about")}
@@ -115,7 +122,7 @@ export default async function HomePage() {
             </div>
           </article>
 
-          <article className="absolute bottom-0 left-0 z-10 h-[17rem] w-[64%] overflow-hidden bg-[#e7e1d7] shadow-[0_24px_60px_rgba(36,41,44,0.14)] sm:h-[22rem] sm:w-[54%] lg:h-[27rem] lg:w-[56%]">
+          <article className="absolute bottom-0 left-0 z-10 h-[17rem] w-[64%] overflow-hidden bg-[#e7e1d7] shadow-[0_24px_60px_rgba(36,41,44,0.14)] sm:h-[22rem] sm:w-[54%] lg:-bottom-24 lg:h-[27rem] lg:w-[56%]">
             <Image
               alt=""
               className="object-cover"
@@ -125,11 +132,12 @@ export default async function HomePage() {
             />
             <div className="absolute inset-0 bg-black/38" />
             <div className="absolute inset-x-0 bottom-0 z-10 p-5 text-white sm:p-8 lg:p-10">
-              <h2 className="max-w-md font-display text-2xl font-semibold leading-tight sm:text-4xl">
+              <p className={introCardEyebrowClassName}>{t("roomsEyebrow")}</p>
+              <h2 className={introCardBodyClassName}>
                 {t("introTitle")}
               </h2>
               <Link
-                className="mt-4 inline-flex items-center gap-2 border-b border-white pb-1 text-xs font-semibold uppercase tracking-[0.14em]"
+                className={introCardLinkClassName}
                 href="/rooms"
               >
                 {t("primaryCta")}
@@ -266,41 +274,67 @@ export default async function HomePage() {
         </dl>
       </section>
 
-      <section className="relative flex flex-col items-center bg-white pt-20 text-center lg:pt-28">
-        <div className="z-10 max-w-xl px-5 sm:px-8">
-          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#a78b63]">
-            {t("locationEyebrow")}
-          </p>
-          <h2 className="mt-4 font-display text-4xl font-bold text-[#24292c]">
-            İZMİT / KOCAELİ
-          </h2>
-          <p className="mt-5 text-sm leading-7 text-[#656b6f]">{t("locationBody")}</p>
-          <a
-            className="mt-6 inline-flex items-center gap-2 border-b border-black pb-1 text-xs font-semibold uppercase tracking-[0.13em]"
-            href={mapHref}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <MapPin aria-hidden="true" className="h-4 w-4" />
-            {t("locationCta")}
-          </a>
+      <section className="relative overflow-hidden bg-[#f4f1eb] px-5 py-20 sm:px-8 lg:px-14 lg:py-28">
+        <div className="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full border border-[#dec7a6]/30" />
+        <div className="pointer-events-none absolute -bottom-44 -right-32 h-[30rem] w-[30rem] rounded-full border border-[#19334F]/10" />
+
+        <div className="relative mx-auto grid max-w-7xl overflow-hidden border border-[#19334F]/10 bg-white shadow-[0_28px_80px_rgba(25,51,79,0.14)] lg:grid-cols-[minmax(320px,0.78fr)_minmax(0,1.5fr)]">
+          <div className="flex flex-col justify-between bg-[#19334F] px-7 py-10 text-left text-white sm:p-12 lg:min-h-[34rem] lg:p-14">
+            <div>
+              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[#dec7a6]">
+                {t("locationEyebrow")}
+              </p>
+              <h2 className="mt-5 font-display text-4xl font-semibold leading-none sm:text-5xl">
+                İZMİT
+                <span className="mt-2 block text-white/65">KOCAELİ</span>
+              </h2>
+              <p className="mt-7 max-w-md text-sm leading-7 text-white/72">
+                {t("locationBody")}
+              </p>
+            </div>
+
+            <div className="mt-12">
+              <div className="flex items-start gap-4 border-t border-white/18 pt-6">
+                <MapPin
+                  aria-hidden="true"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-[#dec7a6]"
+                  strokeWidth={1.6}
+                />
+                <p className="max-w-sm text-sm leading-6 text-white/85">
+                  {site.address.full}
+                </p>
+              </div>
+              <a
+                className="mt-7 inline-flex min-h-12 items-center justify-center gap-3 bg-[#dec7a6] px-7 text-xs font-semibold uppercase tracking-[0.15em] text-[#19334F] transition-colors hover:bg-white"
+                href={mapHref}
+                rel="noreferrer"
+                target="_blank"
+              >
+                {t("locationCta")}
+                <ArrowRight aria-hidden="true" className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+
+          <div className="relative min-h-[25rem] overflow-hidden bg-[#e9e7e2] sm:min-h-[30rem] lg:min-h-[34rem]">
+            <iframe
+              className="absolute inset-0 h-full w-full border-0 grayscale-[0.12]"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              src={site.mapEmbed}
+              title={`${site.name} — ${site.address.short}`}
+            />
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[#19334F]/12 to-transparent" />
+            <div className="pointer-events-none absolute bottom-5 left-5 border border-[#19334F]/10 bg-white/95 px-5 py-4 shadow-lg backdrop-blur-sm sm:bottom-7 sm:left-7">
+              <p className="text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-[#a78b63]">
+                {site.name}
+              </p>
+              <p className="mt-1 text-sm font-medium text-[#19334F]">
+                {site.address.short}
+              </p>
+            </div>
+          </div>
         </div>
-        <a
-          aria-label={t("locationCta")}
-          className="relative mt-10 block aspect-[16/7] max-h-[68vh] min-h-[22rem] w-full overflow-hidden bg-[#f2f2f0]"
-          href={mapHref}
-          rel="noreferrer"
-          target="_blank"
-        >
-          <Image
-            alt={site.address.full}
-            className="object-cover object-center"
-            fill
-            sizes="100vw"
-            src={site.images.map}
-          />
-          <span className="pointer-events-none absolute inset-x-0 top-0 h-[18%] bg-gradient-to-b from-white to-transparent" />
-        </a>
         <p className="sr-only">{footer("materialNote")}</p>
       </section>
     </main>
