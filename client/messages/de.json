@@ -185,6 +185,8 @@
     "checkOut": "Abreise",
     "adults": "Erwachsene",
     "children": "Kinder",
+    "childAges": "Alter der Kinder",
+    "childAge": "Kind {number}",
     "bookNow": "Jetzt reservieren"
   },
   "footer": {

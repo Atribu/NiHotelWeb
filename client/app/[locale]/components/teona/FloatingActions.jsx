@@ -1,12 +1,13 @@
 "use client";
 
 import { PhoneCall } from "lucide-react";
-import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { site } from "@/lib/site";
 
 export default function FloatingActions() {
   const t = useTranslations("navigation");
+  const locale = useLocale();
+  const bookingUrl = `${site.bookingUrl}?language=${locale}`;
 
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-4 z-40 flex items-center justify-center px-5 lg:justify-start lg:px-7">
@@ -18,12 +19,12 @@ export default function FloatingActions() {
         <PhoneCall aria-hidden="true" className="h-6 w-6" />
         <span aria-hidden="true" className="pulse-ring absolute inset-[-1px] rounded-full border border-white" />
       </a>
-      <Link
+      <a
         className="pointer-events-auto inline-flex min-h-11 min-w-[13rem] items-center justify-center border border-white/70 bg-[#dec7a6] px-6 text-xs font-semibold uppercase tracking-[0.14em] text-white shadow-lg md:hidden"
-        href="/contact"
+        href={bookingUrl}
       >
         {t("book")}
-      </Link>
+      </a>
     </div>
   );
 }

@@ -185,6 +185,8 @@
     "checkOut": "Çıkış",
     "adults": "Yetişkin",
     "children": "Çocuk",
+    "childAges": "Çocuk yaşları",
+    "childAge": "{number}. çocuk",
     "bookNow": "Rezervasyon yapın"
   },
   "footer": {
