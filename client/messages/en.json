@@ -185,6 +185,8 @@
     "checkOut": "Check-out",
     "adults": "Adults",
     "children": "Children",
+    "childAges": "Child ages",
+    "childAge": "Child {number}",
     "bookNow": "Book now"
   },
   "footer": {

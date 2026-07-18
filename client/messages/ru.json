@@ -185,6 +185,8 @@
     "checkOut": "Выезд",
     "adults": "Взрослые",
     "children": "Дети",
+    "childAges": "Возраст детей",
+    "childAge": "Ребёнок {number}",
     "bookNow": "Забронировать"
   },
   "footer": {

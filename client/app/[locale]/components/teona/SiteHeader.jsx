@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { ArrowUpRight, Instagram, Mail, MapPin, Menu, Phone, X } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { site } from "@/lib/site";
@@ -19,7 +19,9 @@ const navigation = [
 
 export default function SiteHeader() {
   const t = useTranslations("navigation");
+  const locale = useLocale();
   const pathname = usePathname();
+  const bookingUrl = `${site.bookingUrl}?language=${locale}`;
   const [isOpen, setIsOpen] = useState(false);
   const menuButtonRef = useRef(null);
   const closeButtonRef = useRef(null);
@@ -125,13 +127,13 @@ export default function SiteHeader() {
                 <span className="absolute -bottom-1 left-0 h-px w-0 bg-white transition-all duration-300 group-hover:w-full" />
               </span>
             </a>
-            <Link
+            <a
               className="hidden min-h-11 items-center justify-center border border-white/75 bg-black/10 px-5 text-xs font-semibold uppercase tracking-[0.17em] transition-colors hover:bg-white hover:text-[#19334F] sm:inline-flex"
-              href="/contact"
+              href={bookingUrl}
             >
               {t("book")}
               <ArrowUpRight aria-hidden="true" className="ml-2 h-4 w-4" />
-            </Link>
+            </a>
             <div className="lg:hidden">
               <LanguageSwitcher tone="light" />
             </div>
@@ -217,15 +219,15 @@ export default function SiteHeader() {
           </nav>
 
           <div className="mt-auto pt-10">
-            <Link
+            <a
               className="inline-flex min-h-12 w-full items-center justify-center bg-[#19334F] px-5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-[#10273D]"
-              href="/contact"
+              href={bookingUrl}
               onClick={() => setIsOpen(false)}
               tabIndex={isOpen ? 0 : -1}
             >
               {t("book")}
               <ArrowUpRight aria-hidden="true" className="ml-2 h-4 w-4" />
-            </Link>
+            </a>
 
             <address className="mt-7 space-y-3 text-xs not-italic leading-5 text-[#19334F]/65">
               <a className="flex items-center gap-3 hover:text-[#19334F]" href={site.phone.href} tabIndex={isOpen ? 0 : -1}>

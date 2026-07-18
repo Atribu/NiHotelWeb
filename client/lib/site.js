@@ -2,6 +2,7 @@ export const site = {
   name: "Teona Hotel",
   legalName: "Teona Hotel",
   url: "https://www.teonahotel.com",
+  bookingUrl: "https://teona-otel.rezervasyonal.com/",
   email: "info@teonahotel.com",
   phone: {
     display: "+90 262 325 95 95",
