@@ -7,9 +7,9 @@ import { site } from "@/lib/site";
 
 const CHILD_AGE_OPTIONS = Array.from({ length: 13 }, (_, age) => age);
 
-function Counter({ label, value, minimum, maximum, onChange }) {
+function Counter({ className = "", label, value, minimum, maximum, onChange }) {
   return (
-    <div className="flex items-center gap-3 whitespace-nowrap">
+    <div className={`flex items-center gap-3 whitespace-nowrap ${className}`}>
       <span className="text-xs font-medium uppercase tracking-[0.08em] text-[#24292c]">
         {label}
       </span>
@@ -36,7 +36,7 @@ function Counter({ label, value, minimum, maximum, onChange }) {
   );
 }
 
-export default function BookingBar() {
+export default function BookingBar({ embedded = false }) {
   const t = useTranslations("booking");
   const locale = useLocale();
   const [checkIn, setCheckIn] = useState("");
@@ -85,16 +85,31 @@ export default function BookingBar() {
     window.location.assign(bookingUrl.toString());
   }
 
+  const dateFieldClassName = embedded
+    ? "flex min-h-12 items-center justify-between gap-3 whitespace-nowrap border border-black/10 bg-[#fafafa] px-4 text-xs font-medium uppercase tracking-[0.08em] text-[#24292c]"
+    : "flex items-center gap-3 whitespace-nowrap text-xs font-medium uppercase tracking-[0.08em] text-[#24292c]";
+  const separatorClassName = embedded
+    ? "hidden h-7 w-px bg-black/12 lg:block"
+    : "h-7 w-px bg-black/12";
+
   return (
     <section
       aria-label={t("title")}
-      className="relative z-20 hidden min-h-24 flex-col items-center justify-center gap-3 border-b border-black/5 bg-[#fafafa] px-6 py-4 lg:flex"
+      className={
+        embedded
+          ? "relative z-20 flex flex-col items-center justify-center gap-3 border border-black/8 bg-white px-5 py-5 shadow-[0_18px_55px_rgba(25,51,79,0.09)] sm:px-7 lg:px-8"
+          : "relative z-20 hidden min-h-24 flex-col items-center justify-center gap-3 border-b border-black/5 bg-[#fafafa] px-6 py-4 lg:flex"
+      }
     >
       <form
-        className="mx-auto flex w-full max-w-[1220px] items-center justify-center gap-6 xl:gap-8"
+        className={
+          embedded
+            ? "mx-auto grid w-full max-w-[1220px] gap-3 sm:grid-cols-2 lg:flex lg:items-center lg:justify-center lg:gap-6 xl:gap-8"
+            : "mx-auto flex w-full max-w-[1220px] items-center justify-center gap-6 xl:gap-8"
+        }
         onSubmit={submitReservation}
       >
-        <label className="flex items-center gap-3 whitespace-nowrap text-xs font-medium uppercase tracking-[0.08em] text-[#24292c]">
+        <label className={dateFieldClassName}>
           {t("checkIn")}
           <input
             className="w-[7.8rem] border-0 border-b border-black/15 bg-transparent px-0 py-2 text-xs text-[#60676c] outline-none focus:border-[#dec7a6]"
@@ -105,9 +120,9 @@ export default function BookingBar() {
           />
         </label>
 
-        <span aria-hidden="true" className="h-7 w-px bg-black/12" />
+        <span aria-hidden="true" className={separatorClassName} />
 
-        <label className="flex items-center gap-3 whitespace-nowrap text-xs font-medium uppercase tracking-[0.08em] text-[#24292c]">
+        <label className={dateFieldClassName}>
           {t("checkOut")}
           <input
             className="w-[7.8rem] border-0 border-b border-black/15 bg-transparent px-0 py-2 text-xs text-[#60676c] outline-none focus:border-[#dec7a6]"
@@ -118,26 +133,38 @@ export default function BookingBar() {
           />
         </label>
 
-        <span aria-hidden="true" className="h-7 w-px bg-black/12" />
+        <span aria-hidden="true" className={separatorClassName} />
         <Counter
+          className={
+            embedded
+              ? "min-h-12 justify-between border border-black/10 bg-[#fafafa] px-4"
+              : ""
+          }
           label={t("adults")}
           maximum={6}
           minimum={1}
           onChange={setAdults}
           value={adults}
         />
-        <span aria-hidden="true" className="h-7 w-px bg-black/12" />
+        <span aria-hidden="true" className={separatorClassName} />
         <Counter
+          className={
+            embedded
+              ? "min-h-12 justify-between border border-black/10 bg-[#fafafa] px-4"
+              : ""
+          }
           label={t("children")}
           maximum={6}
           minimum={0}
           onChange={updateChildren}
           value={children}
         />
-        <span aria-hidden="true" className="h-7 w-px bg-black/12" />
+        <span aria-hidden="true" className={separatorClassName} />
 
         <button
-          className="inline-flex min-h-11 items-center gap-3 border border-[#dec7a6] px-6 text-xs font-semibold uppercase tracking-[0.13em] text-[#bda276] transition-colors hover:bg-[#24292c] hover:text-white"
+          className={`inline-flex min-h-11 items-center justify-center gap-3 border border-[#dec7a6] px-6 text-xs font-semibold uppercase tracking-[0.13em] text-[#bda276] transition-colors hover:bg-[#24292c] hover:text-white ${
+            embedded ? "sm:col-span-2 lg:col-span-1" : ""
+          }`}
           type="submit"
         >
           {t("bookNow")}

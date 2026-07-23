@@ -12,18 +12,44 @@ export default function RoomSlider() {
   const [index, setIndex] = useState(0);
   const rooms = [
     {
-      image: site.images.roomTwin,
-      title: t("standardTitle"),
-      meta: t("standardMeta"),
-      body: t("standardBody"),
-      href: "/rooms/standard-room",
+      image: site.images.economyRoom4,
+      imagePosition: "center 60%",
+      title: t("economyTitle"),
+      meta: t("economyMeta"),
+      body: t("economyBody"),
+      href: "/rooms/economy-room",
     },
     {
-      image: site.images.roomDouble,
+      image: site.images.frenchRoom3,
+      imagePosition: "center 58%",
+      title: t("frenchTitle"),
+      meta: t("frenchMeta"),
+      body: t("frenchBody"),
+      href: "/rooms/french-room",
+    },
+    {
+      image: site.images.suiteRoom3,
+      imagePosition: "center 58%",
       title: t("suiteTitle"),
       meta: t("suiteMeta"),
       body: t("suiteBody"),
       href: "/rooms/suite-room",
+    },
+    {
+      image: site.images.tripleRoom4,
+      imagePosition: "center 58%",
+      title: t("tripleTitle"),
+      meta: t("tripleMeta"),
+      body: t("tripleBody"),
+      href: "/rooms/triple-room",
+    },
+    {
+      image: site.images.twinRoom3,
+      imagePosition: "center 58%",
+      title: t("twinTitle"),
+      meta: t("twinMeta"),
+      body: t("twinBody"),
+      href: "/rooms/twin-room",
     },
   ];
   const room = rooms[index];
@@ -82,6 +108,7 @@ export default function RoomSlider() {
                 key={room.image}
                 sizes="(max-width: 1024px) 100vw, 35vw"
                 src={room.image}
+                style={{ objectPosition: room.imagePosition ?? "center" }}
               />
             </div>
             <div className="grid gap-4 p-5 sm:grid-cols-[1fr_auto] lg:p-6">
@@ -116,7 +143,7 @@ export default function RoomSlider() {
         <div className="mt-7 flex items-center justify-center gap-5 text-[#c5a879]">
           <span aria-hidden="true" className="h-px w-[28%] bg-[#dec7a6]" />
           <button
-            aria-label={t("suiteTitle")}
+            aria-label={rooms[(index - 1 + rooms.length) % rooms.length].title}
             className="p-2 transition-colors hover:text-black"
             onClick={previous}
             type="button"
@@ -125,7 +152,7 @@ export default function RoomSlider() {
           </button>
           <span aria-hidden="true" className="h-5 w-px bg-[#dec7a6]" />
           <button
-            aria-label={t("standardTitle")}
+            aria-label={rooms[(index + 1) % rooms.length].title}
             className="p-2 transition-colors hover:text-black"
             onClick={next}
             type="button"
