@@ -18,17 +18,35 @@ export const config = {
       de: '/zimmer',
       ru: '/nomera',
     },
-    '/rooms/standard-room': {
-      tr: '/odalar/standart-oda',
-      en: '/rooms/standard-room',
-      de: '/zimmer/standardzimmer',
-      ru: '/nomera/standartnyy-nomer',
+    '/rooms/economy-room': {
+      tr: '/odalar/eko-oda',
+      en: '/rooms/economy-room',
+      de: '/zimmer/eco-zimmer',
+      ru: '/nomera/eko-nomer',
+    },
+    '/rooms/french-room': {
+      tr: '/odalar/french-oda',
+      en: '/rooms/french-room',
+      de: '/zimmer/french-zimmer',
+      ru: '/nomera/french-nomer',
     },
     '/rooms/suite-room': {
       tr: '/odalar/suit-oda',
       en: '/rooms/suite-room',
       de: '/zimmer/suite',
       ru: '/nomera/lyuks',
+    },
+    '/rooms/triple-room': {
+      tr: '/odalar/triple-oda',
+      en: '/rooms/triple-room',
+      de: '/zimmer/dreibettzimmer',
+      ru: '/nomera/trekhmestnyy-nomer',
+    },
+    '/rooms/twin-room': {
+      tr: '/odalar/twin-oda',
+      en: '/rooms/twin-room',
+      de: '/zimmer/zweibettzimmer',
+      ru: '/nomera/twin-nomer',
     },
     '/about': {
       tr: '/hakkimizda',
@@ -54,6 +72,13 @@ export const config = {
       de: '/kontakt',
       ru: '/kontakty',
     },
+    // Cookie policy route is prepared but temporarily disabled.
+    // '/cookie-policy': {
+    //   tr: '/cerez-politikasi',
+    //   en: '/cookie-policy',
+    //   de: '/cookie-richtlinie',
+    //   ru: '/politika-faylov-cookie',
+    // },
   },
 };
 

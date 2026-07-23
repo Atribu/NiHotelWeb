@@ -1,8 +1,8 @@
 "use client";
 
 import { MessageCircle } from "lucide-react";
-import Script from "next/script";
 import { useEffect } from "react";
+import { useCookieConsent } from "./CookieConsentProvider";
 
 const CONNEXEASE_INTEGRATION_ID = "4f1a355a-e8ea-4773-a781-24132afb3f6d";
 const CONNEXEASE_WIDGET_INTEGRATION_ID = "6a58ae2f153f6ba0e8916e07";
@@ -20,6 +20,10 @@ const messageIconUrl = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
 
 const liveChatBootstrapScript = `
 (function () {
+  if (!window.__teonaConnexeaseConsent) {
+    return;
+  }
+
   if (window.__teonaConnexeaseLiveChatStarted) {
     return;
   }
@@ -56,6 +60,10 @@ const liveChatBootstrapScript = `
   }
 
   function initConnexease(settings, integrationId) {
+    if (!window.__teonaConnexeaseConsent) {
+      return;
+    }
+
     loadConnexeaseHost();
 
     var finalSettings = deepMerge({
@@ -94,17 +102,53 @@ const liveChatBootstrapScript = `
       return response.json();
     })
     .then(function (data) {
+      if (!window.__teonaConnexeaseConsent) {
+        return;
+      }
+
       var settings = data && data.setting && data.setting.default_settings ? data.setting.default_settings : {};
       initConnexease(settings, data && data.integration_id);
     })
     .catch(function () {
+      if (!window.__teonaConnexeaseConsent) {
+        return;
+      }
+
       initConnexease({}, widgetIntegrationId);
     });
 })();
 `;
 
 export default function ConnexeaseLiveChat() {
+  const { preferences } = useCookieConsent();
+  const isLiveSupportEnabled = preferences.liveSupport;
+
   useEffect(() => {
+    if (!isLiveSupportEnabled) {
+      window.__teonaConnexeaseConsent = false;
+
+      if (
+        window.Connexease &&
+        typeof window.Connexease.destroy === "function"
+      ) {
+        window.Connexease.destroy();
+      }
+
+      document.getElementById("web-messenger-container")?.remove();
+      document.getElementById("connexease-livechat-bootstrap")?.remove();
+      window.__teonaConnexeaseLiveChatStarted = false;
+      window.__teonaConnexeaseOpenWhenReady = false;
+      return undefined;
+    }
+
+    window.__teonaConnexeaseConsent = true;
+
+    document.getElementById("connexease-livechat-bootstrap")?.remove();
+    const bootstrapScript = document.createElement("script");
+    bootstrapScript.id = "connexease-livechat-bootstrap";
+    bootstrapScript.textContent = liveChatBootstrapScript;
+    document.body.appendChild(bootstrapScript);
+
     const trackedIframes = new WeakSet();
 
     function openLiveChat() {
@@ -232,25 +276,35 @@ export default function ConnexeaseLiveChat() {
       window.clearInterval(interval);
       observer.disconnect();
       window.removeEventListener("resize", syncLiveChatLayout);
+      window.__teonaConnexeaseConsent = false;
+
+      if (
+        window.Connexease &&
+        typeof window.Connexease.destroy === "function"
+      ) {
+        window.Connexease.destroy();
+      }
+
+      document.getElementById("web-messenger-container")?.remove();
+      document.getElementById("connexease-livechat-bootstrap")?.remove();
+      window.__teonaConnexeaseLiveChatStarted = false;
+      window.__teonaConnexeaseOpenWhenReady = false;
     };
-  }, []);
+  }, [isLiveSupportEnabled]);
+
+  if (!isLiveSupportEnabled) {
+    return null;
+  }
 
   return (
-    <>
-      <button
-        id="teona-livechat-launcher"
-        type="button"
-        aria-label="Mesaj gönder"
-        className="fixed bottom-4 right-5 z-[60] inline-flex h-13 w-13 items-center justify-center rounded-full border border-white bg-black/70 text-white shadow-lg transition hover:border-black hover:bg-white hover:text-[#b99b6c] lg:right-7 lg:h-15 lg:w-15"
-      >
-        <MessageCircle aria-hidden="true" className="h-6 w-6" />
-        <span aria-hidden="true" className="pulse-ring absolute inset-[-1px] rounded-full border border-white" />
-      </button>
-      <Script
-        id="connexease-livechat-bootstrap"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{ __html: liveChatBootstrapScript }}
-      />
-    </>
+    <button
+      id="teona-livechat-launcher"
+      type="button"
+      aria-label="Mesaj gönder"
+      className="fixed bottom-4 right-5 z-[60] inline-flex h-13 w-13 items-center justify-center rounded-full border border-white bg-black/70 text-white shadow-lg transition hover:border-black hover:bg-white hover:text-[#b99b6c] lg:right-7 lg:h-15 lg:w-15"
+    >
+      <MessageCircle aria-hidden="true" className="h-6 w-6" />
+      <span aria-hidden="true" className="pulse-ring absolute inset-[-1px] rounded-full border border-white" />
+    </button>
   );
 }

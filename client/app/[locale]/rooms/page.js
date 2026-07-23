@@ -28,20 +28,49 @@ export default async function RoomsPage({ params }) {
 
   const rooms = [
     {
-      id: "standard-room",
-      title: t("standardTitle"),
-      meta: t("standardMeta"),
-      body: t("standardBody"),
-      image: site.images.roomTwin,
-      href: "/rooms/standard-room",
+      id: "economy-room",
+      title: t("economyTitle"),
+      meta: t("economyMeta"),
+      body: t("economyBody"),
+      image: site.images.economyRoom4,
+      imagePosition: "center 60%",
+      href: "/rooms/economy-room",
+    },
+    {
+      id: "french-room",
+      title: t("frenchTitle"),
+      meta: t("frenchMeta"),
+      body: t("frenchBody"),
+      image: site.images.frenchRoom3,
+      imagePosition: "center 58%",
+      href: "/rooms/french-room",
     },
     {
       id: "suite-room",
       title: t("suiteTitle"),
       meta: t("suiteMeta"),
       body: t("suiteBody"),
-      image: site.images.roomDouble,
+      image: site.images.suiteRoom3,
+      imagePosition: "center 58%",
       href: "/rooms/suite-room",
+    },
+    {
+      id: "triple-room",
+      title: t("tripleTitle"),
+      meta: t("tripleMeta"),
+      body: t("tripleBody"),
+      image: site.images.tripleRoom4,
+      imagePosition: "center 58%",
+      href: "/rooms/triple-room",
+    },
+    {
+      id: "twin-room",
+      title: t("twinTitle"),
+      meta: t("twinMeta"),
+      body: t("twinBody"),
+      image: site.images.twinRoom3,
+      imagePosition: "center 58%",
+      href: "/rooms/twin-room",
     },
   ];
 
@@ -78,7 +107,7 @@ export default async function RoomsPage({ params }) {
           <p className="mx-auto mt-3 max-w-[18rem] break-words text-xs leading-6 text-white/70 sm:max-w-2xl">
             {t("photoNote")}
           </p>
-          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <div className="mt-9 flex flex-col flex-wrap items-center justify-center gap-3 sm:flex-row">
             {rooms.map((room) => (
               <Link
                 key={room.id}
@@ -111,6 +140,7 @@ export default async function RoomsPage({ params }) {
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"
+                  style={{ objectPosition: room.imagePosition ?? "center" }}
                 />
                 <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/25 to-transparent lg:hidden" />
                 <h2 className="absolute inset-x-5 top-7 text-center font-display text-3xl font-semibold text-white drop-shadow lg:hidden">

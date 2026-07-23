@@ -146,6 +146,7 @@ export default function SiteFooter() {
           <p>
             © {new Date().getFullYear()} {site.name}. {t("rights")}
           </p>
+          {/* Cookie policy links are temporarily disabled. */}
           <p>{t("materialNote")}</p>
         </div>
       </div>
