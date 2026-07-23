@@ -65,13 +65,18 @@ export const localizedPaths = {
     de: "/de/kontakt",
     ru: "/ru/kontakty",
   },
-  // Cookie policy paths are prepared but temporarily disabled.
-  // cookiePolicy: {
-  //   tr: "/tr/cerez-politikasi",
-  //   en: "/en/cookie-policy",
-  //   de: "/de/cookie-richtlinie",
-  //   ru: "/ru/politika-faylov-cookie",
-  // },
+  cookiePolicy: {
+    tr: "/tr/cerez-politikasi",
+    en: "/en/cookie-policy",
+    de: "/de/cookie-richtlinie",
+    ru: "/ru/politika-faylov-cookie",
+  },
+  certificates: {
+    tr: "/tr/sertifikalar",
+    en: "/en/certificates",
+    de: "/de/zertifikate",
+    ru: "/ru/sertifikaty",
+  },
 };
 
 export function pageAlternates(page, locale) {

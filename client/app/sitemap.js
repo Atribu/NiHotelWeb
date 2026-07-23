@@ -13,7 +13,8 @@ const sitemapPages = [
   "restaurant",
   "gallery",
   "contact",
-  // "cookiePolicy",
+  "cookiePolicy",
+  "certificates",
 ];
 
 export default function sitemap() {
