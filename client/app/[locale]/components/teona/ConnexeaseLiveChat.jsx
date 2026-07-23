@@ -1,8 +1,8 @@
 "use client";
 
 import { MessageCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useEffect } from "react";
-import { useCookieConsent } from "./CookieConsentProvider";
 
 const CONNEXEASE_INTEGRATION_ID = "4f1a355a-e8ea-4773-a781-24132afb3f6d";
 const CONNEXEASE_WIDGET_INTEGRATION_ID = "6a58ae2f153f6ba0e8916e07";
@@ -20,7 +20,7 @@ const messageIconUrl = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
 
 const liveChatBootstrapScript = `
 (function () {
-  if (!window.__teonaConnexeaseConsent) {
+  if (!window.__teonaConnexeaseEnabled) {
     return;
   }
 
@@ -60,7 +60,7 @@ const liveChatBootstrapScript = `
   }
 
   function initConnexease(settings, integrationId) {
-    if (!window.__teonaConnexeaseConsent) {
+    if (!window.__teonaConnexeaseEnabled) {
       return;
     }
 
@@ -102,7 +102,7 @@ const liveChatBootstrapScript = `
       return response.json();
     })
     .then(function (data) {
-      if (!window.__teonaConnexeaseConsent) {
+      if (!window.__teonaConnexeaseEnabled) {
         return;
       }
 
@@ -110,7 +110,7 @@ const liveChatBootstrapScript = `
       initConnexease(settings, data && data.integration_id);
     })
     .catch(function () {
-      if (!window.__teonaConnexeaseConsent) {
+      if (!window.__teonaConnexeaseEnabled) {
         return;
       }
 
@@ -120,28 +120,10 @@ const liveChatBootstrapScript = `
 `;
 
 export default function ConnexeaseLiveChat() {
-  const { preferences } = useCookieConsent();
-  const isLiveSupportEnabled = preferences.liveSupport;
+  const t = useTranslations("cookieConsent");
 
   useEffect(() => {
-    if (!isLiveSupportEnabled) {
-      window.__teonaConnexeaseConsent = false;
-
-      if (
-        window.Connexease &&
-        typeof window.Connexease.destroy === "function"
-      ) {
-        window.Connexease.destroy();
-      }
-
-      document.getElementById("web-messenger-container")?.remove();
-      document.getElementById("connexease-livechat-bootstrap")?.remove();
-      window.__teonaConnexeaseLiveChatStarted = false;
-      window.__teonaConnexeaseOpenWhenReady = false;
-      return undefined;
-    }
-
-    window.__teonaConnexeaseConsent = true;
+    window.__teonaConnexeaseEnabled = true;
 
     document.getElementById("connexease-livechat-bootstrap")?.remove();
     const bootstrapScript = document.createElement("script");
@@ -276,7 +258,7 @@ export default function ConnexeaseLiveChat() {
       window.clearInterval(interval);
       observer.disconnect();
       window.removeEventListener("resize", syncLiveChatLayout);
-      window.__teonaConnexeaseConsent = false;
+      window.__teonaConnexeaseEnabled = false;
 
       if (
         window.Connexease &&
@@ -290,17 +272,13 @@ export default function ConnexeaseLiveChat() {
       window.__teonaConnexeaseLiveChatStarted = false;
       window.__teonaConnexeaseOpenWhenReady = false;
     };
-  }, [isLiveSupportEnabled]);
-
-  if (!isLiveSupportEnabled) {
-    return null;
-  }
+  }, []);
 
   return (
     <button
       id="teona-livechat-launcher"
       type="button"
-      aria-label="Mesaj gönder"
+      aria-label={t("liveChatButton")}
       className="fixed bottom-4 right-5 z-[60] inline-flex h-13 w-13 items-center justify-center rounded-full border border-white bg-black/70 text-white shadow-lg transition hover:border-black hover:bg-white hover:text-[#b99b6c] lg:right-7 lg:h-15 lg:w-15"
     >
       <MessageCircle aria-hidden="true" className="h-6 w-6" />

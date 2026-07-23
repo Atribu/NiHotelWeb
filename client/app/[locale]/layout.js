@@ -95,8 +95,7 @@ export default async function LocaleLayout({ children, params }) {
         style={{ fontFamily: "var(--font-jost)" }}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {/* Cookie policy is prepared but temporarily disabled. */}
-          <CookieConsentProvider enabled={false}>
+          <CookieConsentProvider>
             <a
               href="#main-content"
               className="fixed left-4 top-4 z-[100] -translate-y-24 rounded-sm bg-white px-4 py-3 text-sm font-semibold text-[#19334F] shadow-lg transition-transform focus:translate-y-0 focus:outline-none focus:ring-2 focus:ring-[#72809A]"

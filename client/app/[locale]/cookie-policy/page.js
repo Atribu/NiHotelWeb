@@ -1,16 +1,15 @@
 import {
   BarChart3,
   Cookie,
+  ExternalLink,
   Mail,
   MapPinned,
   MessageCircle,
   ShieldCheck,
 } from "lucide-react";
-// Prepared for later activation. This private folder keeps the route disabled.
 import { getTranslations } from "next-intl/server";
 import { site } from "@/lib/site";
 import { pageAlternates } from "@/lib/routes";
-import CookieSettingsButton from "../components/teona/CookieSettingsButton";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -39,14 +38,14 @@ export default async function CookiePolicyPage() {
       title: t("liveSupportTitle"),
       body: t("liveSupportBody"),
       detail: t("liveSupportDetail"),
-      status: t("optional"),
+      status: t("externalService"),
     },
     {
       Icon: MapPinned,
       title: t("mapsTitle"),
       body: t("mapsBody"),
       detail: t("mapsDetail"),
-      status: t("optional"),
+      status: t("externalService"),
     },
     {
       Icon: BarChart3,
@@ -110,7 +109,6 @@ export default async function CookiePolicyPage() {
             <p className="mt-3 text-sm leading-7 text-[#59616C]">
               {t("managementBody")}
             </p>
-            <CookieSettingsButton className="mt-6 inline-flex min-h-11 w-full items-center justify-center border border-[#19334F] bg-[#19334F] px-5 text-[0.68rem] font-semibold uppercase tracking-[0.13em] text-white transition-colors hover:bg-white hover:text-[#19334F]" />
           </aside>
 
           <div className="space-y-12">
@@ -222,6 +220,24 @@ export default async function CookiePolicyPage() {
               <p className="mt-4 text-sm leading-7 text-[#59616C]">
                 {t("rightsBody")}
               </p>
+            </article>
+
+            <article className="border-t border-[#19334F]/10 pt-10">
+              <h2 className="font-display text-3xl font-semibold text-[#19334F]">
+                {t("officialGuideTitle")}
+              </h2>
+              <p className="mt-4 text-sm leading-7 text-[#59616C]">
+                {t("officialGuideBody")}
+              </p>
+              <a
+                className="mt-5 inline-flex items-center gap-2 border-b border-[#19334F]/35 pb-1 text-sm font-medium text-[#19334F] transition-colors hover:border-[#19334F]"
+                href="https://www.kvkk.gov.tr/Icerik/7353/Cerez-Uygulamalari-Hakkinda-Rehber"
+                rel="noreferrer"
+                target="_blank"
+              >
+                {t("officialGuideLink")}
+                <ExternalLink aria-hidden="true" className="h-4 w-4" />
+              </a>
             </article>
           </div>
         </div>

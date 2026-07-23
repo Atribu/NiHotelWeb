@@ -72,13 +72,18 @@ export const config = {
       de: '/kontakt',
       ru: '/kontakty',
     },
-    // Cookie policy route is prepared but temporarily disabled.
-    // '/cookie-policy': {
-    //   tr: '/cerez-politikasi',
-    //   en: '/cookie-policy',
-    //   de: '/cookie-richtlinie',
-    //   ru: '/politika-faylov-cookie',
-    // },
+    '/cookie-policy': {
+      tr: '/cerez-politikasi',
+      en: '/cookie-policy',
+      de: '/cookie-richtlinie',
+      ru: '/politika-faylov-cookie',
+    },
+    '/certificates': {
+      tr: '/sertifikalar',
+      en: '/certificates',
+      de: '/zertifikate',
+      ru: '/sertifikaty',
+    },
   },
 };
 

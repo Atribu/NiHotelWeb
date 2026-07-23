@@ -142,12 +142,25 @@ export default function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-[#19334F]/10 pt-6 text-center text-xs text-[#19334F]/45 md:flex-row md:text-left">
+        <div className="mt-12 grid items-center gap-4 border-t border-[#19334F]/10 pt-6 text-center text-xs text-[#19334F]/45 md:grid-cols-[1fr_auto_1fr] md:text-left">
           <p>
             © {new Date().getFullYear()} {site.name}. {t("rights")}
           </p>
-          {/* Cookie policy links are temporarily disabled. */}
-          <p>{t("materialNote")}</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[#19334F]/65">
+            <Link
+              className="transition-colors hover:text-[#19334F]"
+              href="/certificates"
+            >
+              {t("certificates")}
+            </Link>
+            <Link
+              className="transition-colors hover:text-[#19334F]"
+              href="/cookie-policy"
+            >
+              {t("cookiePolicy")}
+            </Link>
+          </div>
+          <p className="md:text-right">{t("materialNote")}</p>
         </div>
       </div>
     </footer>
