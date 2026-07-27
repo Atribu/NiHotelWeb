@@ -1,5 +1,6 @@
 import "../globals.css";
 import { Cormorant_Garamond, Jost } from "next/font/google";
+import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
@@ -90,10 +91,31 @@ export default async function LocaleLayout({ children, params }) {
       lang={locale}
       className={`${jost.variable} ${cormorant.variable}`}
     >
+      <head>
+        <Script
+          id="google-tag-manager"
+          strategy="beforeInteractive"
+        >
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5SCH6RWM');`}
+        </Script>
+      </head>
       <body
         className="overflow-x-hidden bg-[#f7f4ee] text-[#19334F] antialiased"
         style={{ fontFamily: "var(--font-jost)" }}
       >
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5SCH6RWM"
+            height="0"
+            width="0"
+            title="Google Tag Manager"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <CookieConsentProvider>
             <a
