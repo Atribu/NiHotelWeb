@@ -166,6 +166,52 @@ export default function SiteFooter() {
           </div>
           <p className="md:text-right">{t("materialNote")}</p>
         </div>
+
+      </div>
+
+      <div className="relative flex items-center justify-center border-t border-white/5 bg-[#171815] px-5 py-5">
+        <a
+          aria-label="Powered by Dgtlface"
+          className="group inline-flex items-center gap-3 text-[#A8AAA5] transition-colors hover:text-white"
+          href="https://www.dgtlface.com/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <span className="text-xs font-medium tracking-[0.04em]">
+            Powered by
+          </span>
+          <span
+            aria-hidden="true"
+            className="h-5 w-px bg-white/20"
+          />
+          <span
+            aria-hidden="true"
+            className="inline-flex items-center gap-1.5 opacity-70 transition-all group-hover:scale-[1.03] group-hover:opacity-100"
+          >
+            <svg
+              className="h-6 w-8"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="27 0 60 48"
+            >
+              <image
+                height="93"
+                href="/teona/dgtlface-logo-footer.svg"
+                width="127"
+              />
+            </svg>
+            <svg
+              className="h-4 w-[4.75rem]"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 66 127 27"
+            >
+              <image
+                height="93"
+                href="/teona/dgtlface-logo-footer.svg"
+                width="127"
+              />
+            </svg>
+          </span>
+        </a>
       </div>
     </footer>
   );
