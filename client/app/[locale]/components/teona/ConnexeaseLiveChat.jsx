@@ -3,6 +3,7 @@
 import { MessageCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
+import { useCookieConsent } from "./CookieConsentProvider";
 
 const CONNEXEASE_INTEGRATION_ID = "4f1a355a-e8ea-4773-a781-24132afb3f6d";
 const CONNEXEASE_WIDGET_INTEGRATION_ID = "6a58ae2f153f6ba0e8916e07";
@@ -34,6 +35,21 @@ const liveChatBootstrapScript = `
   var widgetIntegrationId = ${JSON.stringify(CONNEXEASE_WIDGET_INTEGRATION_ID)};
   var messageIconUrl = ${JSON.stringify(messageIconUrl)};
   var settingsUrl = "https://cdn.allinone.connexease.com/livechat/settings/" + publicIntegrationId + ".json";
+  var readyEventName = "teona-connexease-ready";
+
+  function markConnexeaseReady() {
+    if (!window.__teonaConnexeaseEnabled) {
+      return;
+    }
+
+    window.__teonaConnexeaseInitialized = true;
+    window.dispatchEvent(new Event(readyEventName));
+  }
+
+  function markConnexeaseFailed(error) {
+    window.__teonaConnexeaseInitialized = false;
+    console.error("Connexease Web Messenger could not be initialized.", error);
+  }
 
   function deepMerge(target, source) {
     target = target || {};
@@ -87,10 +103,22 @@ const liveChatBootstrapScript = `
     finalSettings.buttonWidth = "58";
     finalSettings.buttonHeight = "58";
 
-    window.Connexease.init({
+    var initialization = window.Connexease.init({
       integrationId: integrationId || widgetIntegrationId,
       ...finalSettings
     });
+
+    if (initialization && typeof initialization.then === "function") {
+      if (typeof initialization.catch === "function") {
+        initialization
+          .then(markConnexeaseReady)
+          .catch(markConnexeaseFailed);
+      } else {
+        initialization.then(markConnexeaseReady);
+      }
+    } else {
+      markConnexeaseReady();
+    }
   }
 
   fetch(settingsUrl, { method: "GET" })
@@ -121,9 +149,16 @@ const liveChatBootstrapScript = `
 
 export default function ConnexeaseLiveChat() {
   const t = useTranslations("cookieConsent");
+  const { consent, isReady } = useCookieConsent();
+  const liveSupportEnabled = isReady && consent.liveSupport;
 
   useEffect(() => {
+    if (!liveSupportEnabled) {
+      return undefined;
+    }
+
     window.__teonaConnexeaseEnabled = true;
+    window.__teonaConnexeaseInitialized = false;
 
     document.getElementById("connexease-livechat-bootstrap")?.remove();
     const bootstrapScript = document.createElement("script");
@@ -133,13 +168,23 @@ export default function ConnexeaseLiveChat() {
 
     const trackedIframes = new WeakSet();
 
-    function openLiveChat() {
-      if (window.Connexease && typeof window.Connexease.open === "function") {
+    function tryOpenLiveChat() {
+      if (
+        window.__teonaConnexeaseInitialized &&
+        window.Connexease &&
+        typeof window.Connexease.open === "function"
+      ) {
         window.Connexease.open();
-        return;
+        return true;
       }
 
-      window.__teonaConnexeaseOpenWhenReady = true;
+      return false;
+    }
+
+    function openLiveChat() {
+      if (!tryOpenLiveChat()) {
+        window.__teonaConnexeaseOpenWhenReady = true;
+      }
     }
 
     function syncLiveChatLayout() {
@@ -185,9 +230,11 @@ export default function ConnexeaseLiveChat() {
         }
       }
 
-      if (window.__teonaConnexeaseOpenWhenReady && window.Connexease && typeof window.Connexease.open === "function") {
+      if (
+        window.__teonaConnexeaseOpenWhenReady &&
+        tryOpenLiveChat()
+      ) {
         window.__teonaConnexeaseOpenWhenReady = false;
-        window.Connexease.open();
       }
 
       if (!(iframe instanceof HTMLElement)) {
@@ -251,6 +298,7 @@ export default function ConnexeaseLiveChat() {
     });
 
     window.addEventListener("resize", syncLiveChatLayout);
+    window.addEventListener("teona-connexease-ready", syncLiveChatLayout);
     syncLiveChatLayout();
 
     return () => {
@@ -258,7 +306,9 @@ export default function ConnexeaseLiveChat() {
       window.clearInterval(interval);
       observer.disconnect();
       window.removeEventListener("resize", syncLiveChatLayout);
+      window.removeEventListener("teona-connexease-ready", syncLiveChatLayout);
       window.__teonaConnexeaseEnabled = false;
+      window.__teonaConnexeaseInitialized = false;
 
       if (
         window.Connexease &&
@@ -269,10 +319,17 @@ export default function ConnexeaseLiveChat() {
 
       document.getElementById("web-messenger-container")?.remove();
       document.getElementById("connexease-livechat-bootstrap")?.remove();
+      document
+        .querySelectorAll('script[src*="connexease.com"]')
+        .forEach((script) => script.remove());
       window.__teonaConnexeaseLiveChatStarted = false;
       window.__teonaConnexeaseOpenWhenReady = false;
     };
-  }, []);
+  }, [liveSupportEnabled]);
+
+  if (!liveSupportEnabled) {
+    return null;
+  }
 
   return (
     <button

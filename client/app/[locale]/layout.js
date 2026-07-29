@@ -96,7 +96,41 @@ export default async function LocaleLayout({ children, params }) {
           id="google-tag-manager"
           strategy="beforeInteractive"
         >
-          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          {`(function(w,d,s,l,i){
+w[l]=w[l]||[];
+w.gtag=w.gtag||function(){w[l].push(arguments);};
+var preferences={analytics:false,marketing:false,liveSupport:false};
+try{
+  var prefix='teona_cookie_consent=';
+  var cookies=d.cookie.split('; ');
+  for(var c=0;c<cookies.length;c++){
+    if(cookies[c].indexOf(prefix)===0){
+      var stored=JSON.parse(decodeURIComponent(cookies[c].slice(prefix.length)));
+      if(stored.version===3&&stored.preferences){
+        preferences.analytics=stored.preferences.analytics===true;
+        preferences.marketing=stored.preferences.marketing===true;
+        preferences.liveSupport=stored.preferences.liveSupport===true;
+      }
+      break;
+    }
+  }
+}catch(e){}
+var analyticsState=preferences.analytics?'granted':'denied';
+var marketingState=preferences.marketing?'granted':'denied';
+w.gtag('consent','default',{
+  analytics_storage:analyticsState,
+  ad_storage:marketingState,
+  ad_user_data:marketingState,
+  ad_personalization:marketingState,
+  wait_for_update:500
+});
+w[l].push({
+  event:'teona_consent_default',
+  analytics_consent:analyticsState,
+  marketing_consent:marketingState,
+  live_support_consent:preferences.liveSupport?'granted':'denied'
+});
+w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
