@@ -3,6 +3,7 @@ import { Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/site";
+import CookieSettingsButton from "./CookieSettingsButton";
 
 const footerLinks = [
   { key: "home", href: "/" },
@@ -159,6 +160,9 @@ export default function SiteFooter() {
             >
               {t("cookiePolicy")}
             </Link>
+            <CookieSettingsButton>
+              {t("cookieSettings")}
+            </CookieSettingsButton>
           </div>
           <p className="md:text-right">{t("materialNote")}</p>
         </div>

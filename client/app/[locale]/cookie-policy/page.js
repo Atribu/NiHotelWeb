@@ -4,6 +4,7 @@ import {
   ExternalLink,
   Mail,
   MapPinned,
+  Megaphone,
   MessageCircle,
   ShieldCheck,
 } from "lucide-react";
@@ -38,7 +39,7 @@ export default async function CookiePolicyPage() {
       title: t("liveSupportTitle"),
       body: t("liveSupportBody"),
       detail: t("liveSupportDetail"),
-      status: t("externalService"),
+      status: t("optional"),
     },
     {
       Icon: MapPinned,
@@ -49,10 +50,17 @@ export default async function CookiePolicyPage() {
     },
     {
       Icon: BarChart3,
-      title: t("unusedTitle"),
-      body: t("unusedBody"),
-      detail: t("unusedDetail"),
-      status: t("notUsed"),
+      title: t("analyticsTitle"),
+      body: t("analyticsBody"),
+      detail: t("analyticsDetail"),
+      status: t("optional"),
+    },
+    {
+      Icon: Megaphone,
+      title: t("marketingTitle"),
+      body: t("marketingBody"),
+      detail: t("marketingDetail"),
+      status: t("optional"),
     },
   ];
 
@@ -63,6 +71,13 @@ export default async function CookiePolicyPage() {
       purpose: t("consentPurpose"),
       duration: t("duration180"),
       type: t("firstParty"),
+    },
+    {
+      name: "Google Tag Manager",
+      provider: "Google",
+      purpose: t("tagManagerPurpose"),
+      duration: t("providerControlled"),
+      type: t("consentManaged"),
     },
     {
       name: "Connexease LiveChat",
