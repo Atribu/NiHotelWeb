@@ -12,7 +12,7 @@ export default function RoomGallery({ images, labels, title }) {
 
   const galleryImages = images.slice(0, 4);
   const sideImages = galleryImages.slice(1);
-  const extraImages = images.slice(4);
+  const remainingImageCount = Math.max(images.length - galleryImages.length, 0);
 
   const openGallery = useCallback((index) => {
     setActiveIndex(index);
@@ -85,6 +85,7 @@ export default function RoomGallery({ images, labels, title }) {
     image,
     imageIndex,
     priority = false,
+    remainingCount = 0,
     sizes,
   }) {
     return (
@@ -111,31 +112,41 @@ export default function RoomGallery({ images, labels, title }) {
             <Maximize2 aria-hidden="true" className="h-5 w-5" />
           </span>
         </span>
+        {remainingCount > 0 ? (
+          <span
+            aria-hidden="true"
+            className="absolute bottom-4 right-4 flex min-h-10 min-w-14 items-center justify-center border border-white/45 bg-black/55 px-3 text-sm font-semibold tracking-[0.08em] text-white backdrop-blur-sm"
+          >
+            +{remainingCount}
+          </span>
+        ) : null}
       </button>
     );
   }
 
   return (
     <>
-      <div className="grid gap-3 lg:grid-cols-[1.45fr_0.85fr]">
+      <div className="grid gap-3 lg:h-[680px] lg:grid-cols-[minmax(0,1.45fr)_minmax(0,0.85fr)]">
         {imageButton({
-          className: "min-h-[430px] sm:min-h-[560px] lg:min-h-[680px]",
+          className: "h-[clamp(430px,70vw,560px)] lg:h-full",
           image: galleryImages[0],
           imageIndex: 0,
           priority: true,
           sizes: "(min-width: 1024px) 64vw, 100vw",
         })}
 
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid h-[460px] grid-cols-2 grid-rows-2 gap-3 sm:h-[560px] lg:h-full">
           {sideImages.map((image, index) =>
             imageButton({
-              className: `min-h-[245px] sm:min-h-[320px] lg:min-h-0 ${
+              className: `min-h-0 ${
                 sideImages.length < 3 || index === 0
                   ? "col-span-2"
                   : "col-span-1"
               }`,
               image,
               imageIndex: index + 1,
+              remainingCount:
+                index === sideImages.length - 1 ? remainingImageCount : 0,
               sizes:
                 sideImages.length >= 3 && index > 0
                   ? "(min-width: 1024px) 18vw, 50vw"
@@ -144,20 +155,6 @@ export default function RoomGallery({ images, labels, title }) {
           )}
         </div>
       </div>
-
-      {extraImages.length > 0 ? (
-        <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {extraImages.map((image, index) =>
-            imageButton({
-              className: "min-h-[330px] sm:min-h-[390px]",
-              image,
-              imageIndex: index + 4,
-              sizes:
-                "(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw",
-            }),
-          )}
-        </div>
-      ) : null}
 
       {activeIndex !== null ? (
         <div

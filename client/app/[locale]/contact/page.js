@@ -3,17 +3,12 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import ContactForm from "../components/teona/ContactForm";
 import { site } from "@/lib/site";
-import { pageAlternates } from "@/lib/routes";
+import { buildPageMetadata } from "@/lib/seo";
+import SeoStructuredData from "../components/teona/SeoStructuredData";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "contact" });
-
-  return {
-    title: `${t("title")} | ${site.name}`,
-    description: t("lead"),
-    alternates: pageAlternates("contact", locale),
-  };
+  return buildPageMetadata({ locale, page: "contact", image: site.images.exteriorCity });
 }
 
 export default async function ContactPage({ params }) {
@@ -35,10 +30,18 @@ export default async function ContactPage({ params }) {
       action: t("write"),
       Icon: Mail,
     },
+    {
+      label: t("callCenterEmail"),
+      value: site.callCenterEmail,
+      href: `mailto:${site.callCenterEmail}`,
+      action: t("write"),
+      Icon: Mail,
+    },
   ];
 
   return (
     <main id="main-content" className="overflow-hidden bg-white text-[#30343A]">
+      <SeoStructuredData locale={locale} items={[{ name: t("title"), page: "contact" }]} />
       <section className="relative isolate flex min-h-[55vh] items-center justify-center overflow-hidden px-5 pb-14 pt-32 text-center sm:min-h-[60vh] sm:px-8 lg:min-h-[68vh] lg:px-12">
         <Image
           src={site.images.hero}
@@ -69,7 +72,7 @@ export default async function ContactPage({ params }) {
           </h2>
           <span className="mx-auto mt-6 block h-px w-20 bg-[#19334F]/20" aria-hidden="true" />
 
-          <div className="mt-12 grid border-l border-t border-[#19334F]/15 md:grid-cols-3">
+          <div className="mt-12 grid border-l border-t border-[#19334F]/15 md:grid-cols-2 lg:grid-cols-4">
             {contactItems.map(({ label, value, href, action, Icon }) => (
               <a
                 key={label}

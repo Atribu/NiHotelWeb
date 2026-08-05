@@ -10,21 +10,17 @@ import {
 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { site } from "@/lib/site";
-import { pageAlternates } from "@/lib/routes";
+import { buildPageMetadata } from "@/lib/seo";
+import SeoStructuredData from "../components/teona/SeoStructuredData";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "cookiePolicy" });
-
-  return {
-    title: `${t("title")} | ${site.name}`,
-    description: t("lead"),
-    alternates: pageAlternates("cookiePolicy", locale),
-  };
+  return buildPageMetadata({ locale, page: "cookiePolicy", image: site.images.hero });
 }
 
-export default async function CookiePolicyPage() {
-  const t = await getTranslations("cookiePolicy");
+export default async function CookiePolicyPage({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "cookiePolicy" });
 
   const categories = [
     {
@@ -97,6 +93,7 @@ export default async function CookiePolicyPage() {
 
   return (
     <main id="main-content" className="bg-white text-[#30343A]">
+      <SeoStructuredData locale={locale} items={[{ name: t("title"), page: "cookiePolicy" }]} />
       <section className="bg-[#19334F] px-5 pb-16 pt-32 text-white sm:px-8 lg:px-10 lg:pb-20 lg:pt-40">
         <div className="mx-auto max-w-5xl">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#dec7a6]">

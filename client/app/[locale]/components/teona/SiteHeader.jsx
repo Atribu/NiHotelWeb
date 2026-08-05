@@ -12,6 +12,8 @@ const navigation = [
   { key: "home", href: "/" },
   { key: "rooms", href: "/rooms" },
   { key: "about", href: "/about" },
+  { key: "meeting", href: "/meeting" },
+  { key: "cityGuide", href: "/city-guide" },
   { key: "restaurant", href: "/restaurant" },
   { key: "gallery", href: "/gallery" },
   { key: "contact", href: "/contact" },
@@ -19,6 +21,7 @@ const navigation = [
 
 export default function SiteHeader() {
   const t = useTranslations("navigation");
+  const contact = useTranslations("contact");
   const locale = useLocale();
   const pathname = usePathname();
   const bookingUrl = `${site.bookingUrl}?language=${locale}`;
@@ -110,7 +113,6 @@ export default function SiteHeader() {
               alt={site.name}
               className="h-[4.3rem] w-auto object-contain drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)] sm:h-[4.8rem] lg:h-[5.55rem]"
               height={108}
-              priority
               src={site.images.logoLight}
               width={71}
             />
@@ -237,6 +239,15 @@ export default function SiteHeader() {
               <a className="flex items-center gap-3 hover:text-[#19334F]" href={`mailto:${site.email}`} tabIndex={isOpen ? 0 : -1}>
                 <Mail aria-hidden="true" className="h-4 w-4 shrink-0" />
                 {site.email}
+              </a>
+              <a className="flex items-center gap-3 hover:text-[#19334F]" href={`mailto:${site.callCenterEmail}`} tabIndex={isOpen ? 0 : -1}>
+                <Mail aria-hidden="true" className="h-4 w-4 shrink-0" />
+                <span>
+                  <span className="block text-[0.58rem] font-semibold uppercase tracking-[0.12em] text-[#72809A]">
+                    {contact("callCenterEmail")}
+                  </span>
+                  <span className="block break-all">{site.callCenterEmail}</span>
+                </span>
               </a>
               <p className="flex items-start gap-3">
                 <MapPin aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0" />

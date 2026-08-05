@@ -9,6 +9,8 @@ const footerLinks = [
   { key: "home", href: "/" },
   { key: "rooms", href: "/rooms" },
   { key: "about", href: "/about" },
+  { key: "meeting", href: "/meeting" },
+  { key: "cityGuide", href: "/city-guide" },
   { key: "restaurant", href: "/restaurant" },
   { key: "gallery", href: "/gallery" },
   { key: "contact", href: "/contact" },
@@ -106,6 +108,20 @@ export default function SiteFooter() {
                   <Mail aria-hidden="true" className="h-4 w-4" />
                 </span>
                 {site.email}
+              </a>
+              <a
+                className="flex items-center justify-center gap-3 transition-colors hover:text-[#19334F] md:justify-start"
+                href={`mailto:${site.callCenterEmail}`}
+              >
+                <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center border border-[#19334F]/10 bg-[#F7F5F0]">
+                  <Mail aria-hidden="true" className="h-4 w-4" />
+                </span>
+                <span className="min-w-0">
+                  <span className="block text-[0.58rem] font-semibold uppercase tracking-[0.12em] text-[#72809A]">
+                    {t("callCenterEmail")}
+                  </span>
+                  <span className="block break-all">{site.callCenterEmail}</span>
+                </span>
               </a>
             </address>
           </div>

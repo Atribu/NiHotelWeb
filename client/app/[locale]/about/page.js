@@ -2,17 +2,12 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/site";
-import { pageAlternates } from "@/lib/routes";
+import { buildPageMetadata } from "@/lib/seo";
+import SeoStructuredData from "../components/teona/SeoStructuredData";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "about" });
-
-  return {
-    title: `${t("title")} | ${site.name}`,
-    description: t("lead"),
-    alternates: pageAlternates("about", locale),
-  };
+  return buildPageMetadata({ locale, page: "about", image: site.images.exteriorAngle });
 }
 
 export default async function AboutPage({ params }) {
@@ -24,6 +19,7 @@ export default async function AboutPage({ params }) {
 
   return (
     <main id="main-content" className="overflow-hidden bg-white text-[#30343A]">
+      <SeoStructuredData locale={locale} items={[{ name: t("title"), page: "about" }]} />
       <section className="relative isolate flex min-h-[55vh] items-center justify-center overflow-hidden px-5 pb-14 pt-32 text-center sm:min-h-[60vh] sm:px-8 lg:min-h-[66vh] lg:px-12">
         <Image
           src={site.images.hero}
