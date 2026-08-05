@@ -2,17 +2,12 @@ import Image from "next/image";
 import { Instagram, Music2, Phone, UsersRound } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { site } from "@/lib/site";
-import { pageAlternates } from "@/lib/routes";
+import { buildPageMetadata } from "@/lib/seo";
+import SeoStructuredData from "../components/teona/SeoStructuredData";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "restaurant" });
-
-  return {
-    title: `${t("title")} | ${site.name}`,
-    description: t("lead"),
-    alternates: pageAlternates("restaurant", locale),
-  };
+  return buildPageMetadata({ locale, page: "restaurant", image: site.images.restaurant });
 }
 
 export default async function RestaurantPage({ params }) {
@@ -21,6 +16,7 @@ export default async function RestaurantPage({ params }) {
 
   return (
     <main id="main-content" className="overflow-hidden bg-white text-[#30343A]">
+      <SeoStructuredData locale={locale} items={[{ name: t("title"), page: "restaurant" }]} />
       <section className="relative isolate flex min-h-[60vh] items-center justify-center overflow-hidden px-5 pb-14 pt-32 text-center sm:min-h-[66vh] sm:px-8 lg:min-h-[72vh] lg:px-12">
         <Image
           src={site.images.hero}

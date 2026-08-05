@@ -10,8 +10,11 @@ import {
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/site";
-import { pageAlternates } from "@/lib/routes";
+import { buildPageMetadata } from "@/lib/seo";
+import { hotelRoomStructuredData } from "@/lib/structuredData";
 import BookingBar from "../components/teona/BookingBar";
+import JsonLd from "../components/teona/JsonLd";
+import SeoStructuredData from "../components/teona/SeoStructuredData";
 import RoomGallery from "./RoomGallery";
 
 const roomConfig = {
@@ -76,21 +79,20 @@ const roomConfig = {
 
 export async function generateRoomMetadata({ params, roomKey }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "roomDetails" });
   const room = roomConfig[roomKey];
-
-  return {
-    title: `${t(`${roomKey}.title`)} | ${site.name}`,
-    description: t(`${roomKey}.intro`),
-    alternates: pageAlternates(room.pageKey, locale),
-  };
+  return buildPageMetadata({
+    locale,
+    page: room.pageKey,
+    image: room.images[0],
+  });
 }
 
 export default async function RoomDetailPage({ params, roomKey }) {
   const { locale } = await params;
-  const [t, amenities] = await Promise.all([
+  const [t, amenities, navigation] = await Promise.all([
     getTranslations({ locale, namespace: "roomDetails" }),
     getTranslations({ locale, namespace: "amenities" }),
+    getTranslations({ locale, namespace: "navigation" }),
   ]);
   const room = roomConfig[roomKey];
 
@@ -111,6 +113,23 @@ export default async function RoomDetailPage({ params, roomKey }) {
 
   return (
     <main id="main-content" className="overflow-hidden bg-white text-[#30343A]">
+      <SeoStructuredData
+        locale={locale}
+        items={[
+          { name: navigation("rooms"), page: "rooms" },
+          { name: t(`${roomKey}.title`), page: room.pageKey },
+        ]}
+      />
+      <JsonLd
+        data={hotelRoomStructuredData({
+          locale,
+          page: room.pageKey,
+          name: t(`${roomKey}.title`),
+          description: t(`${roomKey}.intro`),
+          images: room.images,
+          roomKey,
+        })}
+      />
       <section className="bg-[#F7F5F1] px-5 pb-10 pt-32 sm:px-8 sm:pb-12 lg:px-10 lg:pt-40">
         <div className="mx-auto max-w-7xl">
           <Link

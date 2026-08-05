@@ -14,9 +14,10 @@ import {
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/site";
-import { pageAlternates } from "@/lib/routes";
+import { buildPageMetadata } from "@/lib/seo";
 import BookingBar from "./components/teona/BookingBar";
 import RoomSlider from "./components/teona/RoomSlider";
+import SeoStructuredData from "./components/teona/SeoStructuredData";
 
 const introCardEyebrowClassName =
   "text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-white/75";
@@ -27,16 +28,11 @@ const introCardLinkClassName =
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "meta" });
-
-  return {
-    title: t("title"),
-    description: t("description"),
-    alternates: pageAlternates("home", locale),
-  };
+  return buildPageMetadata({ locale, page: "home", image: site.images.hero });
 }
 
-export default async function HomePage() {
+export default async function HomePage({ params }) {
+  const { locale } = await params;
   const [t, amenities, navigation, footer] = await Promise.all([
     getTranslations("home"),
     getTranslations("amenities"),
@@ -66,6 +62,7 @@ export default async function HomePage() {
 
   return (
     <main className="overflow-hidden bg-white" id="main-content">
+      <SeoStructuredData locale={locale} items={[]} />
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#24292c] lg:min-h-[calc(100svh-6rem)]">
         <Image
           alt=""
@@ -100,7 +97,6 @@ export default async function HomePage() {
               alt=""
               className="object-cover object-top"
               fill
-              priority
               sizes="(max-width: 1024px) 75vw, 46vw"
               src={site.images.corridor}
             />
@@ -236,6 +232,20 @@ export default async function HomePage() {
               >
                 <Mail aria-hidden="true" className="h-5 w-5 text-[#c0a271]" />
                 <span className="text-sm text-[#4d5357]">{site.email}</span>
+              </a>
+              <a
+                className="flex min-h-14 items-center gap-4 border border-black/10 bg-white px-5 shadow-sm transition-colors hover:border-[#dec7a6]"
+                href={`mailto:${site.callCenterEmail}`}
+              >
+                <Mail aria-hidden="true" className="h-5 w-5 shrink-0 text-[#c0a271]" />
+                <span className="min-w-0">
+                  <span className="block text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[#8a8f93]">
+                    {footer("callCenterEmail")}
+                  </span>
+                  <span className="mt-1 block break-all text-sm text-[#4d5357]">
+                    {site.callCenterEmail}
+                  </span>
+                </span>
               </a>
               <Link
                 className="inline-flex min-h-11 items-center border border-[#dec7a6] bg-[#dec7a6] px-6 text-xs font-semibold uppercase tracking-[0.13em] text-white transition-colors hover:bg-white hover:text-[#b99b6c]"

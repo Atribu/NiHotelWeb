@@ -54,6 +54,18 @@ export const config = {
       de: '/uber-uns',
       ru: '/o-nas',
     },
+    '/meeting': {
+      tr: '/toplanti',
+      en: '/meeting',
+      de: '/tagungen',
+      ru: '/konferents-zal',
+    },
+    '/city-guide': {
+      tr: '/sehir-rehberi',
+      en: '/city-guide',
+      de: '/stadtfuehrer',
+      ru: '/putevoditel-po-gorodu',
+    },
     '/restaurant': {
       tr: '/restoran',
       en: '/restaurant',

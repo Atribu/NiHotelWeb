@@ -10,11 +10,13 @@ import {
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { site } from "@/lib/site";
+import { hotelStructuredData } from "@/lib/structuredData";
 import SiteFooter from "./components/teona/SiteFooter";
 import SiteHeader from "./components/teona/SiteHeader";
 import FloatingActions from "./components/teona/FloatingActions";
 import ConnexeaseLiveChat from "./components/teona/ConnexeaseLiveChat";
 import CookieConsentProvider from "./components/teona/CookieConsentProvider";
+import JsonLd from "./components/teona/JsonLd";
 
 const jost = Jost({
   subsets: ["latin", "latin-ext", "cyrillic"],
@@ -27,6 +29,7 @@ const cormorant = Cormorant_Garamond({
   weight: ["400", "500", "600", "700"],
   variable: "--font-cormorant",
   display: "swap",
+  preload: false,
 });
 
 const skipLabels = {
@@ -53,6 +56,17 @@ export async function generateMetadata({ params }) {
     metadataBase: new URL(site.url),
     title: t("title"),
     description: t("description"),
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
     icons: {
       icon: "/favicon.ico",
       shortcut: "/favicon.ico",
@@ -85,6 +99,19 @@ export default async function LocaleLayout({ children, params }) {
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const clientMessageNamespaces = [
+    "navigation",
+    "footer",
+    "cookieConsent",
+    "booking",
+    "contact",
+    "home",
+  ];
+  const clientMessages = Object.fromEntries(
+    clientMessageNamespaces
+      .filter((namespace) => messages[namespace])
+      .map((namespace) => [namespace, messages[namespace]]),
+  );
 
   return (
     <html
@@ -92,6 +119,7 @@ export default async function LocaleLayout({ children, params }) {
       className={`${jost.variable} ${cormorant.variable}`}
     >
       <head>
+        <JsonLd data={hotelStructuredData(locale)} />
         <Script
           id="google-tag-manager"
           strategy="beforeInteractive"
@@ -150,7 +178,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={clientMessages}>
           <CookieConsentProvider>
             <a
               href="#main-content"

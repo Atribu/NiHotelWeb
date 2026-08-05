@@ -1,3 +1,5 @@
+import { site } from "@/lib/site";
+
 export const localizedPaths = {
   home: {
     tr: "/tr",
@@ -47,6 +49,18 @@ export const localizedPaths = {
     de: "/de/uber-uns",
     ru: "/ru/o-nas",
   },
+  meeting: {
+    tr: "/tr/toplanti",
+    en: "/en/meeting",
+    de: "/de/tagungen",
+    ru: "/ru/konferents-zal",
+  },
+  cityGuide: {
+    tr: "/tr/sehir-rehberi",
+    en: "/en/city-guide",
+    de: "/de/stadtfuehrer",
+    ru: "/ru/putevoditel-po-gorodu",
+  },
   restaurant: {
     tr: "/tr/restoran",
     en: "/en/restaurant",
@@ -81,15 +95,16 @@ export const localizedPaths = {
 
 export function pageAlternates(page, locale) {
   const paths = localizedPaths[page];
+  const absoluteUrl = (path) => new URL(path, site.url).toString();
 
   return {
-    canonical: paths[locale],
+    canonical: absoluteUrl(paths[locale]),
     languages: {
-      tr: paths.tr,
-      en: paths.en,
-      de: paths.de,
-      ru: paths.ru,
-      "x-default": paths.tr,
+      tr: absoluteUrl(paths.tr),
+      en: absoluteUrl(paths.en),
+      de: absoluteUrl(paths.de),
+      ru: absoluteUrl(paths.ru),
+      "x-default": absoluteUrl(paths.tr),
     },
   };
 }

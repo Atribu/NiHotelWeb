@@ -9,17 +9,12 @@ import {
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/site";
-import { pageAlternates } from "@/lib/routes";
+import { buildPageMetadata } from "@/lib/seo";
+import SeoStructuredData from "../components/teona/SeoStructuredData";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "rooms" });
-
-  return {
-    title: `${t("title")} | ${site.name}`,
-    description: t("intro"),
-    alternates: pageAlternates("rooms", locale),
-  };
+  return buildPageMetadata({ locale, page: "rooms", image: site.images.roomMultiple });
 }
 
 export default async function RoomsPage({ params }) {
@@ -84,6 +79,7 @@ export default async function RoomsPage({ params }) {
 
   return (
     <main id="main-content" className="overflow-hidden bg-white text-[#30343A]">
+      <SeoStructuredData locale={locale} items={[{ name: t("title"), page: "rooms" }]} />
       <section className="relative isolate flex min-h-[62vh] items-center justify-center overflow-hidden px-5 pb-14 pt-32 text-center sm:min-h-[68vh] sm:px-8 lg:min-h-[72vh] lg:px-12">
         <Image
           src={site.images.roomMultiple}

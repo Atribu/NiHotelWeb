@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { Download, ExternalLink, FileCheck2 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import { pageAlternates } from "@/lib/routes";
 import { site } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
+import SeoStructuredData from "../components/teona/SeoStructuredData";
 
 const certificateFiles = [
   {
@@ -26,13 +27,11 @@ const certificateFiles = [
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "certificates" });
-
-  return {
-    title: `${t("title")} | ${site.name}`,
-    description: t("lead"),
-    alternates: pageAlternates("certificates", locale),
-  };
+  return buildPageMetadata({
+    locale,
+    page: "certificates",
+    image: certificateFiles[0].preview,
+  });
 }
 
 export default async function CertificatesPage({ params }) {
@@ -41,6 +40,7 @@ export default async function CertificatesPage({ params }) {
 
   return (
     <main id="main-content" className="bg-white text-[#30343A]">
+      <SeoStructuredData locale={locale} items={[{ name: t("title"), page: "certificates" }]} />
       <section className="relative isolate overflow-hidden bg-[#19334F] px-5 pb-16 pt-32 text-white sm:px-8 lg:px-10 lg:pb-20 lg:pt-40">
         <div
           aria-hidden="true"
