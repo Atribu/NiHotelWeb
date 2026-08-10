@@ -7,9 +7,13 @@ import {
   Wifi,
 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
+import { createRoomAnalyticsItem } from "@/lib/analytics";
 import { site } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo";
+import {
+  RoomListAnalytics,
+  TrackedRoomLink,
+} from "../components/teona/RoomAnalytics";
 import SeoStructuredData from "../components/teona/SeoStructuredData";
 
 export async function generateMetadata({ params }) {
@@ -20,6 +24,8 @@ export async function generateMetadata({ params }) {
 export default async function RoomsPage({ params }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "rooms" });
+  const roomListId = "rooms_page";
+  const roomListName = t("title");
 
   const rooms = [
     {
@@ -67,7 +73,16 @@ export default async function RoomsPage({ params }) {
       imagePosition: "center 58%",
       href: "/rooms/twin-room",
     },
-  ];
+  ].map((room, index) => ({
+    ...room,
+    analyticsItem: createRoomAnalyticsItem({
+      id: room.id,
+      index,
+      listId: roomListId,
+      listName: roomListName,
+      name: room.title,
+    }),
+  }));
 
   const amenities = [
     { Icon: Wifi, key: "wifi" },
@@ -80,6 +95,12 @@ export default async function RoomsPage({ params }) {
   return (
     <main id="main-content" className="overflow-hidden bg-white text-[#30343A]">
       <SeoStructuredData locale={locale} items={[{ name: t("title"), page: "rooms" }]} />
+      <RoomListAnalytics
+        items={rooms.map((room) => room.analyticsItem)}
+        listId={roomListId}
+        listName={roomListName}
+        locale={locale}
+      />
       <section className="relative isolate flex min-h-[62vh] items-center justify-center overflow-hidden px-5 pb-14 pt-32 text-center sm:min-h-[68vh] sm:px-8 lg:min-h-[72vh] lg:px-12">
         <Image
           src={site.images.roomMultiple}
@@ -105,13 +126,17 @@ export default async function RoomsPage({ params }) {
           </p>
           <div className="mt-9 flex flex-col flex-wrap items-center justify-center gap-3 sm:flex-row">
             {rooms.map((room) => (
-              <Link
+              <TrackedRoomLink
                 key={room.id}
                 href={room.href}
+                item={room.analyticsItem}
+                listId={roomListId}
+                listName={roomListName}
+                locale={locale}
                 className="inline-flex min-h-11 min-w-56 items-center justify-center border border-white/80 bg-white/10 px-6 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-white backdrop-blur-[2px] transition-colors hover:bg-white hover:text-[#19334F]"
               >
                 {room.title}
-              </Link>
+              </TrackedRoomLink>
             ))}
           </div>
         </div>
@@ -155,12 +180,16 @@ export default async function RoomsPage({ params }) {
                 <p className="max-w-lg text-sm leading-8 text-[#59616C] sm:text-base">
                   {room.body}
                 </p>
-                <Link
+                <TrackedRoomLink
                   href={room.href}
+                  item={room.analyticsItem}
+                  listId={roomListId}
+                  listName={roomListName}
+                  locale={locale}
                   className="mt-8 inline-flex min-h-11 items-center justify-center border border-[#19334F] px-8 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#19334F] transition-colors hover:bg-[#19334F] hover:text-white"
                 >
                   {t("detailsCta")}
-                </Link>
+                </TrackedRoomLink>
               </div>
             </article>
           ))}

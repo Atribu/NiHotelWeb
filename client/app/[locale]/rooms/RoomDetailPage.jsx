@@ -9,16 +9,19 @@ import {
 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { createRoomAnalyticsItem } from "@/lib/analytics";
 import { site } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo";
 import { hotelRoomStructuredData } from "@/lib/structuredData";
 import BookingBar from "../components/teona/BookingBar";
 import JsonLd from "../components/teona/JsonLd";
+import { RoomDetailAnalytics } from "../components/teona/RoomAnalytics";
 import SeoStructuredData from "../components/teona/SeoStructuredData";
 import RoomGallery from "./RoomGallery";
 
 const roomConfig = {
   economy: {
+    id: "economy-room",
     pageKey: "economyRoom",
     images: [
       site.images.economyRoom4,
@@ -29,6 +32,7 @@ const roomConfig = {
     ],
   },
   french: {
+    id: "french-room",
     pageKey: "frenchRoom",
     images: [
       site.images.frenchRoom3,
@@ -43,6 +47,7 @@ const roomConfig = {
     ],
   },
   suite: {
+    id: "suite-room",
     pageKey: "suiteRoom",
     images: [
       site.images.suiteRoom3,
@@ -55,6 +60,7 @@ const roomConfig = {
     ],
   },
   triple: {
+    id: "triple-room",
     pageKey: "tripleRoom",
     images: [
       site.images.tripleRoom4,
@@ -66,6 +72,7 @@ const roomConfig = {
     ],
   },
   twin: {
+    id: "twin-room",
     pageKey: "twinRoom",
     images: [
       site.images.twinRoom3,
@@ -95,6 +102,10 @@ export default async function RoomDetailPage({ params, roomKey }) {
     getTranslations({ locale, namespace: "navigation" }),
   ]);
   const room = roomConfig[roomKey];
+  const analyticsItem = createRoomAnalyticsItem({
+    id: room.id,
+    name: t(`${roomKey}.title`),
+  });
 
   const highlights = [
     { Icon: Maximize2, label: t("shared.size"), value: t(`${roomKey}.size`) },
@@ -130,6 +141,7 @@ export default async function RoomDetailPage({ params, roomKey }) {
           roomKey,
         })}
       />
+      <RoomDetailAnalytics item={analyticsItem} locale={locale} />
       <section className="bg-[#F7F5F1] px-5 pb-10 pt-32 sm:px-8 sm:pb-12 lg:px-10 lg:pt-40">
         <div className="mx-auto max-w-7xl">
           <Link
@@ -167,6 +179,7 @@ export default async function RoomDetailPage({ params, roomKey }) {
           </div>
 
           <RoomGallery
+            analyticsItem={analyticsItem}
             images={room.images}
             labels={{
               close: t("shared.galleryClose"),
@@ -174,6 +187,7 @@ export default async function RoomDetailPage({ params, roomKey }) {
               open: t("shared.galleryOpen"),
               previous: t("shared.galleryPrevious"),
             }}
+            locale={locale}
             title={t(`${roomKey}.title`)}
           />
         </div>
@@ -192,7 +206,11 @@ export default async function RoomDetailPage({ params, roomKey }) {
               {t("shared.bookingBody")}
             </p>
           </div>
-          <BookingBar embedded />
+          <BookingBar
+            analyticsItem={analyticsItem}
+            embedded
+            source="room_detail"
+          />
         </div>
       </section>
 

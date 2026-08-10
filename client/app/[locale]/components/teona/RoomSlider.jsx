@@ -2,16 +2,22 @@
 
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 import { Link } from "@/i18n/navigation";
+import { createRoomAnalyticsItem } from "@/lib/analytics";
 import { site } from "@/lib/site";
+import { RoomListAnalytics, TrackedRoomLink } from "./RoomAnalytics";
 
 export default function RoomSlider() {
   const t = useTranslations("home");
+  const locale = useLocale();
   const [index, setIndex] = useState(0);
+  const roomListId = "home_room_slider";
+  const roomListName = t("roomsTitle");
   const rooms = [
     {
+      id: "economy-room",
       image: site.images.economyRoom4,
       imagePosition: "center 60%",
       title: t("economyTitle"),
@@ -20,6 +26,7 @@ export default function RoomSlider() {
       href: "/rooms/economy-room",
     },
     {
+      id: "french-room",
       image: site.images.frenchRoom3,
       imagePosition: "center 58%",
       title: t("frenchTitle"),
@@ -28,6 +35,7 @@ export default function RoomSlider() {
       href: "/rooms/french-room",
     },
     {
+      id: "suite-room",
       image: site.images.suiteRoom3,
       imagePosition: "center 58%",
       title: t("suiteTitle"),
@@ -36,6 +44,7 @@ export default function RoomSlider() {
       href: "/rooms/suite-room",
     },
     {
+      id: "triple-room",
       image: site.images.tripleRoom4,
       imagePosition: "center 58%",
       title: t("tripleTitle"),
@@ -44,6 +53,7 @@ export default function RoomSlider() {
       href: "/rooms/triple-room",
     },
     {
+      id: "twin-room",
       image: site.images.twinRoom3,
       imagePosition: "center 58%",
       title: t("twinTitle"),
@@ -51,7 +61,16 @@ export default function RoomSlider() {
       body: t("twinBody"),
       href: "/rooms/twin-room",
     },
-  ];
+  ].map((room, roomIndex) => ({
+    ...room,
+    analyticsItem: createRoomAnalyticsItem({
+      id: room.id,
+      index: roomIndex,
+      listId: roomListId,
+      listName: roomListName,
+      name: room.title,
+    }),
+  }));
   const room = rooms[index];
 
   function previous() {
@@ -64,6 +83,12 @@ export default function RoomSlider() {
 
   return (
     <section className="relative overflow-hidden bg-white py-16 lg:py-24">
+      <RoomListAnalytics
+        items={rooms.map((sliderRoom) => sliderRoom.analyticsItem)}
+        listId={roomListId}
+        listName={roomListName}
+        locale={locale}
+      />
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-0">
         <div className="mb-8 lg:hidden">
           <h2 className="font-display text-3xl font-semibold uppercase text-[#24292c]">
@@ -115,12 +140,16 @@ export default function RoomSlider() {
               <div>
                 <h3 className="font-display text-2xl font-semibold text-[#24292c]">{room.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-[#696f73]">{room.body}</p>
-                <Link
+                <TrackedRoomLink
                   className="mt-4 inline-flex border-b border-[#24292c] pb-1 text-xs font-semibold uppercase tracking-[0.13em] text-[#24292c] transition-colors hover:text-[#a78b63]"
                   href={room.href}
+                  item={room.analyticsItem}
+                  listId={roomListId}
+                  listName={roomListName}
+                  locale={locale}
                 >
                   {t("roomDetailCta")}
-                </Link>
+                </TrackedRoomLink>
               </div>
               <p className="flex items-center gap-2 self-start whitespace-nowrap text-xs uppercase tracking-[0.08em] text-[#50565a]">
                 <Maximize2 aria-hidden="true" className="h-4 w-4" />

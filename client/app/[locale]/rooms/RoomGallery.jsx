@@ -3,8 +3,15 @@
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, Maximize2, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { pushAnalyticsEvent } from "@/lib/analytics";
 
-export default function RoomGallery({ images, labels, title }) {
+export default function RoomGallery({
+  analyticsItem,
+  images,
+  labels,
+  locale,
+  title,
+}) {
   const [activeIndex, setActiveIndex] = useState(null);
   const closeButtonRef = useRef(null);
   const triggerRefs = useRef([]);
@@ -14,9 +21,24 @@ export default function RoomGallery({ images, labels, title }) {
   const sideImages = galleryImages.slice(1);
   const remainingImageCount = Math.max(images.length - galleryImages.length, 0);
 
-  const openGallery = useCallback((index) => {
-    setActiveIndex(index);
-  }, []);
+  const openGallery = useCallback(
+    (index) => {
+      if (analyticsItem) {
+        pushAnalyticsEvent("view_room_gallery", {
+          gallery_image_count: images.length,
+          gallery_image_index: index + 1,
+          room_type: analyticsItem.item_id,
+          site_language: locale,
+          ecommerce: {
+            items: [analyticsItem],
+          },
+        });
+      }
+
+      setActiveIndex(index);
+    },
+    [analyticsItem, images.length, locale],
+  );
 
   const closeGallery = useCallback(() => {
     setActiveIndex((currentIndex) => {

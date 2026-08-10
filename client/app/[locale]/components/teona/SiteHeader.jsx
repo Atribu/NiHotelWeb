@@ -5,6 +5,7 @@ import { ArrowUpRight, Instagram, Mail, MapPin, Menu, Phone, X } from "lucide-re
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
+import { trackAnalyticsNavigation } from "@/lib/analytics";
 import { site } from "@/lib/site";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -132,6 +133,17 @@ export default function SiteHeader() {
             <a
               className="hidden min-h-11 items-center justify-center border border-white/75 bg-black/10 px-5 text-xs font-semibold uppercase tracking-[0.17em] transition-colors hover:bg-white hover:text-[#19334F] sm:inline-flex"
               href={bookingUrl}
+              onClick={(event) =>
+                trackAnalyticsNavigation(
+                  event,
+                  "begin_checkout",
+                  {
+                    booking_location: "header_desktop",
+                    site_language: locale,
+                  },
+                  bookingUrl,
+                )
+              }
             >
               {t("book")}
               <ArrowUpRight aria-hidden="true" className="ml-2 h-4 w-4" />
@@ -224,7 +236,18 @@ export default function SiteHeader() {
             <a
               className="inline-flex min-h-12 w-full items-center justify-center bg-[#19334F] px-5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-[#10273D]"
               href={bookingUrl}
-              onClick={() => setIsOpen(false)}
+              onClick={(event) => {
+                setIsOpen(false);
+                trackAnalyticsNavigation(
+                  event,
+                  "begin_checkout",
+                  {
+                    booking_location: "header_mobile_menu",
+                    site_language: locale,
+                  },
+                  bookingUrl,
+                );
+              }}
               tabIndex={isOpen ? 0 : -1}
             >
               {t("book")}
