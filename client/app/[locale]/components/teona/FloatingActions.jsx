@@ -2,6 +2,7 @@
 
 import { PhoneCall } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import { trackAnalyticsNavigation } from "@/lib/analytics";
 import { site } from "@/lib/site";
 
 export default function FloatingActions() {
@@ -22,6 +23,17 @@ export default function FloatingActions() {
       <a
         className="pointer-events-auto inline-flex min-h-11 min-w-[13rem] items-center justify-center border border-white/70 bg-[#dec7a6] px-6 text-xs font-semibold uppercase tracking-[0.14em] text-white shadow-lg md:hidden"
         href={bookingUrl}
+        onClick={(event) =>
+          trackAnalyticsNavigation(
+            event,
+            "begin_checkout",
+            {
+              booking_location: "floating_mobile",
+              site_language: locale,
+            },
+            bookingUrl,
+          )
+        }
       >
         {t("book")}
       </a>

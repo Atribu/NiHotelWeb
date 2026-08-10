@@ -3,6 +3,7 @@
 import { BellRing, Minus, Plus } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
+import { getStayNights, navigateAfterAnalytics } from "@/lib/analytics";
 import { site } from "@/lib/site";
 
 const CHILD_AGE_OPTIONS = Array.from({ length: 13 }, (_, age) => age);
@@ -36,7 +37,11 @@ function Counter({ className = "", label, value, minimum, maximum, onChange }) {
   );
 }
 
-export default function BookingBar({ embedded = false }) {
+export default function BookingBar({
+  analyticsItem = null,
+  embedded = false,
+  source = "homepage_booking_bar",
+}) {
   const t = useTranslations("booking");
   const locale = useLocale();
   const [checkIn, setCheckIn] = useState("");
@@ -82,7 +87,30 @@ export default function BookingBar({ embedded = false }) {
     }
 
     bookingUrl.searchParams.set("language", locale);
-    window.location.assign(bookingUrl.toString());
+
+    const stayNights = getStayNights(checkIn, checkOut);
+    const eventParameters = {
+      adult_count: adults,
+      booking_location: source,
+      child_count: children,
+      site_language: locale,
+    };
+
+    if (checkIn) eventParameters.checkin_month = checkIn.slice(0, 7);
+    if (stayNights) eventParameters.stay_nights = stayNights;
+
+    if (analyticsItem) {
+      eventParameters.room_type = analyticsItem.item_id;
+      eventParameters.ecommerce = {
+        items: [analyticsItem],
+      };
+    }
+
+    navigateAfterAnalytics(
+      analyticsItem ? "begin_checkout" : "search_availability",
+      eventParameters,
+      bookingUrl.toString(),
+    );
   }
 
   const dateFieldClassName = embedded
