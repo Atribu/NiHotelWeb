@@ -3,6 +3,9 @@ import { Armchair, Mail, MapPin, Presentation, UsersRound } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { buildPageMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
+import { faqStructuredData } from "@/lib/structuredData";
+import FaqSection from "../components/teona/FaqSection";
+import JsonLd from "../components/teona/JsonLd";
 import SeoStructuredData from "../components/teona/SeoStructuredData";
 
 const content = {
@@ -21,6 +24,22 @@ const content = {
     ctaTitle: "Toplantınızı birlikte planlayalım",
     ctaBody: "Tarih, katılımcı sayısı ve yerleşim tercihinizi iletin; ekibimiz uygunluk bilgisiyle size dönüş yapsın.",
     contact: "Teklif ve bilgi alın",
+    faqEyebrow: "Sık sorulan sorular",
+    faqTitle: "Toplantı salonu hakkında",
+    faqItems: [
+      {
+        question: "Toplantı salonunun kapasitesi nedir?",
+        answer: "Salon U düzeninde 40, sınıf düzeninde 80 kişiye kadar kullanılabilir. Katılımcı sayınızı ve tercih ettiğiniz yerleşimi talebinizde belirtebilirsiniz.",
+      },
+      {
+        question: "Salonda hangi organizasyonlar düzenlenebilir?",
+        answer: "Toplantı salonu iş toplantıları, eğitimler, seminerler ve kurumsal buluşmalar için değerlendirilebilir.",
+      },
+      {
+        question: "Uygunluk ve teklif bilgisini nasıl alabilirim?",
+        answer: `Tarih, katılımcı sayısı ve yerleşim tercihinizi iletişim sayfasından veya ${site.callCenterEmail} adresinden iletebilirsiniz. Ekibimiz güncel uygunluk bilgisiyle size dönüş yapar.`,
+      },
+    ],
   },
   en: {
     eyebrow: "Meetings and events",
@@ -37,6 +56,22 @@ const content = {
     ctaTitle: "Let us plan your meeting",
     ctaBody: "Share your date, guest count and preferred layout, and our team will respond with availability.",
     contact: "Request information",
+    faqEyebrow: "Frequently asked questions",
+    faqTitle: "About the meeting room",
+    faqItems: [
+      {
+        question: "What is the capacity of the meeting room?",
+        answer: "The room accommodates up to 40 guests in U-shape and up to 80 guests in classroom layout. Include your guest count and preferred setup in your enquiry.",
+      },
+      {
+        question: "What types of events can be held in the room?",
+        answer: "The meeting room can be considered for business meetings, training sessions, seminars and corporate gatherings.",
+      },
+      {
+        question: "How can I request availability and a quotation?",
+        answer: `Send your date, guest count and preferred layout through the contact page or to ${site.callCenterEmail}. Our team will reply with current availability.`,
+      },
+    ],
   },
   de: {
     eyebrow: "Tagungen und Veranstaltungen",
@@ -53,6 +88,22 @@ const content = {
     ctaTitle: "Planen wir Ihre Tagung gemeinsam",
     ctaBody: "Teilen Sie uns Datum, Teilnehmerzahl und gewünschte Bestuhlung mit; unser Team informiert Sie über die Verfügbarkeit.",
     contact: "Informationen anfordern",
+    faqEyebrow: "Häufig gestellte Fragen",
+    faqTitle: "Zum Tagungsraum",
+    faqItems: [
+      {
+        question: "Wie viele Personen fasst der Tagungsraum?",
+        answer: "Der Raum ist für bis zu 40 Personen in U-Form und bis zu 80 Personen bei Schulbestuhlung ausgelegt. Teilen Sie uns Teilnehmerzahl und gewünschte Bestuhlung in Ihrer Anfrage mit.",
+      },
+      {
+        question: "Welche Veranstaltungen können im Raum stattfinden?",
+        answer: "Der Tagungsraum eignet sich für Geschäftstreffen, Schulungen, Seminare und Firmenveranstaltungen.",
+      },
+      {
+        question: "Wie erhalte ich Informationen zu Verfügbarkeit und Angebot?",
+        answer: `Senden Sie Datum, Teilnehmerzahl und gewünschte Bestuhlung über die Kontaktseite oder an ${site.callCenterEmail}. Unser Team antwortet mit der aktuellen Verfügbarkeit.`,
+      },
+    ],
   },
   ru: {
     eyebrow: "Встречи и мероприятия",
@@ -69,6 +120,22 @@ const content = {
     ctaTitle: "Спланируем вашу встречу",
     ctaBody: "Сообщите дату, число участников и вариант рассадки — наша команда ответит по доступности.",
     contact: "Запросить информацию",
+    faqEyebrow: "Часто задаваемые вопросы",
+    faqTitle: "О конференц-зале",
+    faqItems: [
+      {
+        question: "Какова вместимость конференц-зала?",
+        answer: "Зал рассчитан на 40 человек при U-образной и до 80 человек при классной рассадке. Укажите число участников и желаемый вариант рассадки в запросе.",
+      },
+      {
+        question: "Какие мероприятия можно проводить в зале?",
+        answer: "Конференц-зал подходит для деловых встреч, обучения, семинаров и корпоративных мероприятий.",
+      },
+      {
+        question: "Как узнать о доступности и запросить предложение?",
+        answer: `Отправьте дату, число участников и вариант рассадки через страницу контактов или на адрес ${site.callCenterEmail}. Команда сообщит актуальную информацию о доступности.`,
+      },
+    ],
   },
 };
 
@@ -84,6 +151,7 @@ export default async function MeetingPage({ params }) {
   return (
     <main id="main-content" className="overflow-hidden bg-white text-[#30343A]">
       <SeoStructuredData locale={locale} items={[{ name: t.eyebrow, page: "meeting" }]} />
+      <JsonLd data={faqStructuredData({ items: t.faqItems })} />
 
       <section className="relative isolate flex min-h-[62vh] items-center justify-center overflow-hidden px-5 pb-14 pt-32 text-center sm:px-8 lg:min-h-[70vh] lg:px-12">
         <Image alt="" className="object-cover object-center" fill priority sizes="100vw" src={site.images.corridor} />
@@ -124,6 +192,12 @@ export default async function MeetingPage({ params }) {
           </div>
         </div>
       </section>
+
+      <FaqSection
+        eyebrow={t.faqEyebrow}
+        items={t.faqItems}
+        title={t.faqTitle}
+      />
 
       <section className="bg-[#19334F] px-5 py-16 text-center text-white sm:px-8 lg:px-10 lg:py-20">
         <Presentation className="mx-auto h-8 w-8 text-[#dec7a6]" strokeWidth={1.4} aria-hidden="true" />

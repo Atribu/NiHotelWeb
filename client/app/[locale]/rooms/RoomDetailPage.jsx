@@ -12,8 +12,9 @@ import { Link } from "@/i18n/navigation";
 import { createRoomAnalyticsItem } from "@/lib/analytics";
 import { site } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo";
-import { hotelRoomStructuredData } from "@/lib/structuredData";
+import { faqStructuredData, hotelRoomStructuredData } from "@/lib/structuredData";
 import BookingBar from "../components/teona/BookingBar";
+import FaqSection from "../components/teona/FaqSection";
 import JsonLd from "../components/teona/JsonLd";
 import { RoomDetailAnalytics } from "../components/teona/RoomAnalytics";
 import SeoStructuredData from "../components/teona/SeoStructuredData";
@@ -96,16 +97,21 @@ export async function generateRoomMetadata({ params, roomKey }) {
 
 export default async function RoomDetailPage({ params, roomKey }) {
   const { locale } = await params;
-  const [t, amenities, navigation] = await Promise.all([
+  const [t, amenities, navigation, faq] = await Promise.all([
     getTranslations({ locale, namespace: "roomDetails" }),
     getTranslations({ locale, namespace: "amenities" }),
     getTranslations({ locale, namespace: "navigation" }),
+    getTranslations({ locale, namespace: "faq" }),
   ]);
   const room = roomConfig[roomKey];
   const analyticsItem = createRoomAnalyticsItem({
     id: room.id,
     name: t(`${roomKey}.title`),
   });
+  const faqItems = [
+    ...faq.raw(`roomDetails.${roomKey}.items`),
+    ...faq.raw("roomDetails.sharedItems"),
+  ];
 
   const highlights = [
     { Icon: Maximize2, label: t("shared.size"), value: t(`${roomKey}.size`) },
@@ -141,6 +147,7 @@ export default async function RoomDetailPage({ params, roomKey }) {
           roomKey,
         })}
       />
+      <JsonLd data={faqStructuredData({ items: faqItems })} />
       <RoomDetailAnalytics item={analyticsItem} locale={locale} />
       <section className="bg-[#F7F5F1] px-5 pb-10 pt-32 sm:px-8 sm:pb-12 lg:px-10 lg:pt-40">
         <div className="mx-auto max-w-7xl">
@@ -273,6 +280,12 @@ export default async function RoomDetailPage({ params, roomKey }) {
           </div>
         </div>
       </section>
+
+      <FaqSection
+        eyebrow={faq("eyebrow")}
+        items={faqItems}
+        title={faq(`roomDetails.${roomKey}.title`)}
+      />
 
       <section className="bg-white px-5 py-16 text-center sm:px-8 lg:px-10 lg:py-20">
         <div className="mx-auto max-w-3xl">

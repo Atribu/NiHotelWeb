@@ -4,6 +4,9 @@ import { getTranslations } from "next-intl/server";
 import ContactForm from "../components/teona/ContactForm";
 import { site } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqStructuredData } from "@/lib/structuredData";
+import FaqSection from "../components/teona/FaqSection";
+import JsonLd from "../components/teona/JsonLd";
 import SeoStructuredData from "../components/teona/SeoStructuredData";
 
 export async function generateMetadata({ params }) {
@@ -13,7 +16,11 @@ export async function generateMetadata({ params }) {
 
 export default async function ContactPage({ params }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "contact" });
+  const [t, faq] = await Promise.all([
+    getTranslations({ locale, namespace: "contact" }),
+    getTranslations({ locale, namespace: "faq" }),
+  ]);
+  const faqItems = faq.raw("contact.items");
 
   const contactItems = [
     {
@@ -42,6 +49,7 @@ export default async function ContactPage({ params }) {
   return (
     <main id="main-content" className="overflow-hidden bg-white text-[#30343A]">
       <SeoStructuredData locale={locale} items={[{ name: t("title"), page: "contact" }]} />
+      <JsonLd data={faqStructuredData({ items: faqItems })} />
       <section className="relative isolate flex min-h-[55vh] items-center justify-center overflow-hidden px-5 pb-14 pt-32 text-center sm:min-h-[60vh] sm:px-8 lg:min-h-[68vh] lg:px-12">
         <Image
           src={site.images.hero}
@@ -120,6 +128,12 @@ export default async function ContactPage({ params }) {
           </div>
         </div>
       </section>
+
+      <FaqSection
+        eyebrow={faq("eyebrow")}
+        items={faqItems}
+        title={faq("contact.title")}
+      />
 
       <section className="bg-white px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
         <div className="mx-auto max-w-6xl">
