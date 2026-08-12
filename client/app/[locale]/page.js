@@ -15,7 +15,10 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqStructuredData } from "@/lib/structuredData";
 import BookingBar from "./components/teona/BookingBar";
+import FaqSection from "./components/teona/FaqSection";
+import JsonLd from "./components/teona/JsonLd";
 import RoomSlider from "./components/teona/RoomSlider";
 import SeoStructuredData from "./components/teona/SeoStructuredData";
 
@@ -33,12 +36,14 @@ export async function generateMetadata({ params }) {
 
 export default async function HomePage({ params }) {
   const { locale } = await params;
-  const [t, amenities, navigation, footer] = await Promise.all([
+  const [t, amenities, navigation, footer, faq] = await Promise.all([
     getTranslations("home"),
     getTranslations("amenities"),
     getTranslations("navigation"),
     getTranslations("footer"),
+    getTranslations("faq"),
   ]);
+  const faqItems = faq.raw("home.items");
 
   const amenityItems = [
     { key: "wifi", icon: Wifi },
@@ -63,6 +68,7 @@ export default async function HomePage({ params }) {
   return (
     <main className="overflow-hidden bg-white" id="main-content">
       <SeoStructuredData locale={locale} items={[]} />
+      <JsonLd data={faqStructuredData({ items: faqItems })} />
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#24292c] lg:min-h-[calc(100svh-6rem)]">
         <Image
           alt=""
@@ -283,6 +289,12 @@ export default async function HomePage({ params }) {
           ))}
         </dl>
       </section>
+
+      <FaqSection
+        eyebrow={faq("eyebrow")}
+        items={faqItems}
+        title={faq("home.title")}
+      />
 
       <section className="relative overflow-hidden bg-[#f4f1eb] px-5 py-20 sm:px-8 lg:px-14 lg:py-28">
         <div className="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full border border-[#dec7a6]/30" />

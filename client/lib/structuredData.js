@@ -114,3 +114,37 @@ export function hotelRoomStructuredData({ locale, page, name, description, image
     },
   };
 }
+
+export function faqStructuredData({ items }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map(({ answer, question }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer,
+      },
+    })),
+  };
+}
+
+export function cityGuideStructuredData({ locale, name, items }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    inLanguage: localeNames[locale] ?? localeNames.tr,
+    itemListElement: items.map(({ title, value, body, url }, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "Place",
+        name: title,
+        description: `${value}. ${body}`,
+        url,
+      },
+    })),
+  };
+}

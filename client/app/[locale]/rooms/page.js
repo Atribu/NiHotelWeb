@@ -10,6 +10,9 @@ import { getTranslations } from "next-intl/server";
 import { createRoomAnalyticsItem } from "@/lib/analytics";
 import { site } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqStructuredData } from "@/lib/structuredData";
+import FaqSection from "../components/teona/FaqSection";
+import JsonLd from "../components/teona/JsonLd";
 import {
   RoomListAnalytics,
   TrackedRoomLink,
@@ -23,7 +26,11 @@ export async function generateMetadata({ params }) {
 
 export default async function RoomsPage({ params }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "rooms" });
+  const [t, faq] = await Promise.all([
+    getTranslations({ locale, namespace: "rooms" }),
+    getTranslations({ locale, namespace: "faq" }),
+  ]);
+  const faqItems = faq.raw("rooms.items");
   const roomListId = "rooms_page";
   const roomListName = t("title");
 
@@ -95,6 +102,7 @@ export default async function RoomsPage({ params }) {
   return (
     <main id="main-content" className="overflow-hidden bg-white text-[#30343A]">
       <SeoStructuredData locale={locale} items={[{ name: t("title"), page: "rooms" }]} />
+      <JsonLd data={faqStructuredData({ items: faqItems })} />
       <RoomListAnalytics
         items={rooms.map((room) => room.analyticsItem)}
         listId={roomListId}
@@ -216,6 +224,12 @@ export default async function RoomsPage({ params }) {
           </div>
         </div>
       </section>
+
+      <FaqSection
+        eyebrow={faq("eyebrow")}
+        items={faqItems}
+        title={faq("rooms.title")}
+      />
     </main>
   );
 }

@@ -18,8 +18,8 @@
   },
   "home": {
     "eyebrow": "İzmit'in merkezinde",
-    "title": "Şehrin ritmine yakın, kendinize ait bir mola",
-    "subtitle": "Teona Hotel, 2010'dan bu yana 44 odası ve şehir konaklamasına eşlik eden olanaklarıyla misafirlerini ağırlıyor.",
+    "title": "İzmit merkezde konforlu ve pratik konaklama",
+    "subtitle": "Şehrin ritmine yakın Teona Hotel, iş seyahatleri, kısa şehir konaklamaları ve hafta sonu ziyaretleri için beş farklı oda seçeneği sunar.",
     "primaryCta": "Odaları inceleyin",
     "secondaryCta": "İletişime geçin",
     "stats": {
@@ -33,8 +33,8 @@
       "meetingLabel": "Sınıf düzeninde kapasite"
     },
     "introEyebrow": "Teona Hotel",
-    "introTitle": "İzmit merkezinde konforlu şehir konaklaması",
-    "introBody": "Teona Hotel, 44 odası ve beş farklı oda tipiyle; Wi-Fi, otopark, uydu yayını, fitness merkezi ve sauna olanaklarını konforlu bir şehir konaklamasında bir araya getirir.",
+    "introTitle": "İzmit merkezde konforlu ve pratik konaklama",
+    "introBody": "Teona Hotel, 44 odası ve beş oda tipiyle iş seyahatleri, kısa şehir konaklamaları ve hafta sonu ziyaretleri için Wi-Fi, otopark, fitness merkezi ve sauna olanakları sunar.",
     "roomsEyebrow": "Odalar",
     "roomsTitle": "İhtiyacınıza uygun beş oda seçeneği",
     "roomsBody": "Eko, French, Suit, Triple ve Twin oda seçenekleri farklı yatak düzenleri ve konaklama ihtiyaçları için sunulur.",
@@ -126,51 +126,51 @@
     },
     "economy": {
       "title": "Eko Oda",
-      "meta": "Ekonomik konaklama seçeneği",
-      "intro": "Eko Oda, İzmit merkezinde 15–20 m² alanda sade ve işlevsel bir şehir konaklaması sunar.",
-      "detailTitle": "Şehir programları için pratik bir oda",
-      "body1": "15–20 m² Eko Oda, şehir programları için temel konaklama ihtiyaçlarını işlevsel bir düzende bir araya getirir.",
-      "body2": "Konaklama süresince ücretsiz Wi-Fi ve otoparktan, uydu yayınından, fitness merkezinden ve saunadan yararlanabilirsiniz.",
+      "meta": "Kısa şehir konaklamaları için pratik seçenek",
+      "intro": "Eko Oda, İzmit merkezinde ekonomik, sade ve işlevsel bir konaklama arayan misafirler için 15–20 m² kullanım alanı sunar.",
+      "detailTitle": "Şehir ve iş programları için işlevsel",
+      "body1": "Kompakt oda düzeni; kısa süreli iş seyahatlerinde, şehir ziyaretlerinde veya günün büyük bölümünü dışarıda geçireceğiniz programlarda ihtiyaç duyulan dinlenme alanını pratik biçimde sunar. Eko Oda, gereksiz ayrıntılardan uzak ve bütçesini gözeten bir konaklama tercih eden misafirler için hazırlanmıştır.",
+      "body2": "Oda fotoğraflarından farklı kullanım açılarını inceleyebilir, tarih ve kişi bilgilerinizi rezervasyon alanından belirleyebilirsiniz. Konaklamanız boyunca otel genelindeki ücretsiz Wi-Fi ve otoparkın yanı sıra uydu yayını, fitness merkezi ve sauna olanaklarından yararlanabilirsiniz.",
       "size": "15–20 m²",
       "capacity": "Ekonomik oda düzeni"
     },
     "french": {
       "title": "French Oda",
-      "meta": "French yatak düzeni",
-      "intro": "French Oda, 15–20 m² alanda çift kişilik French yatak tercih eden misafirler için hazırlanmıştır.",
-      "detailTitle": "Çift kişilik konaklama düzeni",
-      "body1": "15–20 m² oda alanı ve French yatak düzeni, çift kişilik şehir konaklamasına uygun işlevsel bir deneyim sunar.",
-      "body2": "Konaklama süresince ücretsiz Wi-Fi ve otoparktan, uydu yayınından, fitness merkezinden ve saunadan yararlanabilirsiniz.",
+      "meta": "Çift kişilik French yatak düzeni",
+      "intro": "French Oda, 15–20 m² alanda çift kişilik French yatak tercih eden misafirler için rahat ve düzenli bir şehir konaklaması sunar.",
+      "detailTitle": "Çiftler ve tek kişilik konaklamalar için",
+      "body1": "French yataklı oda düzeni, İzmit'teki iş veya şehir programlarında aynı yatağı paylaşan iki misafire uygun bir konaklama alanı sağlar. Tek başına seyahat ederken daha geniş yatak tercih eden misafirler de 15–20 m² büyüklüğündeki bu oda tipini değerlendirebilir.",
+      "body2": "Galeride French Oda'nın yatak yerleşimini, mobilyalarını ve farklı çekim açılarını inceleyebilirsiniz. Tarihlerinizi seçerek rezervasyon sayfasına geçebilir; konaklama sırasında ücretsiz Wi-Fi, otopark, uydu yayını, fitness merkezi ve sauna gibi ortak otel olanaklarından yararlanabilirsiniz.",
       "size": "15–20 m²",
       "capacity": "French yatak"
     },
     "suite": {
       "title": "Suit Oda",
-      "meta": "Geniş konaklama alanı",
-      "intro": "Suit Oda, 25 m² oda alanı ve terasıyla daha geniş bir konaklama tercih eden misafirler için sunulur.",
-      "detailTitle": "Daha ferah bir konaklama alanı",
-      "body1": "25 m² Suit Oda, dinlenme ve konaklama alanını daha ferah bir düzende bir araya getirir; galeri teras detaylarını da gösterir.",
-      "body2": "Ücretsiz Wi-Fi ve otopark, uydu yayını, fitness merkezi ve sauna ortak otel olanakları arasındadır.",
+      "meta": "25 m² oda alanı ve teras",
+      "intro": "Suit Oda, 25 m² kullanım alanı ve terasıyla daha ferah bir konaklama düzeni arayan misafirler için hazırlanmıştır.",
+      "detailTitle": "Geniş oda düzeni ve açık hava alanı",
+      "body1": "Odanın geniş yerleşimi, dinlenme ve konaklama alanlarını aynı ortamda daha rahat kullanmaya imkân verir. İzmit'te daha uzun süre kalacak, odasında daha fazla hareket alanı isteyen veya günün bir bölümünü otelde geçirmeyi planlayan misafirler için alternatif oluşturur.",
+      "body2": "Suit Oda galerisi hem iç mekânı hem de odaya ait terası farklı açılardan gösterir. Uygun tarihleri rezervasyon alanından kontrol edebilir; konaklamanız boyunca ücretsiz Wi-Fi, otopark, uydu yayını, fitness merkezi ve sauna gibi ortak otel olanaklarından yararlanabilirsiniz.",
       "size": "25 m²",
       "capacity": "Geniş konaklama düzeni"
     },
     "triple": {
       "title": "Triple Oda",
-      "meta": "Üç kişilik konaklama",
-      "intro": "Triple Oda, 15–20 m² alanda üç kişilik konaklama ihtiyaçlarına uygun yatak düzeni sunar.",
-      "detailTitle": "Üç kişilik konaklamaya uygun",
-      "body1": "15–20 m² Triple Oda, birlikte seyahat eden üç misafirin konaklama ihtiyacına göre düzenlenmiştir.",
-      "body2": "Konaklama süresince ücretsiz Wi-Fi ve otoparktan, uydu yayınından, fitness merkezinden ve saunadan yararlanabilirsiniz.",
+      "meta": "Birlikte seyahat eden üç misafir için",
+      "intro": "Triple Oda, 15–20 m² alanda üç kişilik konaklama ihtiyacına uygun yatak düzeniyle ailelere ve küçük gruplara hitap eder.",
+      "detailTitle": "Üç kişilik şehir konaklamasına uygun",
+      "body1": "Aynı odada konaklamak isteyen üç misafir için hazırlanan düzen, aile ziyaretleri, arkadaş seyahatleri ve kısa şehir programlarında oda seçimini kolaylaştırır. 15–20 m² kullanım alanındaki yatak yerleşimi oda fotoğraflarında farklı açılardan görülebilir; görünüm oda düzenine göre değişiklik gösterebilir.",
+      "body2": "Giriş ve çıkış tarihleriyle yetişkin ve çocuk sayılarını rezervasyon alanından seçerek güncel uygunluğa geçebilirsiniz. Konaklamanız boyunca ücretsiz Wi-Fi, otopark, uydu yayını, fitness merkezi ve sauna gibi otel genelinde sunulan olanaklardan yararlanabilirsiniz.",
       "size": "15–20 m²",
       "capacity": "Üç kişilik yatak düzeni"
     },
     "twin": {
       "title": "Twin Oda",
-      "meta": "İki ayrı yatak",
-      "intro": "Twin Oda, 15–20 m² alanda aynı odada iki ayrı yatak tercih eden misafirler için hazırlanmıştır.",
-      "detailTitle": "İki ayrı yatakla esnek konaklama",
-      "body1": "15–20 m² oda alanındaki Twin yatak düzeni, birlikte seyahat eden ve ayrı yatak tercih eden iki misafir için uygundur.",
-      "body2": "Konaklama süresince ücretsiz Wi-Fi ve otoparktan, uydu yayınından, fitness merkezinden ve saunadan yararlanabilirsiniz.",
+      "meta": "Aynı odada iki ayrı yatak",
+      "intro": "Twin Oda, 15–20 m² alanda aynı odayı paylaşırken iki ayrı yatak tercih eden misafirler için esnek bir konaklama sunar.",
+      "detailTitle": "İş arkadaşları ve birlikte seyahat edenler için",
+      "body1": "İki ayrı yataklı oda düzeni; iş seyahatine birlikte çıkan çalışma arkadaşları, arkadaş grupları veya kişisel uyku alanını korumak isteyen iki misafir için uygundur. 15–20 m² kullanım alanı, İzmit'teki kısa şehir ve iş programları için işlevsel bir konaklama düzeni sağlar.",
+      "body2": "Twin Oda galerisinden yatak yerleşimini ve odanın farklı açılarını inceleyebilir, ardından konaklama tarihlerinizi rezervasyon alanından seçebilirsiniz. Otel genelindeki ücretsiz Wi-Fi ve otoparkın yanı sıra uydu yayını, fitness merkezi ve sauna olanakları konaklama süresince kullanımınıza sunulur.",
       "size": "15–20 m²",
       "capacity": "İki ayrı yatak"
     }
@@ -237,6 +237,149 @@
     "mapTitle": "Haritada Teona Hotel",
     "call": "Hemen arayın",
     "write": "E-posta gönderin"
+  },
+  "faq": {
+    "eyebrow": "Sık sorulan sorular",
+    "home": {
+      "title": "Teona Hotel hakkında merak edilenler",
+      "items": [
+        {
+          "question": "Teona Hotel nerede bulunuyor?",
+          "answer": "Teona Hotel, Mehmet Ali Paşa Mahallesi, Bağdat Caddesi, Erkan Sokak No:3 adresinde; İzmit merkezinde hizmet verir."
+        },
+        {
+          "question": "Otelde hangi oda tipleri bulunuyor?",
+          "answer": "Teona Hotel'de Eko, French, Suit, Triple ve Twin olmak üzere beş oda tipi ve toplam 44 oda bulunur."
+        },
+        {
+          "question": "Konaklama sırasında hangi olanaklardan yararlanabilirim?",
+          "answer": "Otel genelinde Wi-Fi ve otoparkın yanı sıra uydu yayını, fitness merkezi ve sauna olanakları sunulur."
+        },
+        {
+          "question": "Nasıl rezervasyon yapabilirim?",
+          "answer": "Ana sayfadaki rezervasyon alanından tarih ve kişi bilgilerinizi seçerek güncel rezervasyon sistemine geçebilir veya otelle telefon ve e-posta yoluyla iletişime geçebilirsiniz."
+        }
+      ]
+    },
+    "rooms": {
+      "title": "Oda seçimi hakkında",
+      "items": [
+        {
+          "question": "Hangi oda tipini seçebilirim?",
+          "answer": "Konaklama ihtiyacınıza göre Eko, French, Suit, Triple veya Twin oda seçeneklerini değerlendirebilirsiniz. Her oda sayfasında yatak düzeni, alan bilgisi ve fotoğraflar bulunur."
+        },
+        {
+          "question": "İki ayrı yatak hangi odada bulunuyor?",
+          "answer": "Twin Oda, aynı odada iki ayrı yatak tercih eden iki misafir için hazırlanmıştır."
+        },
+        {
+          "question": "Üç kişilik konaklama için hangi oda uygundur?",
+          "answer": "Triple Oda, birlikte seyahat eden üç misafire uygun yatak düzeni sunar."
+        },
+        {
+          "question": "Teraslı oda seçeneği var mı?",
+          "answer": "Suit Oda 25 m² kullanım alanına ve odaya ait terasa sahiptir."
+        }
+      ]
+    },
+    "roomDetails": {
+      "sharedItems": [
+        {
+          "question": "Oda konaklamasına hangi otel olanakları dahildir?",
+          "answer": "Konaklama süresince otel genelindeki Wi-Fi ve otoparkın yanı sıra uydu yayını, fitness merkezi ve sauna olanaklarından yararlanabilirsiniz."
+        },
+        {
+          "question": "Oda uygunluğunu nasıl kontrol edebilirim?",
+          "answer": "Sayfadaki rezervasyon alanından giriş ve çıkış tarihleriyle yetişkin ve çocuk sayılarını seçerek güncel rezervasyon sistemine geçebilirsiniz."
+        }
+      ],
+      "economy": {
+        "title": "Eko Oda hakkında",
+        "items": [
+          {
+            "question": "Eko Oda kaç metrekaredir?",
+            "answer": "Eko Oda 15–20 m² kullanım alanına sahiptir."
+          },
+          {
+            "question": "Eko Oda kimler için uygundur?",
+            "answer": "Eko Oda, ekonomik ve işlevsel bir seçenek arayan kısa süreli iş veya şehir seyahati misafirlerine hitap eder."
+          }
+        ]
+      },
+      "french": {
+        "title": "French Oda hakkında",
+        "items": [
+          {
+            "question": "French Oda'nın yatak düzeni nasıldır?",
+            "answer": "French Oda, çift kişilik French yatak düzenine sahiptir."
+          },
+          {
+            "question": "French Oda kaç metrekaredir?",
+            "answer": "French Oda 15–20 m² kullanım alanı sunar."
+          }
+        ]
+      },
+      "suite": {
+        "title": "Suit Oda hakkında",
+        "items": [
+          {
+            "question": "Suit Oda kaç metrekaredir?",
+            "answer": "Suit Oda 25 m² kullanım alanına sahiptir."
+          },
+          {
+            "question": "Suit Oda'da teras bulunuyor mu?",
+            "answer": "Evet. Suit Oda, odaya ait terasıyla birlikte sunulur."
+          }
+        ]
+      },
+      "triple": {
+        "title": "Triple Oda hakkında",
+        "items": [
+          {
+            "question": "Triple Oda kimler için uygundur?",
+            "answer": "Triple Oda, aynı odada konaklamak isteyen üç misafir, aileler ve küçük gruplar için hazırlanmıştır."
+          },
+          {
+            "question": "Triple Oda kaç metrekaredir?",
+            "answer": "Triple Oda 15–20 m² kullanım alanı sunar."
+          }
+        ]
+      },
+      "twin": {
+        "title": "Twin Oda hakkında",
+        "items": [
+          {
+            "question": "Twin Oda'nın yatak düzeni nasıldır?",
+            "answer": "Twin Oda, aynı odada iki ayrı yatak tercih eden misafirler için hazırlanmıştır."
+          },
+          {
+            "question": "Twin Oda kaç metrekaredir?",
+            "answer": "Twin Oda 15–20 m² kullanım alanına sahiptir."
+          }
+        ]
+      }
+    },
+    "contact": {
+      "title": "İletişim ve ulaşım hakkında",
+      "items": [
+        {
+          "question": "Teona Hotel ile nasıl iletişime geçebilirim?",
+          "answer": "Otele +90 262 325 95 95 numaralı telefondan, info@teonahotel.com veya callcenter@teonahotel.com adreslerinden ulaşabilirsiniz."
+        },
+        {
+          "question": "Otelin açık adresi nedir?",
+          "answer": "Teona Hotel, Mehmet Ali Paşa Mahallesi, Bağdat Caddesi, Erkan Sokak No:3, Bekirpaşa, İzmit / Kocaeli adresindedir."
+        },
+        {
+          "question": "Rezervasyon hakkında nereden bilgi alabilirim?",
+          "answer": "Rezervasyon uygunluğu ve yatak düzeni hakkında bilgi almak için rezervasyon alanını kullanabilir veya çağrı merkezi e-posta adresinden otelle doğrudan iletişime geçebilirsiniz."
+        },
+        {
+          "question": "Otelde otopark bulunuyor mu?",
+          "answer": "Evet. Teona Hotel misafirlerine otopark olanağı sunar."
+        }
+      ]
+    }
   },
   "booking": {
     "title": "Rezervasyon bilgileri",

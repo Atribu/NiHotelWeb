@@ -126,51 +126,51 @@
     },
     "economy": {
       "title": "Economy Room",
-      "meta": "An economical stay",
-      "intro": "The 15–20 m² Economy Room is a simple and practical option for a stay in central Izmit.",
-      "detailTitle": "A practical room for city plans",
-      "body1": "The 15–20 m² Economy Room brings essential accommodation needs together in a functional layout for city plans.",
-      "body2": "Free Wi-Fi and parking, satellite TV, the fitness centre and sauna are available during your stay.",
+      "meta": "A practical choice for short city stays",
+      "intro": "The 15–20 m² Economy Room is designed for guests seeking an economical, simple and functional stay in central Izmit.",
+      "detailTitle": "Functional for city visits and business plans",
+      "body1": "Its compact layout provides a practical place to rest during short business trips, city visits or schedules that keep you out for most of the day. The Economy Room suits guests who value a straightforward stay and want to keep their accommodation budget under control.",
+      "body2": "Browse the room photographs from different angles, then enter your dates and guest details in the reservation bar. During your stay, you can use the hotel's free Wi-Fi and parking as well as satellite TV, the fitness centre and sauna.",
       "size": "15–20 m²",
       "capacity": "Economy room layout"
     },
     "french": {
       "title": "French Room",
-      "meta": "French bed layout",
-      "intro": "The 15–20 m² French Room is prepared for guests who prefer a double French bed.",
-      "detailTitle": "A double-room arrangement",
-      "body1": "The 15–20 m² room and French-bed layout offer a functional experience suited to double occupancy.",
-      "body2": "Free Wi-Fi and parking, satellite TV, the fitness centre and sauna are available during your stay.",
+      "meta": "Double French-bed layout",
+      "intro": "The 15–20 m² French Room offers an organised city stay for guests who prefer a double French bed.",
+      "detailTitle": "For couples and single occupancy",
+      "body1": "The French-bed layout provides a suitable accommodation area for two guests sharing a bed during a business or city visit to Izmit. Guests travelling alone who prefer a wider bed can also consider this 15–20 m² room category.",
+      "body2": "The gallery shows the French Room's bed arrangement, furniture and different viewing angles. Choose your dates to continue to the reservation page, and use free Wi-Fi, parking, satellite TV, the fitness centre and sauna among the hotel's shared facilities during your stay.",
       "size": "15–20 m²",
       "capacity": "French bed"
     },
     "suite": {
       "title": "Suite Room",
-      "meta": "A more spacious stay",
-      "intro": "The 25 m² Suite Room and terrace are offered to guests who prefer a larger accommodation area.",
-      "detailTitle": "A more spacious stay area",
-      "body1": "The 25 m² Suite Room combines rest and accommodation in a more spacious layout; the gallery also shows its terrace.",
-      "body2": "Free Wi-Fi and parking, satellite TV, the fitness centre and sauna are available as shared hotel facilities.",
+      "meta": "25 m² room with a terrace",
+      "intro": "The 25 m² Suite Room and its terrace are prepared for guests who prefer a more spacious accommodation layout.",
+      "detailTitle": "A generous room layout and outdoor space",
+      "body1": "The wider layout allows the resting and accommodation areas to be used more comfortably within the same room. It is an alternative for guests planning a longer stay in Izmit, seeking more freedom of movement or expecting to spend part of the day at the hotel.",
+      "body2": "The Suite Room gallery presents both the interior and its terrace from several angles. Check available dates through the reservation bar, and enjoy shared hotel facilities including free Wi-Fi, parking, satellite TV, the fitness centre and sauna during your stay.",
       "size": "25 m²",
       "capacity": "Spacious room layout"
     },
     "triple": {
       "title": "Triple Room",
-      "meta": "For three guests",
-      "intro": "The 15–20 m² Triple Room offers a bed layout suited to three guests.",
-      "detailTitle": "Arranged for three guests",
-      "body1": "The 15–20 m² Triple Room is arranged around the needs of three people travelling together.",
-      "body2": "Free Wi-Fi and parking, satellite TV, the fitness centre and sauna are available during your stay.",
+      "meta": "For three guests travelling together",
+      "intro": "The 15–20 m² Triple Room serves families and small groups with a bed layout suited to three guests.",
+      "detailTitle": "Suited to a three-person city stay",
+      "body1": "Designed for three guests who want to share the same room, this category simplifies room selection for family visits, trips with friends and short city plans. The gallery shows the 15–20 m² room and its bed placement from different angles; individual layouts may vary.",
+      "body2": "Select check-in and check-out dates and the number of adults and children to continue to current availability. During your stay, free Wi-Fi, parking, satellite TV, the fitness centre and sauna are available as shared hotel facilities.",
       "size": "15–20 m²",
       "capacity": "Three-guest bed layout"
     },
     "twin": {
       "title": "Twin Room",
-      "meta": "Two separate beds",
-      "intro": "The 15–20 m² Twin Room is prepared for guests who prefer two separate beds in the same room.",
-      "detailTitle": "A flexible stay with separate beds",
-      "body1": "The 15–20 m² room and twin-bed layout suit two people travelling together who prefer separate beds.",
-      "body2": "Free Wi-Fi and parking, satellite TV, the fitness centre and sauna are available during your stay.",
+      "meta": "Two separate beds in one room",
+      "intro": "The 15–20 m² Twin Room offers a flexible stay for guests who want to share a room while using separate beds.",
+      "detailTitle": "For colleagues and travel companions",
+      "body1": "The two-bed layout suits colleagues travelling for business, friends sharing a trip or any two guests who prefer their own sleeping space. Its 15–20 m² area provides a functional accommodation arrangement for short business and city schedules in Izmit.",
+      "body2": "Use the Twin Room gallery to review the bed arrangement and different views, then select your stay dates in the reservation bar. Free Wi-Fi and parking, satellite TV, the fitness centre and sauna are available as shared hotel facilities throughout your stay.",
       "size": "15–20 m²",
       "capacity": "Two separate beds"
     }
@@ -237,6 +237,149 @@
     "mapTitle": "Teona Hotel on the map",
     "call": "Call now",
     "write": "Send an email"
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "home": {
+      "title": "About Teona Hotel",
+      "items": [
+        {
+          "question": "Where is Teona Hotel located?",
+          "answer": "Teona Hotel is located at Mehmet Ali Paşa Mahallesi, Bağdat Caddesi, Erkan Sokak No:3 in central İzmit."
+        },
+        {
+          "question": "What room types are available at the hotel?",
+          "answer": "Teona Hotel has 44 rooms across five categories: Economy, French, Suite, Triple and Twin."
+        },
+        {
+          "question": "Which facilities can I use during my stay?",
+          "answer": "The hotel offers Wi-Fi and parking as well as satellite television, a fitness centre and a sauna."
+        },
+        {
+          "question": "How can I make a reservation?",
+          "answer": "Select your dates and guest details in the booking bar on the home page to continue to the live reservation system, or contact the hotel by telephone or email."
+        }
+      ]
+    },
+    "rooms": {
+      "title": "Choosing your room",
+      "items": [
+        {
+          "question": "Which room type can I choose?",
+          "answer": "Depending on your stay, you can choose an Economy, French, Suite, Triple or Twin room. Each room page includes its bed layout, floor area and photographs."
+        },
+        {
+          "question": "Which room has two separate beds?",
+          "answer": "The Twin Room is arranged for two guests who prefer separate beds in the same room."
+        },
+        {
+          "question": "Which room is suitable for three guests?",
+          "answer": "The Triple Room offers a bed arrangement suitable for three guests travelling together."
+        },
+        {
+          "question": "Is there a room with a terrace?",
+          "answer": "The Suite Room has 25 m² of floor space and its own terrace."
+        }
+      ]
+    },
+    "roomDetails": {
+      "sharedItems": [
+        {
+          "question": "Which hotel facilities are available with the room stay?",
+          "answer": "During your stay, you can use the hotel's Wi-Fi and parking as well as satellite television, the fitness centre and sauna."
+        },
+        {
+          "question": "How can I check room availability?",
+          "answer": "Select your check-in and check-out dates and the number of adults and children in the booking bar to continue to the live reservation system."
+        }
+      ],
+      "economy": {
+        "title": "About the Economy Room",
+        "items": [
+          {
+            "question": "How large is the Economy Room?",
+            "answer": "The Economy Room offers 15–20 m² of floor space."
+          },
+          {
+            "question": "Who is the Economy Room suitable for?",
+            "answer": "The Economy Room is intended for guests seeking a practical and economical option for a short business trip or city stay."
+          }
+        ]
+      },
+      "french": {
+        "title": "About the French Room",
+        "items": [
+          {
+            "question": "What is the bed layout in the French Room?",
+            "answer": "The French Room features a double French bed."
+          },
+          {
+            "question": "How large is the French Room?",
+            "answer": "The French Room offers 15–20 m² of floor space."
+          }
+        ]
+      },
+      "suite": {
+        "title": "About the Suite Room",
+        "items": [
+          {
+            "question": "How large is the Suite Room?",
+            "answer": "The Suite Room offers 25 m² of floor space."
+          },
+          {
+            "question": "Does the Suite Room have a terrace?",
+            "answer": "Yes. The Suite Room includes its own terrace."
+          }
+        ]
+      },
+      "triple": {
+        "title": "About the Triple Room",
+        "items": [
+          {
+            "question": "Who is the Triple Room suitable for?",
+            "answer": "The Triple Room is arranged for three guests, families or small groups who want to stay together."
+          },
+          {
+            "question": "How large is the Triple Room?",
+            "answer": "The Triple Room offers 15–20 m² of floor space."
+          }
+        ]
+      },
+      "twin": {
+        "title": "About the Twin Room",
+        "items": [
+          {
+            "question": "What is the bed layout in the Twin Room?",
+            "answer": "The Twin Room is arranged for guests who prefer two separate beds in the same room."
+          },
+          {
+            "question": "How large is the Twin Room?",
+            "answer": "The Twin Room offers 15–20 m² of floor space."
+          }
+        ]
+      }
+    },
+    "contact": {
+      "title": "Contact and directions",
+      "items": [
+        {
+          "question": "How can I contact Teona Hotel?",
+          "answer": "You can reach the hotel on +90 262 325 95 95 or by email at info@teonahotel.com and callcenter@teonahotel.com."
+        },
+        {
+          "question": "What is the hotel's full address?",
+          "answer": "Teona Hotel is at Mehmet Ali Paşa Mahallesi, Bağdat Caddesi, Erkan Sokak No:3, Bekirpaşa, İzmit / Kocaeli."
+        },
+        {
+          "question": "Where can I ask about a reservation?",
+          "answer": "Use the booking bar to check availability, or contact the hotel directly through the call-centre email address for reservation and bed-layout information."
+        },
+        {
+          "question": "Does the hotel provide parking?",
+          "answer": "Yes. Teona Hotel provides parking for its guests."
+        }
+      ]
+    }
   },
   "booking": {
     "title": "Reservation details",
