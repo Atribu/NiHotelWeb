@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   BusFront,
   ExternalLink,
@@ -366,6 +367,21 @@ export default async function CityGuidePage({ params }) {
           </div>
         </div>
       </section>
+
+      {locale === "tr" ? (
+        <section className="border-t border-black/10 bg-white px-5 py-14 sm:px-8 lg:px-10">
+          <div className="mx-auto flex max-w-6xl flex-col gap-6 border border-[#19334F]/12 bg-[#F7F5F1] px-6 py-9 sm:px-9 lg:flex-row lg:items-center lg:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#A78B63]">İzmit merkez konaklama</p>
+              <h2 className="mt-3 font-display text-3xl font-semibold text-[#19334F] sm:text-4xl">Şehir merkezindeki otel seçiminizi planlayın</h2>
+              <p className="mt-4 text-sm leading-7 text-[#59616C]">Konum, oda seçenekleri, otopark ve rezervasyon ayrıntılarını bir arada inceleyerek İzmit seyahatiniz için uygun konaklama planını oluşturun.</p>
+            </div>
+            <Link className="inline-flex min-h-12 shrink-0 items-center justify-center border border-[#19334F] px-7 text-xs font-semibold uppercase tracking-[0.15em] text-[#19334F] transition-colors hover:bg-[#19334F] hover:text-white" href="/tr/izmit-sehir-merkezi-otelleri">
+              Konaklama rehberini aç
+            </Link>
+          </div>
+        </section>
+      ) : null}
     </main>
   );
 }

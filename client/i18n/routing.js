@@ -5,6 +5,9 @@ export const config = {
   defaultLocale: 'tr',
   localeDetection: true,
   localePrefix: 'always',
+  // Page metadata already provides canonical and hreflang links. Keeping the
+  // middleware header disabled prevents duplicate or proxy-derived HTTP URLs.
+  alternateLinks: false,
   pathnames: {
     '/': {
       tr: '/',

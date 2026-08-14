@@ -1,5 +1,6 @@
 import { site } from "@/lib/site";
 import { localizedPaths } from "@/lib/routes";
+import { izmitLandingPageSlugs } from "@/lib/izmitLandingPages";
 
 const sitemapPages = [
   "home",
@@ -20,7 +21,7 @@ const sitemapPages = [
 ];
 
 export default function sitemap() {
-  return sitemapPages.flatMap((page, index) => {
+  const localizedEntries = sitemapPages.flatMap((page, index) => {
     const languages = Object.fromEntries(
       Object.entries(localizedPaths[page]).map(([locale, path]) => [
         locale,
@@ -36,4 +37,12 @@ export default function sitemap() {
       alternates: { languages },
     }));
   });
+
+  const izmitLandingEntries = izmitLandingPageSlugs.map((slug) => ({
+    url: `${site.url}/tr/${slug}`,
+    changeFrequency: "monthly",
+    priority: 0.78,
+  }));
+
+  return [...localizedEntries, ...izmitLandingEntries];
 }
