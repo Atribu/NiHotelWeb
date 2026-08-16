@@ -22,6 +22,11 @@ const nextConfig = {
       { source: "/toplanti", destination: "/tr/toplanti", permanent: true },
       { source: "/sehir-rehberi", destination: "/tr/sehir-rehberi", permanent: true },
       { source: "/tr/kurumsal", destination: "/tr/hakkimizda", permanent: true },
+      {
+        source: "/tr/izmit-sehir-merkezi-otelleri",
+        destination: "/tr/izmit-otel",
+        permanent: true,
+      },
     ];
   },
   async headers() {

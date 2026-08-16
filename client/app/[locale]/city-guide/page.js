@@ -376,7 +376,7 @@ export default async function CityGuidePage({ params }) {
               <h2 className="mt-3 font-display text-3xl font-semibold text-[#19334F] sm:text-4xl">Şehir merkezindeki otel seçiminizi planlayın</h2>
               <p className="mt-4 text-sm leading-7 text-[#59616C]">Konum, oda seçenekleri, otopark ve rezervasyon ayrıntılarını bir arada inceleyerek İzmit seyahatiniz için uygun konaklama planını oluşturun.</p>
             </div>
-            <Link className="inline-flex min-h-12 shrink-0 items-center justify-center border border-[#19334F] px-7 text-xs font-semibold uppercase tracking-[0.15em] text-[#19334F] transition-colors hover:bg-[#19334F] hover:text-white" href="/tr/izmit-sehir-merkezi-otelleri">
+            <Link className="inline-flex min-h-12 shrink-0 items-center justify-center border border-[#19334F] px-7 text-xs font-semibold uppercase tracking-[0.15em] text-[#19334F] transition-colors hover:bg-[#19334F] hover:text-white" href="/tr/izmit-otel">
               Konaklama rehberini aç
             </Link>
           </div>
