@@ -150,7 +150,7 @@ export default async function HomePage({ params }) {
         </div>
       </section>
 
-      <section className="slats-section px-5 py-24 sm:px-8 lg:px-14 lg:py-48">
+      <section className="slats-section px-5 py-20 sm:px-8 lg:px-14 lg:py-32">
         <div className="relative z-10 mx-auto max-w-6xl text-center">
           <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[#a78b63]">
             {t("amenitiesEyebrow")}
@@ -177,7 +177,7 @@ export default async function HomePage({ params }) {
 
       <RoomSlider />
 
-      <section className="bg-[#588a62] px-5 py-14 text-white sm:px-8 lg:px-14 lg:py-20">
+      <section className="bg-[#19334F] px-5 py-14 text-white sm:px-8 lg:px-14 lg:py-20">
         <div className="mx-auto grid max-w-[1120px] items-center gap-10 md:grid-cols-[1fr_0.58fr] lg:gap-20">
           <div className="max-w-2xl text-center md:text-left">
             <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/70">
@@ -188,7 +188,7 @@ export default async function HomePage({ params }) {
             </h2>
             <p className="mt-5 text-sm leading-7 text-white/82 sm:text-base">{t("restaurantBody")}</p>
             <Link
-              className="mt-7 inline-flex min-h-10 items-center border border-white px-5 text-xs font-semibold uppercase tracking-[0.13em] transition-colors hover:bg-white hover:text-[#588a62]"
+              className="mt-7 inline-flex min-h-10 items-center border border-white px-5 text-xs font-semibold uppercase tracking-[0.13em] transition-colors hover:bg-white hover:text-[#19334F]"
               href="/restaurant"
             >
               {t("restaurantCta")}
@@ -202,7 +202,7 @@ export default async function HomePage({ params }) {
               sizes="300px"
               src={site.images.restaurant}
             />
-            <div className="absolute inset-0 bg-[#315b3a]/38" />
+            <div className="absolute inset-0 bg-[#19334F]/38" />
             <div className="absolute inset-5 flex items-center justify-center border border-white/55 text-center">
               <div>
                 <p className="font-display text-4xl font-semibold">Payidar</p>

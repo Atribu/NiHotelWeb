@@ -27,6 +27,11 @@ const nextConfig = {
         destination: "/tr/izmit-otel",
         permanent: true,
       },
+      {
+        source: "/tr/izmit-merkezde-oteller",
+        destination: "/tr/izmit-hotel",
+        permanent: true,
+      },
     ];
   },
   async headers() {

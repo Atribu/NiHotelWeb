@@ -185,7 +185,22 @@ export default function SiteFooter() {
 
       </div>
 
-      <div className="relative flex items-center justify-center border-t border-white/5 bg-[#171815] px-5 py-5">
+      <div className="relative bg-[#171815] px-5">
+        <div className="mx-auto max-w-[1280px] border-y border-white/15 py-5 text-center">
+          <a
+            className="inline-flex text-xs font-medium leading-6 tracking-[0.025em] text-[#B8BAB5] transition-colors hover:text-white sm:text-sm"
+            href="https://www.ktb.gov.tr/genel/searchhotelgenel.aspx?lang=tr"
+            rel="noreferrer"
+            target="_blank"
+          >
+            {t("tourismOperationCertificate", {
+              number: site.tourismOperationCertificateNo,
+            })}
+          </a>
+        </div>
+      </div>
+
+      <div className="relative flex items-center justify-center bg-[#171815] px-5 py-5">
         <a
           aria-label="Powered by Dgtlface"
           className="group inline-flex items-center gap-3 text-[#A8AAA5] transition-colors hover:text-white"

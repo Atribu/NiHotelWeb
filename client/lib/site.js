@@ -5,6 +5,7 @@ export const site = {
   bookingUrl: "https://teona-otel.rezervasyonal.com/",
   email: "info@teonahotel.com",
   callCenterEmail: "callcenter@teonahotel.com",
+  tourismOperationCertificateNo: "12796",
   phone: {
     display: "+90 262 325 95 95",
     local: "0262 325 95 95",
