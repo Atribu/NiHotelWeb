@@ -400,6 +400,7 @@
     "certificates": "Сертификаты",
     "cookiePolicy": "Политика cookie",
     "cookieSettings": "Настройки cookie",
+    "tourismOperationCertificate": "Министерство культуры и туризма — Номер сертификата туристического предприятия: {number}",
     "materialNote": "Teona Hotel — комфортное и практичное проживание в центре Измита."
   },
   "cookieConsent": {
