@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Teona Hotel | İzmit Merkezde Şehir Konaklaması",
-    "description": "İzmit merkezindeki Teona Hotel; 44 odası, Eko, French, Suit, Triple ve Twin oda seçenekleri, Payidar Restaurant, toplantı salonu, fitness ve sauna olanaklarıyla hizmet verir."
+    "description": "İzmit merkezindeki Teona Hotel; 44 odası, Eko, French, Suit, Triple ve Twin oda seçenekleri, Payidar Restaurant ve toplantı salonuyla hizmet verir."
   },
   "navigation": {
     "home": "Ana sayfa",
@@ -34,7 +34,7 @@
     },
     "introEyebrow": "Teona Hotel",
     "introTitle": "İzmit merkezde konforlu ve pratik konaklama",
-    "introBody": "Teona Hotel, 44 odası ve beş oda tipiyle iş seyahatleri, kısa şehir konaklamaları ve hafta sonu ziyaretleri için Wi-Fi, otopark, fitness merkezi ve sauna olanakları sunar.",
+    "introBody": "Teona Hotel, 44 odası ve beş oda tipiyle iş seyahatleri, kısa şehir konaklamaları ve hafta sonu ziyaretleri için ücretsiz Wi-Fi, otopark ve uydu yayını olanakları sunar.",
     "roomsEyebrow": "Odalar",
     "roomsTitle": "İhtiyacınıza uygun beş oda seçeneği",
     "roomsBody": "Eko, French, Suit, Triple ve Twin oda seçenekleri farklı yatak düzenleri ve konaklama ihtiyaçları için sunulur.",
@@ -56,7 +56,7 @@
     "roomDetailCta": "Detayları inceleyin",
     "amenitiesEyebrow": "Olanaklar",
     "amenitiesTitle": "Konaklamanıza eşlik eden hizmetler",
-    "amenitiesBody": "Wi-Fi, otopark, uydu yayını, fitness merkezi, sauna ve farklı oturma düzenlerine uygun toplantı salonu otel bünyesinde sunulur.",
+    "amenitiesBody": "Wi-Fi, otopark, uydu yayını ve farklı oturma düzenlerine uygun toplantı salonu otel bünyesinde sunulur.",
     "restaurantEyebrow": "Payidar Traditional Restaurant",
     "restaurantTitle": "Otel bünyesinde bir buluşma noktası",
     "restaurantBody": "Payidar Traditional Restaurant, canlı müzik programlarına ve grup organizasyonlarına ev sahipliği yapar.",
@@ -70,8 +70,6 @@
     "wifi": "Wi-Fi",
     "parking": "Otopark",
     "satellite": "Uydu yayını",
-    "fitness": "Fitness merkezi",
-    "sauna": "Sauna",
     "meeting": "Toplantı salonu"
   },
   "rooms": {
@@ -95,7 +93,7 @@
     "twinMeta": "15–20 m² · İki ayrı yatak",
     "twinBody": "15–20 m² alanda aynı odada iki ayrı yatak tercih eden misafirler için hazırlanmıştır.",
     "sharedTitle": "Otel olanakları",
-    "sharedBody": "Misafirler Wi-Fi, otopark, uydu yayını, fitness merkezi ve saunadan yararlanabilir. Toplantı salonu U düzeninde 40, sınıf düzeninde 80 kişilik kapasiteye sahiptir.",
+    "sharedBody": "Misafirler Wi-Fi, otopark ve uydu yayınından yararlanabilir. Toplantı salonu U düzeninde 40, sınıf düzeninde 80 kişilik kapasiteye sahiptir.",
     "cta": "Konaklamanızı planlayın",
     "detailsCta": "Oda detaylarını inceleyin"
   },
@@ -119,7 +117,7 @@
       "photoNote": "Oda görselleri yatak düzeni ve oda tipine göre farklılık gösterebilir.",
       "facilitiesEyebrow": "Olanaklar",
       "facilitiesTitle": "Konaklamaya eşlik eden hizmetler",
-      "facilitiesBody": "Teona Hotel'de Wi-Fi, otopark, uydu yayını, fitness merkezi ve sauna olanakları konaklama süresince misafirlerin kullanımına sunulur.",
+      "facilitiesBody": "Teona Hotel'de Wi-Fi, otopark ve uydu yayını konaklama süresince misafirlerin kullanımına sunulur.",
       "ctaTitle": "Konaklamanızı birlikte planlayalım",
       "ctaBody": "Oda uygunluğu, yatak düzeni ve rezervasyon bilgileri için Teona Hotel ile doğrudan iletişime geçebilirsiniz.",
       "contactCta": "İletişime geçin"
@@ -130,7 +128,7 @@
       "intro": "Eko Oda, İzmit merkezinde ekonomik, sade ve işlevsel bir konaklama arayan misafirler için 15–20 m² kullanım alanı sunar.",
       "detailTitle": "Şehir ve iş programları için işlevsel",
       "body1": "Kompakt oda düzeni; kısa süreli iş seyahatlerinde, şehir ziyaretlerinde veya günün büyük bölümünü dışarıda geçireceğiniz programlarda ihtiyaç duyulan dinlenme alanını pratik biçimde sunar. Eko Oda, gereksiz ayrıntılardan uzak ve bütçesini gözeten bir konaklama tercih eden misafirler için hazırlanmıştır.",
-      "body2": "Oda fotoğraflarından farklı kullanım açılarını inceleyebilir, tarih ve kişi bilgilerinizi rezervasyon alanından belirleyebilirsiniz. Konaklamanız boyunca otel genelindeki ücretsiz Wi-Fi ve otoparkın yanı sıra uydu yayını, fitness merkezi ve sauna olanaklarından yararlanabilirsiniz.",
+      "body2": "Oda fotoğraflarından farklı kullanım açılarını inceleyebilir, tarih ve kişi bilgilerinizi rezervasyon alanından belirleyebilirsiniz. Konaklamanız boyunca otel genelindeki ücretsiz Wi-Fi ve otoparkın yanı sıra uydu yayınından yararlanabilirsiniz.",
       "size": "15–20 m²",
       "capacity": "Ekonomik oda düzeni"
     },
@@ -140,7 +138,7 @@
       "intro": "French Oda, 15–20 m² alanda çift kişilik French yatak tercih eden misafirler için rahat ve düzenli bir şehir konaklaması sunar.",
       "detailTitle": "Çiftler ve tek kişilik konaklamalar için",
       "body1": "French yataklı oda düzeni, İzmit'teki iş veya şehir programlarında aynı yatağı paylaşan iki misafire uygun bir konaklama alanı sağlar. Tek başına seyahat ederken daha geniş yatak tercih eden misafirler de 15–20 m² büyüklüğündeki bu oda tipini değerlendirebilir.",
-      "body2": "Galeride French Oda'nın yatak yerleşimini, mobilyalarını ve farklı çekim açılarını inceleyebilirsiniz. Tarihlerinizi seçerek rezervasyon sayfasına geçebilir; konaklama sırasında ücretsiz Wi-Fi, otopark, uydu yayını, fitness merkezi ve sauna gibi ortak otel olanaklarından yararlanabilirsiniz.",
+      "body2": "Galeride French Oda'nın yatak yerleşimini, mobilyalarını ve farklı çekim açılarını inceleyebilirsiniz. Tarihlerinizi seçerek rezervasyon sayfasına geçebilir; konaklama sırasında ücretsiz Wi-Fi, otopark ve uydu yayını gibi ortak otel olanaklarından yararlanabilirsiniz.",
       "size": "15–20 m²",
       "capacity": "French yatak"
     },
@@ -150,7 +148,7 @@
       "intro": "Suit Oda, 25 m² kullanım alanı ve terasıyla daha ferah bir konaklama düzeni arayan misafirler için hazırlanmıştır.",
       "detailTitle": "Geniş oda düzeni ve açık hava alanı",
       "body1": "Odanın geniş yerleşimi, dinlenme ve konaklama alanlarını aynı ortamda daha rahat kullanmaya imkân verir. İzmit'te daha uzun süre kalacak, odasında daha fazla hareket alanı isteyen veya günün bir bölümünü otelde geçirmeyi planlayan misafirler için alternatif oluşturur.",
-      "body2": "Suit Oda galerisi hem iç mekânı hem de odaya ait terası farklı açılardan gösterir. Uygun tarihleri rezervasyon alanından kontrol edebilir; konaklamanız boyunca ücretsiz Wi-Fi, otopark, uydu yayını, fitness merkezi ve sauna gibi ortak otel olanaklarından yararlanabilirsiniz.",
+      "body2": "Suit Oda galerisi hem iç mekânı hem de odaya ait terası farklı açılardan gösterir. Uygun tarihleri rezervasyon alanından kontrol edebilir; konaklamanız boyunca ücretsiz Wi-Fi, otopark ve uydu yayını gibi ortak otel olanaklarından yararlanabilirsiniz.",
       "size": "25 m²",
       "capacity": "Geniş konaklama düzeni"
     },
@@ -160,7 +158,7 @@
       "intro": "Triple Oda, 15–20 m² alanda üç kişilik konaklama ihtiyacına uygun yatak düzeniyle ailelere ve küçük gruplara hitap eder.",
       "detailTitle": "Üç kişilik şehir konaklamasına uygun",
       "body1": "Aynı odada konaklamak isteyen üç misafir için hazırlanan düzen, aile ziyaretleri, arkadaş seyahatleri ve kısa şehir programlarında oda seçimini kolaylaştırır. 15–20 m² kullanım alanındaki yatak yerleşimi oda fotoğraflarında farklı açılardan görülebilir; görünüm oda düzenine göre değişiklik gösterebilir.",
-      "body2": "Giriş ve çıkış tarihleriyle yetişkin ve çocuk sayılarını rezervasyon alanından seçerek güncel uygunluğa geçebilirsiniz. Konaklamanız boyunca ücretsiz Wi-Fi, otopark, uydu yayını, fitness merkezi ve sauna gibi otel genelinde sunulan olanaklardan yararlanabilirsiniz.",
+      "body2": "Giriş ve çıkış tarihleriyle yetişkin ve çocuk sayılarını rezervasyon alanından seçerek güncel uygunluğa geçebilirsiniz. Konaklamanız boyunca ücretsiz Wi-Fi, otopark ve uydu yayını gibi otel genelinde sunulan olanaklardan yararlanabilirsiniz.",
       "size": "15–20 m²",
       "capacity": "Üç kişilik yatak düzeni"
     },
@@ -170,7 +168,7 @@
       "intro": "Twin Oda, 15–20 m² alanda aynı odayı paylaşırken iki ayrı yatak tercih eden misafirler için esnek bir konaklama sunar.",
       "detailTitle": "İş arkadaşları ve birlikte seyahat edenler için",
       "body1": "İki ayrı yataklı oda düzeni; iş seyahatine birlikte çıkan çalışma arkadaşları, arkadaş grupları veya kişisel uyku alanını korumak isteyen iki misafir için uygundur. 15–20 m² kullanım alanı, İzmit'teki kısa şehir ve iş programları için işlevsel bir konaklama düzeni sağlar.",
-      "body2": "Twin Oda galerisinden yatak yerleşimini ve odanın farklı açılarını inceleyebilir, ardından konaklama tarihlerinizi rezervasyon alanından seçebilirsiniz. Otel genelindeki ücretsiz Wi-Fi ve otoparkın yanı sıra uydu yayını, fitness merkezi ve sauna olanakları konaklama süresince kullanımınıza sunulur.",
+      "body2": "Twin Oda galerisinden yatak yerleşimini ve odanın farklı açılarını inceleyebilir, ardından konaklama tarihlerinizi rezervasyon alanından seçebilirsiniz. Otel genelindeki ücretsiz Wi-Fi ve otoparkın yanı sıra uydu yayını konaklama süresince kullanımınıza sunulur.",
       "size": "15–20 m²",
       "capacity": "İki ayrı yatak"
     }
@@ -182,7 +180,7 @@
     "body1": "Otelin 44 odalık yapısı Eko, French, Suit, Triple ve Twin oda tiplerinden oluşur.",
     "body2": "Teona Hotel bugüne kadar yaklaşık 120.000 misafiri ağırlamıştır. Otel bünyesinde Payidar Traditional Restaurant ve farklı oturma düzenlerine uyarlanabilen bir toplantı salonu yer alır.",
     "principleTitle": "Şehir konaklamasına işlevsel yaklaşım",
-    "principleBody": "Wi-Fi, otopark, uydu yayını, fitness merkezi ve sauna; konaklama süresince ihtiyaç duyulabilecek temel olanakları bir araya getirir.",
+    "principleBody": "Wi-Fi, otopark ve uydu yayını; konaklama süresince ihtiyaç duyulabilecek temel olanakları bir araya getirir.",
     "cityTitle": "İzmit'in merkezinde",
     "cityBody": "Merkezi konum, Teona Hotel'i İzmit'teki iş ve şehir programları için pratik bir konaklama seçeneği hâline getirir."
   },
@@ -253,7 +251,7 @@
         },
         {
           "question": "Konaklama sırasında hangi olanaklardan yararlanabilirim?",
-          "answer": "Otel genelinde Wi-Fi ve otoparkın yanı sıra uydu yayını, fitness merkezi ve sauna olanakları sunulur."
+          "answer": "Otel genelinde Wi-Fi, otopark ve uydu yayını sunulur."
         },
         {
           "question": "Nasıl rezervasyon yapabilirim?",
@@ -286,7 +284,7 @@
       "sharedItems": [
         {
           "question": "Oda konaklamasına hangi otel olanakları dahildir?",
-          "answer": "Konaklama süresince otel genelindeki Wi-Fi ve otoparkın yanı sıra uydu yayını, fitness merkezi ve sauna olanaklarından yararlanabilirsiniz."
+          "answer": "Konaklama süresince otel genelindeki Wi-Fi, otopark ve uydu yayınından yararlanabilirsiniz."
         },
         {
           "question": "Oda uygunluğunu nasıl kontrol edebilirim?",

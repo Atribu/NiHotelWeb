@@ -2,8 +2,6 @@ import Image from "next/image";
 import {
   ArrowRight,
   CarFront,
-  Dumbbell,
-  Flame,
   Mail,
   MapPin,
   Phone,
@@ -49,8 +47,6 @@ export default async function HomePage({ params }) {
     { key: "wifi", icon: Wifi },
     { key: "parking", icon: CarFront },
     { key: "satellite", icon: Tv },
-    { key: "fitness", icon: Dumbbell },
-    { key: "sauna", icon: Flame },
     { key: "meeting", icon: Presentation },
   ];
 

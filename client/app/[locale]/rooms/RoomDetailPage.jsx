@@ -1,8 +1,6 @@
 import {
   BedDouble,
   CarFront,
-  Dumbbell,
-  Flame,
   Maximize2,
   Satellite,
   Wifi,
@@ -123,8 +121,6 @@ export default async function RoomDetailPage({ params, roomKey }) {
   const sharedAmenities = [
     { Icon: Wifi, label: amenities("wifi") },
     { Icon: CarFront, label: amenities("parking") },
-    { Icon: Dumbbell, label: amenities("fitness") },
-    { Icon: Flame, label: amenities("sauna") },
     { Icon: Satellite, label: amenities("satellite") },
   ];
 
