@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Teona Hotel | A City Stay in Central İzmit",
-    "description": "Teona Hotel in central İzmit offers 44 rooms across Economy, French, Suite, Triple and Twin types, plus Payidar Restaurant, a meeting room, fitness facilities and a sauna."
+    "description": "Teona Hotel in central İzmit offers 44 rooms across Economy, French, Suite, Triple and Twin types, plus Payidar Restaurant and a meeting room."
   },
   "navigation": {
     "home": "Home",
@@ -34,7 +34,7 @@
     },
     "introEyebrow": "Teona Hotel",
     "introTitle": "A comfortable city stay in central İzmit",
-    "introBody": "With 44 rooms across five room types, Teona Hotel brings together Wi-Fi, parking, satellite TV, a fitness centre and a sauna for a comfortable city stay.",
+    "introBody": "With 44 rooms across five room types, Teona Hotel brings together free Wi-Fi, parking and satellite TV for a comfortable city stay.",
     "roomsEyebrow": "Rooms",
     "roomsTitle": "Five room options for your stay",
     "roomsBody": "Economy, French, Suite, Triple and Twin rooms provide options for different bed arrangements and stay requirements.",
@@ -56,7 +56,7 @@
     "roomDetailCta": "View details",
     "amenitiesEyebrow": "Facilities",
     "amenitiesTitle": "Services to support your stay",
-    "amenitiesBody": "Wi-Fi, parking, satellite TV, a fitness centre, a sauna and a meeting room with flexible seating arrangements are available at the hotel.",
+    "amenitiesBody": "Wi-Fi, parking, satellite TV and a meeting room with flexible seating arrangements are available at the hotel.",
     "restaurantEyebrow": "Payidar Traditional Restaurant",
     "restaurantTitle": "A place to meet within the hotel",
     "restaurantBody": "Payidar Traditional Restaurant hosts live music programmes and group events.",
@@ -70,8 +70,6 @@
     "wifi": "Wi-Fi",
     "parking": "Parking",
     "satellite": "Satellite TV",
-    "fitness": "Fitness centre",
-    "sauna": "Sauna",
     "meeting": "Meeting room"
   },
   "rooms": {
@@ -95,7 +93,7 @@
     "twinMeta": "15–20 m² · Two separate beds",
     "twinBody": "A 15–20 m² room prepared for guests who prefer two separate beds in the same room.",
     "sharedTitle": "Hotel facilities",
-    "sharedBody": "Guests can use Wi-Fi, parking, satellite TV, the fitness centre and sauna. The meeting room accommodates 40 people in a U-shape and 80 in a classroom layout.",
+    "sharedBody": "Guests can use Wi-Fi, parking and satellite TV. The meeting room accommodates 40 people in a U-shape and 80 in a classroom layout.",
     "cta": "Plan your stay",
     "detailsCta": "View room details"
   },
@@ -119,7 +117,7 @@
       "photoNote": "Room interiors may vary according to room type and bed configuration.",
       "facilitiesEyebrow": "Facilities",
       "facilitiesTitle": "Services that support your stay",
-      "facilitiesBody": "At Teona Hotel, Wi-Fi, parking, satellite TV, the fitness centre and sauna are available to guests during their stay.",
+      "facilitiesBody": "At Teona Hotel, Wi-Fi, parking and satellite TV are available to guests during their stay.",
       "ctaTitle": "Let us help plan your stay",
       "ctaBody": "Contact Teona Hotel directly for availability, bed configuration and reservation details.",
       "contactCta": "Contact us"
@@ -130,7 +128,7 @@
       "intro": "The 15–20 m² Economy Room is designed for guests seeking an economical, simple and functional stay in central Izmit.",
       "detailTitle": "Functional for city visits and business plans",
       "body1": "Its compact layout provides a practical place to rest during short business trips, city visits or schedules that keep you out for most of the day. The Economy Room suits guests who value a straightforward stay and want to keep their accommodation budget under control.",
-      "body2": "Browse the room photographs from different angles, then enter your dates and guest details in the reservation bar. During your stay, you can use the hotel's free Wi-Fi and parking as well as satellite TV, the fitness centre and sauna.",
+      "body2": "Browse the room photographs from different angles, then enter your dates and guest details in the reservation bar. During your stay, you can use the hotel's free Wi-Fi and parking as well as satellite TV.",
       "size": "15–20 m²",
       "capacity": "Economy room layout"
     },
@@ -140,7 +138,7 @@
       "intro": "The 15–20 m² French Room offers an organised city stay for guests who prefer a double French bed.",
       "detailTitle": "For couples and single occupancy",
       "body1": "The French-bed layout provides a suitable accommodation area for two guests sharing a bed during a business or city visit to Izmit. Guests travelling alone who prefer a wider bed can also consider this 15–20 m² room category.",
-      "body2": "The gallery shows the French Room's bed arrangement, furniture and different viewing angles. Choose your dates to continue to the reservation page, and use free Wi-Fi, parking, satellite TV, the fitness centre and sauna among the hotel's shared facilities during your stay.",
+      "body2": "The gallery shows the French Room's bed arrangement, furniture and different viewing angles. Choose your dates to continue to the reservation page, and use free Wi-Fi, parking and satellite TV among the hotel's shared facilities during your stay.",
       "size": "15–20 m²",
       "capacity": "French bed"
     },
@@ -150,7 +148,7 @@
       "intro": "The 25 m² Suite Room and its terrace are prepared for guests who prefer a more spacious accommodation layout.",
       "detailTitle": "A generous room layout and outdoor space",
       "body1": "The wider layout allows the resting and accommodation areas to be used more comfortably within the same room. It is an alternative for guests planning a longer stay in Izmit, seeking more freedom of movement or expecting to spend part of the day at the hotel.",
-      "body2": "The Suite Room gallery presents both the interior and its terrace from several angles. Check available dates through the reservation bar, and enjoy shared hotel facilities including free Wi-Fi, parking, satellite TV, the fitness centre and sauna during your stay.",
+      "body2": "The Suite Room gallery presents both the interior and its terrace from several angles. Check available dates through the reservation bar, and enjoy shared hotel facilities including free Wi-Fi, parking and satellite TV during your stay.",
       "size": "25 m²",
       "capacity": "Spacious room layout"
     },
@@ -160,7 +158,7 @@
       "intro": "The 15–20 m² Triple Room serves families and small groups with a bed layout suited to three guests.",
       "detailTitle": "Suited to a three-person city stay",
       "body1": "Designed for three guests who want to share the same room, this category simplifies room selection for family visits, trips with friends and short city plans. The gallery shows the 15–20 m² room and its bed placement from different angles; individual layouts may vary.",
-      "body2": "Select check-in and check-out dates and the number of adults and children to continue to current availability. During your stay, free Wi-Fi, parking, satellite TV, the fitness centre and sauna are available as shared hotel facilities.",
+      "body2": "Select check-in and check-out dates and the number of adults and children to continue to current availability. During your stay, free Wi-Fi, parking and satellite TV are available as shared hotel facilities.",
       "size": "15–20 m²",
       "capacity": "Three-guest bed layout"
     },
@@ -170,7 +168,7 @@
       "intro": "The 15–20 m² Twin Room offers a flexible stay for guests who want to share a room while using separate beds.",
       "detailTitle": "For colleagues and travel companions",
       "body1": "The two-bed layout suits colleagues travelling for business, friends sharing a trip or any two guests who prefer their own sleeping space. Its 15–20 m² area provides a functional accommodation arrangement for short business and city schedules in Izmit.",
-      "body2": "Use the Twin Room gallery to review the bed arrangement and different views, then select your stay dates in the reservation bar. Free Wi-Fi and parking, satellite TV, the fitness centre and sauna are available as shared hotel facilities throughout your stay.",
+      "body2": "Use the Twin Room gallery to review the bed arrangement and different views, then select your stay dates in the reservation bar. Free Wi-Fi, parking and satellite TV are available as shared hotel facilities throughout your stay.",
       "size": "15–20 m²",
       "capacity": "Two separate beds"
     }
@@ -182,7 +180,7 @@
     "body1": "The hotel's 44-room collection includes Economy, French, Suite, Triple and Twin room types.",
     "body2": "Teona Hotel has welcomed approximately 120,000 guests to date. The hotel is also home to Payidar Traditional Restaurant and a meeting room that can be adapted to different seating layouts.",
     "principleTitle": "A practical approach to city stays",
-    "principleBody": "Wi-Fi, parking, satellite TV, a fitness centre and a sauna bring together the core facilities guests may need during their stay.",
+    "principleBody": "Wi-Fi, parking and satellite TV bring together the core facilities guests may need during their stay.",
     "cityTitle": "At the heart of İzmit",
     "cityBody": "Its central location makes Teona Hotel a practical accommodation option for business and city plans in İzmit."
   },
@@ -253,7 +251,7 @@
         },
         {
           "question": "Which facilities can I use during my stay?",
-          "answer": "The hotel offers Wi-Fi and parking as well as satellite television, a fitness centre and a sauna."
+          "answer": "The hotel offers Wi-Fi, parking and satellite television."
         },
         {
           "question": "How can I make a reservation?",
@@ -286,7 +284,7 @@
       "sharedItems": [
         {
           "question": "Which hotel facilities are available with the room stay?",
-          "answer": "During your stay, you can use the hotel's Wi-Fi and parking as well as satellite television, the fitness centre and sauna."
+          "answer": "During your stay, you can use the hotel's Wi-Fi, parking and satellite television."
         },
         {
           "question": "How can I check room availability?",

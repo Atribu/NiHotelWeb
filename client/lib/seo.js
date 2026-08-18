@@ -10,7 +10,7 @@ const localeSettings = {
 
 const seoContent = {
   tr: {
-    home: ["Teona Hotel | İzmit Merkez Konaklama", "İzmit merkezde 44 oda, ücretsiz Wi-Fi ve otopark, toplantı salonu, fitness, sauna ve Payidar Restaurant ile konforlu konaklama."],
+    home: ["Teona Hotel | İzmit Merkez Konaklama", "İzmit merkezde 44 oda, ücretsiz Wi-Fi ve otopark, toplantı salonu ve Payidar Restaurant ile konforlu konaklama."],
     rooms: ["İzmit Otel Odaları | Teona Hotel", "Teona Hotel'in Eko, French, Süit, Triple ve Twin oda seçeneklerini, oda fotoğraflarını ve ortak otel olanaklarını inceleyin."],
     economyRoom: ["Eko Oda | İzmit Teona Hotel", "İzmit merkezde pratik konaklama sunan 15–20 m² Eko Oda fotoğraflarını, özelliklerini ve uygunluk durumunu inceleyin."],
     frenchRoom: ["French Oda | İzmit Teona Hotel", "French yatak düzenine sahip 15–20 m² odanın fotoğraflarını, doğrulanmış otel olanaklarını ve rezervasyon seçeneklerini inceleyin."],
@@ -27,7 +27,7 @@ const seoContent = {
     certificates: ["Teona Hotel Sertifikaları", "Teona Hotel'in sürdürülebilir turizm, sıfır atık ve KVKK uyum belgelerini görüntüleyin ve PDF olarak indirin."],
   },
   en: {
-    home: ["Teona Hotel | Stay in Central Izmit", "Stay in central Izmit with 44 rooms, free Wi-Fi and parking, a meeting room, fitness centre, sauna and Payidar Restaurant."],
+    home: ["Teona Hotel | Stay in Central Izmit", "Stay in central Izmit with 44 rooms, free Wi-Fi and parking, a meeting room and Payidar Restaurant."],
     rooms: ["Hotel Rooms in Izmit | Teona Hotel", "Explore Teona Hotel's Economy, French, Suite, Triple and Twin rooms, photo galleries and shared hotel facilities in central Izmit."],
     economyRoom: ["Economy Room | Teona Hotel Izmit", "View the photos and features of our practical 15–20 m² Economy Room and check availability for your stay in central Izmit."],
     frenchRoom: ["French Room | Teona Hotel Izmit", "Explore our 15–20 m² French Room with a French bed layout, verified hotel facilities and direct booking options."],
@@ -44,7 +44,7 @@ const seoContent = {
     certificates: ["Teona Hotel Certificates", "View and download Teona Hotel's sustainable tourism, zero waste and personal-data compliance certificates."],
   },
   de: {
-    home: ["Teona Hotel | Übernachten im Zentrum von İzmit", "Übernachten Sie zentral in İzmit mit 44 Zimmern, kostenlosem WLAN und Parkplatz, Tagungsraum, Fitnessbereich, Sauna und Restaurant."],
+    home: ["Teona Hotel | Übernachten im Zentrum von İzmit", "Übernachten Sie zentral in İzmit mit 44 Zimmern, kostenlosem WLAN und Parkplatz, Tagungsraum und Restaurant."],
     rooms: ["Hotelzimmer in İzmit | Teona Hotel", "Entdecken Sie Eco-, French-, Suite-, Dreibett- und Zweibettzimmer im Teona Hotel mit Fotos und Hotelausstattung."],
     economyRoom: ["Eco-Zimmer | Teona Hotel İzmit", "Fotos und Ausstattung des praktischen 15–20 m² Eco-Zimmers ansehen und Verfügbarkeit für Ihren Aufenthalt in İzmit prüfen."],
     frenchRoom: ["French-Zimmer | Teona Hotel İzmit", "Entdecken Sie das 15–20 m² French-Zimmer mit French-Bett, bestätigter Hotelausstattung und direkter Reservierung."],
@@ -61,7 +61,7 @@ const seoContent = {
     certificates: ["Zertifikate des Teona Hotels", "Zertifikate des Teona Hotels zu nachhaltigem Tourismus, Abfallvermeidung und Datenschutz ansehen und herunterladen."],
   },
   ru: {
-    home: ["Teona Hotel | Проживание в центре Измита", "44 номера в центре Измита, бесплатные Wi-Fi и парковка, конференц-зал, фитнес-центр, сауна и ресторан Payidar."],
+    home: ["Teona Hotel | Проживание в центре Измита", "44 номера в центре Измита, бесплатные Wi-Fi и парковка, конференц-зал и ресторан Payidar."],
     rooms: ["Номера отеля в Измите | Teona Hotel", "Посмотрите номера Эконом, French, Люкс, Трёхместный и Twin, фотогалереи и общие удобства Teona Hotel."],
     economyRoom: ["Эконом-номер | Teona Hotel Измит", "Фотографии и особенности практичного Эконом-номера площадью 15–20 м², а также доступность проживания в центре Измита."],
     frenchRoom: ["Номер French | Teona Hotel Измит", "Номер French площадью 15–20 м² с двуспальной кроватью, подтверждёнными удобствами и прямым бронированием."],

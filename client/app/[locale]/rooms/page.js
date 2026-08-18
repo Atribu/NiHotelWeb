@@ -1,8 +1,6 @@
 import Image from "next/image";
 import {
   CarFront,
-  Dumbbell,
-  Flame,
   Satellite,
   Wifi,
 } from "lucide-react";
@@ -94,8 +92,6 @@ export default async function RoomsPage({ params }) {
   const amenities = [
     { Icon: Wifi, key: "wifi" },
     { Icon: CarFront, key: "parking" },
-    { Icon: Dumbbell, key: "fitness" },
-    { Icon: Flame, key: "sauna" },
     { Icon: Satellite, key: "satellite" },
   ];
 

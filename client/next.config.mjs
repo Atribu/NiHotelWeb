@@ -32,6 +32,26 @@ const nextConfig = {
         destination: "/tr/izmit-hotel",
         permanent: true,
       },
+      {
+        source: "/tr/izmit-otelleri-merkez",
+        destination: "/tr/izmit-pansiyon",
+        permanent: true,
+      },
+      {
+        source: "/tr/izmit-merkeze-yakin-oteller",
+        destination: "/tr/izmit-hotel-fiyat",
+        permanent: true,
+      },
+      {
+        source: "/tr/izmit-sehir-merkezindeki-oteller",
+        destination: "/tr/izmit-hotel-tatil",
+        permanent: true,
+      },
+      {
+        source: "/tr/izmit-merkez-otelleri",
+        destination: "/tr/izmit-hotel-merkez",
+        permanent: true,
+      },
     ];
   },
   async headers() {

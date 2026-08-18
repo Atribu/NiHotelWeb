@@ -12,8 +12,6 @@ const amenityFeature = [
   "Free Wi-Fi",
   "Free parking",
   "Satellite television",
-  "Fitness centre",
-  "Sauna",
 ].map((name) => ({
   "@type": "LocationFeatureSpecification",
   name,

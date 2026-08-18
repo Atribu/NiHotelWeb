@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Teona Hotel | Stadtaufenthalt im Zentrum von İzmit",
-    "description": "Das Teona Hotel im Zentrum von İzmit bietet 44 Zimmer in den Kategorien Eco, French, Suite, Dreibett und Twin sowie das Payidar Restaurant, einen Tagungsraum, einen Fitnessbereich und eine Sauna."
+    "description": "Das Teona Hotel im Zentrum von İzmit bietet 44 Zimmer in den Kategorien Eco, French, Suite, Dreibett und Twin sowie das Payidar Restaurant und einen Tagungsraum."
   },
   "navigation": {
     "home": "Startseite",
@@ -34,7 +34,7 @@
     },
     "introEyebrow": "Teona Hotel",
     "introTitle": "Komfortabler Stadtaufenthalt im Zentrum von İzmit",
-    "introBody": "Mit 44 Zimmern in fünf Kategorien vereint das Teona Hotel WLAN, Parkplätze, Satellitenfernsehen, einen Fitnessbereich und eine Sauna zu einem komfortablen Stadtaufenthalt.",
+    "introBody": "Mit 44 Zimmern in fünf Kategorien vereint das Teona Hotel kostenloses WLAN, Parkplätze und Satellitenfernsehen zu einem komfortablen Stadtaufenthalt.",
     "roomsEyebrow": "Zimmer",
     "roomsTitle": "Fünf Zimmerkategorien für Ihren Aufenthalt",
     "roomsBody": "Eco-, French-, Suite-, Dreibett- und Twin-Zimmer bieten verschiedene Bettenkonfigurationen für unterschiedliche Aufenthaltsbedürfnisse.",
@@ -56,7 +56,7 @@
     "roomDetailCta": "Details ansehen",
     "amenitiesEyebrow": "Ausstattung",
     "amenitiesTitle": "Angebote, die Ihren Aufenthalt ergänzen",
-    "amenitiesBody": "WLAN, Parkplätze, Satellitenfernsehen, ein Fitnessbereich, eine Sauna und ein Tagungsraum mit flexiblen Bestuhlungsvarianten stehen im Hotel zur Verfügung.",
+    "amenitiesBody": "WLAN, Parkplätze, Satellitenfernsehen und ein Tagungsraum mit flexiblen Bestuhlungsvarianten stehen im Hotel zur Verfügung.",
     "restaurantEyebrow": "Payidar Traditional Restaurant",
     "restaurantTitle": "Ein Treffpunkt direkt im Hotel",
     "restaurantBody": "Das Payidar Traditional Restaurant veranstaltet Live-Musik-Programme und Gruppenveranstaltungen.",
@@ -70,8 +70,6 @@
     "wifi": "WLAN",
     "parking": "Parkplätze",
     "satellite": "Satellitenfernsehen",
-    "fitness": "Fitnessbereich",
-    "sauna": "Sauna",
     "meeting": "Tagungsraum"
   },
   "rooms": {
@@ -95,7 +93,7 @@
     "twinMeta": "15–20 m² · Getrennte Betten",
     "twinBody": "Ein 15–20 m² Zimmer für Gäste, die im selben Zimmer zwei getrennte Betten bevorzugen.",
     "sharedTitle": "Hotelausstattung",
-    "sharedBody": "Gäste können WLAN, Parkplätze, Satellitenfernsehen, den Fitnessbereich und die Sauna nutzen. Der Tagungsraum bietet Platz für 40 Personen in U-Form und 80 Personen bei Schulbestuhlung.",
+    "sharedBody": "Gäste können WLAN, Parkplätze und Satellitenfernsehen nutzen. Der Tagungsraum bietet Platz für 40 Personen in U-Form und 80 Personen bei Schulbestuhlung.",
     "cta": "Aufenthalt planen",
     "detailsCta": "Zimmerdetails ansehen"
   },
@@ -119,7 +117,7 @@
       "photoNote": "Zimmeransichten können je nach Zimmertyp und Bettenkonfiguration variieren.",
       "facilitiesEyebrow": "Ausstattung",
       "facilitiesTitle": "Angebote für Ihren Aufenthalt",
-      "facilitiesBody": "Im Teona Hotel stehen Gästen WLAN, Parkplätze, Satellitenfernsehen, der Fitnessbereich und die Sauna während des Aufenthalts zur Verfügung.",
+      "facilitiesBody": "Im Teona Hotel stehen Gästen WLAN, Parkplätze und Satellitenfernsehen während des Aufenthalts zur Verfügung.",
       "ctaTitle": "Planen wir Ihren Aufenthalt",
       "ctaBody": "Kontaktieren Sie das Teona Hotel direkt für Verfügbarkeit, Bettenkonfiguration und Reservierungsdetails.",
       "contactCta": "Kontakt aufnehmen"
@@ -130,7 +128,7 @@
       "intro": "Das 15–20 m² Eco-Zimmer richtet sich an Gäste, die im Zentrum von İzmit preisbewusst, schlicht und funktional übernachten möchten.",
       "detailTitle": "Funktional für Stadt- und Geschäftsprogramme",
       "body1": "Die kompakte Anordnung bietet einen praktischen Rückzugsort bei kurzen Geschäftsreisen, Stadtbesuchen oder Tagesprogrammen, die überwiegend außer Haus stattfinden. Das Eco-Zimmer eignet sich für Gäste, die einen unkomplizierten Aufenthalt wünschen und ihr Übernachtungsbudget im Blick behalten möchten.",
-      "body2": "Sehen Sie das Zimmer in der Galerie aus verschiedenen Perspektiven an und geben Sie anschließend Reisedaten und Gästezahl in der Reservierungsleiste ein. Während des Aufenthalts stehen kostenloses WLAN und Parken sowie Satellitenfernsehen, Fitnessbereich und Sauna zur Verfügung.",
+      "body2": "Sehen Sie das Zimmer in der Galerie aus verschiedenen Perspektiven an und geben Sie anschließend Reisedaten und Gästezahl in der Reservierungsleiste ein. Während des Aufenthalts stehen kostenloses WLAN, Parken und Satellitenfernsehen zur Verfügung.",
       "size": "15–20 m²",
       "capacity": "Funktionale Zimmeranordnung"
     },
@@ -140,7 +138,7 @@
       "intro": "Das 15–20 m² French-Zimmer bietet Gästen mit Wunsch nach einem französischen Doppelbett einen geordneten Stadtaufenthalt.",
       "detailTitle": "Für Paare und Einzelbelegung",
       "body1": "Die Anordnung mit French-Bett bietet zwei Gästen, die bei einem Geschäfts- oder Stadtbesuch in İzmit ein Bett teilen, einen passenden Aufenthaltsbereich. Auch Alleinreisende, die ein breiteres Bett bevorzugen, können diese Zimmerkategorie mit 15–20 m² wählen.",
-      "body2": "Die Galerie zeigt Bettenanordnung, Mobiliar und verschiedene Perspektiven des French-Zimmers. Wählen Sie Ihre Daten, um zur Reservierung zu gelangen; während des Aufenthalts stehen kostenloses WLAN, Parken, Satellitenfernsehen, Fitnessbereich und Sauna als gemeinsame Hotelangebote zur Verfügung.",
+      "body2": "Die Galerie zeigt Bettenanordnung, Mobiliar und verschiedene Perspektiven des French-Zimmers. Wählen Sie Ihre Daten, um zur Reservierung zu gelangen; während des Aufenthalts stehen kostenloses WLAN, Parken und Satellitenfernsehen als gemeinsame Hotelangebote zur Verfügung.",
       "size": "15–20 m²",
       "capacity": "French-Bett"
     },
@@ -150,7 +148,7 @@
       "intro": "Die 25 m² Suite mit Terrasse ist für Gäste eingerichtet, die eine großzügigere Raumaufteilung bevorzugen.",
       "detailTitle": "Großzügige Raumaufteilung und Außenbereich",
       "body1": "Die weitere Anordnung ermöglicht es, Ruhe- und Aufenthaltsbereiche im selben Zimmer komfortabler zu nutzen. Sie ist eine Alternative für Gäste, die länger in İzmit bleiben, mehr Bewegungsfreiheit wünschen oder einen Teil des Tages im Hotel verbringen möchten.",
-      "body2": "Die Galerie zeigt sowohl den Innenraum der Suite als auch ihre Terrasse aus mehreren Perspektiven. Prüfen Sie verfügbare Daten über die Reservierungsleiste und nutzen Sie während des Aufenthalts kostenloses WLAN, Parken, Satellitenfernsehen, Fitnessbereich und Sauna.",
+      "body2": "Die Galerie zeigt sowohl den Innenraum der Suite als auch ihre Terrasse aus mehreren Perspektiven. Prüfen Sie verfügbare Daten über die Reservierungsleiste und nutzen Sie während des Aufenthalts kostenloses WLAN, Parken und Satellitenfernsehen.",
       "size": "25 m²",
       "capacity": "Großzügige Zimmeranordnung"
     },
@@ -160,7 +158,7 @@
       "intro": "Das 15–20 m² Dreibettzimmer spricht Familien und kleine Gruppen mit einer Bettenkonfiguration für drei Gäste an.",
       "detailTitle": "Für einen Stadtaufenthalt zu dritt",
       "body1": "Diese Kategorie ist für drei Gäste eingerichtet, die dasselbe Zimmer teilen möchten, und erleichtert die Zimmerwahl bei Familienbesuchen, Freundesreisen und kurzen Stadtprogrammen. Die Galerie zeigt den 15–20 m² großen Raum und die Bettenanordnung aus verschiedenen Perspektiven; einzelne Anordnungen können abweichen.",
-      "body2": "Wählen Sie An- und Abreisedaten sowie die Anzahl der Erwachsenen und Kinder, um die aktuelle Verfügbarkeit aufzurufen. Während des Aufenthalts stehen kostenloses WLAN, Parken, Satellitenfernsehen, Fitnessbereich und Sauna als gemeinsame Hotelangebote zur Verfügung.",
+      "body2": "Wählen Sie An- und Abreisedaten sowie die Anzahl der Erwachsenen und Kinder, um die aktuelle Verfügbarkeit aufzurufen. Während des Aufenthalts stehen kostenloses WLAN, Parken und Satellitenfernsehen als gemeinsame Hotelangebote zur Verfügung.",
       "size": "15–20 m²",
       "capacity": "Bettenkonfiguration für drei"
     },
@@ -170,7 +168,7 @@
       "intro": "Das 15–20 m² Zweibettzimmer bietet Gästen, die ein Zimmer teilen und getrennte Betten nutzen möchten, einen flexiblen Aufenthalt.",
       "detailTitle": "Für Kollegen und gemeinsam Reisende",
       "body1": "Die Anordnung mit zwei getrennten Betten eignet sich für Geschäftsreisende, Freunde oder zwei Gäste, die einen eigenen Schlafplatz bevorzugen. Die 15–20 m² große Fläche bietet eine funktionale Unterkunft für kurze Geschäfts- und Stadtprogramme in İzmit.",
-      "body2": "Prüfen Sie in der Galerie die Bettenanordnung und verschiedene Zimmeransichten und wählen Sie anschließend Ihre Reisedaten in der Reservierungsleiste. Kostenloses WLAN und Parken, Satellitenfernsehen, Fitnessbereich und Sauna stehen als gemeinsame Hotelangebote zur Verfügung.",
+      "body2": "Prüfen Sie in der Galerie die Bettenanordnung und verschiedene Zimmeransichten und wählen Sie anschließend Ihre Reisedaten in der Reservierungsleiste. Kostenloses WLAN, Parken und Satellitenfernsehen stehen als gemeinsame Hotelangebote zur Verfügung.",
       "size": "15–20 m²",
       "capacity": "Zwei getrennte Betten"
     }
@@ -182,7 +180,7 @@
     "body1": "Die 44 Zimmer des Hotels verteilen sich auf die Kategorien Eco, French, Suite, Dreibett und Twin.",
     "body2": "Das Teona Hotel hat bislang rund 120.000 Gäste begrüßt. Zum Hotel gehören außerdem das Payidar Traditional Restaurant und ein Tagungsraum mit flexibel anpassbaren Bestuhlungsvarianten.",
     "principleTitle": "Ein praktischer Ansatz für Städtereisen",
-    "principleBody": "WLAN, Parkplätze, Satellitenfernsehen, ein Fitnessbereich und eine Sauna bündeln die wesentlichen Angebote für den Aufenthalt.",
+    "principleBody": "WLAN, Parkplätze und Satellitenfernsehen bündeln die wesentlichen Angebote für den Aufenthalt.",
     "cityTitle": "Im Herzen von İzmit",
     "cityBody": "Die zentrale Lage macht das Teona Hotel zu einer praktischen Unterkunft für geschäftliche Termine und Stadtpläne in İzmit."
   },
@@ -253,7 +251,7 @@
         },
         {
           "question": "Welche Einrichtungen kann ich während meines Aufenthalts nutzen?",
-          "answer": "Das Hotel bietet WLAN und Parkplätze sowie Satellitenfernsehen, ein Fitnesscenter und eine Sauna."
+          "answer": "Das Hotel bietet WLAN, Parkplätze und Satellitenfernsehen."
         },
         {
           "question": "Wie kann ich reservieren?",
@@ -286,7 +284,7 @@
       "sharedItems": [
         {
           "question": "Welche Hoteleinrichtungen stehen bei der Zimmerbuchung zur Verfügung?",
-          "answer": "Während Ihres Aufenthalts können Sie WLAN und Parkplätze sowie Satellitenfernsehen, Fitnesscenter und Sauna des Hotels nutzen."
+          "answer": "Während Ihres Aufenthalts können Sie WLAN, Parkplätze und Satellitenfernsehen des Hotels nutzen."
         },
         {
           "question": "Wie kann ich die Zimmerverfügbarkeit prüfen?",
