@@ -149,12 +149,23 @@ export async function POST(request) {
   const secure =
     process.env.SMTP_SECURE === "true" ||
     (process.env.SMTP_SECURE !== "false" && port === 465);
+  const requireTls =
+    process.env.SMTP_REQUIRE_TLS === "true" ||
+    (process.env.SMTP_REQUIRE_TLS !== "false" && port === 587);
+  const rejectUnauthorized = process.env.SMTP_TLS_REJECT_UNAUTHORIZED !== "false";
 
   const transporter = nodemailer.createTransport({
     host,
     port,
     secure,
+    requireTLS: requireTls,
     auth: { user, pass },
+    tls: {
+      rejectUnauthorized,
+    },
+    connectionTimeout: 60_000,
+    greetingTimeout: 30_000,
+    socketTimeout: 60_000,
   });
 
   const safeName = escapeHtml(name);
@@ -188,7 +199,14 @@ export async function POST(request) {
     });
 
     return jsonResponse({ message: "Mesajınız alındı." }, 200);
-  } catch {
+  } catch (error) {
+    console.error("contact-email-send-failed", {
+      code: error?.code,
+      command: error?.command,
+      responseCode: error?.responseCode,
+      message: error?.message,
+    });
+
     return jsonResponse(
       { error: "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin." },
       500,
