@@ -147,7 +147,7 @@ const liveChatBootstrapScript = `
 })();
 `;
 
-export default function ConnexeaseLiveChat() {
+export default function ConnexeaseLiveChat({ launcherVisible = true }) {
   const t = useTranslations("cookieConsent");
   const { consent, isReady } = useCookieConsent();
   const liveSupportEnabled = isReady && consent.liveSupport;
@@ -292,6 +292,7 @@ export default function ConnexeaseLiveChat() {
     const observer = new MutationObserver(syncLiveChatLayout);
 
     launcher?.addEventListener("click", openLiveChat);
+    window.addEventListener("teona-connexease-open", openLiveChat);
     observer.observe(document.body, {
       childList: true,
       subtree: true,
@@ -303,6 +304,7 @@ export default function ConnexeaseLiveChat() {
 
     return () => {
       launcher?.removeEventListener("click", openLiveChat);
+      window.removeEventListener("teona-connexease-open", openLiveChat);
       window.clearInterval(interval);
       observer.disconnect();
       window.removeEventListener("resize", syncLiveChatLayout);
@@ -327,7 +329,7 @@ export default function ConnexeaseLiveChat() {
     };
   }, [liveSupportEnabled]);
 
-  if (!liveSupportEnabled) {
+  if (!liveSupportEnabled || !launcherVisible) {
     return null;
   }
 
