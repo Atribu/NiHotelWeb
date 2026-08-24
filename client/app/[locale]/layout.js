@@ -15,6 +15,7 @@ import SiteFooter from "./components/teona/SiteFooter";
 import SiteHeader from "./components/teona/SiteHeader";
 import FloatingActions from "./components/teona/FloatingActions";
 import ConnexeaseLiveChat from "./components/teona/ConnexeaseLiveChat";
+import TeonaAssistant from "./components/teona/TeonaAssistant";
 import CookieConsentProvider from "./components/teona/CookieConsentProvider";
 import JsonLd from "./components/teona/JsonLd";
 
@@ -112,6 +113,10 @@ export default async function LocaleLayout({ children, params }) {
       .filter((namespace) => messages[namespace])
       .map((namespace) => [namespace, messages[namespace]]),
   );
+  const assistantFlag = process.env.NEXT_PUBLIC_TEONA_AI_ASSISTANT_ENABLED;
+  const assistantEnabled =
+    assistantFlag === "true" ||
+    (process.env.NODE_ENV === "development" && assistantFlag !== "false");
 
   return (
     <html
@@ -186,7 +191,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             >
               {skipLabels[locale]}
             </a>
-            <ConnexeaseLiveChat />
+            <ConnexeaseLiveChat launcherVisible={!assistantEnabled} />
+            {assistantEnabled ? <TeonaAssistant /> : null}
             <SiteHeader />
             <FloatingActions />
             {children}

@@ -581,6 +581,165 @@ export const izmitLandingPages = {
     ],
     image: "economyRoom3",
   },
+  "izmit-butik-otel": {
+    sourceKeyword: "izmit butik otel",
+    keyword: "İzmit butik otel",
+    eyebrow: "Butik otel arayışına şehir oteli alternatifi",
+    title: "İzmit Butik Otel Arayanlara Merkezi Bir Konaklama Seçeneği",
+    metaTitle: "İzmit Butik Otel Arayışı | Teona Hotel",
+    metaDescription:
+      "İzmit butik otel arayışınızda merkezi konum, beş oda tipi, gerçek fotoğraflar, ücretsiz Wi-Fi ve otoparkıyla Teona Hotel'i inceleyin.",
+    lead:
+      "İzmit'te butik otel araştırırken yalnızca kullanılan kategoriye değil; tesisin gerçek oda seçeneklerine, konumuna, olanaklarına ve güncel rezervasyon koşullarına bakın.",
+    introTitle: "Butik otel aramasında beklentinizi somut özelliklerle karşılaştırın",
+    introParagraphs: [
+      "İzmit butik otel, İzmit butik hotel veya Kocaeli İzmit butik oteller aramaları çoğunlukla merkezi, özenli ve kolay planlanabilen bir konaklama beklentisini ifade eder. Ancak butik, luxury veya best hotel gibi tanımlar her tesiste aynı hizmet kapsamını garanti etmez. Bu nedenle kararınızı kategori etiketinden çok doğrulanabilir tesis bilgilerine dayandırmanız daha sağlıklıdır.",
+      "Teona Hotel kendisini butik ya da lüks tesis olarak değil, İzmit'te hizmet veren 44 odalı bir şehir oteli olarak tanımlar. Eko, French, Süit, Triple ve Twin oda seçenekleri; gerçek oda galerileri, ücretsiz Wi-Fi, ücretsiz otopark, toplantı salonu ve otel bünyesindeki Payidar Restaurant ile farklı şehir seyahatlerine cevap verir.",
+    ],
+    focusTitle: "İzmit butik otel alternatiflerini karşılaştırırken",
+    focusCards: [
+      {
+        title: "Etiket yerine kapsam",
+        body: "Butik veya lüks ifadesinden bağımsız olarak oda tipini, gerçek fotoğrafları ve sunulan hizmetleri inceleyin.",
+      },
+      {
+        title: "Merkezi konum",
+        body: "Otelin açık adresini ziyaret edeceğiniz noktalarla karşılaştırarak şehir içi rotanıza uygunluğunu kontrol edin.",
+      },
+      {
+        title: "Güncel fiyat",
+        body: "İzmit butik otel fiyatları dönemsel değişebileceği için kesin tarih ve kişi bilgileriyle güncel sonucu görüntüleyin.",
+      },
+    ],
+    planningTitle: "Oda fotoğraflarını ve rezervasyon kapsamını birlikte inceleyin",
+    planningBody:
+      "İzmit butik otel tavsiye ve öneri listeleri başlangıç noktası olabilir; son kararı verirken odanın yatak düzenini, tesisin gerçek hizmetlerini ve seçtiğiniz tarihteki koşulları Teona Hotel'in kendi sayfalarından doğrulayın.",
+    faqItems: [
+      {
+        question: "Teona Hotel butik veya lüks otel mi?",
+        answer: "Teona Hotel resmi içeriklerinde butik ya da lüks tesis olarak değil, 44 odalı bir şehir oteli olarak tanımlanır. Bu sayfa, İzmit butik otel arayan misafirlerin Teona Hotel'i somut özellikleriyle karşılaştırabilmesi için hazırlanmıştır.",
+      },
+      {
+        question: "İzmit butik otel önerisi ararken nelere bakmalıyım?",
+        answer: "Konum, oda fotoğrafları, yatak düzeni, otopark, internet, rezervasyon koşulları ve doğrudan iletişim bilgilerinin açıkça sunulmasına dikkat edebilirsiniz.",
+      },
+      {
+        question: "İzmit butik otel fiyatları nasıl öğrenilir?",
+        answer: "Fiyatlar tarih, kişi sayısı, oda tipi ve müsaitliğe göre değişir. Rezervasyon alanına kesin bilgilerinizi girerek güncel seçenekleri kontrol edebilirsiniz.",
+      },
+      {
+        question: "Teona Hotel'de hangi oda tipleri bulunur?",
+        answer: "Teona Hotel'de Eko, French, Süit, Triple ve Twin olmak üzere beş oda tipi bulunur. Her oda için ayrı fotoğraf galerisi vardır.",
+      },
+    ],
+    image: "frenchRoom3",
+  },
+  "izmit-konaklama": {
+    sourceKeyword: "izmit konaklama",
+    keyword: "İzmit konaklama",
+    eyebrow: "Merkezi İzmit konaklaması",
+    title: "İzmit Konaklama Yerleri Arayanlara Merkezi Bir Seçenek",
+    metaTitle: "İzmit Konaklama ve Konaklama Yerleri | Teona Hotel",
+    metaDescription:
+      "İzmit konaklama yerlerini karşılaştırın; merkezi konumu, beş oda tipi, ücretsiz Wi-Fi ve otoparkıyla Teona Hotel'de müsaitliği kontrol edin.",
+    lead:
+      "İş seyahati, kısa şehir ziyareti veya aile planı için İzmit'te konaklama yeri seçerken konumu, oda düzenini ve gerçekten kullanacağınız olanakları birlikte değerlendirin.",
+    introTitle: "İzmit'te konaklama planını seyahat amacınıza göre kurun",
+    introParagraphs: [
+      "İzmit konaklama ve Kocaeli İzmit konaklama aramaları, tek gecelik iş ziyaretinden birkaç günlük şehir programına kadar farklı ihtiyaçları kapsar. İzmit'te konaklama yeri seçmeden önce geliş biçiminizi, gün içinde ulaşacağınız adresleri, kişi sayısını ve tercih ettiğiniz yatak düzenini belirlemek karşılaştırmayı kolaylaştırır.",
+      "Teona Hotel, Bekirpaşa'daki konumu ve beş farklı oda tipiyle Kocaeli İzmit konaklama yerleri arasında değerlendirilebilecek bir şehir otelidir. Ücretsiz Wi-Fi ve otoparkın yanı sıra toplantı salonu ve Payidar Restaurant, konaklama programının farklı bölümlerini aynı adreste planlamaya yardımcı olur.",
+    ],
+    focusTitle: "Konaklama kararınızı üç başlıkta netleştirin",
+    focusCards: [
+      {
+        title: "Seyahat amacı",
+        body: "İş, şehir ziyareti veya birlikte seyahat planına göre kullanacağınız oda ve hizmetleri önceden belirleyin.",
+      },
+      {
+        title: "Oda düzeni",
+        body: "Eko, French, Süit, Triple ve Twin oda galerilerini kişi sayısı ve yatak tercihinize göre karşılaştırın.",
+      },
+      {
+        title: "Ulaşım planı",
+        body: "Açık adresi şehir içindeki duraklarınızla karşılaştırın; özel araçla geliyorsanız ücretsiz otoparkı değerlendirin.",
+      },
+    ],
+    planningTitle: "Konaklama bilgilerini kendi tarihlerinizle doğrulayın",
+    planningBody:
+      "İzmitte konaklama yerleri için genel listeler fikir verebilir; kesin oda uygunluğu ve fiyat yalnızca seçtiğiniz giriş-çıkış tarihi ile kişi sayısına göre belirlenir. Bilgilerinizi rezervasyon alanına girerek güncel seçeneklere ilerleyin.",
+    faqItems: [
+      {
+        question: "İzmit'te konaklama için Teona Hotel nerede?",
+        answer: "Teona Hotel, İzmit Bekirpaşa'da yer alır. Açık adresi ve harita alanını iletişim sayfasından inceleyebilirsiniz.",
+      },
+      {
+        question: "Teona Hotel'de kaç oda tipi var?",
+        answer: "Eko, French, Süit, Triple ve Twin olmak üzere beş oda tipi bulunur. Kişi sayısı ve yatak tercihinize göre galerileri karşılaştırabilirsiniz.",
+      },
+      {
+        question: "İzmit konaklamasında otopark ve Wi-Fi sunuluyor mu?",
+        answer: "Teona Hotel misafirlerine ücretsiz otopark ve ücretsiz Wi-Fi olanağı sunar.",
+      },
+      {
+        question: "Güncel konaklama fiyatını nasıl görebilirim?",
+        answer: "Giriş-çıkış tarihi, yetişkin sayısı ve varsa çocuk yaşlarını rezervasyon alanına girerek güncel seçenekleri görüntüleyebilirsiniz.",
+      },
+    ],
+    image: "exteriorCity",
+  },
+  "izmit-hotel-ucuz": {
+    sourceKeyword: "izmit hotel ucuz",
+    keyword: "İzmit ucuz otel",
+    eyebrow: "Bütçe odaklı şehir konaklaması",
+    title: "İzmit Ucuz Otel Ararken Toplam Değeri Karşılaştırın",
+    metaTitle: "İzmit Ucuz Otel ve Güncel Fiyatlar | Teona Hotel",
+    metaDescription:
+      "İzmit ucuz otel seçeneklerini fiyat, konum ve dahil olan hizmetlerle karşılaştırın; Teona Hotel'de tarihlerinize özel güncel müsaitliği görün.",
+    lead:
+      "İzmit'te ekonomik konaklama ararken yalnızca ilk görünen oda tutarına değil; konuma, dahil olan olanaklara, yatak düzenine ve rezervasyon koşullarına birlikte bakın.",
+    introTitle: "Ucuz otel aramasını gerçek seyahat bütçesine göre değerlendirin",
+    introParagraphs: [
+      "İzmit ucuz otel, ucuz otel İzmit veya Kocaeli İzmit ucuz oteller aramaları bütçeyi koruma amacını taşır. Bununla birlikte otopark, internet, şehir içi ulaşım ve yanlış oda seçiminin oluşturabileceği ek maliyetler hesaba katılmadığında yalnızca gecelik tutara göre verilen karar beklenen tasarrufu sağlamayabilir.",
+      "Teona Hotel herhangi bir tarihte en ucuz otel garantisi vermez. Buna karşılık Eko Oda dâhil beş oda tipini, ücretsiz Wi-Fi ve otoparkı, gerçek fotoğrafları ve güncel rezervasyon bağlantısını açık biçimde sunar. Böylece İzmit ucuz otel fiyatları için kendi tarihinize ait toplam değeri doğrulanabilir bilgilerle karşılaştırabilirsiniz.",
+    ],
+    focusTitle: "Ekonomik konaklamayı doğru karşılaştırın",
+    focusCards: [
+      {
+        title: "Aynı tarihler",
+        body: "Tüm otelleri aynı giriş-çıkış tarihi ve aynı kişi sayısıyla arayarak tutarlı bir fiyat karşılaştırması yapın.",
+      },
+      {
+        title: "Dahil olan hizmetler",
+        body: "Ücretsiz Wi-Fi ve otopark gibi seyahat boyunca kullanacağınız olanakları toplam maliyete dahil edin.",
+      },
+      {
+        title: "Doğru kapasite",
+        body: "Kişi sayısına ve yatak tercihine uygun odayı seçerek sonradan değişiklik ihtiyacını azaltın.",
+      },
+    ],
+    planningTitle: "En ucuz iddiası yerine güncel ve açık koşulları esas alın",
+    planningBody:
+      "İzmit en ucuz oteller veya Kocaeli İzmit otelleri ucuz aramaları geniş sonuçlar gösterebilir. Tarihlerinizi rezervasyon alanına girin; toplam tutarı, oda tipini ve koşulları ödeme öncesinde birlikte kontrol edin.",
+    faqItems: [
+      {
+        question: "Teona Hotel İzmit'in en ucuz oteli mi?",
+        answer: "Hayır, Teona Hotel en ucuz otel garantisi vermez. Fiyatlar tarih, kişi sayısı, oda tipi ve müsaitliğe göre değişir; güncel toplamı rezervasyon ekranında kontrol edebilirsiniz.",
+      },
+      {
+        question: "Ekonomik konaklama için hangi oda incelenebilir?",
+        answer: "Eko Oda, daha işlevsel bir konaklama seçeneği arayan misafirler için incelenebilir. Kesin fiyat ve müsaitlik seçilen tarihe göre gösterilir.",
+      },
+      {
+        question: "Otopark ve Wi-Fi fiyata dahil mi?",
+        answer: "Teona Hotel misafirlerine Wi-Fi ve otopark ücretsiz sunulur.",
+      },
+      {
+        question: "İzmit ucuz otel fiyatlarını nasıl karşılaştırmalıyım?",
+        answer: "Aynı tarih ve kişi sayısını kullanın; toplam tutarı, iptal koşullarını, oda kapasitesini ve dahil olan hizmetleri birlikte değerlendirin.",
+      },
+    ],
+    image: "economyRoom3",
+  },
 };
 
 export const izmitLandingPageSlugs = Object.keys(izmitLandingPages);
@@ -954,6 +1113,111 @@ const editorialSectionsBySlug = {
       points: ["Tarihe göre güncel fiyat", "Çocuk yaşlarını doğru aktarma", "Koşulları son kez kontrol etme"],
       images: ["roomDouble", "tripleRoom2", "suiteRoom5"],
       imageAlts: ["Teona Hotel çift kişilik oda", "Triple Oda", "Süit Oda"],
+    },
+  ],
+  "izmit-butik-otel": [
+    {
+      eyebrow: "İzmit butik oteller ve gerçek beklenti",
+      title: "Butik tanımından önce tesisin sunduğu deneyimi inceleyin",
+      paragraphs: [
+        "İzmit butik oteller, İzmit butik hotels veya butik hotel İzmit aramalarında kullanıcılar çoğunlukla merkezi konum, daha özenli bir konaklama akışı ve açık tesis bilgileri bekler. Butik otel İzmit veya Kocaeli İzmit butik otel sonuçlarında görülen her tesis aynı ölçekte ve aynı konseptte değildir. Bu nedenle oda sayısı, yatak düzeni, ortak kullanım alanları ve sunulan hizmetler ayrı ayrı kontrol edilmelidir.",
+        "Teona Hotel 44 odalı bir şehir otelidir; butik ya da luxury hotel sınıflandırmasıyla tanıtılmaz. Buna karşılık gerçek oda fotoğrafları, beş farklı oda tipi, ücretsiz Wi-Fi ve otopark, toplantı salonu ve Payidar Restaurant gibi doğrulanabilir özelliklerini açıkça sunar. İzmit butik otel tavsiye veya İzmit butik otel öneri aramalarından gelen misafirler Teona Hotel'i bu somut bilgiler üzerinden kendi beklentileriyle karşılaştırabilir.",
+      ],
+      points: ["44 odalı şehir oteli", "Beş gerçek oda galerisi", "Açık hizmet kapsamı"],
+      images: ["exteriorFront", "frenchRoom3", "corridor"],
+      imageAlts: ["İzmit Teona Hotel ön cephesi", "Teona Hotel French Oda", "Teona Hotel ortak alanı"],
+    },
+    {
+      eyebrow: "Butik otel önerisi ve oda seçimi",
+      title: "Tavsiye listelerini kişi sayınıza uygun oda seçimiyle tamamlayın",
+      paragraphs: [
+        "İzmit butik otel önerileri, İzmit butik oteller tavsiye veya en güzel İzmit butik otelleri gibi aramalar kişisel değerlendirmelere dayanır; herkes için geçerli tek bir en iyi seçenek yoktur. İzmit butik otel en iyi ya da best butik hotel İzmit sonucunu aramak yerine seyahat eden kişi sayısını, yatak tercihini, ziyaret edilecek adresleri ve gerçekten kullanılacak hizmetleri belirlemek daha doğru bir seçim sağlar.",
+        "Teona Hotel'de Eko ve French odalar tek veya çift kişilik planlarda, Twin Oda ayrı yatak ihtiyacında, Triple Oda üç kişilik seyahatte, Süit Oda ise daha geniş kullanım alanı isteyen misafirler tarafından incelenebilir. İzmit butik rooms ya da Kocaeli İzmit butik rooms ifadesiyle arama yapıyor olsanız da kategori adından önce her odanın gerçek galerisini ve güncel kapasitesini kontrol edin.",
+      ],
+      points: ["Kişi sayısına göre oda", "Farklı yatak düzenleri", "Büyütülebilen fotoğraf galerisi"],
+      images: ["economyRoom4", "twinRoom3", "suiteRoom3"],
+      imageAlts: ["Teona Hotel Eko Oda", "Teona Hotel Twin Oda", "Teona Hotel Süit Oda"],
+    },
+    {
+      eyebrow: "İzmit butik hotel ve fiyat",
+      title: "Fiyat ve rezervasyon bilgisini güncel tarihlerinizle doğrulayın",
+      paragraphs: [
+        "İzmit butik otel fiyatları, Kocaeli İzmit butik otel fiyatları veya butik hotel in İzmit Turkey aramalarında görüntülenen seçenekler tarihe, kişi sayısına, oda tipine ve kalan müsaitliğe göre değişebilir. İzmit butik otel merkez aramasında konum önemli olsa da, karşılaştırmanın aynı tarihler ve aynı kişi bilgileriyle yapılması fiyat sonucunun daha anlamlı olmasını sağlar.",
+        "İzmit butik otel booking, Kocaeli İzmit butik otel booking veya butik hotels İzmit Turkey gibi aramalar farklı platformlara yönlendirebilir. Teona Hotel'in herhangi bir rezervasyon markasıyla özel üstünlük iddiası bulunmaz; doğrudan rezervasyon alanı sizi otelin güncel satış ekranına götürür. Ödeme öncesinde oda tipini, toplam tutarı, tarihleri ve rezervasyon koşullarını birlikte doğrulayın.",
+      ],
+      points: ["Tarihe göre güncel fiyat", "Doğrudan rezervasyon", "Koşulları ödeme öncesi kontrol"],
+      images: ["exteriorCity", "roomDouble", "bathroomDetail"],
+      imageAlts: ["İzmit Teona Hotel şehir görünümü", "Teona Hotel çift kişilik oda", "Teona Hotel banyo detayı"],
+    },
+  ],
+  "izmit-konaklama": [
+    {
+      eyebrow: "İzmit konaklama yerleri",
+      title: "Konumu şehir içindeki günlük programınıza göre karşılaştırın",
+      paragraphs: [
+        "İzmit konaklama yerleri veya Kocaeli İzmit konaklama yerleri araştırılırken herkes için aynı doğru bölge bulunmayabilir. İş görüşmesine, aile ziyaretine ya da şehir içindeki farklı bir adrese ulaşacak misafirlerin otel konumunu kendi rotalarıyla karşılaştırması gerekir. Teona Hotel'in Bekirpaşa'daki açık adresini ziyaret edeceğiniz noktalarla güncel harita üzerinde inceleyebilirsiniz.",
+        "Kocaeli konaklama İzmit veya konaklama İzmit ifadeleriyle yapılan aramalarda yaklaşık mesafelerin yanı sıra hareket saati ve trafik de önemlidir. Özel araçla gelecek misafirler için ücretsiz otopark, şehir dışından gelecekler içinse güzergâhı önceden kaydetmek daha düzenli bir varış planı sağlar.",
+      ],
+      points: ["Bekirpaşa'da merkezi konum", "Ücretsiz otopark", "Açık adres ve harita"],
+      images: ["exteriorCity", "map", "exteriorAngle"],
+      imageAlts: ["Teona Hotel İzmit şehir konumu", "Teona Hotel konum haritası", "Teona Hotel dış görünümü"],
+    },
+    {
+      eyebrow: "İzmit'te konaklama ve oda tipi",
+      title: "Odayı seyahat eden kişi sayısına ve yatak tercihine göre seçin",
+      paragraphs: [
+        "İzmit'te konaklama veya İzmit te konaklama planında doğru oda tipi, seyahat deneyimini doğrudan etkiler. Tek veya çift kişilik kullanım, ayrı yatak isteği, üç kişilik seyahat ya da daha geniş alan beklentisi aynı oda kategorisiyle karşılanmayabilir. Bu nedenle yalnızca ana fotoğrafa değil, her oda tipinin tüm galerisine bakmak gerekir.",
+        "İzmitte konaklama yerleri arasında Teona Hotel'i değerlendirirken Eko, French, Süit, Triple ve Twin oda seçeneklerini karşılaştırabilirsiniz. Gerçek fotoğraflar yatak düzenini ve kullanım alanını anlamanıza yardımcı olur; kesin müsaitlik ise seçtiğiniz giriş-çıkış tarihine ve kişi sayısına göre rezervasyon ekranında gösterilir.",
+      ],
+      points: ["Beş farklı oda tipi", "Gerçek oda fotoğrafları", "Kişiye göre güncel müsaitlik"],
+      images: ["roomDouble", "tripleRoom4", "twinRoom4"],
+      imageAlts: ["Teona Hotel çift kişilik oda", "Teona Hotel Triple Oda", "Teona Hotel Twin Oda"],
+    },
+    {
+      eyebrow: "Kocaeli İzmit konaklama planı",
+      title: "Otel olanaklarını seyahat boyunca kullanacağınız hizmetlerle eşleştirin",
+      paragraphs: [
+        "İzmit konaklama seçimini yalnızca oda görünümüne göre yapmak yeterli olmayabilir. Çevrim içi çalışacak misafirler için internet, özel araçla gelenler için otopark, kurumsal programı bulunanlar için toplantı alanı ve yemek planı konaklama boyunca zaman yönetimini etkiler. Teona Hotel'de Wi-Fi ve otopark ücretsiz sunulur; otel bünyesinde toplantı salonu ve Payidar Restaurant bulunur.",
+        "Kocaeli İzmit konaklama araştırmasında tesislerin hizmet kapsamını kendi resmi sayfalarından doğrulayın. Rezervasyon alanına kesin tarihleri, yetişkin sayısını ve varsa çocuk yaşlarını girin; ardından oda tipini, toplam tutarı ve koşulları birlikte inceleyin. Özel bir talebiniz varsa işlemi tamamlamadan önce otel ekibiyle doğrudan görüşebilirsiniz.",
+      ],
+      points: ["Ücretsiz Wi-Fi", "Ücretsiz otopark", "Doğrudan iletişim ve rezervasyon"],
+      images: ["restaurant", "corridor", "exteriorFront"],
+      imageAlts: ["Payidar Restaurant", "Teona Hotel ortak alanı", "Teona Hotel ön cephesi"],
+    },
+  ],
+  "izmit-hotel-ucuz": [
+    {
+      eyebrow: "İzmit ucuz oteller ve bütçe",
+      title: "İlk görünen rakamın yanında seyahatin toplam maliyetini hesaplayın",
+      paragraphs: [
+        "İzmit ucuz oteller, İzmit otelleri ucuz veya ucuz İzmit otelleri aramalarında ilk sıralarda görülen fiyatlar farklı tarih, kişi sayısı ya da oda koşullarına ait olabilir. Kocaeli İzmit ucuz oteller arasında sağlıklı bir karşılaştırma yapmak için tüm aramalarda aynı giriş-çıkış tarihini ve aynı misafir bilgilerini kullanın; görünen tutarın gecelik mi yoksa konaklamanın tamamına mı ait olduğunu kontrol edin.",
+        "İzmit ucuz otel fiyatları değerlendirilirken internet, araç parkı ve şehir içi ulaşım için oluşabilecek ek giderler de hesaba katılmalıdır. Teona Hotel'de Wi-Fi ve otoparkın ücretsiz sunulması bu iki kalemin daha öngörülebilir olmasına yardımcı olur. Ancak fiyatlar dönemsel olarak değiştiği için Teona Hotel, İzmit en ucuz otel veya en ucuz Kocaeli İzmit otelleri iddiasında bulunmaz.",
+      ],
+      points: ["Aynı tarihlerle karşılaştırma", "Toplam tutarı kontrol", "Ücretsiz Wi-Fi ve otopark"],
+      images: ["exteriorFront", "economyRoom3", "corridor"],
+      imageAlts: ["İzmit Teona Hotel ön cephesi", "Teona Hotel Eko Oda", "Teona Hotel ortak alanı"],
+    },
+    {
+      eyebrow: "Ucuz otel İzmit ve oda seçimi",
+      title: "Bütçenize uygun seçeneğin yatak ihtiyacınızı da karşıladığından emin olun",
+      paragraphs: [
+        "Ucuz otel İzmit, İzmit otel ucuz veya Kocaeli ucuz otel İzmit aramalarında yalnızca daha düşük görünen kategoriye yönelmek doğru olmayabilir. Ayrı yatak isteyen iki misafirin, üç kişilik seyahat eden bir grubun veya daha geniş alan arayanların ihtiyaç duyduğu oda düzenleri farklıdır. Yanlış kapasiteyle başlayan rezervasyon sonradan değişiklik ihtiyacı oluşturabilir.",
+        "Teona Hotel'de Eko Oda işlevsel ve ekonomik bir seçenek olarak incelenebilir; French, Twin, Triple ve Süit odalar ise farklı yatak ve alan beklentilerine cevap verir. Kocaeli İzmit ucuz otel veya İzmitte ucuz oteller karşılaştırmasında kişi sayısını doğru girin, oda galerisini inceleyin ve güncel toplam tutarı uygun kapasiteye sahip seçenekler arasında değerlendirin.",
+      ],
+      points: ["Eko Oda seçeneği", "Kişi sayısına uygun kapasite", "Beş oda tipini karşılaştırma"],
+      images: ["economyRoom4", "twinRoom2", "tripleRoom2"],
+      imageAlts: ["Teona Hotel Eko Oda", "Teona Hotel Twin Oda", "Teona Hotel Triple Oda"],
+    },
+    {
+      eyebrow: "Kocaeli İzmit ucuz oteller",
+      title: "Güncel fiyatı genel en ucuz iddialarından ayırın",
+      paragraphs: [
+        "Kocaeli İzmit otelleri en ucuz, Kocaeli İzmit en ucuz oteller veya en ucuz İzmit otelleri gibi aramalar tek ve kalıcı bir sonuç üretmez. Fiyatlar günlere, oda doluluğuna, kişi sayısına ve seçilen kategoriye göre değişebilir. Bugün daha düşük görünen bir seçenek başka bir tarihte aynı sonucu vermeyebilir; bu yüzden kesin tarihler olmadan sabit fiyat veya üstünlük iddiası güvenilir değildir.",
+        "Kocaeli İzmitte ucuz oteller, Kocaeli İzmit ucuz otelleri veya İzmit ucuz otelleri araştırırken rezervasyon koşullarını da okuyun. Tarih, kişi sayısı, oda tipi, toplam tutar ve iptal koşullarını ödeme öncesinde son kez kontrol edin. Teona Hotel'in doğrudan rezervasyon alanı, seçtiğiniz bilgilerle güncel seçeneklere ulaşmanızı sağlar.",
+      ],
+      points: ["Gerçek zamanlı müsaitlik", "Açık rezervasyon koşulları", "Doğrudan güncel fiyat kontrolü"],
+      images: ["exteriorCity", "roomDouble", "bathroomDetail"],
+      imageAlts: ["Kocaeli İzmit Teona Hotel", "Teona Hotel çift kişilik oda", "Teona Hotel banyo detayı"],
     },
   ],
 };
