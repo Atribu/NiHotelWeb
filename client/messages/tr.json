@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Teona Hotel | İzmit Merkezde Şehir Konaklaması",
-    "description": "İzmit merkezindeki Teona Hotel; 44 odası, Eko, French, Suit, Triple ve Twin oda seçenekleri, Payidar Restaurant ve toplantı salonuyla hizmet verir."
+    "description": "İzmit merkezindeki Teona Hotel; 44 odası, Eko, French, Suit, Triple ve Twin oda seçenekleri, Masa Kocaeli ve toplantı salonuyla hizmet verir."
   },
   "navigation": {
     "home": "Ana sayfa",
@@ -57,9 +57,9 @@
     "amenitiesEyebrow": "Olanaklar",
     "amenitiesTitle": "Konaklamanıza eşlik eden hizmetler",
     "amenitiesBody": "Wi-Fi, otopark, uydu yayını ve farklı oturma düzenlerine uygun toplantı salonu otel bünyesinde sunulur.",
-    "restaurantEyebrow": "Payidar Traditional Restaurant",
+    "restaurantEyebrow": "Masa Kocaeli",
     "restaurantTitle": "Otel bünyesinde bir buluşma noktası",
-    "restaurantBody": "Payidar Traditional Restaurant, canlı müzik programlarına ve grup organizasyonlarına ev sahipliği yapar.",
+    "restaurantBody": "Masa Kocaeli hakkında güncel bilgiye telefon ve Instagram üzerinden ulaşabilirsiniz.",
     "restaurantCta": "Restoranı keşfedin",
     "locationEyebrow": "Konum",
     "locationTitle": "İzmit merkezinde",
@@ -178,18 +178,18 @@
     "title": "2010'dan bu yana İzmit'te",
     "lead": "Teona Hotel, 44 odası ve şehir merkezindeki konumuyla İzmit'te hizmet verir.",
     "body1": "Otelin 44 odalık yapısı Eko, French, Suit, Triple ve Twin oda tiplerinden oluşur.",
-    "body2": "Teona Hotel bugüne kadar yaklaşık 120.000 misafiri ağırlamıştır. Otel bünyesinde Payidar Traditional Restaurant ve farklı oturma düzenlerine uyarlanabilen bir toplantı salonu yer alır.",
+    "body2": "Teona Hotel bugüne kadar yaklaşık 120.000 misafiri ağırlamıştır. Otel bünyesinde Masa Kocaeli ve farklı oturma düzenlerine uyarlanabilen bir toplantı salonu yer alır.",
     "principleTitle": "Şehir konaklamasına işlevsel yaklaşım",
     "principleBody": "Wi-Fi, otopark ve uydu yayını; konaklama süresince ihtiyaç duyulabilecek temel olanakları bir araya getirir.",
     "cityTitle": "İzmit'in merkezinde",
     "cityBody": "Merkezi konum, Teona Hotel'i İzmit'teki iş ve şehir programları için pratik bir konaklama seçeneği hâline getirir."
   },
   "restaurant": {
-    "eyebrow": "Payidar Traditional Restaurant",
+    "eyebrow": "Masa Kocaeli",
     "title": "Sofrada buluşmaya ayrılmış bir alan",
-    "lead": "Teona Hotel bünyesindeki Payidar Traditional Restaurant, otel misafirlerini ve şehirden gelen konukları bir araya getirir.",
-    "body1": "Restoran, canlı müzik programlarıyla akşam buluşmalarına ev sahipliği yapar.",
-    "body2": "Grup organizasyonları için ayrıntılı bilgi ve planlama desteği almak üzere otelimizle iletişime geçebilirsiniz.",
+    "lead": "Teona Hotel bünyesindeki Masa Kocaeli, otel misafirleri ve şehirden gelen konuklar için bir buluşma noktasıdır.",
+    "body1": "Masa Kocaeli hakkında güncel hizmet bilgilerine doğrudan telefon ve Instagram üzerinden ulaşabilirsiniz.",
+    "body2": "Rezervasyon ve özel talepleriniz için restoran ekibiyle doğrudan iletişime geçebilirsiniz.",
     "phoneLabel": "Telefon",
     "instagramLabel": "Instagram",
     "cta": "İletişime geçin"

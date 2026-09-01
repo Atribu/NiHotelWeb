@@ -16,11 +16,11 @@ export const site = {
     short: "Bekirpaşa, İzmit / Kocaeli",
   },
   restaurant: {
-    name: "Payidar Traditional Restaurant",
-    phone: "0 530 264 89 70",
-    phoneHref: "tel:+905302648970",
-    instagram: "@payidarizmit",
-    instagramHref: "https://www.instagram.com/payidarizmit/",
+    name: "Masa Kocaeli",
+    phone: "0505 502 41 41",
+    phoneHref: "tel:+905055024141",
+    instagram: "@masakocaeli",
+    instagramHref: "https://www.instagram.com/masakocaeli/",
   },
   mapEmbed:
     "https://www.google.com/maps?q=Teona%20Hotel%20Izmit%20Kocaeli&output=embed",

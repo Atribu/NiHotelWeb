@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Teona Hotel | Stadtaufenthalt im Zentrum von İzmit",
-    "description": "Das Teona Hotel im Zentrum von İzmit bietet 44 Zimmer in den Kategorien Eco, French, Suite, Dreibett und Twin sowie das Payidar Restaurant und einen Tagungsraum."
+    "description": "Das Teona Hotel im Zentrum von İzmit bietet 44 Zimmer in den Kategorien Eco, French, Suite, Dreibett und Twin sowie Masa Kocaeli und einen Tagungsraum."
   },
   "navigation": {
     "home": "Startseite",
@@ -57,9 +57,9 @@
     "amenitiesEyebrow": "Ausstattung",
     "amenitiesTitle": "Angebote, die Ihren Aufenthalt ergänzen",
     "amenitiesBody": "WLAN, Parkplätze, Satellitenfernsehen und ein Tagungsraum mit flexiblen Bestuhlungsvarianten stehen im Hotel zur Verfügung.",
-    "restaurantEyebrow": "Payidar Traditional Restaurant",
+    "restaurantEyebrow": "Masa Kocaeli",
     "restaurantTitle": "Ein Treffpunkt direkt im Hotel",
-    "restaurantBody": "Das Payidar Traditional Restaurant veranstaltet Live-Musik-Programme und Gruppenveranstaltungen.",
+    "restaurantBody": "Aktuelle Informationen zu Masa Kocaeli erhalten Sie per Telefon oder Instagram.",
     "restaurantCta": "Restaurant entdecken",
     "locationEyebrow": "Lage",
     "locationTitle": "Im Zentrum von İzmit",
@@ -178,18 +178,18 @@
     "title": "Seit 2010 in İzmit",
     "lead": "Das Teona Hotel empfängt seine Gäste mit 44 Zimmern und verschiedenen Angeboten im Zentrum von İzmit.",
     "body1": "Die 44 Zimmer des Hotels verteilen sich auf die Kategorien Eco, French, Suite, Dreibett und Twin.",
-    "body2": "Das Teona Hotel hat bislang rund 120.000 Gäste begrüßt. Zum Hotel gehören außerdem das Payidar Traditional Restaurant und ein Tagungsraum mit flexibel anpassbaren Bestuhlungsvarianten.",
+    "body2": "Das Teona Hotel hat bislang rund 120.000 Gäste begrüßt. Zum Hotel gehören außerdem Masa Kocaeli und ein Tagungsraum mit flexibel anpassbaren Bestuhlungsvarianten.",
     "principleTitle": "Ein praktischer Ansatz für Städtereisen",
     "principleBody": "WLAN, Parkplätze und Satellitenfernsehen bündeln die wesentlichen Angebote für den Aufenthalt.",
     "cityTitle": "Im Herzen von İzmit",
     "cityBody": "Die zentrale Lage macht das Teona Hotel zu einer praktischen Unterkunft für geschäftliche Termine und Stadtpläne in İzmit."
   },
   "restaurant": {
-    "eyebrow": "Payidar Traditional Restaurant",
+    "eyebrow": "Masa Kocaeli",
     "title": "Ein Ort für gemeinsame Zeit am Tisch",
-    "lead": "Das Payidar Traditional Restaurant befindet sich im Teona Hotel und bietet einen eigenen Rahmen für Restaurantbesuche und Zusammenkünfte.",
-    "body1": "Das Restaurant veranstaltet Live-Musik-Programme für gemeinsame Abende.",
-    "body2": "Informationen und Planungsanfragen zu Gruppenveranstaltungen erhalten Sie direkt beim Hotel.",
+    "lead": "Masa Kocaeli befindet sich im Teona Hotel und bietet einen eigenen Rahmen für Restaurantbesuche und Zusammenkünfte.",
+    "body1": "Aktuelle Informationen erhalten Sie direkt per Telefon oder über Instagram von Masa Kocaeli.",
+    "body2": "Für Reservierungen und besondere Wünsche wenden Sie sich bitte an das Restaurantteam.",
     "phoneLabel": "Telefon",
     "instagramLabel": "Instagram",
     "cta": "Kontakt aufnehmen"

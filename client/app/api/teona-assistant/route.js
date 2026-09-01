@@ -29,7 +29,7 @@ const FALLBACK = {
     parking:
       "Teona Hotel misafirleri ücretsiz otopark ve Wi-Fi olanaklarından yararlanabilir.",
     restaurant:
-      "Otel bünyesinde Payidar Traditional Restaurant bulunur. Güncel hizmet bilgisi ve özel talepler için restoranla veya otel ekibiyle doğrudan iletişime geçebilirsiniz.",
+      `Otel bünyesinde ${site.restaurant.name} bulunur. Güncel bilgi ve özel talepler için ${site.restaurant.phone} numaralı telefondan veya ${site.restaurant.instagram} Instagram hesabından restoranla doğrudan iletişime geçebilirsiniz.`,
     meeting:
       "Toplantı salonu U düzeninde 40, sınıf düzeninde 80 kişiye kadar kullanılabilir. Tarih ve salon uygunluğu için otel ekibinden teyit almanız gerekir.",
     unavailable:
@@ -52,7 +52,7 @@ const FALLBACK = {
     location: `Teona Hotel is located at ${site.address.full}. You can use the map on the contact page for directions.`,
     parking: "Teona Hotel offers complimentary parking and Wi-Fi to guests.",
     restaurant:
-      "Payidar Traditional Restaurant is located at the hotel. Please contact the restaurant or hotel team for current service information and special requests.",
+      `${site.restaurant.name} is located at the hotel. For current information and special requests, contact the restaurant at ${site.restaurant.phone} or via Instagram at ${site.restaurant.instagram}.`,
     meeting:
       "The meeting room accommodates up to 40 people in a U-shape and 80 in a classroom layout. Date and room availability must be confirmed with the hotel team.",
     unavailable:
@@ -75,7 +75,7 @@ const FALLBACK = {
     location: `Das Teona Hotel befindet sich unter der Adresse ${site.address.full}. Die Karte auf der Kontaktseite hilft bei der Anfahrt.`,
     parking: "Das Teona Hotel bietet Gästen kostenloses WLAN und Parkplätze.",
     restaurant:
-      "Das Payidar Traditional Restaurant befindet sich im Hotel. Aktuelle Informationen und besondere Wünsche bestätigen Sie bitte direkt beim Restaurant oder Hotelteam.",
+      `${site.restaurant.name} befindet sich im Hotel. Aktuelle Informationen und besondere Wünsche erhalten Sie unter ${site.restaurant.phone} oder über Instagram ${site.restaurant.instagram}.`,
     meeting:
       "Der Tagungsraum bietet Platz für bis zu 40 Personen in U-Form und 80 Personen bei Schulbestuhlung. Die Verfügbarkeit muss beim Hotel bestätigt werden.",
     unavailable:
@@ -98,7 +98,7 @@ const FALLBACK = {
     location: `Адрес Teona Hotel: ${site.address.full}. Для маршрута можно использовать карту на странице контактов.`,
     parking: "Гостям Teona Hotel доступны бесплатная парковка и Wi-Fi.",
     restaurant:
-      "В отеле находится ресторан Payidar Traditional Restaurant. Актуальную информацию и особые пожелания следует уточнить у ресторана или команды отеля.",
+      `${site.restaurant.name} находится в отеле. Актуальную информацию можно получить по телефону ${site.restaurant.phone} или в Instagram ${site.restaurant.instagram}.`,
     meeting:
       "Конференц-зал рассчитан на 40 человек при U-образной рассадке и на 80 человек при рассадке классом. Дату и доступность необходимо подтвердить у команды отеля.",
     unavailable:
@@ -363,7 +363,7 @@ function fallbackReply(messages, locale) {
     return { message: copy.location };
   }
   if (/otopark|park|wifi|wi-fi|wlan/.test(text)) return { message: copy.parking };
-  if (/restoran|restaurant|payidar|ресторан/.test(text)) return { message: copy.restaurant };
+  if (/restoran|restaurant|masa kocaeli|ресторан/.test(text)) return { message: copy.restaurant };
   if (/toplanti|meeting|tagung|конферен/.test(text)) return { message: copy.meeting };
   if (/telefon|email|e-posta|contact|kontakt|связ|телефон/.test(text)) return { message: copy.contact };
   if (/merhaba|selam|hello|hi|hallo|привет|здрав/.test(text)) return { message: copy.hello };
@@ -407,7 +407,7 @@ VERIFIED HOTEL FACTS
 - Suite Room: 25 square metres, more spacious and includes a terrace.
 - Triple Room: 15-20 square metres, layout for three guests.
 - Twin Room: 15-20 square metres, two separate beds.
-- Available facilities: complimentary Wi-Fi, complimentary parking, satellite TV, meeting room and Payidar Traditional Restaurant at the hotel.
+- Available facilities: complimentary Wi-Fi, complimentary parking, satellite TV, meeting room and ${site.restaurant.name} at the hotel.
 - Meeting room: up to 40 people in U-shape and 80 in classroom layout.
 - Teona Hotel does NOT offer a sauna or fitness centre.
 - Live prices and availability are not accessible to you. The interface always shows a separate secure booking button. Tell guests to use it for current results.
