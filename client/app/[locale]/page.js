@@ -201,8 +201,8 @@ export default async function HomePage({ params }) {
             <div className="absolute inset-0 bg-[#19334F]/38" />
             <div className="absolute inset-5 flex items-center justify-center border border-white/55 text-center">
               <div>
-                <p className="font-display text-4xl font-semibold">Payidar</p>
-                <p className="mt-2 text-[0.62rem] uppercase tracking-[0.22em]">Traditional Restaurant</p>
+                <p className="font-display text-4xl font-semibold">Masa</p>
+                <p className="mt-2 text-[0.62rem] uppercase tracking-[0.22em]">Kocaeli</p>
               </div>
             </div>
           </div>

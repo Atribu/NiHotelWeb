@@ -12,7 +12,7 @@ export const izmitLandingPages = {
     introTitle: "İzmit'te planlı ve rahat bir konaklama",
     introParagraphs: [
       "İzmit otel seçeneklerini değerlendirirken yalnızca oda fiyatına değil, konuma, yatak düzenine ve konaklama boyunca kullanacağınız olanaklara da bakmak gerekir. Teona Hotel, Bekirpaşa'daki merkezi konumuyla iş seyahati, kısa şehir ziyareti ve Kocaeli çevresindeki gezi planları için pratik bir başlangıç noktası sunar.",
-      "İzmit'teki oteller arasında ihtiyacınıza uygun bir seçim yapabilmeniz için Teona Hotel'de Eko, French, Süit, Triple ve Twin oda seçenekleri bulunur. Ücretsiz Wi-Fi ve otopark, toplantı salonu ve otel bünyesindeki Payidar Restaurant farklı ihtiyaçları aynı adreste bir araya getirir.",
+      "İzmit'teki oteller arasında ihtiyacınıza uygun bir seçim yapabilmeniz için Teona Hotel'de Eko, French, Süit, Triple ve Twin oda seçenekleri bulunur. Ücretsiz Wi-Fi ve otopark, toplantı salonu ve otel bünyesindeki Masa Kocaeli farklı ihtiyaçları aynı adreste bir araya getirir.",
     ],
     focusTitle: "İzmit'te otel seçerken nelere bakılmalı?",
     focusCards: [
@@ -77,11 +77,11 @@ export const izmitLandingPages = {
     introTitle: "Şehirdeki programınıza uyum sağlayan bir konaklama",
     keywordIntentNotes: [
       "“İzmit hotel”, “hotels İzmit”, “hotel in İzmit” ve “hotels in İzmit” gibi farklı aramalar aynı temel ihtiyeti ifade eder: şehirdeki programınıza uygun, ulaşılabilir ve güvenilir bilgileri bulunan bir konaklama noktası seçmek. Teona Hotel, Bekirpaşa'daki merkezi konumuyla iş seyahati, şehir ziyareti ve kısa süreli konaklama planlarına cevap verir.",
-      "Tesiste Eko, French, Süit, Triple ve Twin olmak üzere beş farklı oda tipi bulunur. Ücretsiz Wi-Fi ve otoparkın yanı sıra toplantı salonu ve otel bünyesindeki Payidar Restaurant; konaklamanız boyunca ihtiyaç duyabileceğiniz hizmetleri aynı adreste bir araya getirir.",
+      "Tesiste Eko, French, Süit, Triple ve Twin olmak üzere beş farklı oda tipi bulunur. Ücretsiz Wi-Fi ve otoparkın yanı sıra toplantı salonu ve otel bünyesindeki Masa Kocaeli; konaklamanız boyunca ihtiyaç duyabileceğiniz hizmetleri aynı adreste bir araya getirir.",
     ],
     introParagraphs: [
       "İzmit hotel seçeneklerini değerlendirirken yalnızca oda görünümüne değil, otelin şehir içindeki konumuna ve günlük planınızı nasıl kolaylaştıracağına da bakmak gerekir. Teona Hotel, Bekirpaşa'daki merkezi konumuyla iş seyahatleri, kısa şehir ziyaretleri ve aile buluşmaları için pratik bir başlangıç noktası sunar.",
-      "Tesiste Eko, French, Süit, Triple ve Twin olmak üzere beş farklı oda tipi bulunur. Ücretsiz Wi-Fi ve otoparkın yanı sıra toplantı salonu ve otel bünyesindeki Payidar Restaurant; konaklamanız boyunca ihtiyaç duyabileceğiniz hizmetleri aynı adreste bir araya getirir.",
+      "Tesiste Eko, French, Süit, Triple ve Twin olmak üzere beş farklı oda tipi bulunur. Ücretsiz Wi-Fi ve otoparkın yanı sıra toplantı salonu ve otel bünyesindeki Masa Kocaeli; konaklamanız boyunca ihtiyaç duyabileceğiniz hizmetleri aynı adreste bir araya getirir.",
     ],
     focusTitle: "Size uygun oteli seçerken üç noktaya dikkat edin",
     focusCards: [
@@ -177,7 +177,7 @@ export const izmitLandingPages = {
       },
       {
         question: "Teona Hotel tam pansiyon veya yarım pansiyon hizmeti veriyor mu?",
-        answer: "Teona Hotel tam pansiyon ya da yarım pansiyon paketle tanımlanmaz. Otel bünyesinde Payidar Restaurant bulunur; güncel restoran ve rezervasyon koşulları için otelle iletişime geçebilirsiniz.",
+        answer: "Teona Hotel tam pansiyon ya da yarım pansiyon paketle tanımlanmaz. Otel bünyesinde Masa Kocaeli bulunur; güncel restoran bilgileri için işletmeyle doğrudan iletişime geçebilirsiniz.",
       },
       {
         question: "İzmit ucuz pansiyon aramasında en düşük fiyat garanti ediliyor mu?",
@@ -268,7 +268,7 @@ export const izmitLandingPages = {
     introTitle: "İzmit tatil planınız için merkezi bir başlangıç noktası",
     introParagraphs: [
       "İzmit tatil yerlerini araştırırken yalnızca gezilecek noktaları değil, günün sonunda ulaşacağınız otelin konumunu ve sunduğu oda düzenlerini de değerlendirmek gerekir. Merkezi bir şehir oteli; kısa hafta sonu molalarında, aile ziyaretlerinde ve Kocaeli çevresine uzanan araçlı rotalarda programı tek bir konaklama noktasından yönetmenize yardımcı olabilir.",
-      "Teona Hotel, Bekirpaşa'da hizmet veren 44 odalı bir şehir otelidir. Eko, French, Süit, Triple ve Twin oda seçenekleri; farklı kişi sayıları ve yatak tercihleri için değerlendirilebilir. Ücretsiz Wi-Fi ve otopark ile otel bünyesindeki Payidar Restaurant, şehir tatili boyunca kullanabileceğiniz olanakları aynı adreste bir araya getirir.",
+      "Teona Hotel, Bekirpaşa'da hizmet veren 44 odalı bir şehir otelidir. Eko, French, Süit, Triple ve Twin oda seçenekleri; farklı kişi sayıları ve yatak tercihleri için değerlendirilebilir. Ücretsiz Wi-Fi ve otopark ile otel bünyesindeki Masa Kocaeli, şehir tatili boyunca kullanabileceğiniz olanakları aynı adreste bir araya getirir.",
     ],
     focusTitle: "İzmit ve Kocaeli tatil planını üç adımda oluşturun",
     focusCards: [
@@ -333,7 +333,7 @@ export const izmitLandingPages = {
     introTitle: "İzmit merkezde konaklamayı günlük rotanıza göre planlayın",
     introParagraphs: [
       "İzmit merkez otelleri araştırılırken merkeze yakınlık her seyahat için aynı anlama gelmez. İş görüşmesi, kurum ziyareti, şehir gezisi veya kısa süreli konaklama planınızda gideceğiniz adresleri Teona Hotel'in Bekirpaşa'daki konumuyla aynı harita üzerinde karşılaştırmanız daha doğru bir değerlendirme sağlar.",
-      "Teona Hotel; Eko, French, Süit, Triple ve Twin olmak üzere beş oda tipi sunan 44 odalı bir şehir otelidir. Ücretsiz Wi-Fi ve otopark, toplantı salonu ve otel bünyesindeki Payidar Restaurant; İzmit merkez konaklama planında ihtiyaç duyabileceğiniz farklı hizmetleri aynı adreste bir araya getirir.",
+      "Teona Hotel; Eko, French, Süit, Triple ve Twin olmak üzere beş oda tipi sunan 44 odalı bir şehir otelidir. Ücretsiz Wi-Fi ve otopark, toplantı salonu ve otel bünyesindeki Masa Kocaeli; İzmit merkez konaklama planında ihtiyaç duyabileceğiniz farklı hizmetleri aynı adreste bir araya getirir.",
     ],
     focusTitle: "İzmit merkezde otel seçerken üç temel kontrol",
     focusCards: [
@@ -376,7 +376,7 @@ export const izmitLandingPages = {
       },
       {
         question: "Teona Hotel'de oda kahvaltı seçeneği var mı?",
-        answer: "Yemek veya kahvaltı dâhil hizmetlerin kapsamı seçilen rezervasyon koşuluna göre değişebilir. Payidar Restaurant otel bünyesinde yer alır; güncel paket ve hizmet kapsamını rezervasyon ekranından veya otelden doğrudan teyit edin.",
+        answer: "Yemek veya kahvaltı dâhil hizmetlerin kapsamı seçilen rezervasyon koşuluna göre değişebilir. Masa Kocaeli otel bünyesinde yer alır; güncel restoran bilgilerini işletmeden doğrudan teyit edin.",
       },
       {
         question: "İzmit merkez otellerinin güncel fiyatları nasıl görülür?",
@@ -594,7 +594,7 @@ export const izmitLandingPages = {
     introTitle: "Butik otel aramasında beklentinizi somut özelliklerle karşılaştırın",
     introParagraphs: [
       "İzmit butik otel, İzmit butik hotel veya Kocaeli İzmit butik oteller aramaları çoğunlukla merkezi, özenli ve kolay planlanabilen bir konaklama beklentisini ifade eder. Ancak butik, luxury veya best hotel gibi tanımlar her tesiste aynı hizmet kapsamını garanti etmez. Bu nedenle kararınızı kategori etiketinden çok doğrulanabilir tesis bilgilerine dayandırmanız daha sağlıklıdır.",
-      "Teona Hotel kendisini butik ya da lüks tesis olarak değil, İzmit'te hizmet veren 44 odalı bir şehir oteli olarak tanımlar. Eko, French, Süit, Triple ve Twin oda seçenekleri; gerçek oda galerileri, ücretsiz Wi-Fi, ücretsiz otopark, toplantı salonu ve otel bünyesindeki Payidar Restaurant ile farklı şehir seyahatlerine cevap verir.",
+      "Teona Hotel kendisini butik ya da lüks tesis olarak değil, İzmit'te hizmet veren 44 odalı bir şehir oteli olarak tanımlar. Eko, French, Süit, Triple ve Twin oda seçenekleri; gerçek oda galerileri, ücretsiz Wi-Fi, ücretsiz otopark, toplantı salonu ve otel bünyesindeki Masa Kocaeli ile farklı şehir seyahatlerine cevap verir.",
     ],
     focusTitle: "İzmit butik otel alternatiflerini karşılaştırırken",
     focusCards: [
@@ -647,7 +647,7 @@ export const izmitLandingPages = {
     introTitle: "İzmit'te konaklama planını seyahat amacınıza göre kurun",
     introParagraphs: [
       "İzmit konaklama ve Kocaeli İzmit konaklama aramaları, tek gecelik iş ziyaretinden birkaç günlük şehir programına kadar farklı ihtiyaçları kapsar. İzmit'te konaklama yeri seçmeden önce geliş biçiminizi, gün içinde ulaşacağınız adresleri, kişi sayısını ve tercih ettiğiniz yatak düzenini belirlemek karşılaştırmayı kolaylaştırır.",
-      "Teona Hotel, Bekirpaşa'daki konumu ve beş farklı oda tipiyle Kocaeli İzmit konaklama yerleri arasında değerlendirilebilecek bir şehir otelidir. Ücretsiz Wi-Fi ve otoparkın yanı sıra toplantı salonu ve Payidar Restaurant, konaklama programının farklı bölümlerini aynı adreste planlamaya yardımcı olur.",
+      "Teona Hotel, Bekirpaşa'daki konumu ve beş farklı oda tipiyle Kocaeli İzmit konaklama yerleri arasında değerlendirilebilecek bir şehir otelidir. Ücretsiz Wi-Fi ve otoparkın yanı sıra toplantı salonu ve Masa Kocaeli, konaklama programının farklı bölümlerini aynı adreste planlamaya yardımcı olur.",
     ],
     focusTitle: "Konaklama kararınızı üç başlıkta netleştirin",
     focusCards: [
@@ -762,7 +762,7 @@ const editorialSectionsBySlug = {
       title: "Oda tipini kişi sayınıza ve konaklama biçiminize göre seçin",
       paragraphs: [
         "İzmit'teki oteller aynı oda düzenini sunmayabilir. Yalnız seyahat eden bir misafirin ihtiyaçlarıyla birlikte yolculuk yapan bir ailenin veya çalışma ekibinin yatak tercihi farklıdır. Teona Hotel'deki Eko, French, Süit, Triple ve Twin odalar kişi sayısına ve kullanım beklentisine göre karşılaştırılabilir; her oda tipinin gerçek fotoğrafları ayrıntılı sayfasında incelenebilir.",
-        "Odanızı belirlerken yalnızca yatağa değil, konaklama boyunca kullanacağınız diğer olanaklara da bakın. Ücretsiz Wi-Fi ve otopark, toplantı salonu ve otel bünyesindeki Payidar Restaurant gününüzün farklı bölümlerini aynı adreste planlamanıza yardımcı olur. İzmit konaklamanız için rezervasyon oluştururken kesin müsaitlik ve güncel koşulları görmek üzere tarih ve kişi bilgilerinizi rezervasyon alanına girin.",
+        "Odanızı belirlerken yalnızca yatağa değil, konaklama boyunca kullanacağınız diğer olanaklara da bakın. Ücretsiz Wi-Fi ve otopark, toplantı salonu ve otel bünyesindeki Masa Kocaeli gününüzün farklı bölümlerini aynı adreste planlamanıza yardımcı olur. İzmit konaklamanız için rezervasyon oluştururken kesin müsaitlik ve güncel koşulları görmek üzere tarih ve kişi bilgilerinizi rezervasyon alanına girin.",
       ],
       points: ["Beş farklı oda tipi", "Gerçek oda fotoğrafları", "Tarihe göre güncel uygunluk"],
       images: ["roomDouble", "roomTwin", "suiteRoom3"],
@@ -799,7 +799,7 @@ const editorialSectionsBySlug = {
       ],
       points: ["44 odalı şehir oteli", "Doğrulanabilir hizmetler", "Güncel rezervasyon koşulları"],
       images: ["exteriorAngle", "roomDouble", "restaurant"],
-      imageAlts: ["Teona Hotel İzmit dış görünümü", "Teona Hotel oda görünümü", "Payidar Restaurant iç mekânı"],
+      imageAlts: ["Teona Hotel İzmit dış görünümü", "Teona Hotel oda görünümü", "Masa Kocaeli iç mekânı"],
     },
   ],
   "izmit-hotel": [
@@ -861,22 +861,22 @@ const editorialSectionsBySlug = {
       ],
       points: ["Güncel yorumları inceleme", "Gerçek fotoğraflarla karşılaştırma", "Doğrudan iletişim"],
       images: ["corridor", "roomBathroom3", "restaurant"],
-      imageAlts: ["Teona Hotel ortak alanı", "Teona Hotel banyo görünümü", "Payidar Restaurant"],
+      imageAlts: ["Teona Hotel ortak alanı", "Teona Hotel banyo görünümü", "Masa Kocaeli"],
     },
     {
       eyebrow: "Otel olanakları",
       title: "Konaklama boyunca kullanabileceğiniz hizmetleri inceleyin",
       keywordIntentNotes: [
-        "“Hotel centre İzmit”, “hotel İzmit centre” veya “İzmit area hotel” aramaları şehir içindeki merkezi bir konaklama ihtiyacına yönelir. Teona Hotel, 44 odalı bir şehir otelidir. Ücretsiz Wi-Fi ve otoparkın yanı sıra toplantı salonu ve otel bünyesindeki Payidar Restaurant ile farklı seyahat amaçlarına hizmet verir.",
+        "“Hotel centre İzmit”, “hotel İzmit centre” veya “İzmit area hotel” aramaları şehir içindeki merkezi bir konaklama ihtiyacına yönelir. Teona Hotel, 44 odalı bir şehir otelidir. Ücretsiz Wi-Fi ve otoparkın yanı sıra toplantı salonu ve otel bünyesindeki Masa Kocaeli ile farklı seyahat amaçlarına hizmet verir.",
         "Arama sonuçlarında her şey dâhil, sahilde, uçuş dâhil, butik, romantik veya yalnızca gençlere yönelik hotel gibi farklı konsept ifadeleri görülebilir. Teona Hotel bu kategorilerle tanımlanmaz. Rezervasyon öncesinde yalnızca resmi sayfalarda belirtilen hizmetleri esas almak, beklenti ile sunulan konaklama deneyiminin uyumlu olmasını sağlar.",
       ],
       paragraphs: [
-        "Teona Hotel, İzmit'te hizmet veren 44 odalı bir şehir otelidir. Ücretsiz Wi-Fi ve otoparkın yanı sıra toplantı salonu ve otel bünyesindeki Payidar Restaurant ile iş ve şehir seyahatlerinin farklı ihtiyaçlarına cevap verir.",
+        "Teona Hotel, İzmit'te hizmet veren 44 odalı bir şehir otelidir. Ücretsiz Wi-Fi ve otoparkın yanı sıra toplantı salonu ve otel bünyesindeki Masa Kocaeli ile iş ve şehir seyahatlerinin farklı ihtiyaçlarına cevap verir.",
         "Tesis; sahil, her şey dâhil veya uçuş dâhil tatil konseptiyle hizmet vermez. Rezervasyon öncesinde resmi sayfalarda belirtilen oda özelliklerini ve otel olanaklarını incelemeniz, beklentilerinize uygun bir konaklama seçmenizi kolaylaştırır.",
       ],
       points: ["44 odalı şehir oteli", "Doğrulanabilir olanaklar", "Merkezi İzmit konaklaması"],
       images: ["exteriorFront", "corridor", "restaurant"],
-      imageAlts: ["Teona Hotel İzmit ön cephesi", "Teona Hotel toplantı alanı", "Payidar Restaurant iç mekânı"],
+      imageAlts: ["Teona Hotel İzmit ön cephesi", "Teona Hotel toplantı alanı", "Masa Kocaeli iç mekânı"],
     },
   ],
   "izmit-pansiyon": [
@@ -907,11 +907,11 @@ const editorialSectionsBySlug = {
       title: "Yemek planını tesisin gerçek hizmet kapsamına göre oluşturun",
       paragraphs: [
         "İzmit tam pansiyon oteller veya İzmit yarım pansiyon otelleri aramaları, yemeklerin konaklama paketine dâhil olduğu bir tesis beklentisini ifade eder. Bu kavramlar yalnızca konaklama yerinin adını değil, öğünlerin rezervasyona hangi kapsamda eklendiğini anlatır. Rezervasyonu tamamlamadan önce seçilen paketin içeriğini ve güncel koşullarını mutlaka kontrol edin.",
-        "Teona Hotel tam pansiyon veya yarım pansiyon paketle tanımlanmaz; 44 odalı bir şehir otelidir. Otel bünyesinde Payidar Restaurant bulunur. Yemek planınız, restoranın güncel hizmet bilgileri veya özel bir talebiniz için rezervasyon öncesinde Teona Hotel ekibiyle doğrudan iletişime geçebilirsiniz.",
+        "Teona Hotel tam pansiyon veya yarım pansiyon paketle tanımlanmaz; 44 odalı bir şehir otelidir. Otel bünyesinde Masa Kocaeli bulunur. Yemek planınız veya özel bir talebiniz için restoran ekibiyle doğrudan iletişime geçebilirsiniz.",
       ],
-      points: ["Şehir oteli konsepti", "Payidar Restaurant", "Doğrudan bilgi ve rezervasyon"],
+      points: ["Şehir oteli konsepti", "Masa Kocaeli", "Doğrudan bilgi ve rezervasyon"],
       images: ["restaurant", "roomDouble", "bathroomDetail"],
-      imageAlts: ["Payidar Restaurant iç mekânı", "Teona Hotel çift kişilik oda", "Teona Hotel banyo detayı"],
+      imageAlts: ["Masa Kocaeli iç mekânı", "Teona Hotel çift kişilik oda", "Teona Hotel banyo detayı"],
     },
   ],
   "izmit-hotel-fiyat": [
@@ -955,11 +955,11 @@ const editorialSectionsBySlug = {
       title: "Kısa bir İzmit tatilini günün farklı bölümlerine ayırın",
       paragraphs: [
         "İzmit tatili için birkaç gün ayırdığınızda şehirdeki programı sabah, öğleden sonra ve akşam olmak üzere bölümlere ayırmak daha dengeli bir gezi oluşturabilir. Tarihi ve kültürel duraklar, sahil çevresindeki zaman, alışveriş veya yemek planı aynı güne yığılmadığında otele dönüş ve dinlenme için de yeterli süre kalır.",
-        "Teona Hotel'in Bekirpaşa'daki konumunu ziyaret etmek istediğiniz adreslerle harita üzerinden karşılaştırabilirsiniz. Güne başlamadan önce güncel trafik durumunu kontrol etmek ve yakın noktaları aynı rota içinde gruplamak şehir içindeki zamanı daha verimli kullanmanıza yardımcı olur. Akşam için Payidar Restaurant'ı değerlendirmeyi düşünüyorsanız güncel hizmet bilgisini önceden teyit edebilirsiniz.",
+        "Teona Hotel'in Bekirpaşa'daki konumunu ziyaret etmek istediğiniz adreslerle harita üzerinden karşılaştırabilirsiniz. Güne başlamadan önce güncel trafik durumunu kontrol etmek ve yakın noktaları aynı rota içinde gruplamak şehir içindeki zamanı daha verimli kullanmanıza yardımcı olur. Akşam için Masa Kocaeli'yi değerlendirmeyi düşünüyorsanız güncel hizmet bilgisini önceden teyit edebilirsiniz.",
       ],
       points: ["Dengeli şehir rotası", "Güncel trafik kontrolü", "Yemek ve dinlenme planı"],
       images: ["exteriorCity", "restaurant", "corridor"],
-      imageAlts: ["Teona Hotel ve İzmit şehir görünümü", "Payidar Restaurant", "Teona Hotel ortak alanı"],
+      imageAlts: ["Teona Hotel ve İzmit şehir görünümü", "Masa Kocaeli", "Teona Hotel ortak alanı"],
     },
     {
       eyebrow: "Kocaeli ve yakın çevre",
@@ -1012,11 +1012,11 @@ const editorialSectionsBySlug = {
       title: "Konum, hizmet ve rezervasyon kapsamını aynı anda kontrol edin",
       paragraphs: [
         "İzmit merkez uygun oteller veya en uygun İzmit merkez otelleri araştırmasında yalnızca gecelik tutara bakmak eksik bir karşılaştırma olabilir. Şehir içindeki programınıza göre konumun zaman maliyeti, otopark için ek ücret gerekip gerekmediği, internet erişimi ve seçtiğiniz odanın kişi sayısına uygunluğu toplam deneyimi etkiler. Teona Hotel'de Wi-Fi ve otopark ücretsiz sunulur.",
-        "Oda ve kahvaltı gibi paket ifadelerinin kapsamı rezervasyon seçeneğine göre değişebileceğinden, dâhil olan hizmetleri ödeme öncesinde kontrol edin. Otel bünyesindeki Payidar Restaurant için güncel hizmet bilgisini, özel taleplerinizi ve toplantı salonu ihtiyacınızı doğrudan otelden teyit edebilirsiniz. Bu yaklaşım, doğrulanmamış üstünlük iddiaları yerine açık bilgilerle karar vermenizi sağlar.",
+        "Oda ve kahvaltı gibi paket ifadelerinin kapsamı rezervasyon seçeneğine göre değişebileceğinden, dâhil olan hizmetleri ödeme öncesinde kontrol edin. Otel bünyesindeki Masa Kocaeli için güncel hizmet bilgisini ve özel taleplerinizi restoran ekibinden; toplantı salonu ihtiyacınızı ise otelden doğrudan teyit edebilirsiniz. Bu yaklaşım, doğrulanmamış üstünlük iddiaları yerine açık bilgilerle karar vermenizi sağlar.",
       ],
       points: ["Ücretsiz Wi-Fi ve otopark", "Açık rezervasyon koşulları", "Doğrudan iletişim"],
       images: ["restaurant", "economyRoom4", "bathroomDetail"],
-      imageAlts: ["Payidar Restaurant iç mekânı", "Teona Hotel Eko Oda", "Teona Hotel banyo detayı"],
+      imageAlts: ["Masa Kocaeli iç mekânı", "Teona Hotel Eko Oda", "Teona Hotel banyo detayı"],
     },
   ],
   "izmit-merkezdeki-oteller": [
@@ -1121,7 +1121,7 @@ const editorialSectionsBySlug = {
       title: "Butik tanımından önce tesisin sunduğu deneyimi inceleyin",
       paragraphs: [
         "İzmit butik oteller, İzmit butik hotels veya butik hotel İzmit aramalarında kullanıcılar çoğunlukla merkezi konum, daha özenli bir konaklama akışı ve açık tesis bilgileri bekler. Butik otel İzmit veya Kocaeli İzmit butik otel sonuçlarında görülen her tesis aynı ölçekte ve aynı konseptte değildir. Bu nedenle oda sayısı, yatak düzeni, ortak kullanım alanları ve sunulan hizmetler ayrı ayrı kontrol edilmelidir.",
-        "Teona Hotel 44 odalı bir şehir otelidir; butik ya da luxury hotel sınıflandırmasıyla tanıtılmaz. Buna karşılık gerçek oda fotoğrafları, beş farklı oda tipi, ücretsiz Wi-Fi ve otopark, toplantı salonu ve Payidar Restaurant gibi doğrulanabilir özelliklerini açıkça sunar. İzmit butik otel tavsiye veya İzmit butik otel öneri aramalarından gelen misafirler Teona Hotel'i bu somut bilgiler üzerinden kendi beklentileriyle karşılaştırabilir.",
+        "Teona Hotel 44 odalı bir şehir otelidir; butik ya da luxury hotel sınıflandırmasıyla tanıtılmaz. Buna karşılık gerçek oda fotoğrafları, beş farklı oda tipi, ücretsiz Wi-Fi ve otopark, toplantı salonu ve Masa Kocaeli gibi doğrulanabilir özelliklerini açıkça sunar. İzmit butik otel tavsiye veya İzmit butik otel öneri aramalarından gelen misafirler Teona Hotel'i bu somut bilgiler üzerinden kendi beklentileriyle karşılaştırabilir.",
       ],
       points: ["44 odalı şehir oteli", "Beş gerçek oda galerisi", "Açık hizmet kapsamı"],
       images: ["exteriorFront", "frenchRoom3", "corridor"],
@@ -1177,12 +1177,12 @@ const editorialSectionsBySlug = {
       eyebrow: "Kocaeli İzmit konaklama planı",
       title: "Otel olanaklarını seyahat boyunca kullanacağınız hizmetlerle eşleştirin",
       paragraphs: [
-        "İzmit konaklama seçimini yalnızca oda görünümüne göre yapmak yeterli olmayabilir. Çevrim içi çalışacak misafirler için internet, özel araçla gelenler için otopark, kurumsal programı bulunanlar için toplantı alanı ve yemek planı konaklama boyunca zaman yönetimini etkiler. Teona Hotel'de Wi-Fi ve otopark ücretsiz sunulur; otel bünyesinde toplantı salonu ve Payidar Restaurant bulunur.",
+        "İzmit konaklama seçimini yalnızca oda görünümüne göre yapmak yeterli olmayabilir. Çevrim içi çalışacak misafirler için internet, özel araçla gelenler için otopark, kurumsal programı bulunanlar için toplantı alanı ve yemek planı konaklama boyunca zaman yönetimini etkiler. Teona Hotel'de Wi-Fi ve otopark ücretsiz sunulur; otel bünyesinde toplantı salonu ve Masa Kocaeli bulunur.",
         "Kocaeli İzmit konaklama araştırmasında tesislerin hizmet kapsamını kendi resmi sayfalarından doğrulayın. Rezervasyon alanına kesin tarihleri, yetişkin sayısını ve varsa çocuk yaşlarını girin; ardından oda tipini, toplam tutarı ve koşulları birlikte inceleyin. Özel bir talebiniz varsa işlemi tamamlamadan önce otel ekibiyle doğrudan görüşebilirsiniz.",
       ],
       points: ["Ücretsiz Wi-Fi", "Ücretsiz otopark", "Doğrudan iletişim ve rezervasyon"],
       images: ["restaurant", "corridor", "exteriorFront"],
-      imageAlts: ["Payidar Restaurant", "Teona Hotel ortak alanı", "Teona Hotel ön cephesi"],
+      imageAlts: ["Masa Kocaeli", "Teona Hotel ortak alanı", "Teona Hotel ön cephesi"],
     },
   ],
   "izmit-hotel-ucuz": [
