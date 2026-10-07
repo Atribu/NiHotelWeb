@@ -16,6 +16,18 @@ const footerLinks = [
   { key: "contact", href: "/contact" },
 ];
 
+const landingLinks = [
+  { label: "İzmit Otel", slug: "izmit-otel" },
+  { label: "İzmit Hotel", slug: "izmit-hotel" },
+  { label: "İzmit Pansiyon", slug: "izmit-pansiyon" },
+  { label: "İzmit Hotel Fiyat", slug: "izmit-hotel-fiyat" },
+  { label: "İzmit Hotel Tatil", slug: "izmit-hotel-tatil" },
+  { label: "İzmit Hotel Merkez", slug: "izmit-hotel-merkez" },
+  { label: "İzmit Butik Otel", slug: "izmit-butik-otel" },
+  { label: "İzmit Konaklama", slug: "izmit-konaklama" },
+  { label: "İzmit Hotel Ucuz", slug: "izmit-hotel-ucuz" },
+];
+
 export default function SiteFooter() {
   const t = useTranslations("footer");
   const navigation = useTranslations("navigation");
@@ -53,6 +65,25 @@ export default function SiteFooter() {
             <p className="mt-5 max-w-xs text-sm leading-6 text-[#19334F]/60">
               {t("tagline")}
             </p>
+            <nav
+              aria-label="İzmit konaklama sayfaları"
+              className="mt-5 w-full max-w-xs border-t border-[#19334F]/10 pt-4"
+              lang="tr"
+            >
+              <ul className="flex flex-wrap justify-center gap-x-3 gap-y-1 md:justify-start">
+                {landingLinks.map((item) => (
+                  <li key={item.slug}>
+                    <a
+                      className="inline-block py-0.5 text-xs leading-5 text-[#19334F]/60 underline-offset-4 transition-colors hover:text-[#19334F] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#19334F]"
+                      href={`/tr/${item.slug}`}
+                      hrefLang="tr"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
 
           <div>

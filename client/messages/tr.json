@@ -521,6 +521,15 @@
       "previewAlt": "Teona Hotel KVKK uygunluk sertifikası önizlemesi"
     }
   },
+  "notFound": {
+    "eyebrow": "Sayfa bulunamadı",
+    "title": "Aradığınız sayfa burada değil.",
+    "description": "Bağlantı değiştirilmiş, kaldırılmış veya hatalı yazılmış olabilir. Teona Hotel'i keşfetmeye ana sayfadan devam edebilir ya da oda seçeneklerimizi inceleyebilirsiniz.",
+    "home": "Ana sayfaya dön",
+    "rooms": "Odaları inceleyin",
+    "contactPrompt": "Aradığınızı bulamadınız mı?",
+    "contact": "Bizimle iletişime geçin"
+  },
   "common": {
     "learnMore": "Daha fazla bilgi",
     "backHome": "Ana sayfaya dön"
