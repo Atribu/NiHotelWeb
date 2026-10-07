@@ -521,6 +521,15 @@
       "previewAlt": "Vorschau des Datenschutz-Konformitätszertifikats des Teona Hotels"
     }
   },
+  "notFound": {
+    "eyebrow": "Seite nicht gefunden",
+    "title": "Die gesuchte Seite ist nicht verfügbar.",
+    "description": "Der Link wurde möglicherweise geändert, entfernt oder falsch eingegeben. Kehren Sie zur Startseite zurück oder entdecken Sie unsere Zimmer.",
+    "home": "Zur Startseite",
+    "rooms": "Zimmer entdecken",
+    "contactPrompt": "Sie finden nicht, was Sie suchen?",
+    "contact": "Kontaktieren Sie uns"
+  },
   "common": {
     "learnMore": "Mehr erfahren",
     "backHome": "Zurück zur Startseite"
