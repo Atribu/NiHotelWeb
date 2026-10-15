@@ -399,7 +399,8 @@
     "cookiePolicy": "Cookie-Richtlinie",
     "cookieSettings": "Cookie-Einstellungen",
     "tourismOperationCertificate": "Ministerium für Kultur und Tourismus — Tourismusbetriebszertifikat Nr.: {number}",
-    "materialNote": "Teona Hotel — komfortable und praktische Stadtaufenthalte im Zentrum von İzmit."
+    "materialNote": "Teona Hotel — komfortable und praktische Stadtaufenthalte im Zentrum von İzmit.",
+    "shareExperience": "Bewerten Sie Ihren Aufenthalt"
   },
   "cookieConsent": {
     "bannerLabel": "Cookie-Einstellungen",
@@ -533,5 +534,80 @@
   "common": {
     "learnMore": "Mehr erfahren",
     "backHome": "Zurück zur Startseite"
+  },
+  "reviews": {
+    "eyebrow": "Teona Hotel · İzmit",
+    "title": "Bewerten Sie Ihren Aufenthalt",
+    "lead": "Vielen Dank, dass Sie sich für das Teona Hotel entschieden haben. Wählen Sie die gewünschte Plattform, um Ihren Aufenthalt zu bewerten.",
+    "thankYou": "Mit Ihrer Bewertung helfen Sie uns, unsere Servicequalität weiter zu verbessern, und unterstützen zukünftige Gäste bei ihrer Entscheidung.",
+    "platformsLabel": "Plattformen für Gästebewertungen",
+    "closeGuide": "Hinweise zur Bewertung schließen",
+    "openInNewTab": "Öffnet in einem neuen Tab",
+    "continueOnPlatform": "{platform} aufrufen",
+    "googleDirectAction": "Auf Google bewerten",
+    "googleDirectGuide": "Melden Sie sich in Ihrem Google-Konto an, um Ihren Aufenthalt im Teona Hotel zu bewerten.",
+    "googleDirectLinkLabel": "Teona Hotel auf Google bewerten",
+    "platforms": {
+      "google": {
+        "action": "Google-Profil ansehen",
+        "guide": "Wählen Sie im Google-Profil des Teona Hotels unter „Rezensionen“ die Option „Rezension schreiben“. Gegebenenfalls müssen Sie sich in Ihrem Google-Konto anmelden.",
+        "linkLabel": "Teona Hotel auf Google ansehen"
+      },
+      "booking": {
+        "action": "Bei Ihrem Konto anmelden",
+        "guide": "Melden Sie sich mit dem Booking.com-Konto an, das Sie für Ihre Buchung verwendet haben. Wählen Sie Ihre abgeschlossene Buchung im Teona Hotel, um die verfügbare Bewertungsoption aufzurufen.",
+        "linkLabel": "Bei Booking.com anmelden"
+      },
+      "expedia": {
+        "action": "Ihre Reisen aufrufen",
+        "guide": "Melden Sie sich bei Expedia an und wählen Sie unter „Reisen“ Ihren abgeschlossenen Aufenthalt im Teona Hotel. Nutzen Sie die verfügbare Bewertungsoption oder Ihre Bewertungseinladung nach dem Aufenthalt.",
+        "linkLabel": "Ihre Expedia-Reisen aufrufen"
+      },
+      "etstur": {
+        "action": "Auf Otelpuan bewerten",
+        "guide": "Gästebewertungen für Etstur werden über Otelpuan geteilt. Im Bewertungsformular für Teona Otel können Sie Ihren Aufenthalt bewerten und Ihre Erfahrungen schildern.",
+        "linkLabel": "Teona Otel auf Otelpuan bewerten"
+      },
+      "airbnb": {
+        "action": "Airbnb-Bewertungen aufrufen",
+        "guide": "Melden Sie sich mit dem Airbnb-Konto Ihrer Buchung an und wählen Sie Ihren Aufenthalt im Teona Hotel unter den ausstehenden Bewertungen. Eine Bewertung ist innerhalb von 14 Tagen nach dem Check-out möglich.",
+        "linkLabel": "Ihre Airbnb-Bewertungen aufrufen"
+      },
+      "tatilsepeti": {
+        "action": "Hotelprofil ansehen",
+        "guide": "Besuchen Sie das Profil des Teona Hotels auf Tatilsepeti. Auskunft zur Bewertung Ihres Aufenthalts erhalten Sie beim Kundenservice von Tatilsepeti.",
+        "linkLabel": "Teona Hotel auf Tatilsepeti ansehen"
+      },
+      "tatilbudur": {
+        "action": "Hotelprofil ansehen",
+        "guide": "Besuchen Sie das Profil des Teona Hotels auf Tatilbudur. Auskunft zur Bewertung Ihres Aufenthalts erhalten Sie beim Kundenservice von Tatilbudur.",
+        "linkLabel": "Teona Hotel auf Tatilbudur ansehen"
+      },
+      "otelz": {
+        "action": "Hotelprofil ansehen",
+        "guide": "Auf dem Otelz-Profil des Teona Hotels finden Sie Gästebewertungen. Informationen zur Abgabe Ihrer eigenen Bewertung erhalten Sie bei Otelz.",
+        "linkLabel": "Teona Hotel auf Otelz ansehen"
+      },
+      "enuygun": {
+        "action": "Hotelprofil ansehen",
+        "guide": "ENUYGUN nimmt Bewertungen von Gästen entgegen, die gebucht und ihren Aufenthalt abgeschlossen haben. Informationen zur Bewertung Ihres Aufenthalts im Teona Hotel erhalten Sie direkt bei ENUYGUN.",
+        "linkLabel": "Teona Hotel auf ENUYGUN ansehen"
+      },
+      "setur": {
+        "action": "Tripadvisor-Bewertungen ansehen",
+        "guide": "Die Gästebewertungen auf Setur stammen von Tripadvisor. Wählen Sie im Tripadvisor-Profil von Teona Otel „Bewertung schreiben“, um Ihren Aufenthalt zu bewerten. Gegebenenfalls ist eine Anmeldung erforderlich.",
+        "linkLabel": "Teona Otel auf Tripadvisor ansehen"
+      },
+      "jolly": {
+        "action": "Gästestimmen ansehen",
+        "guide": "Jolly fasst Bewertungen des Teona Hotels aus verschiedenen Quellen zusammen. Um Ihre eigenen Erfahrungen zu teilen, wählen Sie bitte Ihre Buchungsplattform oder Google.",
+        "linkLabel": "Teona-Hotel-Bewertungen auf Jolly ansehen"
+      },
+      "sorgulamax": {
+        "action": "Hotelprofil ansehen",
+        "guide": "Im Sorgulamax-Profil des Teona Hotels finden Sie Gästebewertungen. Informationen zur Abgabe Ihrer eigenen Bewertung erhalten Sie bei Sorgulamax.",
+        "linkLabel": "Teona Hotel auf Sorgulamax ansehen"
+      }
+    }
   }
 }

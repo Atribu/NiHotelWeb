@@ -399,7 +399,8 @@
     "cookiePolicy": "Cookie Policy",
     "cookieSettings": "Cookie preferences",
     "tourismOperationCertificate": "Ministry of Culture and Tourism — Tourism Operation Certificate No: {number}",
-    "materialNote": "Teona Hotel — comfortable and practical city stays in central İzmit."
+    "materialNote": "Teona Hotel — comfortable and practical city stays in central İzmit.",
+    "shareExperience": "Review your stay"
   },
   "cookieConsent": {
     "bannerLabel": "Cookie preferences",
@@ -533,5 +534,80 @@
   "common": {
     "learnMore": "Learn more",
     "backHome": "Back to home"
+  },
+  "reviews": {
+    "eyebrow": "Teona Hotel · Izmit",
+    "title": "Review your stay",
+    "lead": "Thank you for choosing Teona Hotel. Please select a platform to share your feedback on your stay.",
+    "thankYou": "Your feedback helps us improve our service and provides valuable insight for future guests.",
+    "platformsLabel": "Guest review platforms",
+    "closeGuide": "Close review instructions",
+    "openInNewTab": "Opens in a new tab",
+    "continueOnPlatform": "Visit {platform}",
+    "googleDirectAction": "Write a Google review",
+    "googleDirectGuide": "Sign in to your Google account to review your stay at Teona Hotel.",
+    "googleDirectLinkLabel": "Review Teona Hotel on Google",
+    "platforms": {
+      "google": {
+        "action": "View our Google profile",
+        "guide": "Select “Write a review” in the reviews section of Teona Hotel’s Google profile. You may need to sign in to your Google account.",
+        "linkLabel": "View Teona Hotel on Google"
+      },
+      "booking": {
+        "action": "Sign in to your account",
+        "guide": "Sign in with the Booking.com account used for your reservation. Select your completed Teona Hotel booking to see the available review option.",
+        "linkLabel": "Sign in to Booking.com"
+      },
+      "expedia": {
+        "action": "View your trips",
+        "guide": "Sign in to Expedia and find your completed Teona Hotel stay under Trips. You can submit a review using the available option or your post-stay invitation.",
+        "linkLabel": "View your Expedia trips"
+      },
+      "etstur": {
+        "action": "Review on Otelpuan",
+        "guide": "Etstur guest feedback is shared through Otelpuan. Use the Teona Otel review form to rate your stay and share your comments.",
+        "linkLabel": "Review Teona Otel on Otelpuan"
+      },
+      "airbnb": {
+        "action": "View your Airbnb reviews",
+        "guide": "Sign in to the Airbnb account used for your reservation and select your Teona Hotel stay under reviews to write. Reviews can be submitted within 14 days of checkout.",
+        "linkLabel": "View your Airbnb reviews"
+      },
+      "tatilsepeti": {
+        "action": "View the hotel profile",
+        "guide": "View Teona Hotel’s profile on Tatilsepeti. For information about reviewing your stay, please contact Tatilsepeti customer service.",
+        "linkLabel": "View Teona Hotel on Tatilsepeti"
+      },
+      "tatilbudur": {
+        "action": "View the hotel profile",
+        "guide": "View Teona Hotel’s profile on Tatilbudur. For information about reviewing your stay, please contact Tatilbudur customer service.",
+        "linkLabel": "View Teona Hotel on Tatilbudur"
+      },
+      "otelz": {
+        "action": "View the hotel profile",
+        "guide": "Read guest reviews on Teona Hotel’s Otelz profile. For guidance on submitting your own review, please contact Otelz.",
+        "linkLabel": "View Teona Hotel on Otelz"
+      },
+      "enuygun": {
+        "action": "View the hotel profile",
+        "guide": "ENUYGUN accepts reviews from guests who booked and completed a stay. Please contact the platform for details on reviewing your Teona Hotel stay.",
+        "linkLabel": "View Teona Hotel on ENUYGUN"
+      },
+      "setur": {
+        "action": "View Tripadvisor reviews",
+        "guide": "Setur displays guest ratings sourced from Tripadvisor. To review your stay, visit Teona Otel’s Tripadvisor profile and select “Write a review”. Sign-in may be required.",
+        "linkLabel": "View Teona Otel on Tripadvisor"
+      },
+      "jolly": {
+        "action": "View the review summary",
+        "guide": "Jolly presents summaries of Teona Hotel reviews from several sources. To share your own feedback, please select your booking platform or Google.",
+        "linkLabel": "View Teona Hotel reviews on Jolly"
+      },
+      "sorgulamax": {
+        "action": "View the hotel profile",
+        "guide": "Read guest reviews on Teona Hotel’s Sorgulamax profile. For information about submitting your own review, please contact Sorgulamax.",
+        "linkLabel": "View Teona Hotel on Sorgulamax"
+      }
+    }
   }
 }

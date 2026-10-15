@@ -399,7 +399,8 @@
     "cookiePolicy": "Политика cookie",
     "cookieSettings": "Настройки cookie",
     "tourismOperationCertificate": "Министерство культуры и туризма — Номер сертификата туристического предприятия: {number}",
-    "materialNote": "Teona Hotel — комфортное и практичное проживание в центре Измита."
+    "materialNote": "Teona Hotel — комфортное и практичное проживание в центре Измита.",
+    "shareExperience": "Оцените пребывание в отеле"
   },
   "cookieConsent": {
     "bannerLabel": "Настройки cookie",
@@ -533,5 +534,80 @@
   "common": {
     "learnMore": "Подробнее",
     "backHome": "Вернуться на главную"
+  },
+  "reviews": {
+    "eyebrow": "Teona Hotel · Измит",
+    "title": "Оцените пребывание в отеле",
+    "lead": "Благодарим вас за выбор Teona Hotel. Выберите платформу, на которой вы хотите поделиться впечатлениями о проживании.",
+    "thankYou": "Ваши отзывы помогают нам совершенствовать качество обслуживания и служат ориентиром для будущих гостей.",
+    "platformsLabel": "Платформы с отзывами гостей",
+    "closeGuide": "Закрыть информацию об отзыве",
+    "openInNewTab": "Откроется в новой вкладке",
+    "continueOnPlatform": "Перейти на {platform}",
+    "googleDirectAction": "Оставить отзыв в Google",
+    "googleDirectGuide": "Войдите в аккаунт Google, чтобы оставить отзыв о проживании в Teona Hotel.",
+    "googleDirectLinkLabel": "Оценить Teona Hotel в Google",
+    "platforms": {
+      "google": {
+        "action": "Посмотреть профиль в Google",
+        "guide": "В разделе отзывов профиля Teona Hotel в Google выберите «Написать отзыв». При необходимости войдите в аккаунт Google.",
+        "linkLabel": "Посмотреть Teona Hotel в Google"
+      },
+      "booking": {
+        "action": "Войти в аккаунт",
+        "guide": "Войдите в аккаунт Booking.com, через который оформляли бронирование. Выберите завершённое бронирование в Teona Hotel, чтобы перейти к доступной форме отзыва.",
+        "linkLabel": "Войти в Booking.com"
+      },
+      "expedia": {
+        "action": "Открыть ваши поездки",
+        "guide": "Войдите в аккаунт Expedia и найдите завершённое проживание в Teona Hotel в разделе поездок. Воспользуйтесь доступной возможностью оставить отзыв или приглашением, полученным после выезда.",
+        "linkLabel": "Открыть ваши поездки на Expedia"
+      },
+      "etstur": {
+        "action": "Оставить отзыв на Otelpuan",
+        "guide": "Отзывы гостей Etstur публикуются через Otelpuan. В форме отзыва о Teona Otel вы можете оценить проживание и поделиться впечатлениями.",
+        "linkLabel": "Оценить Teona Otel на Otelpuan"
+      },
+      "airbnb": {
+        "action": "Открыть ваши отзывы Airbnb",
+        "guide": "Войдите в аккаунт Airbnb, через который оформляли бронирование, и выберите проживание в Teona Hotel среди ожидающих отзыва. Отзыв можно оставить в течение 14 дней после выезда.",
+        "linkLabel": "Открыть ваши отзывы на Airbnb"
+      },
+      "tatilsepeti": {
+        "action": "Посмотреть профиль отеля",
+        "guide": "Посмотрите профиль Teona Hotel на Tatilsepeti. Информацию о возможности оставить отзыв о проживании можно уточнить в службе поддержки Tatilsepeti.",
+        "linkLabel": "Посмотреть Teona Hotel на Tatilsepeti"
+      },
+      "tatilbudur": {
+        "action": "Посмотреть профиль отеля",
+        "guide": "Посмотрите профиль Teona Hotel на Tatilbudur. Информацию о возможности оставить отзыв о проживании можно уточнить в службе поддержки Tatilbudur.",
+        "linkLabel": "Посмотреть Teona Hotel на Tatilbudur"
+      },
+      "otelz": {
+        "action": "Посмотреть профиль отеля",
+        "guide": "В профиле Teona Hotel на Otelz представлены отзывы гостей. По вопросам публикации собственного отзыва вы можете обратиться в Otelz.",
+        "linkLabel": "Посмотреть Teona Hotel на Otelz"
+      },
+      "enuygun": {
+        "action": "Посмотреть профиль отеля",
+        "guide": "ENUYGUN принимает отзывы гостей, которые забронировали и завершили проживание. Подробности публикации отзыва о Teona Hotel вы можете уточнить в ENUYGUN.",
+        "linkLabel": "Посмотреть Teona Hotel на ENUYGUN"
+      },
+      "setur": {
+        "action": "Посмотреть отзывы Tripadvisor",
+        "guide": "На Setur представлены оценки гостей из Tripadvisor. В профиле Teona Otel на Tripadvisor выберите «Написать отзыв», чтобы оценить проживание. При необходимости войдите в аккаунт.",
+        "linkLabel": "Посмотреть Teona Otel на Tripadvisor"
+      },
+      "jolly": {
+        "action": "Посмотреть обзор отзывов",
+        "guide": "Jolly представляет обзор отзывов о Teona Hotel из разных источников. Чтобы поделиться собственными впечатлениями, выберите платформу бронирования или Google.",
+        "linkLabel": "Посмотреть отзывы о Teona Hotel на Jolly"
+      },
+      "sorgulamax": {
+        "action": "Посмотреть профиль отеля",
+        "guide": "В профиле Teona Hotel на Sorgulamax представлены отзывы гостей. Информацию о публикации собственного отзыва вы можете уточнить в Sorgulamax.",
+        "linkLabel": "Посмотреть Teona Hotel на Sorgulamax"
+      }
+    }
   }
 }

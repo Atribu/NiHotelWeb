@@ -1,0 +1,65 @@
+{
+  "preparedAt": "2026-10-15",
+  "assets": [
+    {
+      "id": "booking",
+      "source": "https://content.presspage.com/templates/50/2962/744836/booking_logo--blue.svg?1",
+      "note": "Official logo asset."
+    },
+    {
+      "id": "tatilsepeti",
+      "source": "https://cdn.tatilsepeti.com/wwwroot/images/tatilsepeti-logo-new.svg",
+      "note": "Official logo asset."
+    },
+    {
+      "id": "otelz",
+      "source": "https://edge-cdn.otelz.com/app/icons/logo.svg",
+      "note": "Official logo asset."
+    },
+    {
+      "id": "tatilbudur",
+      "source": "https://www.tatilbudur.com/themes/tbcom/assets/img/tatilbudur-logo-2026.svg",
+      "note": "Official logo asset."
+    },
+    {
+      "id": "setur",
+      "source": "https://www.setur.com.tr/",
+      "note": "Header SVG extracted without altering its paths or fill."
+    },
+    {
+      "id": "enuygun",
+      "source": "https://www.enuygun.com/logo-ve-isim-kullanim-standartlari/",
+      "note": "Official green footer SVG extracted without altering its paths or fill."
+    },
+    {
+      "id": "airbnb",
+      "source": "https://www.airbnb.com/",
+      "note": "Header SVG extracted; inherited currentColor resolved to the official page value --palette-rausch600 (#FF385C)."
+    },
+    {
+      "id": "sorgulamax",
+      "source": "https://sorgulamax.com/",
+      "note": "Header SVG extracted without altering its paths or fill."
+    },
+    {
+      "id": "google",
+      "source": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+      "note": "Official PNG; transparent outer bounds trimmed."
+    },
+    {
+      "id": "jolly",
+      "source": "https://concorecdn.jollytur.com/concore/media/site/assets/img/theme/main-logo.png",
+      "note": "Official PNG; transparent outer bounds trimmed."
+    },
+    {
+      "id": "expedia",
+      "source": "User-supplied platform screenshot PHOTO-2026-10-15-14-55-22.jpg",
+      "note": "Mechanical crop of the actual brand wordmark supplied by the user; no redrawing. Native resolution, best displayed at or below its intrinsic size."
+    },
+    {
+      "id": "etstur",
+      "source": "https://images.etstur.com/imgproxy//assets/web/logos/35-year-logo.svg",
+      "note": "Mechanical viewport crop preserves the standard Etstur wordmark and excludes the separate anniversary badge; paths and brand colors are unchanged."
+    }
+  ]
+}
