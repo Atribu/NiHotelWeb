@@ -399,7 +399,8 @@
     "cookiePolicy": "Çerez Politikası",
     "cookieSettings": "Çerez tercihleri",
     "tourismOperationCertificate": "Kültür ve Turizm Bakanlığı — Turizm İşletme Belgesi No: {number}",
-    "materialNote": "Teona Hotel — İzmit merkezinde konforlu ve işlevsel şehir konaklaması."
+    "materialNote": "Teona Hotel — İzmit merkezinde konforlu ve işlevsel şehir konaklaması.",
+    "shareExperience": "Konaklamanızı değerlendirin"
   },
   "cookieConsent": {
     "bannerLabel": "Çerez tercihleri",
@@ -533,5 +534,80 @@
   "common": {
     "learnMore": "Daha fazla bilgi",
     "backHome": "Ana sayfaya dön"
+  },
+  "reviews": {
+    "eyebrow": "Teona Hotel · İzmit",
+    "title": "Konaklamanızı değerlendirin",
+    "lead": "Teona Hotel’i tercih ettiğiniz için teşekkür ederiz. Konaklamanıza ilişkin görüşlerinizi paylaşmak için ilgili platformu seçebilirsiniz.",
+    "thankYou": "Değerlendirmeleriniz, hizmet kalitemizi geliştirmemize ve gelecekteki misafirlerimize yol göstermemize katkı sağlar.",
+    "platformsLabel": "Değerlendirme platformları",
+    "closeGuide": "Platform bilgisini kapat",
+    "openInNewTab": "Yeni sekmede açılır",
+    "continueOnPlatform": "{platform} ile devam edin",
+    "googleDirectAction": "Google’da değerlendirin",
+    "googleDirectGuide": "Google hesabınızla oturum açarak Teona Hotel konaklamanıza ilişkin değerlendirmenizi paylaşabilirsiniz.",
+    "googleDirectLinkLabel": "Google’da değerlendirme paylaşın",
+    "platforms": {
+      "google": {
+        "action": "Google’da görüntüleyin",
+        "guide": "Teona Hotel’in Google profilindeki Yorumlar bölümünden görüşlerinizi paylaşabilirsiniz. Değerlendirme için Google hesabınızla oturum açmanız gerekir.",
+        "linkLabel": "Google’da oteli görüntüleyin"
+      },
+      "booking": {
+        "action": "Hesabınıza giriş yapın",
+        "guide": "Rezervasyonunuzu yaptığınız Booking.com hesabına giriş yapın. Tamamlanan Teona Hotel konaklamanızı seçerek rezervasyonunuza ait değerlendirme seçeneğini kullanabilirsiniz.",
+        "linkLabel": "Booking.com hesabınıza giriş yapın"
+      },
+      "expedia": {
+        "action": "Seyahatlerinize ulaşın",
+        "guide": "Teona Hotel konaklamanızı Expedia hesabınızın Seyahatlerim bölümünden açın. Görüşlerinizi konaklamanıza ait değerlendirme seçeneği veya Expedia’nın değerlendirme daveti üzerinden paylaşabilirsiniz.",
+        "linkLabel": "Expedia seyahatlerinizi görüntüleyin"
+      },
+      "etstur": {
+        "action": "Otelpuan’da değerlendirin",
+        "guide": "Teona Hotel’e ilişkin değerlendirmenizi Otelpuan üzerinden iletebilirsiniz. Konaklama tarihlerinizi, puanlamanızı ve görüşlerinizi formda paylaşabilirsiniz.",
+        "linkLabel": "Otelpuan’da değerlendirme paylaşın"
+      },
+      "airbnb": {
+        "action": "Yorumlarınıza ulaşın",
+        "guide": "Airbnb hesabınıza giriş yaparak değerlendirme bekleyen Teona Hotel konaklamanızı seçebilirsiniz. Konaklamalara ilişkin değerlendirmeler, çıkış tarihinden itibaren 14 gün içinde paylaşılmalıdır.",
+        "linkLabel": "Airbnb değerlendirmelerinizi görüntüleyin"
+      },
+      "tatilsepeti": {
+        "action": "Otel sayfasını inceleyin",
+        "guide": "Teona Hotel’in Tatilsepeti sayfasına ulaşabilir, konaklamanıza ilişkin değerlendirme seçenekleri hakkında Tatilsepeti müşteri hizmetlerinden bilgi alabilirsiniz.",
+        "linkLabel": "Tatilsepeti otel sayfasına ulaşın"
+      },
+      "tatilbudur": {
+        "action": "Otel sayfasını inceleyin",
+        "guide": "Teona Hotel’in Tatilbudur sayfasına ulaşabilir, konaklamanıza ilişkin değerlendirme seçenekleri hakkında Tatilbudur müşteri hizmetlerinden bilgi alabilirsiniz.",
+        "linkLabel": "Tatilbudur otel sayfasına ulaşın"
+      },
+      "otelz": {
+        "action": "Otel sayfasını inceleyin",
+        "guide": "Teona Hotel’e ait misafir değerlendirmelerini Otelz üzerinden inceleyebilirsiniz. Kendi değerlendirmenizi paylaşma seçenekleri hakkında Otelz müşteri hizmetlerinden bilgi alabilirsiniz.",
+        "linkLabel": "Otelz otel sayfasına ulaşın"
+      },
+      "enuygun": {
+        "action": "Otel sayfasını inceleyin",
+        "guide": "ENUYGUN üzerinden rezervasyon yaparak konaklayan misafirler değerlendirme paylaşabilir. Konaklamanıza ilişkin değerlendirme süreci hakkında ENUYGUN müşteri hizmetlerinden bilgi alabilirsiniz.",
+        "linkLabel": "ENUYGUN otel sayfasına ulaşın"
+      },
+      "setur": {
+        "action": "Tripadvisor’da değerlendirin",
+        "guide": "Setur’da yer alan misafir değerlendirmeleri Tripadvisor kaynaklıdır. Görüşlerinizi Teona Hotel’in Tripadvisor sayfasındaki “Yorum yaz” seçeneğinden paylaşabilirsiniz.",
+        "linkLabel": "Tripadvisor otel sayfasına ulaşın"
+      },
+      "jolly": {
+        "action": "Misafir yorumlarını inceleyin",
+        "guide": "Jolly’nin Teona Hotel sayfasında farklı platformlardan derlenen misafir değerlendirmelerini inceleyebilirsiniz. Kendi görüşlerinizi paylaşmak için rezervasyon platformunuzu veya Google’ı tercih edebilirsiniz.",
+        "linkLabel": "Jolly değerlendirmelerini inceleyin"
+      },
+      "sorgulamax": {
+        "action": "Otel sayfasını inceleyin",
+        "guide": "Teona Hotel’in Sorgulamax sayfasında otel bilgilerini ve misafir yorumlarını inceleyebilirsiniz. Değerlendirme paylaşımına ilişkin seçenekler için Sorgulamax müşteri hizmetlerinden bilgi alabilirsiniz.",
+        "linkLabel": "Sorgulamax otel sayfasına ulaşın"
+      }
+    }
   }
 }

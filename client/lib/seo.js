@@ -25,6 +25,7 @@ const seoContent = {
     contact: ["Teona Hotel İletişim ve Yol Tarifi | İzmit", "Teona Hotel telefon, e-posta, açık adres ve harita bilgilerine ulaşın; rezervasyon ve toplantı talepleriniz için iletişime geçin."],
     cookiePolicy: ["Teona Hotel Çerez Politikası", "Teona Hotel web sitesinde kullanılan zorunlu, analiz, pazarlama ve canlı destek teknolojileri ile tercih yönetimini inceleyin."],
     certificates: ["Teona Hotel Sertifikaları", "Teona Hotel'in sürdürülebilir turizm, sıfır atık ve KVKK uyum belgelerini görüntüleyin ve PDF olarak indirin."],
+    reviews: ["Konaklamanızı Değerlendirin | Teona Hotel", "Teona Hotel konaklamanıza ilişkin görüşlerinizi paylaşın. İlgili platformu seçerek değerlendirme veya hesap sayfasına ulaşın."],
   },
   en: {
     home: ["Teona Hotel | Stay in Central Izmit", "Stay in central Izmit with 44 rooms, free Wi-Fi and parking, a meeting room and Masa Kocaeli."],
@@ -42,6 +43,7 @@ const seoContent = {
     contact: ["Teona Hotel Contact and Directions | Izmit", "Find Teona Hotel's phone, email, full address and map; contact us for reservations and meeting requests."],
     cookiePolicy: ["Teona Hotel Cookie Policy", "Review the essential, analytics, marketing and live-support technologies used on the Teona Hotel website and manage your choices."],
     certificates: ["Teona Hotel Certificates", "View and download Teona Hotel's sustainable tourism, zero waste and personal-data compliance certificates."],
+    reviews: ["Review Your Stay | Teona Hotel", "Share feedback on your stay at Teona Hotel. Select a platform to access its review form, your account or the hotel page."],
   },
   de: {
     home: ["Teona Hotel | Übernachten im Zentrum von İzmit", "Übernachten Sie zentral in İzmit mit 44 Zimmern, kostenlosem WLAN und Parkplatz, Tagungsraum und Restaurant."],
@@ -59,6 +61,7 @@ const seoContent = {
     contact: ["Teona Hotel Kontakt und Anfahrt | İzmit", "Telefon, E-Mail, vollständige Adresse und Karte des Teona Hotels; kontaktieren Sie uns für Reservierungen und Tagungen."],
     cookiePolicy: ["Teona Hotel Cookie-Richtlinie", "Informationen zu notwendigen, Analyse-, Marketing- und Live-Support-Technologien auf der Website des Teona Hotels."],
     certificates: ["Zertifikate des Teona Hotels", "Zertifikate des Teona Hotels zu nachhaltigem Tourismus, Abfallvermeidung und Datenschutz ansehen und herunterladen."],
+    reviews: ["Bewerten Sie Ihren Aufenthalt | Teona Hotel", "Teilen Sie Ihre Erfahrungen im Teona Hotel. Wählen Sie eine Plattform, um zur Bewertung, zu Ihrem Konto oder zur Hotelseite zu gelangen."],
   },
   ru: {
     home: ["Teona Hotel | Проживание в центре Измита", "44 номера в центре Измита, бесплатные Wi-Fi и парковка, конференц-зал и Masa Kocaeli."],
@@ -76,6 +79,7 @@ const seoContent = {
     contact: ["Контакты и маршрут к Teona Hotel | Измит", "Телефон, электронная почта, полный адрес и карта Teona Hotel; свяжитесь с нами для бронирования и проведения встреч."],
     cookiePolicy: ["Политика cookie Teona Hotel", "Информация об обязательных, аналитических, маркетинговых технологиях и онлайн-поддержке на сайте Teona Hotel."],
     certificates: ["Сертификаты Teona Hotel", "Просмотрите и скачайте сертификаты Teona Hotel в области устойчивого туризма, нулевых отходов и защиты данных."],
+    reviews: ["Оцените проживание | Teona Hotel", "Поделитесь впечатлениями о проживании в Teona Hotel. Выберите платформу, чтобы перейти к форме отзыва, личному кабинету или странице отеля."],
   },
 };
 

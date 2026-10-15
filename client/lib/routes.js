@@ -79,6 +79,12 @@ export const localizedPaths = {
     de: "/de/kontakt",
     ru: "/ru/kontakty",
   },
+  reviews: {
+    tr: "/tr/yorumlar",
+    en: "/en/leave-a-review",
+    de: "/de/bewertung-abgeben",
+    ru: "/ru/ostavit-otzyv",
+  },
   cookiePolicy: {
     tr: "/tr/cerez-politikasi",
     en: "/en/cookie-policy",

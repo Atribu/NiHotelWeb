@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/site";
@@ -65,6 +65,13 @@ export default function SiteFooter() {
             <p className="mt-5 max-w-xs text-sm leading-6 text-[#19334F]/60">
               {t("tagline")}
             </p>
+            <Link
+              className="mt-5 inline-flex min-h-10 items-center gap-2 border border-[#19334F]/20 px-3 py-2 text-xs leading-5 text-[#19334F] transition-colors hover:bg-[#19334F] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#19334F]"
+              href="/reviews"
+            >
+              {t("shareExperience")}
+              <ArrowRight aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
+            </Link>
             <nav
               aria-label="İzmit konaklama sayfaları"
               className="mt-5 w-full max-w-xs border-t border-[#19334F]/10 pt-4"

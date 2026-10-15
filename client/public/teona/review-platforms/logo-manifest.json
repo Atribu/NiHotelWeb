@@ -1,0 +1,62 @@
+{
+  "google": {
+    "src": "/teona/review-platforms/google.png",
+    "width": 540,
+    "height": 179
+  },
+  "booking": {
+    "src": "/teona/review-platforms/booking.svg",
+    "width": 180,
+    "height": 30
+  },
+  "expedia": {
+    "src": "/teona/review-platforms/expedia.png",
+    "width": 93,
+    "height": 26
+  },
+  "etstur": {
+    "src": "/teona/review-platforms/etstur.svg",
+    "width": 252,
+    "height": 50
+  },
+  "airbnb": {
+    "src": "/teona/review-platforms/airbnb.svg",
+    "width": 3490,
+    "height": 1080
+  },
+  "tatilsepeti": {
+    "src": "/teona/review-platforms/tatilsepeti.svg",
+    "width": 180,
+    "height": 52
+  },
+  "tatilbudur": {
+    "src": "/teona/review-platforms/tatilbudur.svg",
+    "width": 292,
+    "height": 42
+  },
+  "otelz": {
+    "src": "/teona/review-platforms/otelz.svg",
+    "width": 113,
+    "height": 33
+  },
+  "enuygun": {
+    "src": "/teona/review-platforms/enuygun.svg",
+    "width": 162,
+    "height": 23
+  },
+  "setur": {
+    "src": "/teona/review-platforms/setur.svg",
+    "width": 76,
+    "height": 24
+  },
+  "jolly": {
+    "src": "/teona/review-platforms/jolly.png",
+    "width": 123,
+    "height": 56
+  },
+  "sorgulamax": {
+    "src": "/teona/review-platforms/sorgulamax.svg",
+    "width": 195,
+    "height": 50
+  }
+}

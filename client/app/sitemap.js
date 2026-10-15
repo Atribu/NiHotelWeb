@@ -16,6 +16,7 @@ const sitemapPages = [
   "restaurant",
   "gallery",
   "contact",
+  "reviews",
   "cookiePolicy",
   "certificates",
 ];

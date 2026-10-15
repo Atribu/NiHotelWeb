@@ -87,6 +87,12 @@ export const config = {
       de: '/kontakt',
       ru: '/kontakty',
     },
+    '/reviews': {
+      tr: '/yorumlar',
+      en: '/leave-a-review',
+      de: '/bewertung-abgeben',
+      ru: '/ostavit-otzyv',
+    },
     '/cookie-policy': {
       tr: '/cerez-politikasi',
       en: '/cookie-policy',
