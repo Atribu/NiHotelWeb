@@ -65,16 +65,16 @@ export default async function HomePage({ params }) {
     <main className="overflow-hidden bg-white" id="main-content">
       <SeoStructuredData locale={locale} items={[]} />
       <JsonLd data={faqStructuredData({ items: faqItems })} />
-      <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#24292c] lg:min-h-[calc(100svh-6rem)]">
+      <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#24292c] lg:min-h-[calc(100svh-5rem)]">
         <Image
           alt=""
-          className="hero-pan object-cover object-[60%_center]"
+          className="hero-pan object-center object-fill"
           fill
           priority
           sizes="100vw"
           src={site.images.hero}
         />
-        <div className="absolute inset-0 bg-black/15" />
+        <div className="absolute inset-0 bg-black/10" />
         <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black/35 to-transparent" />
         <h1 className="sr-only">{t("title")}</h1>
       </section>

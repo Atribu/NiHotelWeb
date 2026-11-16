@@ -363,7 +363,7 @@ function fallbackReply(messages, locale) {
     return { message: copy.location };
   }
   if (/otopark|park|wifi|wi-fi|wlan/.test(text)) return { message: copy.parking };
-  if (/restoran|restaurant|masa kocaeli|ресторан/.test(text)) return { message: copy.restaurant };
+  if (/restoran|restaurant|Yeni Masa Kocaeli|ресторан/.test(text)) return { message: copy.restaurant };
   if (/toplanti|meeting|tagung|конферен/.test(text)) return { message: copy.meeting };
   if (/telefon|email|e-posta|contact|kontakt|связ|телефон/.test(text)) return { message: copy.contact };
   if (/merhaba|selam|hello|hi|hallo|привет|здрав/.test(text)) return { message: copy.hello };
