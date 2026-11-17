@@ -34,6 +34,7 @@ export const site = {
     logo: "/teona/teona-logo.png",
     logoLight: "/teona/teona-logo-light.png",
     hero: "/teona/photos/exterior-front3.png",
+    heromobile: "/teona/photos/exterior-front-mobile.png",
     exteriorFront: "/teona/photos/exterior-front.webp",
     exteriorCity: "/teona/photos/exterior-city.webp",
     exteriorAngle: "/teona/photos/exterior-angle.webp",

@@ -126,7 +126,7 @@ export default function BookingBar({
       className={
         embedded
           ? "relative z-20 flex flex-col items-center justify-center gap-3 border border-black/8 bg-white px-5 py-5 shadow-[0_18px_55px_rgba(25,51,79,0.09)] sm:px-7 lg:px-8"
-          : "relative z-20 hidden min-h-24 flex-col items-center justify-center gap-3 border-b border-black/5 bg-[#fafafa] px-6 py-4 lg:flex"
+          : "relative z-20 hidden min-h-20 flex-col items-center justify-center gap-3 border-b border-black/5 bg-[#fafafa] px-6 py-4 lg:flex"
       }
     >
       <form

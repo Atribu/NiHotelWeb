@@ -65,21 +65,32 @@ export default async function HomePage({ params }) {
     <main className="overflow-hidden bg-white" id="main-content">
       <SeoStructuredData locale={locale} items={[]} />
       <JsonLd data={faqStructuredData({ items: faqItems })} />
-      <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#24292c] lg:min-h-[calc(100svh-5rem)]">
+      <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#24292c] lg:min-h-[calc(100svh]">
         <Image
           alt=""
-          className="hero-pan object-center object-fill"
+          className="hidden md:flex hero-pan object-center object-fill"
           fill
           priority
           sizes="100vw"
           src={site.images.hero}
         />
+
+        <Image
+          alt=""
+          className="flex md:hidden hero-pan object-center object-content"
+          fill
+          priority
+          sizes="100vw"
+          src={site.images.heromobile}
+        />
         <div className="absolute inset-0 bg-black/10" />
         <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black/35 to-transparent" />
         <h1 className="sr-only">{t("title")}</h1>
+        <div className="absolute inset-0 w-full"></div>
       </section>
 
-      <BookingBar />
+      <div className="absolute w-full bottom-0"> <BookingBar /></div>
+     
 
       <section className="relative bg-white px-5 py-20 sm:px-8 md:py-28 lg:px-14 lg:py-32">
         <div className="pointer-events-none absolute -left-28 top-4 h-[30rem] w-[30rem] rounded-full border border-[#dec7a6]/35" />
