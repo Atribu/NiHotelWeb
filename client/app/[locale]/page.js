@@ -23,7 +23,7 @@ import SeoStructuredData from "./components/teona/SeoStructuredData";
 const introCardEyebrowClassName =
   "text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-white/75";
 const introCardBodyClassName =
-  "mt-3 max-w-md font-display text-xl font-medium leading-snug sm:text-2xl lg:text-[1.4rem]";
+  "mt-3 max-w-md font-display text-xl font-medium leading-snug md:text-2xl lg:text-[1.4rem]";
 const introCardLinkClassName =
   "mt-5 inline-flex items-center gap-2 border-b border-white pb-1 text-xs font-semibold uppercase tracking-[0.14em]";
 
@@ -92,70 +92,74 @@ export default async function HomePage({ params }) {
       <div className="absolute w-full bottom-0"> <BookingBar /></div>
      
 
-      <section className="relative bg-white px-5 py-20 sm:px-8 md:py-28 lg:px-14 lg:py-32">
-        <div className="pointer-events-none absolute -left-28 top-4 h-[30rem] w-[30rem] rounded-full border border-[#dec7a6]/35" />
-        <div className="pointer-events-none absolute -left-8 top-24 h-[18rem] w-[18rem] rounded-full border border-[#dec7a6]/25" />
-        <Image
-          alt=""
-          aria-hidden="true"
-          className="pointer-events-none absolute -right-14 bottom-8 hidden h-[34rem] w-auto opacity-[0.055] lg:block"
-          height={720}
-          src={site.images.logo}
-          width={470}
-        />
+     
+<section className="relative bg-white px-5 py-20 sm:px-8 md:py-28 lg:px-14 lg:py-32">
+  <div className="pointer-events-none absolute -left-28 top-4 h-[30rem] w-[30rem] rounded-full border border-[#dec7a6]/35" />
+  <div className="pointer-events-none absolute -left-8 top-24 h-[18rem] w-[18rem] rounded-full border border-[#dec7a6]/25" />
+  <Image
+    alt=""
+    aria-hidden="true"
+    className="pointer-events-none absolute -right-14 bottom-8 hidden h-[34rem] w-auto opacity-[0.055] lg:block"
+    height={720}
+    src={site.images.logo}
+    width={470}
+  />
 
-        <div className="relative mx-auto min-h-[35rem] max-w-[960px] sm:min-h-[42rem] lg:min-h-[47rem]">
-          <article className="cardClip absolute right-0 top-0 h-[25rem] w-[78%] overflow-hidden bg-[#ddd7ce] shadow-[0_24px_60px_rgba(36,41,44,0.12)] sm:h-[34rem] sm:w-[68%] lg:h-[43rem] lg:w-[58%]">
-            <Image
-              alt=""
-              className="object-cover object-top"
-              fill
-              sizes="(max-width: 1024px) 75vw, 46vw"
-              src={site.images.corridor}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 z-10 hidden p-6 text-white sm:block sm:p-9 lg:py-11 lg:pl-52 lg:pr-8">
-              <p className={introCardEyebrowClassName}>
-                {t("introEyebrow")}
-              </p>
-              <p className={introCardBodyClassName}>
-                {t("introBody")}
-              </p>
-              <Link
-                className={introCardLinkClassName}
-                href="/about"
-              >
-                {navigation("about")}
-                <ArrowRight aria-hidden="true" className="h-3.5 w-3.5" />
-              </Link>
-            </div>
-          </article>
+  <div className="relative mx-auto min-h-[32rem] max-w-[960px] sm:min-h-[42rem] lg:min-h-[47rem]">
+    <article className="cardClip absolute right-0 top-0 h-[23rem] w-[92%] overflow-hidden bg-[#ddd7ce] shadow-[0_24px_60px_rgba(36,41,44,0.12)] sm:h-[34rem] sm:w-[68%] lg:h-[43rem] lg:w-[58%]">
+      <Image
+        alt=""
+        className="object-cover object-center sm:object-top"
+        fill
+        sizes="(max-width: 640px) 88vw, (max-width: 1024px) 75vw, 46vw"
+        src={site.images.corridor}
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+      <div className="absolute inset-x-0 sm:bottom-0 z-10 hidden p-6 text-white sm:block sm:p-9 sm:pl-[40%] md:pl-[40%] lg:py-11 lg:pl-52 lg:pr-8">
+        <p className={introCardEyebrowClassName}>
+          {t("introEyebrow")}
+        </p>
+        <p className={introCardBodyClassName}>
+          {t("introBody")}
+        </p>
+        <Link
+          className={introCardLinkClassName}
+          href="/about"
+        >
+          {navigation("about")}
+          <ArrowRight aria-hidden="true" className="h-3.5 w-3.5" />
+        </Link>
+      </div>
+    </article>
 
-          <article className="absolute bottom-0 left-0 z-10 h-[17rem] w-[64%] overflow-hidden bg-[#e7e1d7] shadow-[0_24px_60px_rgba(36,41,44,0.14)] sm:h-[22rem] sm:w-[54%] lg:-bottom-24 lg:h-[27rem] lg:w-[56%]">
-            <Image
-              alt=""
-              className="object-cover"
-              fill
-              sizes="(max-width: 1024px) 65vw, 45vw"
-              src={site.images.roomDouble}
-            />
-            <div className="absolute inset-0 bg-black/38" />
-            <div className="absolute inset-x-0 bottom-0 z-10 p-5 text-white sm:p-8 lg:p-10">
-              <p className={introCardEyebrowClassName}>{t("roomsEyebrow")}</p>
-              <h2 className={introCardBodyClassName}>
-                {t("introTitle")}
-              </h2>
-              <Link
-                className={introCardLinkClassName}
-                href="/rooms"
-              >
-                {t("primaryCta")}
-                <ArrowRight aria-hidden="true" className="h-3.5 w-3.5" />
-              </Link>
-            </div>
-          </article>
-        </div>
-      </section>
+    <article className="absolute bottom-10 sm:bottom-0 left-0 z-10 h-[16rem] w-[70%] overflow-hidden bg-[#e7e1d7] shadow-[0_24px_60px_rgba(36,41,44,0.14)] sm:h-[22rem] sm:w-[54%] lg:-bottom-24 lg:h-[27rem] lg:w-[56%]">
+      <Image
+        alt=""
+        className="object-cover"
+        fill
+        sizes="(max-width: 640px) 82vw, (max-width: 1024px) 65vw, 45vw"
+        src={site.images.roomDouble}
+      />
+      <div className="absolute inset-0 bg-black/38" />
+      <div className="absolute inset-x-0 bottom-0 z-10 p-4 text-white sm:p-8 lg:p-10">
+        <p className={introCardEyebrowClassName}>
+          {t("roomsEyebrow")}
+        </p>
+        <h2 className={introCardBodyClassName}>
+          {t("introTitle")}
+        </h2>
+        <Link
+          className={introCardLinkClassName}
+          href="/rooms"
+        >
+          {t("primaryCta")}
+          <ArrowRight aria-hidden="true" className="h-3.5 w-3.5" />
+        </Link>
+      </div>
+    </article>
+  </div>
+</section>
+
 
       <section className="slats-section px-5 py-20 sm:px-8 lg:px-14 lg:py-32">
         <div className="relative z-10 mx-auto max-w-6xl text-center">

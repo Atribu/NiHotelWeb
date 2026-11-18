@@ -158,7 +158,14 @@ img {
 }
 
 .cardClip {
-  clip-path: polygon(0 0, 0 56%, 36% 56%, 36% 100%, 100% 100%, 100% 0);
+  clip-path: polygon(
+    0 0,
+    0 56%,
+    70% 56%,
+    70% 100%,
+    100% 100%,
+    100% 0
+  );
 }
 
 .slats-section {
@@ -256,11 +263,32 @@ textarea:focus-visible {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
   .cardClip {
-    clip-path: polygon(0 0, 0 56%, 30% 56%, 30% 100%, 100% 100%, 100% 0);
+    clip-path: polygon(
+      0 0,
+      0 56%,
+      36% 56%,
+      36% 100%,
+      100% 100%,
+      100% 0
+    );
   }
 }
+
+@media (min-width: 1024px) {
+  .cardClip {
+    clip-path: polygon(
+      0 0,
+      0 56%,
+      30% 56%,
+      30% 100%,
+      100% 100%,
+      100% 0
+    );
+  }
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   html {
